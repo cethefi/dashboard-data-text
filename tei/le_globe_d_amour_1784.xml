@@ -1,0 +1,1583 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="le_globe_d_amour_1784">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Le Globe d'amour</title>
+        <title type="sub">La Nouvelle Didon</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Alexandre-Louis Bertrand Robineau dit l’abbé Beaunoir</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Rousseau</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BnF ms. fr. 9242, f.319-342</bibl>
+        <bibl type="intermediarySource">P. Beaucé</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="elise" sex="UNKNOWN">
+            <persName>élise</persName>
+          </person>
+          <person xml:id="annette" sex="UNKNOWN">
+            <persName>Annette</persName>
+          </person>
+          <person xml:id="leandre" sex="UNKNOWN">
+            <persName>Léandre</persName>
+          </person>
+          <person xml:id="dekerkadur" sex="UNKNOWN">
+            <persName>De kerkadur</persName>
+          </person>
+          <person xml:id="gilles" sex="UNKNOWN">
+            <persName>Gilles</persName>
+          </person>
+          <person xml:id="huascar" sex="UNKNOWN">
+            <persName>Huascar</persName>
+          </person>
+          <person xml:id="choeurdesafricains" sex="UNKNOWN">
+            <persName>Chœur des africains</persName>
+          </person>
+          <person xml:id="zamor" sex="UNKNOWN">
+            <persName>Zamor</persName>
+          </person>
+          <person xml:id="monsieur_de_kerkadur" sex="UNKNOWN">
+            <persName>Monsieur de Kerkadur</persName>
+          </person>
+          <person xml:id="le_beau_leandre" sex="UNKNOWN">
+            <persName>Le beau Léandre</persName>
+          </person>
+          <person xml:id="quatre_negres" sex="UNKNOWN">
+            <persName>Quatre nègres</persName>
+          </person>
+          <person xml:id="africains" sex="UNKNOWN">
+            <persName>Africains</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comédie en deux actes mêlée de Pantomime</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q192881</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1784">
+        <desc> 1784</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#elise">Élise</role>
+          <actor>Mademoiselle Chaynier</actor>
+        </castItem>
+        <castItem>
+          <role ana="#annette">Annette</role>
+          <actor>Mademoiselle Bisson</actor>
+        </castItem>
+        <castItem>
+          <role ana="#monsieur_de_kerkadur">Monsieur de Kerkadur</role>
+          <actor>Monsieur Bordier</actor>
+        </castItem>
+        <castItem>
+          <role ana="#le_beau_leandre">Le beau Léandre</role>
+          <actor>Monsieur Beaulieu</actor>
+        </castItem>
+        <castItem>
+          <role ana="#gilles">Gilles</role>
+          <actor>Monsieur Volange</actor>
+        </castItem>
+        <castItem>
+          <role ana="#huascar">Huascar</role>
+          <actor>Monsieur Duval</actor>
+        </castItem>
+        <castItem>
+          <role ana="#zamor">Zamor</role>
+          <actor>Monsieur Boucher</actor>
+        </castItem>
+        <castItem>
+          <role ana="#quatre_negres">Quatre nègres</role>
+        </castItem>
+        <castItem>
+          <role ana="#africains">Africains</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage>La scène se passe d'abord dans un château de Bretagne, sur les bords de la mer, ensuite dans une île d'Afrique.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="act">
+        <head>ACTE 1</head>
+        <stage type="location">Le théâtre représente la cour d'un château nouvellement bâti, et qui n'est pas même entièrement achevé. Dans le fond, à travers de larges portiques, on aperçoit la mer et sur le bord une petite chaloupe à voiles qui est à l'ancre.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Élise, Annette</stage>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Cesse, ma sœur, cesse de blâmer mon choix: pouvais-je en faire un plus heureux? Pouvais-je en faire un plus beau? Léandre a tout pour plaire.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Mais il n'a pas un sol. Triste jouet des ondes, vous savez dans quel état il s'offrit à nos yeux, lorsque la tempête et l'orage le jetèrent sur ces bords.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Il ne m'en parut que plus intéressant; comme le fils de Vénus, il n'eut besoin pour plaire d'aucun ornement étranger.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Et vous êtes donc absolument déterminée à en faire votre mari?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Oui, ma petite sœur.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Et vous rompez le vœu que vous aviez fait d'être toujours fidèle aux cendres de votre premier époux?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Avec bien du plaisir.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Vous trouviez cependant l'état de veuve si doux.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Il a ses agréments, ma sœur, mais crois-moi, il nous laisse toujours dans le cœur un vide, un besoin qu'on voudrait en vain se dissimuler. Un époux est un mal nécessaire; et sur vingt femmes qui ont la force de garder la viduité, dix-neuf doivent cette force à l'amour consolateur, et la vingtième à la vanité. Je suis ma maîtresse, je ne veux outrager ni l'amour ni la vérité, et demain le charmant Léandre sera ton frère.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Mais croyez-vous que votre beau Léandre soit bien sincèrement d'humeur à devenir époux? Vous êtes belle, il est jeune. Vous êtes riche, il n'a rien. Vous le comblez de bienfaits, il les reçoit. Vous ne lui cachez pas l'amour que vous ressentez pour lui, il vous répond des douceurs. Mais, ma sœur, je ne l'entends jamais parler de mariage. Je les connais ces écumeurs de mers, ces coureurs de bonnes fortunes. Quand battus par la tempête, ils rencontrent dans un port tranquille une hôtesse jeune, belle et généreuse, ils font volontiers le serment de ne plus confier leur sort au caprice des ondes, mais le premier bon vent emporte leurs serments.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Léandre n'est pas perfide, ma sœur: j'ai sa promesse de mariage par écrit.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Quand? Où vous l'a-t-il donnée?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Dans cette grotte obscure où le dernier orage nous força de chercher un asile. Nous étions seuls, il me peignait avec feu son amour; je lui avouai mes craintes, mes soupçons, et pour me rassurer, ma sœur, il me signa de son sang la promesse qu'il me fît d'être un jour mon époux.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Et que dira notre voisin?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Monsieur de Kerkadur?</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Lui-même.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Tout ce qu'il voudra.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Vous savez qu'il vous aime.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Tant pis pour lui.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Il se flattait de vous épouser un jour.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Il s'en flattait à tort, je lui ai souvent déclaré mes intentions.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Pas tout à fait ma sœur, vous lui avez bien que vous vouliez toujours rester veuve, mais quand il apprendra que vous vous remariez avec un jeune aventurier, un simple flibustier, croyez-vous qu'il sera fort satisfait d'un pareil procédé?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Très peu m'importe.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Il est brutal.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Léandre est brave.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Mais pouvez-vous oublier que vous lui devez tout? Que ce château même dans lequel vous donnez un asile à son rival est un de ses bienfaits?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>L'amour est le dieu du bonheur et non pas du calcul.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Mais s'il vous le reprenait?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Il ne le peut: sa donation est en bonne forme, passée par-devant notaires, et s'il faut plaider, nous plaiderons. Mais voici Léandre, qu'il est aimable!</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Que trop, pour ton repos.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Élise, Annette, Léandre<stage>en habit de chasse</stage>
+          </stage>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Eh bien, mon cher Léandre, êtes-vous content de votre chasse?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>J'ai été d'une maladresse inconcevable, le gibier partait à vingt pas et je n'ai pu ajuster une seule fois.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>À quoi donc pensiez-vous?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Vous me le demandez Élise: partout votre charmante image me suit, partout elle occupe seule et mon cœur et ma pensée.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Comme il m'aime ma sœur!</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Il vous le persuade au moins.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Ah, que je fus bien inspirée quand je vous reçus dans ce château!</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Vous m'avez comblé de tant de bienfaits, que pour tout autre que pour moi, ce serait un poids insupportable, mais comment refuser la main qu'on adore?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Tu l'entends, ma sœur, lui-même me presse de lui donner ma main.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Élise, Annette, Léandre, Gilles</stage>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Ah, mon Dieu, le vilain homme!</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Qu'as-tu donc, Gilles?</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>C'est vous justement que je cherche.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Que me veux-tu?</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Décampons au plus vite, Monsieur.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Pourquoi?</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Pourquoi? C'est que je viens de rencontrer dans l'avenue du château un petit homme fripon, à mine rébarbative, au verbe dur, qui vient vous rendre une visite qui, je crois, ne vous fera pas grand plaisir.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Que veux-tu dire?</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Qu'il vous donne en prononçant votre nom des épithètes qui ne sont rien moins qu'honnêtes; il ne parle que de tuer, de brûler, de saccager tout.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>À ce portrait, je reconnais monsieur de Kerkadur.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Qu'est-ce que c'est que ce monsieur de Kerkadur?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>C'est ce voisin dont je vous ai quelque fois parlé, qui veut à toute force m'épouser, que j'ai toujours refusé: sans doute il aura appris que nous allions nous marier, et cette nouvelle lui aura peut-être donné un peu d'humeur; mais ce ne sera rien rassurez-vous.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Croyez-vous donc que je le craigne?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Non, mais je voudrais éviter un éclat toujours désagréable, je connais son ton et la façon de le prendre.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Prenez-le par la douceur.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Je crierai un peu plus fort que lui et il se taira.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>C'est ce qu'il a de mieux à faire; je n'entends pas que tant que je serai chez vous, personne y prenne de ton. Et quel est-il donc ce monsieur de Kerkadur?</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Capitaine de vaisseau</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Marchand?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Oui.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Eh bien, je lui ferai voir, moi, ce que c'est qu'un flibustier!</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Il est brave.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Tant mieux!</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Il ne baisse pas aisément pavillon.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Nous verrons son feu, et comment il répond à une bordée, la petite sœur.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Quoi? Vous vous exposeriez pour moi?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>En doutez-vous, Élise? Si pour vous il est doux de vivre, pour vous il est beau de mourir.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>L'un vaut bien mieux que l'autre. Tenez, tenez, le voici.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Élise, Annette, De Kerkadur, Gilles, quatre nègres</stage>
+          <stage>Les quatre nègres apportent un globe au bas duquel est attaché un char. Ils le suspendent à un des portiques du fond.</stage>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <stage>coiffé d'un chapeau à haut bord dans lequel est un plumet rouge et costumé grotesquement</stage>
+            <p>Prenez garde, coquins, prenez garde à mon ballon. Attachez-le fortement à ce portique. S'il venait à s'enlever, corbleu, je vous hacherais.</p>
+            <p>Bonjour, ma voisine.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Bonjour, mon voisin. Qu'est-ce que vous m'apportez donc là?</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>C'est un globe.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Je le vois bien, mais pourquoi faire?</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Pour escalader les cieux; il y a vingt ans que je cours les mers. Qu'on m'ouvre le chemin des enfers, et j'y descends.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Quand partez-vous?</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Le lendemain de mon mariage.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Vous vous mariez donc?</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Oui.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Avec qui?</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Avec vous.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Avec moi?</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Tout  est prêt.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Je n'y vois qu'une petite difficulté.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Une petite difficulté?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Oui.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Et quelle est-elle, corbleu?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>C'est que je ne veux pas de vous pour mon mari.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>J'en sais bien la raison, morbleu.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Peut-être.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>C'est ce beau fils qui vous rend si dédaigneuse.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Vous avez deviné.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Écoutez-moi, ma voisine, écoutez-moi bien en silence. Je suis de sang froid, corbleu, et je veux vous parlez raison, sans m'échauffer.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Et vous ferez très bien.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Tant que vous m'avez bercé du conte commun à toutes les veuves, que votre benêt de mari vous avait été trop cher pour lui donner jamais un successeur, j'ai bien voulu faire semblant de prendre vos sottes raisons pour argent comptant, et patienter en attendant tout du temps et de l'ennui, compagnon inséparable du veuvage; mais on est venu me dire que vous aviez reçu chez vous un certain écumeur de mer, un malheureux flibustier...</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Laissez-moi...</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <stage>mettant la main sur la bouche de Léandre</stage>
+            <p>Je suis femme, et vous voulez parler pour moi? Taisez-vous.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>On assure qu'il vous a tourné la tête, que vous en êtes folle, et que vous voulez l'épouser: si je le croyais, morbleu...</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Que feriez-vous?</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Je le ferais sauter par les fenêtres, corbleu, je mettrais le feu aux quatre coins de votre château et, à commencer par vous, morbleu, je tuerais tout le monde.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Eh bien! Mon voisin, on vous a dit la pure vérité. J'ai reçu chez moi un écumeur de mer, un brave flibustier, il m'a tourné la tête, j'en suis folle, demain je l'épouse, et vous danserez à ma noce, et vous ne tuerez personne, et vous ne mettrez pas le feu à mon château, et vous n'en ferez pas sauter mon amant par les fenêtres, et c'est lui, si vous faites trop le méchant, qui va vous mettre dehors par les épaules, entendez-vous mon cher voisin? Le voilà, je vous le présente et vous laisse seuls ensemble. Viens, ma sœur.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">De Kerkadur, Léandre, Gilles, nègres</stage>
+          <stage>De Kerkadur et Léandre se toisent tous les deux et s'examinent quelque temps en silence.</stage>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Il va faire chaud ici, si je pouvais m'esquiver.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Reste là!</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>C'est donc toi qu'Élise compte épouser?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>On le dit.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Sais-tu que je l'aime?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Oui.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Sais-tu que tout ce qu'elle possède, c'est moi qui le lui ai donné?</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Ce qui est donné est donné.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Sais-tu qui je suis?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Capitaine de vaisseau marchand.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Et nous flibustiers.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Sais-tu que je suis breton?</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Sa mère était normande et son père picard.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Veux-tu que je te donne un bon conseil?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Quel est-il?</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Va-t'en!</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Non.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Tu ne veux pas?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Non.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Si j'avais mes pistolets...</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Va les chercher.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Eh bien, attends-moi.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Très volontiers.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">Léandre, Gilles</stage>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Ah bien oui, nous t'attendrons.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Certainement.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Comment?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Je ne serai pas fâché de brûler une moustache à ce brutal-là.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Voulez-vous me permettre de vous dire ma petite façon de penser?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Volontiers.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Vous ne vous fâcherez pas?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Non.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Eh bien, Monsieur, vous ne ressemblez à rien.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Pourquoi?</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Élise est jeune et belle?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Oui.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Elle veut vous épouser?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Elle en a grande envie.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Elle refuse un homme riche qui l'adore et qui ne demande pas mieux que d'en faire sa femme. Elle le refuse pour vous.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Elle fait bien.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Et votre intention est de la planter là.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Il le faut, Gilles.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Vous voulez cette nuit-même vous remettre en mer.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Oui.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Tout est prêt pour notre départ: sans faire semblant de rien, j'ai radoubé notre chaloupe, fait main basse sur la basse-cour, l'office et la cave pour l'approvisionner comme il faut. Pourquoi donc vous opposer à ce mariage qui leur convient si bien à tous deux?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Kerkadur s'imaginerait peut-être que c'est lui qui me fait fuir, que j'ai peur de lui.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Et vous aimez mieux passer pour un bon spadassin que pour un homme honnête.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Monsieur Gilles...</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Monsieur.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Apprenez que je n'entends pas que mon valet raisonne plus juste que moi et que la première fois que cela lui arrivera, je lui couperai les deux oreilles: entendez-vous?</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Très bien.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Chut, voici la petite sœur, je crois qu'elle ne nous aime pas trop.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Je le crois aussi.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>C'est justement pourquoi je vais lui confier mon secret.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Cet homme est au rebours de tous les autres.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">Annette, Léandre, Gilles</stage>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Ma petite sœur, ma petite sœur.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Que voulez-vous, monsieur?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>J'ai bien du chagrin.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <stage>chantonnant</stage>
+            <l met="7">Eh, qu'est-ce qu'ça m'fait à moi?</l>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Vous ne nous aimez donc guère?</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Comme vous devinez.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Je suis bien malheureux.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>La veille de votre noce?</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Ah bien oui! la veille de notre noce! Nous y danserons d'une drôle de façon.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Que voulez-vous donc dire?</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Tenez, regardez-le.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Il pleure, je crois.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <stage>s'essuyant les yeux</stage>
+            <p>Voilà qui est fini.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Qu'est-ce que cela signifie?</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Cela signifie que cette nuit même, nous délogeons d'ici sans tambour ni trompette.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Est-il bien possible?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Oui, belle Annette, il n'est que trop vrai. J'aime Élise, Élise m'aime. Que dis-je aimer? Nous nous adorons; il ne tient qu'à moi de l'épouser demain, et cette nuit... je pars.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Je savais bien que monsieur de Kerkadur vous ferait prendre le large.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Détrompez-vous, Annette. Cent comme lui, mille ne me feraient point abandonner Élise, il me faut pour la quitter des motifs bien plus puissants.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Et quels sont donc ces motifs?</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Vous allez vous moquer de nous.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>J'y suis toute prête.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Je me fais blanc de mon épée, mais j'ai mon faible, chacun à le sien. Je me bats mieux que je ne raisonne et je ne me pique pas d'être un esprit fort.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Ce n'est pas d'aujourd'hui que je m'en aperçois.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Petite espiègle.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Étant jeune, je me fis dire ma bonne aventure. Eh bien! Savez-vous ce qu'on m'a prédit?</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Que vous seriez.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Non... Écoutez bien. C'était dans une chambre noire qui n'était éclairée que par trois bougies jaunes, à la lueur desquelles j'apercevais assise sur un trépied de fer une vieille sorcière, à l'œil hagard à la mine havre; elle avait sur son épaule droite un gros chat noir et sur la gauche un hibou. Devant elle, sur une table ronde, étaient un jeu de carte, un miroir cassé, une lame d'acier couverte de chiffres indéchiffrables, et un réchaud ardent dans lequel elle jeta devant moi un crapaud tout vivant qu'elle sortit aussitôt. Alors elle me regarda trois fois dans la main, m'arrache trois cheveux, me tire trois gouttes de sang, consulte par trois fois son chat et son hibou, mêle ses cartes, regarde dans son miroir et se levant de dessus son trépied, fit sortir ces paroles de sa bouche édentée:</p>
+            <l met="8">La fortune est capricieuse:</l>
+            <l met="12">De toutes ses vigueurs tu subiras la loi.</l>
+            <l met="12">Mais d'une île inconnue enfin tu seras roi,</l>
+            <l met="8">En épousant une voleuse.</l>
+            <p>Telle fut sa prédiction. Voulez-vous que pour les beaux yeux de votre sœur je manque la haute destinée qui m'attend?</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Vous feriez une trop haute sottise. Allez, brave guerrier, allez chercher le trône qui vous attends et la voleuse qui doit vous donner la main. Le couple sera parfait, et ma sœur ne mérite pas un époux tel que vous.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Je voudrais que vous daignassiez la préparer sur mon départ.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Très volontiers.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Mais doucement, je crains son désespoir.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Reposez-vous sur moi.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Dites-lui bien que sans le trône qui nous attend, nous n'aurions pas mieux demandé que de manger sa fortune.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Je lui dirai tout ce qu'il faudra lui dire.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Je viendrai vous faire mes adieux.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Je vous en dispense, et vous conseille même de partir sans la revoir.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">Annette<stage>seule</stage>
+          </stage>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <stage>i</stage>
+            <p>Tout s'arrange à merveille: je n'aimais pas cet aventurier sans feu ni lieu, dont ma sœur s'est engouée je ne sais trop pourquoi. Qu'il parte! Elle sera trop heureuse alors d'épouser monsieur de Kerkadur, il est à la vérité un peu brutal, assez laid, mais il est riche et puis s'il monte une fois dans son ballon, qui sait quand et comment il en redescendra: le vent peut emporter le mari, les écus nous resterons. Mais le voici, je crois, oui, ma foi, c'est lui-même. Comme il est affublé!</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 9</head>
+          <stage type="characters">Annette, Monsieur de Kerkadur<stage>avec toute sorte d'armes</stage>
+          </stage>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Où allez-vous donc, mon voisin, armé comme vous êtes de pied en cape?</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Je viens chercher ce freluquet de Léandre pour me battre avec lui. Il sera maître des armes: épée, poignard, pistolets, carabine, bâton, tête ou poings.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Vous ne vous battrez pas.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Je ne me battrai pas?</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Non.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Qui m'en empêchera?</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Moi.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Vous?</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Oui, moi.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Non, le ciel et l'enfer...</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Point de furie. Écoutez-moi paisiblement.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <stage>faisant des contorsions de fureur</stage>
+            <p>Je le veux bien.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Ne faites donc pas toutes ces grimaces.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <stage>continuant</stage>
+            <p>Je me modère.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Encore.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Me voilà tranquille.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Si Léandre vous cédait la main d'Élise, s'il s'éloignait pour jamais de ce rivage, iriez-vous courir après lui pour vous couper la gorge?</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Non, de par tous les diables.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>He bien! mon cher voisin, rengainez donc votre valeur. Léandre est un ingrat, un perfide, qui malgré tout l'amour que ma sœur a pour lui, la quitte et l'abandonne.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Est-il possible?</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Cette nuit même il se rembarque.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Ne me trompez-vous pas?</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Je vous en donne ma parole d'honnête fille.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>J'en doute encore.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Regardez sa chaloupe, les voiles sont déjà hissées.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Il est vrai. Voici justement Élise, je vais bien la réjouir en lui apprenant cette bonne nouvelle.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Ménage un peu sa sensibilité.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Laissez-moi faire.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 10</head>
+          <stage type="characters">Élise, Annette, De Kerkadur</stage>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>J'étais prêt à éteindre dans le sang de votre beau Léandre l'affront que j'ai reçu de vous. Il allait expirer sous mes coups. Une nouvelle bien singulière a suspendu ma vengeance. Ce vil aventurier, dont vous vouliez faire un époux, Léandre, est un perfide.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Léandre!</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Il fait le fanfaron, le brave vis-à-vis de vous. Eh bien! Il vous trahit, il vous abandonne, il part cette nuit.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>C'est faux.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>J'en ai donc menti?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Oui, loin de me trahir, Léandre s'est chargé de faire dresser notre contrat de mariage. C'est lui-même qui, dimanche dernier, fit publier nos bans. Jugez s'il se prépare à s'éloigner de moi.</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Attendez-le sous l'orme.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Vous êtes son rival, et vous voulez que je vous en croie?</p>
+          </sp>
+          <sp who="#dekerkadur">
+            <speaker>De kerkadur</speaker>
+            <p>Vous en croirez peut-être votre sœur. Parlez-lui donc vous, je crois que je l'ai préparée assez doucement, achevez de lui faire entendre raison.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Laissez-nous donc seules.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 11</head>
+          <stage type="characters">Élise, Annette</stage>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Est-il donc vrai, ma sœur?</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Que trop, ma sœur, que trop.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Non, non, on t'a trompée sans doute: d'où le sais-tu? Qui te l'a dit?</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Lui-même.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Lui-même?</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>C'est de propre bouche que j'ai su son infâme projet. C'est lui-même qui m'a chargée de vous le déclarer.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Léandre est un perfide!</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Tenez, le voilà, vous pouvez le lui demander.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 12</head>
+          <stage type="characters">Élise, Annette, Léandre, Gilles</stage>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Ah, Léandre! Venez-vous rassurer une amante éperdue? Venez-vous rendre le calme à mon cœur? Si vous saviez ce que viennent de me dire de vous et monsieur de Kerkadur et ma sœur même.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Que vous ont-ils dit?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Que vous n'étiez qu'un perfide, et que vous vous prépariez à me quitter. Puis-je l'être sans toi, tu veux m'abandonner, Léandre?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Que dois-je faire?</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Songez à la sorcière, songez à sa promesse, nous serons rois.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Ah! Prends pitié de ma faiblesse et de mon désespoir. Accorde-moi du moins la huitaine pour me préparer à ton départ.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Au bout de la huitaine, vous m'aimeriez plus fort, je ne vous aimerais pas davantage.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Pars donc, perfide, pars. Va, malheureux! Confie une seconde fois à l'onde trompeuse ton malheureux sort. Puissent les vents en courroux et les flots amoncelés pousser ta barque fragile contre un rocher qui la repoussera en éclats. Mais non, aborde plutôt dans une île peuplée de monstres cruels qui t'attendent sur le rivage pour te dévorer. Puisses-tu voir longtemps l'appareil d'une mort lente et cruelle! C'est alors que tu me regretteras, c'est alors que tu m'appelleras, mais tu appelleras en vain! Fuis donc, malheureux, fuis.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Vous le permettez?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Je l'ordonne, je le veux.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Prenons-la vite au mot.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <stage>tombant évanouie</stage>
+            <p>Annette... je me meurs.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Profitons de sa pâmoison et fuyons.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Ah! Gilles, je commets là sans motif une bien vilaine action. Tout le monde me jettera la pierre.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Éloignons-nous si vite qu'elle ne puisse nous atteindre.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Adieu, Mademoiselle Annette, ayez-en bien soin, ne la quittez pas de vue, je crains tout de son désespoir.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Ne la faites revenir que quand nous serons bien loin.</p>
+          </sp>
+          <sp who="#annette">
+            <speaker>Annette</speaker>
+            <p>Partez et ne vous inquiétez de rien.</p>
+          </sp>
+          <stage>Léandre et Gilles montent dans la chaloupe qui s'éloigne à pleines voiles.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 13</head>
+          <stage type="characters">Élise, Annette</stage>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <stage>regardant autour d'elle et ne voyant plus Léandre</stage>
+            <p>Il est parti, ma sœur?</p>
+          </sp>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <stage type="location">Le théâtre représente un site aride et brûlant couronné de rochers et borné par la mer.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Huascar, sauvages africains</stage>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <l met="8">Vous qui veillez sur notre sort,</l>
+            <l met="12">Qui mettez dans nos cœurs la vengeance et la haine,</l>
+            <l met="8">Dieux du carnage et de la mort,</l>
+            <l met="12">Amenez sur ces bords une victime humaine.</l>
+          </sp>
+          <sp who="#choeurdesafricains">
+            <speaker>Chœur des africains</speaker>
+            <l met="8">Dieux du carnage et de la mort</l>
+            <l met="12">Amenez sur ces bords une victime humaine.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Huascar, Zamor, Africains</stage>
+          <sp who="#zamor">
+            <speaker>Zamor</speaker>
+            <stage>paraissant sur la cime d'un rocher</stage>
+            <p>Amis, le Ciel entend nos cris, j'aperçois sur la mer une chaloupe agitée par les vents et que la vague pousse vers ce rivage.</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Volez, allez-vous en emparer et amenez-nous sans tarder les malheureux que vous pourrez saisir.</p>
+          </sp>
+          <stage>Zamor à la tête d'une troupe d'Africains se précipite vers le rivage.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Huascar, Africains</stage>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Et vous, préparez les feux, la hache et le bûcher. Grands Dieux, nous pourrons donc enfin vous offrir une victime digne de vous, et ma main pourra se baigner encore une fois dans le sang.</p>
+          </sp>
+          <stage>Les Africains, sur une musique sombre et lugubre, élèvent au milieu du théâtre un bûcher, surmonté d'un poteau. Ils préparent également des torches enflammées et présentent à Huascar une hache dont il s'arme.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Huascar, Zamor, Africains</stage>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Huascar, le sang va couler, jamais un jour plus heureux ne s'est levé sur cette île; le Ciel nous envoie deux victimes et ce sont deux blancs. En vain l'un a voulu se défendre, en vain l'autre a cru nous échapper par la fuite, tous deux sont chargés de fers et l'on te les amène.</p>
+          </sp>
+          <stage>Les Africains amènent en dansant Léandre et Gilles enchaînés.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Huascar, Zamor, Léandre, Gilles, Africains</stage>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>C'est fait de nous, ils vont nous manger tout vivants.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Mourrons du moins en hommes.</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Qui vous a conduit dans cette île?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>La tempête.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Et le Diable.</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>D'où venez-vous?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>D'un pays où l'on respecte les malheureux.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Où, si le hasard vous faisait aborder, on vous régalerait à qui mieux mieux, où les femmes mêmes s'empresseraient de vous faire toute sorte de fêtes.</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Quel était votre rang?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Homme et guerrier.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Et moi, son malencontreux écuyer.</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Savez-vous le sort qui vous attend?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Le nombre et la force vous ont rendus maîtres de mes jours, mais tel que soit mon destin, il ne pourra m'épouvanter.</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Tes réponses me plaisent, elles annoncent du courage. Tu méritais de naître noir.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Eh! Qu'importe la couleur, ne sommes-nous pas tous des hommes?</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Tu as raison.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Il commence à s'adoucir.</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Ton courage mérite un traitement différent de celui qui t'attendait. Je rougirais de verser le sang d'un homme aussi brave que toi, pour ton compagnon il m'a l'air d'un lâche, d'un poltron.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Qu'appelez-vous poltron? Apprenez que je ne lui cède ni en valeur, ni en courage: demandez-lui plutôt.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Il fut dans tous les temps mon digne compagnon, et toujours il a partagé sans pâlir mes périls et mes dangers.</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Eh bien! Vous serez traités tous les deux de même.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Il veut nous faire rois.</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Braves compagnons, écoutez-moi. Jusqu'à ce jour, la crainte de n'offrir à nos dieux que des victimes indignes d'eux nous a forcée à répandre leur sang avant de les leur présenter. Leur faiblesse nous faisait appréhender avec raison, que leurs plaintes, et leurs cris, ne troublassent nos sacrifices. Voilà deux blancs plus fermes que tous les malheureux qui sont tombés sont cette hache. Offrons-les tout vivants au premier de nos dieux, à celui qui nous éclaire; ils sont dignes de lui, qu'on les attache à ce poteau, et que la flamme les dévoie.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Le traître!</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Il faut mourir, Gilles.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Eh, Messieurs les moricauds! Qu'importe au soleil la vie d'un malheureux comme moi! Passe encore pour mon maître, c'est un brave qui nargue la mort, mais moi, pauvre haire, je ne suis bon ni à bouillir, ni à rôtir. Engraissez-moi plutôt pendant une douzaine d'année seulement, et vous ferez alors de moi une daube excellente.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Lâche.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Il s'agit bien ici de faire le fanfaron, que ne restiez-vous chez Élise!</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Tais-toi, le Ciel me punit, le Ciel est juste.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Et qu'est-ce que j'ai fait moi?</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Qu'on les attache sur le bûcher.</p>
+          </sp>
+          <stage>Léandre monte avec fermeté sur le bûcher, Gilles s'y fait porter. On les attache tous les deux au poteau.</stage>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <stage>sur le bûcher</stage>
+            <p>Voilà dont le trône qui nous était destiné? Maudite sorcière!</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Soleil, père de la nature, en échange de ce faible tribut que nous t'offrons, donne-nous longtemps ta chaleur et ta lumière.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Élise, Élise, tu es vengée, je meurs en t'adorant.</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Embrasez ce bûcher.</p>
+          </sp>
+          <stage>Dans l'instant où quatre Africains levant leurs torches ardentes sont prêts à mettre le feu au bûcher, Élise, montée sur son char, paraît dans les airs, et s'abaisse avec rapidité sur le bûcher.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">Élise, Huascar, Eamor, Léandre, Gilles, Africains</stage>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Arrêtez barbares, arrêtez.</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Que vois-je? Qui donc es-tu?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Reconnaissez la fille du Soleil et la reine des airs.</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Tombons tous à ses pieds.</p>
+          </sp>
+          <stage>Tous les Africains se prosternent aux pieds d'Élise qui abaisse son globe jusqu'à terre et sort de son char.</stage>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Éteignez ces torches funèbres, renversez ce bûcher, détachez ces illustres prisonniers, j'ai sur eux des desseins que vous devez respecter.</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <p>Obéissez...</p>
+          </sp>
+          <stage>Les Africains détachent Gilles et Léandre, renversent le bûcher et de ses débris forment un trône.</stage>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="8">C'est à vous que je dois la vie.</l>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <l met="12">Que vous êtes arrivez là bien à propos.</l>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <stage>se plaçant sur le trône</stage>
+            <p>Peuples, écoutez-moi. Vos sacrifices sanglants font horreur au Dieu qui donne le jour à toute la nature. Est-ce donc par le spectacle de la mort qu'on peut plaire au Dieu de la vie? Je viens de sa part abolir vos usages, barbares, adoucir vos mœurs, vous donner des lois nouvelles.</p>
+          </sp>
+          <stage>Elle tend la main à Léandre et le fait placer à côté d'elle sur le trône.</stage>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Peuples, voilà mon époux, peuples, voilà votre souverain.</p>
+          </sp>
+          <sp who="#huascar">
+            <speaker>Huascar</speaker>
+            <stage>fléchissant le genou devant Léandre</stage>
+            <p>Sois notre roi!</p>
+          </sp>
+          <sp who="#choeurdesafricains">
+            <speaker>Chœur des africains</speaker>
+            <p>Notre sang est à toi.</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Refuseras-tu ma main?</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Tu me pardonnes, Élise?</p>
+          </sp>
+          <sp who="#elise">
+            <speaker>élise</speaker>
+            <p>Va, l'amante qui pardonne est encore trop heureuse.</p>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <p>Voilà, ma foi, l'horoscope accompli: vous êtes roi et vous épousez une honnête voleuse!</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <stage>s'adressant au globe</stage>
+            <p>Ô! toi qui nous a réunis, à qui nous devons le bonheur, fruit précieux du génie, nous te consacrons à l'amour.</p>
+          </sp>
+          <stage>Fin de l'acte</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

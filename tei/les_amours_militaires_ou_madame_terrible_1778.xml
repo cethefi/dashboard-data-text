@@ -1,0 +1,1865 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="les_amours_militaires_ou_madame_terrible_1778">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Les Amours militaires</title>
+        <title type="sub">Madame Terrible</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Pierre-Louis Moline</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>J. Coignard</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BnF ms. naf. 9277</bibl>
+        <bibl type="intermediarySource">N. Dos Santos Barra</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="mterrible" sex="UNKNOWN">
+            <persName>Madame Terrible</persName>
+          </person>
+          <person xml:id="lise" sex="UNKNOWN">
+            <persName>Lise</persName>
+          </person>
+          <person xml:id="rosette" sex="UNKNOWN">
+            <persName>Rosette</persName>
+          </person>
+          <person xml:id="michaut" sex="UNKNOWN">
+            <persName>Michaut</persName>
+          </person>
+          <person xml:id="lasonde" sex="UNKNOWN">
+            <persName>La Sonde</persName>
+          </person>
+          <person xml:id="renaud" sex="UNKNOWN">
+            <persName>Renaud</persName>
+          </person>
+          <person xml:id="lavictoire" sex="UNKNOWN">
+            <persName>La Victoire</persName>
+          </person>
+          <person xml:id="jeannette" sex="UNKNOWN">
+            <persName>Jeannette</persName>
+          </person>
+          <person xml:id="lavaleur" sex="UNKNOWN">
+            <persName>La Valeur</persName>
+          </person>
+          <person xml:id="choeurdesvillageois" sex="UNKNOWN">
+            <persName>Chœur des villageois</persName>
+          </person>
+          <person xml:id="premierefemme" sex="UNKNOWN">
+            <persName>Première femme</persName>
+          </person>
+          <person xml:id="deuxiemefemme" sex="UNKNOWN">
+            <persName>Deuxième femme</persName>
+          </person>
+          <person xml:id="premierjeannot" sex="UNKNOWN">
+            <persName>Premier Jeannot</persName>
+          </person>
+          <person xml:id="deuxiemejeannot" sex="UNKNOWN">
+            <persName>Deuxième Jeannot</persName>
+          </person>
+          <person xml:id="lapremiereactrice" sex="UNKNOWN">
+            <persName>La première actrice</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Opéra-comique en deux actes et en prose mêlé de vaudevilles, parodie de l'opéra d'Armide</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q192881</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1778">
+        <desc>Représenté à Meaux en Brie, pour la fête de l'Arquebuse, par les élèves de la danse de l'Opéra le 6 septembre 1778</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+    </front>
+    <body>
+      <div type="act">
+        <head>ACTE 1</head>
+        <stage type="location">Le théâtre représente l'entrée d'un village; dans le fond, on voit une petite cabane couverte de chaume attenante au cabaret de Madame Terrible, et, du coté opposé, quelques vieilles masures entourées d'arbres.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Renaud, La Valeur, La Victoire</stage>
+          <stage>Ils sont assis autour d'une table où il y a plusieurs bouteilles et des verres.</stage>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+          </sp>
+          <spGrp who="#renaud">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">Sans un petit brin d'amour,tiré des <title ref="#trois_fermiers">Trois Fermiers</title> ()</desc>
+            </head>
+            <sp who="#renaud">
+              <speaker>Renaud</speaker>
+              <l met="7">Amis, pour nous mettre en train,</l>
+              <l met="7">Goûtons encore ce bon vin,</l>
+              <l met="7">Trinquons et buvons sans fin,</l>
+              <l met="7">Des grivois, c'est le refrain.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <l met="10">Chantons toujours cette liqueur vermeille</l>
+            <l met="8">Qui réjouit notre cerveau...</l>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <l met="10">Rien n'est si doux que le jus de la treille</l>
+            <l met="8">Rien n'est si sot qu'un buveur d'eau.</l>
+          </sp>
+          <spGrp>
+            <caption>Tous trois ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Amis, pour nous mettre en train,</l>
+              <l met="7">Goûtons encore ce bon vin,</l>
+              <l met="7">Trinquons et buvons sans fin,</l>
+              <l met="7">Des grivois, c'est le refrain.</l>
+            </sp>
+          </spGrp>
+          <stage>Ils boivent et ensuite, ils se lèvent de table.</stage>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>Parbleu, je suis charmé de te retrouver ici, mon cher La Valeur, et toi aussi, mon camarade La Victoire.</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>À la vérité, nous ne devions pas arriver si tôt. Nous avons encore cinq jours pour nous rendre au régiment, et crainte de te manquer, nous venons te chercher trois jours d'avance.</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>C'est fort bien fait, mais votre précaution est inutile, car je ne partirai point!</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>Comment! tu ne peux plus t'en dédire. Nous avons donné notre parole à notre caporal de te ramener avec nous.</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>Cela n'est pas possible: vous savez que je me suis battu avec un de nos camarades, qui m'a insulté, et que mon capitaine me menace de la prison.</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>Va, ne crains rien, viens avec nous, et je te réponds de ta liberté.</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>Non, je me trouve bien ici! D'ailleurs, j'ai des affaires qui m'engagent à y rester quelque temps.</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Est-ce que tu serais devenu amoureux, par hasard?</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>Non, pas que je sache, morbleu! Et cette sottise n'a pas encore troublé mon heureuse indifférence. Je n'ai jamais été amoureux que de la gloire... peut-être qu'avec le temps cela pourra changer, mais, jarnombille, jusqu'à présent...</p>
+          </sp>
+          <spGrp who="#renaud">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#bon_soldat">Je suis un bon soldat</title>
+              </desc>
+            </head>
+            <sp who="#renaud">
+              <speaker>Renaud</speaker>
+              <l met="9">Je suis un bon soldat titata</l>
+            </sp>
+            <sp who="#renaud">
+              <speaker>Renaud</speaker>
+              <l met="6">Tout cède à mon courage;</l>
+              <l met="9">J'ai dans mon fourniment patapan</l>
+              <l met="6">De quoi faire ravage.</l>
+            </sp>
+          </spGrp>
+          <stage>Il pousse une botte.</stage>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>Tu n'as que faire de te vanter; nous savons que tu es un de nos plus vaillants soldats.</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>Mais je vois venir ici Madame Terrible, la maîtresse de ce logis. Il est de la bienséance que je l'évite pour le moment. Suivez-moi, mes amis, et allons d'un autre coté.</p>
+          </sp>
+          <stage>Ils sortent.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Madame Terrible, Lise<stage>ainée</stage>, Rosette</stage>
+          <stage>Elles sortent de la maison.</stage>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <stage>suivant Renaud des yeux, à part</stage>
+            <p>Il s'éloigne de moi sitôt que je parais devant lui, et il me fuit comme si j'étais une sorcière ou quelque magicienne... Oh! le perfide!</p>
+          </sp>
+          <sp who="#lise">
+            <speaker>Lise</speaker>
+            <p>Qu'avez-vous donc ma cousine? vous êtes toute rêveuse.</p>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <p>Quel sujet peut vous attrister?</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Hélas!</p>
+          </sp>
+          <sp who="#lise">
+            <speaker>Lise</speaker>
+            <p>Vous ne faites que vous plaindre depuis quelques jours; cependant vous n'avez pas lieu d'être chagrine, car depuis que vous êtes veuve de Monsieur Terrible, on ne voit chez vous que des fêtes, et c'est à qui s'empressera à vous procurer du plaisir.</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Hélas!</p>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+          </sp>
+          <spGrp who="#rosette">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#chacun_a_son_tour">Chacun à son tour</title>
+              </desc>
+            </head>
+            <sp who="#rosette">
+              <speaker>Rosette</speaker>
+              <l met="8">À soupirer qui vous engage,</l>
+              <l met="8">Reprenez votre belle humeur!</l>
+              <l met="8">De tous les garçons du village</l>
+              <l met="8">N'avez-vous pas soumis le cœur?</l>
+              <l met="8">Vous devez être satisfaite,</l>
+              <l met="8">Car on vient vous faire sa cour</l>
+              <l met="9">Chacun à son tour, liron, lirette,</l>
+              <l met="5">Chacun à son tour.</l>
+            </sp>
+          </spGrp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Eh bien! mes enfants, tout cela ne saurait toucher mon cœur. Je sais que tous nos jeunes villageois sont épris de mes charmes, mais je ne triomphe [pas] d'un amant que je déteste, et qui se fait une gloire de me voir avec indifférence. Apprenez que je suis amoureuse d'un soldat... C'est la seule conquête qui puisse flatter mon amour propre.</p>
+          </sp>
+          <sp who="#lise">
+            <speaker>Lise</speaker>
+            <p>Ah! ciel! un soldat, ma cousine?</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Oui, c'est un soldat! en un mot, c'est Renaud. Vous le connaissez, il est dans l'âge aimable où, sans effort, on aime; et cependant, le cruel est insensible pour moi!</p>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+          </sp>
+          <spGrp who="#rosette">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#folia">Folies d'Espagne</title>
+              </desc>
+            </head>
+            <sp who="#rosette">
+              <speaker>Rosette</speaker>
+              <l met="10">Vous m'étonnez...</l>
+            </sp>
+          </spGrp>
+          <sp who="#lise">
+            <speaker>Lise</speaker>
+            <l met="10">Cela n'est pas croyable!</l>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <l met="10">Quoi! cet ingrat méprise vos attraits?</l>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <l met="10">Pour ce guerrier ma haine est implacable,</l>
+            <l met="10">Je l'aime enfin autant que je le hais.</l>
+          </sp>
+          <sp who="#lise">
+            <speaker>Lise</speaker>
+            <p>Vous l'aimez et vous le haïssez? quelle bizarrerie! pour moi, je me déciderais d'un coté ou d'un autre, ou je n'y penserais plus.</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Bon, son image me suit partout! je l'ai encore vu cette nuit en rêvant... ah! qu'il me paraissait aimable! je ne peux y penser sans rougir...</p>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <p>Voici le compère Michaut avec toutes les filles et les garçons du village. Qu'est-ce que cela veut dire? ils viennent tous en dansant!</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Madame Terrible, Lise, Rosette, Michaut, Jeannette<stage>portant des bouquets</stage>, Troupe de villageois</stage>
+          <stage>Ils dansent en rond.</stage>
+          <sp who="#jeannette">
+            <speaker>Jeannette</speaker>
+          </sp>
+          <spGrp who="#jeannette">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">tiré de <title ref="#lucile">Lucile</title> ()</desc>
+            </head>
+            <sp who="#jeannette">
+              <speaker>Jeannette</speaker>
+              <l met="9">À la fête qu'ici l'on apprête</l>
+              <l met="6">Employons-nous gaiement</l>
+              <l met="6">Jusqu'au moindre moment.</l>
+              <l met="9">Les plaisirs font ici leur retraite</l>
+              <l met="6">Et ces lieux charmants</l>
+              <l met="6">Sont fait pour les amants</l>
+            </sp>
+          </spGrp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="9">À la fête ...</l>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Eh bien! qu'est-ce donc, mon cher oncle? d'où vous vient cette gaîté? vous mettez tout le monde en train aujourd'hui! quel en est le sujet?</p>
+          </sp>
+          <sp who="#michaut">
+            <speaker>Michaut</speaker>
+            <p>C'est demain votre fête, ma nièce, et je viens vous présenter ce bouquet. Vous me permettez?</p>
+          </sp>
+          <stage>Il l'embrasse.</stage>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Vous êtes bien galant pour votre âge!</p>
+          </sp>
+          <sp who="#michaut">
+            <speaker>Michaut</speaker>
+            <p>Oh! dame. Le petit divertissement que je vous donne est sans cérémonie. Tout ce qui me fâche c'est qu'aujourd'hui je ne puis plus conduire le branle comme autrefois.</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Vous avez raison, cela fait pitié, et les temps sont bien changés!</p>
+          </sp>
+          <sp who="#michaut">
+            <speaker>Michaut</speaker>
+            <p>Mais, à propos de changement, n'avez-vous pas envie de vous remarier? Savez-vous qu'il est ridicule à votre âge de rester veuve, et, d'honneur, cela m'afflige beaucoup! Mariez-vous bien vite si vous voulez que je meure content.</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Cela ne presse point!</p>
+          </sp>
+          <sp who="#michaut">
+            <speaker>Michaut</speaker>
+            <p>J'ai entendu parler d'un certain Renaud qui est la terreur de ce canton. C'est un brave soldat, d'une famille honnête, et, je crois, qui pourrait vous convenir.</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <stage>avec colère</stage>
+            <p>Que me dites-vous là? sachez que c'est le plus grand de mes ennemis, et si jamais quelqu'un pouvait lui donner sur les oreilles, celui-là serait digne de moi!</p>
+          </sp>
+          <sp who="#michaut">
+            <speaker>Michaut</speaker>
+            <p>Eh! la, la... ma nièce, ne vous emportez point! En attendant que cela arrive, réjouissons-nous d'avance, et célébrons votre fête.</p>
+          </sp>
+          <stage>On danse.</stage>
+          <spGrp>
+            <caption>Michaut, jeannette</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="9">À la fête ...</l>
+            </sp>
+          </spGrp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Mais qui vient ici nous troubler? quoi, c'est toi, La Sonde?</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Madame Terrible, Michaut, Lise, Rosette, Troupe de villageois, La Sonde<stage>ayant un emplâtre sur l'œil et une béquille sur laquelle il se soutient en boitant, deux hommes l'accompagnent</stage>
+          </stage>
+          <sp who="#lasonde">
+            <speaker>La Sonde</speaker>
+            <p>Ah! madame, tout votre cabaret est dans le plus grand désordre! ouf! je n'en puis plus!</p>
+          </sp>
+          <spGrp who="#lasonde">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#trembleurs">Trembleurs</title>
+              </desc>
+            </head>
+            <sp who="#lasonde">
+              <speaker>La Sonde</speaker>
+              <l met="7">Quelle disgrâce cruelle,</l>
+              <l met="7">Pour vous servir avec zèle,</l>
+              <l met="7">Ah! je tremble, je chancelle.</l>
+            </sp>
+          </spGrp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <l met="7">Qu'est-ce donc? expliquez-vous!</l>
+          </sp>
+          <sp who="#lasonde">
+            <speaker>La Sonde</speaker>
+            <l met="7">L'aventure est incroyable,</l>
+            <l met="7">Un soldat impitoyable,</l>
+            <l met="7">Plus fort que Robert le diable,</l>
+            <l met="7">Vient de me rouer de coups.</l>
+          </sp>
+          <sp who="#michaut">
+            <speaker>Michaut</speaker>
+            <p>Ah! le pauvre garçon.</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Quel est donc ce soldat? raconte-moi vite tout ce qu'il vient de se passer.</p>
+          </sp>
+          <sp who="#lasonde">
+            <speaker>La Sonde</speaker>
+            <stage>avec un ton tragique</stage>
+            <p>Je vais, Madame, vous en faire un fidèle récit. Je conduisais vos dindons dans la basse-cour, lorsque deux hommes ont pris querelle en buvant (c'était un rat de cave et un muletier). Je m'avance pour les mettre d'accord, mais aussitôt l'un d'eux jette une bouteille à la tête de l'autre, et cette bouteille va frapper la tête d'un jeune soldat qui passait devant nous. Au même instant ce guerrier plein de courage s'élance sur nous comme un furieux, et se saisissant d'un bâton, nous rosse sans miséricorde. Nous appelons au secours et voilà déjà plus de cinquante personnes qui se battent contre ce guerrier, mais c'est en vain qu'ils veulent résister à sa valeur. Ce seul guerrier, Madame, dans un clin d'œil les met tous en capilotade. Enfin, ils prennent la fuite avec les dindons épouvantés, les autres entrent sans vie sur le champ de bataille, et moi, fort heureusement, je me suis échappé de ce combat avec un œil emporté et une jambe fracassée.</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Il n'y a que Renaud dans le monde capable d'une pareille action.</p>
+          </sp>
+          <sp who="#lasonde">
+            <speaker>La Sonde</speaker>
+            <p>Vous l'avez deviné, Madame, c'est ainsi qu'on nomme ce guerrier.</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Va, mon pauvre La Sonde, console-toi, tu n'en mourras pas pour cette fois-ci, et j'aurai soin de toi. Attends avec patience le dénouement.<stage>À ses cousines.</stage>Allez, vous autres, le faire reposer dans cette cabane jusqu'à nouvel ordre.</p>
+          </sp>
+          <stage>Lise, Rosette et les villageois conduisent La Sonde dans la cabane et reviennent.</stage>
+          <sp who="#michaut">
+            <speaker>Michaut</speaker>
+            <p>Oui, Madame, il est de votre honneur de punir ce soldat de sa témérité.</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Allons le chercher partout, il me paiera cher tout le dégât qu'il vient de me faire.</p>
+          </sp>
+          <spGrp who="#mterrible">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#a_coups_d_pieds_a_coups_d_poings">À coups d'pieds, à coups d'poings</title>
+              </desc>
+            </head>
+            <sp who="#mterrible">
+              <speaker>Madame Terrible</speaker>
+              <l met="8">Qu'il me rebute chaque jour,</l>
+              <l met="8">Et qu'il méprise mon amour,</l>
+              <l met="8">Aisément cela se peut croire</l>
+              <l met="8">Mais qu'il se soit donné les tons</l>
+              <l met="8">De mettre en fuite mes dindons...</l>
+              <p>Et ceci est un peu trop fort, je ne suis pas femme à me laisser manquer, et je le poursuivrai jusqu'au trépas...</p>
+            </sp>
+          </spGrp>
+          <sp who="#michaut">
+            <speaker>Michaut</speaker>
+            <p>Eh bien! ma nièce, suivez-moi, et si je ne vous venge pas tout à l'heure...</p>
+            <l met="5">Je veux être un chien,</l>
+            <l met="6">À coups d'pieds, à coups d'poing</l>
+            <l met="9">Cassons-lui la gueule et la mâchoire!</l>
+          </sp>
+          <stage>Ils répètent tous le même refrain, et entrent tous dans la maison.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Renaud, La Valeur, La Victoire</stage>
+          <stage>Ils entrent par le fond du théâtre du côté de la cabane.</stage>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Mais je ne te conçois point, mon ami! Que diable viens-tu chercher encore ici, après le désastre que tu as fait dans ce logis? Si la maîtresse te rencontre, tu auras beaucoup de peine à t'échapper de ses mains, et tu paieras les pots cassés. D'ailleurs, il y a à craindre pour toi que les charmes de ses beaux yeux ne te fassent oublier tout ce que tu dois à la gloire.</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>Va, ne crains rien, il lui sera malaisé de me prendre dans ses filets, ni d'une façon, ni d'une autre.</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>On dit, cependant, qu'elle a plusieurs sortilèges pour se faire aimer malgré qu'on en ait point envie; et elle a encore le secret de vous rendre amoureux par enchantement.</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <stage>éclatant de rire</stage>
+            <p>Par enchantement? ah! ah! ah! le secret est curieux, cela doit faire un amour bien intéressant.</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>N'importe, je t'en avertis! prends-y garde, et méfie-toi de cette cabaretière. Elle est plus dangereuse que tu ne penses.</p>
+          </sp>
+          <spGrp who="#lavaleur">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#plus_inconstant_que_l_onde_et_le_nuage">Plus inconstant que l'onde est le nuage</title>
+              </desc>
+            </head>
+            <sp who="#lavaleur">
+              <speaker>La Valeur</speaker>
+              <l met="10">C'est un Argus redoutable, intrépide,</l>
+              <l met="10">Et sa magie est fors à redouter.</l>
+              <l met="7">Aussi puissante qu'Armide,</l>
+              <l met="7">Rien ne peut lui résister.</l>
+              <l met="4">Fût-on Alcide,</l>
+              <l met="5">Il faut lui céder.</l>
+              <l met="6">Ami, si tu m'en crois,</l>
+              <l met="8">Que dans ces lieux rien ne t'arrête.</l>
+              <l met="4">Bats en retraite,</l>
+              <l met="7">Ou bien c'en est fait de toi.</l>
+            </sp>
+          </spGrp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+          </sp>
+          <spGrp who="#renaud">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#raretes">Va t'en voir s'ils viennent</title>
+              </desc>
+            </head>
+            <sp who="#renaud">
+              <speaker>Renaud</speaker>
+              <l met="7">Bien obligé de ton soin,</l>
+              <l met="5">Ne sois pas en peine,</l>
+              <l met="7">Je ne puis aller plus loin</l>
+              <l met="5">Car j'ai la migraine.</l>
+              <l met="8">Et va t'en voir s'ils viennent, Jean,</l>
+              <l met="7">Va t'en voir s'ils viennent, Jean.</l>
+            </sp>
+            <sp who="#renaud">
+              <speaker>Renaud</speaker>
+              <p>Je ne sais pas ce que j'ai, mais le vin que nous avons bu ce matin m'a un peu troublé la tête, et je meurs d'envie de dormir.</p>
+            </sp>
+          </spGrp>
+          <stage>Il s'assoit contre une table.</stage>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Eh bien! repose-toi ici! Adieu camarade, nous viendrons te chercher sur la brune.</p>
+          </sp>
+          <stage>Il sort.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">Renaud<stage>seul</stage>
+          </stage>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <stage>i</stage>
+            <p>Ma foi, on a beau dire, cet endroit-ci me parait admirable pour y dormir à son aise. Quelle tranquillité!</p>
+          </sp>
+          <spGrp who="#renaud">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#branle_de_metz">Dans le fond d'une écurie</title>
+              </desc>
+            </head>
+            <sp who="#renaud">
+              <speaker>Renaud</speaker>
+              <l met="7">Oui, ce bosquet de réserve</l>
+              <l met="7">Me parait délicieux,</l>
+              <l met="7">Tout ici ravit mes yeux.</l>
+              <l met="7">Plus j'admire et plus j'observe,</l>
+              <l met="7">Je ne puis quitter ces lieux</l>
+              <l met="7">Plus j'admire et plus j'observe,</l>
+              <l met="7">C'est ici l'heureux séjour</l>
+              <l met="7">De Bacchus et de l'Amour.</l>
+            </sp>
+            <sp who="#renaud">
+              <speaker>Renaud</speaker>
+              <p>Mais je commence à bailler. Allons, en arrive ce qu'il pourra, il faut que je sommeille. Bonsoir la compagnie!</p>
+            </sp>
+          </spGrp>
+          <stage>Il baille.</stage>
+          <stage>Il s'endort.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">Renaud<stage>endormi</stage>, Madame Terrible, Troupe de villageois</stage>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <stage>à part</stage>
+            <p>Enfin, le voilà endormi comme je le désirais.<stage>Aux villageois.</stage>Venez ici, vous autres, et divertissez-vous à présent tant qu'il vous plaira. Je vous préviens que Renaud a le sommeil fort dur, et quelque tapage que vous fassiez, ne craignez point qu'il s'éveille. Je vais chercher un instrument dont j'ai besoin, et je lui prépare un réveil qui ne l'amusera pas. En attendant, dansez autour de lui, et chantez comme des aveugles, et criez comme des sourds.</p>
+          </sp>
+          <stage>Elle sort.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">Renaud<stage>endormi</stage>, Troupe de villageois</stage>
+          <stage>Jeannette, les villageois et les villageoises dansent autour de Renaud, en se tenant par la main.</stage>
+          <spGrp>
+            <caption>Jeannette et le chœur</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="9">À la fête ...</l>
+            </sp>
+          </spGrp>
+          <stage>Ils dansent en rond.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 9</head>
+          <stage type="characters">Madame Terrible, Renaud<stage>endormi</stage>, villageois</stage>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <stage>tenant un grand couteau de cuisine dans sa gaine, aux villageois</stage>
+            <p>C'en est assez, éloignez-vous, et laissez-moi seule.<stage>Ils sortent.</stage>Enfin, il est en ma puissance! Je le tiens, pour le coup, et il ne m'échappera plus... son sommeil favorise ma vengeance...puisqu'il méprise mon amour, soyons impitoyable... mais que dis-je? c'est lui qui a mis en fuite tous mes dindons, il faut que je le tue.</p>
+          </sp>
+          <stage>Elle tire son couteau de cuisine.</stage>
+          <spGrp who="#mterrible">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#derouillons_ma_commere">Dérouillons, ma commère</title>
+              </desc>
+            </head>
+            <sp who="#mterrible">
+              <speaker>Madame Terrible</speaker>
+              <l met="3">Ah! qu'il meure,</l>
+              <l met="3">Tout à l'heure!</l>
+              <l met="6">Malgré-moi, je frémis</l>
+              <l met="7">Hélas! d'où vient que j'en pleure?</l>
+              <l met="3">Ah! qu'il meure</l>
+              <l met="3">Tout à l'heure!</l>
+              <l met="8">Oui, je ne sais plus où j'en suis.</l>
+              <l met="9">Dérouillons, dérouillons, ma commère,</l>
+              <l met="9">Dérouillons, dérouillons nos outils.</l>
+              <p>Frappons, achevons... il est cependant bien aimable, bien gentil, et, ma foi, ce serait grand dommage de le tuer; non, je n'en ai pas le courage, et le couteau m'échappe des mains.</p>
+            </sp>
+          </spGrp>
+          <spGrp who="#mterrible">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#c_est_bien_doux_rosette_est_jeune">C'est bien doux, Rosette est jeune</title>
+              </desc>
+            </head>
+            <sp who="#mterrible">
+              <speaker>Madame Terrible</speaker>
+              <l met="8">Un doux transport vient me saisir,</l>
+              <l met="8">Et malgré moi mon cœur soupire;</l>
+              <l met="8">S'il faut que mon amant expire</l>
+              <l met="8">Ce ne sera que de plaisir.</l>
+              <l met="8">Quand notre amour devient extrême</l>
+              <l met="9">C'est bien dur de percer ce qu'on aime.</l>
+              <p>Que j'ai de plaisir à le voir! et qu'il a bonne grâce à dormir! On croirait que ce jeune guerrier est né seulement pour faire la guerre. Eh bien, on se trompe, il est encore fait pour l'amour! Il faut cependant que je l'enchante pour le mettre à l'épreuve, et quand il sera bien amoureux de moi, je tâcherai de le haïr à mon tour... c'est une pensée admirable... car après tout, quand j'évoquerais ici, ou ailleurs, toutes les furies des Enfers, la Rage, la Haine et toute sa suite, ce qui fournirait à plus d'un auteur un acte d'opéra, tout cela ne saurait m'inspirer une meilleure vengeance pour punir un amant qui méprise mes charmes... Mais il ne s'éveille point, aurait-il envie de dormir d'ici à demain?</p>
+            </sp>
+          </spGrp>
+          <spGrp who="#mterrible">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+              </desc>
+            </head>
+            <sp who="#mterrible">
+              <speaker>Madame Terrible</speaker>
+              <l met="8">Réveille-toi, dormeur aimable,</l>
+              <l met="8">Réveille-toi, car il est jour,</l>
+              <l met="8">Ton sommeil m'est insupportable</l>
+              <l met="8">Ouvre tes yeux au tendre amour.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 10</head>
+          <stage type="characters">Madame Terrible, Renaud<stage>endormi</stage>, Troupe de villageois et de villageoises, Jeannette</stage>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <stage>à part</stage>
+            <p>Allons, il n'y a pas moyen de le réveiller!<stage>Aux villageois.</stage>Accourez ici, vous autres, et venez seconder mes désirs amoureux. Transportez ce guerrier dans le fond du cabaret, et surtout ayez soin de le porter bien légèrement, et transformez-vous en zéphires, s'il est possible, afin de ne point troubler son repos.</p>
+          </sp>
+          <stage>Deux hommes emportent Renaud, et Madame Terrible les accompagne.</stage>
+          <sp who="#jeannette">
+            <speaker>Jeannette</speaker>
+            <stage>et ensuite, le chœur</stage>
+            <l met="9">À la fête......</l>
+          </sp>
+          <stage>Les villageois se retirent en dansant.</stage>
+          <stage>Fin de l'acte</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">La Victoire<stage>portant un fusil</stage>, La Valeur<stage>portant un sabre</stage>
+          </stage>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>Eh! non, jour de Dieu, il n'y a pas de temps à perdre, te dis-je! Suis-moi! Je ne souffrirai pas, morbleu, que notre camarade Renaud s'amuse ici plus longtemps à la bagatelle. Il faut qu'il marche avec nous. Notre parole est donnée et nous le conduirons à notre caporal, mort ou vif! Voilà d'abord son fusil que je lui apporte.</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Et moi, son sabre de bataille.</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+          </sp>
+          <spGrp who="#lavictoire">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#joconde">Joconde</title>
+              </desc>
+            </head>
+            <sp who="#lavictoire">
+              <speaker>La Victoire</speaker>
+              <l met="8">Je vois que dans ce cabaret,</l>
+              <l met="6">Le fier Renaud s'oublie.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <l met="8">Mais il n'a pas tort tout à fait,</l>
+            <l met="6">L'hôtesse est très jolie.</l>
+            <l met="8">Les jeunes filles de ces lieux</l>
+            <l met="6">Ont, je crois, le cœur tendre,</l>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <l met="8">Des charmes dont brillent leurs yeux.</l>
+            <l met="6">Cherchons à nous défendre.</l>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Va, je n'aurai pas grand peine à me faire cette violence. On n'aime jamais qu'une fois dans sa vie, et depuis que j'ai perdu ma chère Rosette, j'ai renoncé à tout autre engagement.</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>C'est tout comme moi, car tu n'ignores point l'amour que j'ai eu pour la petite Lise. Lorsqu'elle retourna à son village, je pensais en perdre la tête. Enfin, n'importe! La gloire me console de son absence. Mais il n'en serait pas de même de notre camarade Renaud. Il n'a jamais été amoureux, lui, il est encore tout neuf sur cet article, et les premières passions sont les plus dangereuses pour un jeune homme qui entre dans le monde.</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Madame Terrible aura beau faire, toutes ses finesses sont cousues avec du fil blanc, et nous enlèverons Renaud malgré elle.</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>Il faut tenir ferme, mon cher La Valeur, et si, pour nous amadouer, elle venait à nous offrir à boire, il faut la refuser sans miséricorde.</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>J'en demeure d'accord.</p>
+          </sp>
+          <spGrp>
+            <caption>Ensemble</caption>
+          </spGrp>
+          <spGrp who="#ensemble">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#palsangue_monsieur_l_cure">Palsangué, Monsieur l'curé</title>
+              </desc>
+            </head>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="8">Redoublons nos soins, privons-nous</l>
+              <l met="7">De cette liqueur aimable.</l>
+              <l met="8">Plus l'enchantement parait doux,</l>
+              <l met="7">Et plus il est redoutable.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>Quand Renaud jettera les yeux sur son fusil, il rougira de sa faiblesse.</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Quand il verra briller son sabre, il sera transporté de joie.</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+          </sp>
+          <spGrp who="#lavictoire">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_m_entendez_bien">Où allez-vous, Monsieur l'abbé</title>
+              </desc>
+            </head>
+            <sp who="#lavictoire">
+              <speaker>La Victoire</speaker>
+              <l met="8">L'hôtesse en vain retient ses pas,</l>
+              <l met="8">Allons l'arracher de ses bras!</l>
+              <l met="6">On cherche à le surprendre...</l>
+            </sp>
+          </spGrp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <l met="2">Eh bien!</l>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <l met="6">On pourrait bien lui prendre...</l>
+            <l met="5">Vous m'entendez bien.</l>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <stage>tirant le sabre du fourreau</stage>
+            <p>Morbleu, la belle chose que la gloire... Quand on est devant l'ennemi... À grand coups de sabre, ha!<stage>Il remet le sabre.</stage>Malgré tout cela, je trouve que l'Amour a bien aussi son mérite, et il ne le cède en rien à la guerre. Par exemple, quand on est auprès d'un minois qui vous enchante... ah! camarade! un siècle de gloire ne vaut pas un moment de plaisir!</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>Allons, viens avec moi, et laisse-là tes fades comparaisons!</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Il n'y a rien qui nous presse. Attends, j'ai encore quelque chose à te dire...</p>
+          </sp>
+          <stage>Ils se parlent tout bas.</stage>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>Eh bien! dépêche-toi!</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">La Valeur, La Victoire, Madame Terrible<stage>dans le lointain</stage>, Rosette, Villageois</stage>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <stage>à Rosette et aux villageois</stage>
+            <p>Voilà les deux camarades de Renaud! Ils viennent le chercher. Allez au devant d'eux, et empêchez-les d'entrer au logis.</p>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <stage>à Madame Terrible</stage>
+            <p>C'est mon cher La Valeur! Allez, soyez tranquille, je vais bien jouer mon rôle.</p>
+          </sp>
+          <stage>Elle met un voile et les villageois l'environnent. Madame Terrible rentre dans la maison.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">La Valeur, La Victoire, Rosette<stage>voilée</stage>, Villageois, Jeannette</stage>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <stage>d'un air impatient, à La Valeur</stage>
+            <p>C'est trop nous amuser! Allons chercher Renaud.</p>
+          </sp>
+          <stage>Dans l'instant qu'ils se retournent, ils sont arrêtés par les villageois et villageoises qui dansent autour d'eux en chantant.</stage>
+          <sp who="#jeannette">
+            <speaker>Jeannette</speaker>
+            <stage>ensuite le chœur</stage>
+            <l met="9">À la fête......</l>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Parbleu, voilà qui est ravissant! Ma foi, vive la gaîté! Allons mes enfants, divertissez-vous! Il me semble que je suis à une noce.</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <stage>entrainant La Valeur</stage>
+            <p>Eh! qu'ils dansent tant qu'ils voudrons, retirons-nous!</p>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <stage>retenant La Victoire</stage>
+            <p>Quoi donc, Monsieur le soldat? Vous voulez déjà nous quitter? Est-ce que les jeunes filles vous font peur?</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <stage>brusquement</stage>
+            <p>Oh, laissez-moi!</p>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <p>Comme vous êtes fier!</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Attends un moment, camarade, elle a un son de voix qui m'intéresse, et je voudrais voir sa figure.</p>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <stage>à La Victoire</stage>
+            <p>Votre ami est plus raisonnable que vous, et je lui conseille de rester avec nous.</p>
+          </sp>
+          <spGrp who="#rosette">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#adieu_paniers">Adieux paniers, [vendanges sont faites]</title>
+              </desc>
+            </head>
+            <sp who="#rosette">
+              <speaker>Rosette</speaker>
+              <l met="8">Voici la charmante retraite</l>
+              <l met="8">Des doux plaisirs et de l'Amour.</l>
+              <l met="8">Mais si l'on quitte ce séjour,</l>
+              <l met="9">Adieux paniers, vendanges sont faites.</l>
+            </sp>
+          </spGrp>
+          <stage>Elle se dévoile.</stage>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Ciel! que vois-je! c'est toi, ma chère Rosette!</p>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <p>Eh oui, mon cher La Valeur! C'est moi même, et toujours aussi fidèle pour toi qu'il est possible de l'être dans un cabaret.</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Ah! quelle heureuse rencontre!</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <stage>d'un air impatient à La Valeur</stage>
+          </sp>
+          <spGrp who="#lavictoire">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#nanon_dormait">Nanon dormait</title>
+              </desc>
+            </head>
+            <sp who="#lavictoire">
+              <speaker>La Victoire</speaker>
+              <l met="4">Allons, allons,</l>
+              <l met="6">Qui te retient encore?</l>
+              <l met="4">Suis-moi, partons!</l>
+            </sp>
+          </spGrp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <l met="6">Je vois ce que j'adore,</l>
+            <l met="6">Je n'en puis plus douter.</l>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <stage>le tirant par le bras</stage>
+            <l met="12">Allons, suis-moi, morbleu! c'est trop nous arrêter!</l>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <stage>revenant auprès de Rosette</stage>
+            <p>Mais dis-moi donc, par quel hasard je te trouve ici?</p>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <p>La chose est fort simple. Madame Terrible est ma cousine, et à présent je demeure chez elle. Le reste serait trop long à te raconter, c'est pourquoi, devine si tu peux!</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Voici un récit un peu laconique, et je n'ai pas le don de deviner. Mais enfin, ma chère Rosette, tu m'aimes donc toujours malgré les rigueurs de l'absence?</p>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <p>Ah, si je t'aime!</p>
+          </sp>
+          <spGrp who="#rosette">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#autre_jour_assis">J'aime une ingrate beauté</title>
+              </desc>
+            </head>
+          </spGrp>
+          <spGrp>
+            <head type="vaudeville-chorus">0</head>
+            <sp who="#rosette">
+              <speaker>Rosette</speaker>
+              <l met="7">Rien n'affaiblira l'amour</l>
+              <l met="7">Que j'ai pour un amant tendre.</l>
+              <l met="7">Il augmente chaque jour,</l>
+              <l met="7">Et je ne puis m'en défendre.</l>
+              <l met="6">Tout comble mon espoir,</l>
+              <l met="6">Je revois ce que j'aime,</l>
+              <l met="6">Du plaisir de te voir,</l>
+              <l met="6">Je fais mon bien suprême.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <stage>avec dépit, à part</stage>
+            <p>Parbleu, je joue-là un plaisant personnage.</p>
+          </sp>
+          <spGrp>
+            <head type="vaudeville-chorus">1</head>
+            <sp who="#rosette">
+              <speaker>Rosette</speaker>
+              <l met="7">Que pourrais-je désirer</l>
+              <l met="7">De plus doux que ta présence?</l>
+              <l met="7">Je ne fais que soupirer</l>
+              <l met="7">Et gémir en ton absence.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <caption>La valeur et rosette<stage>ensemble</stage>
+            </caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="6">Que la plus vive ardeur</l>
+              <l met="6">Dans notre âme renaisse,</l>
+              <l met="6">Jouissons du bonheur</l>
+              <l met="6">De nous aimer sans cesse.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <stage>à part</stage>
+            <p>Ils ne finiront point...<stage>Haut.</stage>Eh bien! Veux-tu venir, ou ne veux-tu point?</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Eh! laisse-moi lui parler encore un instant.</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <stage>à part</stage>
+            <p>Comme il est opiniâtre dans ses amours! Mais je ne vois qu'un seul moyen pour les séparer. Voici de quoi les faire disparaître aussi adroitement qu'à l'Opéra.</p>
+          </sp>
+          <stage>Il met son fusil en joue devant Rosette qui s'enfuit en jetant un cri.</stage>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <stage>s'enfuyant</stage>
+            <p>Ahi! ahi!</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">La Victoire, La Valeur, Villageois</stage>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Ah! mon ami, qu'as-tu fait?</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>Un beau coup de théâtre.</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+          </sp>
+          <spGrp who="#lavaleur">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#folia">Folies d'Espagne</title>
+              </desc>
+            </head>
+            <sp who="#lavaleur">
+              <speaker>La Valeur</speaker>
+              <l met="10">Dieu! Quel malheur! je la vois disparaître</l>
+              <l met="10">Elle s'enfuit, je la perds sans retour.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <l met="10">Viens, suis la gloire, et de ton cœur sois maître!</l>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <l met="10">La gloire cède où commande l'amour.</l>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>Entrons dans le cabaret, et profitons des conseils que notre caporal nous a donnés.</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <stage>à part</stage>
+            <p>Peut-être que je la trouverai sur mes pas...<stage>Haut.</stage>Je te suis sans balancer.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">La Victoire, La Valeur, Troupe de villageois, Lise<stage>voilée</stage>
+          </stage>
+          <sp who="#lise">
+            <speaker>Lise</speaker>
+            <stage>arrêtant La Victoire ainsi que La Valeur</stage>
+          </sp>
+          <spGrp who="#lise">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#comme_vla_qu_est_fait">Comme v'la qu'est fait</title>
+              </desc>
+            </head>
+            <sp who="#lise">
+              <speaker>Lise</speaker>
+              <l met="8">Des environs de ce bocage</l>
+              <l met="8">D'où vient que vous vous détournez?</l>
+              <l met="8">Délassez-vous d'un long voyage</l>
+              <l met="8">Auprès de ces bords fortunés.</l>
+              <l met="8">L'Amour vous appelle au partage</l>
+              <l met="8">Des biens qui nous sont destinés.</l>
+            </sp>
+            <sp who="#lise">
+              <speaker>Lise</speaker>
+              <l met="8">Vous me reconnaîtrez, je gage,</l>
+              <l met="8">Vous allez me voir trait pour trait.</l>
+            </sp>
+          </spGrp>
+          <stage>À La Victoire.</stage>
+          <stage>Elle se dévoile.</stage>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <stage>étonné</stage>
+            <p>Quoi! C'est vous, charmante Lise?</p>
+          </sp>
+          <sp who="#lise">
+            <speaker>Lise</speaker>
+            <p>Eh! C'est vous cher amant? C'est vous que je revois?</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>Ah! Je n'ose en croire mes yeux! Mais par quel heureux destin...</p>
+          </sp>
+          <sp who="#lise">
+            <speaker>Lise</speaker>
+            <stage>l'interrompant</stage>
+            <p>Tenez, mon cher La Victoire, pour vous abréger un ennuyeux récit: je suis la sœur aînée de Rosette, et notre aventure est la même, mais je vous retrouve ici sans le secours d'une magique puissance, et mon cœur est satisfait.</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>Chère Lise, quel bonheur!</p>
+          </sp>
+          <spGrp>
+            <caption>Lise et la victoire<stage>ensemble</stage>
+            </caption>
+          </spGrp>
+          <spGrp who="#ensemble">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">Aimons toujours notre berger,tiré de l'opéra de <title ref="#joconde">Joconde</title> ()</desc>
+            </head>
+            <spGrp rend="braced">
+              <sp who="#ensemble">
+                <speaker>ensemble</speaker>
+                <l met="6">Aimons, aimons toujours</l>
+                <l met="8">Le tendre objet qui sait nous plaire</l>
+                <l met="6">Aimons, aimons toujours</l>
+                <l met="8">Celle qui règne sur nos jours.</l>
+                <l met="8">Celui qui règne sur nos jours.</l>
+              </sp>
+            </spGrp>
+          </spGrp>
+          <stage>Pendant cet air, les villageois dansent en rond.</stage>
+          <sp who="#choeurdesvillageois">
+            <speaker>Chœur des villageois</speaker>
+            <l met="6">Aimez, aimez toujours</l>
+            <l met="8">Le tendre objet......</l>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <stage>éclatant de rire</stage>
+            <p>Ah! ah! ah! Voilà mon rôle doublé à merveille, et je crois que la copie l'emporte encore sur l'original.</p>
+          </sp>
+          <stage>Avec dérision, en riant, à La Victoire.</stage>
+          <spGrp who="#lavaleur">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#nanon_dormait">Nanon dormait</title>
+              </desc>
+            </head>
+            <sp who="#lavaleur">
+              <speaker>La Valeur</speaker>
+              <l met="4">Allons, allons</l>
+              <l met="6">Qui te retient encore?</l>
+              <l met="4">Suis-moi, partons!</l>
+            </sp>
+          </spGrp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <l met="6">Je suis ce que j'adore.</l>
+            <l met="6">Je n'en saurais douter.</l>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <stage>riant toujours</stage>
+            <p>Allons, suis-moi, morbleu! C'est trop nous arrêter!</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>Eh bien, camarade! Va-t-en si tu veux, et ne te gène pas pour moi. Je veux réparer auprès de Lise le temps que j'ai perdu sans la voir.</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <stage>à part</stage>
+            <p>En voici bien une autre... Attends, attends, je vais te rendre l'échange de la bonne façon.</p>
+          </sp>
+          <stage>Il tire son sabre et met en fuite Lise ainsi que les villageois. La Victoire court après elle, et La Valeur les suit en chantant:</stage>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <l met="8">Allez-vous en gens de la noce,</l>
+            <l met="8">Allez-vous en chacun chez vous!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">Renaud, Jeannette, Garçons cabaretiers</stage>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <stage>en habit galonné</stage>
+            <p>Eh! Messieurs de grâce, laissez-moi tranquille! Je n'ai que faire de vous pour m'habiller!</p>
+          </sp>
+          <stage>Plusieurs garçons le tirent par les bras pendant qu'on lui présente un miroir.</stage>
+          <sp who="#jeannette">
+            <speaker>Jeannette</speaker>
+            <stage>à Renaud</stage>
+          </sp>
+          <spGrp who="#jeannette">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_polonaise_contredanse">La Polonaise,<emph>contredanse</emph>
+                </title>
+              </desc>
+            </head>
+            <sp who="#jeannette">
+              <speaker>Jeannette</speaker>
+              <l met="9">Ah! que vous avez bonne façon,</l>
+              <l met="8">Vous voilà paré sur le ton.</l>
+              <l met="9">Ah! que vous avez bonne façon.</l>
+              <l met="8">Ah, Monsieur! regardez-vous donc.</l>
+            </sp>
+          </spGrp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <l met="1">Non!</l>
+            <l met="9">Je suis fort content, mais finissez</l>
+            <l met="5">Car vous m'excédez,</l>
+            <l met="4">Vous m'estropiez,</l>
+            <l met="4">Vous m'étouffez!</l>
+          </sp>
+          <spGrp>
+            <caption>Jeannette et les garçons<stage>ensemble, dansant autour de lui</stage>
+            </caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="9">Ah! que vous avez bonne façon,</l>
+              <l met="8">Vous voilà......</l>
+            </sp>
+          </spGrp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <stage>avec humeur</stage>
+            <l met="1">Non!</l>
+            <l met="8">Allez-vous en à tous les diables!</l>
+          </sp>
+          <stage>Tous les garçons prennent la fuite et tombent les uns sur les autres.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">Renaud<stage>seul</stage>
+          </stage>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <stage>i</stage>
+            <p>Enfin, me voilà débarrassé de ces maroufles! Mais avec tout cela, quand je songe à ma position, je la trouve plaisante et des plus singulières. Un guerrier comme moi, être vêtu de la sorte! Eh! que ne fait-on pas pour l'amour? Hercule a [filé] pour Omphale, et je peux me parer pour plaire à ma charmante maîtresse. Cependant, je ne conçois rien à l'amour extrême que Madame Terrible m'a inspiré. C'est une énigme pour moi comme pour bien d'autres: il faut qu'elle m'ait ensorcelé pendant je dormais.</p>
+          </sp>
+          <spGrp who="#renaud">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vogue_galere">Vogue la galère</title>
+              </desc>
+            </head>
+            <sp who="#renaud">
+              <speaker>Renaud</speaker>
+              <l met="6">Je veux toujours lui plaire,</l>
+              <l met="6">Elle a su me charmer.</l>
+              <l met="6">J'abandonne la guerre</l>
+              <l met="6">Pour le plaisir d'aimer,</l>
+              <l met="6">Et vogue la galère</l>
+              <l met="6">Tant qu'elle pourra voguer.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">Renaud, Madame Terrible</stage>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Ne vous impatientez point mon cher Renaud, mon toutou, mon bijou, mon petit chou. Je ne vous quitte que pour un instant, je vais bientôt revenir.</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <stage>l'arrêtant</stage>
+            <p>Madame Terrible, vous m'allez quitter?</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Un moment. Il faut que je descende au fond de mon caveau pour une affaire très importante. Il faut que je fasse rincer mes bouteilles.</p>
+          </sp>
+          <spGrp who="#mterrible">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#philis_avare">Réveillez-vous, [belle endormie]</title>
+              </desc>
+            </head>
+            <sp who="#mterrible">
+              <speaker>Madame Terrible</speaker>
+              <l met="8">Voyez en quels lieux je vous laisse...</l>
+            </sp>
+          </spGrp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <l met="8">Puis-je rien voir que vos appas?</l>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <l met="8">Les plaisirs vous suivrons sans cesse.</l>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <l met="8">En est-il où vous n'êtes pas?</l>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <stage>à part</stage>
+            <p>Il en tient un peu à ce que je crois. Mais je veux encore l'éprouver tout à fait...<stage>Haut.</stage>Adieu, Renaud.</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>Madame Terrible, vous m'allez quitter?</p>
+          </sp>
+          <spGrp>
+            <head type="melody" subtype="empty_melody">Air vide</head>
+            <sp who="#renaud">
+              <speaker>Renaud</speaker>
+              <l met="11">Quoi, vous partez sans que rien ne vous arrête...</l>
+            </sp>
+          </spGrp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Vous ignorez l'inquiétude cruelle qui me dévore. Apprenez que je suis jalouse de cette gloire que vous chérissiez tant avant que de m'aimer. C'est une rivale fort dangereuse, et je crains toujours qu'elle ne m'enlève votre cœur.</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>Rassurez-vous, belle princesse!</p>
+          </sp>
+          <spGrp who="#renaud">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#a_chacun_son_tour">À chacun son tour</title>
+              </desc>
+            </head>
+            <sp who="#renaud">
+              <speaker>Renaud</speaker>
+              <l met="8">Aujourd'hui ma raison m'éclaire,</l>
+              <l met="8">L'amour est mon premier devoir.</l>
+              <l met="8">Je fais ma gloire de vous plaire,</l>
+              <l met="8">Et tout mon bonheur de vous voir.</l>
+              <l met="10">À vos désirs si j'ai paru contraire,</l>
+              <l met="8">Je suis bien changé dès ce jour;</l>
+              <l met="9">Chacun à son tour, liron, lirette</l>
+              <l met="5">Chacun à son tour.</l>
+            </sp>
+          </spGrp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Cet aveu sincère me transporte de plaisir! Eh bien, je ne vous quitterai plus, et je veux que dès ce jour vous quittiez bravement le service en attendant que je vous achète une charge d'oisif.</p>
+          </sp>
+          <spGrp who="#mterrible">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_magnotte">La Magnotte</title>
+              </desc>
+            </head>
+            <sp who="#mterrible">
+              <speaker>Madame Terrible</speaker>
+              <l met="8">Aimons toujours avec ardeur,</l>
+            </sp>
+          </spGrp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <l met="6">L'Amour nous y convie.</l>
+            <l met="8">Que désormais notre bonheur</l>
+            <l met="6">À chacun fasse envie.</l>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <l met="8">Ah! Si vous m'ôtez votre cœur,</l>
+            <l met="6">Vous m'ôteriez la vie.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>Je perdrais plutôt le jour.</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Non, mon ami, ne perdez ni le jour, ni la nuit. Ne vous désolez pas d'avance. Adieu, je vais apprendre mon bonheur à mon cher oncle.</p>
+          </sp>
+          <spGrp>
+            <head type="melody" subtype="empty_melody">Air vide</head>
+            <sp who="#mterrible">
+              <speaker>Madame Terrible</speaker>
+              <l met="5">Ton cœur et le mien</l>
+              <l met="5">S'accorderont bien.</l>
+              <l met="7">Nous nous marierons dimanche.</l>
+            </sp>
+          </spGrp>
+          <stage>Elle sort.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 9</head>
+          <stage type="characters">Renaud, troupe de villageois<stage>qui arrivent en dansant</stage>, Jeannette, Lise, Rosette</stage>
+          <sp who="#jeannette">
+            <speaker>Jeannette</speaker>
+            <stage>ensuite le chœur</stage>
+            <l met="9">À la fête......</l>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>Eh! que diable, vous dites toujours la même chanson!</p>
+          </sp>
+          <sp who="#jeannette">
+            <speaker>Jeannette</speaker>
+            <p>Monsieur, n'en soyez pas étonné, c'est tout comme à l'Opéra afin de vous donner du plaisir!</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>Je vous en dispense. Quand votre maîtresse n'est point ici, rien ne peut m'amuser.</p>
+          </sp>
+          <sp who="#jeannette">
+            <speaker>Jeannette</speaker>
+            <p>Eh bien! Dansez avec nous, cela dissipera votre mélancolie!</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <stage>brusquement à Jeannette</stage>
+            <p>Non! éloignez-vous de moi!</p>
+          </sp>
+          <stage>Rosette, Lise et les villageois se retirent en groupe sur un coté du théâtre.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 10</head>
+          <stage type="characters">Renaud, Rosette, Lise, Villageois, La Victoire, La Valeur<stage>au fond du théâtre</stage>
+          </stage>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <stage>à part, à La Valeur</stage>
+            <p>Le voici, profitons de ce moment.</p>
+          </sp>
+          <stage>Ils s'approchent de Renaud, l'un lui présente un fusil et l'autre un sabre.</stage>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <stage>se retournant</stage>
+            <p>Ciel!que vois-je? quel éclat frappe mes yeux?</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>Je t'apporte ton fusil.</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Et moi ton sabre.</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>Ah! mes braves camarades! que je suis honteux de paraître ici devant vous!</p>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>Notre caporal te rappelle.</p>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <p>Et notre capitaine te pardonne.</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <stage>faisant un saut de joie</stage>
+            <p>Il me pardonne! Eh bien, mes amis, je pars avec vous, et rien ne peut me retenir! Quittons ces frivoles ornements, et reprenons notre habit militaire, c'est celui qui me convient le mieux.</p>
+          </sp>
+          <stage>Il quitte son habit et prend le fusil et le sabre.</stage>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <p>Allons, ne restons pas ici plus longtemps!</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>C'en est fait, je vous suis.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 11</head>
+          <stage type="characters">Renaud, La Victoire, La Valeur, Rosette, Lise, Jeannette, Villageois, Madame Terrible</stage>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <stage>voyant arriver Madame Terrible</stage>
+            <p>Ah, ma cousine! Accourez vite! Voilà Renaud qui va partir!</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <stage>arrêtant Renaud</stage>
+            <p>Ah! Ciel! arrêtez-vous! est-il vrai? ... Renaud! Non! Je crois que c'est pour plaisanter. Écoutez-moi, parlez! Je veux savoir de votre bouche si vous partez ou non... mais... je suis prête à m'évanouir, approchez-moi une chaise... Eh bien! Renaud, expliquez-vous, et ne me déguisez rien. Allez-vous partir pour tout de bon, ou est-ce pour rire?</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <stage>d'un ton furieux</stage>
+            <p>Je pars.</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <stage>tombant sur sa chaise</stage>
+            <p>Je meurs.</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>Adieu.<stage>Il s'arrête.</stage>Cependant, elle me fait pitié et je sens que je l'aime plus que je ne le pensais... mais n'importe, il faut partir.</p>
+          </sp>
+          <stage>Il sort avec ses camarades.</stage>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <stage>à part, regardant La Valeur</stage>
+            <p>Quelle cruauté!</p>
+          </sp>
+          <sp who="#lise">
+            <speaker>Lise</speaker>
+            <stage>à part, regardant La Victoire</stage>
+            <p>Quelle ingratitude!</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 12</head>
+          <stage type="characters">Madame Terrible, Rosette, Lise, Villageois, Jeannette</stage>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <stage>se levant avec fureur</stage>
+            <p>Il est parti! ... Il est parti! ... Ah, le perfide Renaud! Il me fuit... il me laisse mourante et au désespoir...<stage>D'un ton modéré.</stage>Mais cela suffit... Il me vient un projet éclatant... Oui, m'y voilà bien décidée... Ma maison, mes meubles et tout le cabaret paieront pour son ingratitude.</p>
+          </sp>
+          <spGrp who="#mterrible">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#derouillons_ma_commere">Dérouillons, ma commère</title>
+              </desc>
+            </head>
+            <sp who="#mterrible">
+              <speaker>Madame Terrible</speaker>
+              <l met="3">Ah! j'enrage!</l>
+              <l met="3">Quel outrage!</l>
+              <l met="7">Quelle noire trahison!</l>
+              <l met="7">Je ne me sens plus de rage!</l>
+              <l met="3">Ah! j'enrage!</l>
+              <l met="3">Quel outrage!</l>
+              <l met="8">Sans employer quelques démons</l>
+              <l met="10">Mettons le feu, partout faisons ravage</l>
+              <l met="8">Et brûlons toute la maison.</l>
+              <p>Commençons d'abord par cette cabane.</p>
+            </sp>
+          </spGrp>
+          <stage>Elle va prendre un flambeau, et met le feu à la cabane. La Sonde, qui y était couché, en sort tout épouvanté, et aussitôt Renaud, La Victoire, La Valeur et Michaut arrivent et éteignent le feu. Pendant ce temps, tous les villageois environnent Madame Terrible et La Sonde. Rosette et Lise vont trouver leurs amants.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 13</head>
+          <stage type="characters">Madame Terrible, Renaud, La Valeur, La Victoire, La Sonde, Michaut, Rosette, Lise, Jeannette, Villageois et villageoises</stage>
+          <sp who="#lasonde">
+            <speaker>La Sonde</speaker>
+            <stage>sortant de la cabane, tout effrayé</stage>
+            <p>Ahi! ahi! ahi! au feu! au secours!</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <stage>à La Sonde</stage>
+            <p>Comment? c'est toi qui était là?</p>
+          </sp>
+          <sp who="#lasonde">
+            <speaker>La Sonde</speaker>
+            <p>Eh! oui, de par tous les diables! Vous le saviez bien!</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Ah! Mon pauvre La Sonde, pardonne ma fureur. Tu vois les funestes effets de l'amour et du désespoir!</p>
+          </sp>
+          <sp who="#lasonde">
+            <speaker>La Sonde</speaker>
+            <p>Et contre qui en avez-vous pour mettre le feu à la maison?</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Le perfide Renaud m'a abandonné!</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>Non, Madame, me voici encore.</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <stage>à Renaud</stage>
+            <p>Quoi! C'est vous? Ah! Je vous croyais bien loin.</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>L'excès de votre amour a touché mon cœur. Vous me voyez prêt à vous épouser avant d'aller rejoindre nos drapeaux. Mais c'est à condition que vous consentiez au mariage de vos deux cousines avec mes deux camarades. Je crois que cette catastrophe sera plus heureuse qu'un incendie.</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <stage>se retournant et voyant Rosette qui donne le bras à La Valeur, et Lise à La Victoire</stage>
+            <p>Mais, ils se connaissent donc?</p>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>Sans doute ils se connaissent, et ce n'est pas d'aujourd'hui. On vous contera tout cela. Il s'agit à présent de faire leur bonheur.</p>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <p>Eh! Je ne demande pas mieux. Je suis trop glorieuse de m'allier avec des militaires. Ils sont tous braves comme leurs épées. Je n'ai plus rien à désirer étant l'épouse de Renaud. Allons nous réjouir en attendant, et célébrons ici ce triple mariage.</p>
+          </sp>
+          <stage type="musical_indication">Danse des villageois</stage>
+          <sp who="#jeannette">
+            <speaker>Jeannette</speaker>
+            <stage>seule et ensuite le chœur</stage>
+            <l met="9">À la fête... ...</l>
+          </sp>
+          <stage type="musical_indication">Ballet qui termine la pièce</stage>
+          <spGrp>
+            <head type="vaudeville-chorus">1</head>
+            <sp who="#renaud">
+              <speaker>Renaud</speaker>
+              <l met="5">Ça, marions-nous</l>
+              <l met="7">Ma chère cabaretière;</l>
+              <l met="5">Ça, marions-nous</l>
+              <l met="7">Entre nous, plus de courroux.</l>
+              <l met="5">Parmi nos soldats,</l>
+              <l met="7">Tu seras ma vivandière,</l>
+              <l met="5">Après les combats</l>
+              <l met="7">Nous prendrons tous nos ébats.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <head type="vaudeville-chorus">2</head>
+            <sp who="#mterrible">
+              <speaker>Madame Terrible</speaker>
+              <l met="5">Viens mon cher Renaud,</l>
+              <l met="7">Pour calmer notre colère,</l>
+              <l met="5">Viens mon cher Renaud,</l>
+              <l met="6">Allons boire sans eau.</l>
+              <l met="5">Oui, je suis à toi</l>
+              <l met="7">À la paix comme à la guerre,</l>
+              <l met="5">Donne-moi ta foi</l>
+              <l met="7">Jure de n'être qu'à moi.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <head type="vaudeville-chorus">3</head>
+            <sp who="#renaud">
+              <speaker>Renaud</speaker>
+              <l met="5">Dis par quel juron</l>
+              <l met="7">Tu veux que je t'en assure.</l>
+              <l met="5">Je suis un luron</l>
+              <l met="7">Qui ne dira jamais non.</l>
+            </sp>
+          </spGrp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <l met="5">Mon cher Renaudet,</l>
+            <l met="7">Oui, tu m'aimes, j'en suis sûre,</l>
+            <l met="5">Mais allons au fait,</l>
+            <l met="7">Viens...</l>
+          </sp>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <l met="7">Où donc?</l>
+          </sp>
+          <sp who="#mterrible">
+            <speaker>Madame Terrible</speaker>
+            <l met="7">Au cabaret!</l>
+          </sp>
+          <spGrp>
+            <head type="vaudeville-chorus">4</head>
+            <sp who="#lasonde">
+              <speaker>La Sonde</speaker>
+              <l met="5">Sans être un ballon</l>
+              <l met="7">J'échappe de la fournaise</l>
+              <l met="5">Sans être un ballon</l>
+              <l met="7">J'étais brûlé tout de bon.</l>
+              <l met="5">Car cette maison</l>
+              <l met="7">Allait être un tas de braise.</l>
+              <l met="5">Oui, cette maison</l>
+              <l met="7">Ressemble au fameux ballon.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <head type="vaudeville-chorus">5</head>
+            <sp who="#premierefemme">
+              <speaker>Première femme</speaker>
+              <l met="5">Sans enchantement,</l>
+              <l met="7">Nous avons rempli nos rôles.</l>
+            </sp>
+          </spGrp>
+          <sp who="#deuxiemefemme">
+            <speaker>Deuxième femme</speaker>
+            <l met="5">Sans enchantement,</l>
+            <l met="7">Nous retrouvons nos amours.</l>
+          </sp>
+          <sp who="#lavictoire">
+            <speaker>La Victoire</speaker>
+            <stage>premier soldat</stage>
+            <l met="5">Nous sommes contents</l>
+            <l met="7">Plus d'effets, moins de paroles.</l>
+          </sp>
+          <sp who="#lavaleur">
+            <speaker>La Valeur</speaker>
+            <stage>deuxième soldat</stage>
+            <l met="5">Nous sommes contents</l>
+            <l met="7">Que chacun en dise autant.</l>
+          </sp>
+          <spGrp>
+            <head type="vaudeville-chorus">6</head>
+            <sp who="#premierjeannot">
+              <speaker>Premier Jeannot</speaker>
+              <l met="4">Ils sont contents,</l>
+              <l met="7">Je le crois, par la morguenne!</l>
+              <l met="5">Sais-tu bien pourquoi?</l>
+            </sp>
+          </spGrp>
+          <sp who="#deuxiemejeannot">
+            <speaker>Deuxième Jeannot</speaker>
+            <l met="7">C'est qu'ils vont au cabaret!</l>
+          </sp>
+          <sp who="#premierjeannot">
+            <speaker>Premier Jeannot</speaker>
+            <l met="6">Eh! non, ce n'est pas ça,</l>
+            <l met="8">C'est que chacun a sa chacune.</l>
+          </sp>
+          <sp who="#deuxiemejeannot">
+            <speaker>Deuxième Jeannot</speaker>
+            <l met="5">T'as, pardié, raison,</l>
+            <l met="10">Choisissons aussi un petit trognon!</l>
+            <l met="5">Ça rime ça, eh!</l>
+          </sp>
+          <sp who="#premierjeannot">
+            <speaker>Premier Jeannot</speaker>
+            <l met="9">Oh, oui! ça rime mais c'est bien long.</l>
+          </sp>
+          <sp who="#deuxiemejeannot">
+            <speaker>Deuxième Jeannot</speaker>
+            <l met="9">En fait de cabaret, plus c'est long...</l>
+          </sp>
+          <sp who="#premierjeannot">
+            <speaker>Premier Jeannot</speaker>
+            <l met="6">Et en fait d'amour? ... eh!</l>
+          </sp>
+          <stage>Il rit.<note>Si la dernière réponse du Jeannot paraissait effaroucher les spectateurs ou le censeur, il pourrait faire entendre le mot sans le prononcer, et dire: « Et en fait...Eh! ... »<emph>Il rit</emph>.</note>
+          </stage>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <l met="5">Taisez-vous vous autres!</l>
+          </sp>
+          <spGrp>
+            <head type="vaudeville-chorus">7</head>
+            <sp who="#lapremiereactrice">
+              <speaker>La première actrice</speaker>
+              <stage>au public</stage>
+              <l met="5">Lorsqu'auprès de nous,</l>
+              <l met="7">L'indulgence vous appelle,</l>
+              <l met="5">Nous aspirons tous</l>
+              <l met="7">À satisfaire vos goûts.</l>
+              <l met="5">Nos associés</l>
+              <l met="7">Pour leurs efforts et leur zèle</l>
+              <l met="5">Seront bien payés</l>
+              <l met="7">Si vous les applaudissez.</l>
+            </sp>
+          </spGrp>
+          <stage>Fin</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

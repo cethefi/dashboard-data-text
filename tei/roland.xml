@@ -1,0 +1,3077 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="roland">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Roland</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Charles-François Pannard [et Antonio Jean Sticotti]</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>J. Coignard</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">
+          <emph>Théâtre et œuvres diverses de M. Pannard</emph>, t. 1, Paris, Duchesne, 1763</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="angelique" sex="UNKNOWN">
+            <persName>Angélique</persName>
+          </person>
+          <person xml:id="themire" sex="UNKNOWN">
+            <persName>Thémire</persName>
+          </person>
+          <person xml:id="medor" sex="UNKNOWN">
+            <persName>Médor</persName>
+          </person>
+          <person xml:id="roland" sex="UNKNOWN">
+            <persName>Roland</persName>
+          </person>
+          <person xml:id="astolphe" sex="UNKNOWN">
+            <persName>Astolphe</persName>
+          </person>
+          <person xml:id="zeliante" sex="UNKNOWN">
+            <persName>Zéliante</persName>
+          </person>
+          <person xml:id="coridon" sex="UNKNOWN">
+            <persName>Coridon</persName>
+          </person>
+          <person xml:id="belise" sex="UNKNOWN">
+            <persName>Bélise</persName>
+          </person>
+          <person xml:id="thersandre" sex="UNKNOWN">
+            <persName>Thersandre</persName>
+          </person>
+          <person xml:id="troupe_d_insulaires_de_bergers_et_de_bergeres" sex="UNKNOWN">
+            <persName>Troupe d'insulaires, de bergers et de bergères</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1744">
+        <desc>Représentée pour la première fois par les Comédiens Italiens ordinaires du Roi le 20 janvier 1744</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#angelique">Angélique</role>
+          <roleDesc>reine</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#themire">Thémire</role>
+          <roleDesc>confidente d'Angélique</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#medor">Médor</role>
+          <roleDesc>aimé d'Angélique</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#roland">Roland</role>
+          <roleDesc>guerrier</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#astolphe">Astolphe</role>
+          <roleDesc>confident de Roland</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#zeliante">Zéliante</role>
+        </castItem>
+        <castItem>
+          <role ana="#coridon">Coridon</role>
+          <roleDesc>nouveau marié</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#belise">Bélise</role>
+          <roleDesc>jeune mariée</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#thersandre">Thersandre</role>
+          <roleDesc>père de Bélise</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_d_insulaires_de_bergers_et_de_bergeres">Troupe d'insulaires, de bergers et de bergères</role>
+        </castItem>
+      </castList>
+      <pb n="3"/>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Angélique<stage>seule</stage>
+        </stage>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mon_joli_petit_coeur">Mon joli petit cœur</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="8">J'éprouve une funeste guerre,</l>
+            <l met="8">Elle se passe dans mon cœur;</l>
+            <l met="8">Tantôt il me dit d'être fière,</l>
+            <l met="8">Tantôt il me nomme un vainqueur.</l>
+            <l met="8">Eh! quoi donc, toujours se contraindre!</l>
+            <l met="8">Faut-il rendre, ou faut-il garder</l>
+            <l met="8">Mon joli cœur, mon petit cœur,</l>
+            <l met="10">Mon joli petit cœur? Qu'on est à plaindre,</l>
+            <l met="8">Quand on ne sait pas s'accorder!</l>
+          </sp>
+        </spGrp>
+        <pb n="4"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Angélique, Thémire</stage>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+        </sp>
+        <spGrp who="#themire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_masque_tombe">Le masque tombe</title>
+            </desc>
+          </head>
+          <sp who="#themire">
+            <speaker>Thémire</speaker>
+            <l met="10">Roland vous va faire un présent fort leste.</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="10">Je n'en veux point.</l>
+        </sp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+          <l met="10">Parlez-vous tout de bon?</l>
+          <l met="10">Toutes les fois que l'on vous fait un don,</l>
+          <l met="10">Vous vous fâchez, mais le présent vous reste.</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_ne_bois_jamais_qu_un_coup">Je ne bois jamais qu'un coup</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="7">Ah! que Médor a d'appas!</l>
+          </sp>
+        </spGrp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+          <l met="7">À quoi rêvez-vous, Madame?</l>
+          <l met="7">Roland, que l'amour enflamme,</l>
+          <l met="7">Touche-t-il enfin votre âme?</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="7">Eh! quoi, tu ne m'entends pas!</l>
+        </sp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+          <l met="7">Répondez-moi sans emblème.</l>
+          <l met="7">C'est Médor?</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="7">Oui, c'est lui-même,</l>
+          <l met="7">Thémire,<stage type="bis">bis</stage>c'est lui que j'aime.</l>
+          <l met="7">Ah! que Médor a d'appas!</l>
+        </sp>
+        <pb n="5"/>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+        </sp>
+        <spGrp who="#themire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_amour_peche_en_eau_trouble">L'Amour pêche en eau trouble</title>
+            </desc>
+          </head>
+          <sp who="#themire">
+            <speaker>Thémire</speaker>
+            <l met="6">Cet amour-là me passe;</l>
+            <l met="6">Non, je n'y comprends rien.</l>
+            <l met="6">Ce galant à la glace</l>
+            <l met="6">N'a pas un sol de bien.</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="6">Pauvreté n'est pas vice.</l>
+        </sp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+          <l met="6">Vous refusez des Rois,</l>
+          <l met="8">Et vous oseriez faire choix</l>
+          <l met="6">D'un cadet de milice!</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_asthmatique">L'asthmatique</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="7">Quoiqu'il n'soit pas gentilhomme,</l>
+            <l met="4">J'l'aime tout comme</l>
+            <l met="4">S'il était Prince.</l>
+            <l met="7">Quoiqu'il n'soit pas gentilhomme,</l>
+            <l met="4">J'l'aime tout comme</l>
+            <l met="4">S'il était Roi.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#comment_monsieur_votre_epoux">Comment, monsieur votre époux</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="7">Je l'ai vu prêt à mourir.</l>
+            <l met="5">Quand tout l'abandonne,</l>
+            <l met="7">J'ai pris soin de le guérir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+          <l met="5">Que vous êtes bonne!<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <pb n="6"/>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_autre_jour_m_en_revenant_de_vendange">L'autre jour, m'en revenant de vendange</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="8">Médor a sût blesser mon cœur.</l>
+            <l met="6">Apprends quelle est ma peine;</l>
+            <l met="8">J'ai senti naître ma langueur,</l>
+            <l met="6">En guérissant la sienne.</l>
+            <l met="8">Et ce n'est point, en vérité,</l>
+            <l met="6">Un amour de passade;</l>
+            <l met="8">Il est en fort bonne santé,</l>
+            <l met="6">Et mon cœur est malade.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#filles_montpellier">Les filles de Montpellier</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="7">Je veux le fuir avec soin,</l>
+            <l met="7">Quoique mon cœur le désire.</l>
+            <l met="7">De ton secours j'ai besoin.</l>
+          </sp>
+        </spGrp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+          <l met="7">Il vient, fuyez!</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="7">Ah! Thémire,</l>
+          <l met="3">Aïe, aïe, aïe,</l>
+          <l met="5">Ma prudence expire,</l>
+          <l met="5">Je n'irai pas loin.</l>
+        </sp>
+        <pb n="7"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Médor, Angélique et Thémire<stage>un peu éloignées</stage>
+        </stage>
+        <sp who="#medor">
+          <speaker>Médor</speaker>
+        </sp>
+        <spGrp who="#medor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jamais_la_nuit">Jamais la nuit</title>
+            </desc>
+          </head>
+          <sp who="#medor">
+            <speaker>Médor</speaker>
+            <l met="8">Peut-on aimer sans espérance?</l>
+            <l met="12">J'aime une Reine, hélas! elle fait mon tourment.</l>
+            <l met="12">Pour elle cent rivaux ont brûlé vainement.</l>
+            <l met="12">Puis-je oublier son rang, son pouvoir, ma naissance?</l>
+            <l met="8">Dieu d'amour, attendris son cœur;</l>
+            <l met="10">Tu dois payer une flamme parfaite;</l>
+            <l met="10">Heureux l'instant où l'amant est vainqueur!</l>
+            <l met="12">Que ces moments sont doux! ah! que je les souhaite!</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#medor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">De tous les capucins du monde</title>
+            </desc>
+          </head>
+          <sp who="#medor">
+            <speaker>Médor</speaker>
+            <l met="8">Peu secondé de la fortune</l>
+            <l met="8">Mon amour sans doute importune.</l>
+            <l met="8">Quand on n'est pas riche en aimant,</l>
+            <l met="8">On n'a qu'un timide langage.</l>
+            <l met="8">Ah! si j'étais bien opulent,</l>
+            <l met="8">Je serais plus hardi qu'un page.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#medor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Tout cela m'est indifférent</title>
+            </desc>
+          </head>
+          <sp who="#medor">
+            <speaker>Médor</speaker>
+            <l met="8">On vous apporte dans ces lieux</l>
+            <l met="8">De Roland le don précieux.</l>
+            <l met="8">C'est un héros, grand, magnifique;</l>
+            <l met="8">Il se déclare hautement.</l>
+            <l met="8">Il fait sonner sa rhétorique.</l>
+            <l met="8">Cela n'est pas indifférent.</l>
+          </sp>
+        </spGrp>
+        <pb n="8"/>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reviendrai_demain">Je ferai mon devoir</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="8">Il a beau vouloir m'en conter,</l>
+            <l met="6">J'ai soin de l'éviter.<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Sur vous, Médor, puis-je savoir</l>
+            <l met="6">Si j'ai quelque pouvoir?<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#medor">
+          <speaker>Médor</speaker>
+        </sp>
+        <spGrp who="#medor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_les_bras_de_ce_qu_on_aime">Dans les bras de ce qu'on aime</title>
+            </desc>
+          </head>
+          <sp who="#medor">
+            <speaker>Médor</speaker>
+            <l met="7">Sans vous je serais, ma Reine,</l>
+            <l met="7">Dans les horreurs du trépas.</l>
+            <l met="7">Pour servir ma Souveraine</l>
+            <l met="7">Mon sang ne suffirait pas.</l>
+            <l met="7">Si je pouvais le répandre,</l>
+            <l met="7">Ah! que mon sort serait doux</l>
+            <l met="7">De pouvoir enfin vous rendre</l>
+            <l met="7">Un bien que je tiens de vous!</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#partez_d_abord_avec_audace">Partez d'abord avec audace</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="5">Pourrais-je, sans honte,</l>
+            <l met="5">Songer à vous voir?</l>
+          </sp>
+        </spGrp>
+        <sp who="#medor">
+          <speaker>Médor</speaker>
+          <l met="5">Ce n'est pas mon compte.</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="5">Adieu donc, bon soir.</l>
+          <l met="8">Partez, Médor.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <sp who="#medor">
+          <speaker>Médor</speaker>
+          <l met="8">Ce trait m'étonne.</l>
+        </sp>
+        <pb n="9"/>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="8">Partez, Médor,<stage type="bis">bis</stage>sans différer.</l>
+          <l met="5">L'honneur nous ordonne</l>
+          <l met="5">De nous séparer.</l>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#contre_mon_gre">Contre mon gré, je chéris l'eau</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="8">Comptez sur ma protection,</l>
+            <l met="8">Même sur une pension;</l>
+            <l met="8">Choisissez où vous voulez vivre,</l>
+            <l met="8">J'aurai soin de votre entretien.</l>
+          </sp>
+        </spGrp>
+        <sp who="#medor">
+          <speaker>Médor</speaker>
+          <l met="8">Je meurs, si je ne puis vous suivre.</l>
+          <l met="8">Qui meurt n'a plus besoin de rien.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Angélique, Thémire</stage>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#voyageur_que_l_amour_guide">Voyageur que l'Amour guide</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="7">Le pauvre enfant! comme il m'aime!</l>
+            <l met="7">Thémire, qu'il doit souffrir!</l>
+            <l met="7">Dans son désespoir extrême,</l>
+            <l met="7">Je crains qu'il n'aille mourir.</l>
+            <l met="7">Moi qui l'aime et qui l'estime,</l>
+            <l met="7">Y pourrais-je consentir?</l>
+          </sp>
+        </spGrp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+          <l met="7">Bon! ce n'est que pour la frime</l>
+          <l met="7">Que vous l'avez fait partir.</l>
+        </sp>
+        <pb n="10"/>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#comment_faire">Comment faire</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="8">S'il faut que je cède à l'Amour,</l>
+            <l met="8">Je mourrai de honte en ce jour.</l>
+            <l met="8">Médor, pourquoi m'as-tu su plaire?</l>
+            <l met="8">S'il faut te bannir de mon cœur,</l>
+            <l met="8">J'en pourrai mourir de douleur:</l>
+            <l met="3">Comment faire?</l>
+          </sp>
+        </spGrp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+        </sp>
+        <spGrp who="#themire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_ne_faut_point_mettre_a_rancon">Il ne faut point mettre à rançon</title>
+            </desc>
+          </head>
+          <sp who="#themire">
+            <speaker>Thémire</speaker>
+            <l met="8">Fuyez, oubliez cet amant.</l>
+            <l met="8">Pour vous, je crains que l'on n'en glose.</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="8">Tu devrais te taire un moment,</l>
+          <l met="8">Tu dis toujours la même chose.</l>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_ainsi_comme">Tout ainsi comme</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="4">Cours, qu'il revienne...</l>
+            <l met="6">Vas-y donc... n'y vas pas.</l>
+            <l met="4">Qu'on le ramène...</l>
+            <l met="6">Si pourtant... mais hélas!</l>
+            <l met="4">Attends... quelle peine!</l>
+            <l met="6">Je veux... je ne veux pas.</l>
+          </sp>
+        </spGrp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+        </sp>
+        <spGrp who="#themire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ciel_benisse_besogne">Le ciel bénisse la besogne</title>
+            </desc>
+          </head>
+          <sp who="#themire">
+            <speaker>Thémire</speaker>
+            <l met="8">J'entends déjà des instruments,</l>
+            <l met="8">Reprenez donc votre bon sens.</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="8">J'ai bien assez mal à la tête,</l>
+          <l met="8">Sans l'augmenter pas une fête.</l>
+        </sp>
+        <pb n="11"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Angélique, Thémire, Zéliante, Troupe d'insulaires orientaux<stage>dont l'un porte un perroquet attaché avec une chaine d'or</stage>
+        </stage>
+        <sp who="#zeliante">
+          <speaker>Zéliante</speaker>
+        </sp>
+        <spGrp who="#zeliante">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_faites_vous_marguerite">Que faites-vous, Marguerite</title>
+            </desc>
+          </head>
+          <sp who="#zeliante">
+            <speaker>Zéliante</speaker>
+            <l met="7">Par des façons inconnues,</l>
+            <l met="7">Charmés de nous signaler,</l>
+            <l met="7">Nous apportons des massues,</l>
+            <l met="7">Afin de vous régaler.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#zeliante">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra</desc>
+          </head>
+          <sp who="#zeliante">
+            <speaker>Zéliante</speaker>
+            <l met="12">Au généreux Roland je dois ma délivrance;</l>
+            <l met="10">D'un charme affreux sa valeur m'a sauvé.</l>
+            <l met="10">Il n'a voulu de ma reconnaissance</l>
+            <l met="10">Que ce présent qu'il vous a réservé.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#zeliante">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#du_bout_du_monde">Du bout du monde</title>
+            </desc>
+          </head>
+          <sp who="#zeliante">
+            <speaker>Zéliante</speaker>
+            <l met="8">C'est un oiseau de Saint-Domingue.</l>
+            <l met="8">Roland, qui partout se distingue,</l>
+            <l met="8">Nous a chargés de vous l'offrir.</l>
+            <l met="5">Sur le sein de l'onde</l>
+            <l met="5">On l'a fait venir</l>
+            <l met="8">Du bout, du bout, du bout du monde.</l>
+          </sp>
+        </spGrp>
+        <pb n="12"/>
+        <spGrp who="#zeliante">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra</desc>
+          </head>
+          <sp who="#zeliante">
+            <speaker>Zéliante</speaker>
+            <l met="7">Recevez, charmante Reine,</l>
+            <l met="7">Recevez avec bonté,</l>
+            <l met="10">Cet oiseau par mes sauvages porté.</l>
+            <l met="8">À la plus douce liberté</l>
+            <l met="10">Vous le verrez préférer votre chaine.</l>
+            <l met="7">Recevez, ...</l>
+          </sp>
+        </spGrp>
+        <stage>On danse.</stage>
+        <spGrp who="#zeliante">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#comme_un_oiseau">Comme un oiseau</title>
+            </desc>
+          </head>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">1</head>
+          <sp who="#zeliante">
+            <speaker>Zéliante</speaker>
+            <l met="8">De l'amour qui touche votre âme</l>
+            <l met="8">Voulez-vous voir durer la flamme</l>
+            <l met="4">Jusqu'au tombeau?</l>
+            <l met="8">Qu'il soit toujours dans l'esclavage,</l>
+            <l met="8">Si jamais vous ouvrez la cage,</l>
+            <l met="4">Adieu l'oiseau.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">2</head>
+          <sp who="#zeliante">
+            <speaker>Zéliante</speaker>
+            <l met="8">Si l'amour me trouve cruelle,</l>
+            <l met="8">C'est qu'il n'est pas aussi fidèle</l>
+            <l met="4">Qu'il parait beau.</l>
+            <l met="8">Son inconstance me désole:</l>
+            <l met="8">Sitôt qu'on le flatte, il s'envole</l>
+            <l met="4">Comme un oiseau.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">3</head>
+          <sp who="#zeliante">
+            <speaker>Zéliante</speaker>
+            <l met="8">Au dieu Plutus tout est possible,</l>
+            <l met="8">Rien n'est tel, pour rendre sensible</l>
+            <l met="4">Qu'un bon cadeau.</l>
+            <l met="8">Par cette glu, la plus ingrate</l>
+            <l met="8">Se prend aisément par la patte,</l>
+            <l met="4">Comme un oiseau.</l>
+          </sp>
+        </spGrp>
+        <pb n="13"/>
+        <spGrp>
+          <head type="vaudeville-chorus">4</head>
+          <sp who="#zeliante">
+            <speaker>Zéliante</speaker>
+            <l met="8">Qu'ils savent bien vider la poche,</l>
+            <l met="8">Ceux qui montrent de la basoche</l>
+            <l met="4">Dans le barreau.</l>
+            <l met="8">Le procureur le moins habile,</l>
+            <l met="8">Pour voler est bientôt agile,</l>
+            <l met="4">Comme un oiseau.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">5</head>
+          <sp who="#zeliante">
+            <speaker>Zéliante</speaker>
+            <l met="8">Lorsqu'un riche faquin s'étale</l>
+            <l met="8">Dans la grande et superbe salle</l>
+            <l met="4">De son château,</l>
+            <l met="8">Croit-il en valoir d'avantage?</l>
+            <l met="8">Point du tout: ce n'est pas la cage</l>
+            <l met="4">Qui fait l'oiseau.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">6</head>
+          <sp who="#zeliante">
+            <speaker>Zéliante</speaker>
+            <l met="8">Près d'un mari brusque et sauvage,</l>
+            <l met="8">Mettons la douceur en usage,</l>
+            <l met="4">Rien n'est si beau.</l>
+            <l met="8">Des soins flatteurs, un doux langage</l>
+            <l met="8">L'apprivoiseront dans sa cage,</l>
+            <l met="4">Comme un oiseau.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">7</head>
+          <sp who="#zeliante">
+            <speaker>Zéliante</speaker>
+            <l met="8">Un jour la gentille fauvette</l>
+            <l met="8">Ayant approuvé l'amourette</l>
+            <l met="4">D'un vieux corbeau,</l>
+            <l met="8">Se disposait à conclure.</l>
+            <l met="8">Par malheur pour lui, la future,</l>
+            <l met="4">Vit un moineau.</l>
+          </sp>
+        </spGrp>
+        <pb n="14"/>
+        <spGrp>
+          <head type="vaudeville-chorus">8</head>
+          <sp who="#zeliante">
+            <speaker>Zéliante</speaker>
+            <l met="8">Messieurs, ayez quelque indulgence,</l>
+            <l met="8">Soutenez par votre préférence</l>
+            <l met="4">L'acte nouveau.</l>
+            <l met="8">Sans vous, notre destin chancèle,</l>
+            <l met="8">Et l'on nous voit battre de l'aile,</l>
+            <l met="4">Comme un oiseau.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="location">Le théâtre représente la fontaine de l'amour dans un bois.</stage>
+        <stage type="characters">Angélique, Thémire</stage>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+        </sp>
+        <spGrp who="#themire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#robin_ture_lure_lure">Robin turelure</title>
+            </desc>
+          </head>
+          <sp who="#themire">
+            <speaker>Thémire</speaker>
+            <l met="7">Fuyez ces bois dangereux,</l>
+            <l met="7">Car on dira, je vous jure,</l>
+            <l met="7">Qu'Angélique en ces lieux</l>
+            <l met="3">Turelure</l>
+            <l met="7">Ne cherche pas la verdure,</l>
+            <l met="7">Robin turelure lure.</l>
+          </sp>
+        </spGrp>
+        <pb n="15"/>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_triolets">Les Triolets</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="8">À la fontaine de l'amour</l>
+            <l met="8">Un charme séducteur m'entraine.</l>
+            <l met="8">Tout chemin me mène en ce jour</l>
+            <l met="8">À la fontaine de l'amour.</l>
+            <l met="8">J'ai beau chercher un long détour,</l>
+            <l met="8">Un je-ne-sais-quoi m'y ramène.</l>
+            <l met="8">À la fontaine de l'amour</l>
+            <l met="8">Un charme séducteur m'entraine.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Roland, Angélique, Thémire</stage>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#belle_brune">Belle Brune</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="7">Angélique! Angélique!</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="7">Servons-nous pour l'éviter,</l>
+          <l met="7">De notre bague magique.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="7">Angélique! Angélique!</l>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_ne_vous_ai_vu">Je ne vous ai vu</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="11">Je ne vous ai vu qu'un seul petit moment.</l>
+            <l met="10">Vous me fuyez, et je ne sais comment.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#diogene_fameux">Le fameux Diogène</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="6">Vainement je l'appelle.</l>
+            <l met="6">Pourquoi se cache-t-elle?</l>
+            <l met="6">L'ai-je donc mérité?</l>
+            <l met="6">J'en ai trop fait, Thémire,</l>
+            <l met="6">Et j'ai honte de dire</l>
+            <l met="6">Ce qu'elle m'a coûté.</l>
+          </sp>
+        </spGrp>
+        <pb n="16"/>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#passant_sur_le_pont_neuf">Passant sur le Pont-Neuf</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="6">J'ai trahi mon devoir,</l>
+            <l met="6">Pour suivre cette Reine.</l>
+            <l met="6">Et j'ai l'affront de voir</l>
+            <l met="6">Que ma tendresse est vaine.</l>
+            <l met="4">Belle inhumaine,</l>
+            <l met="8">Quand sous vos lois l'amour m'enchaine,</l>
+            <l met="12">Quel barbare plaisir trouvez-vous dans ma peine?</l>
+          </sp>
+        </spGrp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+        </sp>
+        <spGrp who="#themire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#feuillantines">Les Feuillantines</title>
+            </desc>
+          </head>
+          <sp who="#themire">
+            <speaker>Thémire</speaker>
+            <l met="7">Pourquoi donc criez-vous tant?</l>
+            <l met="3">Oh! vraiment</l>
+            <l met="7">On peut dire que Roland,</l>
+            <l met="7">Près de l'objet qui l'engage,</l>
+            <l met="10">Fait un gen, fait un gentil personnage.</l>
+          </sp>
+        </spGrp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fanfare_de_choisy">Fanfare de Choisy</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="7">Je devrais par de hauts faits</l>
+            <l met="7">Tenter les plus beaux succès,</l>
+            <l met="7">Et je vais par mes regrets</l>
+            <l met="7">Des forêts troubler la paix.</l>
+            <l met="7">Dieu d'amour, ah! que tes traits</l>
+            <l met="7">Font de terribles effets!</l>
+          </sp>
+        </spGrp>
+        <pb n="17"/>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mais_le_soleil_n_est_pas_mort">Mais le soleil n'est pas mort</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="7">Je mériterais le blâme</l>
+            <l met="7">Par trop de fidélité;</l>
+            <l met="7">S'en est fait, j'éteins ma flamme.</l>
+            <l met="7">Heureuse la cruauté</l>
+            <l met="7">Qui rend la paix à mon âme,</l>
+            <l met="7">Et me rend la liberté!</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_croyais_que_ma_flamme">Je croyais que ma flamme</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="6">Mais en vain je me flatte,</l>
+            <l met="6">Déjà mon feu renaît;</l>
+            <l met="8">Plus que jamais, j'aime l'ingrate.</l>
+          </sp>
+        </spGrp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+          <l met="8">Le héros n'est plus qu'un benêt.</l>
+        </sp>
+        <spGrp who="#themire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#et_fron_fron_fron">Et fron, fron, fron</title>
+            </desc>
+          </head>
+          <sp who="#themire">
+            <speaker>Thémire</speaker>
+            <l met="7">Elle vous estime un peu.</l>
+          </sp>
+        </spGrp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="7">Tu te moques, palsambleu.</l>
+        </sp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+          <l met="4">Qu'un doux espoir</l>
+          <l met="4">De l'émouvoir</l>
+          <l met="4">Vous encourage.</l>
+          <l met="7">Venez la voir sur le soir,</l>
+          <l met="6">Vous plairez davantage.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#noirs_orages">Noirs orages</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="3">Quel outrage</l>
+            <l met="7">Me fait cet objet sauvage!</l>
+            <l met="4">Loin de courir,</l>
+            <l met="5">Pour me secourir,</l>
+            <l met="8">Elle évite mon tendre hommage.</l>
+            <l met="6">Quelle fierté! J'enrage!</l>
+            <l met="3">Tout, sans cesse,</l>
+            <l met="6">Pour m'écouter, s'empresse</l>
+            <l met="6">Cent belles, pour me voir,</l>
+            <l met="6">Viennent ici le soir.</l>
+            <l met="4">La seule, hélas!</l>
+            <l met="4">Dont je fais cas,</l>
+            <l met="6">Me hait plus que la mort.</l>
+          </sp>
+        </spGrp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+          <l met="6">Elle a, ma foi, grand tort.</l>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="melody_part">
+            <desc type="part">Fin de l'air</desc>
+            <title>
+              <title ref="#passant_sur_le_pont_neuf">Passant sur le Pont-Neuf</title>
+            </title>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="4">Belle inhumaine,</l>
+            <l met="8">Quand sous vos lois l'amour m'enchaîne,</l>
+            <l met="12">Quel barbare plaisir trouvez-vous dans ma peine?</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Angélique, Thémire</stage>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+        </sp>
+        <spGrp who="#themire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#abbe_dans_coin">Un abbé dans un coin</title>
+            </desc>
+          </head>
+          <sp who="#themire">
+            <speaker>Thémire</speaker>
+            <l met="6">Il est enfin parti,</l>
+            <l met="3">Mais voici</l>
+            <l met="6">Médor qui vient ici.</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="6">Considère sa grâce.</l>
+          <l met="6">Thémire, qu'il m'est cher!</l>
+        </sp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+          <l met="6">Laissons-lui de la place,</l>
+          <l met="6">Pour chanter son grand air.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Médor, Angélique et Thémire<stage>un peu éloignées</stage>
+        </stage>
+        <sp who="#medor">
+          <speaker>Médor</speaker>
+        </sp>
+        <spGrp who="#medor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nous_aimons_qui_nous_aime">Nous aimons qui nous aime</title>
+            </desc>
+          </head>
+          <sp who="#medor">
+            <speaker>Médor</speaker>
+            <l met="8">Du repos aimable séjour,</l>
+            <l met="6">Agréable retraite,</l>
+            <l met="8">Pour les doux plaisirs de l'amour</l>
+            <l met="6">Votre ombre semble faite.</l>
+            <l met="8">Mais, hélas! les tristes accents</l>
+            <l met="6">D'un cœur sans espérance</l>
+            <l met="8">Ne troubleront pas bien longtemps</l>
+            <l met="6">Votre amoureux silence.</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <stage>au fond</stage>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#eh_allons_donc_mademoiselle">Eh! allons donc, Mademoiselle</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="7">Son martyre m'inquiète,</l>
+            <l met="7">Et je vois...</l>
+          </sp>
+        </spGrp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+          <l met="7">Que dira-t-on</l>
+          <l met="7">D'une Reine qui se jette</l>
+          <l met="7">À la tête d'un garçon?</l>
+          <l met="8">Eh! allons donc, belle indiscrète</l>
+          <l met="8">Eh! allons donc, de la raison.</l>
+        </sp>
+        <sp who="#medor">
+          <speaker>Médor</speaker>
+        </sp>
+        <spGrp who="#medor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dormir_est_un_temps_perdu">Dormir est un temps perdu</title>
+            </desc>
+          </head>
+          <sp who="#medor">
+            <speaker>Médor</speaker>
+            <l met="7">Je ne puis plus soutenir</l>
+            <l met="5">Ma douleur profonde.</l>
+            <l met="7">Ô mort! viens me secourir,</l>
+            <l met="7">Mon espoir en toi se fonde:</l>
+            <l met="7">Puisqu'on me fait tant languir,</l>
+            <l met="7">C'en est fait, il faut partir,</l>
+            <l met="6">Partir pour l'autre monde.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#medor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#et_zon_zon_zon">Eh! zon, zon, zon, Lisette</title>
+            </desc>
+          </head>
+          <sp who="#medor">
+            <speaker>Médor</speaker>
+            <l met="6">Cher et glorieux poids,</l>
+            <l met="6">Dont j'ignore l'usage,</l>
+            <l met="6">Pour la première fois,</l>
+            <l met="6">Seconde mon courage.</l>
+            <l met="4">Eh! zon, zon, zon,</l>
+            <l met="6">Qui te retient? J'enrage!</l>
+            <l met="4">Eh! zon, zon, zon,</l>
+            <l met="6">Ma lame, sortez donc!</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quand_la_bergere_vient_des_champs">Quand la bergère vient des champs</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="8">Serez-vous, mon cher tourtereau,</l>
+            <l met="4">Votre bourreau?</l>
+          </sp>
+        </spGrp>
+        <sp who="#medor">
+          <speaker>Médor</speaker>
+          <l met="4">Je veux...</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="4">Tout beau!</l>
+        </sp>
+        <pb n="21"/>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+          <l met="8">Pour nous, c'est un vilain cadeau.</l>
+          <l met="4">Quelle équipée!</l>
+          <l met="4">Mettez l'épée</l>
+          <l met="4">Dans le fourreau.</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#prenez_mon_coeur_et_n_en_prenez_point_d_autre">Prenez mon cœur, et n'en prenez point d'autre</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="10">Vivez Médor.</l>
+          </sp>
+        </spGrp>
+        <sp who="#medor">
+          <speaker>Médor</speaker>
+          <l met="10">Sans vous je hais la vie.</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="10">Vivez, vivez.</l>
+        </sp>
+        <sp who="#medor">
+          <speaker>Médor</speaker>
+          <l met="10">Ah! laissez-moi périr.</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="10">Vivez, vivez.</l>
+        </sp>
+        <sp who="#medor">
+          <speaker>Médor</speaker>
+          <l met="10">Finissez, je vous prie,</l>
+          <l met="10">Tout vos<emph>vivez</emph>d'ennui me font mourir.</l>
+        </sp>
+        <spGrp who="#medor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#j_ai_devine_la_cachette">J'ai deviné la cachette</title>
+            </desc>
+          </head>
+          <sp who="#medor">
+            <speaker>Médor</speaker>
+            <l met="7">Rien ne me paraît plus drôle,</l>
+            <l met="7">Beau Médor, que votre sort.</l>
+            <l met="7">Vous passez tout votre rôle</l>
+            <l met="7">Entre la vie et la mort.</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#voici_dragons">Voici les dragons qui viennent</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="7">Je vois Roland qui s'avance,</l>
+            <l met="5">Je crains son courroux.</l>
+          </sp>
+        </spGrp>
+        <pb n="22"/>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+          <l met="7">Pour éviter sa vengeance,</l>
+          <l met="7">Décamper en diligence.</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="4">Et cachez-vous.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Angélique, Roland, Thémire</stage>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#votre_toutou_vous_flatte">Votre toutou vous flatte</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="6">Mon cœur vous est fidèle,</l>
+            <l met="6">Et vous en abusez.</l>
+            <l met="6">Tant d'ardeur, tant de zèle</l>
+            <l met="6">Sont toujours méprisés.</l>
+            <l met="2">Cruelle!</l>
+            <l met="8">Vous n'êtes pas digne, entre nous,</l>
+            <l met="8">Du tendre amour<stage type="bis">bis</stage>que j'ai pour vous.</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_chacun_de_nous_se_livre">Que chacun de nous se livre</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="7">J'ai, pour vous rendre à la gloire,</l>
+            <l met="7">Fait des efforts superflus.</l>
+            <l met="7">Si vous m'eussiez voulu croire,</l>
+            <l met="7">Non, vous ne m'aimeriez plus.</l>
+          </sp>
+        </spGrp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="7">D'une trop fatale ivresse</l>
+          <l met="7">Mon cœur ne peut revenir.</l>
+          <l met="7">Vous qui causez ma faiblesse,</l>
+          <l met="7">Est-ce à vous de m'en punir?</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Que j'estime, mon cher voisin</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="8">Hélas!</l>
+          </sp>
+        </spGrp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="8">Qui cause ce soupir?</l>
+          <l met="6">En vain on me le cache.</l>
+          <l met="8">Un juste effroi me fait sentir</l>
+          <l met="6">Qu'un rival vous l'arrache.</l>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jeunes_filles_accourez_toutes">Jeunes filles, accourez toutes</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="5">S'il osait, un jour,</l>
+            <l met="4">Dans ce séjour</l>
+            <l met="2">Paraître,</l>
+            <l met="2">Le traître,</l>
+            <l met="6">Bientôt du haut en bas,</l>
+            <l met="4">Par la fenêtre,</l>
+            <l met="4">Quel qu'il pût être</l>
+            <l met="6">Bientôt du haut en bas,</l>
+            <l met="8">Devant vous sauterait le pas.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_mariez_moi">J'ai rêvé toute la nuit</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="7">Vous cherchez à m'éviter...</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="7">Eh! qui pourrait m'arrêter?</l>
+          <l met="7">Ce matin en vous fuyant,</l>
+          <l met="10">Vous l'avez bien vu, souvenez-vous-en,</l>
+          <l met="7">J'ai disparu dans l'instant.</l>
+          <l met="7">J'en pourrais bien faire autant.</l>
+        </sp>
+        <pb n="24"/>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pan_pan_la_poudre_prend">La poudre prend</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="8">Que ne m'est-il encore permis</l>
+            <l met="8">De vous fuit? Mais non, je ne puis.</l>
+          </sp>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="8">Feignons.</l>
+          </sp>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="8">Je ne suis plus la même,</l>
+            <l met="8">Cher Roland.</l>
+          </sp>
+        </spGrp>
+        <stage>À part.</stage>
+        <stage>Haut.</stage>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="8">Ce bonheur extrême</l>
+          <l met="3">Me surprend.</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <stage>à part</stage>
+          <l met="4">L'amorce prend.</l>
+          <l met="8">Achevons-le dans un moment.</l>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#on_ne_peut_tromper_l_amour">On ne peut tromper l'Amour</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="10">Mon cœur enfin cède à votre tendresse.</l>
+            <l met="8">C'est trop feindre avec mon vainqueur.</l>
+            <l met="8">Si j'eus pour vous tant de rigueur,</l>
+            <l met="8">C'était pour cacher ma faiblesse.</l>
+            <l met="9">On a beau chercher un nouveau tour,</l>
+            <l met="7">On ne peut tromper l'amour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_baronne">La Baronne</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="4">Est-il possible</l>
+            <l met="8">Que Roland touche votre cœur?</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="8">Mon ardeur n'est que trop visible.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="8">Je doute encor de mon bonheur.</l>
+          <l met="4">Est-il possible?</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#toque_mon_tambourinet">Toque mon tambourinet</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="5">Pourvu que Roland</l>
+            <l met="5">Garde le secret,</l>
+            <l met="5">D'un amour ardent</l>
+            <l met="5">Il verra l'effet.</l>
+            <l met="4">Il faut pour plaire,</l>
+            <l met="1">Taire</l>
+            <l met="6">Les faveurs qu'on nous fait.</l>
+          </sp>
+        </spGrp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#laisons_la_la_fumee">Laissons-là la fumée</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="6">Cherchons, belle Angélique,</l>
+            <l met="6">Un séjour écarté,</l>
+            <l met="6">Où l'amour qui nous pique,</l>
+            <l met="6">Puisse être en liberté.</l>
+            <l met="10">Ah! que deux cœurs dans une paix profonde,</l>
+            <l met="12">Sont heureux d'oublier tout le reste du monde!</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#par_bonheur_ou_par_malheur">Par bonheur ou par malheur</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="7">Cher amant, pour rendez-vous,</l>
+            <l met="7">Quel endroit choisissez-vous?</l>
+          </sp>
+        </spGrp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="7">Dans la Foire, il faut, ma chère,</l>
+          <l met="7">Nous trouver.</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="7">Je sais l'endroit.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="7">Il est propre au doux mystère.</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="7">Mais souvent il y fait froid.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#attendez_moi_sous_l_orme_2">Attendez-moi sous l'orme</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="7">Pour le dessein que je forme,</l>
+            <l met="7">Vous y suivrez donc mes pas?</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="7">Mon zèle au vôtre est conforme.</l>
+          <l met="7">Non, je n'y manquerai pas.</l>
+        </sp>
+        <stage>À part.</stage>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="7">Attendez-moi sous l'orme.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="characters">Médor, Angélique, Thémire</stage>
+        <sp who="#medor">
+          <speaker>Médor</speaker>
+        </sp>
+        <spGrp who="#medor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#chacun_a_son_tour">Chacun à son tour</title>
+            </desc>
+          </head>
+          <sp who="#medor">
+            <speaker>Médor</speaker>
+            <l met="8">Vous n'êtes point trop délicate.</l>
+            <l met="8">Au lieu d'un, vous en aimez deux.</l>
+            <l met="8">Mon rival qui vous quitte, ingrate,</l>
+            <l met="8">Se voit au comble de ses vœux.</l>
+            <l met="9">À présent, puisqu'il a fait retraite,</l>
+            <l met="8">Je reviens vous faire ma cour:</l>
+            <l met="5">Chacun à son tour,</l>
+            <l met="4">Liron, lirette,</l>
+            <l met="5">Chacun à son tour.</l>
+          </sp>
+        </spGrp>
+        <pb n="27"/>
+        <spGrp who="#medor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_n_avez_pas_besoin_qu_on_vous_console">Vous n'avez pas besoin qu'on vous console</title>
+            </desc>
+          </head>
+          <sp who="#medor">
+            <speaker>Médor</speaker>
+            <l met="10">Ce rendez-vous, et m'offense, et me blesse.</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="10">Mon cher Médor, ne vous en plaignez pas.</l>
+          <l met="10">Si de Roland je flatte la tendresse,</l>
+          <l met="10">C'est pour sortir plus vite d'embarras.</l>
+        </sp>
+        <sp who="#medor">
+          <speaker>Médor</speaker>
+        </sp>
+        <spGrp who="#medor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_une_excuse">C'est une excuse</title>
+            </desc>
+          </head>
+          <sp who="#medor">
+            <speaker>Médor</speaker>
+            <l met="8">Que par feinte, ou bien par amour,</l>
+            <l met="8">Roland soit heureux dans ce jour,</l>
+            <l met="6">C'est moi que l'on abuse.</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="8">Même en lui faisant les yeux doux,</l>
+          <l met="8">Médor, je ne pensais qu'à vous.</l>
+        </sp>
+        <sp who="#medor">
+          <speaker>Médor</speaker>
+          <l met="4">La belle excuse!</l>
+        </sp>
+        <spGrp who="#medor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#par_la_vertu_tu_tu_de_ma_baguette">Par la vertu, tu, tu, de ma baguette</title>
+            </desc>
+          </head>
+          <sp who="#medor">
+            <speaker>Médor</speaker>
+            <l met="7">Je vous crois, mais il me reste</l>
+            <l met="7">Toujours un certain soupçon.</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+          <l met="3">Sans raison.</l>
+          <l met="7">Un amant que je déteste,</l>
+          <l met="7">Doit-il vous alarmer tant?</l>
+          <l met="3">Vainement</l>
+          <l met="2">Roland</l>
+          <l met="2">M'attend.</l>
+          <l met="4">Je vous proteste</l>
+          <l met="9">Qu'il n'en croquera que d'une dent.</l>
+        </sp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+        </sp>
+        <spGrp who="#themire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#buvons_a_nous_quatre">Buvons à nous quatre</title>
+            </desc>
+          </head>
+          <sp who="#themire">
+            <speaker>Thémire</speaker>
+            <l met="5">Il est intraitable,</l>
+            <l met="5">Ce cruel vainqueur.</l>
+            <l met="7">C'est un plus hardi frappeur</l>
+            <l met="5">Que Robert le Diable,</l>
+            <l met="5">Que Richard sans peur.</l>
+          </sp>
+        </spGrp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#on_pourra_vous_viser">On pourra vous viser</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="7">Pour vos jours je crains beaucoup.</l>
+          </sp>
+        </spGrp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+          <l met="7">Ce rival peut d'un seul coup</l>
+          <l met="5">Vous couper la tête,</l>
+          <l met="5">Vous couper le cou.</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#a_l_amour_rendons_les_armes">À l'Amour, rendons les armes</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="7">Dissipez votre tristesse,</l>
+            <l met="7">Seul vous êtes mon vainqueur.</l>
+            <l met="7">Nul autre ne m'intéresse.</l>
+            <l met="3">La tendresse</l>
+            <l met="3">Qui me presse,</l>
+            <l met="7">N'aspire qu'à votre cœur.</l>
+          </sp>
+        </spGrp>
+        <sp who="#medor">
+          <speaker>Médor</speaker>
+          <l met="7">Dieux! que mon âme est ravie</l>
+          <l met="7">D'un langage si flatteur!</l>
+          <l met="7">Tous les plaisirs de la vie,</l>
+          <l met="7">Sans vous perdent leur douceur.</l>
+          <l met="7">Pour être heureux, je n'envie</l>
+          <l met="7">D'autre bien que votre cœur.</l>
+        </sp>
+        <stage type="musical_indication">Mineur</stage>
+        <pb n="29"/>
+        <spGrp who="#medor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jeune_isabelle">La jeune Isabelle</title>
+            </desc>
+          </head>
+          <sp who="#medor">
+            <speaker>Médor</speaker>
+            <l met="5">Beau lieu, cher bocage,</l>
+            <l met="5">Qui m'a vu languir,</l>
+            <l met="5">D'un plus doux partage</l>
+            <l met="5">Tu me vois jouir.</l>
+            <l met="5">Au bien où j'aspire</l>
+            <l met="5">Je suis parvenu.</l>
+            <l met="5">Qui l'eut dit, Thémire!</l>
+          </sp>
+        </spGrp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+          <l met="5">Médor, l'eusses-tu crû?</l>
+        </sp>
+        <sp who="#angelique">
+          <speaker>Angélique</speaker>
+        </sp>
+        <spGrp who="#angelique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_l_ouvrage_d_un_moment">C'est l'ouvrage d'un moment</title>
+            </desc>
+          </head>
+          <sp who="#angelique">
+            <speaker>Angélique</speaker>
+            <l met="8">Nous avons à faire un voyage.</l>
+            <l met="8">Mais il est bon, mon cher amant,</l>
+            <l met="8">Que mes sujets, auparavant,</l>
+            <l met="8">Viennent vous rendre un juste hommage.</l>
+            <l met="7">C'est l'ouvrage d'un moment.</l>
+          </sp>
+        </spGrp>
+        <sp who="#themire">
+          <speaker>Thémire</speaker>
+        </sp>
+        <spGrp who="#themire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_reguingue">Ô reguingué</title>
+            </desc>
+          </head>
+          <sp who="#themire">
+            <speaker>Thémire</speaker>
+            <l met="8">Un pareil dessein me surprend.</l>
+            <l met="8">Vous voulez cacher ce galant,</l>
+            <l met="8">Et vos sujets, en le fêtant,</l>
+            <l met="8">Vont crier comme tous les diables.</l>
+            <l met="8">Ces contresens sont pitoyables.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#themire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#banissons_la_ceremonie">Banissons la cérémonie</title>
+            </desc>
+          </head>
+          <sp who="#themire">
+            <speaker>Thémire</speaker>
+            <l met="7">Si Roland vous entendait,</l>
+            <l met="7">Vous connaissez sa furie,</l>
+            <l met="7">Que de tapage il ferait!</l>
+            <l met="7">Quelqu'un en perdrait la vie.</l>
+          </sp>
+        </spGrp>
+        <pb n="30"/>
+        <spGrp>
+          <caption>Tous trois ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="10">Remettons, remettons, remettons la,</l>
+            <l met="8">Remettons la cérémonie.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="location">Le théâtre représente l'intérieur de la Foire Saint-Germain.</stage>
+        <stage type="characters">Roland, Astolphe</stage>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#joli_nom">Eh! non, non, il n'est point de si joli nom</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="3">Eh! non, non,</l>
+            <l met="8">Ton conseil n'est plus de saison.</l>
+          </sp>
+        </spGrp>
+        <sp who="#astolphe">
+          <speaker>Astolphe</speaker>
+          <l met="7">Surmontez votre faiblesse</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="3">Eh! non, non,</l>
+          <l met="8">Ton discours n'est plus de saison.</l>
+        </sp>
+        <sp who="#astolphe">
+          <speaker>Astolphe</speaker>
+          <l met="7">Rappelez votre raison.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_moitie_du_chemin">La moitié du chemin</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="4">L'objet divin</l>
+            <l met="6">Qui me tient dans sa chaîne,</l>
+            <l met="4">N'a plus, enfin,</l>
+            <l met="6">Ni fierté, ni dédain.</l>
+            <l met="8">Tout va répondre à mes désirs,</l>
+            <l met="8">Je verrai bientôt les plaisirs</l>
+            <l met="6">Succéder à ma peine.</l>
+            <l met="10">Et dans ce jour, ami, je suis certain</l>
+            <l met="12">Qu'Angélique fera la moitié du chemin.</l>
+          </sp>
+        </spGrp>
+        <pb n="31"/>
+        <sp who="#astolphe">
+          <speaker>Astolphe</speaker>
+        </sp>
+        <spGrp who="#astolphe">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#joignez_le_regiment">Joignez le régiment</title>
+            </desc>
+          </head>
+          <sp who="#astolphe">
+            <speaker>Astolphe</speaker>
+            <l met="6">Le grand cœur de Roland</l>
+            <l met="6">N'est fait que pour la gloire.</l>
+            <l met="6">Le grand cœur de Roland</l>
+            <l met="6">D'amour doit être exempt.</l>
+            <l met="6">Songez uniquement</l>
+            <l met="6">À vivre dans l'Histoire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="6">Mon cœur ne peut t'en croire.</l>
+        </sp>
+        <sp who="#astolphe">
+          <speaker>Astolphe</speaker>
+          <l met="5">Patapatapan,</l>
+          <l met="6">Joignez le régiment.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#on_revient_trois">On revient trois</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="7">Cher ami, veux-tu me plaire?</l>
+            <l met="7">J'attends l'objet de mon choix.</l>
+            <l met="8">Laisse-nous, avec lui je dois</l>
+            <l met="4">Parler d'affaire.</l>
+            <l met="8">Et l'on est trop lorsqu'on est trois</l>
+            <l met="4">Dans ce mystère.</l>
+          </sp>
+        </spGrp>
+        <pb n="32"/>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tu_ton_tutaine">Tuton, tutaine</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="7">Quel bonheur pour ma passion!<stage type="bis">bis</stage>
+            </l>
+            <l met="7">J'aurai dans ma possession,</l>
+            <l met="6">Tuton, tuton, tutaine,</l>
+            <l met="4">Eh! tu, tu, tu,</l>
+            <l met="5">Ce qui m'a tant plût,</l>
+            <l met="4">Eh! ton, ton, ton,</l>
+            <l met="5">Cet objet mignon,</l>
+            <l met="5">Qui dans ce canton,</l>
+            <l met="5">Mieux que Cupidon,</l>
+            <l met="5">De plaire a le don,</l>
+            <l met="6">Tuton, tuton, tutaine.</l>
+          </sp>
+        </spGrp>
+        <sp who="#astolphe">
+          <speaker>Astolphe</speaker>
+        </sp>
+        <spGrp who="#astolphe">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#raretes">Va-t'en voir s'il viennent, Jean</title>
+            </desc>
+          </head>
+          <sp who="#astolphe">
+            <speaker>Astolphe</speaker>
+            <l met="7">Les amants, dans leur espoir,</l>
+            <l met="5">Souvent se méprennent.</l>
+          </sp>
+        </spGrp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="7">Tous ses agréments, ce soir,</l>
+          <l met="5">Pour sûr m'appartiennent.</l>
+        </sp>
+        <sp who="#astolphe">
+          <speaker>Astolphe</speaker>
+          <l met="7">Va-t'en voir s'il viennent, Jean,</l>
+          <l met="5">Va-t-en voir s'ils viennent.</l>
+        </sp>
+        <pb n="33"/>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <stage>seul</stage>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra</desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="12">Ah! j'attendrai longtemps, la nuit est loin encore.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_bons_coups_se_font_sur_la_brune">Les bons coups se font sur la brune</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="8">Je ne puis supporter le jour,</l>
+            <l met="8">Soleil, ta clarté m'importune.</l>
+            <l met="8">Cesse de nuire à mon amour,</l>
+            <l met="8">Le plaisir m'attend sur la brune.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#y_avance_y_avance">Y avance, y avance</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="8">Charmante nuit, dans ce manoir,</l>
+            <l met="8">Viens étendre ton manteau noir.</l>
+            <l met="8">Satisfait mon impatience:</l>
+            <l met="9">Y avance, y avance, y avance,</l>
+            <l met="8">Ramène l'ombre et le silence.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_la_chose_impossible">C'est la chose impossible</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="8">Séjour aimable, lieu charmant,</l>
+            <l met="8">Où chaque jour on voit la presse,</l>
+            <l met="8">Amusez-moi jusqu'au moment</l>
+            <l met="8">Qu'Angélique à mes yeux paraisse.</l>
+            <l met="4">Sans elle, hélas!</l>
+            <l met="4">Tout vos appas</l>
+            <l met="8">Toucheraient-ils mon cœur sensible?</l>
+            <l met="6">C'est la, la, la, la, la,</l>
+            <l met="6">C'est la chose impossible.</l>
+          </sp>
+        </spGrp>
+        <pb n="34"/>
+        <stage>Il lit.</stage>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_ne_sais_pas_ecrire">Je ne sais pas écrire</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="8">Deux amants, à ce que je vois,</l>
+            <l met="8">Auront sût tracer sur ce bois</l>
+            <l met="6">Ce que je viens de lire.</l>
+            <l met="8">Prête-moi tes traits, dieu d'Amour,</l>
+            <l met="8">Je veux aussi, dans ce beau jour,</l>
+            <l met="6">M'en servir pour écrire.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bon_soldat">Je suis un bon soldat</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="6">Voyons tout... je connais</l>
+            <l met="3">Dans ces traits</l>
+            <l met="6">L'ouvrage d'Angélique.</l>
+            <l met="6">Dieux! ce n'est pas pour moi</l>
+            <l met="3">Que sa foi</l>
+            <l met="6">Dans ces deux vers s'explique.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra</desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="8">«Angélique engage son cœur,</l>
+            <l met="6">Médor en est vainqueur.»</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_n_est_point_de_bonne_fete">Il n'est point de bonne fête</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="7">Médor est un personnage</l>
+            <l met="7">Qu'en ces lieux on n'a point vu.</l>
+            <l met="7">Pour me donner de l'ombrage,</l>
+            <l met="7">Il n'est pas assez connu.</l>
+            <l met="7">J'aurais sujet d'être triste,</l>
+            <l met="7">Et je craindrais volontiers,</l>
+            <l met="7">S'il était mis sur la liste</l>
+            <l met="4">Des financiers.</l>
+          </sp>
+        </spGrp>
+        <pb n="35"/>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#changement_pique">Changement pique l'appétit</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="8">D'autres mots s'offrent à ma vue,</l>
+            <l met="8">Ils sont d'une main inconnue.</l>
+            <l met="8">Tant d'écriture me surprend,</l>
+            <l met="8">Il fallait un loisir bien grand.</l>
+          </sp>
+        </spGrp>
+        <stage>Il lit.</stage>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_michel">Malgré la bataille qu'on donne demain</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="12">Mes yeux n'ont que trop vu ces mots ici tracés,</l>
+            <l met="12">Et, sans les voir encor, je m'en souviens assez.</l>
+            <l met="12">Mais pour que le public ne les ignore pas,</l>
+            <l met="12">Il faut lire tout haut ce que j'ai lu tout bas.</l>
+          </sp>
+        </spGrp>
+        <stage>Il lit.</stage>
+        <spGrp who="#roland">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra</desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="6">«Que Médor est heureux!</l>
+            <l met="8">Angélique a comblé ses vœux.»</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#naiades">Bouchez, Naïades, vos fontaines</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="8">Ce Médor est un petit-maître.</l>
+            <l met="8">Angélique, sur lui, peut-être</l>
+            <l met="8">A jeté les yeux en passant.</l>
+            <l met="8">Bien souvent un tel personnage</l>
+            <l met="8">Au premier feuillet du roman,</l>
+            <l met="8">Se croit à la dernière page.</l>
+          </sp>
+        </spGrp>
+        <stage>On entend une symphonie.</stage>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_seul_flageolet_de_colin">Le seul flageolet de Colin</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="8">J'entends un bruit harmonieux.</l>
+            <l met="6">À danser on s'apprête.</l>
+            <l met="8">Cherchons Angélique en ces lieux.</l>
+            <l met="6">Sans doute, elle s'arrête</l>
+            <l met="9">Au spectacle amusant et joyeux</l>
+            <l met="7">De quelque nouvelle fête.</l>
+          </sp>
+        </spGrp>
+        <pb n="36"/>
+        <stage>Il sort.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 13</head>
+        <stage type="characters">Bélise, Coridon, plusieurs gens de la noce</stage>
+        <stage>Arrivée de la noce.</stage>
+        <stage type="musical_indication">Marche</stage>
+        <sp who="#coridon">
+          <speaker>Coridon</speaker>
+        </sp>
+        <spGrp who="#coridon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sans_un_peu_de_vin_dans_mon_verre">Sans un peu de vin dans mon verre</title>
+            </desc>
+          </head>
+          <sp who="#coridon">
+            <speaker>Coridon</speaker>
+            <l met="3">Quel plaisir,</l>
+            <l met="6">Quand l'Amour nous blesse,</l>
+            <l met="3">Quel plaisir,</l>
+            <l met="5">De pouvoir s'unir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <stage>répète</stage>
+          <l met="3">Quel plaisir, ...</l>
+        </sp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="8">Les nœuds formés par la tendresse,</l>
+          <l met="8">De deux cœurs comblent le désir.</l>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="3">Quel plaisir, ...</l>
+        </sp>
+        <pb n="37"/>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="8">Sans l'objet qui nous intéresse</l>
+          <l met="8">Du vrai bien l'on ne peut jouir.</l>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <stage>répète</stage>
+          <l met="3">Quel plaisir, ...</l>
+        </sp>
+        <sp who="#coridon">
+          <speaker>Coridon</speaker>
+        </sp>
+        <spGrp who="#coridon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jean_danse_mieux_que_pierre">Jean danse mieux que Pierre</title>
+            </desc>
+          </head>
+          <sp who="#coridon">
+            <speaker>Coridon</speaker>
+            <l met="6">Que j'aime ma bergère!</l>
+          </sp>
+        </spGrp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="6">Que j'aime mon berger!</l>
+        </sp>
+        <sp who="#coridon">
+          <speaker>Coridon</speaker>
+          <l met="6">Seule elle sait me plaire.</l>
+        </sp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="6">Seul il sait m'engager.</l>
+        </sp>
+        <sp who="#coridon">
+          <speaker>Coridon</speaker>
+          <l met="6">Mon cœur ne peut changer.</l>
+        </sp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="6">Le mien n'est point léger.</l>
+        </sp>
+        <sp who="#coridon">
+          <speaker>Coridon</speaker>
+          <l met="6">Que j'aime ma bergère!</l>
+        </sp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="6">Que j'aime mon berger!</l>
+        </sp>
+        <sp who="#coridon">
+          <speaker>Coridon</speaker>
+        </sp>
+        <spGrp who="#coridon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vogue_galere">Eh! vogue la galère</title>
+            </desc>
+          </head>
+          <sp who="#coridon">
+            <speaker>Coridon</speaker>
+            <l met="6">Rien n'égale la flamme</l>
+            <l met="6">Qui me fait soupirer.</l>
+          </sp>
+        </spGrp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="6">la mienne dans mon âme</l>
+          <l met="6">Veut toujours demeurer.</l>
+        </sp>
+        <pb n="38"/>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="6">Elle sera fidèle</l>
+            <l met="8">Tant qu'elle, tant qu'elle, tant qu'elle,</l>
+            <l met="6">Elle sera fidèle,</l>
+            <l met="6">Tant qu'elle pourra durer.</l>
+          </sp>
+        </spGrp>
+        <stage>On danse.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 14</head>
+        <stage type="characters">Roland, les acteurs précédents</stage>
+        <sp who="#coridon">
+          <speaker>Coridon</speaker>
+        </sp>
+        <spGrp who="#coridon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_bergere_qui_m_engage">La bergère qui m'engage</title>
+            </desc>
+          </head>
+          <sp who="#coridon">
+            <speaker>Coridon</speaker>
+            <l met="7">Rien n'est si beau qu'Angélique.</l>
+            <l met="7">Mais malgré tous ses appas,</l>
+            <l met="7">Elle n'a rien qui me pique.</l>
+            <l met="7">Non, je ne changerais pas.</l>
+            <l met="7">La bergère qui m'engage</l>
+            <l met="7">Satisfait mon ambition.</l>
+            <l met="4">Eh! non, non, non,</l>
+            <l met="7">Je n'en veux pas davantage.</l>
+          </sp>
+        </spGrp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+        </sp>
+        <spGrp who="#belise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_veux_me_coucher_ivre">Que toute la terre est à moi</title>
+            </desc>
+          </head>
+          <sp who="#belise">
+            <speaker>Bélise</speaker>
+            <l met="8">Quand je verrais d'un feu sincère,</l>
+            <l met="8">Pour moi, brûler le beau Médor,</l>
+            <l met="8">Quand il m'offrirait un trésor,</l>
+            <l met="8">Crois-tu que son cœur pût me plaire?</l>
+            <l met="8">Non, non. Quand j'ai le tien, je croi</l>
+            <l met="8">Que toute la terre est à moi.</l>
+          </sp>
+        </spGrp>
+        <pb n="39"/>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierrot_se_plaint_que_sa_femme">Pierrot se plaint que sa femme</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="7">De Médor et d'Angélique,</l>
+            <l met="7">Que dites-vous mes enfants?</l>
+          </sp>
+        </spGrp>
+        <sp who="#coridon">
+          <speaker>Coridon</speaker>
+          <l met="7">Leur aventure est publique.</l>
+        </sp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="7">Ce sont de tendres amants,</l>
+          <l met="4">Qu'un sort propice,</l>
+          <l met="7">L'un de l'autre rend contents.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="4">Ah! quel supplice!</l>
+        </sp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <stage>à Roland</stage>
+        </sp>
+        <spGrp who="#belise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_vous_chagrinez_pas">Ne vous chagrinez pas</title>
+            </desc>
+          </head>
+          <sp who="#belise">
+            <speaker>Bélise</speaker>
+            <l met="6">Vos yeux sont inquiets.</l>
+          </sp>
+        </spGrp>
+        <sp who="#coridon">
+          <speaker>Coridon</speaker>
+          <stage>à Roland</stage>
+          <l met="6">D'où vient cette humeur noire?</l>
+        </sp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="8">De ces deux amants satisfaits</l>
+          <l met="6">On sait ici l'histoire,</l>
+          <l met="8">Si vous aviez quelque loisir,</l>
+          <l met="8">Elle vous ferait du plaisir.</l>
+        </sp>
+        <spGrp who="#belise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jus_octobre">Quand je tiens de ce jus d'octobre</title>
+            </desc>
+          </head>
+          <sp who="#belise">
+            <speaker>Bélise</speaker>
+            <l met="8">Contre l'ennui qui vous assiège,</l>
+            <l met="8">Il faut quelque récréatif.</l>
+          </sp>
+        </spGrp>
+        <pb n="40"/>
+        <sp who="#coridon">
+          <speaker>Coridon</speaker>
+          <l met="8">Que l'on apporte vite un siège,</l>
+          <l met="8">Monsieur sera plus attentif.</l>
+        </sp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+        </sp>
+        <spGrp who="#belise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quand_je_le_vois_venir">Quand je le vois venir</title>
+            </desc>
+          </head>
+          <sp who="#belise">
+            <speaker>Bélise</speaker>
+            <l met="7">Mettez-vous sur cette chaise,</l>
+            <l met="7">Suspendez votre dépits,</l>
+            <l met="7">Pour entendre un récit</l>
+            <l met="7">Qui va vous mettre à votre aise,</l>
+            <l met="7">Pour entendre un récit</l>
+            <l met="7">Qui calmera votre esprit.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#belise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#repondez_ma_chere">Répondez ma chère</title>
+            </desc>
+          </head>
+          <sp who="#belise">
+            <speaker>Bélise</speaker>
+            <l met="5">Tantôt sur ce bord,</l>
+            <l met="4">Le beau Médor,</l>
+            <l met="4">Certain de plaire,</l>
+            <l met="5">Sans m'apercevoir,</l>
+            <l met="8">Près d'Angélique vint s'assoir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="9">Qu'est-ce qu'ensuite ils ont osé faire?</l>
+          <l met="5">Répondez, ma chère.</l>
+        </sp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="5">D'un amour parfait</l>
+          <l met="4">Ils se sont fait</l>
+          <l met="4">L'aveu sincère.</l>
+          <l met="5">Sur ce gazon vert,</l>
+          <l met="8">Librement leur cœur s'est ouvert.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="9">Qu'est-ce qu'ensuite ils ont osé faire?</l>
+          <l met="5">Répondez, ma chère.</l>
+        </sp>
+        <pb n="41"/>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="5">Pendant quelque temps,</l>
+          <l met="4">Ces deux amants</l>
+          <l met="4">Ont su se taire,</l>
+          <l met="5">Ou parlaient si bas,</l>
+          <l met="8">Que nous ne les entendions pas.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="9">Qu'est-ce qu'ensuite ils ont osé faire?</l>
+          <l met="5">Répondez, ma chère.</l>
+        </sp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="5">Cette place-là,</l>
+          <l met="4">Où vous voilà,</l>
+          <l met="4">Leur fut si chère,</l>
+          <l met="5">Que sans les fâcher,</l>
+          <l met="8">On ne put les en arracher.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="9">Eh! voilà ce qui me désespère!</l>
+          <l met="5">Achevez, ma chère.</l>
+        </sp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="5">Ils ont fui soudain.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="4">Par quel chemin?</l>
+        </sp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="4">Voici mon père,</l>
+          <l met="5">Qui sait tout cela.</l>
+          <l met="8">Du reste il vous informera.</l>
+        </sp>
+        <pb n="42"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 15</head>
+        <stage type="characters">Thersandre, les acteurs précédents</stage>
+        <sp who="#thersandre">
+          <speaker>Thersandre</speaker>
+        </sp>
+        <spGrp who="#thersandre">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra</desc>
+          </head>
+          <sp who="#thersandre">
+            <speaker>Thersandre</speaker>
+            <l met="8">Allez, laissez-nous, soins fâcheux,</l>
+            <l met="10">Éloignez-vous de nos paisibles jeux.</l>
+            <l met="10">Non, non, jamais la disette importune</l>
+            <l met="6">Ne pourra nous troubler.</l>
+            <l met="8">Nos jours en paix pourront couler,</l>
+            <l met="6">Je tiens notre fortune.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="8">Allez, laissez-nous, soins fâcheux,</l>
+          <l met="10">Éloignez-vous de nos paisibles jeux.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bonhomme_de_quoi_savez_vous_jouga">Bonhomme, de quoi savez-vous jouga</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="5">Bonhomme, bonhomme,</l>
+            <l met="10">Bonhomme, venez, et répondez-moi.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ces_filles_sont_si_sottes">Ces filles sont si sottes</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="8">D'Angélique puis-je savoir</l>
+            <l met="8">Quel est le sort?</l>
+          </sp>
+        </spGrp>
+        <sp who="#thersandre">
+          <speaker>Thersandre</speaker>
+          <l met="8">Je viens de voir</l>
+          <l met="6">Embarquer cette belle.</l>
+        </sp>
+        <pb n="43"/>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="8">Elle est partie?</l>
+        </sp>
+        <sp who="#thersandre">
+          <speaker>Thersandre</speaker>
+          <l met="8">Oui.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="8">Je suis mort!</l>
+        </sp>
+        <sp who="#thersandre">
+          <speaker>Thersandre</speaker>
+          <l met="8">Et Médor avec elle.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="8">Médor!</l>
+        </sp>
+        <sp who="#thersandre">
+          <speaker>Thersandre</speaker>
+          <l met="6">Et Médor avec elle.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#catherine">Ton humeur est, Catheraine</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="7">Où sont-ils? Ah! la parjure!</l>
+          </sp>
+        </spGrp>
+        <sp who="#thersandre">
+          <speaker>Thersandre</speaker>
+          <l met="7">Ils sont au port à l'anglois,</l>
+          <l met="7">Et comme vous, je vous jure,</l>
+          <l met="7">ne soufflent pas dans leurs doigts.</l>
+          <l met="7">Un bon feu les ravigote.</l>
+          <l met="7">Ces deux amants, en un mot,</l>
+          <l met="7">Mangent une matelote.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="7">Moi, je croque le marmot!</l>
+        </sp>
+        <sp who="#thersandre">
+          <speaker>Thersandre</speaker>
+        </sp>
+        <spGrp who="#thersandre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#apercus_en_songe">L'autre nuit, j'aperçus en songe</title>
+            </desc>
+          </head>
+          <sp who="#thersandre">
+            <speaker>Thersandre</speaker>
+            <l met="8">Elle a fait les choses en reine.</l>
+            <l met="8">Et si j'ai servi ses amours,</l>
+            <l met="8">Elle a bien payé mon secours.</l>
+            <l met="8">Tenez, regardez cette chaîne.</l>
+          </sp>
+        </spGrp>
+        <pb n="44"/>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="8">Que vois-je? grands dieux! quel objet!</l>
+          <l met="8">La chaîne de mon perroquet!</l>
+        </sp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+        </sp>
+        <spGrp who="#belise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#comme_vla_qu_est_fait">Comme v'la qu'est fait</title>
+            </desc>
+          </head>
+          <sp who="#belise">
+            <speaker>Bélise</speaker>
+            <l met="8">De lui la colère s'empare:</l>
+            <l met="8">Comme il se promène à grands pas!</l>
+          </sp>
+        </spGrp>
+        <sp who="#thersandre">
+          <speaker>Thersandre</speaker>
+          <l met="8">Il pleure, il soupire.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="8">Ah! barbare!</l>
+        </sp>
+        <sp who="#thersandre">
+          <speaker>Thersandre</speaker>
+          <l met="8">Il gronde, il murmure tout bas.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="8">J'ai cru vivre heureux avec elle.</l>
+        </sp>
+        <sp who="#thersandre">
+          <speaker>Thersandre</speaker>
+          <l met="8">Il est tout pâle et tout défait.</l>
+          <l met="8">Il frémit.</l>
+        </sp>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <l met="8">C'est donc là, cruelle,</l>
+          <l met="8">Le prix d'un amour si parfait?</l>
+        </sp>
+        <sp who="#coridon">
+          <speaker>Coridon</speaker>
+          <l met="8">Quels yeux il fait!</l>
+        </sp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="8">Oh! qu'il est laid.</l>
+        </sp>
+        <pb n="45"/>
+        <sp who="#thersandre">
+          <speaker>Thersandre</speaker>
+        </sp>
+        <spGrp who="#thersandre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vive_la_joie_et_point_d_alarmes">Vive la joie, et point d'alarmes</title>
+            </desc>
+          </head>
+          <sp who="#thersandre">
+            <speaker>Thersandre</speaker>
+            <l met="8">Chantez et danser avec nous,</l>
+            <l met="8">À nos plaisirs unissez-vous,</l>
+            <l met="8">Et goûtez-en les charmes.</l>
+          </sp>
+        </spGrp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="8">Loin de se livrer au chagrin,</l>
+          <l met="8">Un guerrier doit tout mettre en train.</l>
+          <l met="8">Vive la joie, et point d'alarmes.</l>
+        </sp>
+        <spGrp who="#belise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_m_entendez_vous_pas">Ne m'entendez-vous pas</title>
+            </desc>
+          </head>
+          <sp who="#belise">
+            <speaker>Bélise</speaker>
+            <l met="6">Cessez d'être rêveur.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thersandre">
+          <speaker>Thersandre</speaker>
+          <l met="6">Il garde le silence.</l>
+          <l met="6">Que ferons-nous?</l>
+        </sp>
+        <sp who="#belise">
+          <speaker>Bélise</speaker>
+          <l met="6">Je pense.</l>
+          <l met="6">Qu'il faut chanter en chœur</l>
+          <l met="6">Pour calmer sa douleur.</l>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+        </sp>
+        <spGrp who="#choeur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#plus_on_est_de_fous">Plus on est de fous</title>
+            </desc>
+          </head>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="5">Dans un doux transport,</l>
+            <l met="5">Chantons Angélique.</l>
+            <l met="5">Dans un doux transport,</l>
+            <l met="5">Célébrons Médor.</l>
+            <l met="5">Lorsqu'un triste sort</l>
+            <l met="5">Nous blesse et nous pique,</l>
+            <l met="5">C'est un réconfort</l>
+            <l met="5">Qu'un air de musique.</l>
+            <l met="5">Dans un doux, ...</l>
+          </sp>
+        </spGrp>
+        <pb n="46"/>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierre_bagnolet">Pierre Bagnolet</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="8">Taisez-vous, cette injure atroce</l>
+            <l met="8">Mérite mon juste courroux.</l>
+            <l met="8">De crainte que je ne vous rosse</l>
+            <l met="8">Canaille, prévenez mes coups,</l>
+            <l met="4">Retirez-vous.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="8">Allons-nous-en gens de la noce,</l>
+          <l met="8">Allons-nous-en chacun chez nous.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 16</head>
+        <stage type="characters">Roland<stage>seul</stage>
+        </stage>
+        <sp who="#roland">
+          <speaker>Roland</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#trembleurs">Les Trembleurs</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="7">J'ai donc découvert leur trame,</l>
+            <l met="7">L'ingrate trahi ma flamme.</l>
+            <l met="7">Ce trait déchire mon âme.</l>
+            <l met="7">Dans quel état je me vois!</l>
+            <l met="7">Que tout sente ici ma rage,</l>
+            <l met="7">Faisons un affreux ravage.</l>
+            <l met="7">Durandal, sers mon courage,</l>
+            <l met="7">Allons abattre du bois.</l>
+          </sp>
+        </spGrp>
+        <stage>Il sabre les décorations et tombe dans la rêverie, puis il revient.</stage>
+        <pb n="47"/>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#malheureux_oui">Quand on a prononcé [ce malheureux oui]</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="12">Où suis-je? Quel pouvoir, quelle vertu magique</l>
+            <l met="12">M'entraîne, malgré moi, sur la scène lyrique?</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#belle_brune">Belle brune</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="7">Logistile, [Logistile],</l>
+            <l met="7">Pour lui donner du bon sens,</l>
+            <l met="7">Ton secours est inutile.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_suis_la_fleur_des_garcons_du_village">Je suis la fleur [des garçons du village]</title>
+            </desc>
+          </head>
+        </spGrp>
+        <spGrp>
+          <head type="melody" subtype="melody_part">
+            <desc type="part">Refrain de l'air</desc>
+            <title>
+              <title ref="#et_gai_gai">Et gai, gai</title>
+            </title>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="10">Jusqu'à la fin de l'acte quatrième,</l>
+            <l met="8">Le public aime l'opéra,</l>
+            <l met="10">Mais dès qu'il voit commencer le cinquième,</l>
+            <l met="8">Et gai, gai, gai, comme il s'en va!</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">Tambourin,tiré de <title ref="#jephte">Jephté</title> ()</desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="5">Sortons de ce lieu,</l>
+            <l met="4">Je suis en feu,</l>
+            <l met="4">J'ai la migraine.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#faites_dodo">Faites dodo</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="4">Faisons un tour</l>
+            <l met="4">Chez Melpomène,</l>
+            <l met="4">Faisons un tour,</l>
+            <l met="4">Dans le faubourg.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sois_complaisant">Sois complaisant, [affable et débonnaire]</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="10">De traits brillants une harangue pleine</l>
+            <l met="10">Fait que Cortez est goûté sur la scène.</l>
+            <l met="1">Mais,</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ou_est_il_le_petit_nouveau_ne">Où est-il le petit nouveau né</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="3">En sortant</l>
+            <l met="6">Chacun dit hautement:</l>
+            <l met="6">Il est si long qu'il traîne.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#troupe_italienne">La troupe Italienne, [faridondaine]</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="7">Quel objet frappe mes yeux!</l>
+            <l met="7">C'est moi-même, justes dieux!</l>
+            <l met="5">Que chez eux l'on joue!</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roland">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cotillon_hongrois">Cotillon hongrois</title>
+            </desc>
+          </head>
+          <sp who="#roland">
+            <speaker>Roland</speaker>
+            <l met="9">Cet aspect réveille ma furie,</l>
+            <l met="9">Rien ne peut retenir mon courroux.</l>
+            <l met="9">Lieu fatal où l'on me parodie,</l>
+            <l met="9">Ne crois pas échapper à mes coups.</l>
+            <l met="5">Dans l'instant tu vas</l>
+            <l met="8">Voir du vacarme, du fracas.</l>
+            <l met="5">Oui, tu gémiras,</l>
+            <l met="4">Tu tomberas,</l>
+            <l met="4">Tu périras,</l>
+            <l met="7">Sous les efforts de mon bras.</l>
+          </sp>
+        </spGrp>
+        <stage>Il brise tout.</stage>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

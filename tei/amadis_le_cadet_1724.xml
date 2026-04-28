@@ -1,0 +1,2428 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="amadis_le_cadet_1724">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Amadis le cadet</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Fuzelier</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Relecture</resp>
+          <name>L. Chahine</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">
+          <bibl xml:id="pnti">
+            <title>Les Parodies du nouveau Théâtre-Italien</title>, Briasson, 1738</bibl>, t.~II, p.~279--327</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="amadis" sex="UNKNOWN">
+            <persName>Amadis</persName>
+          </person>
+          <person xml:id="prince" sex="UNKNOWN">
+            <persName>Le Prince</persName>
+          </person>
+          <person xml:id="niquette" sex="UNKNOWN">
+            <persName>Niquette</persName>
+          </person>
+          <person xml:id="melisse" sex="UNKNOWN">
+            <persName>Mélisse</persName>
+          </person>
+          <person xml:id="zirphee" sex="UNKNOWN">
+            <persName>Zirphée</persName>
+          </person>
+          <person xml:id="geant" sex="UNKNOWN">
+            <persName>Géant</persName>
+          </person>
+          <person xml:id="huissier" sex="UNKNOWN">
+            <persName>Huissier</persName>
+          </person>
+          <person xml:id="iergarcon" sex="UNKNOWN">
+            <persName>Premier Garçon</persName>
+          </person>
+          <person xml:id="chevalier" sex="UNKNOWN">
+            <persName>Le Chevalier</persName>
+          </person>
+          <person xml:id="choeurdesarchers" sex="UNKNOWN">
+            <persName>Chœur des archers</persName>
+          </person>
+          <person xml:id="choeurdesprincesses" sex="UNKNOWN">
+            <persName>Chœur des Princesses</persName>
+          </person>
+          <person xml:id="lombre" sex="UNKNOWN">
+            <persName>L'Ombre</persName>
+          </person>
+          <person xml:id="unefille" sex="UNKNOWN">
+            <persName>Une Fille</persName>
+          </person>
+          <person xml:id="ungarcon" sex="UNKNOWN">
+            <persName>Un Garçon</persName>
+          </person>
+          <person xml:id="le_prince_de_thrace" sex="UNKNOWN">
+            <persName>Le Prince de Thrace</persName>
+          </person>
+          <person xml:id="un_geant" sex="UNKNOWN">
+            <persName>Un géant</persName>
+          </person>
+          <person xml:id="un_huissier" sex="UNKNOWN">
+            <persName>Un huissier</persName>
+          </person>
+          <person xml:id="garcons_et_filles_du_lendemain_de_noces" sex="UNKNOWN">
+            <persName>Garçons et filles du lendemain de Noces</persName>
+          </person>
+          <person xml:id="un_vielleux" sex="UNKNOWN">
+            <persName>Un vielleux</persName>
+          </person>
+          <person xml:id="premier_garcon_du_lendemain" sex="UNKNOWN">
+            <persName>Premier garçon du lendemain</persName>
+          </person>
+          <person xml:id="un_chevalier_enchante" sex="UNKNOWN">
+            <persName>Un chevalier enchanté</persName>
+          </person>
+          <person xml:id="princes_et_princesses_enchantes_de_differentes_nations" sex="UNKNOWN">
+            <persName>Princes et princesses enchantés de différentes nations</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie d'<emph>Amadis de Grèce</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1724">
+        <desc>Représentée pour la première fois par les Comédiens Italiens ordinaires du Roi 24 mars 1724</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#amadis">Amadis</role>
+          <roleDesc>d'abord en redingote, guêtres et chapeau de toile cirée, ensuite en chevalier errant</roleDesc>
+          <actor>Arlequin</actor>
+        </castItem>
+        <castItem>
+          <role ana="#le_prince_de_thrace">Le Prince de Thrace</role>
+          <roleDesc>d'abord en chemise, culotte et bonnet de nuit, et ensuite en chevalier errant</roleDesc>
+          <actor>Trivelin</actor>
+        </castItem>
+        <castItem>
+          <role ana="#niquette">Niquette</role>
+          <roleDesc>en princesse</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#melisse">Mélisse</role>
+          <roleDesc>magicienne</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#zirphee">Zirphée</role>
+        </castItem>
+        <castItem>
+          <role ana="#un_geant">Un géant</role>
+          <roleDesc>procureur</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#un_huissier">Un huissier</role>
+        </castItem>
+        <castItem>
+          <role ana="#garcons_et_filles_du_lendemain_de_noces">Garçons et filles du lendemain de Noces</role>
+        </castItem>
+        <castItem>
+          <role ana="#un_vielleux">Un vielleux</role>
+          <roleDesc>avec sa vielle</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#premier_garcon_du_lendemain">Premier garçon du lendemain</role>
+        </castItem>
+        <castItem>
+          <role ana="#un_chevalier_enchante">Un chevalier enchanté</role>
+        </castItem>
+        <castItem>
+          <role ana="#princes_et_princesses_enchantes_de_differentes_nations">Princes et princesses enchantés de différentes nations</role>
+        </castItem>
+      </castList>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Amadis le Cadet<stage>en guêtres et en redingote</stage>, le Prince de Thrace<stage>en culotte et chemise et bonnet de nuit</stage>
+        </stage>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dupont_mon_ami">Dupont mon ami</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="5">Prince mon ami,</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="5">Qui régnez en Thrace,</l>
+            <l met="5">Votre air endormi,</l>
+            <l met="5">N'est pas fort en place;</l>
+            <l met="7">C'est trop ici s'arrêter</l>
+            <l met="7">Allons-nous en sans compter.</l>
+          </sp>
+        </spGrp>
+        <stage>Le Prince bâille.</stage>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <p>Eh, qui diable, seigneur Amadis, vous met la puce à l'oreille dès une heure après minuit, et vous amène à tâtons dans ce jardin? Y venez-vous chercher une fluxion de poitrine?</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>riant</stage>
+          <p>Non, parbleu.</p>
+        </sp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <p>Vous sortez furtivement d'un château où l'on vous traite à bouche que veux-tu sans vous demander un sou, comme un garçon sortirait d'une auberge après trois mois de crédit.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Oh mon ami, c'est que j'ai hâte, j'ai hâte! Mon grand ami, j'ai grand hâte!</p>
+        </sp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <p>Aussi m'a-t'on fort pressé quand on m'a appelé de votre part. J'ai laissé mon justaucorps pour les gages dans la chambre d'une soubrette de Mélisse, avec qui je faisais la belle conversation; à peine ai-je eu le temps de prendre ma culotte.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Allons, mon ami, décampons.</p>
+        </sp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <p>Où diable aller? La nuit est si sombre que je ne vous aperçois pas vous-même.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Allons...</p>
+        </sp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <p>Oui, allons nous casser le nez contre quelque marronnier d'Inde... Songez qu'il n'est pas trop galant de quitter Mélisse sans du moins payer votre gîte d'un tendre compliment.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Je ne parle pas de l'amour de Mélisse... Hélas! Quand j'ai passé par son maudit château, j'allais...</p>
+        </sp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <p>Eh bien oui! Vous alliez tenter l'aventure de la gloire de Niquette, et peut-être vous rôtir à son perron enflammé. Mélisse vous a retenu dans un riche appartement où l'on vous a prodigué les chapons,<stage>Amadis fait le lazzi de se pâmer.</stage>les perdrix, les ortolans, les coqs d'Inde, et le fromage de Milan...</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Tais-toi donc, mon ami! Tu me fais avaler un doux poison; vite à l'Orvietan, guérissons-nous en regardant le portrait de ma Niquette<note>Dans l'opéra, Amadis montre le portrait de Niquette au Prince de Thrace pendant une nuit très obscure.</note>
+          </p>
+        </sp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <p>Ce n'est pas là tirer de sa poche le portrait de sa maîtresse à propos de rien.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Tiens, vois.</p>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">Niquette n'a pas le teint jaune:</l>
+            <l met="8">C'est un tendron frais et poli!</l>
+            <l met="8">Connais-tu rien de plus joli?</l>
+          </sp>
+        </spGrp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <stage>à part</stage>
+          <l met="6">Je sais ce qu'en vaut l'aune...</l>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#robin_ture_lure_lure">Robin turelure</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="7">Considère bien l'objet</l>
+            <l met="7">De la peine que j'endure.</l>
+          </sp>
+        </spGrp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <l met="7">Eh! Comment voir ce portrait,</l>
+          <l met="3">Turelure,</l>
+          <l met="7">Pendant cette nuit obscure?</l>
+          <l met="7">Robin turelure lure.</l>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Il a ma foi raison, il me manque une</p>
+          <p>lanterne. Mais partons, j'ai hâte...</p>
+        </sp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <p>Oh çà! Puisque vous voulez absolument partir, je vais faire mon paquet; au moins je ne vous quitte pas sans vous rendre raison de mon départ<note>Dans l'opéra, le Prince de Thrace s'en va à propos de rien.</note>.<stage>Bas.</stage>Allons avertir l'amoureuse Mélisse de la banqueroute d'Amadis.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Amadis<stage>seul</stage>
+        </stage>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dormez_roulette">Dormez Roulette</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="6">Soit noire comme un four,</l>
+            <l met="6">Ô nuit, sois-moi propice...</l>
+            <l met="6">Garde-toi bien, Amour,</l>
+            <l met="6">De réveiller Mélisse...</l>
+            <l met="4">Dormez Roulette,</l>
+            <l met="7">Et prenez votre repos</l>
+            <l met="7">Demain à la réveillette,</l>
+            <l met="6">Vous aurez le cœur gros.</l>
+          </sp>
+        </spGrp>
+        <stage>La nuit se dissipe, une clarté magique éclaire les jardins, et une troupe rustique envoyée par Mélisse vient s'opposer au départ d'Amadis.</stage>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">Quel spectacle! Qui vous appelle?</l>
+            <l met="8">D'où vient qu'une clarté nouvelle</l>
+            <l met="8">Éclate ici de toutes parts?</l>
+            <l met="8">Quel jour à la nuit fait la nique?</l>
+            <l met="8">Ce sont, je crois, les Savoyards,</l>
+            <l met="8">Avec la lanterne magique...</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Amadis, les garçons et les filles du lendemain de noces</stage>
+        <sp who="#iergarcon">
+          <speaker>Premier Garçon</speaker>
+          <p>Des Savoyards! Pour qui nous prenez-vous là? Apprenez que nous commençons la cérémonie d'un lendemain de noces, et que nous allons porter le brouet<note type="definition">Brouet: Espèce de bouillon au lait et au sucre. En ce sens il n'a guère d'usage que dans ces phrases:<emph>Le brouet de l'épousée. Le brouet de l'accouchée</emph>. (Acad.1762)</note>à la mariée.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>à part</stage>
+          <p>Le brouet! j'y voudrais bien tâter...</p>
+        </sp>
+        <sp who="#iergarcon">
+          <speaker>Premier Garçon</speaker>
+          <p>Vous pouvez voir notre divertissement si vous n'avez rien qui vous presse, nous vous régalerons de la bonne vielle du pays</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Tope.</p>
+        </sp>
+        <stage>À part.</stage>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sois_complaisant">Sois complaisant, affable et débonnaire</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="10">Je suis pressé d'aller voir ma Niquette,</l>
+            <l met="10">J'ai pour cela délogé sans trompette,</l>
+            <l met="1">Mais</l>
+            <l met="7">Que je trouve une musette,</l>
+            <l met="7">Je ne partirai jamais.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Amadis, Mélisse</stage>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <stage>arrive en déshabillé et dit aux acteurs du divertissement qui se disposent à chanter:</stage>
+          <p>Retirez-vous vous autres, vous chanterez et vous danserez quand cela sera plus de saison.</p>
+        </sp>
+        <stage>Ils se retirent. À Amadis.</stage>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <p>Je t'avais envoyé ces violons et ces vielles pour t'amuser pendant que je me coifferais, mais j'ai réfléchi que tu ne pourrais n'être pas assez enfant<note>Amadis, dans l'opéra, après avoir témoigné un grand empressement pour sortir du Château de Mélisse, s'amuse à voir danser sans y être contraint par le pouvoir magique.</note>pour baguenauder avec des paysans, lorsque tu t'échappes la nuit de chez moi, et je viens te chercher sans mon panier et mes pompons.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>à part</stage>
+          <p>C'est ma faute si j'essuie ses reproches, il ne tenait qu'à moi de m'en aller, et</p>
+          <p>cela aurait épargné bien de l'ennui au public...</p>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vraiment_ma_commere_oui">Vraiment, ma commère, oui</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="7">Ingrat! tu pars donc ainsi?</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <l met="7">Vraiment, ma commère, oui.</l>
+          <l met="7">Mais c'est pour suivre la gloire...</l>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <stage>ironiquement</stage>
+          <l met="7">Vraiment, mon compère, voire,</l>
+          <l met="7">Vraiment, mon compère, oui.</l>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>En bonne vérité, si la gloire ne me tiraillait pas,</p>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="7">Je m'hébergerais ici.</l>
+          </sp>
+        </spGrp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <l met="7">Vraiment, mon compère, oui.</l>
+          <l met="7">Je sais ce que j'en dois croire,</l>
+          <l met="7">Vraiment, mon compère, voire,</l>
+          <l met="7">Vraiment, mon compère, oui.</l>
+          <p>Morbleu, je ne suis que trop instruite où le bât te blesse.</p>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#malheureux_oui">Quand on a prononcé ce malheureux oui</title>
+            </desc>
+          </head>
+        </spGrp>
+        <spGrp>
+          <head type="melody" subtype="melody_part">
+            <desc type="part">Fin de l'air</desc>
+            <title>
+              <title ref="#joli_nom">Il n'est point de si joli nom</title>
+            </title>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="12">L'image de Niquette a porté dans ton âme</l>
+            <l met="12">Le malheureux brasier d'une amoureuse flamme:</l>
+            <l met="12">Son nom même, son nom, vient d'émouvoir ton cœur,</l>
+            <l met="12">Et tu chantes tout bas en raillant mon ardeur:</l>
+            <l met="10">Non, non, il n'est point de si joli nom</l>
+            <l met="7">Que celui de ma Niquette!</l>
+            <l met="10">Non, non, il n'est point de si joli nom!</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <l met="7">Ma foi vous avez raison.</l>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#confiteor">Mon père je viens devant vous</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">Pourquoi voulez-vous m'engager</l>
+            <l met="8">Quand je suis sous les lois d'une autre?</l>
+            <l met="8">Un cœur capable de changer</l>
+            <l met="8">Ne serait pas digne du vôtre.</l>
+            <l met="8">Vous contenteriez-vous vraiment</l>
+            <l met="8">D'avoir les restes d'un amant?</l>
+          </sp>
+        </spGrp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_ne_saurais">Je n'saurais</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="7">En vain ma sorcellerie</l>
+            <l met="7">Rassemblait ici les jeux,</l>
+            <l met="7">Pour toi dans ma compagnie</l>
+            <l met="7">Tout y devenait affreux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <l met="3">Je n'saurais</l>
+          <l met="7">Rester avec vous, ma mie,</l>
+          <l met="3">J'en mourrais.</l>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reviendrai_demain">Je reviendrai demain au soir</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="8">Je ne te retiens plus, cours donc</l>
+            <l met="6">Chercher ton Alison<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Mais, sur la route en vérité,</l>
+            <l met="6">Tu seras bien frotté.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Oh! je suis fait à la fatigue.</p>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tarare_ponpon">Tarare pompon</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="12">Va braver les périls que le sort te prépare.</l>
+            <l met="12">Cours, vole à ta princesse, ou plutôt au bâton...</l>
+            <l met="6">Tu peux partir, barbare!</l>
+            <l met="6">Quoi! Sans émotion</l>
+            <l met="6">Tu me quittes?...</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>héroïquement</stage>
+          <l met="6">Tarare</l>
+          <l met="2">Pompon.</l>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="10">Suis donc, cruel, suis une gloire fatale<note>Versification: L. Chahine</note>,</l>
+            <l met="12">Va périr pour une autre, et je vivrai pour toi...</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>fait la révérence</stage>
+          <p>
+            <emph>Ringrazio a vosignoria</emph>.</p>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#barbari">À la façon de Barbari</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="8">Que sur toi d'un monstre félon</l>
+            <l met="6">La rage se signale!</l>
+            <l met="8">Tombe rôti comme un chapon</l>
+            <l met="6">Aux pieds de ma rivale.</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <l met="8">Voilà ma chère, une oraison,</l>
+          <l met="11">La faridondaine, la faridondon.</l>
+          <l met="8">Qui part d'un cœur tout attendri,</l>
+          <l met="3">Biribi,</l>
+          <l met="8">À la façon de Barbari,</l>
+          <l met="3">Mon ami.</l>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <stage>très touchée</stage>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_filles_de_nanterre">Les filles de Nanterre</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="6">Perfide que j'adore,</l>
+            <l met="6">Dans ce château charmant</l>
+            <l met="6">Daigne coucher encore</l>
+            <l met="6">Une nuit seulement.</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>à part</stage>
+          <l met="8">Partons, m'y voilà résolu,</l>
+          <l met="8">Sans que Mélisse m'embarrasse,</l>
+          <l met="8">Ni même ce qu'est devenu</l>
+          <l met="5">Le Prince de Thrace,</l>
+          <l met="8">Le drôle me rattrapera</l>
+          <l met="8">À la dînée... ou ne pourra...</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Mélisse<stage>seule</stage>
+        </stage>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#et_lon_lan_la_la_bouteille">Et lon lan la, la bouteille s'en va</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="4">Et lon lan la</l>
+            <l met="6">Le cruel m'abandonne,</l>
+            <l met="4">Et lon lan la</l>
+            <l met="5">Le cruel s'en va!</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_raison">Ma raison s'en va bon train</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="7">Voilà le prix du destin</l>
+            <l met="7">Que j'avais fait au coquin!</l>
+            <l met="5">Pour cet aigrefin,</l>
+            <l met="5">Toujours en festin,</l>
+            <l met="6">Rien n'était indigeste...</l>
+            <l met="8">Pour lui j'ai percé tout mon vin.</l>
+            <l met="6">Je ne dis pas le reste,</l>
+            <l met="2">Lon la,</l>
+            <l met="6">Je ne dis pas le reste.</l>
+            <p>Mais il me le payera à beaux deniers comptants, et ses épaules pâtiront des sottises de son cœur.</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="location">Le théâtre change et représente le perron enflammé de la gloire de Niquette. Il est défendu par des huissiers, des archers et des procureurs.</stage>
+        <stage type="characters">Un nain, Scaramouche<stage>en géant procureur</stage>
+        </stage>
+        <sp who="#geant">
+          <speaker>Géant</speaker>
+        </sp>
+        <spGrp who="#geant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mais_surtout_prenez_bien_garde">Mais surtout prenez bien garde à votre cotillon</title>
+            </desc>
+          </head>
+          <sp who="#geant">
+            <speaker>Géant</speaker>
+            <l met="8">Archers, sergents et procureurs,</l>
+            <l met="8">Monstres choisis pour défenseurs</l>
+            <l met="8">De Niquette et de sa prison,</l>
+            <l met="7">Mes amis, prenez bien garde</l>
+            <l met="6">À son beau cotillon.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#choeurdesarchers">
+          <speaker>Chœur des archers</speaker>
+          <stage>sur le ton des deux derniers vers</stage>
+          <l met="7">Mes amis, prenons bien garde</l>
+          <l met="6">À son beau cotillon.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <sp who="#geant">
+          <speaker>Géant</speaker>
+          <p>Il y a par le monde un certain quidam qui veut, dit-on, revendiquer la gentille Niquette et la retirer de notre greffe, où nous l'avons déposée avec une liasse de Princesses enchantées que nous avons paraphées<emph>ne varietur</emph>.</p>
+        </sp>
+        <sp who="#choeurdesarchers">
+          <speaker>Chœur des archers</speaker>
+          <l met="7">Mes amis prenez bien garde</l>
+          <l met="6">À son beau cotillon.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Les mêmes acteurs, un huissier</stage>
+        <sp who="#huissier">
+          <speaker>Huissier</speaker>
+          <stage>essouflé</stage>
+        </sp>
+        <spGrp who="#huissier">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aux_armes">Aux armes, camarades</title>
+            </desc>
+          </head>
+          <sp who="#huissier">
+            <speaker>Huissier</speaker>
+            <l met="6">Aux armes, camarades,</l>
+            <l met="6">Amadis n'est pas loin,</l>
+            <l met="5">Tôt la plume en main:</l>
+            <l met="6">Aux armes, camarades!</l>
+            <l met="8">Ayons tous notre cornet plein.</l>
+          </sp>
+        </spGrp>
+        <sp who="#geant">
+          <speaker>Géant</speaker>
+          <p>C'est bien dit, monsieur l'huissier. Si Amadis nous bat, nous verbaliserons; c'est la pratique et la coutume. Rangeons-nous en bon ordre près du perron et ne branlons pas que nous n'ayons reçu au moins chacun cent coups de canne; il faut toujours mettre les gens dans leur tort.</p>
+        </sp>
+        <stage>Ils se rangent tous en haie devant le perron enflammé, et le géant se met hors de la ligne en tête.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Amadis, le Prince de Thrace<stage>armés en chevaliers errants</stage>
+        </stage>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <stage>considérant le perron tandis qu'Amadis rêve</stage>
+          <p>Quel spectacle! Des archers, des sergents, des procureurs et un grand feu! Apparemment, voilà les enfers!</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>se retournant</stage>
+          <p>Quoi! Je trouve encore un géant! Ils ne finissent pas.</p>
+        </sp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <p>Oui, vous avez un procureur qui ne ferait qu'une bouchée du patrimoine de vingt familles.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">N'importe, je vais le combattre;</l>
+            <l met="8">Je vais faire le diable à quatre.</l>
+            <l met="8">Lorsque géants je mets à bas</l>
+            <l met="8">Et lorsque cent monstres j'immole,</l>
+            <l met="7">Mon ami, je ne prétends pas</l>
+            <l met="8">En être cru sur ma parole.</l>
+            <p>Je vais mettre la main à la pâte. Au moins ne t'en mêle pas.</p>
+          </sp>
+        </spGrp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <stage>à part</stage>
+          <p>Oh! je n'ai garde.</p>
+        </sp>
+        <stage>Amadis combat le géant et sa suite et les met en fuite. Pendant ce temps-là, le Prince de Thrace a les bras croisés, et s'est assis à terre.</stage>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>regardant le Prince à terre</stage>
+          <p>Prenez garde de vous fatiguer.</p>
+        </sp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+        </sp>
+        <spGrp who="#prince">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Que je chéris mon cher voisin</title>
+            </desc>
+          </head>
+          <sp who="#prince">
+            <speaker>Le Prince</speaker>
+            <l met="8">Nous ne serons pas accusés</l>
+            <l met="6">De rogner votre gloire;</l>
+            <l met="8">J'ai toujours eu les bras croisés</l>
+            <l met="6">Pendant votre victoire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Vous êtes un rince bien obéissant. Mais achevons notre tâche.</p>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">Ces feux excitent mon courage,</l>
+            <l met="8">C'est dans le projet qui m'engage</l>
+            <l met="8">Le dernier péril à tenter.</l>
+            <l met="8">Alors je verrai dans sa niche</l>
+            <l met="8">La beauté qui m'a su dompter.</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">Mais lisons d'abord cette affiche.</l>
+          </sp>
+        </spGrp>
+        <stage>Apercevant l'inscription.</stage>
+        <stage>Il lit.</stage>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#petit_reduit">La bonne aventure, ô gué</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="7">Qui n'est pas bien amoureux</l>
+            <l met="5">Craigne la brûlure;</l>
+            <l met="7">L'amant le plus généreux</l>
+            <l met="7">Peut seul passer dans ces feux.</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="7">La bonne aventure, ô gué,</l>
+            <l met="5">La bonne aventure!</l>
+          </sp>
+        </spGrp>
+        <stage>Sautant après avoir lu.</stage>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <stage>à part</stage>
+          <l met="5">La chaude aventure,</l>
+          <l met="2">Ô gué,</l>
+          <l met="5">La chaude aventure!</l>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tarare_ponpon">Tarare pompon</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="12">Cher Prince, sois heureux autant que je vais l'être.</l>
+          </sp>
+        </spGrp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <stage>à part</stage>
+          <p>Il va être grillé.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_robin_tais_toi">Ah! Robin, tais-toi</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="7">Puisses-tu sans nul Bicêtre</l>
+            <l met="7">Voir combler tous tes désirs!</l>
+            <l met="8">Ce n'est plus que par tes plaisirs</l>
+            <l met="7">Que les miens pourront s'accroître.</l>
+            <l met="8">Mon cher Prince, vois...</l>
+          </sp>
+        </spGrp>
+        <stage>Il veut passer le perron, et est arrêté par le Prince.</stage>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <p>Tout beau.</p>
+          <l met="8">Connais-moi,</l>
+          <l met="5">Oui, connais un traître</l>
+          <l met="5">Plus tendre que toi.</l>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Hem?</p>
+        </sp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+        </sp>
+        <spGrp who="#prince">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#prince">
+            <speaker>Le Prince</speaker>
+            <l met="8">Ce bras s'oppose à ton audace...</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <l met="8">Que fou pommé! Ciel! J'en frémis...</l>
+        </sp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <l met="8">Combats dans le Prince de Thrace</l>
+          <l met="8">Ton rival et ton ennemi.</l>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">Conte-moi donc quelle furie</l>
+            <l met="8">Peut contre moi te transporter?</l>
+          </sp>
+        </spGrp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <l met="8">Lorsque je veux t'ôter la vie,</l>
+          <l met="8">C'est bien le temps de jaboter!</l>
+          <p>Allons! L'épée à la main, mon épée seule doit te dire ce que je pense.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Il me fait pitié! Va, perfide...</p>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Que je chéris mon cher voisin</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">Je ne punirai ton amour,</l>
+            <l met="6">Et ton dessein féroce,</l>
+            <l met="8">Qu'en te forçant d'être en ce jour</l>
+            <l met="6">Un garçon de ma noce.</l>
+          </sp>
+        </spGrp>
+        <stage>Amadis passe à travers des feux du perron enflammé.</stage>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <stage>se présentant au perron après qu'Amadis est passé</stage>
+        </sp>
+        <spGrp who="#prince">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#prince">
+            <speaker>Le Prince</speaker>
+            <l met="8">Il m'échappe, il brave ma rage...</l>
+            <l met="8">Allons à travers de ces feux...</l>
+          </sp>
+          <sp who="#prince">
+            <speaker>Le Prince</speaker>
+            <l met="8">Mais qui m'en défend le passage?</l>
+            <l met="8">Foin! l'on a grillé mes cheveux.</l>
+            <p>M'en voilà pour une perruque.</p>
+          </sp>
+        </spGrp>
+        <stage>Un lutin le repousse, et met le feu à sa perruque.</stage>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#prince">
+            <speaker>Le Prince</speaker>
+            <l met="8">Je n'entreprends rien qui finisse...</l>
+            <l met="8">Une seconde fois<note>Le prince de Thrace dit toujours dans l'opéra qu'il va trouver Mélisse.</note>, allons</l>
+            <l met="8">Rendre une visite à Mélisse,</l>
+            <l met="8">Je suis toujours sur ses talons.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Niquette, Amadis</stage>
+        <stage>Le perron enflammé se brise au bruit du tonnerre. On voit Niquette dans sa gloire, elle descend de son trône tenant Amadis par la main au milieu des chevaliers, princes et princesses enchantées.</stage>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+        </sp>
+        <spGrp who="#niquette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#Cent petits soins rendus">Cent petits soins rendus</title>
+            </desc>
+          </head>
+          <sp who="#niquette">
+            <speaker>Niquette</speaker>
+            <l met="6">Mes sens sont interdits</l>
+            <l met="6">Et je ne sais que croire.</l>
+            <l met="6">Vois-je cet Amadis</l>
+            <l met="6">Si chéri de la gloire?</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#niquette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_voila_la_vie">Ah! Voilà la vie</title>
+            </desc>
+          </head>
+          <sp who="#niquette">
+            <speaker>Niquette</speaker>
+            <l met="11">Oui, voilà le drôle, le drôle, le drôle!</l>
+            <l met="5">Oui, voilà le drôle</l>
+            <l met="5">Que nous demandions.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeurdesprincesses">
+          <speaker>Chœur des Princesses</speaker>
+          <l met="11">Ah! Voilà le drôle, le drôle, le drôle!</l>
+          <l met="5">Ah! Voilà le drôle</l>
+          <l met="5">Que nous demandions.</l>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>à Niquette</stage>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#talaleri">Talaleri, talaleri, talalerire</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">Que d'attraits! Quelle gloire extrême!</l>
+            <l met="8">Que mon cœur goûte un sort charmant!</l>
+            <l met="8">Je demeure enchanté moi-même,</l>
+            <l met="8">Quand je romps votre enchantement;</l>
+            <l met="8">Tout mon cœur n'y saurai suffire,</l>
+            <l met="12">Talaleri, talaleri, talalerire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+        </sp>
+        <spGrp who="#niquette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#et_zon_zon_zon">Zon, zon, zon</title>
+            </desc>
+          </head>
+          <sp who="#niquette">
+            <speaker>Niquette</speaker>
+            <l met="6">Montrons ma vive ardeur...</l>
+            <l met="6">Mais quel souci me ronge?...</l>
+            <l met="6">Êtes-vous ce vainqueur?</l>
+            <l met="6">Et n'est-ce point un songe?</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <l met="4">Et non, non, non</l>
+          <l met="6">Ce n'est pas un mensonge...</l>
+          <l met="4">Et zon, zon, zon</l>
+          <l met="6">Dissipez ce soupçon.</l>
+          <p>Examinez-moi bien, interrogez-moi sur faits et articles.</p>
+        </sp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+        </sp>
+        <spGrp who="#niquette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#de_son_lan_la">De son lan la, landerirette</title>
+            </desc>
+          </head>
+          <sp who="#niquette">
+            <speaker>Niquette</speaker>
+            <l met="7">Oh! Sans interrogatoire</l>
+            <l met="7">Je vous tiens pour ce vainqueur,</l>
+            <l met="7">Et tout m'engage à le croire,</l>
+            <l met="7">Vos exploits, mes yeux, mon cœur...</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>la caressant</stage>
+          <l met="4">Et mon lan la</l>
+          <l met="4">Landerirette,</l>
+          <l met="4">Et mon lan la</l>
+          <l met="4">Landerira.</l>
+        </sp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <stage>après l'avoir caressé</stage>
+        </sp>
+        <spGrp who="#niquette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_sais_quoi">Ah! c'est un certain je ne sais quoi</title>
+            </desc>
+          </head>
+          <sp who="#niquette">
+            <speaker>Niquette</speaker>
+            <l met="8">Mais où m'emporte, en bonne foi,</l>
+            <l met="6">Un excès de tendresse!</l>
+            <l met="8">Non, vous savez trop ma faiblesse!</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <l met="8">Oh! je ne suis pas faible moi.</l>
+        </sp>
+        <spGrp>
+          <caption>À deux</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="9">Je sens un certain je ne sait qu'est-ce,</l>
+            <l met="9">Je sens un certain je ne sais quoi.</l>
+          </sp>
+        </spGrp>
+        <sp who="#chevalier">
+          <speaker>Le Chevalier</speaker>
+          <stage>enchanté</stage>
+        </sp>
+        <spGrp who="#chevalier">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lampons">Lampons</title>
+            </desc>
+          </head>
+          <sp who="#chevalier">
+            <speaker>Le Chevalier</speaker>
+            <l met="7">Chantons tous ce beau tendron,</l>
+            <l met="7">Qui nous tire de prison;</l>
+            <l met="7">Chantons aussi sa conquête,</l>
+            <l met="7">Dans une galante fête.</l>
+            <l met="4">Chantons, dansons,</l>
+            <l met="6">Camarades, dansons.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="4">Chantons, dansons,</l>
+          <l met="6">Camarades, dansons.</l>
+        </sp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <p>Je crois que nous ferions plus sagement de déménager sans bruit, que de nous amuser à danser des sarabandes et chanter des brunettes dans un temps où la cruelle Mélisse peut nous surprendre.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">Restons: je vous en fais excuse...</l>
+          </sp>
+        </spGrp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <l met="8">Risquerez-vous d'être arrêté</l>
+          <l met="8">Pour quelque petit air flûté?</l>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <l met="6">Oh! Dame un rien m'amuse<note>Amadis dans l'opéra n'a pas toujours l'esprit présent pour saisir les occasions favorables à ses desseins.</note>...</l>
+        </sp>
+        <stage>Un nuage qui s'avance sur le théâtre s'ouvre et fait voir Mélisse sur un dragon.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Les enchantés, Amadis, Niquette</stage>
+        <sp who="#chevalier">
+          <speaker>Le Chevalier</speaker>
+        </sp>
+        <spGrp who="#chevalier">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#voici_dragons">Voici les dragons qui viennent</title>
+            </desc>
+          </head>
+          <sp who="#chevalier">
+            <speaker>Le Chevalier</speaker>
+            <l met="7">Voici les dragons qui viennent</l>
+            <l met="5">Amis, sauvons-nous!</l>
+            <l met="7">Cherchons vite une cachette...</l>
+          </sp>
+        </spGrp>
+        <stage>Les enchantés rentrent tous dans la gloire de Niquette qui se renferme sur eux.</stage>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <l met="7">Ah! que j'ai peur ma Niquette...</l>
+        </sp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <l met="8">Et moi itou, et moi itou.</l>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <stage>sur son dragon</stage>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#trembleurs">Les Trembleurs</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="7">Tremble, Amadis, tremble, tremble,</l>
+            <l met="7">Crains tous les malheurs ensemble!</l>
+            <l met="7">Le diable ici nous rassemble,</l>
+            <l met="7">Rendez-vous pour toi fatal!</l>
+            <l met="7">Tu vois bien ce qui m'amène,</l>
+            <l met="7">Vous, démons, servez ma haine</l>
+            <l met="7">Et transportez sa Climène</l>
+            <l met="7">Où l'attend son beau rival.</l>
+          </sp>
+        </spGrp>
+        <stage>Des démons enlèvent Niquette, et Amadis la suit en pleurant.</stage>
+        <spGrp>
+          <head type="melody" subtype="melody_part">
+            <desc type="part">Fin de l'air</desc>
+            <title>
+              <title ref="#trembleurs">Les Trembleurs</title>
+            </title>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="7">Finissons par un tapage,</l>
+            <l met="7">Renversons tout, faisons rage,</l>
+            <l met="7">Mon rôle est un peu brutal<note>Dans l'opéra, Mélisse est toujours furieuse, et ne dit que des injures.</note>.</l>
+          </sp>
+        </spGrp>
+        <stage>Mélisse casse quelques meubles et s'en va.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="location">Le théâtre représente une plaine coupée de quelques ruisseaux, et au milieu, la fontaine de la vérité d'Amour, ornée de colonnes et de statues.</stage>
+        <stage type="characters">Amadis<stage>seul</stage>
+        </stage>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nicolas_va_voir_jeanne">Nicolas va voir Jeanne</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="6">Mes recherches sont vaines,</l>
+            <l met="6">Je traverse au hasard</l>
+            <l met="6">Les forêts et les plaines,</l>
+            <l met="7">Je n'ai trouvé qu'un canard...</l>
+            <l met="8">Vous perdez vos pas, Amadis,</l>
+            <l met="7">Et gâtez vos beaux habits.</l>
+            <p>Mais que vois-je? C'est la fontaine de la vérité d'Amour! Ses eaux instruisent les amants de leur destin: voyons un peu ce qu'elles me diront au sujet de ma belle.</p>
+          </sp>
+        </spGrp>
+        <stage>Il regarde dans la fontaine.</stage>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#adieu_paniers">Adieu panier, vendanges sont faites</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">Que vois-je? On cajole Niquette...</l>
+            <l met="8">C'est mon rival à ses genoux,</l>
+            <l met="8">Tous deux semblent contents... Tout doux!</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="9">Adieu panier, vendanges sont faites.</l>
+          </sp>
+        </spGrp>
+        <stage>Se retirant de la fontaine avec transport.</stage>
+        <stage>Il se jette sur un lit de gazon.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="characters">Amadis<stage>pâmé</stage>, Mélisse</stage>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#malheureux_oui">Quand on a prononcé ce malheureux oui</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="12">Eh, bien! es-tu contente, inhumaine Mélisse?</l>
+            <l met="12">Cruelle, assouvis-toi de son dernier supplice...</l>
+            <l met="12">Ciel! tout mourant qu'il est, qu'il m'inspire d'amour!</l>
+            <l met="12">Ah! s'il se portait bien, que ferais-je en ce jour?</l>
+            <p>Amadis! Amadis!... se peut-il qu'un héros tombe dans un pareil évanouissement? Amadis! Amadis!... Quand ce serait une femme... Amadis! Amadis!</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#folia">Folies d'Espagne</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="10">Reconnaissez la voix qui vous appelle,</l>
+            <l met="10">Vivez cher Prince...</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <l met="10">Ah! laissez-moi mourir.</l>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <l met="10">Votre princesse est ingrate, infidèle,</l>
+          <l met="10">Pour tel objet faut-il tant s'attendrir?</l>
+        </sp>
+        <stage>Sur le chant du dernier vers.</stage>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <l met="10">Vivez, vivez.</l>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <l met="10">Non, laisse-moi mourir.</l>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="8">Perdez cette cruelle envie,</l>
+            <l met="8">Verrez-vous sans pitié mes pleurs?</l>
+            <l met="8">Voulez-vous m'arracher la vie?</l>
+            <l met="8">Hélas! Si vous mourez, je meurs!</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>se lève sans penser à Mélisse</stage>
+          <p>Malheureux, n'est-ce point quelque tour de sorcellerie? Mes yeux ont-ils bien vu? Jarnicoton! Ils ne l'ont que trop vu... c'était ma perfide Niquette avec mon rival...<stage>Avec plus d'emportement.</stage>
+          </p>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_autre_jour_m_allant_promener">L'autre jour m'allant promener</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">Il chiffonnait son falbala...</l>
+            <l met="8">Ah! fripon, que faisiez-vous là?</l>
+          </sp>
+        </spGrp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <p>Je fais une jolie figure, moi, pendant ces doléances-là!</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Et je vis pendant que j'ai à mon côté un sabre de Damas! Allons, mourons, expédions cette petite affaire!<stage>Il tire son épée pour s'en frapper, Mélisse s'en saisit.</stage>
+          </p>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <p>Tout beau Amadis, tout beau.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Tout cela m'est indifférent</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">Quoi! Vous donnez dans le panneau?</l>
+            <l met="8">Si j'étais friand du tombeau<note>Amadis dans l'opéra veut se tuer en présence de Mélisse.</note>,</l>
+            <l met="8">Vous m'aimez, vous êtes sorcière,</l>
+            <l met="8">J'éviterais vos soins pressants.</l>
+            <l met="8">Lorsque telle envie est sincère,</l>
+            <l met="8">Par ma foi, l'on prend mieux son temps.</l>
+          </sp>
+        </spGrp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="8">Consens à de nouveaux soupirs,</l>
+            <l met="8">Mes soins préviendront tes désirs,</l>
+            <l met="8">J'en ferai mon bonheur suprême,</l>
+            <l met="8">Pourvu qu'à table auprès de toi,</l>
+            <l met="8">Ingrat, tu me souffres moi-même,</l>
+            <l met="8">Tu seras traité comme un roi.</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>chante ironiquement</stage>
+          <l met="7">J'endors le petit, mon fils,</l>
+          <l met="5">J'endors le petit.</l>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <p>Quoi! Toujours charmé d'une ingrate!</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lonlanla_derirette">Lon lan la derirette</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">Mais cette ingrate a des attraits.<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Je l'aime autant que je vous hais.</l>
+            <l met="6">Lon lan la derirette.</l>
+          </sp>
+        </spGrp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <l met="8">Bon Dieu! Qu'Amadis est poli!</l>
+          <l met="6">Lon lan la deriri</l>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#beaux_yeux_nicole">J'ai fait à ma maîtresse</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="6">Mes maux sont votre ouvrage.</l>
+            <l met="6">Je sens qu'à chaque instant</l>
+            <l met="6">Je vous hais davantage...</l>
+          </sp>
+        </spGrp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <stage>à part</stage>
+          <l met="6">Que ce vers est galant!...</l>
+          <l met="6">Tu contrains peu ta haine.</l>
+          <l met="6">Après des mots si doux,</l>
+          <l met="6">Par ma foi, notre scène</l>
+          <l met="6">Doit finir par des coups.</l>
+          <p>Je n'appellerai pourtant pas encore les diables; il faut les épargner ici, on les fatigue assez à l'Opéra.<stage>À part.</stage>Je ne m'amuserai pas à épouvanter ce petit impertinent par des apparitions de monstres: il lui faut montrer tout d'un coup ce que j'ai de plus noir dans mon magasin magique.<stage>Haut.</stage>Viens, Amadis, viens dans mon palais, tu y verras sérieusement ta Niquette entre les bras de ton rival.</p>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#petit_boudrillon">Petit Boudrillon</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="6">Son cœur sans nul obstacle,</l>
+            <l met="8">Suis là sa passion, Boudrillon.</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>pleurant</stage>
+          <l met="6">Voyez le beau spectacle,</l>
+          <l met="6">Que m'offre la guenon!</l>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <stage>le poussant</stage>
+          <l met="3">Boudrillon.</l>
+          <l met="5">Marchez Boudrillon,</l>
+          <l met="5">Boudrillon don daine,</l>
+          <l met="5">Marchez Boudrillon,</l>
+          <l met="5">Boudrillon don don.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 13</head>
+        <stage type="location">Le théâtre change et représente une belle campagne.</stage>
+        <stage type="characters">Le Prince de Thrace<stage>paraissant Amadis aux yeux seulement de Niquette</stage>
+        </stage>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra</desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="12">Je parais Amadis aux yeux de la Princesse;</l>
+            <l met="12">La pauvre enfant me jure une fidèle ardeur,</l>
+            <l met="12">Mais c'est à mon rival que ce serment s'adresse,</l>
+            <l met="12">Et je trompe ses yeux sans séduire son cœur:</l>
+            <l met="12">C'est un tour de Mélisse et cette enchanteresse</l>
+            <l met="12">Me procure un bonheur dont je suis peu charmé!</l>
+            <l met="8">Ah! plus Niquette me caresse,</l>
+            <l met="10">Plus je connais qu'Amadis est aimé!</l>
+            <p>Elle vient, hélas! Elle va encore me faire enrager en me disant des douceurs.</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 14</head>
+        <stage type="characters">Le Prince de Thrace, Niquette</stage>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <p>Eh! À qui en avez-vous mon cher Amadis? Tout nous favorise dans ce séjour charmant; Mélisse est convertie, elle nous permet de nous marier, et qui plus est de nous aimer.</p>
+        </sp>
+        <spGrp who="#niquette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#morguenne">Morguienne de vous</title>
+            </desc>
+          </head>
+          <sp who="#niquette">
+            <speaker>Niquette</speaker>
+            <l met="5">Nos tendres désirs...</l>
+            <l met="5">Mais non, je m'abuse...</l>
+            <l met="5">Tout sert nos plaisirs,</l>
+            <l met="6">Votre cœur s'y refuse!</l>
+            <l met="5">Morguienne de vous,</l>
+            <l met="5">Quel homme! Quel homme!</l>
+            <l met="5">Morguienne de vous,</l>
+            <l met="5">Quel homme êtes-vous?</l>
+          </sp>
+        </spGrp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <stage>paraissant Amadis</stage>
+          <p>
+            <emph>Ohimè!</emph>
+          </p>
+        </sp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+        </sp>
+        <spGrp who="#niquette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#est_ce_ainsi_qu_on_prend_les_belles">Est-ce ainsi qu'on prend les belles</title>
+            </desc>
+          </head>
+          <sp who="#niquette">
+            <speaker>Niquette</speaker>
+            <l met="7">Que je vous doit de reproches!</l>
+          </sp>
+          <sp who="#niquette">
+            <speaker>Niquette</speaker>
+            <l met="7">Pourquoi cet air interdit?</l>
+            <l met="6">Quoi! vos mains dans vos poches!</l>
+            <l met="7">Et rien ne vous dégourdit?</l>
+            <l met="7">Est-ce ainsi qu'on prend les belles?</l>
+            <l met="3">Lon lan la,</l>
+            <l met="4">Ô gué lon la.</l>
+          </sp>
+        </spGrp>
+        <stage>Le Prince met la main dans ses poches comme y fouillant d'un air embarrassé; elle le caresse.</stage>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <stage>paraissant Amadis, embarrassé</stage>
+          <p>Mais...</p>
+        </sp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+        </sp>
+        <spGrp who="#niquette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_m_entendez_vous_pas">Ne m'entendez-vous pas</title>
+            </desc>
+          </head>
+          <sp who="#niquette">
+            <speaker>Niquette</speaker>
+            <l met="6">Nous sommes seuls, hélas!</l>
+            <l met="6">Et vous faites la mine.</l>
+            <l met="6">Qui diantre vous chagrine?</l>
+            <l met="6">Nous sommes seuls, hélas!</l>
+            <l met="6">Ne m'entendez-vous pas?</l>
+          </sp>
+        </spGrp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <stage>paraissant Amadis</stage>
+          <p>Aouf!</p>
+        </sp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+        </sp>
+        <spGrp who="#niquette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#de_quoi_vous_plaignez_vous">De quoi vous plaignez-vous</title>
+            </desc>
+          </head>
+          <sp who="#niquette">
+            <speaker>Niquette</speaker>
+            <l met="6">De quoi vous plaignez-vous,</l>
+            <l met="7">Amadis, quand on vous aime?</l>
+            <l met="6">De quoi vous plaignez-vous,</l>
+            <l met="6">Quand on n'aime que vous?</l>
+          </sp>
+        </spGrp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <stage>paraissant Amadis</stage>
+        </sp>
+        <spGrp who="#prince">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ton_relon_ton_ton">Ton relon ton ton</title>
+            </desc>
+          </head>
+          <sp who="#prince">
+            <speaker>Le Prince</speaker>
+            <l met="10">La gloire seule avec moi vous entraîne,</l>
+            <l met="10">Savourez bien cette distinction.</l>
+            <l met="10">Vous rendez-vous à l'amour qui m'enchaîne?</l>
+            <l met="10">Non, d'Amadis vous cédez au grand nom.</l>
+          </sp>
+        </spGrp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <stage>haussant le épaules</stage>
+          <l met="5">Ton relon ton ton,</l>
+          <l met="6">Tontaine, la tontaine,</l>
+          <l met="5">Ton relon ton ton,</l>
+          <l met="6">Tontaine la ton ton.</l>
+        </sp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <stage>paraissant Amadis, à part</stage>
+          <p>Elle a raison de hausser les épaules; voilà toute la réponse que méritent mes puériles délicatesses. Il faut convenir que je suis un fort plat personnage avec mes scrupules!</p>
+        </sp>
+        <spGrp who="#prince">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#flon_flon">Flon, flon</title>
+            </desc>
+          </head>
+          <sp who="#prince">
+            <speaker>Le Prince</speaker>
+            <l met="6">De l'erreur de ma belle,</l>
+            <l met="6">Je n'ose profiter;</l>
+            <l met="6">Je suis seul avec elle,</l>
+            <l met="6">Et je n'ose chanter,</l>
+            <l met="2">Flon, flon</l>
+            <l met="5">Larira dondaine,</l>
+            <l met="2">Flon, flon</l>
+            <l met="5">Larira dondon.</l>
+          </sp>
+        </spGrp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <p>À quoi rêvez-vous, mon cher Amadis? Je ne vous cause que des distractions: venez vous égayer.</p>
+        </sp>
+        <spGrp who="#niquette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_serrure">La serrure</title>
+            </desc>
+          </head>
+          <sp who="#niquette">
+            <speaker>Niquette</speaker>
+            <l met="8">Mélisse qui sait son négoce</l>
+            <l met="8">Fort près d'ici vient à propos</l>
+            <l met="8">De préparer pour notre noce,</l>
+            <l met="8">Une fête de matelots.</l>
+          </sp>
+        </spGrp>
+        <sp who="#prince">
+          <speaker>Le Prince</speaker>
+          <stage>paraissant Amadis</stage>
+          <p>Une fête de matelots pour une noce! Il aurait été plus convenable de rassembler une troupe de traiteurs.<stage>À part.</stage>Allons voir cette judicieuse fête marine,</p>
+          <p>j'y trouverai peut-être Amadis; car il aime à baliverner; si je le rencontre, il faudra lui demander fièrement un tête à tête... Mais ne ferai-je pas mieux de faire valoir celui que j'ai actuellement avec Niquette?</p>
+        </sp>
+        <spGrp who="#prince">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ces_filles_sont_si_sottes">Ces filles sont sottes</title>
+            </desc>
+          </head>
+          <sp who="#prince">
+            <speaker>Le Prince</speaker>
+            <l met="7">Elle me croit Amadis;</l>
+            <l met="7">Si j'en manque les profits,</l>
+            <l met="6">Hélas! c'est bien ma faute!</l>
+            <l met="8">La princesse est en belle humeur...</l>
+            <l met="6">Mais ma flamme est si sotte,</l>
+            <l met="2">Lon la,</l>
+            <l met="6">Mais ma flamme est si sotte.</l>
+            <p>Sortons sans dire adieu. Allons rougir quelque part de mon imbécilité.</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 15</head>
+        <stage type="characters">Niquette<stage>seule</stage>
+        </stage>
+        <spGrp who="#prince">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#amour_est_charmant">On dit qu'Amour est si charmant</title>
+            </desc>
+          </head>
+          <sp who="#prince">
+            <speaker>Le Prince</speaker>
+            <l met="8">Amadis est un vrai glaçon,</l>
+            <l met="8">Son aspect donne le frisson!</l>
+            <l met="8">Ah! mon Dieu, le pauvre garçon,</l>
+            <l met="6">Il est en léthargie!</l>
+            <l met="8">Amadis est un vrai glaçon,</l>
+            <l met="6">Faut-il que je l'en prie?</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 16</head>
+        <stage type="characters">Niquette, Mélisse</stage>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#malheureux_oui">Quand on a prononcé ce malheureux oui</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="12">Qu'ai-je vu? Dieux cruels!</l>
+          </sp>
+        </spGrp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <l met="12">De quoi dois-je vous plaindre?</l>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <l met="12">Apprends tout mon micmac, je ne prétends plus feindre.</l>
+          <l met="12">Hélas! J'en espérais un succès moins fatal;</l>
+          <l met="12">Sous les traits d'Amadis je t'offrais son rival...</l>
+        </sp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <p>Que je viens de l'échapper belle!</p>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <p>Vous ne devez plus craindre de méprise sur cet article-là; Amadis vient d'occire le Prince de Thrace.</p>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lapalisse">Monsieur La Palisse est mort</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="7">J'ai vu terminer son sort</l>
+            <l met="7">Par une Olinde choisie.</l>
+            <l met="7">Hélas! S'il n'était pas mort,</l>
+            <l met="7">Il serait encore en vie.</l>
+          </sp>
+        </spGrp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <p>Qu'est devenu Amadis?</p>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <p>Vous l'allez voir enchaîné et avec les menottes.</p>
+        </sp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <p>Avec les menottes? Un héros de cette importance avec les menottes?</p>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <p>C'est pour rendre la scène plus touchante.</p>
+        </sp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <p>Ah! Si ma tante Zirphée aimait un peu sa nièce, elle viendrait à notre secours!</p>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <p>Les chagrins d'une jeune nièce n'affligent guère une tante qui prétend à la beauté. Holà, diables, mes domestiques, amenez mon prisonnier.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 17</head>
+        <stage type="characters">Niquette, Mélisse, Amadis<stage>enchaîné</stage>
+        </stage>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <p>Ah! Mon cher Amadis, où vous amène-t-on?</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>pleurant</stage>
+          <p>Que sais-je? Peut-être aux galères.<stage>Montrant ses chaînes.</stage>J'en ai déjà la petite oie.</p>
+        </sp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <p>Tâchons d'amadouer la fureur de Mélisse.</p>
+        </sp>
+        <spGrp>
+          <caption>Niquette et amadis<stage>ensemble</stage>
+          </caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#belle_brune">Belle brune</title>
+            </desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Belle brune, belle brune,</l>
+            <l met="7">Ne lancez que sur mon cœur</l>
+            <l met="7">Les traits de votre rancune,</l>
+            <l met="7">Belle brune, belle brune.</l>
+          </sp>
+        </spGrp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <stage>levant le bras et le poignard sur Amadis</stage>
+          <p>Barbare! C'est par toi que je veux commencer...</p>
+        </sp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <stage>s'évanouit</stage>
+          <p>Ah! Ciel!</p>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <p>Bon, voilà mademoiselle Niquette qui s'évanouit à son tour.</p>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_reguingue">Ô reguingué</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="8">Ma foi, sans les enchantements,</l>
+            <l met="8">Sans les évanouissements,</l>
+            <l met="8">Ô reguingué, ô lon lan la,</l>
+            <l met="8">Notre roman n'eût duré guère,</l>
+            <l met="8">Tous trois nous n'aurions su que faire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mirliton">Le mirliton</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="7">Est-ce à nous qu'il faut s'en prendre</l>
+            <l met="7">Du nœud qui nous a serré?</l>
+            <l met="7">Quand l'amour lie un cœur tendre</l>
+            <l met="7">Dispose-t-il à son gré</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="4">De... de... de... son...</l>
+            <p>Ah! Je tombe à vos pieds!</p>
+          </sp>
+        </spGrp>
+        <stage>Fondant en larmes.</stage>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <stage>le repoussant</stage>
+          <p>Que le diable te ramasse.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>se relevant et s'appuyant sur une décoration</stage>
+          <p>À la fin, je mourrai sérieusement.</p>
+        </sp>
+        <stage>Mélisse évoque les mannes du Prince de Thrace. La symphonie joue l'air de<emph>Pierre Bagnolet</emph>pour ritournelle des paroles qui suivent sur le même air.</stage>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="restored_melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierre_bagnolet">Pierre Bagnolet</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="8">Prince de Thrace, à ma prière,</l>
+            <l met="8">Ressuscite et viens m'appuyer!</l>
+            <l met="8">Quoique tu sois peu nécessaire</l>
+            <l met="8">Pour assommer un prisonnier,</l>
+            <l met="4">Je veux crier,</l>
+            <l met="4">Je veux crier:</l>
+            <l met="8">Prince de Thrace, à ma prière,</l>
+            <l met="8">Ressuscite et viens m'appuyer!</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 18</head>
+        <stage type="characters">Les acteurs précédents, l'ombre du Prince de Thrace</stage>
+        <sp who="#lombre">
+          <speaker>L'Ombre</speaker>
+        </sp>
+        <spGrp who="#lombre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierre_bagnolet">Pierre Bagnolet</title>
+            </desc>
+          </head>
+          <sp who="#lombre">
+            <speaker>L'Ombre</speaker>
+            <l met="8">En mauvais rôles tu m'épuises;</l>
+            <l met="8">Je viens, pour punir ton transport,</l>
+            <l met="8">Des amants que tu tyrannises</l>
+            <l met="8">T'annoncer enfin l'heureux sort.</l>
+            <l met="4">Vivant et mort,</l>
+            <l met="4">Vivant et mort,</l>
+            <l met="8">Tu me fais faire des sottises</l>
+            <l met="8">Dont tu souffres toujours le tort.</l>
+          </sp>
+        </spGrp>
+        <stage>Il disparaît.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 19</head>
+        <stage type="characters">Mélisse, Amadis<stage>enchaîné</stage>, Niquette</stage>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <p>Va-t'en à tous les diables, maudit trépassé... Qu'ai-je affaire de toi pour me venger? N'ai-je pas un poignard à la main, et cette main ne vaut-elle pas mieux que celle d'un défunt?</p>
+        </sp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <p>Ah! Ma chère tante Zirphée, où êtes-vous? Vous avez bien la mine de nous apporter de la moutarde après dîner!</p>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <stage>veut frapper Niquette, elle avance à chaque vers qu'elle chante, et recule avec surprise toutes les trois fois qu'elle dit« Ho, ho, tourelouribo »</stage>
+        </sp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tourelouribo">Ho, ho, tourelouribo</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="9">Allons tôt que ma rivale expire...</l>
+            <l met="7">Oh, oh, tourelouribo!</l>
+            <l met="7">Quoi contre moi tout conspire!...</l>
+            <l met="7">Oh, oh, tourelouribo!</l>
+            <l met="7">Quand j'avance on me retire...</l>
+            <l met="8">Oh, oh, oh, tourelouribo!</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#malheureux_oui">Quand on a prononcé ce malheureux oui</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="12">C'en est fait, Amadis, ta flamme est triomphante.</l>
+            <l met="12">Ton ennemie expire, ou plutôt ton amante.</l>
+            <p>Frappons...<stage>Elle veut se percer mais se retient.</stage>Mais non, gardons-nous bien de nous percer si légèrement.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#melisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mariez_mariez_moi">Mariez, mariez, mariez-moi</title>
+            </desc>
+          </head>
+          <sp who="#melisse">
+            <speaker>Mélisse</speaker>
+            <l met="7">La raison vient me saisir</l>
+            <l met="7">Et guérit mon noir caprice,</l>
+            <l met="7">Pour n'arracher qu'un soupir,</l>
+            <l met="6">Faut-il que je périsse?</l>
+            <l met="7">Mariez, mariez, mariez-vous,</l>
+            <l met="7">Ce sera votre supplice,</l>
+            <l met="7">Mariez, mariez, mariez-vous,</l>
+            <l met="7">Vous servirez mon courroux.</l>
+          </sp>
+        </spGrp>
+        <stage>Mélisse répète les quatre derniers vers<emph>Mariez, ...</emph>, pendant qu'Amadis et Niquette chantent ensemble les suivants.</stage>
+        <spGrp>
+          <caption>À trois</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Marions, marions, marions-nous</l>
+            <l met="7">Oh, quel aimable supplice!</l>
+            <l met="7">Marions, marions, marions-nous</l>
+            <l met="7">Et bénissons son courroux.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 20</head>
+        <stage type="characters">Amadis<stage>déchaîné par Mélisse</stage>, Niquette, Zirphée<stage>à pied</stage>
+        </stage>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <p>Que vois-je? C'est enfin ma tante Zirphée! On voit bien qu'elle est venue à pied à notre secours, car si elle avait été portée sur un nuage, elle aurait fait plus de diligence.</p>
+        </sp>
+        <spGrp who="#niquette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#belle_brune">Belle brune, belle brune</title>
+            </desc>
+          </head>
+          <sp who="#niquette">
+            <speaker>Niquette</speaker>
+            <l met="7">Ah! ma tante! Ah! ma tante!</l>
+            <l met="7">Quand votre nièce pâtit,</l>
+            <l met="7">Votre assistance est bien lente.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <caption>Amadis et niquette</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Ah, ma tante! Ah, ma tante!</l>
+          </sp>
+        </spGrp>
+        <sp who="#zirphee">
+          <speaker>Zirphée</speaker>
+        </sp>
+        <spGrp who="#zirphee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#et_zon_zon_zon">Zon, zon, zon</title>
+            </desc>
+          </head>
+          <sp who="#zirphee">
+            <speaker>Zirphée</speaker>
+            <l met="6">Tous vos maux sont finis,</l>
+            <l met="6">Cessez de vous en plaindre:</l>
+            <l met="6">Épousez Amadis,</l>
+            <l met="6">Il n'a plus rien à craindre.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <caption>Amadis et niquette<stage>se caressant</stage>
+          </caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="4">Et zon, zon, zon</l>
+            <l met="6">Cessons de nous contraindre,</l>
+            <l met="4">Et zon, zon, zon,</l>
+            <l met="6">Supprimons la façon.</l>
+          </sp>
+        </spGrp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+        </sp>
+        <spGrp who="#niquette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#belle_brune">Belle brune</title>
+            </desc>
+          </head>
+          <sp who="#niquette">
+            <speaker>Niquette</speaker>
+            <l met="7">Car ma tante, car ma tante,</l>
+            <l met="7">Comme tante d'Opéra</l>
+            <l met="7">Est une tante obligeante,</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>se jetant au cou de Zirphée</stage>
+          <l met="7">Ah, ma tante! Ah, ma tante!</l>
+        </sp>
+        <sp who="#zirphee">
+          <speaker>Zirphée</speaker>
+          <p>Mais mon neveu vous m'étouffez!</p>
+        </sp>
+        <sp who="#niquette">
+          <speaker>Niquette</speaker>
+          <p>Au moins, mon petit mari, je ne me suis pas émancipée avec votre rival pendant que Mélisse lui avait donné votre ressemblance.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Il faut bien vous en croire.</p>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <stage>à Zirphée</stage>
+          <p>Ma compagne Zirphée, soyez la bienvenue: je ne tracasserai plus votre nièce et son amant.</p>
+        </sp>
+        <sp who="#zirphee">
+          <speaker>Zirphée</speaker>
+          <p>Vous ferez bien, car je saurais vous ranger à la raison.</p>
+        </sp>
+        <sp who="#melisse">
+          <speaker>Mélisse</speaker>
+          <stage>à part</stage>
+          <p>Perfectionnons ma vengeance et donnons à ces futurs une fête qui les dégoûte du mariage...<stage>Haut.</stage>Oh çà! mes enfants, pour marque d'une parfaite réconciliation, je veux vous donner cette fête d'un lendemain de noces dont je prétendais tantôt régaler Amadis lorsqu'il est sorti de chez moi si malhonnêtement; ce divertissement sera ici moins déplacé. Allons tôt, garçons et filles du lendemain de noces, paraissez.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 21</head>
+        <stage type="characters">Niquette, Zirphée, Melisse, Amadis, Garçons et Filles du lendemain de noces</stage>
+        <sp who="#unefille">
+          <speaker>Une Fille</speaker>
+          <l met="4">Dans le ménage</l>
+          <l met="8">Que l'on se fait en peu de temps!</l>
+          <l met="8">Le lendemain du mariage</l>
+          <l met="12">Il semble que déjà l'on ait passé cent ans,</l>
+          <l met="4">Dans le ménage.</l>
+        </sp>
+        <sp who="#ungarcon">
+          <speaker>Un Garçon</speaker>
+        </sp>
+        <spGrp who="#ungarcon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title"/>
+          </head>
+          <sp who="#ungarcon">
+            <speaker>Un Garçon</speaker>
+            <l met="12">On sautille, on frétille ainsi qu'un carpillon</l>
+            <l met="6">Le jour qu'on se marie.</l>
+            <l met="12">Quelle légèreté! Le menuet ennuie...</l>
+            <l met="10">On veut la chasse, on veut le cotillon.</l>
+            <l met="8">Ô métamorphose étonnante!</l>
+            <l met="12">Ô pouvoir de l'hymen! Souvent le lendemain</l>
+            <l met="8">L'époux qui faisait le badin</l>
+            <l met="12">Veut à peine danser une grave courante.</l>
+          </sp>
+        </spGrp>
+        <stage>On danse.</stage>
+        <spGrp>
+          <head type="vaudeville-chorus">1</head>
+          <sp who="#ungarcon">
+            <speaker>Un Garçon</speaker>
+            <l met="8">Bien souvent l'hymen le plus doux</l>
+            <l met="8">N'a de bon que le fruit précoce;</l>
+            <l met="8">Gardez-vous bien, novice époux,</l>
+            <l met="8">D'en juger le jour de la noce;</l>
+            <l met="7">Attendez au lendemain.</l>
+            <l met="6">Tre lin tin tin tin tin</l>
+          </sp>
+          <note>La partition nous apprend qu'il faut chanter« Attendez au lendemain~/ Lerelin tin tin tin tin tin tin~/ Attendez au lendemain. »Nous avons laissé le refrain tel qu'il apparaît dans la source textuelle à partir de laquelle ce texte est édité.L. Chahine</note>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">2</head>
+          <sp who="#ungarcon">
+            <speaker>Un Garçon</speaker>
+            <l met="8">Ne suivez pas l'illusion</l>
+            <l met="8">Du fade roman qui lanterne;</l>
+            <l met="8">Profitez de l'occasion,</l>
+            <l met="8">Un amant est sûr de la berne</l>
+            <l met="7">S'il attend au lendemain.</l>
+            <l met="4">Tre lin tin tin.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">3</head>
+          <sp who="#ungarcon">
+            <speaker>Un Garçon</speaker>
+            <l met="8">L'hymen surfait à nos désirs,</l>
+            <l met="8">Il ne tient pas à ce qu'il avance;</l>
+            <l met="8">On s'attend à de grands plaisirs,</l>
+            <l met="8">Il sont plus petits qu'on ne le pense.</l>
+            <l met="7">Quel rabais le lendemain!</l>
+            <l met="4">Tre lin tin tin.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">4</head>
+          <sp who="#ungarcon">
+            <speaker>Un Garçon</speaker>
+            <l met="8">Cabaret tu sais m'enchanter;</l>
+            <l met="8">Tu ferais mes seules retraites,</l>
+            <l met="8">Si l'on pouvait sans rien compter</l>
+            <l met="8">Chanter en sortant des guinguettes:</l>
+            <l met="7">Attendez au lendemain.</l>
+            <l met="4">Tre lin tin tin.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">5</head>
+          <sp who="#ungarcon">
+            <speaker>Un Garçon</speaker>
+            <l met="8">L'hymen a des fruits aigres doux</l>
+            <l met="8">Qui viennent plus tôt qu'on ne le pense;</l>
+            <l met="8">Tel aujourd'hui se fait époux,</l>
+            <l met="8">Qu'on fait contre son espérance</l>
+            <l met="7">Père dès le lendemain.</l>
+            <l met="4">Tre lin tin tin.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">6</head>
+          <sp who="#ungarcon">
+            <speaker>Un Garçon</speaker>
+            <l met="8">Messieurs gardez-nous le secret,</l>
+            <l met="8">Si vous condamnez notre pièce:</l>
+            <l met="8">Chut! Que le public soit discret,</l>
+            <l met="8">Et si quelque désir le presse,</l>
+          </sp>
+          <sp who="#ungarcon">
+            <speaker>Un Garçon</speaker>
+            <l met="7">Qu'il attende au lendemain...</l>
+            <l met="4">Tre lin tin tin.</l>
+          </sp>
+        </spGrp>
+        <stage>Au public</stage>
+        <stage>Lazzi de siffler.</stage>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

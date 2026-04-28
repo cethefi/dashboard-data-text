@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="arlequin_marchand_de_poupees">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Arlequin marchand de poupées</title>
+        <title type="sub">Le Pygmalion moderne</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Charles-Jacob Guillemain</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Rousseau et en mars 2017 mutiples corrections F Rubellin -il doit y avoir encore des fautes</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BnF ms. fr. 9252</bibl>
+        <bibl type="intermediarySource">P. Beaucé</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="arlequin" sex="UNKNOWN">
+            <persName>Arlequin</persName>
+          </person>
+          <person xml:id="pierrot" sex="UNKNOWN">
+            <persName>Pierrot</persName>
+          </person>
+          <person xml:id="lapoupee" sex="UNKNOWN">
+            <persName>La poupée</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <prologue>
+        <stage>Au lever du rideau, l'orchestre joue l'air<emph>Réveillez-vous, belle endormie</emph>.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>À quoi bon me réveiller, vous autres? Je ne peux rien faire, autant dormir... Je m'étais couché là, pour ne pas tomber dans la ruelle... Je dormais bien... c'est dommage. Il faut se lever cependant, aïe... Si nos petites maîtresses avaient des lits de plumes comme cela, on ne les verrait pas se lever à la pointe de midi. Allons, tâchons de mettre la main à la pâte.</p>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tot_tot_tot_battez_chaud">Tôt, tôt, tôt, battez chaud</title>
+            </desc>
+          </head>
+        </spGrp>
+        <stage>Ensuite:</stage>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#derouillons_ma_commere">Dérouillons, dérouillons ma commère</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Voilà une poupée que je ne finirai jamais, je crois, ce sont des opéras que que les coiffures d'à présent: il faut être machiniste pour en venir à bout. Quel diable est-ce que je fourrerai là-dessous, pour remplir ce vide là? oui... non... si fait... Pardine, c'est tout simple... quand un général veut entrer dans une ville malgré les bourgeois,</p>
+            <p>il ne peut pas y entrer par la porte. Il faut qu'il y entre par la fenêtre; mais c'est qu'entre lui et la fenêtre, il y a un fossé. Qu'est-ce qu'il fait, il emplit le fossé de fagots, saungudimi! Je vais faire comme lui moi... Il est drôle ce cotteret-là hé hé hé hé, elle sentira un peu l'oignon... Qu'est-ce que cela fait? baste! La mode en viendra peut-être. Tout prend dans ce pays-ci.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#en_passant_par_la_barriere">En passant par la barrière</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Cela fera une poupée du grand ton. Y en-a-t-il assez?</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vraiment_mon_compere_oui">Vraiment mon compère, oui</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Ces deux visages-là, hé hé hé hé, c'est comme le jour et la nuit.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Pas vrai?</p>
+          </sp>
+        </spGrp>
+        <stage>Au public.</stage>
+        <stage>À l'orchestre.</stage>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vraiment_mon_compere_voire">Vraiment mon compère, voire</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Il faut relever l'éclat de ce teint-là. Un peintre met toujours des ombres dans ses tableaux, et je suis peintre en rond-de-bosse, moi.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#annette_a_l_age_de_quinze_ans">Annette, à l'âge de quinze ans</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Vous vous moquez de moi, je crois! Vous autres, vous appelez cela l'image du printemps, l'aurore d'un beau matin, et cela ferait peur au diable. On dirait d'une poupée qui à la petite vérole. Je ne sais plus ce que je fais, le diable m'emporte. Voyez ce bonnet qui est droit comme mon bras quand je me mouche. Je voulais faire une poupée, et voilà un Scaramouche embéguiné. Je désapprends, je crois. Foi de syndic, mon apprenti en sait plus que moi: à présent me voici devenu adroit de mes mains comme un cochon de sa queue. Peigne, pinceaux, ciseaux, puisque je ne sais plus me servir de vous, j'aime autant vous accrocher à un clou par terre.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dupont_mon_ami">Dupont, mon ami</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Ah! pauvre Arlequin d'aujourd'hui, tu ne ressembles guère à l'Arlequin d'autrefois. Oh! J'ai beau me tâter ce n'est plus moi.</p>
+            <p>Par exemple, jadis il fallait me voir à la Courtille. J'étais Monsieur Boute-en-train. Oh cela, après moi, il fallait tirer l'échelle... quand j'arrivais... oh voilà l'ami Arlequin. Bonjour Arlequin - Messieurs votre serviteur - Place à Monsieur Arlequin - Messieurs ne vous dérangez pas - Vous vous moquez... Garçon! - Allons, allons - Un verre pour Monsieur Arlequin - Le verre venait je l'emplissais, je le vidais... je le remplissais, je le revidais; et puis... oh! nous nous amusions comme des compères... à présent, bernique! Ils ont beau venir sous ma fenêtre<stage>Il siffle.</stage>qui est-ce qui est là bas - C'est moi, c'est nous Monsieur Arlequin - Allez vous promener toi et vous - Eh bien nous y allons; venez avec nous, faire un petit tour - Ni petit, ni grand, laissez-moi tranquille. Ils s'en vont, et moi je reste-là comme un grigou... Je ne bois plus.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#gregoire_est_mort">Grégoire est mort</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Et vous, gentilles vielleuses, vous dont les instruments m'inspirent la ribote, vous qui m'aguichiez, qui m'appeliez votre joli petit blondin, vous qui.... Oh, je trouvais cela si charmant, si agréable: eh bien à présent, je m'en bats l'œil. Friponnes, je ne pense plus à vous, je ne vous verrai plus.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ils_sont_passes_ces_jours_de_fetes">Ils sont passés ces jours de fêtes</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Je crois que je suis cloué dans ma boutique, encore si j'y travaillais; mais non, je suis là les bras croisés à écouter d'où vient le vent. Et je fais tout aussi bien, car quand je me mets à la</p>
+            <p>besogne, vous voyez comme je réussis...oh oui, je le vois bien. C'est une affaire faite... Me voici devenu plus bête qu'une oie, à mon âge, à trente-cinq ans quatre mois, n'avoir plus d'estoc.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quel_desespoir">Quel désespoir</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Mais si je suis bête, je ne suis pas ladre, car je me sens encore là... Tenez, là cela fait tic tac tic tac et tant que cela bat,voyez-vous? il y a du remède. Mais pourquoi donc est-ce que j'ai le cœur sensible comme cela?</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#finissez_donc_mademoiselle_fanchon">Finissez donc, Mademoiselle Fanchon</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Allons, allons il ne faut pas jeter le manche après la  cognée... Ah! Voyons que je voie un peu ma belle poupée qui est dans mon armoire... oh ma foi, c'est un beau morceau que cela, je ne le vois jamais qu'avec plaisir. Ce n'est pas parce que c'est moi qui l'ai faite, mais c'est que je ne sais pas... Elle a quelque chose d'agréable qui fait que... je l'ai serrée dans ma grande armoire, de peur de la poussière, car si elle se gâtait, ce serait dommage... oh! cette poupée-là je ne la donnerai pas à moins de quinze louis... oh, elle les vaut comme un liard... J'ai envie de mettre mon nom dessus, car enfin quand elle sera vendu, on ne saura pas si c'est Gautier ou si c'est Garguille qui l'a faite. C'est tout simple cela. Et puis, cela me fera honneur... car enfin</p>
+            <p>c'est juste... ah je ne m'en déferai qu'avec peine... quand je la vendrai, je chanterai:</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#adieu_dame">Adieu donc, dame Françoise</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Mais ouvrons l'armoire, cela fera prendre l'air à l'étoffe, cela ne peut pas lui faire de mal... et puis que sait-on? il pourrait y avoir quelque chose de dérangé, et pis en voyant mon chef d'œuvre, cela me remettra peut être le cœur au ventre... Cela pourrait bien être là, mais dites-moi donc pourquoi est ce que je suis toute chose, quand je vas pour ouvrir la porte de cette armoire. Quand ce serait la porte d'un huissier, à qui j'irai demander du temps, c'est bête cela... allons, allons.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimons_aimons_tous">Qu'elle est, qu'elle est bien</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>On dirait qu'elle sort de mes mains... Ce n'est pas une poupée que j'ai faite, c'est une princesse, le diable m'emporte; oh! elle est charmante... mais je me suis surpassé... Voyez-moi ce teint,</p>
+            <p>auprès de cette autre: veux-tu te cacher vilaine? Quelle taille, quel maintient... c'est moi qui ai fait cela. Ma foi, je suis un habile garçon...comme je me donne du talon  dans le cul-là. Oh, je le mérite bien: mais elle n'a pas de bouquet; si j'y en mettais un, cela ne ferait pas si mal. Je suis galant, moi.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_je_te_mette">Çà, que je te mette</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Mademoiselle, voulez-vous permettre que j'aie l'honneur de... hé hé hé hé. Je suis bête moi...mais est-ce que j'ai fait quelque mauvais coup donc? Comme la main me tremble...<stage>Il s'écrit.</stage>Mille z-yeux, elle m'a fait la grimace!</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_a_voulu_il_n_a_pas_pu">Il a voulu, il n'a pas pu</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Oui, riez vous autres... Je l'ai vue peut-être, ou bien j'ai la brelue?</p>
+            <p>mais brelue ou non, si j'y touche je veux que le loup me croque... et puis elle se passera bien de bouquets... elle est bien assez belle sans cela... Ah, qu'elle est jolie!</p>
+            <p>ah, si ce n'était pas une poupée... si cela marchait... si cela vivait... si cela... comment?... quoi?... qu'est-ce?... mais cela n'est pas possible! Ah! Mon dieu, si... bêta... me voici... amoureux... Et de qui...? D'une poupée.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#j_avais_toujours_garde_mon_coeur">J'avais toujours gardé mon cœur</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Ah! nous y voici... C'est donc cela qui fait que je ne peux plus rien faire... c'est donc cela qui est cause que je ne vas plus au cabaret... c'est donc pour cela que... sangudimi me voilà bien propre; grand dadet, il lui faut une poupée... ah! Arlequin mon pauvre ami, tu es bien cruche. Va... pas si cruche... quel diable, je me gronde là mal à propos... il n'y a pas de quoi fouetter un chat... Pardine, on voit bien cela tous les jours. Un jeune freluquet passe sur le Pont-neuf, il regarde le cheval de bronze, et il dit, ah! si j'avais un cheval comme cela, comme je me carrerais à Longchamp.</p>
+            <p>Ce n'est pas le cheval de bronze qu'il voudrait avoir... quoiqu'il n'y perdrait pas, car dans ce cheval-là, il y a autant de pièces de six liards, qu'il y avait de vertus dans le cavalier... Eh bien moi, je suis tout de même, ce n'est pas à ce carton-là que j'en veux. Je m'en soucie comme d'un zeste; mais je serais bien aise d'avoir une femme comme cela. Cela ferait une petite commère bien ragoûtante... mais je vous en fais juger vous autres. Ah! mignonne, petit cœur, petit trognon, si tu pouvais répondre à la flamme de mon amour, si.. ah!comme je t'aimerais; comme je te dorloterais... Tiens comme cela les soirs je te prendrais par-dessous le bras, et nous irions nous promener ensemble sur le Boulevard... comme je ferais mon faraud... et puis ensuite je te mènerais chez mon ami Ramponneau, en me voyant comme cela avec toi, il me dirait comme cela, bonjour</p>
+            <p>compère, il y a longtemps qu'on ne vous a vu - c'est vrai compère - nouvelle conquête cela, compère -  Qu'appelez-vous? conquête vous-même. C'est ma femme. Au mot, maître, garçons, maîtresse tous t'ôteraient leurs chapeaux - Excusez compère, je ne savais pas - Il n'y a pas de mal compère, donnez-nous du bon, et qu'il ne soit pas cher, nous nous assoirions, nous boirions, à ta santé petite femme, à ta santé petit homme... ah! que nous aurions de plaisir... ah! ma chère, hélas! tu n'es qu'une poupée... je te parle, c'est comme si je parlais à une bûche. Tous les compliments que je te fais, toutes les douceurs que je dis, c'est comme si je jetais des perles devant des pourceaux... ouf! Je n'en puis plus... je bats la campagne... j'ai une fièvre de cheval... Amour chien de vaurien; ce n'est plus du sang, c'est de l'huile bouillante qui coule dans mes veines... savant</p>
+            <p>second... et toi illustre Bienfait, ô génies mécaniques, vous qui jadis à la Foire Saint-Laurent faisiez danser et chanter les Polichinelles et les mères Gigognes, vous qui avez su de toutes ces bamboches faire des personnes d'esprit, qui m'ont fait rire à bouche que veux-tu; venez à mon secours, venez donner à ma poupée, ces mouvements, cette vie, que vous donniez à vos très jolies marionnettes... Oh mon dieu, que je dis de bêtises!... Je perds la tête... Que le diable te dégalonne, vas poupée de mon cœur... Je suis si honteux de cette farce-ci, que je n'ose plus en regarder l'héroïne...</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Ah! mon dieu, qu'est-ce que c'est que cela?</p>
+          </sp>
+        </spGrp>
+        <stage>La poupée danse.</stage>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_commere_quand">Ma commère, quand je danse</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Ah! mon dieu, c'est ici comme chez le luthier de la rue Croix des Petits champs.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Elle veut connaître les êtres.</p>
+          </sp>
+        </spGrp>
+        <stage>La poupée se promène.</stage>
+        <sp who="#lapoupee">
+          <speaker>La poupée</speaker>
+          <p>Ohi.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Casse-cou... Elle n'y voit pas encore, elle ne fait que de naître!</p>
+        </sp>
+        <sp who="#lapoupee">
+          <speaker>La poupée</speaker>
+          <p>Je me suis fait un mal de chien.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Elle est femme, la parole lui vient avant la vue.</p>
+        </sp>
+        <sp who="#lapoupee">
+          <speaker>La poupée</speaker>
+          <stage>se promenant</stage>
+          <p>Je n'aime pas à être Colin-Maillard.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Voyons, il faut aider la nature.</p>
+        </sp>
+        <sp who="#lapoupee">
+          <speaker>La poupée</speaker>
+          <p>Bonjour, Monsieur Arlequin.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Et bonjour ma petite femme... Ah! que je suis content... Oh charmante Catin , comme je vas t'aimer... et puis nous gagnerons de l'argent ensemble, je te ferai voir à la foire Saint-Laurent, je n'aurai pas besoin de ressorts pour te monter!</p>
+        </sp>
+        <stage>L'orchestre fait sur le chevalet : baisez baisez.</stage>
+        <stage>La poupée retournée, on voit Pierrot.</stage>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <stage>en s'en allant à l'orchestre</stage>
+          <p>On n'a pas besoin de vos conseils à vous autres.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>s'en allant à Pierrot</stage>
+          <p>Tais-toi donc, tu gâtes la sauce!</p>
+        </sp>
+        <stage>La toile tombe.</stage>
+      </prologue>
+      <pb n="40"/>
+    </front>
+    <body>
+    </body>
+  </text>
+</TEI>

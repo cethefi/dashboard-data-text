@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="scene_de_telegone_arlequin">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Scène de Télégone Arlequin</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>[Louis Fuzelier]</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Serre</name>
+        </respStmt>
+        <respStmt>
+          <resp>Relecture</resp>
+          <name>L. Chahine</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BHVP ms. 4335</bibl>
+        <bibl type="intermediarySource">F. Rubellin et P. Beaucé</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="tpoint" sex="UNKNOWN">
+            <persName>T</persName>
+          </person>
+          <person xml:id="telegone" sex="UNKNOWN">
+            <persName>Télégone</persName>
+          </person>
+          <person xml:id="arlequin" sex="UNKNOWN">
+            <persName>Arlequin</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <prologue>
+        <sp who="#tpoint">
+          <speaker>T</speaker>
+          <p>Voici un héros qui a la physionomie bien lugubre. Qui êtes-vous, seigneur dolent~?</p>
+        </sp>
+        <sp who="#telegone">
+          <speaker>Télégone</speaker>
+          <p>Je suis Télégone, fils d'Ulysse et de Circé.</p>
+          <l met="8">Comme petit-fils du Soleil,</l>
+          <l met="8">C'est avec un soin non pareil</l>
+          <l met="8">Qu'on m'a sous les yeux de ma mère</l>
+          <l met="8">Fait un cavalier achevé.</l>
+          <l met="8">Et c'était pour tuer mon père</l>
+          <l met="8">Qu'elle m'a si bien élevé.</l>
+        </sp>
+        <sp who="#tpoint">
+          <speaker>T</speaker>
+          <p>Le beau projet d'éducation~! Mais enfin que venez-vous faire ici~?</p>
+        </sp>
+        <sp who="#telegone">
+          <speaker>Télégone</speaker>
+          <p>Écoutez. Un anonyme obligeant s'est avisé de me conduire à l'Opéra et le public s'est avisé de ne m'y pas trouver bien conduit: je viens à l'oracle du temple de la Nuit savoir qui a tort, du public ou de moi.</p>
+        </sp>
+        <sp who="#tpoint">
+          <speaker>T</speaker>
+          <p>Mais encore que dit-il, ce public difficultueux~?</p>
+        </sp>
+        <sp who="#telegone">
+          <speaker>Télégone</speaker>
+          <p>Oh ma foi, il en dit tant, que j'en ai oublié plus des trois quarts.</p>
+        </sp>
+        <sp who="#tpoint">
+          <speaker>T</speaker>
+          <p>Tâchez de vous rappeler quelques-uns des reproches qu'on a faits.</p>
+        </sp>
+        <sp who="#telegone">
+          <speaker>Télégone</speaker>
+          <p>Bon, ils sont tous sans fondement. Par exemple ils disent que mon frère Télémaque recommençait le même rôle pleureur qu'il a joué autrefois chez Calypso où il voulait avec force mourir pour son père. Cela ne me regarde pas, moi.</p>
+        </sp>
+        <sp who="#tpoint">
+          <speaker>T</speaker>
+          <p>Non assurément. Toutes fautes sont personnelles, et vous ne devez pas être garant des sottises de Télémaque.</p>
+        </sp>
+        <sp who="#telegone">
+          <speaker>Télégone</speaker>
+          <p>Ils disent encore qu'Ulysse ne soutient pas le caractère d'homme fin en politique qu'Homère lui a donné, est-ce ma faute à moi si Ulysse se dément~?</p>
+        </sp>
+        <sp who="#tpoint">
+          <speaker>T</speaker>
+          <p>Oh, pour cela non~! L'imbécilité d'un père ne passe pas toujours au fils avec sa succession.</p>
+        </sp>
+        <sp who="#telegone">
+          <speaker>Télégone</speaker>
+        </sp>
+        <spGrp who="#telegone">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reviendrai_demain">Je ferai mon devoir</title>
+            </desc>
+          </head>
+          <sp who="#telegone">
+            <speaker>Télégone</speaker>
+            <l met="6">[vers manquant]</l>
+            <l met="6">Leur apprend à parler.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#tpoint">
+          <speaker>T</speaker>
+          <l met="8">Que Télégone est vif~! eh bien</l>
+          <l met="6">Personne n'en croit rien.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <sp who="#telegone">
+          <speaker>Télégone</speaker>
+          <p>Vraiment non, personne n'en croit rien. Ils ont débité partout que chez moi chaque scène était une glacière.</p>
+        </sp>
+        <sp who="#tpoint">
+          <speaker>T</speaker>
+          <p>Eh~! Mais vous avez la physionomie assez réfrigérative.</p>
+        </sp>
+        <sp who="#telegone">
+          <speaker>Télégone</speaker>
+          <p>Cependant, j'ai des monologues charmants. Vous auriez été enlevé si vous aviez entendu maman Circé dans ses transports de colère.</p>
+        </sp>
+        <spGrp who="#telegone">
+          <head type="melody" subtype="restored_melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#telegone">
+            <speaker>Télégone</speaker>
+            <l met="8">La fureur dans plus d'un passage</l>
+            <l met="8">S'exprimait par de doux bémols</l>
+            <l met="8">Et le désespoir et la rage</l>
+            <l met="8">Chantaient comme des rossignols.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tpoint">
+          <speaker>T</speaker>
+          <p>C'était de la fureur à mystère.</p>
+        </sp>
+        <sp who="#telegone">
+          <speaker>Télégone</speaker>
+          <p>Un seul morceau, oui, un seul morceau de chant devait attirer pendant six mois tout Paris.</p>
+        </sp>
+        <sp who="#tpoint">
+          <speaker>T</speaker>
+          <p>Et quel est ce morceau attractif~?</p>
+        </sp>
+        <sp who="#telegone">
+          <speaker>Télégone</speaker>
+          <p>Écoutez.</p>
+        </sp>
+        <spGrp who="#telegone" rend="braced(right)">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#a_l_ombre_d_un_ormeau">À l'ombre d'un ormeau Lisette</title>
+            </desc>
+          </head>
+          <sp who="#telegone">
+            <speaker>Télégone</speaker>
+            <l met="8">On nous demande un parricide,</l>
+            <l met="8">Quel crime est plus digne de nous~!</l>
+            <p>(bis)</p>
+          </sp>
+        </spGrp>
+        <sp who="#tpoint">
+          <speaker>T</speaker>
+          <l met="8">Quelle est donc la troupe insipide</l>
+          <l met="8">Qui chante sur un ton si doux~?</l>
+          <l met="6">Sont-ce des Cupidons~?</l>
+        </sp>
+        <sp who="#telegone">
+          <speaker>Télégone</speaker>
+          <l met="6">C'est un chœur de démons</l>
+        </sp>
+        <sp who="#tpoint">
+          <speaker>T</speaker>
+          <l met="12">Quoi, chez vous les démons fredonn[ent] des brunettes~!</l>
+          <l met="12">On peut leur pardonner de fades chansonnettes</l>
+          <l met="12">Lorsqu'aux yeux des héros de leur troupe charmés</l>
+          <l met="12">Ils dansent la chaconne en plaisirs transformés</l>
+        </sp>
+        <sp who="#telegone">
+          <speaker>Télégone</speaker>
+          <p>Enfin, si mon poème a ennuyé, on devait du moins admirer la sagesse de la catastrophe, car je ne tue mon père Ulysse que par mégarde. Le javelot qui le perce était lancé contre ce benêt de Télémaque. Cependant,</p>
+        </sp>
+        <spGrp who="#telegone">
+          <head type="melody" subtype="restored_melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#telegone">
+            <speaker>Télégone</speaker>
+            <l met="8">Cette fin a paru bouffonne</l>
+            <l met="8">Quelqu'un s'est écrié presto</l>
+            <l met="8">Le dénouement de Télégone</l>
+            <l met="8">N'est par ma foi qu'un quiproquo</l>
+          </sp>
+        </spGrp>
+        <sp who="#tpoint">
+          <speaker>T</speaker>
+          <p>Ce n'est pas là le seul que vous ayez fait en paraissant à l'opéra</p>
+        </sp>
+        <sp who="#telegone">
+          <speaker>Télégone</speaker>
+          <p>En vérité, je ne connais plus rien au goût du siècle. On admire dans l'un ce qu'on critique dans l'autre. C'est le dernier acte qui décide du sort d'une pièce. J'avais pris mes mesures pour laisser le public sur la bonne bouche.</p>
+        </sp>
+        <spGrp who="#telegone">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_nos_forets">On n'aime point dans nos forêts</title>
+            </desc>
+          </head>
+          <sp who="#telegone">
+            <speaker>Télégone</speaker>
+            <l met="8">C'est un fait qu'on ne peut nier</l>
+            <l met="8">S'il trouve mon style insipide,</l>
+            <l met="8">Ce n'est pas dans l'acte dernier ;</l>
+            <l met="8">Car je finis tout comme Armide</l>
+            <l met="8">En faisant détruire un palais</l>
+          </sp>
+        </spGrp>
+        <sp who="#tpoint">
+          <speaker>T</speaker>
+          <l met="8">Oui, mais avec bien [moins] de frais</l>
+          <p>Le palais de Circé n'a pas tant coûté à édifier que celui de la belle Armide</p>
+          <p>Vous avez épargné sur le nombre des diables trouvé en enfer, ou</p>
+        </sp>
+        <sp who="#telegone">
+          <speaker>Télégone</speaker>
+          <p>C'est que l'Académie royale de musique est très bonne ménagère, tout le monde sait cela.</p>
+          <p>On sait à qui on doit s'en prendre de cette économie-là.</p>
+        </sp>
+        <sp who="#tpoint">
+          <speaker>T</speaker>
+          <p>Allons, seigneur Télégone, il est temps de mettre votre main dans le vase prophétique. Si le public vous condamne alors vous retir[erez] votre main aussi noire qu'on vous accuse d'être.</p>
+        </sp>
+        <sp who="#telegone">
+          <speaker>Télégone</speaker>
+          <p>Voyons, voyons. Je suis sûr de l'injustice des jugements du parterre.</p>
+        </sp>
+        <stage>Il met la main dans le vase et la retire noire.</stage>
+        <sp who="#tpoint">
+          <speaker>T</speaker>
+          <p>Consolez-vous mon pauvre Télégone, vous n'êtes pas le seul opéra qui se soit barbouillé dans le monde.</p>
+          <l met="10">Quoiqu'un auteur sur le théâtre ennuie,</l>
+          <l met="10">Que d'en sortir plus d'un sifflet le prie</l>
+          <l met="8">Il veut toujours se faire voir</l>
+          <l met="8">En vain le parterre lui crie</l>
+          <l met="6">Gare le pot au noir~!</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#un_barbon_a_grise_mine">Et et et</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Pour qu'un opéra nous plaise</l>
+            <l met="12">Il faut qu'il soit guilleret et et et et et</l>
+          </sp>
+        </spGrp>
+        <stage>Fin</stage>
+      </prologue>
+    </front>
+    <body>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,966 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="le_rien_1753">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Le Rien</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Jean-Joseph Vadé</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>T. Boulanger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Relecture</resp>
+          <name>J. Coignard</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">
+          <emph>Oeuvres de M. Vadé</emph>, nouvelle édition, t.1, Paris, N.B. Duchesne, 1758</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="raton" sex="UNKNOWN">
+            <persName>Raton</persName>
+          </person>
+          <person xml:id="totinet" sex="UNKNOWN">
+            <persName>Totinet</persName>
+          </person>
+          <person xml:id="rosette" sex="UNKNOWN">
+            <persName>Rosette</persName>
+          </person>
+          <person xml:id="tricolor" sex="UNKNOWN">
+            <persName>Tricolor</persName>
+          </person>
+          <person xml:id="momus" sex="UNKNOWN">
+            <persName>Momus</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie des parodies de<emph>Titon et l'Aurore</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1753">
+        <desc>Représentée sur le théâtre de l'Opéra-Comique le 10 avril 1753</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#momus">Momus</role>
+        </castItem>
+        <castItem>
+          <role ana="#rosette">Rosette</role>
+        </castItem>
+        <castItem>
+          <role ana="#tricolor">Tricolor</role>
+        </castItem>
+        <castItem>
+          <role ana="#raton">Raton</role>
+        </castItem>
+        <castItem>
+          <role ana="#totinet">Totinet</role>
+        </castItem>
+      </castList>
+      <pb n="201"/>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Raton, Totinet</stage>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+        </sp>
+        <spGrp who="#raton">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nina">Nina</title>
+            </desc>
+          </head>
+          <sp who="#raton">
+            <speaker>Raton</speaker>
+            <l met="8">Sur un point qui me chagrinait,</l>
+            <l met="6">Parlons à Totinet,</l>
+            <l met="1">Net.</l>
+            <l met="8">Les siens le prônent en tous lieux,</l>
+            <l met="6">Soyons en dépit d'eux</l>
+            <l met="1">Deux.</l>
+            <l met="8">Qu'ai-je à craindre d'un concurrent?</l>
+            <l met="8">Mon triomphe est plus apparent</l>
+            <l met="4">Malgré cela.</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="4">Ta, la, la, la...</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+          <l met="7">Ah! le voilà, le voilà,</l>
+          <l met="1">Là.</l>
+        </sp>
+        <pb n="202"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Raton, Totinet</stage>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+        </sp>
+        <spGrp who="#totinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#belle_diguedon">Belle diguedon</title>
+            </desc>
+          </head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="7">En ces lieux, qui vous amène</l>
+            <l met="5">Mon petit Raton,</l>
+            <l met="6">Raton, Titon, tontaine?</l>
+          </sp>
+        </spGrp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+          <l met="10">Respectez plus le rival de Titon.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="6">Mon cher petit Titon,</l>
+          <l met="6">Raton, taine, riton.</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+          <l met="7">Cet air familier me gêne.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="5">Ah! Raton, Titon,</l>
+          <l met="6">Titon, Raton, tontaine.</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+        </sp>
+        <spGrp who="#raton">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#talaleri_talalerire">Talaleri, talalerire</title>
+            </desc>
+          </head>
+          <sp who="#raton">
+            <speaker>Raton</speaker>
+            <l met="8">Vous croyez être fort aimable,</l>
+            <l met="8">En chantant un mauvais refrain.</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">De grâce, soyez équitable.</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+          <l met="8">L'ami, c'est qu'il vous faut un frein.</l>
+          <l met="8">À cela qu'avez-vous à dire?</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <stage>riant</stage>
+          <l met="8">Talaleri, talalerire.</l>
+        </sp>
+        <pb n="203"/>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+        </sp>
+        <spGrp who="#raton">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_voulez_me_faire_chanter">Vous voulez me faire chanter</title>
+            </desc>
+          </head>
+          <sp who="#raton">
+            <speaker>Raton</speaker>
+            <l met="8">Ah! que vous avez bien le ton</l>
+            <l met="6">De l'Opéra-Comique!</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Pourquoi, Monseigneur de Raton,</l>
+          <l met="6">Prendre cet air caustique?</l>
+          <l met="7">N'usez point de tant de rigueur,</l>
+          <l met="6">Même intérêt nous lie.</l>
+          <l met="8">Si je vous passe la langueur,</l>
+          <l met="6">Passez-moi la folie.</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+        </sp>
+        <spGrp who="#raton">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#echos_de_pannard">Échos de Pannard</title>
+            </desc>
+          </head>
+          <sp who="#raton">
+            <speaker>Raton</speaker>
+            <l met="8">Hélas! pauvre enfant clandestin,</l>
+            <l met="4">De ton destin</l>
+            <l met="3">Rien n'approche.</l>
+            <l met="8">Plusieurs pères t'ont fabriqué.</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="4">Je suis piqué</l>
+          <l met="3">Du reproche.</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+          <l met="6">Chacun s'en aperçoit.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="1">Soit.</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+          <l met="4">Je n'ai qu'un père.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="6">Avec son art subtil,</l>
+          <l met="1">Il</l>
+          <l met="4">Eût pu mieux faire...</l>
+        </sp>
+        <pb n="204"/>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+        </sp>
+        <spGrp who="#raton">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Prévôt des marchands</title>
+            </desc>
+          </head>
+          <sp who="#raton">
+            <speaker>Raton</speaker>
+            <l met="8">Savez-vous, monsieur Totinet...</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Je sais que vous êtes parfait...</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+          <l met="8">Que partout votre genre choque...</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Mais nous avons d'autres appâts...</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+          <l met="8">Vous êtes toujours équivoque.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Sur ce point ne m'attaquez pas.</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+        </sp>
+        <spGrp who="#raton">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#refrain">refrain</title>
+            </desc>
+          </head>
+          <sp who="#raton">
+            <speaker>Raton</speaker>
+            <l met="7">Morbleu, si je me croyais,</l>
+            <l met="7">Comme je l'étrillerais!</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Momus, Totinet, Raton</stage>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+        </sp>
+        <spGrp who="#raton">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#chacun_a_son_ton_son_allure">Chacun a son ton, son allure</title>
+            </desc>
+          </head>
+          <sp who="#raton">
+            <speaker>Raton</speaker>
+            <l met="5">Ah! Seigneur Momus,</l>
+            <l met="5">Non, je n'y tiens plus,</l>
+            <l met="8">Imposez, s'il vous plaît, silence</l>
+            <l met="9">À ce petit morveux qui m'offense.</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">C'est lui qui vient pour m'insulter.</l>
+          <p>Parce qu'il a les éléments, la lune et les étoiles pour lui.</p>
+        </sp>
+        <pb n="205"/>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+          <l met="8">Il prétend sur moi l'emporter</l>
+          <p>À cause que les vents soufflent contre nous, et qui lui sont favorables.</p>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Désapprouvez-vous la gaieté?</l>
+          <p>Car enfin, vous conviendrez qu'il en faut dans une parodie, et que partout elle en porte le caractère.</p>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+          <l met="8">Blâmez-vous l'ingénuité?</l>
+          <p>Moi, je fus formé dans le dessein de paraître agréable, et à mon gré cet avantage doit l'emporter sur celui de faire rire.</p>
+        </sp>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <l met="5">Lure, lure, lure,</l>
+          <l met="3">Flon, flon, flon,</l>
+          <l met="5">Chacun a son ton,</l>
+          <l met="3">Son allure.</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+        </sp>
+        <spGrp who="#raton">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">De tous les capucins du monde</title>
+            </desc>
+          </head>
+          <sp who="#raton">
+            <speaker>Raton</speaker>
+            <l met="8">Tout genre est bon, vaille que vaille,</l>
+            <l met="8">Excepté le genre où l'on bâille.</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Moi, mon succès n'est pas douteux.</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+          <l met="8">Mon premier acte est admirable!</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Oui, votre moulin tourne au mieux,</l>
+          <l met="8">Et votre coq est impayable.</l>
+        </sp>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+        </sp>
+        <spGrp who="#momus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_chacun_de_nous_se_livre">Que chacun de nous se livre</title>
+            </desc>
+          </head>
+          <sp who="#momus">
+            <speaker>Momus</speaker>
+            <l met="7">Courant la même carrière,</l>
+            <l met="7">Deux auteurs sont ennemis.</l>
+            <l met="7">Chacun craint que son confrère</l>
+            <l met="7">À son rang ne soit admis,</l>
+            <l met="7">Le partage enfin le pique.</l>
+            <l met="7">En tous climats, comme ici,</l>
+            <l met="7">L'amour-propre est fils unique,</l>
+            <l met="7">Il veut tout avoir pour lui.</l>
+          </sp>
+        </spGrp>
+        <pb n="206"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Momus, Rosette, Tricolor, Raton, Totinet</stage>
+        <sp who="#rosette">
+          <speaker>Rosette</speaker>
+          <stage>tenant un arrosoir</stage>
+        </sp>
+        <spGrp who="#rosette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#pierrots_italiens">Pierrots italiens</title>
+            </desc>
+          </head>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <l met="4">Mon cher Raton</l>
+            <l met="5">Je cherche à tâtons.</l>
+            <l met="7">Que n'est-il dans ce séjour</l>
+            <l met="1">Jour!</l>
+          </sp>
+        </spGrp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <stage>arrivant, un bout de chandelle à la main</stage>
+          <p>Qu'entends-je?</p>
+        </sp>
+        <sp who="#rosette">
+          <speaker>Rosette</speaker>
+          <p>Quelqu'un vient par là.<stage>Étonnée.</stage>C'est Tricolor.</p>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <p>Vous voilà?</p>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <p>Ah!</p>
+          </sp>
+        </spGrp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+        </sp>
+        <spGrp who="#tricolor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ou_courez_vous_monsieur_l_abbe">Où courez-vous, Monsieur l'abbé</title>
+            </desc>
+          </head>
+          <sp who="#tricolor">
+            <speaker>Tricolor</speaker>
+            <l met="8">Quoi donc! Rosette, à petit bruit,</l>
+            <l met="8">Se hasarder ainsi dans la nuit!</l>
+            <l met="6">Vous allez sans chandelle.</l>
+          </sp>
+        </spGrp>
+        <pb n="207"/>
+        <sp who="#rosette">
+          <speaker>Rosette</speaker>
+          <l met="2">Eh bien?</l>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <stage>montrant sa lumière</stage>
+          <l met="6">Crainte du parallèle,</l>
+          <l met="5">Vous m'entendez bien.</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+        </sp>
+        <spGrp who="#raton">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#barbari">À la façon de Barbari</title>
+            </desc>
+          </head>
+          <sp who="#raton">
+            <speaker>Raton</speaker>
+            <l met="8">Belle Rosette!</l>
+          </sp>
+        </spGrp>
+        <sp who="#rosette">
+          <speaker>Rosette</speaker>
+          <l met="8">Ah! Ah! Raton!</l>
+          <l met="6">Que venez-vous donc faire?</l>
+          <l met="8">Avec ce petit mirmidon?</l>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <stage>montrant Raton</stage>
+          <l met="6">Il vous vaut bien, ma chère,</l>
+          <l met="8">Sa nourrice en fit un mignon.</l>
+        </sp>
+        <sp who="#rosette">
+          <speaker>Rosette</speaker>
+          <l met="11">La faridondaine, la faridondon.</l>
+        </sp>
+        <stage>Montrant son amant.</stage>
+        <sp who="#rosette">
+          <speaker>Rosette</speaker>
+          <l met="8">Par la danse il est rajeuni.</l>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="3">Biribi,</l>
+          <l met="8">À la façon de Barbari</l>
+          <l met="3">Mon ami.</l>
+        </sp>
+        <sp who="#rosette">
+          <speaker>Rosette</speaker>
+        </sp>
+        <spGrp who="#rosette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quoi_partez">Quoi! vous partez</title>
+            </desc>
+          </head>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <l met="10">Il vous sied bien, ma petite mignonne,</l>
+            <l met="10">De comparer votre héros au mien.</l>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <l met="10">Pardon, Seigneur, mais son orgueil m'étonne.</l>
+          </sp>
+        </spGrp>
+        <stage>À Momus.</stage>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="10">Vous êtes fort modeste, on le voit bien.</l>
+        </sp>
+        <pb n="208"/>
+        <sp who="#rosette">
+          <speaker>Rosette</speaker>
+          <l met="10">Quoi! vous sied-t'il, ma petite mignonne,</l>
+          <l met="10">De comparer votre héros au mien?</l>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+        </sp>
+        <spGrp who="#tricolor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_mort_pour_les_malheureux">La mort, pour les malheureux</title>
+            </desc>
+          </head>
+          <sp who="#tricolor">
+            <speaker>Tricolor</speaker>
+            <l met="7">De quel droit prétendez-vous</l>
+            <l met="4">Primer sur nous?</l>
+            <l met="6">J'admire en vérité</l>
+            <l met="4">Votre fierté!</l>
+          </sp>
+        </spGrp>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <stage>à Raton</stage>
+          <l met="6">Votre célébrité</l>
+          <l met="6">N'a pas trop éclaté.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="6">On n'en a point été</l>
+          <l met="2">Flatté.</l>
+        </sp>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <stage>à Totinet</stage>
+          <l met="7">Et vous-même, quel effet</l>
+          <l met="4">Avez-vous fait?</l>
+          <l met="6">Citez-moi s'il vous plaît</l>
+          <l met="4">Un seul couplet</l>
+          <l met="6">Dont le tour simple et neuf...</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="4">J'en compte neuf.</l>
+        </sp>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <l met="6">Très dignes du Pont-Neuf.</l>
+        </sp>
+        <stage>À Raton et Rosette.</stage>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <l met="7">De la rose et du bouton</l>
+          <l met="9">Vous répétez trop le vaudeville.</l>
+        </sp>
+        <stage>À Totinet et Tricolor.</stage>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <l met="7">Vous avez pris de Titon</l>
+          <l met="7">Un quatrain assez utile.</l>
+        </sp>
+        <sp who="#rosette">
+          <speaker>Rosette</speaker>
+          <l met="7">Ses soufflets sont bien trouvés.</l>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="10">Mais vos Pierrots sont-ils bien approuvés?</l>
+        </sp>
+        <pb n="209"/>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Nous avons été couronnés.</l>
+        </sp>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <l met="6">Grâce aux billets donnés...</l>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="7">Seigneur, nous n'insistons point,</l>
+          <l met="4">Passons ce point.</l>
+          <l met="6">Mais nos petits ballets</l>
+          <l met="4">Ne sont pas si laids.</l>
+          <l met="6">Et trouve-t'on ailleurs</l>
+          <l met="6">De plus gais, de meilleurs,</l>
+          <l met="8">Que notre ronde de tailleurs?</l>
+        </sp>
+        <sp who="#rosette">
+          <speaker>Rosette</speaker>
+          <l met="6">Les nôtres sont gracieux</l>
+          <l met="4">Et valent mieux.</l>
+          <l met="6">Des fleurs fort galamment</l>
+          <l met="4">Font l'ornement...</l>
+        </sp>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <stage>à Rosette</stage>
+          <l met="6">Vous êtes dans vos jeux</l>
+          <l met="3">Trop sérieux.</l>
+        </sp>
+        <stage>Parlant de Totinet et Tricolor.</stage>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <l met="1">Eux,</l>
+          <l met="3">Trop factieux.</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="4">Enfin, enfin,</l>
+            <l met="8">Prononcez sur notre destin.</l>
+            <l met="4">Jugez, jugez,</l>
+            <l met="4">Sans préjugés.</l>
+          </sp>
+        </spGrp>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <l met="2">Pourquoi</l>
+          <l met="8">Défier ainsi ma bonne foi?</l>
+          <l met="6">Vous vous plaindrez de moi.</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="4">Enfin, enfin,</l>
+            <l met="8">Prononcez sur notre destin.</l>
+            <l met="4">Jugez, jugez,</l>
+            <l met="4">Sans préjugés.</l>
+          </sp>
+        </spGrp>
+        <pb n="210"/>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <stage>à Raton et Rosette</stage>
+          <l met="5">Tous vos petits airs</l>
+          <l met="5">Sont sur de grands airs.</l>
+          <l met="5">Nul ne chantera</l>
+          <l met="5">Ces tirades-là.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="5">Que je suis content</l>
+          <l met="5">De ce jugement!</l>
+        </sp>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <stage>à Totinet</stage>
+          <l met="7">Vous chantez différemment.</l>
+          <l met="4">Chaque refrain</l>
+          <l met="10">Porte des traits dont le tout est malin.</l>
+          <l met="4">Votre Apollon</l>
+          <l met="8">Aurait pu prendre un meilleur ton.</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+          <l met="5">Que je suis content</l>
+          <l met="5">De ce jugement!</l>
+        </sp>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <stage>parlant de Raton</stage>
+          <l met="5">Il est engourdi.</l>
+        </sp>
+        <stage>À Totinet.</stage>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <l met="5">Vous êtes noirci.</l>
+        </sp>
+        <stage>À Raton, parlant de Totinet.</stage>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <l met="5">Vous êtes piquant</l>
+          <l met="5">Au commencement,</l>
+        </sp>
+        <stage>À Totinet.</stage>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <l met="7">Et vous dans le dénouement.</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+        </sp>
+        <spGrp who="#raton">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#naiades">Bouchez, Naïades, vos fontaines</title>
+            </desc>
+          </head>
+          <sp who="#raton">
+            <speaker>Raton</speaker>
+            <l met="8">Mais quand je parus sur la scène,</l>
+            <l met="8">Seigneur, la chambrée était pleine.</l>
+          </sp>
+        </spGrp>
+        <pb n="211"/>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Je reçus mille compliments.</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+          <l met="8">Je fus applaudi sans ombrages.</l>
+        </sp>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <l met="8">Messieurs, les applaudissements</l>
+          <l met="8">Ne sont pas toujours des suffrages.</l>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+        </sp>
+        <spGrp who="#tricolor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais, en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#tricolor">
+            <speaker>Tricolor</speaker>
+            <l met="8">Même objet nous a tous fait naître.</l>
+          </sp>
+        </spGrp>
+        <sp who="#rosette">
+          <speaker>Rosette</speaker>
+          <l met="8">En cela nous nous ressemblons.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Je plais à qui sait me connaître.</l>
+        </sp>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+          <l met="8">En mérite nous différons.</l>
+        </sp>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+        </sp>
+        <spGrp who="#momus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#voila_la_ressemblance">Voilà la ressemblance</title>
+            </desc>
+          </head>
+          <sp who="#momus">
+            <speaker>Momus</speaker>
+            <l met="7">Tous deux, vous avez le tic</l>
+            <l met="7">De vouloir plaire au public.</l>
+            <l met="6">Voilà la ressemblance.</l>
+          </sp>
+          <sp who="#momus">
+            <speaker>Momus</speaker>
+            <l met="7">L'un fait ennuyer gaiement.</l>
+          </sp>
+          <sp who="#momus">
+            <speaker>Momus</speaker>
+            <l met="7">L'autre amuser froidement.</l>
+            <l met="6">Voilà la différence.</l>
+          </sp>
+        </spGrp>
+        <stage>À Totinet.</stage>
+        <stage>À Raton.</stage>
+        <sp who="#raton">
+          <speaker>Raton</speaker>
+        </sp>
+        <spGrp who="#raton">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Prévôt des marchands</title>
+            </desc>
+          </head>
+          <sp who="#raton">
+            <speaker>Raton</speaker>
+            <l met="8">Adoucissez un peu l'arrêt.</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Un peu trop vif il nous paraît.</l>
+        </sp>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <l met="8">Pour éviter les épigrammes,</l>
+          <l met="8">Et pour vous corriger en tout,</l>
+          <l met="8">Mes enfants, consultez les Dames.</l>
+        </sp>
+        <stage>Montrant les loges.</stage>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <l met="8">Voilà le tribunal du goût.</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vogue_galere">Vogue la galère</title>
+            </desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="6">De votre avis sincère</l>
+            <l met="6">Nous pourrons profiter.</l>
+          </sp>
+        </spGrp>
+        <sp who="#momus">
+          <speaker>Momus</speaker>
+          <l met="6">Quand au sexe on sait plaire,</l>
+          <l met="6">Partout on peut chanter.</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="6">Eh! vogue la galère,</l>
+            <l met="6">Tant qu'elle pourra voguer.</l>
+          </sp>
+        </spGrp>
+        <stage>On danse.</stage>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

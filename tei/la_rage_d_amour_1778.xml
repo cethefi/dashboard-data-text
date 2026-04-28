@@ -1,0 +1,2588 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="la_rage_d_amour_1778">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">La Rage d'amour</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Louis-François Archambault, dit Dorvigny</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>B. Ourcel</name>
+        </respStmt>
+        <respStmt>
+          <resp>Relecture</resp>
+          <name>J. Coignard</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Paris, Vente, 1778</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="roulant" sex="UNKNOWN">
+            <persName>Roulant</persName>
+          </person>
+          <person xml:id="lolotte" sex="UNKNOWN">
+            <persName>Lolotte</persName>
+          </person>
+          <person xml:id="tonton" sex="UNKNOWN">
+            <persName>Tonton</persName>
+          </person>
+          <person xml:id="lindor" sex="UNKNOWN">
+            <persName>Lindor</persName>
+          </person>
+          <person xml:id="amidon" sex="UNKNOWN">
+            <persName>Amidon</persName>
+          </person>
+          <person xml:id="lisette" sex="UNKNOWN">
+            <persName>Lisette</persName>
+          </person>
+          <person xml:id="cassandre" sex="UNKNOWN">
+            <persName>Cassandre</persName>
+          </person>
+          <person xml:id="unbatelier" sex="UNKNOWN">
+            <persName>Un Batelier</persName>
+          </person>
+          <person xml:id="lebatelier" sex="UNKNOWN">
+            <persName>Le Batelier</persName>
+          </person>
+          <person xml:id="letambour" sex="UNKNOWN">
+            <persName>Le Tambour</persName>
+          </person>
+          <person xml:id="premiergarcon" sex="UNKNOWN">
+            <persName>Premier Garçon</persName>
+          </person>
+          <person xml:id="secondgarcon" sex="UNKNOWN">
+            <persName>Second Garçon</persName>
+          </person>
+          <person xml:id="capitainegrenadiers" sex="UNKNOWN">
+            <persName>Le Capitaine des Grenadiers</persName>
+          </person>
+          <person xml:id="un_batelier" sex="UNKNOWN">
+            <persName>Un batelier</persName>
+          </person>
+          <person xml:id="le_capitaine_de_grenadiers" sex="UNKNOWN">
+            <persName>Le capitaine de grenadiers</persName>
+          </person>
+          <person xml:id="un_tambour_de_grenadiers" sex="UNKNOWN">
+            <persName>Un tambour de grenadiers</persName>
+          </person>
+          <person xml:id="garcons_de_cabaret" sex="UNKNOWN">
+            <persName>Garçons de cabaret</persName>
+          </person>
+          <person xml:id="soldats_et_bateliers" sex="UNKNOWN">
+            <persName>Soldats et bateliers</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie de<emph>Roland</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1778">
+        <desc>Représentée pour la première fois par les Comédiens Italiens ordinaires du Roi à Paris le jeudi 19 mars 1778</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#roulant">Roulant</role>
+          <roleDesc>grenadier recruteur</roleDesc>
+          <actor>Le sieur Suin</actor>
+        </castItem>
+        <castItem>
+          <role ana="#lolotte">Lolotte</role>
+          <roleDesc>opératrice en Amazone</roleDesc>
+          <actor>La dame Adeline</actor>
+        </castItem>
+        <castItem>
+          <role ana="#tonton">Tonton</role>
+          <roleDesc>sa suivante</roleDesc>
+          <actor>La dame Moulinguen</actor>
+        </castItem>
+        <castItem>
+          <role ana="#lindor">Lindor</role>
+          <roleDesc>coiffeur de femmes</roleDesc>
+          <actor>Le sieur Julien</actor>
+        </castItem>
+        <castItem>
+          <role ana="#amidon">Amidon</role>
+          <roleDesc>perruquier gascon</roleDesc>
+          <actor>Le sieur Trial</actor>
+        </castItem>
+        <castItem>
+          <role ana="#lisette">Lisette</role>
+          <actor>La demoiselle Dufayel</actor>
+        </castItem>
+        <castItem>
+          <role ana="#cassandre">Cassandre</role>
+          <actor>Le sieur Thomassin</actor>
+        </castItem>
+        <castItem>
+          <role ana="#un_batelier">Un batelier</role>
+          <actor>Le sieur Narbonne</actor>
+        </castItem>
+        <castItem>
+          <role ana="#le_capitaine_de_grenadiers">Le capitaine de grenadiers</role>
+          <actor>Le sieur Meunier</actor>
+        </castItem>
+        <castItem>
+          <role ana="#un_tambour_de_grenadiers">Un tambour de grenadiers</role>
+          <actor>Le sieur Guichard</actor>
+        </castItem>
+        <castItem>
+          <role ana="#garcons_de_cabaret">Garçons de cabaret</role>
+        </castItem>
+        <castItem>
+          <role ana="#soldats_et_bateliers">Soldats et bateliers</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène est devant la rivière à l'entrée d'un parc.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Lolotte, Tonton</stage>
+        <stage>Le théâtre représente l'entrée d'un parc, sur le bord de la rivière, d'un côté on voit les cabarets du Suisse.</stage>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+        </sp>
+        <spGrp who="#lolotte">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tirez_moi_par_mon_cordon">Tirez-moi par mon cordon</title>
+            </desc>
+          </head>
+          <sp who="#lolotte">
+            <speaker>Lolotte</speaker>
+            <l met="8">Hélas! c'est bien pour mon malheur</l>
+            <l met="8">Que j'arrêtai dans ce village!</l>
+            <l met="8">On dit bien vrai, c'est grand dommage</l>
+            <l met="7">Que d'avoir un trop bon cœur.</l>
+            <l met="7">On est prise comme une sotte!</l>
+            <l met="8">C'est payer cher une leçon!</l>
+            <l met="7">Plains-moi, ma pauvre Tonton,<stage type="bis">bis</stage>
+            </l>
+            <l met="6">C'en est fait de Lolotte.</l>
+          </sp>
+        </spGrp>
+        <pb n="2"/>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <stage>à part</stage>
+          <l met="8">Quand une femme sans sujet</l>
+          <l met="8">Veut se fourrer martel en tête,</l>
+          <l met="8">La consoler c'est être bête,</l>
+          <l met="7">C'est inutile projet:</l>
+        </sp>
+        <stage>Haut.</stage>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="8">Votre complainte est ridicule,</l>
+          <l met="8">N'avez-vous pas un serviteur,</l>
+          <l met="7">Vaillant et bon escrimeur:<stage type="bis">bis</stage>
+          </l>
+          <l met="6">Roulant est un Hercule!</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="8">Roulant, sans doute, est le plus fort,</l>
+          <l met="8">Mais Lindor est le plus aimable!</l>
+          <l met="8">Lequel des deux est préférable?</l>
+          <l met="7">Au choix je crains d'avoir tort.</l>
+        </sp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="8">Gardez les deux, c'est le plus sage,</l>
+          <l met="8">De l'un, il faut faire un mari,</l>
+          <l met="7">Et de l'autre un favori,<stage type="bis">bis</stage>
+          </l>
+          <l met="6">À Paris c'est l'usage.</l>
+          <l met="10">Eh! dites-moi, ce Lindor si charmant,</l>
+          <l met="10">Qui dans votre âme a balancé Roulant,</l>
+          <l met="12">Comment donc avec vous a-t-il fait connaissance?</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="10">Ah! par hasard... certaine circonstance...</l>
+        </sp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="10">Oui, dans ces lieux l'amour fait des progrès,</l>
+          <l met="12">Et beaucoup de hasards, y font des faits exprès.</l>
+        </sp>
+        <pb n="3"/>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">Je venais les matins vendre ici de l'essence,</l>
+          <l met="8">Et débiter quelques secrets.</l>
+        </sp>
+        <spGrp who="#lolotte">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#une_abeille_farouche">Une abeille farouche</title>
+            </desc>
+          </head>
+          <sp who="#lolotte">
+            <speaker>Lolotte</speaker>
+            <l met="6">Dans cette promenade</l>
+            <l met="6">Un jour je le trouvai;</l>
+            <l met="6">Il paraissait malade,</l>
+            <l met="6">Près de lui j'approchai...</l>
+          </sp>
+        </spGrp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="4">Oh! jusque-là</l>
+          <l met="10">On ne peut pas trouver de mal à ça.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="6">Il me dit d'un air tendre</l>
+          <l met="6">Je viens de me blesser!</l>
+          <l met="6">La pitié me fit prendre</l>
+          <l met="6">Le soin de le panser.</l>
+          <l met="4">Tu vois par-là,</l>
+          <l met="10">Qu'on ne peut pas trouver de mal à ça.</l>
+        </sp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="6">Mais, pansant la blessure,</l>
+          <l met="6">Vous eûtes votre tour;</l>
+          <l met="6">Vous reçûtes piqûre</l>
+          <l met="6">Du malin dieu d'Amour!</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="4">Ah! oui, voilà</l>
+          <l met="10">Tout le mal que l'on peut trouver à ça.</l>
+        </sp>
+        <pb n="4"/>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="10">D'un fol amour vous vous trouverez dupe;</l>
+          <l met="12">Croyez-moi, renoncez à vos beaux sentiments:</l>
+          <l met="10">Dans votre état l'intérêt seul occupe,</l>
+          <l met="12">Qui songe à vivre, et point à faire des romans.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">Ah! comment fuir Lindor?</l>
+        </sp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="12">Il faut plier bagage:</l>
+          <l met="12">C'est l'unique moyen d'éviter le naufrage</l>
+          <l met="12">Qui brave le danger toujours y périra,</l>
+          <l met="12">J'en ai fait quelque épreuve... Et bien m'en souviendra!</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">Allons, ne songeons donc qu'à me tromper moi-même</l>
+          <l met="10">En me disant: « quand je perds ce que j'aime,</l>
+          <l met="12">Je l'immole à la gloire et non à l'intérêt».</l>
+        </sp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="10">Bon! dites-lui la chose comme elle est:</l>
+          <l met="8">À quoi sert tout cet artifice?</l>
+        </sp>
+        <spGrp who="#tonton">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_suis_madelon_friquet">Je suis Madelon Friquet</title>
+            </desc>
+          </head>
+          <sp who="#tonton">
+            <speaker>Tonton</speaker>
+            <l met="7">Convient-on de bonne-foi</l>
+            <l met="8">Des motifs de tout sacrifice?</l>
+            <l met="7">Convient-on de bonne foi</l>
+            <l met="8">Des raisons qui nous font la loi?</l>
+            <l met="8">Ah! combien de gens dont le cœur</l>
+            <l met="8">Ne consulte que l'injustice,</l>
+            <l met="7">Et n'affiche que l'honneur.</l>
+            <l met="7">Convient-on, ...</l>
+            <l met="12">Que ce cruel adieu va me coûter à faire!</l>
+            <l met="10">Ah! c'est pour en mourir!</l>
+          </sp>
+        </spGrp>
+        <pb n="5"/>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="10">N'en mourez pas;</l>
+          <l met="12">Évanouissez-vous pour vous tirer d'affaire.</l>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#tonton">
+            <speaker>Tonton</speaker>
+            <l met="7">Quand on est en pareil cas</l>
+            <l met="8">Se trouver mal est une adresse;</l>
+            <l met="7">Quand on est en pareil cas</l>
+            <l met="8">C'est ainsi qu'on sort d'embarras.</l>
+            <l met="8">Combien de femmes sans mourir,</l>
+            <l met="8">Pour mieux déguiser leur faiblesse</l>
+            <l met="7">Ont feint de s'évanouir,</l>
+            <l met="7">Quand on est, ...</l>
+          </sp>
+        </spGrp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">Pour agir encor mieux, cours, dis-lui qu'il m'évite</l>
+          <l met="8">Qu'il parte... Ah! je suis interdite!</l>
+          <l met="12">Je m'avise trop tard, il porte ici ses pas.</l>
+          <l met="12">Mais faisons une feinte, et ne l'attendons pas.</l>
+        </sp>
+        <stage>Elles se retirent dans le fond.</stage>
+        <pb n="6"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Lindor<stage>seul</stage>
+        </stage>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#lindor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">Serait-il vrai, jeune bergère,tiré du <title ref="#cercle">Cercle</title> ()</desc>
+          </head>
+          <sp who="#lindor">
+            <speaker>Lindor</speaker>
+            <l met="8">De cet amour qu'avais-je à faire?</l>
+            <l met="8">Était-ce à moi de m'enflammer?</l>
+            <l met="8">Il faut avoir le don de plaire</l>
+            <l met="8">Pour se servir du droit d'aimer.</l>
+            <l met="12">Si j'avais un état, j'aurais quelque espérance,</l>
+            <l met="12">En lui faisant ma cour, je pourrais parler haut;</l>
+            <l met="10">À ses faveurs je saurais mettre un taux.</l>
+            <l met="12">N'ayant ni feu, ni lieu, soupirons en silence,</l>
+            <l met="10">Et sans espoir adorons ses appas</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#lindor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#musette_de_desbrosses">Musette,de Desbrosses</title>
+            </desc>
+          </head>
+          <sp who="#lindor">
+            <speaker>Lindor</speaker>
+            <l met="10">Je la verrai, c'est assez pour ma flamme,</l>
+            <l met="10">Sans son aveu je puis l'aimer tout bas.</l>
+            <l met="10">L'amour caché dans le fond de mon âme</l>
+            <l met="10">S'il est muet ne l'offensera pas.</l>
+            <l met="10">Une beauté veut en vain se défendre</l>
+            <l met="10">Des tendres feux qu'elle fait inspirer,</l>
+            <l met="10">C'est un tableau que l'on ne veut pas vendre;</l>
+            <l met="10">Mais l'amateur peut toujours l'admirer.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <pb n="7"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Lindor, Tonton, Lolotte<stage>reviennent</stage>
+        </stage>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <stage>à Lolotte</stage>
+          <l met="12">Ce fameux recruteur, ce Roulant qui vous aime,</l>
+          <l met="10">Qui fait aussi que les petits cadeaux</l>
+          <l met="12">Nourrissent l'amitié, vient dans cet instant même</l>
+          <l met="12">D'envoyer en ces lieux quelques présents nouveaux;</l>
+          <l met="12">Et le paquet s'adresse à la belle Lolotte.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="11">Je ne veux rien de lui, je serais idiote</l>
+          <l met="12">D'écouter les propos d'un conteur de pays;</l>
+          <l met="12">Tout exprès pour le fuir le prendrai la galiote</l>
+          <l met="10">Et m'en irai dès ce soir à Paris...</l>
+          <l met="8">Mais avant il faudrait me dire</l>
+          <l met="8">Si sur vous j'aurais quelque empire;</l>
+          <l met="8">Apprenez-moi votre destin,</l>
+          <l met="10">Et dites-moi qui vous êtes enfin.</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+        </sp>
+        <spGrp who="#lindor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">tiré du <title ref="#barbier_de_seville">Barbier de Séville</title> ()</desc>
+          </head>
+          <sp who="#lindor">
+            <speaker>Lindor</speaker>
+            <l met="10">Je suis Lindor, jadis coiffeur de femmes,</l>
+            <l met="10">D'un bel esprit j'avais même le ton!</l>
+            <l met="10">À la toilette apprenant ma leçon,</l>
+            <l met="10">J'allais le soir juger les nouveaux drames.</l>
+            <l met="10">J'ai dans Paris fait plus d'une conquête</l>
+            <l met="10">Par le secours de mon art séducteur;</l>
+            <l met="10">Une beauté m'avait donné son cœur</l>
+            <l met="10">Pour prix du soin que j'avais de sa tête.</l>
+            <l met="10">Un accident a fait finir mon règne,</l>
+            <l met="10">Elle me quitte en perdant les cheveux;</l>
+            <l met="10">Et désormais vous adressant mes veux,</l>
+            <l met="10">Le tendre amour vous consacre mon peigne.</l>
+          </sp>
+        </spGrp>
+        <pb n="8"/>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">Écoutez-moi, Lindor, et ne niaisons plus;</l>
+          <l met="12">Je m'intéresse à vous, la chose est assez claire</l>
+          <l met="12">Je vous l'ai su prouver; mes drogues, mes écus,</l>
+          <l met="10">Mes soins, mon temps, ce qui fut nécessaire,</l>
+          <l met="12">Je vous l'ai prodigué, le tout sans intérêt...</l>
+          <l met="12">Ce que je vous en dis, ce n'est pas que j'en cause,</l>
+          <l met="12">Mais il faut empêcher que le monde ne glose;</l>
+          <l met="12">Des méchants, voyez-vous, les langues sont aux guets;</l>
+          <l met="10">Aux médisants ne donnons pas matière.</l>
+          <l met="12">Vous voilà bien refait, la couleur vous revient;</l>
+          <l met="10">Rien à présent ici ne vous retient,</l>
+          <l met="12">Partez Lindor.</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="12">Ô Ciel! ai-je pu vous déplaire?</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">Partez sans différer.</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="12">D'où vient votre colère?</l>
+        </sp>
+        <pb n="9"/>
+        <stage>Il va pour chanter l'air de<emph>Rose et Colas</emph>.</stage>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="4">Mais, dites moi,</l>
+          <l met="2">Pourquoi...</l>
+          <l met="3">Pourquoi cette...</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <stage>l'interrompant</stage>
+          <l met="8">Lindor, il n'est qu'un mot qui serve;</l>
+          <l met="12">Je ne vous en veut pas, que le Ciel vous conserve!</l>
+          <l met="8">Vous aider même est mon dessein</l>
+          <l met="8">Cherchez une maison honnête</l>
+          <l met="8">Où l'on mange à vingt sols par tête;</l>
+          <l met="12">J'y répondrai pour vous... puis-je mieux faire enfin,</l>
+          <l met="10">Qu'en pensez-vous?</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="10">Ah! de ma nourriture</l>
+          <l met="12">Vous aurez bon marché, je veux mourir de faim.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">Oh! vous faites l'enfant.</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="12">Du tourment que j'endure</l>
+          <l met="12">Cruelle, ayez pitié.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">Que puis-je faire, hélas!</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="12">Permettre qu'en tous lieux j'accompagne vos pas.</l>
+          <l met="10">Quand vous courez de province en province,</l>
+          <l met="10">De bonne foi votre train est trop mince,</l>
+          <l met="12">Il n'en impose pas; mais pour vous faire honneur,</l>
+          <l met="10">Moi, votre esclave et votre serviteur,</l>
+          <l met="8">Changeant d'habits suivant les villes,</l>
+          <l met="8">Tantôt en Turc, en Nègre, en Gilles;</l>
+          <l met="10">Pour vous servir épuisant mon latin,</l>
+          <l met="10">Je jaserai pour vous dans les villages,</l>
+          <l met="12">Et vous bichonnerai tout le long du chemin.</l>
+        </sp>
+        <pb n="10"/>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">Lindor, chagrinons nous, mais pourtant soyons sages;</l>
+          <l met="12">Faisons-nous des adieux bien touchants, bien plaintifs!...</l>
+          <l met="12">Plus les maux sont cuisants, plus les regrets sont vifs.</l>
+        </sp>
+        <spGrp who="#lolotte">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#adieu_dame">Adieu donc, Dame Françoise</title>
+            </desc>
+          </head>
+          <sp who="#lolotte">
+            <speaker>Lolotte</speaker>
+            <l met="7">Adieu donc, car s'il demeure,</l>
+            <l met="7">Je trahirai mon secret,</l>
+            <l met="7">Mon cœur doit être discret</l>
+            <l met="7">Pour le moins encor une heure;</l>
+            <l met="7">Si les amants s'expliquaient</l>
+            <l met="7">Les Opéras finiraient.</l>
+            <l met="7">Adieu donc, il n'est pas l'heure</l>
+            <l met="7">De vous dire mon secret.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="7">Mais c'est une maladresse</l>
+          <l met="7">Que de me laisser partir,</l>
+          <l met="7">Toujours aller et venir</l>
+          <l met="7">Pour allonger une pièce!</l>
+          <l met="7">Moi je vous le dit tout net,</l>
+          <l met="7">C'est en ôter l'intérêt.</l>
+          <l met="7">Croyez-moi c'est maladresse</l>
+          <l met="7">Que de me laisser partir.</l>
+        </sp>
+        <pb n="11"/>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+        </sp>
+        <spGrp who="#lolotte">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air d'une</desc>
+            <desc type="title">
+              <title ref="#contredanse">Contredanse</title>
+            </desc>
+          </head>
+          <sp who="#lolotte">
+            <speaker>Lolotte</speaker>
+            <l met="7">Non, vous n'me gagnerez pas</l>
+            <l met="3">Je m'en vas.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="6">Eh! mais, vous plaisantez!</l>
+          <l met="3">Arrêtez.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="6">Non, non, c'est tout de bon</l>
+          <l met="3">Mon garçon.</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="5">Ô scène inutile!</l>
+          <l met="5">À quoi mène donc</l>
+          <l met="3">Ce jargon?</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="5">Qu'il est difficile!</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="5">N'ai-je pas raison?</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="9">Que voulez-vous que j'écoute encor?</l>
+          <l met="9">Ah! croyez-moi, décampez, Lindor.</l>
+        </sp>
+        <pb n="12"/>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="6">Non, non, l'amour m'arrête</l>
+          <l met="8">Près de vous il veut me lier.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="6">Ah! je l'ai dans la tête</l>
+          <l met="5">J'aurai le dernier.</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="10">Écoutez-moi.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="10">Je ne veux rien entendre,</l>
+          <l met="8">Et si sur vous j'ai du pouvoir,</l>
+          <l met="8">À l'instant faites-le moi voir.</l>
+        </sp>
+        <stage>Lindor hésite.</stage>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="10">Partez... partez muscade.</l>
+        </sp>
+        <stage>Avec le geste d'escamoter.</stage>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <stage>s'en allant</stage>
+          <l met="10">Il faut se rendre.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Lolotte, Tonton</stage>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+        </sp>
+        <spGrp who="#lolotte">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#triste_raison">Triste raison</title>
+            </desc>
+          </head>
+          <sp who="#lolotte">
+            <speaker>Lolotte</speaker>
+            <l met="10">Il est parti! déjà je le regrette!</l>
+            <l met="10">Que cet effort me prépare d'ennui!</l>
+            <l met="10">Chère Tonton, je t'avouerai la dette:</l>
+            <l met="10">Oui, pour un rien je courrais après lui.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="10">Voilà pourtant, voilà comme nous sommes!</l>
+          <l met="10">De notre cœur on doit bien se moquer.</l>
+          <l met="10">Les tenons-nous, nous faisons fi des hommes!</l>
+          <l met="10">Sont-ils partis, nous craignons d'en manquer.</l>
+          <l met="12">Consolez-vous, un clou, comme on dit, chasse l'autre.</l>
+          <l met="8">Lindor faisait le bon apôtre;</l>
+          <l met="12">Mais Roulant, sans savoir ni par où ni pourquoi</l>
+          <l met="12">Va revenir bientôt et vous offrir la foi...</l>
+          <l met="12">Voyez ces bateliers, ils pourront vous distraire.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="8">Je les attends. Pour toi, ma chère.</l>
+          <l met="8">Va consôler ce malheureux.</l>
+        </sp>
+        <stage>Tonton s'en va.</stage>
+        <pb n="14"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Lolotte, les bateliers</stage>
+        <sp who="#unbatelier">
+          <speaker>Un Batelier</speaker>
+          <l met="8">Ah! par la ventregué, Mamselle,</l>
+          <l met="10">Près Charenton je l'ons échappé belle!</l>
+          <l met="10">Sans un gaillard, morgué qu'il est nerveux,</l>
+          <l met="8">C'est Roulant, dit-on, qu'on l'appelle,</l>
+          <l met="12">Et qui s'est trouvé là, jarnigué, bien à point.</l>
+          <l met="12">Ste nuit un coup de vent que je n'attendions point;</l>
+          <l met="12">Vint casser not amarre, et faire enfler not voile;</l>
+          <l met="12">V'la qu'j'allons en dérive. Au temps, pas une étoile.</l>
+          <l met="10">Y faisait clair, morgué, comm' dans un four.</l>
+          <l met="10">J'équions flambés, gn'y a pas là de détour.</l>
+          <l met="10">De not bachot n'pouvant régler la marche</l>
+          <l met="12">Poussé par le courant, j'nous brifions contr' une arche.</l>
+          <l met="12">Au moyen d'une corde, à lui tout seul, Roulant</l>
+          <l met="10">Nous remonta contre vent et marée!...</l>
+          <l met="12">Si de ce luron là vous êtes l'épousée,</l>
+          <l met="12">J'pouvons d'avance ici vous faire compliment</l>
+          <l met="10">En vous r'mettant c'présent qui vous envoie.</l>
+        </sp>
+        <stage>Il lui donne un petit paquet.</stage>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">J'avais promis tantôt qu'il serait rebuté,</l>
+          <l met="12">Mais je l'accepte, enfant, par curiosité.</l>
+        </sp>
+        <pb n="15"/>
+        <stage>Elle prend le paquet et le défait.</stage>
+        <sp who="#lebatelier">
+          <speaker>Le Batelier</speaker>
+          <l met="12">Morgué! c'est ben galant! des jarretières de soie!</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="8">Tenez, buvez à ma santé.</l>
+        </sp>
+        <stage>Elle lui donne de l'argent, et s'en va.</stage>
+        <sp who="#lebatelier">
+          <speaker>Le Batelier</speaker>
+          <l met="10">Ben volonquers. J'avons le cœur en joie.</l>
+          <l met="8">Et v'là l'cabaret tout porté.</l>
+        </sp>
+        <spGrp who="#lebatelier">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">tiré de <title ref="#la_fricassee">La Fricassée</title> ()</desc>
+          </head>
+          <sp who="#lebatelier">
+            <speaker>Le Batelier</speaker>
+            <l met="7">Al nous baille un p'tit écu,</l>
+            <l met="6">V'là d'quoi faire bombance!</l>
+            <l met="7">Al nous baille un p'tit écu!</l>
+            <l met="8">N'nous quittons pas qu'il ne soit bu.</l>
+          </sp>
+          <sp who="#lebatelier">
+            <speaker>Le Batelier</speaker>
+            <l met="7">Mais entrons dans l'cabaret,</l>
+            <l met="7">Queuqu'nous faisons dans stendret?</l>
+            <l met="7">Si j'équions à l'Opéra,</l>
+            <l met="6">On dirait c'est la danse</l>
+            <l met="7">Qui les va retenir-là.</l>
+            <l met="7">Al nous baille, ...</l>
+            <l met="8">La v'là qui revient, ça nous chasse,</l>
+            <l met="10">Allons nous-en pour lui céder la place.</l>
+          </sp>
+        </spGrp>
+        <stage>Le chœur reprend.</stage>
+        <stage>Ils s'en vont.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Lolotte, Tonton</stage>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="12">Savez-vous que je suis bien lasse de courir.</l>
+          <l met="12">Pourquoi donc sur nos pas sans cesse revenir?</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">Mon enfant, c'est qu'on vend ici l'eau minérale.</l>
+          <l met="10">J'en voudrais boire afin de refroidir</l>
+          <l met="12">Cette ardeur que je sens, qui me sera fatale,</l>
+          <l met="12">Mais j'ai beau la chercher depuis le grand matin.</l>
+        </sp>
+        <spGrp who="#lolotte">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#toujours_toujours_de_beaumarchais">Toujours, toujours,de Beaumarchais</title>
+            </desc>
+          </head>
+          <sp who="#lolotte">
+            <speaker>Lolotte</speaker>
+            <l met="10">Je crois qu'un sort en ces lieux me ramène,</l>
+            <l met="4">Dans mon chagrin</l>
+            <l met="6">Je rode et tourne en vain,</l>
+            <l met="6">Je forme le dessein</l>
+            <l met="6">De boire à la fontaine;</l>
+            <l met="6">Mais un penchant secret</l>
+            <l met="6">Devant le cabaret</l>
+            <l met="10">Toujours, toujours comme un sort me ramène.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="10">Pour vous surprendre, en amant bien discret,</l>
+          <l met="10">Voici Roulant qui tombe ici des nues.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">De quelque endroit qu'il vienne, il ne me verra pas.</l>
+        </sp>
+        <pb n="17"/>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="12">Et comment ferez-vous?</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">Le plaisant embarras</l>
+          <l met="12">N'ai-je pas des secrets que je vends dans les rues?</l>
+          <l met="12">Pour me rendre invisible un anneau suffira...</l>
+          <l met="8">De la vertu je suis certaine.</l>
+          <l met="12">On le met dans la bouche, et derrière un gros chêne</l>
+          <l met="12">Se glissant aussitôt... l'effet te surprendra.</l>
+        </sp>
+        <stage>Elle se cache.</stage>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">Tiens, tu me vois; et tu ne me vois plus.</l>
+        </sp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="12">La peste!</l>
+          <l met="10">Le tour est fort!</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Lolotte<stage>cachée</stage>, Tonton, Roulant</stage>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <stage>s'essuyant le visage</stage>
+          <l met="10">Milzieux! que j'ai couru</l>
+          <l met="12">Pour vous chercher!... Oh! oh! je croyais avoir vu</l>
+          <l met="12">Ma Lolotte avec toi.</l>
+        </sp>
+        <stage>Il regarde de tous côtés. Lolotte, craignant d'être aperçue, tourne à l'entour de l'arbre à mesure que Roulant avance.</stage>
+        <pb n="18"/>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <stage>à part</stage>
+          <l met="12">S'il eût été plus leste,</l>
+          <l met="5">Il l'avait, ma foi!</l>
+        </sp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+        </sp>
+        <spGrp who="#roulant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fraises">Des fraises</title>
+            </desc>
+          </head>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="7">Mais, je crois que dans ce bois</l>
+            <l met="6">Le diable me ballotte!</l>
+            <l met="7">Ah! pour me mettre aux abois</l>
+            <l met="7">Serez-vous sourde à ma voix</l>
+            <l met="8">Lolotte! Lolotte! Lolotte!</l>
+          </sp>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="12">Elle ne répond pas!... je la cherche en tous lieux,</l>
+            <l met="10">Enfin l'amour en cet endroit m'amène,</l>
+            <l met="10">Je crois l'y voir. Elle y fond sous mes yeux!</l>
+          </sp>
+        </spGrp>
+        <stage>Il va et vient, l'appelant à haute voix comme à l'Opéra.</stage>
+        <spGrp who="#roulant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_bourbonnaise">La Bourbonnaise</title>
+            </desc>
+          </head>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="4">Chère inhumaine!</l>
+            <l met="4">Quel jeu jouons-nous?</l>
+            <l met="4">Quel jeu jouons-nous</l>
+            <l met="4">Chère inhumaine!</l>
+            <l met="4">Quel jeu jouons-nous?</l>
+            <l met="4">Ah! montrez-vous!</l>
+          </sp>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="12">Mais parle-moi donc toi; débrouille-moi ceci.</l>
+          </sp>
+        </spGrp>
+        <stage>À Tonton, qui pendant ce temps-là est assise dans un coin à faire du filet.</stage>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="12">Je n'ai rien à vous dire, et je ne suis ici</l>
+          <l met="10">Que pour vous écouter.</l>
+        </sp>
+        <pb n="19"/>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="10">Une fille muette!</l>
+          <l met="8">Une confidente discrète!</l>
+          <l met="12">Si ton rôle durait, il serait fatiguant!</l>
+          <l met="12">Entendre babiller, et n'en pas faire autant!...</l>
+          <l met="12">Mais je veux t'épargner un détail inutile;</l>
+          <l met="12">Encor quelques couplets pour soulager ma bile;</l>
+          <l met="6">Après quoi je m'en vais.</l>
+        </sp>
+        <spGrp who="#roulant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#charlot">J'avais cent francs</title>
+            </desc>
+          </head>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="4">Tu sais, Tonton,</l>
+            <l met="6">Ce que j'ai fait pour elle;</l>
+            <l met="6">Mais d'un amour fidèle.</l>
+            <l met="6">Comment me paye-t-on?</l>
+            <l met="4">Tu vois le prix!</l>
+            <l met="4">C'est le mépris.</l>
+            <l met="6">En vain je la rappelle,</l>
+            <l met="6">Elle est sourde à mes cris.</l>
+            <l met="4">Un tour si grec</l>
+            <l met="4">Me fait échec!</l>
+            <l met="6">Elle fuit, la cruelle,</l>
+            <l met="6">Et me traite en blanc bec!</l>
+            <l met="12">Au reste, dis-lui bien que je veux qu'elle sache</l>
+            <l met="12">Qu'on ne mena jamais Roulant par la moustache.</l>
+            <l met="12">C'est bon pour un recru... De ses fers dégagé</l>
+            <l met="12">Je vais battre en retraite, et prendre mon congé.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roulant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_michel">Malgré la bataille</title>
+            </desc>
+          </head>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="5">Quand un militaire</l>
+            <l met="5">A donné son cœur,</l>
+            <l met="5">Il veut pour salaire</l>
+            <l met="5">L'amour ou l'honneur:</l>
+            <l met="5">Parfois il sommeille</l>
+            <l met="5">Auprès du premier;</l>
+            <l met="5">Mais il se réveille</l>
+            <l met="5">Aux cris du dernier.</l>
+          </sp>
+        </spGrp>
+        <pb n="20"/>
+        <stage>Il s'en va.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Lolotte, Tonton</stage>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <stage>sortant de derrière l'arbre</stage>
+        </sp>
+        <spGrp who="#lolotte">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#echappai_belle">Ah! Maman, que je l'échappai belle</title>
+            </desc>
+          </head>
+          <sp who="#lolotte">
+            <speaker>Lolotte</speaker>
+            <l met="10">Ah! Tonton, que je l'ai échappé belle!</l>
+            <l met="5">Que ce maladrait</l>
+            <l met="4">Ici m'a fait</l>
+            <l met="4">Frayeur mortelle!</l>
+            <l met="10">Ah! Tonton, que je l'ai échappé belle!</l>
+            <l met="5">Oui, j'ai vu l'instant</l>
+            <l met="8">Où j'étais aux mains de Roulant.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="12">C'est vrai, mais comme on dit, l'amour trouble la vue;</l>
+          <l met="12">Sans cela, vous étiez une fille perdue,</l>
+          <l met="12">Il vous eût chanté pouille!... Il est un peu brutal,</l>
+          <l met="12">Et de bon compte aussi; vous le traitez fort mal.</l>
+        </sp>
+        <pb n="21"/>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">De quoi vous mêlez-vous? ce n'est pas votre affaire.</l>
+          <l met="12">Quand vous voudrez parler, commencez par vous taire,</l>
+        </sp>
+        <stage>Sur un ton déclamatoire.</stage>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">Entendez-vous, Tonton: parlez-moi de Médor,</l>
+          <l met="12">Ou laissez-moi rêver.</l>
+        </sp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="12">Peste! quelle mémoire!</l>
+          <l met="12">Comme on cite à propos quand on connaît l'histoire!</l>
+          <l met="12">Ça, pour faire la paix, parlons donc de Lindor.</l>
+        </sp>
+        <spGrp who="#tonton">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">L'avez-vous vu mon bel ami,tiré de <title ref="#la_fee_urgelle">La fée Urgelle</title> ()</desc>
+          </head>
+          <sp who="#tonton">
+            <speaker>Tonton</speaker>
+            <l met="8">Oui, parle-moi de mon amant</l>
+            <l met="6">Si tu veux que je vive.</l>
+            <l met="8">Ne le point voir est un tourment,</l>
+            <l met="6">Il faut que je le suive.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="8">Cet amour qui vous tient si fort,</l>
+          <l met="8">Mais, mais c'est donc tout comme un sort?</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="8">Il me prend là.</l>
+        </sp>
+        <stage>Montrant le cœur.</stage>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="8">Il me tient là.</l>
+        </sp>
+        <stage>Montrant la tête.</stage>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="6">C'est comme une migraine!</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="8">Et puis de là.</l>
+        </sp>
+        <stage>Montrant la tête.</stage>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="8">Il revient là.</l>
+        </sp>
+        <stage>Montrant le cœur.</stage>
+        <pb n="22"/>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="6">Ah! voyez quelle peine!</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#lolotte">
+            <speaker>Lolotte</speaker>
+            <l met="8">Ah! parle-moi de mon amant</l>
+            <l met="6">Si tu veux que je vive!</l>
+            <l met="8">Ne le point voir est un tourment.</l>
+            <l met="6">Il faut que je le suive.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="8">Pour apaiser en un moment</l>
+          <l met="6">Une douleur si vive,</l>
+          <l met="8">En parlant de ce cher amant,</l>
+          <l met="6">Désirons qu'il arrive.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="8">Ciel! je l'entends!</l>
+        </sp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="8">Oh! pour le coup,</l>
+          <l met="12">Le proverbe est bien vrai, quand on parle du loup...</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">Tonton, laissez-nous seuls.</l>
+        </sp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="12">Oui-dà! mais la décence!...</l>
+          <l met="12">Oh non! je dois rester au moins par bienséance.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="8">Ah! je n'y pensais pas.</l>
+        </sp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="8">Vraiment,</l>
+          <l met="12">Quand on est si troublé, on s'oublie aisément;</l>
+          <l met="12">Mais la critique après...</l>
+        </sp>
+        <pb n="23"/>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">En personne discrète</l>
+          <l met="8">Retournons à notre cachette.</l>
+          <l met="10">Je veux avant de lui donner ma foi,</l>
+          <l met="12">Savoir<emph>incognito</emph>, s'il pense encore à moi.</l>
+        </sp>
+        <stage>Elles se cachent toutes deux derrière l'arbre.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Lindor, Lolotte, Tonton</stage>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+        </sp>
+        <spGrp who="#lindor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_ne_suis_je_la_fauvette">Que ne suis-je la fauvette</title>
+            </desc>
+          </head>
+          <sp who="#lindor">
+            <speaker>Lindor</speaker>
+            <l met="7">Que des lots de la tendresse</l>
+            <l met="7">Le partage est différent!</l>
+            <l met="7">La peine revient sans cesse,</l>
+            <l met="7">Le plaisir n'a qu'un instant:</l>
+            <l met="7">Mais cet instant est si tendre,</l>
+            <l met="7">Quand l'amour l'a mérité!</l>
+            <l met="7">Qu'on a beau le faire attendre</l>
+            <l met="7">Il n'a jamais trop coûté.</l>
+            <l met="8">Pour moi qui n'y doit plus prétendre,</l>
+            <l met="12">Je l'attendrais en vain, je n'ai plus qu'à me pendre.</l>
+          </sp>
+          <sp who="#lindor">
+            <speaker>Lindor</speaker>
+            <l met="12">Si j'avais une épée, un coup de maladrait</l>
+            <l met="8">Sans doute eût été plutôt fait.</l>
+          </sp>
+        </spGrp>
+        <stage>Il tire une corde de sa poche et l'attache à une branche de l'arbre où est Lolotte.</stage>
+        <pb n="24"/>
+        <spGrp who="#lindor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">Écho,tiré de <title ref="#raton_et_rosette">Raton et Rosette</title> ()</desc>
+          </head>
+          <sp who="#lindor">
+            <speaker>Lindor</speaker>
+            <l met="9">Mais cette corde funeste.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="9">Funeste.</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="9">Est tout l'espoir qui me reste</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="9">Reste.</l>
+        </sp>
+        <stage>Elle coupe la corde.</stage>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="2">Eh quoi!</l>
+          <l met="6">Qui pense à moi?</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="6">Moi.</l>
+        </sp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="6">Moi.</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="9">Lolotte est ingrate.</l>
+        </sp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="9">Gratte, gratte.</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="10">Sa cruauté condamne à mort Lindor.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="2">Lindor.</l>
+        </sp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="1">Dor.</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="2">Lindor.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="2">Lindor.</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <stage>voyant Lolotte</stage>
+          <l met="12">Oh Ciel! Lolotte ici! Mais à propos de botte,</l>
+          <l met="8">Hélas! qu'y cherchez-vous encor?</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="6">J'y viens pour vous sauver.</l>
+        </sp>
+        <pb n="25"/>
+        <spGrp who="#lolotte">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vivons_pour_ces_fillettes">Vivons pour ces fillettes</title>
+            </desc>
+          </head>
+          <sp who="#lolotte">
+            <speaker>Lolotte</speaker>
+            <l met="6">Ah! vivez pour Lolotte.</l>
+            <l met="8">Vivez, ah! vivez pour Lolotte.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+        </sp>
+        <spGrp who="#lindor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sous_le_nom_de_l_amitie">Sous le nom de l'amitié</title>
+            </desc>
+          </head>
+          <sp who="#lindor">
+            <speaker>Lindor</speaker>
+            <l met="7">Montrez-moi moins de pitié</l>
+            <l met="6">Pour guérir ma faiblesse,</l>
+            <l met="6">Ou bien de ma tendresse</l>
+            <l met="6">Mettez-vous de moitié,</l>
+            <l met="7">Montrez-moi moins de pitié.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="7">S'il pouvait lire en mon cœur</l>
+          <l met="6">Aurait-il à s'en plaindre?</l>
+          <l met="6">J'aurais beau me contraindre</l>
+          <l met="6">Ah! qu'il verrait d'ardeur</l>
+          <l met="7">S'il pouvait lire en mon cœur.</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="8">Achevez ma chère maîtresse,</l>
+          <l met="10">Un mot de plus, va combler ma tendresse.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+        </sp>
+        <spGrp who="#lolotte">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_m_entendez_vous_pas">Ne m'entendez-vous pas</title>
+            </desc>
+          </head>
+          <sp who="#lolotte">
+            <speaker>Lolotte</speaker>
+            <l met="6">Ne m'entendez-vous pas?</l>
+            <l met="6">Faut-il donc tout vous dire?</l>
+            <l met="6">Un mot devrait suffire</l>
+            <l met="6">Quand le cœur dit tout bas,</l>
+            <l met="6">Ne m'entendez-vous pas?</l>
+          </sp>
+        </spGrp>
+        <pb n="26"/>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#lindor">
+            <speaker>Lindor</speaker>
+            <l met="6">Ce qui nous fait plaisir</l>
+            <l met="6">On ne peut trop l'entendre;</l>
+            <l met="6">Est-il un amant tendre</l>
+            <l met="6">Qui n'aime à revenir</l>
+            <l met="6">Sur ce qui fait plaisir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+        </sp>
+        <spGrp who="#tonton">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nous_nous_marierons_dimanche">Nous nous marierons dimanche</title>
+            </desc>
+          </head>
+          <sp who="#tonton">
+            <speaker>Tonton</speaker>
+            <l met="5">Puisqu'il est ainsi,</l>
+            <l met="5">Nargue du souci;</l>
+            <l met="7">Ne pensez plus qu'à la danse.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="4">C'est prendre ici</l>
+          <l met="4">Le bon parti</l>
+          <l met="2">Je pense.</l>
+        </sp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="4">C'est ce qu'on fait</l>
+          <l met="4">Lorsque l'on est</l>
+          <l met="2">Bien aise.</l>
+          <l met="5">Chantez un duo.</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="5">Le faut-il nouveau?</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="7">Qu'importe pourvu qu'il plaise.</l>
+        </sp>
+        <pb n="27"/>
+        <spGrp>
+          <caption>Ensemble</caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#chantez_petits_oiseaux">Chantez petits oiseaux</title>
+            </desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="12">Mon cœur en cet instant se livre à l'allégresse!</l>
+            <l met="12">Ici tout nous promet le sort le plus heureux.</l>
+            <l met="12">Partageons les transports d'une égale tendresse,</l>
+            <l met="8">L'amour va couronner nos vœux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <l met="12">Écoutez, mes enfants, Roulant est tapageur,</l>
+          <l met="12">Et vous, monsieur Lindor, vous n'êtes pas bretteur;</l>
+          <l met="12">S'il apprend vos desseins, il vous cherchera noise...</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">Laissez-moi l'endormir; quand on est amoureux,</l>
+          <l met="12">On croit tout aisément... Allez-vous en tout deux</l>
+          <l met="12">M'attendre au cabaret, et tantôt pour Pontoise</l>
+          <l met="12">Nous partirons sans bruit.</l>
+        </sp>
+        <sp who="#lindor">
+          <speaker>Lindor</speaker>
+          <l met="12">Vous craignez pour mon sort!</l>
+          <l met="12">Eh bien, j'y veillerai puisqu'il vous intéresse!</l>
+          <l met="12">Oui, je serai prudent, n'étant pas le plus fort,</l>
+          <l met="12">Et mon manque de cœur prouvera ma tendresse.</l>
+        </sp>
+        <stage>Il s'en va.</stage>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <stage>à part</stage>
+          <l met="12">Si l'on prouvait ainsi ses tendres sentiments,</l>
+          <l met="12">Que de poltrons bientôt deviendraient nos amants!</l>
+        </sp>
+        <stage>Elle s'en va avec Lindor.</stage>
+        <pb n="28"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Lolotte, Roulant</stage>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+        </sp>
+        <spGrp who="#roulant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#et_r_li_et_r_lan">Et r'li et r'lan</title>
+            </desc>
+          </head>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="8">Faut-il encor que je vous aime</l>
+            <l met="8">Autant que vous me méprisez?</l>
+            <l met="8">Vous voyez ma faiblesse extrême</l>
+            <l met="8">Perfide vous en abusez!</l>
+            <l met="8">Mais ne vous flattez pas, la belle;</l>
+            <l met="8">De me voir toujours si constant;</l>
+            <l met="4">Et r'li, et r'lan,</l>
+            <l met="8">On doit mener une cruelle,</l>
+            <l met="4">Et r'lan tan plan,</l>
+            <l met="4">Tambour battant.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="8">Hélas! il n'est plus temps de feindre...</l>
+          <l met="12">Avec vous plus longtemps je ne puis me contraindre.</l>
+          <l met="12">Allez, mon cher Roulant, quand une belle fuit,</l>
+          <l met="10">Il ne faut pas bien courir pour l'atteindre;</l>
+          <l met="12">Elle sait ménager l'amant qui la poursuit.</l>
+        </sp>
+        <spGrp who="#lolotte">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#henri_iv">Henri IV</title>
+            </desc>
+          </head>
+          <sp who="#lolotte">
+            <speaker>Lolotte</speaker>
+            <l met="8">Parfois d'une fuite légère</l>
+            <l met="8">On feint d'emprunter le secours;</l>
+            <l met="8">Mais contre un objet qui sait plaire</l>
+            <l met="8">De quoi servent ces vains détours?</l>
+            <l met="6">Dans une âme discrète</l>
+            <l met="8">La pudeur retient le désir;</l>
+            <l met="10">Mais tôt ou tard l'amour paye la dette</l>
+            <l met="8">Que notre cœur doit au plaisir.</l>
+          </sp>
+        </spGrp>
+        <pb n="29"/>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="8">Hélas! dois-je croire l'ingrate?</l>
+          <l met="10">Pour me tromper, sans doute elle me flatte...</l>
+        </sp>
+        <spGrp who="#roulant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#palsambleu_monsieur_le_cure">Palsambleu, Monsieur le Curé</title>
+            </desc>
+          </head>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="8">M'exposer à sa cruauté,</l>
+            <l met="7">C'est encor une faiblesse!</l>
+            <l met="10">Oui... mais un seul regard de la beauté</l>
+            <l met="7">Sert d'excuse à la faiblesse.</l>
+            <l met="12">Que nous sommes nigauds! malgré notre courroux,</l>
+            <l met="6">Pour peu qu'on nous caresse,</l>
+            <l met="6">Tout notre fracas cesse</l>
+            <l met="6">Et puis nous filons doux.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#roulant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_port_mahon_est_pris">Le port Mahon est pris</title>
+            </desc>
+          </head>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="6">Ah! ma chère maîtresse</l>
+            <l met="9">Ne fais, ne fais donc plus la tigresse;</l>
+            <l met="6">Réponds à ma tendresse;</l>
+            <l met="6">Mon pauvre cœur est pris,</l>
+            <l met="6">Il est pris, il est pris.</l>
+          </sp>
+        </spGrp>
+        <pb n="30"/>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="6">Il est pris, il est pris?</l>
+        </sp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="6">Quel en sera le prix;</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="6">Ce cœur qui t'a su plaire</l>
+          <l met="9">Du tien, du tien sera le salaire.</l>
+        </sp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="6">Va, terminons l'affaire.</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="6">Je l'accepte, il est pris.</l>
+            <l met="6">Il est pris, il est pris.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="6">Je le tiens, il est pris.</l>
+          <l met="6">Il est pris, il est pris.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="12">Tu n'as plus à présent de reproche à me faire,</l>
+          <l met="12">Tu dois être content?</l>
+        </sp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="12">Quand nous serons unis</l>
+          <l met="12">Je serai plus tranquille. Allons chez un notaire.</l>
+        </sp>
+        <stage type="musical_indication">Duo</stage>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+        </sp>
+        <spGrp who="#lolotte">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ran_tan_plan_tire_lire">Ran tan plan tire lire</title>
+            </desc>
+          </head>
+          <sp who="#lolotte">
+            <speaker>Lolotte</speaker>
+            <l met="7">Oui, Roulant est mon amant,</l>
+            <l met="11">En plein, plan, ran tan plan tire lire en plan;</l>
+            <l met="7">Oui, Roulant est mon amant,</l>
+            <l met="6">C'est lui que je désire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="6">C'est moi que tu désires.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="6">Ran tan plan tire lire.</l>
+        </sp>
+        <pb n="31"/>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Aimons-nous bien tendrement</l>
+            <l met="11">En plein, plan, ran tan plan tire lire en plan;</l>
+            <l met="7">Aimons-nous bien tendrement.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="6">Son erreur me fait rire.</l>
+        </sp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="6">Tu daignes me sourire.</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="6">Ran tan plan tire lire.</l>
+        </sp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="7">Soyons-nous toujours constants,</l>
+          <l met="11">En plein, plan, ran tan plan tire lire en plan</l>
+        </sp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <l met="7">Comme il a donné dedans!</l>
+          <l met="6">Je finis ton martyre.</l>
+        </sp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="6">Tu finis mon martyre.</l>
+        </sp>
+        <stage>Ils s'en vont ensemble.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="characters">Les bateliers</stage>
+        <spGrp who="#roulant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vogue_galere">Vogue la galère</title>
+            </desc>
+          </head>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="6">Embarque à la galiote</l>
+            <l met="6">V'là que j'allons partir,</l>
+            <l met="6">Mad'moiselle Lolotte</l>
+            <l met="6">Je v'nons vous avertir,</l>
+            <l met="6">Et vogue la galiote</l>
+            <l met="2">Tant qu'elle</l>
+            <l met="6">Et vogue, ...</l>
+          </sp>
+        </spGrp>
+        <pb n="32"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="characters">Les acteurs précédents, Tonton<stage>amenant Lindor</stage>
+        </stage>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+        </sp>
+        <spGrp who="#tonton">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#voila_la_petite_laitiere">Voilà la petite laitière</title>
+            </desc>
+          </head>
+          <sp who="#tonton">
+            <speaker>Tonton</speaker>
+            <l met="10">Voilà, voilà, l'époux de ma maîtresse</l>
+            <l met="8">Célébrez son heureux destin!</l>
+            <l met="10">Voilà, voilà l'époux de ma maîtresse,</l>
+            <l met="8">Je viens vous prier du festin.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lolotte">
+          <speaker>Lolotte</speaker>
+          <stage>accourant et finissant l'air</stage>
+          <l met="8">Lindor, profitons du moment</l>
+          <l met="8">Et d'ici décampons bien vite,</l>
+          <l met="8">Là tout près j'ai laissé Roulant</l>
+          <l met="8">Sans se douter de notre fuite;</l>
+          <l met="8">Il va revenir à l'instant</l>
+          <l met="8">Il va revenir à l'instant.</l>
+          <l met="10">Voilà, voilà, ...</l>
+        </sp>
+        <sp who="#tonton">
+          <speaker>Tonton</speaker>
+          <stage>aux bateliers</stage>
+          <l met="8">Vous, mes enfants, prenez la peine</l>
+          <l met="12">D'amuser le tapis et de garder la scène</l>
+          <l met="12">Pour nous donner le temps de faire le chemin;</l>
+          <l met="12">Vous viendrez nous rejoindre.</l>
+        </sp>
+        <sp who="#lebatelier">
+          <speaker>Le Batelier</speaker>
+          <l met="12">Allez, qu'à ça ne tienne,</l>
+          <l met="12">Je resterons ici tant que Roulant y vienne.</l>
+        </sp>
+        <stage>Ils s'en vont.</stage>
+        <pb n="33"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 13</head>
+        <stage type="characters">Les mariniers</stage>
+        <spGrp who="#lebatelier">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_pantin_serait_content">Que pantin serait content</title>
+            </desc>
+          </head>
+          <sp who="#lebatelier">
+            <speaker>Le Batelier</speaker>
+            <l met="7">En attendant le repas</l>
+            <l met="7">Faisons ici quelque danse,</l>
+            <l met="7">En attendant le repas</l>
+            <l met="8">Remuons les pieds et les bras.</l>
+          </sp>
+          <sp who="#lebatelier">
+            <speaker>Le Batelier</speaker>
+            <l met="8">Eh! mais morgué, queu manigance!</l>
+            <l met="12">C'est com' un' mascarade... Arrangez-nous d'aut' pas.</l>
+          </sp>
+          <sp who="#lebatelier">
+            <speaker>Le Batelier</speaker>
+            <l met="12">V'là q'j'entendons Roulant, enfant, ne l'gênons pas.</l>
+          </sp>
+        </spGrp>
+        <stage>Ici il se fait une danse de pantins en Chinois, après laquelle le batelier dit:</stage>
+        <stage>Ici les pantins se retournent et paraissent en bergers galants.</stage>
+        <stage>Ils s'en vont.</stage>
+        <pb n="34"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 14</head>
+        <stage type="characters">Roulant, le tambour</stage>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+        </sp>
+        <spGrp who="#roulant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lison_dormait">Lison dormait</title>
+            </desc>
+          </head>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="8">Pour décider une conquête,</l>
+            <l met="8">Il faut souvent brusquer l'assaut.</l>
+            <l met="8">Hardi surtout au tête à tête!</l>
+            <l met="8">L'amant timide n'est qu'un sot.</l>
+            <l met="8">On nous dit que l'amour est traître,</l>
+            <l met="8">Et porté d'un malin vouloir;</l>
+            <l met="8">Pour le réduire il faut savoir</l>
+            <l met="8">À ce fripon parler en maître.</l>
+            <l met="8">Tenez lui tête, il aura peur,</l>
+            <l met="8">Mais si vous pliez, serviteur.</l>
+            <l met="12">Lolotte ici ce soir m'a promis de se rendre.</l>
+            <l met="12">J'y viens trop tôt... mais j'ai pour maxime d'honneur</l>
+            <l met="10">Que l'on ne doit jamais se faire attendre</l>
+            <l met="10">Dès qu'il s'agit d'une affaire de cœur.</l>
+          </sp>
+        </spGrp>
+        <sp who="#letambour">
+          <speaker>Le Tambour</speaker>
+          <l met="12">Mais tantôt, disais-tu, c'était une cruelle;</l>
+          <l met="10">Comment as-tu si tôt triomphé d'elle?</l>
+        </sp>
+        <pb n="35"/>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+        </sp>
+        <spGrp who="#roulant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#rien_ne_plait_tant_aux_yeux_des_belles">Rien ne plaît tant aux yeux des belles</title>
+            </desc>
+          </head>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="8">Pour triompher du cœur des filles,</l>
+            <l met="8">Pour s'emparer des plus gentilles</l>
+            <l met="8">Il suffit d'être grenadier,<stage type="bis">bis</stage>
+            </l>
+            <l met="8">La résistance est inutile</l>
+            <l met="8">Contre une attaque aussi subtile.</l>
+            <l met="8">Les belles sont toujours dociles,</l>
+            <l met="4">Toujours faciles</l>
+            <l met="6">Aux gens dont le métier,</l>
+            <l met="4">Dont le métier</l>
+            <l met="6">Est de prendre des Villes.<stage type="bis">bis</stage>
+            </l>
+            <l met="12">Mais va t'en, tu la gêne et je crois qu'en ces lieux</l>
+            <l met="10">Elle ne veut paraître qu'à mes yeux.</l>
+          </sp>
+        </spGrp>
+        <stage>Le tambour s'en va.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 15</head>
+        <stage type="characters">Roulant<stage>seul</stage>
+        </stage>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#roulant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_l_aurore_est_loin_encore">Que l'aurore est loin encore</title>
+            </desc>
+          </head>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="7">Que le soir est loin encore!</l>
+            <l met="7">Ah! que j'attendrai longtemps!</l>
+            <l met="7">Loin de l'objet qu'on adore</l>
+            <l met="7">Comme on compte les instants.</l>
+          </sp>
+        </spGrp>
+        <stage>Il se promène.</stage>
+        <pb n="36"/>
+        <spGrp who="#roulant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">Ô nuit! charmante nuit,tiré d' <title ref="#isabelle_et_gertrude">Isabelle et Gertrude</title> ()</desc>
+          </head>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="12">Ô nuit! favorisez mes désirs langoureux,</l>
+            <l met="12">Promenez dans les airs mes soupirs amoureux.</l>
+            <l met="12">Attendant le bonheur que l'amour me destine,</l>
+            <l met="12">Buvons un coup. Hola, garçon, portez chopine.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 16</head>
+        <stage type="characters">Roulant, le cabaretier</stage>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="8">Le temps plus vite passera.</l>
+        </sp>
+        <stage>Le garçon lui apporte chopine avec du pain sur une assiette d'étain et un verre.</stage>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <stage>regardant l'assiette</stage>
+          <l met="12">Oh! oh! que vois-je ici? qu'elle est cette écriture?</l>
+          <l met="12">A-t'on voulu tracer quelque tendre aventure?</l>
+          <l met="8">Ah! quand ma belle ici viendra,</l>
+          <l met="12">Sur cette pinte aussi l'amour nous inscrira.</l>
+          <l met="2">Lisons:</l>
+        </sp>
+        <stage>Il épelle sur l'air de Monteauciel.</stage>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="8">L, i, n, d, o, r, -or-re.</l>
+          <l met="5">J'adore, j'adore!</l>
+          <l met="9">M, o, n, A, m, a, n, t, mant,</l>
+          <l met="2">Amant!</l>
+          <l met="5">J'adore un amant.</l>
+          <l met="6">Ou bien j'ai la berlue,</l>
+          <l met="10">Ou bien ces mots qui s'offrent à ma vue,</l>
+          <l met="12">De la main de Lolotte ici furent écrits.</l>
+        </sp>
+        <pb n="37"/>
+        <stage>Il lit.</stage>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="8">Lindor! ... me serais-je mépris?</l>
+          <l met="8">Mais non, j'ai la visière nette.</l>
+        </sp>
+        <stage>Il lit.</stage>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="10">Oui, pour Lindor ma tendresse est parfaite.</l>
+          <l met="12">Qui diable est ce Lindor? Je ne connais pas ça;</l>
+          <l met="12">Pas un de nos bretteurs ne porte ce nom-là.</l>
+          <l met="12">Si c'était un luron, quelque prévôt de salle,</l>
+          <l met="12">Je pourrais le passer... mais Lindor!... un morveux!...</l>
+          <l met="10">Jusqu'à ce point l'ingrate me ravale!</l>
+          <l met="12">Me donner pour rival un blanc bec!... Ah morbleu!...</l>
+          <l met="12">Mais tout bien réfléchi, je ne suis qu'une bête;</l>
+          <l met="12">Et si ce beau Lindor qui me tourne la tête</l>
+          <l met="12">N'était autre que moi sous un nom supposé?...</l>
+          <l met="12">Cela se pourrait bien... c'est fort bien avisé!</l>
+          <l met="12">Oui, voilà ce que c'est, c'est une gentillesse,</l>
+          <l met="8">Un tour d'esprit de ma maîtresse:</l>
+          <l met="12">Lolotte est une espiègle, et moi comme un enfant</l>
+          <l met="12">J'allais prendre la chèvre. Oh! j'y suis à présent,</l>
+          <l met="12">C'est moi qui suis Lindor... Oui, c'est clair, de la sorte</l>
+          <l met="12">Buvons à sa santé... C'est Lindor qui la porte.</l>
+        </sp>
+        <stage>Il boit.</stage>
+        <stage>Il lit.</stage>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="12">Voici d'une autre main... Que Lindor est heureux!</l>
+          <l met="8">Lolotte a comblé tous ses vœux!</l>
+        </sp>
+        <stage>Il jette l'assiette.</stage>
+        <pb n="38"/>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="10">Oh! pour le coup, que le diable l'emporte;</l>
+          <l met="12">Je ne suis plus Lindor et je ne suis qu'un sot.</l>
+          <l met="12">De ces fadaises-là je n'ai pas mis un mot;</l>
+          <l met="12">On ne me dira pas que c'est mon écriture.</l>
+          <l met="8">Oh! je commence à soupçonner</l>
+          <l met="12">Quelque dessous de carte, et dans cette aventure</l>
+          <l met="12">Je vois du louche. Il faut pour me déterminer</l>
+          <l met="12">Par le premier venu, confirmer mon injure.</l>
+        </sp>
+        <spGrp who="#roulant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#maudit_l_infernal_faiseur_de_grimoire">Maudit l'infernal faiseur de grimoire</title>
+            </desc>
+          </head>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="5">Mais gare au rival</l>
+            <l met="5">Qui me fait outrage!</l>
+            <l met="5">Tout finira mal</l>
+            <l met="5">Et bientôt ma rage</l>
+            <l met="5">Fera bacchanal.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 17</head>
+        <stage type="characters">Roulant, Amidon et Lisette<stage>qui reviennent de la noce, apportent des verres, du vin, du pain, ...</stage>
+        </stage>
+        <spGrp>
+          <caption>Amidon et lisette</caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierre_bagnolet">Allons nous-en, gens de la noce</title>
+            </desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Allons nous-en, gens de la noce;</l>
+            <l met="8">Allons nous-en boire deux coups.</l>
+            <l met="8">Le nigaud donne dans la bosse</l>
+            <l met="8">Et l'amour unit les époux.</l>
+            <l met="8">Allons nous-en, ...</l>
+          </sp>
+        </spGrp>
+        <stage>Ils se mettent à la table.</stage>
+        <pb n="39"/>
+        <sp who="#lisette">
+          <speaker>Lisette</speaker>
+          <stage>à Roulant</stage>
+          <l met="10">Sous vot' respect, Monsieur, permettez-vous?</l>
+        </sp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <stage>se levant</stage>
+          <l met="12">Oui, placez-vous enfants, moi je ne veux plus boire.</l>
+        </sp>
+        <sp who="#lisette">
+          <speaker>Lisette</speaker>
+          <stage>s'asseyant</stage>
+          <l met="10">Amidon, c'est une plaisante histoire!...</l>
+        </sp>
+        <sp who="#amidon">
+          <speaker>Amidon</speaker>
+          <l met="8">Ah, cadédis! Combien tantôt</l>
+          <l met="12">Cé pauvre délaissé va donc sé trouver sot!</l>
+        </sp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="12">Hem! de qui parlez-vous?</l>
+        </sp>
+        <sp who="#amidon">
+          <speaker>Amidon</speaker>
+          <l met="12">Ah! c'est d'une commère!...</l>
+        </sp>
+        <stage>À Lisette.</stage>
+        <sp who="#amidon">
+          <speaker>Amidon</speaker>
+          <l met="12">Né va pas mé jouer de même, au moins, bergère!</l>
+        </sp>
+        <sp who="#lisette">
+          <speaker>Lisette</speaker>
+          <l met="8">Ne crains rien.</l>
+        </sp>
+        <stage>À Roulant.</stage>
+        <sp who="#lisette">
+          <speaker>Lisette</speaker>
+          <l met="8">À votre santé,</l>
+          <l met="12">Monsieur.</l>
+        </sp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="12">Bien obligé.</l>
+        </sp>
+        <sp who="#amidon">
+          <speaker>Amidon</speaker>
+          <l met="12">Ce Lindor est futé!</l>
+        </sp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <stage>à part</stage>
+          <l met="12">Lindor! Ah, ventrebleu!</l>
+        </sp>
+        <sp who="#lisette">
+          <speaker>Lisette</speaker>
+          <stage>à Amidon</stage>
+          <l met="12">Mais il est en colère.</l>
+          <l met="10">Ce Monsieur-là.</l>
+        </sp>
+        <pb n="40"/>
+        <sp who="#amidon">
+          <speaker>Amidon</speaker>
+          <l met="10">Chantons pour le distraire.</l>
+        </sp>
+        <stage type="musical_indication">Duo</stage>
+        <spGrp who="#amidon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_colette_n_est_pas_trompeuse">Non, Colette n'est pas trompeuse</title>
+            </desc>
+          </head>
+          <sp who="#amidon">
+            <speaker>Amidon</speaker>
+            <l met="9">Ah! né mé va pas être légère!</l>
+            <l met="7">Né cherche pas dé Lindor.</l>
+          </sp>
+        </spGrp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <stage>à part</stage>
+          <p>Encore!</p>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="melody_part">
+            <desc type="part">Suite de l'air</desc>
+            <title>
+              <title ref="#non_colette_n_est_pas_trompeuse">Non, Colette n'est pas trompeuse</title>
+            </title>
+          </head>
+          <sp who="#lisette">
+            <speaker>Lisette</speaker>
+            <l met="7">Non, je ne veux que te plaire,</l>
+            <l met="7">Ton cœur est mon seul trésor.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#amidon">
+            <speaker>Amidon</speaker>
+            <l met="9">Ah! né mé va pas être légère,</l>
+            <l met="7">Ne cherche pas dé Lindor.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lisette">
+          <speaker>Lisette</speaker>
+          <l met="9">Non, non je ne serai pas légère</l>
+          <l met="7">Je ne veux point de Lindor.</l>
+        </sp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="10">Le diable soit de ce maudit Lindor.</l>
+          <l met="12">Quel est donc ce mignon qui met ici l'enchère?</l>
+        </sp>
+        <sp who="#lisette">
+          <speaker>Lisette</speaker>
+        </sp>
+        <spGrp who="#lisette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bonne_aventure">Si le roi m'avait donné</title>
+            </desc>
+          </head>
+          <sp who="#lisette">
+            <speaker>Lisette</speaker>
+            <l met="7">Lindor taillé par l'amour</l>
+            <l met="5">De galante étoffe,</l>
+            <l met="7">Me ferait en vain la cour</l>
+            <l met="5">Sans que rien m'échauffe,</l>
+            <l met="7">Je dirais au beau Lindor,</l>
+            <l met="7">Ce n'est pas pour vous encor</l>
+            <l met="5">Que notre four chauffe,</l>
+            <l met="2">Ô gué,</l>
+            <l met="5">Que notre four chauffe.</l>
+          </sp>
+        </spGrp>
+        <pb n="41"/>
+        <sp who="#amidon">
+          <speaker>Amidon</speaker>
+          <l met="7">Lolotte est certénément</l>
+          <l met="5">Un morceau dé Prince;</l>
+          <l met="7">Il lui faudrait pour amant</l>
+          <l met="5">Un chef dé Province:</l>
+          <l met="7">Mais voulut-elle de moi,</l>
+          <l met="7">Je lui dirais sur ma foi,</l>
+          <l met="5">Pour vous jé suis mince</l>
+          <l met="2">Ô gué,</l>
+          <l met="5">Pour vous je suis mince.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 18</head>
+        <stage type="characters">Les acteurs précédents, Cassandre</stage>
+        <sp who="#amidon">
+          <speaker>Amidon</speaker>
+          <l met="10">Qu'y-t'il de nouveau, papa Cassandre?</l>
+        </sp>
+        <sp who="#cassandre">
+          <speaker>Cassandre</speaker>
+          <l met="10">Lolotte avec Lindor vient de partir.</l>
+        </sp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <stage>à part</stage>
+          <l met="12">Elle est partie! Ô Ciel!</l>
+        </sp>
+        <pb n="42"/>
+        <sp who="#cassandre">
+          <speaker>Cassandre</speaker>
+          <l met="12">Et pour se divertir,</l>
+          <l met="12">Au rival en ces lieux elle a dit de l'attendre;</l>
+          <l met="12">Il croque le marmot.</l>
+        </sp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="12">Ah! mil nom d'un canon!</l>
+          <l met="12">Si je les tenais!</l>
+        </sp>
+        <sp who="#amidon">
+          <speaker>Amidon</speaker>
+          <l met="12">Et la noce est donc finie?</l>
+        </sp>
+        <sp who="#cassandre">
+          <speaker>Cassandre</speaker>
+          <l met="10">On danse encor, mais elle, elle est sortie</l>
+          <l met="10">Après avoir payé le violon,</l>
+          <l met="10">Et nous avoir donné sa jarretière;</l>
+          <l met="12">En voici des morceaux.</l>
+        </sp>
+        <stage>Il leur en donne.</stage>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <stage>à part</stage>
+          <l met="12">Que vois-je, infortuné!</l>
+          <l met="10">Le présent que tantôt je lui fit faire,</l>
+          <l met="12">Que j'avais à Sedan reçu d'une tourière,</l>
+          <l met="12">Des mains de ces manants il sera profané!</l>
+        </sp>
+        <sp who="#amidon">
+          <speaker>Amidon</speaker>
+          <stage>versant à boire et se parant de la jarretière qu'il attache</stage>
+          <l met="8">Amis, faisons la fête entière.</l>
+        </sp>
+        <spGrp who="#amidon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#chantons_loetamini">Chantons lœtamini</title>
+            </desc>
+          </head>
+          <sp who="#amidon">
+            <speaker>Amidon</speaker>
+            <l met="6">Pour Lolotte et Lindor,</l>
+            <l met="6">Buvons, trinquons encor</l>
+            <l met="6">Pour Lolotte et Lindor.</l>
+          </sp>
+        </spGrp>
+        <pb n="43"/>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="12">Ah! c'est trop m'étourdir de vos sottes chansons;</l>
+          <l met="12">Taisez-vous malheureux, rendez-moi ces chiffons,</l>
+          <l met="10">Et décampez bien vite.</l>
+        </sp>
+        <stage>Il leur arrache les morceaux de jarretière.</stage>
+        <sp who="#cassandre">
+          <speaker>Cassandre</speaker>
+          <l met="10">Ah Ciel! Quel homme!</l>
+        </sp>
+        <sp who="#lisette">
+          <speaker>Lisette</speaker>
+          <l met="12">C'est comme un enragé!</l>
+        </sp>
+        <sp who="#amidon">
+          <speaker>Amidon</speaker>
+          <l met="12">Mais, Monseu...</l>
+        </sp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="12">Sauvez-vous;</l>
+          <l met="12">Rendez grâce au transport qui retient mon courroux.</l>
+          <l met="12">Sortez faquins, sortez... sans quoi je vous assomme.</l>
+        </sp>
+        <spGrp>
+          <caption>Les trois<stage>en s'en allant</stage>
+          </caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#voila_les_dragons_qui_viennent">Voilà les dragons qui viennent</title>
+            </desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="11">Le voilà dans sa rage, amis, sauvons-nous.</l>
+          </sp>
+        </spGrp>
+        <stage>Ils s'en vont.</stage>
+        <pb n="44"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 19</head>
+        <stage type="characters">Roulant<stage>seul</stage>
+        </stage>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#roulant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ciel_l_univers_va_t_il_donc_se_dissoudre">Ciel! l'univers va-t'il donc se dissoudre</title>
+            </desc>
+          </head>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="10">Je suis trompé! Ciel! qui l'aurait pu croire!</l>
+            <l met="4">Pour me venger</l>
+            <l met="6">Il faut tout renverser,</l>
+            <l met="7">Une trahison si noire</l>
+            <l met="7">Va me faire tout casser;</l>
+            <l met="4">Faisons-nous gloire</l>
+            <l met="4">De tout briser.</l>
+          </sp>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="12">Par où commencerai-je? Il faut de l'ordre ici.</l>
+            <l met="8">Vais-je casser arbres par ci,</l>
+            <l met="12">Arbres par là? Non pas. C'est un cas de galère!</l>
+            <l met="10">Mais sur quoi donc signaler ma colère?</l>
+            <l met="12">Si j'avais des rochers placés également,</l>
+            <l met="12">J'irais les arracher alternativement,</l>
+            <l met="12">Et mon cœur possédé d'un accès symétrique,</l>
+            <l met="12">Étalerait ici sa fureur méthodique.</l>
+            <l met="10">Mais, après tout, pourquoi chercher si loin?</l>
+            <l met="12">Voilà tous les objets dont ma rage a besoin.</l>
+          </sp>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="10">C'est avec eux que Lolotte m'affronte,</l>
+            <l met="12">C'est eux qu'il faut punir de sa témérité...</l>
+            <l met="12">Assiette sur laquelle elle écrivit ma honte!</l>
+            <l met="12">Gobelets dans lesquels on but à sa santé!</l>
+            <l met="10">Bancs odieux dont Lindor fut porté,</l>
+            <l met="12">De cette injure-là vous me rendrez tous compte...</l>
+            <l met="12">Table, renversez-vous... Rompez-vous, tabourets!...</l>
+            <l met="12">Brisons porte et fenêtre... Et que le diable après</l>
+            <l met="6">Pour assouvir ma rage</l>
+            <l met="8">Emporte aussi les cabarets.</l>
+          </sp>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="12">Ouf! je me trouve mieux... Ma fureur se soulage!...</l>
+            <l met="12">Je me sens plus tranquille... Il est pourtant prudent</l>
+            <l met="12">De jeter loin de moi toute arme meurtrière,</l>
+            <l met="8">Car je pourrais dans ma colère</l>
+            <l met="10">Me bien blesser si l'accès me reprend.</l>
+          </sp>
+          <sp who="#roulant">
+            <speaker>Roulant</speaker>
+            <l met="12">Mais! quel trou s'est ouvert! qu'aperçois-je dans l'ombre?</l>
+            <l met="12">Qui me regarde-là; dans ce gouffre si sombre</l>
+            <l met="12">On me parle, je crois... Ah bon! c'est le souffleur!</l>
+            <l met="12">Ne m'abandonnez pas, Monsieur, dans ma fureur,</l>
+            <l met="12">Je sens que je me trouble, et je perds la parole...</l>
+            <l met="12">Aidez-moi, je vous prie, à terminer mon rôle.</l>
+          </sp>
+        </spGrp>
+        <stage>Il prend un balais, le démanche, va pour faire du moulinet avec, et frapper à tort et à travers, mais il s'arrête par réflexion et dit :</stage>
+        <pb n="45"/>
+        <stage>Montrant la table garnie.</stage>
+        <stage>Il casse, brise et renverse tout.</stage>
+        <stage>Il jette son sabre.</stage>
+        <stage>Il tombe à terre.</stage>
+        <pb n="46"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 20</head>
+        <stage type="characters">Roulant, les garçons du cabaret, Cassandre</stage>
+        <sp who="#premiergarcon">
+          <speaker>Premier Garçon</speaker>
+          <l met="12">D'où vient donc tout ce bruit?</l>
+        </sp>
+        <sp who="#secondgarcon">
+          <speaker>Second Garçon</speaker>
+          <l met="12">Ah! Morbleu! Quel dégât!</l>
+        </sp>
+        <sp who="#cassandre">
+          <speaker>Cassandre</speaker>
+          <l met="10">Qui diable donc lui trouble la cervelle?</l>
+        </sp>
+        <sp who="#premiergarcon">
+          <speaker>Premier Garçon</speaker>
+          <l met="12">On dit que c'est l'amour.</l>
+        </sp>
+        <sp who="#cassandre">
+          <speaker>Cassandre</speaker>
+          <l met="12">L'amour!... pour un soldat,</l>
+          <l met="8">La blessure n'est pas mortelle.</l>
+        </sp>
+        <spGrp who="#cassandre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">La sagesse est un trésor,tiré de <title ref="#rose_et_colas">Rose et Colas</title> ()</desc>
+          </head>
+          <sp who="#cassandre">
+            <speaker>Cassandre</speaker>
+            <l met="7">La tendresse est une erreur,</l>
+            <l met="7">Une erreur, c'est la tendresse.<stage type="bis">bis</stage>
+            </l>
+            <l met="7">L'amour n'est pas le bonheur,</l>
+            <l met="7">L'amour n'est pas le bonheur,</l>
+            <l met="7">Craignez tout d'une maîtresse.</l>
+            <l met="7">Le cœur doit fuir la tendresse,</l>
+            <l met="7">L'amour n'est qu'une faiblesse.</l>
+          </sp>
+          <sp who="#cassandre">
+            <speaker>Cassandre</speaker>
+            <l met="7">L'amour, ...</l>
+          </sp>
+        </spGrp>
+        <stage>Tous les garçons répètent avec Cassandre :</stage>
+        <stage>Roulant fait un mouvement furieux. Ils se sauvent tous.</stage>
+        <pb n="47"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 21</head>
+        <stage type="characters">Roulant, le tambour</stage>
+        <stage>On entend de loin une marche militaire.</stage>
+        <sp who="#letambour">
+          <speaker>Le Tambour</speaker>
+        </sp>
+        <spGrp who="#letambour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aux_armes">Aux armes, camarade</title>
+            </desc>
+          </head>
+          <sp who="#letambour">
+            <speaker>Le Tambour</speaker>
+            <l met="8">Aux armes, camarade, aux armes.</l>
+            <l met="12">Quoi! Roulant lâchement peut rester endormi?</l>
+            <l met="8">Aux armes, camarade, aux armes,</l>
+            <l met="10">Le régiment va passer par ici.</l>
+          </sp>
+        </spGrp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="10">Ah! mon enfant, parle, as-tu vu Lolotte.</l>
+        </sp>
+        <sp who="#letambour">
+          <speaker>Le Tambour</speaker>
+          <l met="12">Eh! morbleu, mon ami, que t'importe la sotte.</l>
+          <l met="12">Est-ce Roulant qui parle? es-tu bien Grenadier?</l>
+          <l met="10">À ce point-là peux-tu donc t'oublier?</l>
+          <l met="12">Voilà tes officiers, ne fais plus de folie.</l>
+          <l met="12">À t'entendre, on dirait: Roulant n'a pas de cœur!</l>
+        </sp>
+        <sp who="#roulant">
+          <speaker>Roulant</speaker>
+          <l met="12">Tu me rappelles à moi! Va, je t'en remercie.</l>
+          <l met="12">Méprisons une ingrate, et courons à l'honneur.</l>
+        </sp>
+        <stage>Il embrasse le tambour, et prend ses armes.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 22</head>
+        <stage type="characters">[Le capitaine des grenadiers, Roulant, le régiment]</stage>
+        <stage>Le régiment entre avec les drapeaux; la musique en tête.</stage>
+        <sp who="#capitainegrenadiers">
+          <speaker>Le Capitaine des Grenadiers</speaker>
+          <stage>à Roulant</stage>
+          <l met="12">En voyant tes Drapeaux, renonce à ton erreur;</l>
+          <l met="12">Roulant, reprend ton rang. Vole où l'honneur t'appelle.</l>
+          <l met="12">En servant ta patrie, oublie une infidèle...</l>
+          <l met="12">Un soldat doit brûler d'une plus noble ardeur.</l>
+        </sp>
+        <spGrp who="#capitainegrenadiers">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">Vaillants Français,tiré du <title ref="#huron">Huron</title> ()</desc>
+          </head>
+          <sp who="#capitainegrenadiers">
+            <speaker>Le Capitaine des Grenadiers</speaker>
+            <l met="8">Quand un soldat pense à la gloire,</l>
+            <l met="8">Sur son cœur il fait un retour;</l>
+            <l met="9">Lorsqu'il faut disputer la victoire</l>
+            <l met="8">L'honneur a le pas sur l'amour.</l>
+            <l met="8">Tout Français près de sa maîtresse</l>
+            <l met="8">Est ardent, sincère et constant;</l>
+            <l met="8">Mais si l'amour devient faiblesse</l>
+            <l met="8">Il y renonce au même instant.</l>
+            <l met="8">Quand un soldat, ...</l>
+          </sp>
+        </spGrp>
+        <stage>Ici Roulant, replacé parmi les Grenadiers, s'en va avec le régiment qui défile, sur l'air de la<emph>Marche</emph>du<emph>Huron</emph>.</stage>
+        <pb n="49"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 23</head>
+        <stage type="characters">Le régiment<stage>défile</stage>, Cassandre<stage>emmène Lisette</stage>, Amidon, Lisette</stage>
+        <sp who="#cassandre">
+          <speaker>Cassandre</speaker>
+          <l met="8">Ne restons donc pas dans la presse.</l>
+        </sp>
+        <sp who="#lisette">
+          <speaker>Lisette</speaker>
+          <l met="12">Amidon, viens donc voir.</l>
+        </sp>
+        <sp who="#amidon">
+          <speaker>Amidon</speaker>
+          <l met="12">Lé beau coup d'œil! Sandis!</l>
+        </sp>
+        <sp who="#cassandre">
+          <speaker>Cassandre</speaker>
+          <l met="12">Le régiment l'emmène.</l>
+        </sp>
+        <sp who="#amidon">
+          <speaker>Amidon</speaker>
+          <l met="12">Oh bien, jé garantis</l>
+          <l met="8">Qué maintenant dé sa faiblesse</l>
+          <l met="10">Il est guéri... Mais radicalement.</l>
+        </sp>
+        <sp who="#lisette">
+          <speaker>Lisette</speaker>
+          <l met="10">Tu crois qu'on peut aussi facilement</l>
+          <l met="10">En un instant oublier sa maîtresse?</l>
+        </sp>
+        <sp who="#cassandre">
+          <speaker>Cassandre</speaker>
+          <l met="12">Oh! quand la gloire parle...</l>
+        </sp>
+        <sp who="#amidon">
+          <speaker>Amidon</speaker>
+          <l met="12">Ah! la gloire et l'honneur</l>
+          <l met="10">Savent si bien dédommager un cœur?...</l>
+          <l met="12">Jé me sens un transport!... Oui, jé crois qu'en personne</l>
+          <l met="12">Tout ainsi que Roulant, la gloire me talonne!...</l>
+          <l met="8">Ah! pour un rien jé lé suivrais.</l>
+        </sp>
+        <pb n="50"/>
+        <sp who="#lisette">
+          <speaker>Lisette</speaker>
+          <l met="8">Comment! tu m'abandonnerais?...</l>
+        </sp>
+        <sp who="#cassandre">
+          <speaker>Cassandre</speaker>
+          <l met="10">Quoi! Tout de bon?</l>
+        </sp>
+        <sp who="#amidon">
+          <speaker>Amidon</speaker>
+          <l met="10">Capédébiou! ma Reine!</l>
+          <l met="12">Jé né bous entends plus! Son exemple m'entraîne!</l>
+          <l met="12">Partons... Mais quoi? L'Amour mé commande à son tour!</l>
+          <l met="12">Il mé retiens!... Restons... On dira quelqué jour</l>
+          <l met="12">« L'intrépide Roulant, en fuyant sa maîtresse,</l>
+          <l met="10">Sut à l'honneur asservir la tendresse!</l>
+          <l met="12">Mais lé tendre Amidon, par un rétour,</l>
+          <l met="10">A fait céder la valeur à l'amour».</l>
+        </sp>
+        <sp who="#lisette">
+          <speaker>Lisette</speaker>
+          <l met="8">Le sacrifice est méritoire.</l>
+        </sp>
+        <pb n="51"/>
+        <spGrp>
+          <head type="vaudeville-chorus">1</head>
+          <sp who="#lisette">
+            <speaker>Lisette</speaker>
+            <l met="8">Pour les héros laisse la gloire,</l>
+            <l met="8">Amidon, renonce aux lauriers;</l>
+            <l met="8">Laisse briller dans notre histoire</l>
+            <l met="8">Les noms de nos braves guerriers:</l>
+            <l met="8">Crois-moi, la plus douce victoire</l>
+            <l met="8">C'est de charmer un jeune cœur.</l>
+            <l met="9">Nous bien aimer, c'est notre bonheur,</l>
+            <l met="9">Être constants, voilà notre honneur.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">2</head>
+          <sp who="#cassandre">
+            <speaker>Cassandre</speaker>
+            <l met="8">Chaque état épris de la gloire</l>
+            <l met="8">Croit la trouver diversement;</l>
+            <l met="8">L'un veut illustrer sa mémoire,</l>
+            <l met="8">L'autre n'est heureux qu'en aimant:</l>
+            <l met="8">Celui-ci ne pense qu'à boire,</l>
+            <l met="8">Celui-là cherche la faveur.</l>
+            <l met="9">Mais des chemins qui vont au bonheur</l>
+            <l met="9">Prend-on souvent celui de l'honneur?</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">3</head>
+          <sp who="#amidon">
+            <speaker>Amidon</speaker>
+            <l met="8">Un chacun sé pousse à sa guise</l>
+            <l met="8">Au Camp, à Cythère, à la Cour;</l>
+            <l met="8">Mais pour nous sé serait méprise</l>
+            <l met="8">De chanter la gloire ou l'amour.</l>
+            <l met="8">Ténons-nous à notre devise,</l>
+            <l met="8">Elle est écrite dans lé cœur!</l>
+            <l met="9">Plaire au public est notre bonheur,</l>
+            <l met="9">Servir ses goûts, voilà notre honneur!</l>
+          </sp>
+        </spGrp>
+        <pb n="52"/>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="8">Tenons-nous, ...</l>
+        </sp>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

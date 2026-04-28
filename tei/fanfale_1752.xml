@@ -1,0 +1,2678 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="fanfale_1752">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Fanfale</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Charles-Simon Favart et Pierre-Augustin Lefèvre de Marcouville</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>T. Boulanger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Relecture</resp>
+          <name>B. de Cornulier</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Paris, N.B Duchesne, 1759,<emph>Théâtre de M. Favart</emph>, t.1, Paris, Duchesne, 1763</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="fanfale" sex="UNKNOWN">
+            <persName>Fanfale</persName>
+          </person>
+          <person xml:id="occide" sex="UNKNOWN">
+            <persName>Occide</persName>
+          </person>
+          <person xml:id="titi" sex="UNKNOWN">
+            <persName>Titi</persName>
+          </person>
+          <person xml:id="lisette" sex="UNKNOWN">
+            <persName>Lisette</persName>
+          </person>
+          <person xml:id="mimi" sex="UNKNOWN">
+            <persName>Mimi</persName>
+          </person>
+          <person xml:id="grisemine" sex="UNKNOWN">
+            <persName>Grisemine</persName>
+          </person>
+          <person xml:id="lemarguillier" sex="UNKNOWN">
+            <persName>Le Marguillier</persName>
+          </person>
+          <person xml:id="unpaysan" sex="UNKNOWN">
+            <persName>Un Paysan</persName>
+          </person>
+          <person xml:id="le_premier_marguillier" sex="UNKNOWN">
+            <persName>Le premier marguillier</persName>
+          </person>
+          <person xml:id="paysans_houzards_braconniers_diables_monstres_etc" sex="UNKNOWN">
+            <persName>Paysans, houzards, braconniers, diables, monstres, etc</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie d'Omphale, en cinq actes, avec des divertissements</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1752">
+        <desc>Représentée pour la première fois par les Comédiens Italiens ordinaires du Roi le mercredi 8 mars 1752</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#occide">Occide</role>
+          <roleDesc>commandant des housards</roleDesc>
+          <actor>Monsieur Rochard</actor>
+        </castItem>
+        <castItem>
+          <role ana="#titi">Titi</role>
+          <roleDesc>lieutenant des housards</roleDesc>
+          <actor>Madame Deshayes</actor>
+        </castItem>
+        <castItem>
+          <role ana="#fanfale">Fanfale</role>
+          <roleDesc>dame du village</roleDesc>
+          <actor>Madame Favart</actor>
+        </castItem>
+        <castItem>
+          <role ana="#grisemine">Grisemine</role>
+          <roleDesc>sorcière</roleDesc>
+          <actor>Monsieur Chanville</actor>
+        </castItem>
+        <castItem>
+          <role ana="#le_premier_marguillier">Le premier marguillier</role>
+          <actor>Monsieur Desbrosses</actor>
+        </castItem>
+        <castItem>
+          <role ana="#lisette">Lisette</role>
+          <roleDesc>suivante de Fanfale</roleDesc>
+          <actor>Mademoiselle Catinon</actor>
+        </castItem>
+        <castItem>
+          <role ana="#mimi">Mimi</role>
+          <roleDesc>suivante de Fanfale</roleDesc>
+          <actor>Mademoiselle Astraudi, C</actor>
+        </castItem>
+        <castItem>
+          <role ana="#paysans_houzards_braconniers_diables_monstres_etc">Paysans, houzards, braconniers, diables, monstres, etc</role>
+        </castItem>
+      </castList>
+      <pb n="2"/>
+    </front>
+    <body>
+      <div type="act">
+        <head>ACTE 1</head>
+        <stage type="location">Le théâtre représente un village. On voit d'un côté le château de Fanfale et de l'autre le lieu où l'on rend la justice.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Titi<stage>seul</stage>
+          </stage>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#titi">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mere_michel">Adieu mon cher la Tulipe</title>
+              </desc>
+            </head>
+            <sp who="#titi">
+              <speaker>Titi</speaker>
+              <l met="7">L'amour qui me cherche noise</l>
+              <l met="7">Remplit mon cœur de son feu,</l>
+              <l met="7">Cela me rend, ventrebleu,</l>
+              <l met="7">D'une humeur triste et sournoise.</l>
+              <l met="7">S'enflammer pour sa bourgeoise,</l>
+              <l met="3">C'est le jeu.</l>
+              <l met="5">Mais je risque un peu...</l>
+            </sp>
+          </spGrp>
+          <pb n="4"/>
+          <spGrp who="#titi">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#j_ai_perdu_ma_liberte">J'ai perdu ma liberté</title>
+              </desc>
+            </head>
+            <sp who="#titi">
+              <speaker>Titi</speaker>
+              <l met="7">Sans songer à mon état,</l>
+              <l met="6">Follement je m'engage:</l>
+              <l met="7">Fanfale, pour un soldat,</l>
+              <l met="6">Est d'un trop haut étage:</l>
+              <l met="7">Mais malgré sa dignité,</l>
+              <l met="6">Son air fripon m'attire.</l>
+              <l met="8">Ah! quelle étrange cruauté</l>
+              <l met="6">D'aimer sans l'oser dire.</l>
+            </sp>
+          </spGrp>
+          <stage>On joue la marche des dragons.</stage>
+          <spGrp who="#titi">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#nous_villageois">Nous autres bons villageois</title>
+              </desc>
+            </head>
+            <sp who="#titi">
+              <speaker>Titi</speaker>
+              <l met="7">Je ne songe qu'à l'amour,</l>
+              <l met="8">Tandis qu'Occide suit la gloire;</l>
+              <l met="7">J'entends le bruit du tambour</l>
+              <l met="8">Qui nous annonce sa victoire.</l>
+              <l met="8">Occide est un fier commandant,</l>
+              <l met="8">Moi, son poltron de lieutenant.</l>
+              <l met="8">Je sers sous un grand général.</l>
+              <l met="8">Mais, ma foi, je l'imite mal.<stage type="bis">bis</stage>
+              </l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Occide, Titi, housards<stage>de la suite d'Occide</stage>
+          </stage>
+          <stage>La symphonie joue d'abord la marche suivante, avec un accompagnement de tambour.</stage>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="7">Des insolents ont bravé</l>
+            <l met="6">La dame du village;</l>
+            <l met="10">Mais en ce jour, ils ont tous éprouvé</l>
+            <l met="6">L'effet de mon courage.</l>
+            <l met="6">Retenez prisonniers</l>
+            <l met="4">Les braconniers,</l>
+            <l met="6">Prenez soin de leurs armes.</l>
+            <l met="6">Au milieu de nos jeux</l>
+            <l met="4">Tantôt je veux</l>
+            <l met="6">Les offrir à ses charmes.</l>
+            <l met="10">Çà, préparez-vous, il faut mes enfants</l>
+            <l met="8">Donner un bouquet à Fanfale,</l>
+            <l met="9">La bonne dame depuis longtemps</l>
+            <l met="6">Chez elle nous régale.</l>
+          </sp>
+          <pb n="5"/>
+          <stage>Les housards sortent.</stage>
+          <pb n="6"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Occide, Titi</stage>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mais_je_sens_mon_coeur_qui_soupire">Mais je sens mon cœur qui soupire</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="8">Des fureurs d'un loup plein de rage,</l>
+              <l met="8">Mon bras a sauvé ces cantons.</l>
+              <l met="8">J'ai purgé tout le voisinage</l>
+              <l met="8">De braconniers et de fripons.</l>
+              <l met="8">Cher Titi.</l>
+            </sp>
+          </spGrp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="8">Que voulez-vous dire?</l>
+          </sp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="8">Ah!</l>
+          </sp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="8">Seigneur, à votre bonheur</l>
+            <l met="8">Tant d'exploits ne peuvent-ils suffire?</l>
+          </sp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="8">Entends-tu mon cœur qui soupire?</l>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_en_venez">Vous en venez</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="8">Que sert une gloire si belle?</l>
+              <l met="8">L'amour me tourne la cervelle.</l>
+            </sp>
+          </spGrp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="8">Ah! ma foi, vous me surprenez.</l>
+            <l met="4">Vous en tenez,</l>
+            <l met="4">Vous en tenez,</l>
+            <l met="9">Oui, je vois bien que vous en tenez,</l>
+            <l met="5">Que vous en tenez.</l>
+          </sp>
+          <pb n="7"/>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#jean_gille_mon_gendre">Jean Gille, mon gendre</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="6">Oui, mon penchant m'entraîne</l>
+              <l met="6">Vers l'objet le plus doux.</l>
+            </sp>
+          </spGrp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="6">Que ne le suivez-vous</l>
+            <l met="6">Mon brave Capitaine?</l>
+          </sp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#parbleu_c_est_une_autre_affaire">Parbleu, c'est une autre affaire</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="7">J'aime d'un amour timide.</l>
+            </sp>
+          </spGrp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="7">Je ne connais plus Occide,</l>
+            <l met="7">Quel objet vous attendrit?</l>
+          </sp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="7">Fanfale a trop su me plaire,</l>
+            <l met="5">Et j'en perds l'esprit.</l>
+          </sp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="5">C'est une autre affaire.</l>
+          </sp>
+          <pb n="8"/>
+          <spGrp who="#titi">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ce_sont_les_filles_de_la_chapelle">Ce sont les filles de la chapelle</title>
+              </desc>
+            </head>
+            <sp who="#titi">
+              <speaker>Titi</speaker>
+              <l met="8">Souvenez-vous que Grisemine</l>
+              <l met="8">Vous a suivi dans vos exploits;</l>
+              <l met="8">Elle est pire que Proserpine,</l>
+              <l met="8">Sur votre cœur elle a des droits.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#titi">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#a_l_envers">À l'envers</title>
+              </desc>
+            </head>
+            <sp who="#titi">
+              <speaker>Titi</speaker>
+              <l met="8">Un hymen avec son calcul</l>
+              <l met="3">Devient nul.</l>
+              <l met="6">Elle fait tonner, pleuvoir,</l>
+              <l met="3">Tout mouvoir</l>
+              <l met="6">Elle met tout l'univers</l>
+              <l met="3">À l'envers.</l>
+            </sp>
+          </spGrp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#j_aime_une_jeune_brunette">J'aime une jeune brunette</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="7">D'un objet rempli de charmes</l>
+              <l met="7">On veut fuir l'attrait vainqueur;</l>
+              <l met="7">La fierté qui prend les armes</l>
+              <l met="7">N'en défend pas notre cœur:</l>
+              <l met="7">On sent un trouble en soi-même,</l>
+              <l met="7">On commence à s'alarmer,</l>
+              <l met="7">Mais, hélas! déjà l'on aime</l>
+              <l met="7">Sitôt que l'on craint d'aimer.</l>
+            </sp>
+          </spGrp>
+          <pb n="9"/>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+          </sp>
+          <spGrp who="#titi">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ici_l_on_fait_ce_que_l_on_veut">Ici l'on fait ce que l'on veut</title>
+              </desc>
+            </head>
+            <sp who="#titi">
+              <speaker>Titi</speaker>
+              <l met="8">Occide chante des brunettes!</l>
+              <l met="8">Ce guerrier qui répand l'effroi</l>
+              <l met="8">Débite aujourd'hui des sornettes!</l>
+              <l met="8">Il est presque aussi sot que moi.</l>
+            </sp>
+          </spGrp>
+          <stage>Prélude</stage>
+          <spGrp who="#titi">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_ne_sais_pas_ecrire">Je ne sais pas écrire</title>
+              </desc>
+            </head>
+            <sp who="#titi">
+              <speaker>Titi</speaker>
+              <l met="8">Tout le hameau vient en ces lieux</l>
+              <l met="8">Chanter vos exploits glorieux</l>
+              <l met="6">D'une ardeur sans égale.</l>
+              <l met="8">Vous rendez ces manants heureux,</l>
+              <l met="8">Voyez leurs danses et leurs jeux.</l>
+            </sp>
+          </spGrp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="6">Je ne vois que Fanfale.</l>
+          </sp>
+          <pb n="10"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Occide, Fanfale, Titi, les marguilliers, troupe de paysans</stage>
+          <stage>Marche des paysans qui viennent saluer Occide</stage>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+          </sp>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#l_amour_comme_neptune">L'amour comme Neptune</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="6">On chassait sur ma terre</l>
+              <l met="6">Comme chez un bourgeois.</l>
+              <l met="6">Votre valeur guerrière</l>
+              <l met="6">Partout soutient mes droits.</l>
+              <l met="6">Vous avez pris d'emblée</l>
+              <l met="8">Les braconniers de ces lieux.</l>
+              <l met="6">Quels exploits glorieux!</l>
+              <l met="6">C'est en agir au mieux.</l>
+              <l met="7">Ah! j'en suis vraiment comblée.</l>
+              <l met="4">Il faut, Monsieur,</l>
+              <l met="4">Vous faire honneur.</l>
+            </sp>
+          </spGrp>
+          <stage>On danse.</stage>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+          </sp>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#gai_gai_mon_officier">Gai, gai, mon officier</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="6">Votre rare vaillance</l>
+              <l met="6">Ne saurait s'oublier</l>
+              <l met="6">Et la reconnaissance</l>
+              <l met="6">À vous doit nous lier.</l>
+            </sp>
+          </spGrp>
+          <pb n="11"/>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Gai, gai, gai mon officier,</l>
+            <l met="6">Je v'nons vous remarcier.</l>
+          </sp>
+          <sp who="#lemarguillier">
+            <speaker>Le Marguillier</speaker>
+            <l met="6">Écoutez la harangue</l>
+            <l met="6">Du premier marguillier;</l>
+            <l met="6">J'avons trop bonne langue</l>
+            <l met="6">Pour rester le dernier.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Gai, gai, [gai mon officier,]</l>
+            <l met="6">[Je v'nons vous remarcier.]</l>
+          </sp>
+          <sp who="#lemarguillier">
+            <speaker>Le Marguillier</speaker>
+            <l met="6">Tout' nos maréchaussées</l>
+            <l met="6">N'valont pas un denier,</l>
+            <l met="6">Vous purgez les chaussées</l>
+            <l met="6">De tout aventurier.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Gai, gai, [gai mon officier,]</l>
+            <l met="6">[Je v'nons vous remarcier.]</l>
+          </sp>
+          <sp who="#lemarguillier">
+            <speaker>Le Marguillier</speaker>
+            <l met="6">Un loup fort malhonnête</l>
+            <l met="6">Désolait ce quartier;</l>
+            <l met="6">Vous avez tué la bête,</l>
+            <l met="6">Gn'ia qu'à vous en prier.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Gai, gai, [gai mon officier,]</l>
+            <l met="6">[Je v'nons vous remarcier.]</l>
+          </sp>
+          <sp who="#lemarguillier">
+            <speaker>Le Marguillier</speaker>
+            <l met="6">Quand un lapin ravage</l>
+            <l met="6">Les choux d'un jardinier,</l>
+            <l met="6">Occide avec courage,</l>
+            <l met="6">Le met dans son clapier.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Gai, gai, [gai mon officier,]</l>
+            <l met="6">[Je v'nons vous remarcier.]</l>
+          </sp>
+          <pb n="12"/>
+          <sp who="#lemarguillier">
+            <speaker>Le Marguillier</speaker>
+            <l met="6">Quand un sanglier gâte</l>
+            <l met="6">Le bien de not' grenier,</l>
+            <l met="6">Vous le mettez en pâte,</l>
+            <l met="6">Et l'mangez tout entier.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Gai, gai, [gai mon officier,]</l>
+            <l met="6">[Je v'nons vous remarcier.]</l>
+          </sp>
+          <sp who="#lemarguillier">
+            <speaker>Le Marguillier</speaker>
+            <l met="6">Vous avez pour la pêche</l>
+            <l met="6">Débourbé not' vivier.</l>
+            <l met="6">Cette bonne œuvre empêche</l>
+            <l met="6">Les crapiaux de crier.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Gai, gai, [gai mon officier,]</l>
+            <l met="6">[Je v'nons vous remarcier.]</l>
+          </sp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="6">Peste soit de la fête,</l>
+            <l met="6">C'est assez m'ennuyer,</l>
+            <l met="6">Vous me rompez la tête,</l>
+            <l met="6">Je demande quartier.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Gai, gai, gai mon officier,</l>
+            <l met="6">C'est pour vous remarcier.</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+          </sp>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ma_tourelourette_en_amourette">Ma tourelourette, en amourette</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="8">Des cœurs les plus reconnaissants!</l>
+              <l met="8">Des cœurs les plus reconnaissants!</l>
+            </sp>
+          </spGrp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="8">Ah! si vous partagiez mes feux,</l>
+            <l met="5">Ma tourelourette,</l>
+            <l met="4">En amourette,</l>
+            <l met="8">Vous sauriez qu'il est pour nous deux</l>
+            <l met="6">Des moments plus heureux.</l>
+          </sp>
+          <pb n="13"/>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+          </sp>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#aimant_colette">Tu croyais, en aimant Colette</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="8">Il suffit; de votre tendresse</l>
+              <l met="8">Vous parlerez une autre fois.</l>
+              <l met="8">Allez au Greffe, et qu'on y dresse</l>
+              <l met="8">Procès-verbal de vos exploits.</l>
+            </sp>
+          </spGrp>
+          <stage>Le chœur et Fanfale, en reconduisant Occide, reprennent:</stage>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#gai_gai_mon_officier">Gai, gai, mon officier</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="6">Votre rare vaillance</l>
+              <l met="6">Ne saurait s'oublier,</l>
+              <l met="6">Et la reconnaissance</l>
+              <l met="6">À vous doit nous lier;</l>
+              <l met="7">Gai, gai, gai mon officier,</l>
+              <l met="6">C'est pour vous remarcier</l>
+            </sp>
+          </spGrp>
+          <stage>Fin de l'acte</stage>
+          <pb n="14"/>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <stage type="location">Le théâtre représente l'appartement de Fanfale, plusieurs filles sont occupées à différents ouvrages.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Fanfale, Lisette, Mimi</stage>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <stage>faisant des nœuds</stage>
+          </sp>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#faites_joujou_brunette">Faites joujou, brunette</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="6">Travaillez donc, fillettes,</l>
+              <l met="4">Travaillez donc,</l>
+              <l met="8">En parlant de vos amourettes,</l>
+              <l met="8">Le temps vous paraîtra moins long.</l>
+              <l met="6">Travaillez donc, fillettes,</l>
+              <l met="4">Travaillez donc.</l>
+            </sp>
+          </spGrp>
+          <pb n="15"/>
+          <sp who="#lisette">
+            <speaker>Lisette</speaker>
+          </sp>
+          <spGrp who="#lisette">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#capucin">De tous les capucins du monde</title>
+              </desc>
+            </head>
+            <sp who="#lisette">
+              <speaker>Lisette</speaker>
+              <l met="8">Madame, je vous félicite,</l>
+              <l met="8">Occide est d'un rare mérite.</l>
+              <l met="8">Soyez sensible à son ardeur.</l>
+            </sp>
+          </spGrp>
+          <sp who="#mimi">
+            <speaker>Mimi</speaker>
+            <l met="8">Pour vos appâts quelle victoire!</l>
+            <l met="8">D'avoir les prémices d'un cœur</l>
+            <l met="8">Qui n'a rien aimé que la gloire.</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+          </sp>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_m_en_contez_vous_m_amusez_toujours">Vous m'en contez, vous m'amusez toujours</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="8">Vous ignorez tous ses exploits:</l>
+              <l met="8">Savez-vous que le fin matois</l>
+              <l met="8">Eût cinquante objets à la fois?</l>
+              <l met="4">Il voltigeait,</l>
+              <l met="4">Il s'engageait</l>
+              <l met="2">Toujours,</l>
+              <l met="8">Et dans la ville et les faubourgs,</l>
+              <l met="6">On conte de ses tours.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <caption>Lisette et mimi</caption>
+          </spGrp>
+          <spGrp who="#ensemble">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#catherine">Ton humeur est, Catherine</title>
+              </desc>
+            </head>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">L'honneur de vous voir sa femme...</l>
+            </sp>
+          </spGrp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="7">Cet honneur ne suffit pas.</l>
+          </sp>
+          <spGrp>
+            <caption>Lisette et mimi</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Un héros qu'Amour enflamme</l>
+              <l met="7">A toujours assez d'appâts.</l>
+            </sp>
+          </spGrp>
+          <pb n="16"/>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="7">Mais mon goût n'est pas le vôtre.</l>
+          </sp>
+          <spGrp>
+            <caption>Lisette et mimi</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Il est digne de vos feux.</l>
+            </sp>
+          </spGrp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="7">Ah! partez l'une après l'autre</l>
+            <l met="7">Ou taisez-vous toutes deux.</l>
+          </sp>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mere_michel">Si j'avais connu monsieur de Catinat</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="12">De mes amants, Occide est le plus glorieux,</l>
+              <l met="12">Mais n'est-il point d'objet plus aimable en ces lieux?</l>
+            </sp>
+          </spGrp>
+          <sp who="#lisette">
+            <speaker>Lisette</speaker>
+            <l met="12">Aimeriez-vous Titi?</l>
+          </sp>
+          <sp who="#mimi">
+            <speaker>Mimi</speaker>
+            <l met="12">Madame, vous riez.</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="12">En devinant mon choix vous le justifiez.</l>
+          </sp>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#babet_gentille">Babet que t'es gentille</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="6">Occide et ce garçon</l>
+              <l met="6">Font un parfait contraste:</l>
+              <l met="6">L'un a l'air d'un Gascon,</l>
+              <l met="6">L'autre est simple et sans faste;</l>
+              <l met="5">Son maintien décent,</l>
+              <l met="5">Son air innocent</l>
+              <l met="6">Est la nature même.</l>
+              <l met="8">Son cœur n'est point encor formé,</l>
+              <l met="8">L'Amour ne l'a point animé;</l>
+              <l met="8">Puisqu'il n'a pas encor aimé,</l>
+              <l met="6">Hé bien, c'est lui que j'aime.<stage type="bis">bis</stage>
+              </l>
+            </sp>
+          </spGrp>
+          <pb n="17"/>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#pour_la_jeune_annette">Pour la jeune Annette</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="5">Pour un militaire,</l>
+              <l met="7">Qu'il est d'un bon caractère!</l>
+              <l met="5">Sa timidité</l>
+              <l met="8">Gagne beaucoup sur ma fierté.</l>
+              <l met="5">En baissant la vue,</l>
+              <l met="5">Sa voix est émue.</l>
+              <l met="5">Un petit collet</l>
+              <l met="5">Serait moins discret.</l>
+              <l met="5">On vient, c'est lui-même.</l>
+              <l met="7">Tâchons de savoir s'il aime;</l>
+              <l met="5">Sans l'effaroucher,</l>
+              <l met="8">Voyons si j'ai pu le toucher.</l>
+            </sp>
+          </spGrp>
+          <stage>Lisette et Mimi se retirent dans le fond du théâtre.</stage>
+          <pb n="18"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Titi, Fanfale, et les précédents dans le fond du théâtre</stage>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+          </sp>
+          <spGrp who="#titi">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#en_passant_sur_le_pont_neuf">En passant sur le Pont-Neuf</title>
+              </desc>
+            </head>
+            <sp who="#titi">
+              <speaker>Titi</speaker>
+              <l met="7">Notre brave commandant</l>
+              <l met="7">Va venir dans un instant.</l>
+              <l met="7">Pour le jour de votre fête,</l>
+              <l met="7">Il s'est mis d'un air coquet.</l>
+              <l met="7">Avec ses gens il s'apprête</l>
+              <l met="7">À vous donner un bouquet.</l>
+            </sp>
+          </spGrp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+          </sp>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#approchez_mon_aimable_fille">Approchez, mon aimable fille</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="8">Ah! vraiment, il est fort honnête;</l>
+              <l met="8">Mais j'ai bien autre chose en tête,</l>
+              <l met="8">Que de songer à son cadeau.</l>
+            </sp>
+          </spGrp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="2">Oh! oh!</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="8">Occide m'aime avec tendresse,</l>
+            <l met="12">De ses soins amoureux je lui sais peu de gré.</l>
+          </sp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="2">Hé! hé!</l>
+          </sp>
+          <pb n="19"/>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="6">Un objet m'intéresse,</l>
+            <l met="8">Sur tout autre il l'emportera.</l>
+          </sp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="2">Ah! Ah!</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="6">J'avouerai ma faiblesse,</l>
+            <l met="12">Mais je sens que mon cœur est pour jamais épris.</l>
+          </sp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="8">Quoi? tout de bon?... ma foi, tant pis.</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <stage>à part</stage>
+          </sp>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_n_y_puis_rien_comprendre">Je n'y puis rien comprendre</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="8">Je croyais qu'il dirait tant mieux.</l>
+            </sp>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="8">D'où vous vient cet air de tristesse?</l>
+            </sp>
+          </spGrp>
+          <stage>À Titi.</stage>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="8">Un autre amant charme vos yeux!</l>
+            <l met="8">D'un ami je plains la tendresse.</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="4">Vous êtes bon!</l>
+            <l met="4">Pauvre garçon!</l>
+            <l met="6">Ah! mon cœur est trop tendre...</l>
+            <l met="8">Titi devrait m'excuser.</l>
+          </sp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="8">Non.</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="6">Il ne peut rien comprendre.</l>
+          </sp>
+          <pb n="20"/>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+          </sp>
+          <spGrp who="#titi">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#quel_mystere">Quel mystère</title>
+              </desc>
+            </head>
+            <sp who="#titi">
+              <speaker>Titi</speaker>
+              <l met="3">Ah! Madame,</l>
+              <l met="8">Ma douleur vous en dit assez.</l>
+            </sp>
+          </spGrp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="2">Parlez.</l>
+          </sp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="2">Oh! Dame!</l>
+            <l met="3">Ah! Madame...</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="8">Vos propos sont embarrassés.</l>
+            <l met="4">Les yeux baissés,</l>
+            <l met="6">Qu'est-ce que vous pensez?</l>
+          </sp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="8">Ah! si vous lisiez dans mon âme...</l>
+            <l met="7">C'est que... c'est que je voudrais...</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="7">Achevez.</l>
+          </sp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="7">Je n'oserais.</l>
+          </sp>
+          <pb n="21"/>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="3">Toujours craindre!</l>
+            <l met="8">Faut-il donc se déconcerter?</l>
+          </sp>
+          <stage>À part.</stage>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="4">Il est à peindre!</l>
+          </sp>
+          <stage>À Titi.</stage>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="3">Pourquoi feindre?</l>
+          </sp>
+          <stage>À part.</stage>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="8">Quel cœur pourrait lui résister?</l>
+            <l met="6">Il rêve, il est distrait.</l>
+          </sp>
+          <stage>À Titi.</stage>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="7">Avez-vous quelque secret?</l>
+            <l met="6">Pourrait-on vous servir?</l>
+            <l met="7">Mais, mais pourquoi donc rougir?</l>
+            <l met="6">On ne sait ce que c'est.</l>
+            <l met="5">Cet air me déplaît.</l>
+            <l met="5">Ça, regardez-moi:</l>
+            <l met="5">Quoi! expliquez-vous.</l>
+          </sp>
+          <pb n="22"/>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="2">Madame,</l>
+            <l met="8">Un feu que je ne puis cacher</l>
+            <l met="4">Trouble mon âme.</l>
+            <l met="3">Cette flamme...</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="2">Hé bien?</l>
+          </sp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="6">Vous allez vous fâcher.</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <stage>vivement</stage>
+          </sp>
+          <spGrp>
+            <head type="melody" subtype="empty_melody">Air vide</head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="4">Que dites-vous?</l>
+            </sp>
+          </spGrp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="4">Je vous offense,</l>
+            <l met="8">Mais hélas! de grâce, excusez.</l>
+            <l met="8">Je sens mon tort: vous vous taisez!</l>
+            <l met="8">C'est un arrêt que ce silence.</l>
+          </sp>
+          <pb n="23"/>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="8">Ah! quel imbécile est-ce là!</l>
+          </sp>
+          <stage type="musical_indication">Récitatif</stage>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="8">Je m'en irai, ma belle Dame,</l>
+            <l met="8">Puisque vous condamnez ma flamme.</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="8">Mais je ne vous dis pas cela.</l>
+          </sp>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#pont_avignon_belle">Sur le pont d'Avignon</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="12">Arrêtez...</l>
+            </sp>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="12">Son rival trouble le tête à tête!</l>
+              <l met="12">C'est bien à contretemps qu'il m'amène une fête.</l>
+            </sp>
+          </spGrp>
+          <stage>À part.</stage>
+          <pb n="24"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Occide, Fanfale, travailleuses, housards<stage>qui amènent des braconniers</stage>
+          </stage>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#donne_mon_coeur">Quand je vous ai donné mon cœur</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="8">Voyez tous ces fripons soumis</l>
+              <l met="6">Qu'ici l'on vous amène.</l>
+            </sp>
+          </spGrp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="8">En liberté qu'ils soient remis.</l>
+          </sp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="6">Vous êtes bien humaine!</l>
+            <l met="8">Que gardez-vous à vos amis?</l>
+            <l met="8">Un doux espoir m'est-il permis?</l>
+          </sp>
+          <stage>À sa suite.</stage>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#sans_le_dieu_de_la_tendresse">Sans le dieu de la tendresse</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="7">À la dame du village,</l>
+              <l met="7">Amis, rendez les honneurs.</l>
+            </sp>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="7">Dans leurs jeux voyez l'image</l>
+              <l met="7">De mes plus vives ardeurs.</l>
+              <l met="7">Pour garant d'un tendre hommage,</l>
+              <l met="7">Prenez ce monstre et ces fleurs.</l>
+            </sp>
+          </spGrp>
+          <stage>À Fanfale.</stage>
+          <pb n="25"/>
+          <stage>Occide donne un bouquet à Fanfale et lui fait présenter le loup qu'il a tué et les fusils de braconniers.</stage>
+          <stage>Danse des housards.</stage>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <stage>prend le panier à ouvrage de Fanfale et chante en faisant des nœuds</stage>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#quel_voile_importun_le_couvre">Quel voile importun le couvre</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="7">Il faut, pour charmer les belles,</l>
+              <l met="5">Suivre leurs plaisirs,</l>
+              <l met="6">N'avoir que leurs désirs:</l>
+              <l met="7">En nous amusant comme elles,</l>
+              <l met="5">Nous formons nos nœuds;</l>
+              <l met="6">L'amour nous rend heureux.</l>
+              <l met="8">Un cœur altier n'est plus le même,</l>
+              <l met="8">Quand d'un objet il est épris.</l>
+              <l met="8">L'amant devient tout ce qu'il aime,</l>
+              <l met="8">Un doux retour en est le prix.</l>
+              <l met="7">Il faut, pour charmer les belles,</l>
+              <l met="5">Suivre leurs plaisirs,</l>
+              <l met="6">N'avoir que leurs désirs:</l>
+              <l met="7">En nous amusant comme elles,</l>
+              <l met="5">Nous formons nos nœuds;</l>
+              <l met="6">L'amour nous rend heureux.</l>
+            </sp>
+          </spGrp>
+          <pb n="26"/>
+          <pb n="27"/>
+          <stage>Les filles de la suite de Fanfale quittent leurs ouvrages et dansent pendant que les housards travaillent à leur place.</stage>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="8">Des faveurs que l'Amour vous donne,</l>
+            <l met="8">Usez avec ménagement;</l>
+            <l met="8">Si trop tôt ce dieu vous couronne,</l>
+            <l met="8">Il perd ce qu'il a de charmant:</l>
+            <l met="8">Prenez cette leçon utile:</l>
+            <l met="8">On n'éteint jamais les désirs,</l>
+            <l met="4">Lorsque l'on file,</l>
+            <l met="8">Lorsque l'on file les plaisirs.</l>
+          </sp>
+          <pb n="28"/>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="8">Ce n'est qu'à la délicatesse</l>
+            <l met="8">Que nous devons l'art de jouir.</l>
+            <l met="8">Sans elle, à la moindre faiblesse</l>
+            <l met="8">On voit l'amour s'évanouir:</l>
+            <l met="8">Que le bonheur soit difficile;</l>
+            <l met="8">On n'éteint jamais les désirs,</l>
+            <l met="4">Lorsque l'on file,</l>
+            <l met="8">Lorsque l'on file les plaisirs.</l>
+          </sp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="8">Le doux attrait de l'espérance</l>
+            <l met="8">De l'amour devient le soutien;</l>
+            <l met="8">L'attente de la récompense</l>
+            <l met="8">De deux cœurs serre le lien;</l>
+            <l met="8">Mais qui se presse est malhabile:</l>
+            <l met="8">On n'éteint jamais les désirs,</l>
+            <l met="4">Lorsque l'on file,</l>
+            <l met="8">Lorsque l'on file les plaisirs.</l>
+          </sp>
+          <pb n="29"/>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="8">Beauté que le penchant engage</l>
+            <l met="8">À rendre un amant plus heureux,</l>
+            <l met="8">Craignez, si vous êtes peu sage,</l>
+            <l met="8">Qu'un jour n'amortisse ses feux.</l>
+            <l met="8">À ses vœux soyez moins docile;</l>
+            <l met="8">On n'éteint jamais les désirs</l>
+            <l met="4">Lorsque l'on file,</l>
+            <l met="8">Lorsque l'on file les plaisirs.</l>
+          </sp>
+          <stage>Entrée d'allemandes.</stage>
+          <stage>Les filles de la suite de Fanfale vont prendre les housards, leur attachent des quenouilles et dansent avec eux en les faisant filer. On entend le bruit du tonnerre; Grisemine descend par la cheminée.</stage>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+          </sp>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_ne_suis_pas_assez_beau_oh_oh_">Je ne suis pas assez beau, oh! oh!</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="7">Quel tonnerre! quels éclats!</l>
+              <l met="2">Ah! ah!</l>
+              <l met="7">Mon âme en est étonnée.</l>
+            </sp>
+          </spGrp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="7">Grisemine avec fracas</l>
+            <l met="2">Ah! ah!</l>
+            <l met="7">Descend par la cheminée.</l>
+          </sp>
+          <pb n="30"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Grisemine, les acteurs précédents et des diables</stage>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+            <l met="3">Ne crois pas</l>
+            <l met="7">Qu'impunément on m'offense.</l>
+            <l met="7">Lutins, servez ma vengeance;</l>
+            <l met="7">Troublez ce galant cadeau.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="4">Oh! oh! oh! oh!</l>
+            <l met="7">Sortons vite du château.</l>
+          </sp>
+          <stage>Les diables mettent le feu aux quenouilles et brisent les ouvrages. Fanfale et toute sa suite s'enfuient.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Grisemine, Occide</stage>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+          </sp>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#chacun_vient_ici_pele_mele">Chacun vient ici pêle-mêle</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="9">Tu m'as fait parcourir l'Allemagne,</l>
+              <l met="5">La France, l'Espagne,</l>
+              <l met="4">Mais je te tiens;</l>
+              <l met="6">J'ai fait mainte campagne</l>
+              <l met="5">Comme ta compagne:</l>
+              <l met="6">Peux-tu briser ton lien?</l>
+              <l met="5">J'aime à la housarde;</l>
+              <l met="5">Morbleu je poignarde</l>
+              <l met="5">Ton cœur et le sien,</l>
+              <l met="5">Si Fanfale hasarde</l>
+              <l met="4">D'avoir mon bien.</l>
+            </sp>
+          </spGrp>
+          <pb n="31"/>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#c_est_ici_qu_on_sait_bien_aimer">C'est ici qu'on sait bien aimer</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="8">L'amour est timide et tremblant,</l>
+              <l met="8">Près d'un objet qui l'intéresse;</l>
+              <l met="8">Mais il cesse d'être un enfant,</l>
+              <l met="8">Quand on veut troubler sa tendresse.</l>
+              <l met="8">Des jaloux sitôt qu'il se plaint,</l>
+              <l met="6">Son audace est extrême;</l>
+              <l met="5">Un amant ne craint</l>
+              <l met="4">Que ce qu'il aime.</l>
+            </sp>
+          </spGrp>
+          <pb n="32"/>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#deux_beaux_yeux_n_ont_qu_a_parler">Deux beaux yeux n'ont qu'à parler</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="7">En vain pour fuir le tourment</l>
+              <l met="3">D'être amant,</l>
+              <l met="8">J'évitais tout engagement;</l>
+              <l met="8">La beauté commande à nos âmes,</l>
+              <l met="10">Peut-on la voir et ne pas se troubler?</l>
+              <l met="8">Pour inspirer de vives flammes,</l>
+              <l met="7">Deux beaux yeux n'ont qu'à parler.</l>
+            </sp>
+          </spGrp>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+          </sp>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#il_n_est_pire_eau_que_l_eau_qui_dort">Il n'est pire eau que l'eau qui dort</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="10">Si c'est ton sort d'avoir une maîtresse,</l>
+              <l met="10">Pourquoi ton feu pour moi s'est-il usé?</l>
+              <l met="10">Mes yeux parlaient, mes charmes, ma tendresse,</l>
+              <l met="8">Ne t'auraient que trop excusé.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#que_n_a_t_elle_un_nez_vilain_menuet">Que n'a-t-elle un nez vilain,<emph>menuet</emph>
+                </title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="7">Toi qui m'a juré cent fois,</l>
+              <l met="9">Que ton cœur brûlait d'un feu Grégeois;</l>
+              <l met="9">Que tu vivrais toujours sous mes lois,</l>
+              <l met="9">Tu veux t'engager en tapinois,</l>
+              <l met="7">Tu veux faire un autre choix:</l>
+              <l met="9">Et moi, je soufflerais dans mes doigts!</l>
+              <l met="9">Non, non, amant ingrat et sournois,</l>
+              <l met="6">Je soutiendrais mes droits.</l>
+              <l met="4">Je te rappelle</l>
+              <l met="7">Ces petits moments si doux</l>
+              <l met="7">Qui se passaient entre nous,</l>
+              <l met="8">Quand l'Amour, du vent de son aile</l>
+              <l met="7">Éloignait les soins jaloux.</l>
+              <l met="7">Quand j'étais dans mon printemps,</l>
+              <l met="9">On voyait ton amour tous les ans</l>
+              <l met="9">S'accroître avec mes appas naissants;</l>
+              <l met="9">Tout doit se former avec le temps.</l>
+            </sp>
+          </spGrp>
+          <pb n="33"/>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="7">Sur ces attraits si charmants,</l>
+            <l met="9">L'amour avait écrit mes serments;</l>
+            <l met="9">Ne condamnez point les inconstants,</l>
+            <l met="6">Tout passe avec le temps.</l>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#les_coeurs_se_donnent_troc_pour_troc">Les cœurs se donnent troc pour troc</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="8">Votre esprit en vain s'est flatté</l>
+              <l met="8">De rendre une ardeur éternelle;</l>
+              <l met="8">Les serments faits à la beauté</l>
+              <l met="8">Ne doivent pas durer plus qu'elle.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <caption>Duo</caption>
+          </spGrp>
+          <spGrp who="#ensemble">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ah_barnabas">Ah! Barnabas</title>
+              </desc>
+            </head>
+            <cols n="2"/>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="4">Ah! quel tracas!</l>
+              <l met="7">Cette folle est un martyre.</l>
+              <l met="4">Jusqu'au trépas</l>
+              <l met="7">L'aurai-je donc sur les bras?</l>
+              <l met="4">Pleure, soupire,</l>
+              <l met="5">Je n'en fais que rire;</l>
+              <l met="5">Gémis, crève, expire,</l>
+              <l met="7">Cela ne me touche pas.</l>
+              <l met="4">Ah! quel tracas!</l>
+              <l met="7">Cette folle est un martyre.</l>
+              <l met="4">Ah! quel tracas!</l>
+              <l met="7">De l'entendre je suis las.</l>
+            </sp>
+            <cb/>
+          </spGrp>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+            <l met="4">Ah! quel tracas!</l>
+            <l met="7">Amour, quel est ton empire!</l>
+            <l met="4">Jusqu'au trépas,</l>
+            <l met="7">Gémirai-je dans tes lacs?</l>
+            <l met="4">De mon martyre,</l>
+            <l met="5">Tu ne fais que rire!</l>
+            <l met="5">Que le traître expire,</l>
+            <l met="5">S'il ne m'aime pas.</l>
+            <l met="4">Ah! quel tracas!</l>
+            <l met="7">Amour, quel est ton empire!</l>
+            <l met="4">Jusqu'au trépas,</l>
+            <l met="7">Gémirai-je dans tes lacs?</l>
+          </sp>
+          <cols n="1"/>
+          <stage>Occide sort.</stage>
+          <pb n="34"/>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+          </sp>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#au_bout_du_monde">Au bout du monde</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="8">Ne crois pas que je sois ta dupe,</l>
+              <l met="8">Puisqu'un nouvel amour t'occupe,</l>
+              <l met="8">Par mon art je te troublerai:</l>
+              <l met="5">Sur la terre et l'onde</l>
+              <l met="5">Je te poursuivrai</l>
+              <l met="8">Au bout, au bout, au bout du monde.</l>
+            </sp>
+          </spGrp>
+          <stage>Fin de l'acte</stage>
+          <pb n="35"/>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 3</head>
+        <stage type="location">Le théâtre représente les jardins de Fanfale.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Fanfale</stage>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#charmante_gabrielle">Charmante Gabrielle</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="6">Cher amant je t'appelle,</l>
+              <l met="6">Je ne crains plus pour moi.</l>
+              <l met="6">L'amour chez une belle</l>
+              <l met="6">Est plus fort que l'effroi:</l>
+              <l met="6">Lorsque le sort la plonge</l>
+              <l met="4">Dans la douleur,</l>
+              <l met="6">Son tendre cœur ne songe</l>
+              <l met="4">Qu'à son vainqueur.</l>
+            </sp>
+          </spGrp>
+          <pb n="36"/>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#helas_qu_ils_sont_heureux_ceux">Hélas! qu'ils sont heureux, ceux</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="2">Hélas!</l>
+              <l met="4">Quel embarras!</l>
+              <l met="11">Ah! dois-je encor longtemps garder le silence?</l>
+              <l met="6">Hélas! je n'oserais,</l>
+              <l met="1">Mais</l>
+              <l met="9">Mon amant n'osera-t-il jamais?</l>
+              <l met="6">Croit-il qu'un tendre avœu</l>
+              <l met="8">Pour les belles soit une offense?</l>
+              <l met="6">Il hésite, il balance,</l>
+              <l met="8">Il craint: il nous connait bien peu!</l>
+              <l met="2">Hélas!</l>
+              <l met="4">Quel embarras! ...</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Fanfale, Grisemine</stage>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+            <stage>dans le fond du théâtre, observant Fanfale</stage>
+          </sp>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#j_ai_des_vapeurs_je_me_meurs">J'ai des vapeurs, je me meurs</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="8">La voilà seule qui caquette,</l>
+              <l met="2">Je guette</l>
+              <l met="4">Pour l'écouter.</l>
+            </sp>
+          </spGrp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <stage>sans voir Grisemine</stage>
+            <l met="8">Déclarons mon ardeur secrète...</l>
+          </sp>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+            <l met="2">Coquette!</l>
+          </sp>
+          <pb n="37"/>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <stage>continue</stage>
+            <l met="4">Sans hésiter.</l>
+            <l met="8">Sans cette arrivée indiscrète,</l>
+            <l met="5">J'aurais fait l'aveu</l>
+            <l met="3">De mon feu.</l>
+          </sp>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+            <stage>s'approche de Fanfale et la touche de sa baguette</stage>
+            <l met="8">Bon! touchons-la de ma baguette.</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="4">J'ai des vapeurs,</l>
+            <l met="3">Je me meurs.</l>
+          </sp>
+          <stage>Fanfale, surprise par le charme de Grisemine, tombe sur un banc de gazon et s'endort.</stage>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+          </sp>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_sommeille">Je sommeille</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="8">Ma puissance opère déjà:</l>
+              <l met="8">Nous sommes seules; la voilà</l>
+              <l met="3">Qui sommeille.</l>
+              <l met="8">Jouissons du plaisir charmant</l>
+              <l met="8">De la tuer tout doucement,</l>
+              <l met="5">Sans qu'elle s'éveille.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#faites_dodo">Faites dodo</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="4">Faites dodo</l>
+              <l met="4">Belle Fanfale,</l>
+              <l met="4">Faites dodo,</l>
+              <l met="5">Tirons mon couteau.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#turelututu_rengaine">Turelututu, rengaine</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="5">Oui, dans son supplice</l>
+              <l met="5">Cherchons mon repos;</l>
+              <l met="5">Qu'un seul coup finisse</l>
+              <l met="5">Sa vie et mes maux.</l>
+            </sp>
+          </spGrp>
+          <stage>Elle s'avance pour frapper Fanfale.</stage>
+          <pb n="38"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Occide, Grisemine, Fanfale<stage>endormie</stage>
+          </stage>
+          <spGrp>
+            <head type="melody" subtype="melody_part">
+              <desc type="part">Suite de l'air</desc>
+              <title>
+                <title ref="#turelututu_rengaine">Turelututu, rengaine</title>
+              </title>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <stage>arrachant le poignard à Grisemine</stage>
+              <l met="10">Turelututu rengaine, rengaine, rengaine.</l>
+              <l met="6">Pour désarmer ta haine,</l>
+              <l met="5">J'arrive à propos.</l>
+            </sp>
+          </spGrp>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+          </sp>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mere_mariez_moi">Je suis un bon jardinier</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="7">Si tu veux la désarmer,</l>
+              <l met="7">Cher Occide, il faut m'aimer;</l>
+              <l met="5">Ou plonge en mon sein,</l>
+              <l met="5">Ce fer assassin.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#badinez_badinez">Badinez, mais restez-en là</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="8">Il méprise encor ma tendresse!</l>
+              <l met="8">Pour me venger de ta maîtresse,</l>
+              <l met="8">Rends-moi ce fer.</l>
+            </sp>
+          </spGrp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="8">Oh! nenni-dà;</l>
+            <l met="11">Badinez... badinez, mais restez-en là.</l>
+          </sp>
+          <pb n="39"/>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+          </sp>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#o_pierre">Ah! Pierre, ah! Pierre</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="6">Courons à ma rivale</l>
+              <l met="6">Pour l'étrangler.</l>
+            </sp>
+          </spGrp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="6">Tout doux.</l>
+            <l met="6">De ta rage infernale</l>
+            <l met="6">J'arrêterai les coups.</l>
+            <l met="5">Fanfale, Fanfale,</l>
+            <l met="6">Tôt, tôt, réveillez-vous!</l>
+          </sp>
+          <stage>Fanfale revient à elle et se lève avec frayeur en apercevant Grisemine.</stage>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ah_maman_que_je_l_ai_echappe_belle">Ah! Maman, que je l'ai échappé belle</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="10">Ah! vraiment, vous l'avez échappé belle!</l>
+              <l met="5">Sauvez-vous mon cœur.</l>
+            </sp>
+          </spGrp>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+            <l met="4">Ah! ma fureur</l>
+            <l met="4">Est immortelle!</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="10">Oui vraiment, je viens de l'échapper belle.</l>
+            <l met="5">Dieux, quelle noirceur!</l>
+            <l met="8">Fuyons, fuyons, c'est une horreur!</l>
+          </sp>
+          <stage>Elle s'enfuit.</stage>
+          <pb n="40"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Grisemine, Occide</stage>
+          <spGrp>
+            <head type="melody" subtype="melody_part">
+              <desc type="part">Suite de l'air</desc>
+              <title>
+                <title ref="#ah_maman_que_je_l_ai_echappe_belle">Ah! Maman, que je l'ai échappé belle</title>
+              </title>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="9">Elle fuit, mais je vais...</l>
+            </sp>
+          </spGrp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="9">Ah! Cruelle!</l>
+            <l met="5">Occide te fuit;</l>
+            <l met="4">L'Amour conduit</l>
+            <l met="4">Mon cœur fidèle.</l>
+          </sp>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+            <l met="9">Qu'elle meure.</l>
+          </sp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="9">Tu meurs avec elle.</l>
+          </sp>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+            <stage>à part</stage>
+            <l met="5">Un pareil danger,</l>
+            <l met="8">Vaut bien la peine d'y songer.</l>
+          </sp>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#tant_de_valeur_et_tant_de_charmes">Tant de valeur et tant de charmes</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="8">J'aurais satisfait ma vengeance;</l>
+              <l met="8">Occide est venu m'arrêter.</l>
+              <l met="8">Mon pouvoir eût pu l'écarter.</l>
+              <l met="8">Que je maudis mon imprudence!</l>
+            </sp>
+          </spGrp>
+          <pb n="41"/>
+          <stage type="musical_indication">Duo</stage>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#que_le_mal_a_de_dents">Que le mal a de dents</title>
+              </desc>
+            </head>
+            <cols n="2"/>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="5">Je frémis d'horreur,</l>
+              <l met="5">De haine, de rage;</l>
+              <l met="5">L'Amour qu'on outrage</l>
+              <l met="5">Produit la fureur.</l>
+              <l met="5">Fanfale a mon cœur:</l>
+              <l met="5">Si ton bras coupable</l>
+              <l met="5">Ne l'épargne pas,</l>
+              <l met="5">Mon courroux t'accable;</l>
+              <l met="5">Jusques chez le diable,</l>
+              <l met="5">Je suivrai tes pas.</l>
+            </sp>
+            <cb/>
+          </spGrp>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+            <l met="5">Je frémis d'horreur,</l>
+            <l met="5">De haine, de rage.</l>
+            <l met="5">L'amour qu'on outrage</l>
+            <l met="5">Se change en fureur.</l>
+            <l met="5">Fanfale a ton cœur!</l>
+            <l met="5">Elle est trop coupable</l>
+            <l met="5">Avec tant d'appas.</l>
+            <l met="5">Que l'Enfer l'accable!</l>
+            <l met="5">Je ferai le diable,</l>
+            <l met="5">Ou tu m'aimeras.</l>
+          </sp>
+          <cols n="1"/>
+          <stage>Ils sortent.</stage>
+          <stage>Fin de l'acte</stage>
+          <pb n="42"/>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 4</head>
+        <stage type="location">Le théâtre représente un caveau.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Occide<stage>seul</stage>
+          </stage>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#dans_le_fond_d_un_caveau">Dans le fond d'un caveau</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="6">Dans le fond d'un caveau</l>
+              <l met="6">Le désespoir m'entraîne;</l>
+              <l met="8">Que ce lieu soit mon tombeau.</l>
+              <l met="6">Jalousie inhumaine,</l>
+              <l met="8">Tu viens avec ton flambeau</l>
+              <l met="6">Offusquer mon cerveau.</l>
+              <l met="6">Fanfale en ce moment</l>
+              <l met="6">Nous a dit nettement</l>
+              <l met="6">Qu'elle avait un amant,</l>
+              <l met="8">Et ce n'est pas moi qui l'enchaîne,</l>
+              <l met="4">Dieux! quel tourment</l>
+              <l met="4">Mais quel rival</l>
+              <l met="2">Fatal</l>
+              <l met="4">Fait de mon bien</l>
+              <l met="2">Le sien?</l>
+              <l met="8">Sur qui dois-je éclater ma haine?</l>
+              <l met="4">Je n'en sais rien.</l>
+            </sp>
+          </spGrp>
+          <pb n="43"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Grisemine, Occide</stage>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+          </sp>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#heureuse_epee_ah_sans_elle">Heureuse épée! ah! sans elle</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="7">Je viens sur tes pas, volage,</l>
+              <l met="7">Conduite par les amours.</l>
+            </sp>
+          </spGrp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="7">Sa tendresse est une rage.</l>
+            <l met="7">Quoi! je la verrai toujours?</l>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#helas_maman_pardonnez_je_vous_prie">Hélas! maman, pardonnez, je vous prie</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="10">Si vous m'aimez, Madame, je vous prie</l>
+              <l met="10">De contenter ma curiosité:</l>
+              <l met="11">Je hais Fanfale, employez la diablerie,</l>
+              <l met="11">Je veux savoir quel rival m'a supplanté.</l>
+            </sp>
+          </spGrp>
+          <pb n="44"/>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+            <l met="10">Si tu la hais, pourquoi donc, je te prie,</l>
+            <l met="10">Cette indiscrète curiosité?</l>
+          </sp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+          </sp>
+          <spGrp>
+            <head type="melody" subtype="same_melody">Même air</head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="11">Ne craignez rien: ce n'est point par jalousie,</l>
+              <l met="11">Si je me venge; ce n'est que par fierté.</l>
+              <l met="10">Et quand j'aurai satisfait mon envie,</l>
+              <l met="10">Épousons-nous par curiosité.</l>
+            </sp>
+          </spGrp>
+          <stage>En commençant à la reprise.</stage>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+          </sp>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#pour_faire_honneur_a_la_noce">Pour faire honneur à la noce</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="7">Ne prends point d'autre vengeance</l>
+              <l met="8">Que de partir et de m'aimer.</l>
+            </sp>
+          </spGrp>
+          <pb n="45"/>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="8">Ah! cessez de vous alarmer;</l>
+            <l met="8">Contentez mon impatience.</l>
+          </sp>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+            <stage>à part</stage>
+            <l met="7">Ayons cette complaisance:</l>
+            <l met="8">De ton sort je vais t'informer.</l>
+          </sp>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_sombre_dondaine">La sombre dondaine</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="6">Formons un triple cercle,</l>
+              <l met="9">Et de l'Enfer levons le couvercle:</l>
+              <l met="6">Faisons un triple cercle,</l>
+              <l met="6">Venez, accourez tous,</l>
+              <l met="2">Broux, broux,</l>
+              <l met="2">Hiboux,</l>
+              <l met="3">Loups-garous,</l>
+              <l met="2">Matous.</l>
+            </sp>
+          </spGrp>
+          <stage>Cris de chats.</stage>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#marche_des_bostangis">Marche des Bostangis</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="3">L'éclat nuit</l>
+              <l met="8">Aux horreurs que mon art produit.</l>
+              <l met="3">Point de bruit,</l>
+              <l met="8">Éclipsons l'astre qui nous luit.</l>
+              <l met="3">Le jour fuit.</l>
+              <l met="8">Qu'il succède une affreuse nuit.</l>
+              <l met="5">Sortez des tombeaux,</l>
+              <l met="6">Armez-vous de flambeaux,</l>
+              <l met="4">Esprits follets,</l>
+              <l met="7">Sur vos manches à balais,</l>
+              <l met="6">Faites des entrechats.</l>
+              <l met="3">Dans les airs,</l>
+              <l met="8">La Lune attentive à mes airs,</l>
+              <l met="3">En tremblant,</l>
+              <l met="8">Se couvre d'un voile sanglant.</l>
+              <l met="5">J'ai le cauchemar,</l>
+              <l met="6">Mon regard est hagard,</l>
+              <l met="4">Je touche au but:</l>
+              <l met="5">Tout l'Univers souffre,</l>
+              <l met="5">Du funeste gouffre</l>
+              <l met="5">S'exhale le soufre;</l>
+              <l met="8">Chut. Mes sorts glacent d'épouvante</l>
+              <l met="2">Les Morts:</l>
+              <l met="5">L'Averne présente</l>
+              <l met="2">Ses bords,</l>
+              <l met="9">Où Cerbère tient par son licou.</l>
+              <l met="5">Au sein de l'Enfer,</l>
+              <l met="3">Lucifer</l>
+              <l met="3">M'obéit;</l>
+              <l met="4">Il en frémit:</l>
+              <l met="7">Pour apaiser son dépit,</l>
+              <l met="6">Vous qui portez son joug</l>
+              <l met="6">Rendez hommage au bouc.</l>
+            </sp>
+          </spGrp>
+          <pb n="46"/>
+          <pb n="47"/>
+          <pb n="48"/>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_suis_fait_pour_conquerir_le_monde">Je suis fait pour conquérir le monde</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="3">Je m'égare...</l>
+              <l met="5">Ô destin barbare!</l>
+              <l met="9">Le perfide trahit mon espoir!</l>
+              <l met="3">L'infidèle</l>
+              <l met="5">Court de belle en belle,</l>
+              <l met="9">Et moi seule, je ne puis l'avoir!</l>
+              <l met="5">Frémis scélérat,</l>
+              <l met="8">L'Amour punit ton cœur ingrat;</l>
+              <l met="5">Ta maîtresse enfin</l>
+              <l met="8">À ton rival donne la main;</l>
+              <l met="7">On prépare le festin.</l>
+            </sp>
+          </spGrp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#branle_de_metz">Je n'en dirai pas le nom</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="7">Quelle affreuse jalousie!</l>
+              <l met="7">Mon rival... Ah! quel guignon!</l>
+              <l met="7">Et! comment le nomme-t-on?</l>
+              <l met="7">Achevez, je vous supplie.</l>
+            </sp>
+          </spGrp>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+            <l met="7">Je n'en dirai pas le nom.</l>
+          </sp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="7">À quoi sert donc ta magie?</l>
+          </sp>
+          <sp who="#grisemine">
+            <speaker>Grisemine</speaker>
+            <l met="7">Je n'en dirai pas le nom,</l>
+            <l met="7">Mais écoute ma chanson.</l>
+          </sp>
+          <pb n="49"/>
+          <spGrp who="#grisemine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#guerissez_moi_mon_mal_ma_chere_mere">Guérissez-moi mon mal, ma chère mère</title>
+              </desc>
+            </head>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="8">Que la rage, que la douleur,</l>
+              <l met="8">Que cent diables rongent ton cœur.</l>
+              <l met="8">Tout disparaît, quelle terreur!</l>
+              <l met="8">Dieux! quel chaos! Dieux! quelle horreur!</l>
+              <l met="6">Qu'on me soutienne;</l>
+            </sp>
+            <sp who="#grisemine">
+              <speaker>Grisemine</speaker>
+              <l met="6">Occide,</l>
+              <l met="2">Perfide!</l>
+              <l met="8">Je meurs d'amour et de fureur.</l>
+            </sp>
+          </spGrp>
+          <stage>Des monstres soutiennent Grisemine et l'emmènent.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Occide<stage>seul</stage>
+          </stage>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#petits_grands">Pendus</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="8">Je ne suis guère mieux instruit.</l>
+              <l met="8">Quel est le rival qui me nuit?</l>
+              <l met="8">Fanfale aujourd'hui se marie!</l>
+              <l met="8">Destin cruel! j'entre en furie...</l>
+              <l met="8">Déjà le salon est paré,</l>
+              <l met="8">Et le festin est préparé!</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#folia">Folies d'Espagne</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="10">De leur bonheur je me fais une image,</l>
+              <l met="4">Je vois leurs jeux,</l>
+              <l met="6">Leurs transports amoureux.</l>
+              <l met="10">Perfide!... Arrête et redoute ma rage...</l>
+            </sp>
+          </spGrp>
+          <pb n="50"/>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#dieux_quel_moment">Dieux! quel moment</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="6">Fanfale et son amant...</l>
+              <l met="4">Dieux! quel moment!...</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">Menuettiré d' <title ref="#omphale">Omphale</title> ()</desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="8">Les plaisirs vont les suivre en foule;</l>
+              <l met="6">L'un près de l'autre assis,</l>
+              <l met="7">Il n'ont plus aucuns soucis</l>
+              <l met="8">Qu'à leurs yeux le buffet s'écroule:</l>
+              <l met="4">Sabre à la main,</l>
+              <l met="8">Je saurai troubler le festin:</l>
+              <l met="8">À leurs pieds que la table roule,</l>
+              <l met="5">Et que leur sang cou...le</l>
+              <l met="4">Avec le vin.</l>
+            </sp>
+          </spGrp>
+          <stage>Fin de l'acte</stage>
+          <pb n="51"/>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 5</head>
+        <stage type="location">Le théâtre représente un lieu préparé pour un festin de noces.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Fanfale<stage>seule</stage>
+          </stage>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#menuet_allemand">Menuet allemand</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="5">Viens, dieu que j'adore,</l>
+              <l met="6">Vole, Amour je t'implore;</l>
+              <l met="3">Au vainqueur,</l>
+              <l met="3">De mon cœur,</l>
+              <l met="7">Peins l'ardeur qui me dévore:</l>
+              <l met="6">Que n'ai-je plus d'attraits?</l>
+              <l met="5">Amour, prends tes armes,</l>
+              <l met="4">Lance tes traits,</l>
+              <l met="5">Prête-moi tes feux,</l>
+              <l met="6">Et redouble mes charmes,</l>
+              <l met="7">Pour ne briller qu'à ses yeux.</l>
+              <l met="7">Aux jaloux mets ton bandeau,</l>
+              <l met="9">Et donne à ton amant ton flambeau.</l>
+            </sp>
+          </spGrp>
+          <pb n="52"/>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_ne_sais_pas_ecrire">Je ne sais pas écrire</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="8">Mais, c'est lui qui vient en ces lieux.</l>
+            </sp>
+          </spGrp>
+          <pb n="53"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Fanfale, Titi</stage>
+          <spGrp>
+            <head type="melody" subtype="melody_part">
+              <desc type="part">Suite de l'air</desc>
+              <title>
+                <title ref="#je_ne_sais_pas_ecrire">Je ne sais pas écrire</title>
+              </title>
+            </head>
+            <sp who="#titi">
+              <speaker>Titi</speaker>
+              <l met="8">Si mon aspect blesse vos yeux,</l>
+              <l met="6">Parlez, je me retire.</l>
+            </sp>
+          </spGrp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="8">Restez donc: vous m'aimez, Titi;</l>
+            <l met="8">Hé bien! moi, je vous aime aussi,</l>
+            <l met="6">Puisqu'il faut tout vous dire.</l>
+          </sp>
+          <spGrp who="#fanfale">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mariez_mariez_moi">Mariez, mariez-moi</title>
+              </desc>
+            </head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="7">J'ai compté sur votre foi,</l>
+              <l met="7">La noce est prête d'avance;</l>
+              <l met="7">Tout est arrangé chez moi,</l>
+              <l met="7">Admirez ma prévoyance;</l>
+              <l met="10">Marions, marions, marions-nous.</l>
+            </sp>
+          </spGrp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="7">Vous comblez mon espérance.</l>
+          </sp>
+          <spGrp>
+            <caption>Ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="10">Marions, marions, marions-nous.</l>
+            </sp>
+          </spGrp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="7">Mais je vois notre jaloux.</l>
+          </sp>
+          <pb n="54"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Occide, Fanfale, Titi</stage>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <stage>le sabre à la main</stage>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#voici_dragons">Voici les dragons qui viennent</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="7">Que ce couple trop perfide</l>
+              <l met="5">Tombe sous mes coups:</l>
+              <l met="7">Que le désespoir me guide.</l>
+            </sp>
+          </spGrp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="7">Fuyons la fureur d'Occide,</l>
+            <l met="3">Sauvons-nous.</l>
+          </sp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="4">Oui, sauvons-nous.</l>
+          </sp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ces_filles_sont_si_sottes">Ces filles sont si sottes</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="8">Arrêtez! Mais... je vois Titi!</l>
+            </sp>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="8">Pour la punir tu viens ici?</l>
+            </sp>
+          </spGrp>
+          <stage>À Titi.</stage>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="6">Vous comptez sans votre hôte:</l>
+            <l met="8">En secret, j'étais son amant;</l>
+            <l met="8">Mais ce n'est pas ma faute.</l>
+          </sp>
+          <pb n="55"/>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="8">Comment?</l>
+          </sp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="6">Non, ce n'est pas ma faute.</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <stage>à part</stage>
+          </sp>
+          <spGrp>
+            <head type="melody" subtype="empty_melody">Air vide</head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="8">Oh Ciel! nous voilà dans la crise!</l>
+            </sp>
+          </spGrp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="8">Rien n'est égal à ma surprise,</l>
+            <l met="8">Un ami, jouer de ces tours!</l>
+            <l met="7">C'est ce qu'on voit tous les jours.</l>
+          </sp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mais_mais_fort_singulier">Mais, mais, fort singulier</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="8">Vengeons ma tendresse trahie.</l>
+            </sp>
+          </spGrp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="4">Quels procédés!</l>
+            <l met="8">Avec vos traits de jalousie,</l>
+            <l met="4">Vous m'excédez.</l>
+            <l met="8">Sans votre avis, si bon me semble,</l>
+            <l met="8">Ne puis-je pas me marier?</l>
+            <l met="8">Un soldat serait moins altier.</l>
+          </sp>
+          <pb n="56"/>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <l met="8">Je suis en fureur.</l>
+          </sp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="8">Moi, je tremble.</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="8">Vous êtes, mon bel officier,</l>
+            <l met="3">Singulier,</l>
+            <l met="5">Mais fort singulier,</l>
+            <l met="6">Mais, mais fort singulier.</l>
+          </sp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+          </sp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ici_chacun">Malheureuse journée</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="6">Vous qui causez ma peine,</l>
+              <l met="6">Vous la partagerez,</l>
+              <l met="6">L'amour jaloux m'entraîne;</l>
+              <l met="6">Mourez, ingrats, mourez...</l>
+            </sp>
+          </spGrp>
+          <stage>Symphonie douce.</stage>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#qu_allais_tu_faire_dans_cette_galere">Qu'allais-tu faire dans cette galère</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="4">Qu'allais-je faire?</l>
+              <l met="3">Lère, lère,</l>
+              <l met="5">La raison m'éclaire.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#nanon_dormait">Allons à la guinguette</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="4">Je vois l'Hymen,</l>
+              <l met="6">C'est un joug qu'il m'apprête;</l>
+              <l met="4">Cet examen,</l>
+              <l met="6">Fort à propos m'arrête:</l>
+              <l met="6">Qu'ils s'aiment tout leur soû,</l>
+            </sp>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="8">Pour moi je ne suis pas si fou.</l>
+            </sp>
+          </spGrp>
+          <stage>Accompagnement qui imite le chant du coucou.</stage>
+          <pb n="57"/>
+          <stage>Symphonie.</stage>
+          <spGrp who="#occide">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ca_n_dur_ra_pas_toujours">Ca n'dur'ra pas toujours</title>
+              </desc>
+            </head>
+            <sp who="#occide">
+              <speaker>Occide</speaker>
+              <l met="6">À leur noce je danse:</l>
+              <l met="6">Vivez en bons époux.</l>
+            </sp>
+          </spGrp>
+          <sp who="#titi">
+            <speaker>Titi</speaker>
+            <l met="6">Ah! quelle heureuse chance!</l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+            <l met="6">Est-il un sort plus doux!</l>
+          </sp>
+          <spGrp>
+            <caption>Fanfale et titi</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="6">Que nos tendres amours,</l>
+              <l met="6">Puissent durer toujours<stage type="ter">ter</stage>
+              </l>
+            </sp>
+          </spGrp>
+          <sp who="#occide">
+            <speaker>Occide</speaker>
+            <stage>à part, en même temps</stage>
+            <l met="6">Ça n'dur'ra pas toujours<stage type="ter">ter</stage>
+            </l>
+          </sp>
+          <sp who="#fanfale">
+            <speaker>Fanfale</speaker>
+          </sp>
+          <spGrp>
+            <head type="vaudeville-chorus">1</head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="7">Que le plaisir nous enchante,</l>
+              <l met="7">Qu'il soit l'âme du repas:</l>
+              <l met="7">Que l'on boive, que l'on chante;</l>
+              <l met="7">Oublions tous nos débats.</l>
+              <l met="7">Avec ce jus délectable,</l>
+              <l met="7">Le chagrin n'est plus permis;</l>
+              <l met="7">Et c'est toujours à la table</l>
+              <l met="7">Que l'on devient bons amis.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <head type="vaudeville-chorus">2</head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="7">C'est le moment du silence,</l>
+              <l met="7">Quand on sert les premiers plats;</l>
+              <l met="7">Qu'on s'observe avec décence,</l>
+              <l met="7">Et l'on se parle tout bas:</l>
+              <l met="7">L'entremets rend plus aimable;</l>
+              <l met="7">Au dessert on voit les ris:</l>
+              <l met="7">Quand le champagne est sur table,</l>
+              <l met="7">On devient tous bons amis.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <head type="vaudeville-chorus">3</head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="7">Dans un cercle, la saillie</l>
+              <l met="7">Cause souvent du dépit;</l>
+              <l met="7">La plus légère ironie</l>
+              <l met="7">Est un vice de l'esprit:</l>
+              <l met="7">Dans un repas agréable,</l>
+              <l met="7">Tous les bons mots sont bien pris;</l>
+              <l met="7">La franchise règne à table,</l>
+              <l met="7">On est toujours bons amis.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <head type="vaudeville-chorus">4</head>
+            <sp who="#fanfale">
+              <speaker>Fanfale</speaker>
+              <l met="7">Que je sais de gens sévères,</l>
+              <l met="7">Durs et brusques le matin,</l>
+              <l met="7">Qui, le soir, au bruit des verres,</l>
+              <l met="7">Ont un plaisir clandestin:</l>
+              <l met="7">Leur humeur est plus affable,</l>
+              <l met="7">Et dans des soupers jolis,</l>
+              <l met="7">Avec eux l'Amour à table</l>
+              <l met="7">Les rend les meilleurs amis.</l>
+            </sp>
+          </spGrp>
+          <pb n="60"/>
+          <sp who="#unpaysan">
+            <speaker>Un Paysan</speaker>
+          </sp>
+          <spGrp>
+            <head type="vaudeville-chorus">5</head>
+            <sp who="#unpaysan">
+              <speaker>Un Paysan</speaker>
+              <l met="7">Allons gai, cher camarade,</l>
+              <l met="7">Je t'attends le verre en main;</l>
+              <l met="7">Il faut boire une rasade</l>
+              <l met="7">À la santé de Catin:</l>
+              <l met="7">Si la belle peu traitable,</l>
+              <l met="7">T'as causé de noirs soucis;</l>
+              <l met="7">Morgué, fais la mettre à table,</l>
+              <l met="7">Vous deviendrez bons amis.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <head type="vaudeville-chorus">6</head>
+            <sp who="#unpaysan">
+              <speaker>Un Paysan</speaker>
+              <l met="7">Blaise, barbier du village,</l>
+              <l met="7">Pour humer du vin clairet,</l>
+              <l met="7">Les soirs quitte son ménage,</l>
+              <l met="7">Et chopine au cabaret:</l>
+              <l met="7">Sa moitié qui fait le diable</l>
+              <l met="7">Va l'étourdir de ses cris;</l>
+              <l met="7">Blaise la fait mettre à table</l>
+              <l met="7">Ils en sortent bons amis.</l>
+            </sp>
+          </spGrp>
+          <stage>Fin</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

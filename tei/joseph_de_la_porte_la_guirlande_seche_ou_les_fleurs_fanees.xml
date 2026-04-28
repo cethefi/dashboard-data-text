@@ -1,0 +1,787 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="joseph_de_la_porte_la_guirlande_seche_ou_les_fleurs_fanees">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">La Guirlande sèche</title>
+        <title type="sub">Les Fleurs fanées</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Joseph de la Porte</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Rousseau</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">dans<emph>Observations sur la littérature</emph>, par M.l'abbé De la Porte, tome V, Londres, Duchesne, 1752</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="arlequin" sex="UNKNOWN">
+            <persName>Arlequin</persName>
+          </person>
+          <person xml:id="coraline" sex="UNKNOWN">
+            <persName>Coraline</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">[arlequin]</stage>
+        <pb n="316"/>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="4">Quel désespoir!</l>
+          <l met="8">Ma pauvre guirlande est flétrie,</l>
+          <l met="4">Quel désespoir!</l>
+          <l met="8">En quel état va-t-on la voir?</l>
+          <l met="4">Hier au soir,</l>
+          <l met="8">Elle était encor si jolie!</l>
+          <l met="4">Quel désespoir!</l>
+          <l met="8">Amour, j'implore ton pouvoir.</l>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_vous_le_donne">Je vous le donne</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="4">Par un miracle,</l>
+            <l met="8">Tu peux réparer mon forfait,</l>
+            <l met="8">Je te mettrai sur le pinacle,</l>
+            <l met="8">Si tu rajeunis mon bouquet</l>
+            <l met="4">Par un miracle.</l>
+          </sp>
+        </spGrp>
+        <stage>Il pose la guirlande sur l'autel de l'amour, et il quitte le théâtre, sans trop savoir pourquoi, à moins que ce ne soit pour donner le temps à Coraline de changer ses fleurs contre celles de son amant, ce qu'elle ne pourrait pas faire, si Arlequin se trouvait là présent.</stage>
+        <pb n="317"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">coraline<stage>seule</stage>
+        </stage>
+        <sp who="#coraline">
+          <speaker>Coraline</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#coraline">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_m_entendez_vous_pas">Ne m'entendez-vous pas</title>
+            </desc>
+          </head>
+          <sp who="#coraline">
+            <speaker>Coraline</speaker>
+            <l met="6">Arlequin ne vient pas,</l>
+            <l met="6">Son retard me chagrine!</l>
+            <l met="6">Ah! Pauvre Coraline,</l>
+            <l met="6">Que je te plains, hélas!</l>
+            <l met="6">Arlequin ne vient pas.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#coraline">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_vous_le_donne">Je vous le donne</title>
+            </desc>
+          </head>
+          <sp who="#coraline">
+            <speaker>Coraline</speaker>
+            <l met="4">Quel soin l'arrête!</l>
+            <l met="8">Que lui peut-il être arrivé?</l>
+            <l met="8">Par une nouvelle conquête</l>
+            <l met="8">Son cœur serait-il captivé?</l>
+            <l met="4">Quel soin l'arrête?</l>
+          </sp>
+        </spGrp>
+        <stage>Elle aperçoit la guirlande qu'Arlequin a posée sur l'autel de l'Amour, et elle s'écrie</stage>
+        <spGrp who="#coraline">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_autre_jour_dame_claudine">L'autre jour, Dame Claudine</title>
+            </desc>
+          </head>
+          <sp who="#coraline">
+            <speaker>Coraline</speaker>
+            <l met="7">Quel objet frappe ma vue?</l>
+            <l met="7">Mon âme en est toute émue!</l>
+            <l met="7">Ce cruel aspect me tue.</l>
+            <l met="7">Ciel! Quel affreux changement!</l>
+          </sp>
+          <sp who="#coraline">
+            <speaker>Coraline</speaker>
+            <l met="7">Cette guirlande fanée</l>
+            <l met="7">M'annonce ma destinée,</l>
+            <l met="7">Ah! Je suis abandonnée</l>
+            <l met="7">De mon infidèle amant!</l>
+          </sp>
+        </spGrp>
+        <pb n="318"/>
+        <stage>Elle s'approche de l'autel.</stage>
+        <spGrp who="#coraline">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#j_ai_des_vapeurs">J'ai des vapeurs</title>
+            </desc>
+          </head>
+          <sp who="#coraline">
+            <speaker>Coraline</speaker>
+            <l met="8">Vois, perfide, à quoi tu m'exposes,</l>
+            <l met="2">Tu causes</l>
+            <l met="4">Tous mes malheurs.</l>
+            <l met="8">Déjà je sens que j'y succombe</l>
+            <l met="2">Je tombe</l>
+            <l met="4">Quelles douleurs!</l>
+            <l met="8">Dans mon corps tout mon sang se glace,</l>
+            <l met="5">Et j'en ai l'esprit</l>
+            <l met="3">Interdit.</l>
+            <l met="8">De mes yeux la clarté s'efface,</l>
+            <l met="4">J'ai des vapeurs,</l>
+            <l met="3">Je me meurs.</l>
+          </sp>
+        </spGrp>
+        <stage>Elle tombe, accablée, sur l'autel, puis revenant à elle:</stage>
+        <spGrp who="#coraline">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nous_villageois">Je n'ai, pour toute maison</title>
+            </desc>
+          </head>
+          <sp who="#coraline">
+            <speaker>Coraline</speaker>
+            <l met="7">Oublions à notre tour</l>
+            <l met="8">Jusques au nom de l'infidèle,</l>
+            <l met="7">Qui, méprisant mon amour,</l>
+            <l met="8">Brûle d'une flamme nouvelle.</l>
+            <l met="8">L'ingrat, s'il a pu me trahir,</l>
+            <l met="8">Saura que je puis le haïr.</l>
+            <l met="8">Mais que dis-je? Ah! Pour lui mon cœur</l>
+            <l met="8">N'a jamais senti tant d'ardeur!</l>
+          </sp>
+        </spGrp>
+        <pb n="319"/>
+        <stage>C'est par un effet de cette ardeur vive et sincère que, pour épargner à son amant la honte de paraître infidèle, elle met sa guirlande à la place de celle d'Arlequin, qu'elle cache derrière un buisson de l'un des deux côtés du théâtre. Ce n'est par conséquent ni pour l'éprouver, ni pour lui jouer un tour, comme le prétend Monsieur Marmontel. Car, dans la situation où se trouve cette amante désolée, elle doit plutôt penser à ramener son amant par de nouvelles marques de tendresse que de s'amuser à rire et à lui faire de petites niches. Après avoir ainsi changé les deux guirlandes, Coraline quitte le théâtre sans autre raison que de céder la place à Arlequin, qui, comme nous l'avons vu, venait de lui faire la même politesse.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Arlequin<stage>seul, dans l'abattement</stage>
+        </stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#folia">Folies d'Espagne</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="10">Fût-on jamais dans un cas plus horrible!</l>
+            <l met="10">Comment sortir de ce triste embarras?</l>
+            <l met="10">J'y vois, hélas! un obstacle invincible:</l>
+            <l met="10">Tout mon esprit ne m'en tirera pas.</l>
+          </sp>
+        </spGrp>
+        <pb n="320"/>
+        <stage>Il aperçoit au pied de l'autel la guirlande, dont l'éclat lui parait ranimé.</stage>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fraises">Jardinier, ne vois-tu pas</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Que vois-je? Ah! L'amour vainqueur</l>
+            <l met="6">A détruit cet obstacle!</l>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Rien n'égale mon bonheur,</l>
+            <l met="7">Crions, crions de bon cœur</l>
+            <l met="8">Miracle, miracle, miracle!</l>
+          </sp>
+        </spGrp>
+        <stage>Il s'approche de l'autel.</stage>
+        <stage>Il fait plusieurs lazzi avant de porter la main sur la guirlande: il hésite à ma prendre, et il craint qu'en la touchant les fleurs ranimées ne perdent de nouveau leur éclat sous ses doigts.</stage>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Il faut pour n'en point douter</l>
+            <l met="6">Voir de plus près la chose...</l>
+            <l met="7">Je voudrais bien la tâter,</l>
+            <l met="7">Mais de peur de la gâter</l>
+            <l met="8">Je n'ose, je n'ose, je n'ose!</l>
+          </sp>
+        </spGrp>
+        <pb n="321"/>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#du_haut_en_bas">Du haut en bas</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="4">Laissons-la là,</l>
+            <l met="8">L'amour la prend sous sa tutelle,</l>
+            <l met="4">Laissons-la là,</l>
+            <l met="8">Et Coraline l'y verra.</l>
+            <l met="8">Nous venons de l'échapper belle,</l>
+            <l met="8">Craignons quelque attrape nouvelle,</l>
+            <l met="4">Laissons-la là.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Prévôt des marchands</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Mais d'un nouvel engagement</l>
+            <l met="8">Je ne crains point le châtiment.</l>
+            <l met="8">J'aime ma première maîtresse</l>
+            <l met="8">Tout autre objet m'est odieux.</l>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Viens, et tu liras ma tendresse</l>
+            <l met="8">Moins dans ces fleurs que dans mes yeux.</l>
+          </sp>
+        </spGrp>
+        <stage>Il aperçoit Coraline.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Arlequin, Coraline</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">De tous les capucins du monde</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Tu me paraîs toujours plus belle.</l>
+          </sp>
+        </spGrp>
+        <pb n="322"/>
+        <sp who="#coraline">
+          <speaker>Coraline</speaker>
+          <stage>ironiquement</stage>
+          <l met="8">Et toi, toujours aussi fidèle.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Mais quel soupçon vient t'alarmer?</l>
+          <l met="8">Sais-tu que c'est me faire injure?</l>
+          <l met="8">Va, mon enfant, je sais aimer,</l>
+          <l met="8">Sans être ou volage ou parjure.</l>
+        </sp>
+        <sp who="#coraline">
+          <speaker>Coraline</speaker>
+        </sp>
+        <spGrp who="#coraline">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pour_heritage">Pour héritage</title>
+            </desc>
+          </head>
+          <sp who="#coraline">
+            <speaker>Coraline</speaker>
+            <l met="4">Quel est le gage</l>
+            <l met="6">De ta fidélité?</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>montrant avec empressement la guirlande qui est sur l'autel</stage>
+          <l met="4">Ce témoignage</l>
+          <l met="6">Sera-t-il contesté?</l>
+          <l met="4">Tu vois ces fleurs,</l>
+          <l met="6">Belles, fraiches, vermeilles.</l>
+          <l met="8">Sur des assurances pareilles,</l>
+          <l met="5">Calme tes frayeurs.</l>
+        </sp>
+        <pb n="323"/>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#viens_viens">Viens, viens</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Mais toi, qui me fais l'outrage</l>
+            <l met="5">D'avoir de l'ombrage,</l>
+            <l met="5">N'es-tu pas volage</l>
+            <l met="3">À ton tour?</l>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Ah! Ah! Tu rougis friponne,</l>
+            <l met="5">Je crains, je frissonne.</l>
+            <l met="7">Quoi, tu m'as manqué d'amour?</l>
+          </sp>
+        </spGrp>
+        <stage>Coraline feint d'être embarrassée.</stage>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Mais non, je connais ta tendresse,</l>
+            <l met="8">Tu m'as toujours gardé ta foi,</l>
+            <l met="8">Loin donc un soupçon qui te blesse,</l>
+            <l met="8">Et qui n'est pas digne de moi.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#a_quoi_s_occupe_madelon">À quoi s'occupe Madelon</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Pour bannir ce doute odieux</l>
+            <l met="7">Apporte-moi ta guirlande,</l>
+            <l met="8">Car on dit qu'on croit toujours mieux</l>
+            <l met="7">Ce que l'on voit de ses yeux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#coraline">
+          <speaker>Coraline</speaker>
+        </sp>
+        <spGrp who="#coraline">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#contre_engagement">Contre un engagement</title>
+            </desc>
+          </head>
+          <sp who="#coraline">
+            <speaker>Coraline</speaker>
+            <l met="6">Pourquoi donc, si mon cœur</l>
+            <l met="6">Te fut toujours fidèle?</l>
+            <l met="6">Veux-tu de mon ardeur</l>
+            <l met="6">Une preuve nouvelle?</l>
+          </sp>
+        </spGrp>
+        <pb n="324"/>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="6">La chose est naturelle.</l>
+        </sp>
+        <sp who="#coraline">
+          <speaker>Coraline</speaker>
+          <l met="6">Tu blesses ma vertu.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="6">Par tes refus, cruelle,</l>
+          <l met="6">Pourquoi m'y forces-tu?</l>
+        </sp>
+        <sp who="#coraline">
+          <speaker>Coraline</speaker>
+        </sp>
+        <spGrp who="#coraline">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#qu_avez_vous_fait_mon_general">Qu'avez-vous fait, mon général</title>
+            </desc>
+          </head>
+          <sp who="#coraline">
+            <speaker>Coraline</speaker>
+            <l met="8">Eh bien! Si j'avais d'un amant</l>
+            <l met="6">Enduré les approches</l>
+            <l met="8">Oserais-tu, sérieusement,</l>
+            <l met="6">M'en faire des reproches?</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_suis_carmelite_moi">Je suis Carmélite, moi</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="10">Pour une fois qu'une maîtresse aimable</l>
+            <l met="6">Tombe dans ce péché</l>
+            <l met="10">Il ne faut pas qu'un amant raisonnable</l>
+            <l met="6">En paraisse fâché.</l>
+            <l met="10">C'est mon avis ma chère, et tu vois comme</l>
+            <l met="7">Je suis un bon homme moi,</l>
+            <l met="5">Je suis un bon homme.</l>
+          </sp>
+        </spGrp>
+        <pb n="325"/>
+        <sp who="#coraline">
+          <speaker>Coraline</speaker>
+        </sp>
+        <spGrp who="#coraline">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_m_entendez_bien">Où allez-vous, monsieur l'abbé</title>
+            </desc>
+          </head>
+          <sp who="#coraline">
+            <speaker>Coraline</speaker>
+            <l met="8">Sa bouche vient dans ce moment</l>
+            <l met="8">De prononcer son jugement.</l>
+          </sp>
+          <sp who="#coraline">
+            <speaker>Coraline</speaker>
+            <l met="8">Car voilà la guirlande, hé bien,</l>
+            <l met="5">Que le traître demande</l>
+            <l met="5">Vous m'entendez bien.</l>
+          </sp>
+        </spGrp>
+        <stage>Elle montre celle qui est sur l'autel.</stage>
+        <stage>Elle continue ironiquement.</stage>
+        <spGrp who="#coraline">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#he_allons_donc_mademoiselle">Hé, allons donc, mademoiselle</title>
+            </desc>
+          </head>
+          <sp who="#coraline">
+            <speaker>Coraline</speaker>
+            <l met="7">Cette guirlande si belle,</l>
+            <l met="7">Arlequin, est-elle à toi?</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="7">Mais à qui donc serait-elle?</l>
+        </sp>
+        <sp who="#coraline">
+          <speaker>Coraline</speaker>
+          <l met="7">Veux-tu le savoir? À moi.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Hé, allons donc, mademoiselle,</l>
+          <l met="7">Vous voulez rire, je crois.</l>
+        </sp>
+        <sp who="#coraline">
+          <speaker>Coraline</speaker>
+        </sp>
+        <spGrp who="#coraline">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#barbari">À la façon de Barbari, mon ami</title>
+            </desc>
+          </head>
+          <sp who="#coraline">
+            <speaker>Coraline</speaker>
+            <l met="8">Non, non, vraiment, je ne ris point,</l>
+            <l met="6">Et, si tu veux, sans peine,</l>
+            <l met="8">Je vais te donner sur ce point</l>
+            <l met="6">Une preuve certaine.</l>
+            <l met="8">Viens voir derrière ce buisson,</l>
+            <l met="11">La faridondaine, la faridondon,</l>
+            <l met="8">Comme ta guirlande y fleurit,</l>
+            <l met="3">Biribi,</l>
+            <l met="8">À la façon de barbari,</l>
+            <l met="3">Mon ami.</l>
+          </sp>
+        </spGrp>
+        <pb n="326"/>
+        <stage>Elle court avec empressement chercher la guirlande d'Arlequin, dont l'amour, pour le punir de sa trahison, a changé toutes les roses en g... . Ce nouveau changement persuade toujours de plus en plus à Arlequin que les fleurs qu'il voit sur l'autel de l'amour lui appartiennent et que la guirlande fanée est celle de Coraline. Il s'écrit alors, avec un étonnement mêlé d'indignation:</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#viens_fils_de_venus">Viens, fils de Vénus</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="5">Ah! Qu'ai-je aperçu!</l>
+            <l met="5">Tu me trahissais!</l>
+            <l met="4">Je suis c...</l>
+            <l met="3">Tu prenais</l>
+            <l met="6">Arlequin pour ta dupe!</l>
+            <l met="3">D'une huppe</l>
+            <l met="4">Tu me coiffais,</l>
+            <l met="10">Dans le temps, perfide, où tu me flattais!</l>
+          </sp>
+        </spGrp>
+        <pb n="327"/>
+        <sp who="#coraline">
+          <speaker>Coraline</speaker>
+          <l met="5">Finis, je te pris,</l>
+          <l met="8">Parle-moi sur un autre ton.</l>
+          <l met="5">La plaisanterie</l>
+          <l met="8">Sur ce point, n'est plus de saison.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <stage>En montrant l'autel de l'amour où il avait mis sa guirlande.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="7">Quoi, tu peux me dire en face</l>
+          <l met="7">Que moi-même, en cette place,</l>
+          <l met="7">Je n'ai point porté ces fleurs?</l>
+        </sp>
+        <sp who="#coraline">
+          <speaker>Coraline</speaker>
+          <l met="9">Ah! Finis tes discours imposteurs!</l>
+          <l met="9">Ne joins point la honte à mes douleurs.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#catherine">Ton humeur est, Catherine</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Pour éclaircir ce mystère</l>
+            <l met="7">Sans tant de raisonnements,</l>
+            <l met="7">Et connaître au vrai l'affaire,</l>
+            <l met="7">Éxaminons nos rubans.</l>
+          </sp>
+        </spGrp>
+        <sp who="#coraline">
+          <speaker>Coraline</speaker>
+          <l met="7">Le mien est couleur de roses.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="7">Et le mien est gris de lin.</l>
+        </sp>
+        <pb n="328"/>
+        <sp who="#coraline">
+          <speaker>Coraline</speaker>
+          <stage>après avoir fait voir que son ruban est attaché à la guirlande fraîche</stage>
+          <l met="7">Dis à présent, si tu l'oses,</l>
+          <l met="7">Quel est le traître?</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>tout confus</stage>
+          <l met="7">Arlequin.</l>
+        </sp>
+        <sp who="#coraline">
+          <speaker>Coraline</speaker>
+        </sp>
+        <spGrp who="#coraline">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#j_obtiens_ta_main_ma_chere_agate">J'obtiens ta main, ma chère Agate</title>
+            </desc>
+          </head>
+          <sp who="#coraline">
+            <speaker>Coraline</speaker>
+            <l met="8">Va, ne crains rien de ma colère,</l>
+            <l met="8">Ta faute n'est que passagère,</l>
+            <l met="8">Et j'aurais tort de t'en vouloir.</l>
+            <l met="8">Tu viens de porter la sentence</l>
+            <l met="8">Qui doit m'apprendre mon devoir</l>
+            <l met="8">Et tu te jugeais par avance</l>
+            <l met="4">Sans le savoir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_long_de_la_riviere">Le long de la rivière</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="6">Ajoute à ce pardon</l>
+            <l met="6">Une grâce nouvelle.</l>
+            <l met="6">De ta main fais-moi don,</l>
+            <l met="6">Marions-nous, la belle!</l>
+            <l met="6">Eh! Chantons, chantons donc</l>
+            <l met="6">Sur un air de ruelle,</l>
+            <l met="6">Chantons à l'unisson</l>
+            <l met="6">La belle chanson.</l>
+          </sp>
+        </spGrp>
+        <pb n="329"/>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nous_nous_marierons_dimanche">Nous nous marierons dimanche</title>
+            </desc>
+          </head>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="5">Un hymen heureux</l>
+            <l met="5">Va combler nos vœux,</l>
+            <l met="7">Nous nous marierons dimanche.</l>
+            <l met="4">Sur ce bonheur</l>
+            <l met="4">Que notre cœur</l>
+            <l met="2">S'épanche,</l>
+            <l met="4">Après cela</l>
+          </sp>
+          <cols n="2"/>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="6">Tu prendras ta revanche.</l>
+        </sp>
+        <cb/>
+        <sp who="#coraline">
+          <speaker>Coraline</speaker>
+          <l met="6">Je prendrai ma revanche.</l>
+          <l met="5">Un hymen heureux</l>
+          <l met="5">Va combler nos vœux.</l>
+          <l met="7">Nous nous marierons dimanche.</l>
+        </sp>
+        <cols n="1"/>
+      </div>
+    </body>
+  </text>
+</TEI>

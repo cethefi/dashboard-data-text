@@ -1,0 +1,721 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="les_vendanges_de_la_foire_1724">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Les Vendanges de la Foire</title>
+        <title type="sub">Vaudeville</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Le Sage et d'Orneval</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">FIXME - missing source</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="gilles" sex="UNKNOWN">
+            <persName>Gille</persName>
+          </person>
+          <person xml:id="sauteurs" sex="UNKNOWN">
+            <persName>Sauteurs</persName>
+          </person>
+          <person xml:id="entrepreneur" sex="UNKNOWN">
+            <persName>L'entrepreneur</persName>
+          </person>
+          <person xml:id="operacomique" sex="UNKNOWN">
+            <persName>L'Opéra-Comique</persName>
+          </person>
+          <person xml:id="choeurb" sex="UNKNOWN">
+            <persName>Chœur</persName>
+          </person>
+          <person xml:id="arlequin" sex="UNKNOWN">
+            <persName>Arlequin</persName>
+          </person>
+          <person xml:id="gille" sex="UNKNOWN">
+            <persName>Gille</persName>
+          </person>
+          <person xml:id="l_opera_comique" sex="UNKNOWN">
+            <persName>L'Opéra-Comique</persName>
+          </person>
+          <person xml:id="acteurs_et_actrices" sex="UNKNOWN">
+            <persName>Acteurs et actrices</persName>
+          </person>
+          <person xml:id="entrepreneurs_de_l_opera_comique" sex="UNKNOWN">
+            <persName>Entrepreneurs de l'Opéra-Comique</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1724">
+        <desc> 1724</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#arlequin">Arlequin</role>
+          <roleDesc>acteur des danseurs de corde</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#scaramouche">Scaramouche</role>
+          <roleDesc>acteur des danseurs de corde</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#gille">Gille</role>
+          <roleDesc>acteur des danseurs de corde</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#sauteurs">Sauteurs</role>
+          <roleDesc>acteur des danseurs de corde</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#l_opera_comique">L'Opéra-Comique</role>
+        </castItem>
+        <castItem>
+          <role ana="#acteurs_et_actrices">Acteurs et actrices</role>
+          <roleDesc>de l'Opéra-Comique</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#entrepreneurs_de_l_opera_comique">Entrepreneurs de l'Opéra-Comique</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <spGrp rend="quote">
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+          </sp>
+        </spGrp>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Arlequin, Scaramouche, Gille, troupe de sauteurs<note>Ms. 2: «<emph>Le théâtre représente un vignoble</emph>».</note>
+        </stage>
+        <stage>L'orchestre joue une marche sur l'air suivant<note>Ms. 2: «<emph>[...] suivant en ritournelle</emph>».</note>.</stage>
+        <stage>Tous les acteurs ont des hottes, des paniers et des serpettes<emph>
+            <note type="definition">Serpette: Petite serpe qui sert à tailler la vigne, à couper les raisins en vendanges, à émonder les petites branches des arbres, et autres usages (Acad.1694)</note>
+          </emph>, ils sont en souquenilles<emph>
+            <note type="definition">Souquenille: Sorte de surtout fort long, fait de grosse toile et qu'on donne ordinairement aux cochers et aux palfreniers, pour s'en couvrir quand il pansent les chevaux (Acad.1798)</note>
+          </emph>, en guêtres et en sabots et portent avec eux une vieille futaille<emph>
+            <note>Dans le Ms. 2, on lit « futaine ». Il semble plutôt s'agir d'une futaille, qui est un récipient de bois servant à mettre le vin (un tonneau).</note>
+          </emph>. Ils ont à leur tête un homme qui joue de la cornemuse.</stage>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nanon_dormait">Nanon dormait</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="4">Nos bons voisins</l>
+            <l met="6">Vont prendre la serpette.</l>
+            <l met="4">De nos raisins</l>
+            <l met="6">Faisons aussi cueillette.</l>
+            <l met="4">Allons, allons,</l>
+            <l met="6">Allons tous en vendange,</l>
+            <l met="2">Allons.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeurb">
+          <speaker>Chœur</speaker>
+          <l met="2">Allons, etc.</l>
+        </sp>
+        <stage>L'orchestre reprend le même air pour la troisième fois et la troupe achève sa marche.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">L'Opéra-Comique, ses acteurs et ses trois entrepreneurs</stage>
+        <stage>L'orchestre joue pour marche l'air suivant<note>Ms. 2: «<emph>[...] suivant et la suite comme elle est dans l'opéra</emph>».</note>.</stage>
+        <stage>D'abord on voit entrer les trois entrepreneurs<emph>
+            <note>À ce sujet, voir notice.</note>
+          </emph>à cheval, l'Opéra-Comique en tonnelet<emph>
+            <note type="definition">Tonnelet: Sorte de petit baril destiné à contenir du vin, de l'eau-de-vie, ou quelque autre boisson. Il signifiait autrefois la partie inférieure d'un habit à la romaine, relevée en rond au moyen d'une espèce de petit panier (Acad.1835)</note>
+          </emph>et casque blanc les suit dans un phaéton tiré par un âne couvert partout de moire<emph>
+            <note type="definition">Moire: Étoffe ordinairement toute de soie, et qui a le grain fort serré (Acad.1762)</note>
+          </emph>d'or conduit par la Folie. Ensuite paraît une charrette au-devant de laquelle marche un homme portant un fusil sur l'épaule. Il y a dans cette charrette plusieurs tonneaux neufs et elle est tirée par l'Amour et Bacchus. Après la charrette vont des joueurs de violon et de hautbois qui sont à la tête des vendangeuses et vendangeurs galamment habillés avec des rubans à leurs paniers. Des hotteurs<emph>
+            <note type="definition">Hotteur: Celui ou celle qui porte la hotte. En vendanges, le hotteur gagne le double des coupeurs (Littré)</note>
+          </emph>ferment la marche.</stage>
+        <sp who="#operacomique">
+          <speaker>L'Opéra-Comique</speaker>
+        </sp>
+        <spGrp who="#operacomique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#preparons_nous">Préparons-nous pour la fête</title>
+            </desc>
+          </head>
+          <sp who="#operacomique">
+            <speaker>L'Opéra-Comique</speaker>
+            <l met="10">Préparons-nous aux vendanges nouvelles.</l>
+            <l met="9">On dit<note>Ms. 2: « L'on dit ».</note>que nos vignes sont belles</l>
+            <l met="12">Et si l'on s'en rapporte à notre vigneron,</l>
+            <l met="10">Mes chers amis, notre vin sera bon.</l>
+          </sp>
+        </spGrp>
+        <stage>La troupe rachève sa marche<note>Ms. 2: «<emph>La troupe rachève la marche et l'orchestre reprend l'air ci-dessus pour la troisième fois, comme à la scène précédente</emph>».</note>.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Arlequin, Gille</stage>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+        </sp>
+        <spGrp who="#gille">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bon_vin_bon">Bon, bon, bon, [que le vin est bon]<note>Ms. 2: « Bon, bon, bon, que le vin ».</note>
+              </title>
+            </desc>
+          </head>
+          <sp who="#gille">
+            <speaker>Gille</speaker>
+            <l met="8">Nous ne comptions pas, Arlequin,</l>
+            <l met="8">De faire aujourd'hui tant de vin.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="6">Hé, qui l'aurait pu croire?</l>
+          <l met="8">Quoique le voisin enragé</l>
+          <l met="8">Ait assez longtemps ravagé</l>
+          <l met="6">Tout notre territoire,</l>
+          <l met="8">Nos raisins n'en sont pas moins beaux.</l>
+        </sp>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+          <l met="8">Retournons chercher des tonneaux,</l>
+          <l met="3">Bon, bon, bon<note>Il manque la fin du vers sur le Ms. 1. Ms. 2 donne : « Bon, bon, bon, que le vin est bon ».</note>,</l>
+          <l met="6">Que nous allons en boire!</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Arlequin, Gille, Scaramouche</stage>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_mariez_moi">Ma mère mariez-moi</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="7">Camarades, savez-vous</l>
+            <l met="7">Qu'en leurs vignes nos jaloux,</l>
+            <l met="7">N'ont trouvé grâce à Bacchus</l>
+            <l met="10">Que du verjus<note type="definition">Verjus: Le jus, le suc qu'on tire des raisins qui ne sont pas mûrs (Acad.1762)</note>clair, que du clair verjus<note>Note du manuscrit: « Il y avait dans la pièce de l'Opéra-Comique un homme qui s'appelait Clair Verjus ».</note>?</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="7">S'ils n'ont rien trouvé de plus,</l>
+          <l met="7">Voilà des drôles tondus.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Prévôt<note>Ms. 2: « Voulez-vous savoir ».</note>
+              </title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="8">Je vois un homme fort rêveur.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">C'est le troisième entrepreneur.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="8">Je le reconnais, c'est lui-même.</l>
+          <l met="8">Il vient à nous d'un air contrit.</l>
+          <l met="8">Les vendanges l'ont rendu blême.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Cela doit bien troubler l'esprit<note>Note du manuscrit: « Un des entrepreneurs s'appelait ainsi ». Nous ne savons pas, à l'heure actuelle, de qui il s'agit.</note>.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">L'entrepreneur, les précédents</stage>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+        </sp>
+        <spGrp who="#gille">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#adieu_paniers">Adieu paniers, [vendanges sont faites]</title>
+            </desc>
+          </head>
+          <sp who="#gille">
+            <speaker>Gille</speaker>
+            <l met="8">De la rêverie où vous êtes,</l>
+            <l met="8">Peut-on demander la raison?</l>
+          </sp>
+        </spGrp>
+        <sp who="#entrepreneur">
+          <speaker>L'entrepreneur</speaker>
+          <l met="8">J'espérais du vin à foison.</l>
+          <l met="9">Adieu paniers, vendanges sont faites!</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierre_bagnolet">Pierre Bagnolet</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">À présent votre œil se dessille,</l>
+            <l met="8">Vous reconnaissez votre tort.</l>
+          </sp>
+        </spGrp>
+        <sp who="#entrepreneur">
+          <speaker>L'entrepreneur</speaker>
+          <l met="8">N'est pas or tout ce qui brille,</l>
+          <l met="8">Votre vigne promettait fort,</l>
+          <l met="4">Promettait fort,<stage>bis</stage>
+          </l>
+          <l met="8">C'est la vigne de la courtille<note type="definition">Courtille: Partie des faubourgs du Nord de Paris où se trouvent beaucoup de cabarets [...] Courtille parce qu'il y avait là autrefois beaucoup de jardins et de vignes (Littré)</note>,</l>
+          <l met="8">Belle montre et peu de rapport<note>La vigne de la courtille produisait du raisin qui ne mûrissait pas. On trouve l'expression dans<emph>Le Pédant joué</emph>de Cyrano de Bergerac.</note>.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#car_c_est_une_bouteille">Car c'est une bouteille</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">L'ami, quittez pour jamais</l>
+            <l met="7">Cette vigne infortunée,</l>
+            <l met="7">Quand vous auriez désormais</l>
+            <l met="7">Deux fois l'an pleine vinée,</l>
+            <l met="9">Comptez que le profit s'en ira</l>
+            <l met="9">Du côté du cousin l'Opéra.</l>
+            <l met="6">Il vendange, le drille<note type="definition">Drille: On dit familièrement, c'est un bon drille, pour dire, c'est un bon compagnon. C'est un pauvre drille, pour dire, c'est un pauvre malheureux. (Acad.1762)</note>
+            </l>
+            <l met="7">Et l'entrepreneur grappille.</l>
+          </sp>
+        </spGrp>
+        <sp who="#entrepreneur">
+          <speaker>L'entrepreneur</speaker>
+        </sp>
+        <spGrp who="#entrepreneur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_veux_boire_a_ma_lisette">Croyez-vous qu'Amour [m'attrape]<note>Ms. 2: « Croyez-vous qu'Amour m'attrape ».</note>
+              </title>
+            </desc>
+          </head>
+          <sp who="#entrepreneur">
+            <speaker>L'entrepreneur</speaker>
+            <l met="7">Croyez-vous qu'on m'y rattrape?</l>
+            <l met="7">Je connais trop le cousin.</l>
+            <l met="7">Quand il nous lâche la grappe,</l>
+            <l met="7">Il a pressé le raisin.</l>
+            <l met="7">Croyez-vous qu'on m'y rattrape,</l>
+            <l met="7">Je connais trop le cousin<note>Ms. 2: « Il s'en va ».</note>.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Arlequin, Scaramouche, l'Opéra-Comique</stage>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ramonez_ci">Ramonez ci, [ramonez là]</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="7">Voici l'Opéra-Comique.</l>
+          </sp>
+        </spGrp>
+        <sp who="#operacomique">
+          <speaker>L'Opéra-Comique</speaker>
+          <l met="7">Préparez votre critique.</l>
+          <l met="7">La vendange ne rend pas.</l>
+          <l met="8">Ramonez ci, ramonez là,</l>
+          <l met="3">La, la, la,</l>
+          <l met="8">L'entreprise du haut en bas.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#barbari">À la façon de Barbari</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Et présentement, mon poulet,</l>
+            <l met="6">Qu'est-ce que tu vas faire?</l>
+          </sp>
+        </spGrp>
+        <sp who="#operacomique">
+          <speaker>L'Opéra-Comique</speaker>
+          <l met="8">Puisque aux vendanges je n'ai fait</l>
+          <l met="6">Que de l'eau toute claire,</l>
+          <l met="8">Je vais tenir à Charenton</l>
+          <l met="11">La faridondaine, la faridondon,</l>
+          <l met="8">Des bains où l'on sera servi,</l>
+          <l met="3">Beribi<note>Ms. 2: « Biribi ».</note>,</l>
+          <l met="8">À la façon de barbari,</l>
+          <l met="3">Mon ami.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#landeriri">Landerirette<note>Ms. 2: « Landeriri ».</note>
+              </title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="8">Mais si tes bains, quoique excellents,</l>
+            <l met="8">Ne font pas venir les chalands?</l>
+            <l met="4">Landerirette!</l>
+          </sp>
+        </spGrp>
+        <sp who="#operacomique">
+          <speaker>L'Opéra-Comique</speaker>
+          <l met="8">Je remettrai mon pot-pourri<note>Note du manuscrit: « La pièce précédente n'ayant pas eu de succès, l'Opéra-Comique, pour ramener le public qui le quittait, fit afficher que Pierrot donnait son pot-pourri ».</note>.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="4">Landeriri.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#troupe_italienne">La troupe Italienne</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="7">Ton attente sera vaine</l>
+            <l met="12">Si tu crois amuser par ces fadaises-là.</l>
+            <l met="5">La gent parisienne,</l>
+            <l met="4">Faridondaine</l>
+            <l met="4">Et lonlanla,</l>
+            <l met="5">La gent parisienne,</l>
+            <l met="4">Faridondaine,</l>
+            <l met="3">Te fuira.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ces_filles_sont_si_sottes">Hélas, ce fut sa faute</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">De toi, jadis, on fut épris<note>Ms. 2 précise la reprise de ce premier vers : «<emph>bis</emph>».</note>
+            </l>
+            <l met="8">Et tu vois tes lauriers flétris.</l>
+          </sp>
+        </spGrp>
+        <sp who="#operacomique">
+          <speaker>L'Opéra-Comique</speaker>
+          <l met="6">Hélas, est-ce ma faute?</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="8">Tu perds l'estime de Paris.</l>
+        </sp>
+        <sp who="#operacomique">
+          <speaker>L'Opéra-Comique</speaker>
+          <l met="6">Est-ce moi qui me l'ôte,</l>
+          <l met="2">Lonla,</l>
+          <l met="6">Est-ce moi qui me l'ôte?</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Gille, les précédents</stage>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+        </sp>
+        <spGrp who="#gille">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#allons_gai_d_un_air_gai">Allons gai</title>
+            </desc>
+          </head>
+          <sp who="#gille">
+            <speaker>Gille</speaker>
+            <l met="6">Morbleu, la bonne affaire,</l>
+            <l met="6">L'heureux marché pour nous!</l>
+            <l met="6">Amis, je viens de faire</l>
+            <l met="6">Notre fortune à tous.</l>
+            <l met="3">Allons gai, etc.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#gille">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#joconde">Joconde</title>
+            </desc>
+          </head>
+          <sp who="#gille">
+            <speaker>Gille</speaker>
+            <l met="8">Les entrepreneurs, dégoûtés</l>
+            <l met="6">De l'Opéra-Comique,</l>
+            <l met="8">De peur d'en être encor tentés,</l>
+            <l met="6">M'ont vendu leur boutique.</l>
+            <l met="8">Tout leur équipage est ici,</l>
+            <l met="6">Moi-même je l'amène.</l>
+          </sp>
+        </spGrp>
+        <stage>Gille et Scaramouche vont au devant de l'équipage.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Arlequin, l'Opéra-Comique</stage>
+        <spGrp>
+          <head type="melody" subtype="continued_melody">Suite air [Joconde]</head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Tu vois bien par là, mon ami,</l>
+            <l met="6">Que ta mort est certaine.</l>
+          </sp>
+        </spGrp>
+        <sp who="#operacomique">
+          <speaker>L'Opéra-Comique</speaker>
+        </sp>
+        <spGrp who="#operacomique">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_commere">Ma commère</title>
+            </desc>
+          </head>
+          <sp who="#operacomique">
+            <speaker>L'Opéra-Comique</speaker>
+            <l met="7">Mon enfant, cela peut être,</l>
+            <l met="7">Mais le Comique Opéra</l>
+            <l met="7">Ne périt que pour renaître,</l>
+            <l met="7">Vous savez fort bien cela.</l>
+            <l met="8">Il disparaît puis le voilà.</l>
+            <l met="10">On le bannit, il revient et s'en va,</l>
+            <l met="7">Tantôt il est à ce maître</l>
+            <l met="7">Et tantôt à celui-là.</l>
+          </sp>
+        </spGrp>
+        <stage>L'Opéra-Comique se retire et Arlequin court se camper dans le phaéton.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="location">et dernière.</stage>
+        <stage type="characters">Arlequin, Scaramouche, Gille, troupe de sauteurs</stage>
+        <stage>Ils se mettent en marche avec l'équipage et l'Opéra-Comique dans le même ordre que celui-ci a paru, Gille et Scaramouche tiennent à cheval la place des entrepreneurs. Il n'y a plus l'homme qui portait un fusil. L'orchestre joue en ritournelle le cotillon des<emph>Fêtes de Thalie</emph>qui sert de marche.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#cotillon_des_fetes">Cotillon des Fêtes<note>Ms. 2: « Cotillon des Fêtes de Thalie ».</note>
+              </title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Chers forains, réjouissez-vous.</l>
+            <l met="5">Le destin, pour nous,</l>
+            <l met="5">Se montre plus doux.</l>
+            <l met="7">On voit l'envie bien punie</l>
+            <l met="5">Après nous avoir</l>
+            <l met="8">Presque réduits au désespoir.</l>
+            <l met="7">Chers forains, réjouissez-vous,</l>
+            <l met="5">Le destin pour nous</l>
+            <l met="5">Se montre plus doux.</l>
+          </sp>
+        </spGrp>
+        <stage>L'orchestre joue toujours le même air jusqu'à ce que la marche soit finie, après laquelle on chante le vaudeville:</stage>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#grimaudin">Grimaudin</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="8">Enfin, nous avons la victoire</l>
+            <l met="4">Sur nos rivaux.</l>
+            <l met="8">Quand nous serons seuls à la Foire,</l>
+            <l met="4">Plus d'écriteaux!</l>
+            <l met="8">Nous pourrons, libres de souci,</l>
+            <l met="8">Parler, danser, chanter aussi.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="8">Nous pourrons, libres de souci,</l>
+          <l met="8">Parler, danser, chanter aussi.</l>
+          <space dim="vertical" extent="1" unit="lines"/>
+          <l met="8">Cela va rendre le courage</l>
+          <l met="4">À nos auteurs,</l>
+          <l met="8">Plus on verra faire rage</l>
+          <l met="4">À nos acteurs:</l>
+          <l met="8">Messieurs, vous viendrez fondre ici;</l>
+          <l met="8">Vous serez contents, nous aussi.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Prendrais-je une peine inutile?</l>
+          <l met="4">Je n'en sais rien.</l>
+          <l met="8">Paris, dit-on, est difficile,</l>
+          <l met="4">Je le sais bien.</l>
+          <l met="8">Il ne viendra pas. Oh, que si!</l>
+          <l met="8">Paris est charitable aussi.</l>
+        </sp>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

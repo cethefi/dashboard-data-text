@@ -1,0 +1,948 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="les_abderites_de_village">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Les Abdérites de village</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Louis Fuzelier</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">ms. BHVP NA 231, ff 211, aut.</bibl>
+        <bibl type="intermediarySource">L. Chahine</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="folichon" sex="UNKNOWN">
+            <persName>Folichon</persName>
+          </person>
+          <person xml:id="mystere" sex="UNKNOWN">
+            <persName>Le mystère</persName>
+          </person>
+          <person xml:id="bailli" sex="UNKNOWN">
+            <persName>Le bailli</persName>
+          </person>
+          <person xml:id="magister" sex="UNKNOWN">
+            <persName>Le magister</persName>
+          </person>
+          <person xml:id="carillonneur" sex="UNKNOWN">
+            <persName>Le carillonneur</persName>
+          </person>
+          <person xml:id="berger" sex="UNKNOWN">
+            <persName>Le berger</persName>
+          </person>
+          <person xml:id="vielleux" sex="UNKNOWN">
+            <persName>Le vielleux</persName>
+          </person>
+          <person xml:id="le_mystere" sex="UNKNOWN">
+            <persName>Le Mystère</persName>
+          </person>
+          <person xml:id="le_bailli_d_auteuil" sex="UNKNOWN">
+            <persName>Le Bailli d'Auteuil</persName>
+          </person>
+          <person xml:id="le_magister" sex="UNKNOWN">
+            <persName>Le Magister</persName>
+          </person>
+          <person xml:id="le_carillonneur" sex="UNKNOWN">
+            <persName>Le Carillonneur</persName>
+          </person>
+          <person xml:id="le_berger" sex="UNKNOWN">
+            <persName>Le Berger</persName>
+          </person>
+          <person xml:id="le_vielleux" sex="UNKNOWN">
+            <persName>Le Vielleux</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#folichon">Folichon</role>
+          <roleDesc>subdélégué de Momus</roleDesc>
+          <actor>M. Tribou</actor>
+        </castItem>
+        <castItem>
+          <role ana="#le_mystere">Le Mystère</role>
+          <actor>M. Dun</actor>
+        </castItem>
+        <castItem>
+          <role ana="#le_bailli_d_auteuil">Le Bailli d'Auteuil</role>
+        </castItem>
+        <castItem>
+          <role ana="#le_magister">Le Magister</role>
+        </castItem>
+        <castItem>
+          <role ana="#le_carillonneur">Le Carillonneur</role>
+          <actor>M. Rebel</actor>
+        </castItem>
+        <castItem>
+          <role ana="#le_berger">Le Berger</role>
+        </castItem>
+        <castItem>
+          <role ana="#le_vielleux">Le Vielleux</role>
+        </castItem>
+      </castList>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Le Bailli, le Magister, le Carillonneur, le Berger et le Vielleux<stage>tenant divers instruments sans en jouer</stage>
+        </stage>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+        </sp>
+        <spGrp who="#choeur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ramonez_ci">Ramonez ci, [ramonez là]</title>
+            </desc>
+          </head>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Puissant dieu de la Calotte,</l>
+            <l met="7">Apportez votre marotte,</l>
+            <l met="7">Descendez avec vos rats,</l>
+            <l met="8">Ramonez ci, ramonez là,</l>
+            <l met="3">La, la, la,</l>
+            <l met="8">Nos cervelles du haut en bas.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Les mêmes acteurs, Folichon<stage>député de Momus portant la marotte du dieu</stage>
+        </stage>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Mes amis, je m'appelle Folichon, digne subdélégué de Momus, officier à haussecou<note type="definition">Haussecou: Pièce d'armes que les officiers portent au cou (Acad.1694)</note>du régiment de la Calotte et favori de la Lune, notre souveraine.</p>
+        </sp>
+        <spGrp who="#folichon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">tiré Parodie d'un chœur d' <title ref="#isis">Isis</title> (acte 1ier)</desc>
+          </head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="12">Vous voulez de Momus la présence divine,</l>
+            <l met="12">Mais faites des échos et ne vous lassez pas,</l>
+            <l met="12">Répétez mille fois que faute de machine</l>
+            <l met="8">Nul dieu de descend ici bas.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <stage>sans instruments</stage>
+          <l met="12">Répétons mille fois que faute de machine</l>
+          <l met="8">Nul dieu ne descend ici bas.</l>
+        </sp>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+          <p>Eh! morgué, que monsieur Momus n'empruntait-il une voiture à madame l'Académie royale de musique...</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Madame l'Académie royale de musique est à présent trop mal en équipages; sa Junon marche à pied comme une déesse d'opéra de campagne. Mais qui êtes-vous, vous autres qui implorez le secours du dieu des calotins?</p>
+        </sp>
+        <spGrp>
+          <caption>Tous</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <p>Je somme les biaux esprits d'Auteuil.</p>
+          </sp>
+        </spGrp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Eh! doucement; vous m'étourdissez; parlez séparément; je n'aime pas les conversations en chœur, elles ne sont bonnes que dans les Halles ou dans les cafés spirituels.</p>
+        </sp>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+          <p>Ho! bian, je sommes les biaux esprits d'Auteuil tant poètes que musiciens; je sommes aussi affligés de la maladie du tiatre...</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Vous avez la maladie du théâtre<note>Après cette phrase, il y a une ligne raturée, puis la rubrique du Carillonneur, puis une autre ligne raturée.</note>!</p>
+        </sp>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+          <p>Oui, j'ons une si tarible démangeaison d'être comédians que l'autre jour le magister et moi je déclamîmes l'almona nouveau depis le premier de janvier jusqu'au darnier [de] décembre.</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Vous êtes donc des Abdérites de village? Ho! que c'est bien fait! je vous félicite de la noble sympathie que vous avez avec la ville et la Cour. Oh çà, faisons connaissance, vous méritez d'être enrôlés dans la milice de Momus.<stage>Au Bailli.</stage>Qui êtes-vous, vous?</p>
+        </sp>
+        <sp who="#bailli">
+          <speaker>Le bailli</speaker>
+          <p>Je suis tout seul toute la magistrature du village.</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+        </sp>
+        <spGrp who="#folichon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierrot_se_plaint_que_sa_femme">Lucas se plaint que sa femme</title>
+            </desc>
+          </head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="7">Quand d'une solliciteuse</l>
+            <l met="7">Portant un minois joli</l>
+            <l met="7">Pour une affaire véreuse</l>
+            <l met="7">Vous vous trouvez assailli,</l>
+            <l met="4">En conscience,</l>
+            <l met="7">Penchez-vous, mon cher bailli,</l>
+            <l met="4">Votre balance?</l>
+            <p>Et vous, vous me paraissez aussi de robe, quelle est votre dignité?</p>
+          </sp>
+        </spGrp>
+        <sp who="#magister">
+          <speaker>Le magister</speaker>
+          <p>Je suis le magister, à votre service.</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+        </sp>
+        <spGrp who="#folichon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#tour_de_carnaval">Tour de Carnaval</title>
+            </desc>
+          </head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="8">Aux enfants de votre village</l>
+            <l met="8">Vous montrez ba bé bi bo bu,</l>
+            <l met="8">Et quelque grand garçon plus dru</l>
+            <l met="8">Sans doute dans votre ménage</l>
+            <l met="8">Vous apprend ca, cé, ci, co, cu.</l>
+          </sp>
+        </spGrp>
+        <sp who="#magister">
+          <speaker>Le magister</speaker>
+          <p>Ho! je ne suis pas marié.</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Tant mieux pour vous.</p>
+        </sp>
+        <sp who="#magister">
+          <speaker>Le magister</speaker>
+          <p>Mais j'ai bien envie de l'être; ce qui m'inquiète, c'est que je ne sais pas aimer doctement, tout magister que je suis.</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Euh! l'ignorant!</p>
+        </sp>
+        <spGrp who="#folichon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_mariez_moi">Ma mère, mariez-moi</title>
+            </desc>
+          </head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="7">On apprend en moins d'un jour</l>
+            <l met="7">La science de l'amour;</l>
+            <l met="7">Tel qui d'hier commencé</l>
+            <l met="5">N'est qu'à l'a b c<stage type="bis">bis</stage>
+            </l>
+            <l met="7">Par son cœur bientôt dressé</l>
+            <l met="7">Devient un docteur passé.</l>
+            <p>Au dernier les baux<note type="definition">Au dernier les baux: Expression qui signifie que ce dont il s'agit se fera plus promptement, encore mieux (Le Roux)</note>; quel est votre emploi, vous?</p>
+          </sp>
+        </spGrp>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+        </sp>
+        <spGrp who="#carillonneur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">tiré Carillon de <title ref="#melusine">Mélusine</title> ()</desc>
+          </head>
+          <sp who="#carillonneur">
+            <speaker>Le carillonneur</speaker>
+            <l met="8">Moi, je sis le carillonneux;</l>
+            <l met="8">Si vous voulez à votre honneux</l>
+            <l met="8">Toutes les cloches du village</l>
+            <l met="8">Dans un moment feront tapage,</l>
+            <l met="7">Din dan don din din dan don...</l>
+          </sp>
+        </spGrp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <l met="8">Ne sais-tu que ce carillon?</l>
+        </sp>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+          <p>Bon! j'en savons su s' tartique-là autant que l'horloge du marché neuf<note>« L'horlogue du marché neuf »: suscrit à quelques mots raturés.</note>. Acoutez.</p>
+        </sp>
+        <spGrp who="#carillonneur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#carillon_vendome">Orléans, Boisgency</title>
+            </desc>
+          </head>
+          <sp who="#carillonneur">
+            <speaker>Le carillonneur</speaker>
+            <l met="6">Din dan don, din dan don,</l>
+            <l met="7">Je divartis su ce ton</l>
+            <l met="5">Les dames, les dames.</l>
+          </sp>
+        </spGrp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <stage>le contrefaisant</stage>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="6">Les cloches, mon garçon,</l>
+            <l met="7">Ne font pas le carillon</l>
+            <l met="5">Des dames, des dames.</l>
+            <p>Au fait, mes enfants, que voulez-vous du dieu Momus?</p>
+          </sp>
+        </spGrp>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+          <p>Je li demandons qui vienne ici nous aider à recevoir joyeusement une belle princesse que j'estimions biaucoup.</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <stage>ironiquement</stage>
+          <p>Une belle princesse que vous estimez beaucoup! Cela est flatteur pour elle!</p>
+        </sp>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+          <p>J'avons idée de la régaler de queuque salmigondis de vars et de musique, car l'on dit que c'est la mode.</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Quoi, messieurs les illustres d'Auteuil, vous prétendez amuser une princesse spirituelle de qui le goût et le discernement font trembler les plus habiles?</p>
+        </sp>
+        <spGrp who="#folichon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#et_frou_frou_frou">Et frou, frou, frou</title>
+            </desc>
+          </head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="7">C'est former de grands desseins;</l>
+            <l met="7">Mais vous êtes calotins,</l>
+            <l met="4">Et frou, frou, frou,</l>
+            <l met="4">Et glou, glou, glou,</l>
+            <l met="4">Prenez courage.</l>
+            <l met="7">On excuse dans un fou</l>
+            <l met="6">Ce qui décrie un sage.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="4">Et frou, frou, frou,</l>
+          <l met="4">Et glou, glou, glou,</l>
+          <l met="4">Prenons courage.</l>
+          <l met="7">On excuse dans un fou</l>
+          <l met="6">Ce qui décrie un sage.</l>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Puisque vous avez résolu de réjouir ou d'ennuyer la princesse, je suis de votre écot et je veux même le payer en monnaie calotine; j'aurai besoin d'un orchestre, voyons ce que vous savez faire de tous ces instruments; donnez-oi un petit échantillon de votre capacité harmonique.</p>
+        </sp>
+        <stage>Ils préludent tous ensemble sur un ton faux et discordant; ils font un charivari qui impatiente Folichon... Pendant qu'il fait taire l'un, l'autre recommence.</stage>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Quelle musique enragée<note>« Enragé »suscrit à un autre mot raturé.</note>!... Eh! paix... paix donc... Morbleu... jarnibleu... ventrebleu... Ho! le maudit vielleux, je l'étranglerai...<stage>Haussant la voix.</stage>Par cinq cent mille millions de charretées de diables, si vous ne finissez je casserai tous vos instruments, je les concasserai, je les pulvériserai...</p>
+        </sp>
+        <stage>Ils se taisent tous ensemble et restent dans des attitudes effrayées.</stage>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Est-ce là le charivari que vous destinez à la princesse? Pourqui prenez-vous ses oreilles? Mais, j'ai un remède sûr à ceci. Regardez la propre marotte de Momus<stage>Leur montrant.</stage>que ce dieu m'a confiée; ce sceptre jovial peut opérer du moins autant de prodiges qu'une baguette magique, fût-elle entre les mains d'une jolie sorcière chantante<note>« Chantante »suscrit à un mot raturé,« sorcière »dans la marge de gauche.</note>. Je vais en vous touchant seulement vous rendre subitement d'excellents musiciens et vous jouerez précisément, comme des Rebels, des Francœur, des L'Abbé, des Angui et des Charpentier; sûrement l'on s'y méprendra. Prouvez-moi si j'ai réussi.</p>
+        </sp>
+        <stage>Il les touche l'un après l'autre de sa marotte, ils font tous des lazzi d'étonnement en faisant chacun des préludes de trois ou quatre mesures seulement sur leurs instruments. Après ce jeu de théâtre, messieurs Rebel, Francœur et L'Abbé jouent ensemble un morceau de simphonie court, vif et gai.</stage>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Fort bien, ma foi; je vous placerai à l'Opéra si le mérite y était sédentaire...<stage>Au vielleux et à la musette.</stage>Et vous, seigneur vielleux, donnez-nous aussi un plat de votre métier.</p>
+        </sp>
+        <spGrp who="#folichon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#chanson_du_vielleux_accompagnee_de_la_musette_">Chanson du [vielleux] accompagnée de [la musette]</title>
+            </desc>
+          </head>
+        </spGrp>
+        <spGrp who="#folichon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#colin_l_a_baisee">Colin l'a baisée</title>
+            </desc>
+          </head>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">0</head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="7">Colin rencontre un matin</l>
+            <l met="6">Nanon son infidèle;</l>
+            <l met="7">Nanon fuit d'abord Colin;</l>
+            <l met="6">Colin court après elle:</l>
+            <l met="7">Oh! le terrible garçon!</l>
+            <l met="8">Il l'attrape et puis sans façon</l>
+            <l met="8">Colin la la la la la la,</l>
+            <l met="8">Colin la la lera la la<note>Dans le manuscrit, ces deux vers sur une seule ligne.</note>,</l>
+            <l met="5">Colin la querelle.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">1</head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="7">Après s'être querellés</l>
+            <l met="6">Sur le ton de la haine,</l>
+            <l met="7">L'amour de leurs cœurs troublés</l>
+            <l met="6">Vient resserrer la chaîne.</l>
+            <l met="7">Alors la bonne Nanon</l>
+            <l met="8">Fait sa paix puis<note>« Puis »suscrit à un court mot raturé, peut-être« et ».</note>sur le gazon</l>
+            <l met="8">Colin la la la la la la,</l>
+            <l met="8">Colin la la lera la la</l>
+            <l met="5">Colin la promène.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">2</head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="7">Mais le berger presse tant</l>
+            <l met="6">La bergère éperdue</l>
+            <l met="7">Qu'elle part au même instant;</l>
+            <l met="6">Déjà bientôt rendue</l>
+            <l met="7">Comme Nanon aux abois</l>
+            <l met="8">Se sauve au fond d'un sombre bois.</l>
+            <l met="8">Colin la la la la la la,</l>
+            <l met="8">Colin la la lera la la</l>
+            <l met="5">Colin l'a perdue.</l>
+          </sp>
+        </spGrp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Bon. Je vous emploierai dans les intermèdes de ma comédie... Allons, inventons-la, faisons-la, apprenons-la et jouons-la.</p>
+        </sp>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+          <p>Quoi, la pièce que vous voulez donner présentement n'est pas encore faite?</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Cela ne tardera pas. Tenez, j'ai éprouvé sur vous le pouvoir de la marotte de Momus, je vais encore l'éprouver sur moi-même. Je vais me rendre poète et poète plus expéditif qu'un auteur tragique<note>« Auteur tragique »suscrit à d'autres mots raturés, sans doute« faiseur de tragédies ».</note>; je ferai en trois minutes l'ouvrage de trois semaines.<stage>Il se touche de la marotte.</stage>Voyez... Silence... Momus m'exauce; j'entends ses grelots, je sens son enthousiasme fécond, j'enfante, j'enfante... Soutenez-moi.</p>
+        </sp>
+        <stage>On le soutient. Il fait des lazzi d'enthousiasme.</stage>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+          <stage>chante</stage>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#carillonneur">
+            <speaker>Le carillonneur</speaker>
+            <l met="7">Il lui faudrait un biscuit</l>
+            <l met="8">Pour le, pour le, pour le remettre;</l>
+            <l met="7">Il lui faudrait un biscuit</l>
+            <l met="8">Pour le remettre en appétit.</l>
+          </sp>
+        </spGrp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Ne me soutenez plus. C'en est fait, je suis père d'une comédie et je suis son parrain; je l'appelle la Souricière.</p>
+        </sp>
+        <spGrp>
+          <caption>Tous</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <p>La Souricière!</p>
+          </sp>
+        </spGrp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Ouin la Souricière. C'est une pièce allégorique et morale.</p>
+        </sp>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+          <p>Morale! Gare les siffleux.</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>On ne siffle pas les calotins, ce sont eux qui sifflent les autres!</p>
+          <p>Prêtez-moi attention.<stage>Gravement.</stage>Les rats des greniers se prennent dans différentes souricières; de même les rats qui habitent les cerveaux humains sont attirés par différentes amorces.<emph>Ergo</emph>je mets ma comédie en trois actes...</p>
+        </sp>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+          <p>En trois actes!</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Oui, en trois actes et bien amples que je vais faire représenter<note>« Faire représenter »suscrit à des mots raturés;« vais »dans la marge de gauche.</note>à l'impromptu.</p>
+        </sp>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+          <p>Ventrebille! je ne souperons jamais.</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Le premier acte sera la souricière de l'ambition. Vous verrez là des rats bien fiers! La scène représentera un palais des plus superbes.</p>
+        </sp>
+        <spGrp who="#folichon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Tout cela m'est indifférent</title>
+            </desc>
+          </head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="8">Lambris d'or semé de rubis</l>
+            <l met="8">Et cent colonnes de lapis;</l>
+            <l met="8">Tout ce que le luxe idolâtre,</l>
+            <l met="8">La perle avec le diamant...</l>
+          </sp>
+        </spGrp>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+          <stage>à part</stage>
+          <l met="8">Et pour faire ce biau tiatre</l>
+          <l met="8">Je n'avons là qu'un paravent.</l>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Au fond de la souricière de l'ambition je jetterai pour amorce des sceptres, des couronnes, et toutes sortes de titres de dignités sans oublier même les brevets de la Calotte, quoique ce soient les brevets les moins sollicités. Dans cet acte, je ferai paraître les Alexandres, les Césars<note>Il y a ici dans le manuscrit une ligne raturée.</note>, enfin tous les respectables voleurs qui ont escroqué des empires<note>« Escroqué des empires »suscrit à trois quarts de ligne raturés.</note>...</p>
+        </sp>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+          <p>Je retians pour moi le rôle d'Alexandre. I m'est avis qui me siéra bian. Mais<note>Le début de la réplique a été ajouté entre la rubrique et« Vous mettez... », et dépasse aussi dans la marge de gauche.</note>vous mettez les plus grands acteurs dans vote premier acte; que boutrez-vous dans le reste?</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Presque les mêmes personnages. Mon second acte sera la souricière de l'amour.</p>
+        </sp>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+          <p>La souricière de l'amour! Ho! l'agriabe souricière! Je veux moi y entrer tout brandi<note type="definition">Tout brandi: Tout d'un coup (Acad.1694)</note>
+          </p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Le théâtre représentera des jardins délicieux, de sombres berceaux, des alcôves fermées, des tapis de fleurs, des canapés de velours...</p>
+        </sp>
+        <spGrp who="#folichon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_je_regrette">Que c'était un ravissement</title>
+            </desc>
+          </head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="8">Dans la souricière d'amour</l>
+            <l met="8">On verra sûrement la foule,</l>
+            <l met="8">Le plumet hardiment y court,</l>
+            <l met="8">Le ciasser doucement s'y coule;</l>
+            <l met="8">Vous y trouverez à foison</l>
+            <l met="8">Des rats de plus d'une façon;</l>
+            <l met="12">Des traitants, des marquis, des robins, des abbés,</l>
+            <l met="9">Bien poudrés, en manteau court et long</l>
+            <l met="8">On en voit là plus qu'au sermon.</l>
+            <p>Vous ne manquerez pas aussi de voir là le phénix de la Turquie.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#folichon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ton_himeur_est_cateraine">Ton himeur est Cateraine</title>
+            </desc>
+          </head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="7">Le mielleux Orosmane</l>
+            <l met="7">Pour Zaïre soupirant</l>
+            <l met="7">Comme Cyrus pour Mandane,</l>
+            <l met="7">Phénomène qui surprend<note>À côté de ces vers, dans la marge:« Crit. des amours des dieux, di triomphe de l'am. »; peut-être<emph>Le Triomphe de l'harmonie</emph>de Lefranc de Pompignan, représenté en 1730.</note>.</l>
+            <l met="7">Ce Turc à tendres saillies</l>
+            <l met="7">Avec sa maîtresse enfin</l>
+            <l met="7">Termine ses élégies</l>
+            <l met="7">Par être son assassin.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#folichon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#allure">L'allure</title>
+            </desc>
+          </head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="11">Et voilà vraiment l'allure, mon cousin,</l>
+            <l met="8">Pour le coup d'un Turc c'est l'allure.</l>
+          </sp>
+        </spGrp>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#carillonneur">
+            <speaker>Le carillonneur</speaker>
+            <l met="11">Percer ce qu'on aime ainsi mon cher cousin!</l>
+            <l met="8">A-t-on pu passer telle allure?</l>
+          </sp>
+        </spGrp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Oui. Tout passe à présent. Pour mon troisième acte qui doit être le plus gai, c'estl a souricière de Bacchus; que de grans hommes nous y compterons!</p>
+        </sp>
+        <spGrp who="#folichon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#et_moi_itou">Et moi itou</title>
+            </desc>
+          </head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="7">Les amateurs des rasades</l>
+            <l met="5">Y brilleront tous</l>
+            <l met="7">Avec des capilotades</l>
+            <l met="7">Vous y serez, camarades,</l>
+            <l met="8">Et moi itou, et moi itou.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <stage>se félicitant les uns les autres</stage>
+          <l met="7">Vous y serez, camarades,</l>
+          <l met="8">Et moi itou, et moi itou.</l>
+        </sp>
+        <sp who="#carillonneur">
+          <speaker>Le carillonneur</speaker>
+          <p>Eh! qui s'il vous plaît représentera cette fourmilière de grands hommes qu'ous nous promettez<note>« cette »puis« de grands hommes qu'ous nous promettez »suscrit à des mots biffés;« fourmilière »ajouté en marge.</note>? Tout le village n'y suffira pas.</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>J'ai des ressources immanquables. Je vais faire battre le tambour et assembler ici le régiment de la Calotte; il nous fournira des acteurs de reste et de quoi les double cent et cent fois. Nous ne craindrons pas les rhumes... Allons, vite, quinze<note>« Quinze »suscrit à« des »raturé.</note>tambours, vingt<note>« Vingt »suscrit à« des »raturé.</note>fifres, cent hautbois, douze trompettes marines...</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Folichon, les acteurs précédents et le Mystère<stage>le nez dans un manteau gris</stage>
+        </stage>
+        <sp who="#mystere">
+          <speaker>Le mystère</speaker>
+          <stage>développant son manteau</stage>
+        </sp>
+        <spGrp who="#mystere">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#de_m_rebel">de M. Rebel</title>
+            </desc>
+          </head>
+          <sp who="#mystere">
+            <speaker>Le mystère</speaker>
+            <l met="12">Téméaire, calmez le transport qui vous presse,</l>
+            <l met="12">Connaissez le Mystère et craignez son courroux.</l>
+            <l met="12">Sans tumulte et sans bruit amusez la princesse,</l>
+            <l met="12">Les plaisirs éclatants ne sont pas les plus doux.</l>
+            <l met="12">Vantez moins le pouvoir du dieu de la Calotte,</l>
+            <l met="12">Le célébrer ici n'est pas trop de saison;</l>
+            <l met="12">Je vois des yeux charmants qui mieux que la marotte</l>
+            <l met="8">Savent déranger la raison.</l>
+          </sp>
+        </spGrp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <p>Malepeste! Monsieur le Mystère, comme vous faites l'entendu! Vous ne conduisez pourtant pas trop bien à l'Opéra les amours de Jupiter avec Io. J'en sais des nouvelles, moi qui vous parle<note>Ces mots ont été ajoutés, semble-t-il.</note>...</p>
+        </sp>
+        <sp who="#mystere">
+          <speaker>Le mystère</speaker>
+          <stage>fierement</stage>
+          <p>Point de réplique.</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <stage>à ses camarades</stage>
+          <p>Mes amis, nous ne pouvons nous dispenser d'obéir au mystère... Ah! que sans lui nous aurions donné une belle fête à la princesse!</p>
+        </sp>
+        <spGrp who="#folichon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">tiré de Pan dans <title ref="#isis">Isis</title> ()</desc>
+          </head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="8">Ah! quel dommage! ah! quel dommage!</l>
+            <l met="8">Que l'on arrête mon esprit...</l>
+            <p>
+              <emph>Ohimè!</emph>
+            </p>
+          </sp>
+        </spGrp>
+        <spGrp who="#folichon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cela_m_est_bien_dur">Cela m'est bien dur</title>
+            </desc>
+          </head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="8">Il faut vous guérir de la rage</l>
+            <l met="8">De devenir en ce moment</l>
+            <l met="8">Des Abdérites de village...</l>
+            <l met="8">Eh! bien, amusez autrement.</l>
+            <l met="10">Allons, enfants, faisons de la musique,</l>
+            <l met="5">Sur le ton comique</l>
+            <l met="8">Nous aurions le gosier moins sûr.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="5">Cela m'est bien dur!</l>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+          <stage>au Mystère</stage>
+          <p>Inexorable Mystère, puisque vous vous opposez à l'exécution de ma pièce, permettez, du moins, que j'en chante le vaudeville.</p>
+        </sp>
+        <sp who="#mystere">
+          <speaker>Le mystère</speaker>
+          <p>Passe pour le vaudeville.</p>
+        </sp>
+        <sp who="#folichon">
+          <speaker>Folichon</speaker>
+        </sp>
+        <spGrp>
+          <head type="vaudeville-chorus">1</head>
+        </spGrp>
+        <spGrp who="#folichon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_raison">Lon la</title>
+            </desc>
+          </head>
+          <sp who="#folichon">
+            <speaker>Folichon</speaker>
+            <l met="7">Qu'à présent on voit de rats</l>
+            <l met="7">Qui ne craignent point les chats!</l>
+            <l met="5">Ils sont pourtant pris:</l>
+            <l met="5">Les Jeux et les Ris</l>
+            <l met="6">En plus d'une manière</l>
+            <l met="8">Tendent tous les jours à Paris</l>
+            <l met="9">Plus d'une souricière, lon la,</l>
+            <l met="6">Plus d'une souricière.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="8">Tendent tous les jours à Paris</l>
+          <l met="9">Plus d'une souricière, lon la,</l>
+          <l met="6">Plus d'une souricière.</l>
+        </sp>
+        <spGrp>
+          <head type="vaudeville-chorus">2</head>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">On voit les jeunes amants</l>
+            <l met="7">Toujours polis et galants.</l>
+            <l met="5">Mais sont-ils époux?</l>
+            <l met="5">Les voilà jaloux,</l>
+            <l met="6">L'hymen les désespère;</l>
+            <l met="8">On les entend s'écrier tous</l>
+            <l met="9">Fi de la souricière, lon la,</l>
+            <l met="6">Fi de la souricière.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="8">On les entend s'écrier tous</l>
+          <l met="9">Fi de la souricière, lon la,</l>
+          <l met="6">Fi de la souricière.</l>
+        </sp>
+        <spGrp>
+          <head type="vaudeville-chorus">3</head>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Les coquettes de nos jours</l>
+            <l met="7">Conduisent bien leurs amours:</l>
+            <l met="5">Leurs airs souriants</l>
+            <l met="5">Des plus défiants</l>
+            <l met="6">Fascinent les paupières;</l>
+            <l met="8">Souvent on compte dix galants</l>
+            <l met="9">Dans une souricière, lon la,</l>
+            <l met="6">Dans une souricière.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="8">Souvent on compte dix galants</l>
+          <l met="9">Dans une souricière, lon la,</l>
+          <l met="6">Dans une souricière.</l>
+        </sp>
+        <spGrp>
+          <head type="vaudeville-chorus">4</head>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Sur le théâtre un tendron</l>
+            <l met="7">Doit alarmer la raison</l>
+            <l met="5">On y prend des nœuds,</l>
+            <l met="5">Séduit par les Jeux,</l>
+            <l met="6">Trompé par les lumières,</l>
+            <l met="8">Les appas les plus dangereux</l>
+            <l met="9">Sont dans ces souricières, lon la,</l>
+            <l met="6">Sont dans ces souricières.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="8">Les appas les plus dangereux</l>
+          <l met="9">Sont dans ces souricières, lon la,</l>
+          <l met="6">Sont dans ces souricières.</l>
+        </sp>
+        <spGrp>
+          <head type="vaudeville-chorus">5</head>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Par le Mystère contraints,</l>
+            <l met="7">Tous nos efforts seraient vains:</l>
+            <l met="5">Sans acteur vanté,</l>
+            <l met="5">Sans danseur cité,</l>
+            <l met="6">Faire une pièce entière!</l>
+            <l met="8">C'est sans amorce, en vérité,</l>
+            <l met="9">Tendre une souricière, lon la,</l>
+            <l met="6">Tendre une souricière.</l>
+          </sp>
+        </spGrp>
+        <stage>À la princesse.</stage>
+        <spGrp>
+          <head type="vaudeville-chorus">6</head>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Nous sommes francs<note>« Francs »suscrit à un autre mot raturé.</note>calotins,</l>
+            <l met="7">Excusez nos chants badins,</l>
+            <l met="5">Princesse, si nous</l>
+            <l met="5">N'obtenons de vous</l>
+            <l met="6">Indulgence plénière,</l>
+            <l met="8">Nous pourrons bien nous cacher tous</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="9">Dans une souricière, lon la,</l>
+            <l met="6">Dans une souricière.</l>
+          </sp>
+        </spGrp>
+        <stage>Se rapetissant.</stage>
+        <stage>Le chœur faisant le même lazzi répète les trois derniers vers<note>Il y a, sur le reste de la page après cette didascalie, des notes de Fuzelier, barrés.</note>.</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

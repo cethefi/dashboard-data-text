@@ -1,0 +1,2627 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="les_amours_deguises_1726">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Les Amours déguisés</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Louis Fuzelier, Alain-René Le Sage et Jacques-Philippe d'Orneval</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Rousseau</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">dans le<emph>Théâtre de la Foire ou L'Opéra Comique</emph>, t.VI, veuve Pissot, Paris, 1728</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="mirtis" sex="UNKNOWN">
+            <persName>Mirtis</persName>
+          </person>
+          <person xml:id="unamour" sex="UNKNOWN">
+            <persName>Un amour</persName>
+          </person>
+          <person xml:id="lamour" sex="UNKNOWN">
+            <persName>L'amour</persName>
+          </person>
+          <person xml:id="premamour" sex="UNKNOWN">
+            <persName>Premier amour</persName>
+          </person>
+          <person xml:id="secamour" sex="UNKNOWN">
+            <persName>Second amour</persName>
+          </person>
+          <person xml:id="arlequin" sex="UNKNOWN">
+            <persName>Arlequin</persName>
+          </person>
+          <person xml:id="colette" sex="UNKNOWN">
+            <persName>Colette</persName>
+          </person>
+          <person xml:id="letabellion" sex="UNKNOWN">
+            <persName>Le tabellion</persName>
+          </person>
+          <person xml:id="leandre" sex="UNKNOWN">
+            <persName>Léandre</persName>
+          </person>
+          <person xml:id="mmedoucet" sex="UNKNOWN">
+            <persName>Madame doucet</persName>
+          </person>
+          <person xml:id="lesuisse" sex="UNKNOWN">
+            <persName>Le suisse</persName>
+          </person>
+          <person xml:id="melleraffinot" sex="UNKNOWN">
+            <persName>Mademoiselle raffinot</persName>
+          </person>
+          <person xml:id="farinette" sex="UNKNOWN">
+            <persName>Farinette</persName>
+          </person>
+          <person xml:id="mpiedemouche" sex="UNKNOWN">
+            <persName>Monsieur pié-de-mouche</persName>
+          </person>
+          <person xml:id="deux_petits_amours" sex="UNKNOWN">
+            <persName>Deux petits Amours</persName>
+          </person>
+          <person xml:id="un_tabellion" sex="UNKNOWN">
+            <persName>Un tabellion</persName>
+          </person>
+          <person xml:id="madame_doucet" sex="UNKNOWN">
+            <persName>Madame Doucet</persName>
+          </person>
+          <person xml:id="un_suisse" sex="UNKNOWN">
+            <persName>Un Suisse</persName>
+          </person>
+          <person xml:id="mademoiselle_raffinot" sex="UNKNOWN">
+            <persName>Mademoiselle Raffinot</persName>
+          </person>
+          <person xml:id="monsieur_pie_de_mouche" sex="UNKNOWN">
+            <persName>Monsieur Pie'-de-Mouche</persName>
+          </person>
+          <person xml:id="troupe_d_amours_et_de_plaisirs" sex="UNKNOWN">
+            <persName>Troupe d'Amours et de Plaisirs</persName>
+          </person>
+          <person xml:id="troupe_d_amants_de_toutes_les_nations" sex="UNKNOWN">
+            <persName>Troupe d'Amants de toutes les nations</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Pièce d'un acte</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1726">
+        <desc>Représentée à la Foire Saint-Laurent 1726</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#mirtis">mirtis</role>
+          <roleDesc>nymphe de la suite d'<emph>Hébé</emph>
+          </roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#deux_petits_amours">Deux petits Amours</role>
+        </castItem>
+        <castItem>
+          <role ana="#arlequin">Arlequin</role>
+          <roleDesc>aide de camp de<emph>Mercure</emph>et ancien valet de Léandre</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#colette">Colette</role>
+          <roleDesc>amante et cousine de Léandre</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#un_tabellion">Un tabellion</role>
+          <roleDesc>oncle de Colette</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#leandre">Léandre</role>
+          <roleDesc>lieutenant d'infanterie</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#madame_doucet">Madame Doucet</role>
+          <roleDesc>riche veuve</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#un_suisse">Un Suisse</role>
+          <roleDesc>ivre</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#mademoiselle_raffinot">Mademoiselle Raffinot</role>
+          <roleDesc>précieuse</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#farinette">Farinette</role>
+          <roleDesc>boulagère</roleDesc>
+          <actor>Pierrot</actor>
+        </castItem>
+        <castItem>
+          <role ana="#monsieur_pie_de_mouche">Monsieur Pie'-de-Mouche</role>
+          <roleDesc>Procureur</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_d_amours_et_de_plaisirs">Troupe d'Amours et de Plaisirs</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_d_amants_de_toutes_les_nations">Troupe d'Amants de toutes les nations</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène est dans l'île de Cythère.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Mirtis<stage>seule</stage>
+        </stage>
+        <sp who="#mirtis">
+          <speaker>Mirtis</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#mirtis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ohoh_ahah">Ho ho! Ha ha</title>
+            </desc>
+          </head>
+          <sp who="#mirtis">
+            <speaker>Mirtis</speaker>
+            <l met="6">Que de peuples divers</l>
+            <l met="6">Dans ces heureux climats!</l>
+            <l met="6">Les champs en sont couverts.</l>
+            <l met="6">Que j'entends de fracas!</l>
+            <l met="4">Ho ho! Ha ha!</l>
+            <l met="6">Hé, comment donc, pourquoi cela?</l>
+            <p>J'aperçois un petit Amour qui va m'éclaircir.</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Mirtis, un Amour</stage>
+        <sp who="#mirtis">
+          <speaker>Mirtis</speaker>
+          <stage>appelant</stage>
+          <p>St, st! Venez ici, petit garçon. Apprenez-moi quelle cérémonie rassemble à Cythére cent peuples différents.</p>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais, en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="8">Eh! Qui donc êtes-vous ma chère?</l>
+            <l met="8">Vous qui dans ce charmant séjour,</l>
+            <l met="8">D'une façon si familière,</l>
+            <l met="8">Osez aborder un Amour?</l>
+          </sp>
+        </spGrp>
+        <sp who="#mirtis">
+          <speaker>Mirtis</speaker>
+        </sp>
+        <spGrp who="#mirtis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bannissons_d_ici_l_humeur_noire">Bannissons d'ici l'humeur noire</title>
+            </desc>
+          </head>
+          <sp who="#mirtis">
+            <speaker>Mirtis</speaker>
+            <l met="8">Nymphe d'Hébé, sa cour aisée</l>
+            <l met="8">M'offre les moments les plus doux;</l>
+            <l met="8">Et je dois être apprivoisée</l>
+            <l met="8">Avec des oiseaux comme vous.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <p>Vous avez raison. Puisque vous êtes de la suite d'Hébé, nous ne devons pas</p>
+          <p>vous effarouchez; et vous méritez la conversation d'un Amour. Sachez donc, gentille nymphe, que Vénus a ordonné une revue générale de tous les amants. Vous voyez là-bas les vaisseaux sur lesquels nous les avons amenez ici.</p>
+        </sp>
+        <sp who="#mirtis">
+          <speaker>Mirtis</speaker>
+        </sp>
+        <spGrp who="#mirtis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#cap_de_bonne_esperance">Cap de Bonne-Espérance</title>
+            </desc>
+          </head>
+          <sp who="#mirtis">
+            <speaker>Mirtis</speaker>
+            <l met="7">Vous aurez de la cohue.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="7">C'est de quoi je suis charmé.</l>
+        </sp>
+        <sp who="#mirtis">
+          <speaker>Mirtis</speaker>
+          <l met="7">Pour cette grande revue</l>
+          <l met="7">Quel commissaire est nommé?</l>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="7">Vénus a choisi Mercure.</l>
+        </sp>
+        <sp who="#mirtis">
+          <speaker>Mirtis</speaker>
+          <l met="7">C'est bien choisir, je vous jure.</l>
+          <l met="7">Le patron des confidents</l>
+          <l met="7">Doit se connaître en amants.</l>
+          <p>Mais comment peut-il examiner toutes les troupes qui sont sous les étendards de Cupidon?</p>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <p>Oh! Il est soulagé par des aides de</p>
+          <p>camp, qu'il a distribué dans tous les postes et les quartiers de cette île. Hoçà, jeune nymphe, de quel régiment êtes-vous?</p>
+        </sp>
+        <sp who="#mirtis">
+          <speaker>Mirtis</speaker>
+          <p>Je n'ai point encore pris parti.</p>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <p>Tant mieux.</p>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#marche_francaise">Marche française</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="5">Entrez, ma mignonne,</l>
+            <l met="5">Dans mon régiment;</l>
+            <l met="5">Aux belles je donne</l>
+            <l met="5">Bon engagement</l>
+            <l met="5">Vous êtes de taille</l>
+            <l met="5">À vous enrôler,</l>
+            <l met="5">Et d'une bataille</l>
+            <l met="5">À vous démêler.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Mirtis, premier Amour, Second Amour</stage>
+        <sp who="#secamour">
+          <speaker>Second amour</speaker>
+          <stage>au premier</stage>
+        </sp>
+        <spGrp who="#secamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Amis, sans regretter Paris</title>
+            </desc>
+          </head>
+          <sp who="#secamour">
+            <speaker>Second amour</speaker>
+            <l met="8">Je m'oppose à l'engagement</l>
+            <l met="6">Que vous prétendez faire:</l>
+            <l met="8">La nymphe avec moi, sûrement,</l>
+            <l met="6">Fera mieux son affaire.</l>
+          </sp>
+        </spGrp>
+        <pb n="319"/>
+        <sp who="#premamour">
+          <speaker>Premier amour</speaker>
+          <stage>au second</stage>
+        </sp>
+        <spGrp who="#premamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">Vaudeville,tiré des <title ref="#tours_du_carnaval">Tours du carnaval</title> ()</desc>
+          </head>
+          <sp who="#premamour">
+            <speaker>Premier amour</speaker>
+            <l met="6">Dans notre régiment</l>
+            <l met="3">Patapan</l>
+            <l met="6">On fait mieux l'exercice.</l>
+          </sp>
+        </spGrp>
+        <sp who="#secamour">
+          <speaker>Second amour</speaker>
+          <stage>au premier</stage>
+          <l met="6">Vous êtes, mon ami,</l>
+          <l met="3">Biribi</l>
+          <l met="6">Qu'un amour de milice.</l>
+        </sp>
+        <sp who="#premamour">
+          <speaker>Premier amour</speaker>
+          <stage>au second</stage>
+        </sp>
+        <spGrp who="#premamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#amour_plait">Quel plaisir de voir Claudine</title>
+            </desc>
+          </head>
+          <sp who="#premamour">
+            <speaker>Premier amour</speaker>
+            <l met="7">Rendez nous plus de justice,</l>
+            <l met="7">Et modérez vos transports:</l>
+            <l met="7">En fait d'amour, la milice</l>
+            <l met="7">L'emporte sur les vieux corps.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mirtis">
+          <speaker>Mirtis</speaker>
+          <p>Vous avez beau vous vanter tous deux, vous n'avez pas l'air l'un et l'autre d'avoir fait seulement votre première campagne.</p>
+        </sp>
+        <spGrp who="#mirtis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#savoir_faire">J'offre ici mon savoir faire</title>
+            </desc>
+          </head>
+          <sp who="#mirtis">
+            <speaker>Mirtis</speaker>
+            <l met="7">Dans un cœur pour faire brèche,</l>
+            <l met="8">Vous n'êtes que des apprentis:</l>
+            <l met="8">Je vous crois encor trop petits,</l>
+            <l met="8">Pour bien décocher une flèche.</l>
+            <l met="8">Je vous crois ...</l>
+          </sp>
+        </spGrp>
+        <pb n="320"/>
+        <sp who="#secamour">
+          <speaker>Second amour</speaker>
+          <p>C'est ce qui vous trompe. Tel que vous me voyez, on ne me marche pas sur le pied impunément.</p>
+        </sp>
+        <sp who="#mirtis">
+          <speaker>Mirtis</speaker>
+          <p>Diantre!</p>
+        </sp>
+        <sp who="#premamour">
+          <speaker>Premier amour</speaker>
+          <p>Il ne faut pas non plus m'échauffer les oreilles.</p>
+        </sp>
+        <sp who="#mirtis">
+          <speaker>Mirtis</speaker>
+          <p>Ho ho!</p>
+        </sp>
+        <sp who="#premamour">
+          <speaker>Premier amour</speaker>
+        </sp>
+        <spGrp who="#premamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#petit_boudrillon">Petit boudrillon</title>
+            </desc>
+          </head>
+          <sp who="#premamour">
+            <speaker>Premier amour</speaker>
+            <l met="5">Aussitôt je dégaine.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mirtis">
+          <speaker>Mirtis</speaker>
+          <l met="5">Ah! Quel petit dragon,</l>
+          <l met="3">Boudrillon!</l>
+        </sp>
+        <sp who="#secamour">
+          <speaker>Second amour</speaker>
+          <l met="5">La résistance est vaine</l>
+          <l met="5">Contre mon aiguillon.</l>
+        </sp>
+        <sp who="#mirtis">
+          <speaker>Mirtis</speaker>
+          <l met="3">Boudrillon!</l>
+          <l met="5">Petit boudrillon,</l>
+          <l met="5">Boudrillon, dondaine,</l>
+          <l met="5">Petit boudrillon,</l>
+          <l met="5">Boudrillon, dondon!</l>
+        </sp>
+        <pb n="321"/>
+        <sp who="#premamour">
+          <speaker>Premier amour</speaker>
+          <p>Tous mes exploits sont des prodiges. J'ai dépouillé, par exemple, cent sénateurs de leurs robes.</p>
+        </sp>
+        <spGrp who="#premamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#qu_on_apporte_bouteille">Qu'on apporte bouteille</title>
+            </desc>
+          </head>
+          <sp who="#premamour">
+            <speaker>Premier amour</speaker>
+            <l met="6">Morbleu! Je les oblige</l>
+            <l met="6">À quitter, tous les jours,</l>
+            <l met="4">Leurs longs rabats.</l>
+          </sp>
+        </spGrp>
+        <sp who="#secamour">
+          <speaker>Second amour</speaker>
+          <l met="4">Le beau prodige!</l>
+          <l met="8">Moi j'en fais quitter de plus courts.</l>
+        </sp>
+        <sp who="#premamour">
+          <speaker>Premier amour</speaker>
+          <p>Il y a bien là de quoi vous applaudir! Ces rabats courts le plus souvent ne tiennent à rien. Mais laissons là toutes ces prouesses communes, qui doivent mettre pavillon bas devant celle que j'ai faite ces jours passés.</p>
+        </sp>
+        <sp who="#secamour">
+          <speaker>Second amour</speaker>
+          <p>Voyons donc ce que c'est.</p>
+        </sp>
+        <pb n="322"/>
+        <sp who="#premamour">
+          <speaker>Premier amour</speaker>
+        </sp>
+        <spGrp who="#premamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#premamour">
+            <speaker>Premier amour</speaker>
+            <l met="8">J'ai rendu sensible et constante</l>
+            <l met="8">Une divinité chantante.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mirtis">
+          <speaker>Mirtis</speaker>
+          <l met="8">Pour ceci ce n'est pas un jeu.</l>
+        </sp>
+        <sp who="#premamour">
+          <speaker>Premier amour</speaker>
+          <l met="8">Un riche loueur de carrosses,</l>
+          <l met="8">En secret la vient, depuis peu,</l>
+          <l met="8">D'épouser en quinzième noces.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Mirtis, les deux Amours, Arlequin</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>sans les voir</stage>
+          <p>Ô la belle revue! Ceux qui disent que l'amour n'a point d'armée n'ont pas feuilleté les galantes pages d'Ovide Nason. Ce précepteur d'amour, plus habile que celui de la rue</p>
+          <p>Française, dit en termes exprès:</p>
+          <p>
+            <emph>Militat omnis amans, et habet sua castra Cupido.</emph>
+          </p>
+        </sp>
+        <pb n="323"/>
+        <note>On jouait alors à la Comédie Italienne une pièce intitulée:le précepteur d'amour</note>
+        <stage>Apercevant les deux Amours.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Mais que vois-je?... Que faites-vous donc ici, Messieurs les Amours?</p>
+        </sp>
+        <sp who="#premamour">
+          <speaker>Premier amour</speaker>
+          <p>Nous n'avons pas de compte à vous rendre.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Comment, ventrebleu! Vous n'avez pas de compte à me rendre! Devez-vous ignorer que je suis un des aides de camp de Mercure? Retirez-vous, sans répliquer; autrement, je ferai voir aujourd'hui dans le camp deux Amours sur le cheval de bois.</p>
+        </sp>
+        <stage>Les deux Amours s'enfuient.</stage>
+        <sp who="#mirtis">
+          <speaker>Mirtis</speaker>
+          <p>Comme vous les régalez!</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Et vous, la belle, si vous me raisonnez, je vais vous mettre au corps de garde.</p>
+        </sp>
+        <sp who="#mirtis">
+          <speaker>Mirtis</speaker>
+          <stage>à part, se sauvant</stage>
+          <p>Mercure a pris là un aide de camp bien brutal.</p>
+        </sp>
+        <pb n="324"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Arlequin<stage>seul</stage>
+        </stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>i</stage>
+          <p>On m'a dit que Léandre, mon ancien maître, était ici. Je lui serai peut-être utile. Je le souhaite de tout mon cœur; car je lui ai des obligations qu'il ignore. Je me suis souvent servi de son linge et quelque fois de son argent. Allons le chercher, pour m'acquitter. Je suis un homme rare, moi; j'aime à payer mes dettes.</p>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Je veux lui témoigner mon zèle...</l>
+            <l met="8">Mais quelqu'un porte ici ses pas.</l>
+            <l met="8">Partons, ne nous amusons pas,</l>
+            <l met="6">Quand l'honneur nous appelle.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Colette, un Tabellion<stage>son oncle</stage>
+        </stage>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>Je vous suis bien obligée, mon oncle, de ne m'avoir pas abandonnée dans le</p>
+          <p>voyage que les Amours me forcent de faire ici, sans que je sache pourquoi.</p>
+        </sp>
+        <sp who="#letabellion">
+          <speaker>Le tabellion</speaker>
+          <p>Foi de tabellion, je n'en sais rien non plus.</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+        </sp>
+        <spGrp who="#colette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_non_je_ne_me_connais_guere">Non, non, je ne me connais guère</title>
+            </desc>
+          </head>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <l met="8">Non, non, je ne le connais guère,</l>
+            <l met="8">Cet enfant qui règne à Cythère.</l>
+          </sp>
+        </spGrp>
+        <sp who="#letabellion">
+          <speaker>Le tabellion</speaker>
+          <l met="8">Ce petit dieu n'est qu'un vaurien,</l>
+          <l met="8">Oh! Pour moi, je le connais bien.</l>
+          <p>Il m'a joué de bons tours.</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>Cela est vrai. Tenez, par exemple, il n'a jamais voulu vous donner le cœur de ma tante.</p>
+        </sp>
+        <sp who="#letabellion">
+          <speaker>Le tabellion</speaker>
+          <p>Tu as raison, Colette. Ta tante, avant notre mariage, a bien fait la rétive.</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+        </sp>
+        <spGrp who="#colette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_suis_la_fleur_des_garcons_du_village">Je suis la fleur des garçons du village</title>
+            </desc>
+          </head>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <l met="10">Elle fuyait votre ardeur méprisée,</l>
+            <l met="8">Sans la payer d'aucun retour.</l>
+          </sp>
+        </spGrp>
+        <pb n="326"/>
+        <sp who="#letabellion">
+          <speaker>Le tabellion</speaker>
+          <l met="10">Oui, mais je l'ai bravement épousée,</l>
+          <l met="8">En dépit d'elle et de l'amour.</l>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>Le receveur de la dame de notre village a eu bien mal au cœur de ce mariage-là.</p>
+        </sp>
+        <sp who="#letabellion">
+          <speaker>Le tabellion</speaker>
+          <p>Oui, parbleu! Il m'en a voulu pendant quelques jours; mais, heureusement, le temps l'a guéri. Il s'est fait une raison, il m'accable d'amitiés, et ne saurait passer un jour sans venir chez moi.</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>C'est un bon enfant, il ne garde point sa rancune.</p>
+        </sp>
+        <sp who="#letabellion">
+          <speaker>Le tabellion</speaker>
+          <p>Mais, dis-moi un peu, ma nièce, puisque les Amours t'ont forcée de venir à leur revue, il faut bien qu'ils aient quelque hypothèque sur ta personne.</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>Aucune; je suis trop prévenue contre eux.</p>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="alternative_melody">
+            <desc>Je me ris, je me ris, je me ris d'eux</desc>
+            <desc>Mariez, mariez, mariez-moi</desc>
+          </head>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <l met="7">Souvent je vois des amants,</l>
+            <l met="7">Qui se parlent de tendresse;</l>
+            <l met="7">Ils ont peu d'heureux moments,</l>
+            <l met="7">Ils se querellent sans cesse.</l>
+            <l met="10">Je me ris, je me ris, je me ris d'eux:</l>
+            <l met="7">L'amour est une faiblesse;</l>
+            <l met="6">Je me ris, je me ris, je me ris d'eux:</l>
+            <l met="7">L'amitié borne mes vœux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#letabellion">
+          <speaker>Le tabellion</speaker>
+          <p>C'est fort bien fait à toi. L'amitié vaut mieux que l'amour. C'est, sans doute, pour Lisette que tu gardes ta bonne amitié?</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>Oui, j'aime fort Lisette; mais il me semble que j'aime encore davantage mon cousin Léandre.</p>
+        </sp>
+        <sp who="#letabellion">
+          <speaker>Le tabellion</speaker>
+          <stage>branlant de la tête</stage>
+          <p>Hon-hon!</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>Oh! Ne croyez pas pour cela que j'aie de l'amour pour lui.</p>
+        </sp>
+        <pb n="328"/>
+        <sp who="#letabellion">
+          <speaker>Le tabellion</speaker>
+          <p>Mais pourquoi as-tu plus d'amitié pour lui que pour elle?</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>Je n'en sais rien.</p>
+        </sp>
+        <sp who="#letabellion">
+          <speaker>Le tabellion</speaker>
+          <p>Je le devine bien, moi. C'est que Léandre est un jeune officier, lieutenant de sa compagnie, qui a un plumet rouge, une cocarde blanche: oh! dame! tout cela échauffe bien l'amitié dans le cœur d'une fille.</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+        </sp>
+        <spGrp who="#colette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#attendez_a_demain_mon_voisin">Attendez à demain, mon voisin</title>
+            </desc>
+          </head>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <l met="6">Il est vrai que je l'aime,</l>
+            <l met="6">Comme on aime un cousin.</l>
+          </sp>
+        </spGrp>
+        <sp who="#letabellion">
+          <speaker>Le tabellion</speaker>
+          <l met="6">Il en use de même,</l>
+          <l met="6">Pour couvrir son dessein.</l>
+          <l met="6">Ah! Morbleu! Qu'il est fin!</l>
+          <l met="3">Le cousin!</l>
+          <l met="6">Ah! Morbleu! Qu'il est fin!</l>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>Vous vous trompez, mon oncle.</p>
+        </sp>
+        <sp who="#letabellion">
+          <speaker>Le tabellion</speaker>
+        </sp>
+        <spGrp who="#letabellion">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Voulez-vous savoir qui des deux</title>
+            </desc>
+          </head>
+          <sp who="#letabellion">
+            <speaker>Le tabellion</speaker>
+            <l met="8">Lorsqu'on veut, sans lui faire peur,</l>
+            <l met="8">Avoir le bail d'un jeune cœur;</l>
+            <l met="8">Comme on craint que, pour cette affaire,</l>
+            <l met="8">Il ne demande caution,</l>
+            <l met="8">L'amour est l'adjudicataire</l>
+            <l met="8">Et l'amitié le prête-nom.</l>
+          </sp>
+        </spGrp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>Vous vous trompez, vous dis-je; Léandre ne dissimule point son ardeur.</p>
+        </sp>
+        <sp who="#letabellion">
+          <speaker>Le tabellion</speaker>
+          <p>C'est donc toi qui caches la tienne. Mais, ma pauvre Colette, tes finesses sont cousues de fil blanc.</p>
+        </sp>
+        <spGrp who="#letabellion">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nuit_et_jour">Je passe la nuit et le jour</title>
+            </desc>
+          </head>
+          <sp who="#letabellion">
+            <speaker>Le tabellion</speaker>
+            <l met="8">Quand près de toi ce beau cousin,</l>
+            <l met="8">En petit-maître se trémousse,</l>
+            <l met="8">Comment reçois-tu ce badin?</l>
+          </sp>
+        </spGrp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <l met="8">Hé! mais vraiment, je le repousse.</l>
+        </sp>
+        <sp who="#letabellion">
+          <speaker>Le tabellion</speaker>
+          <l met="8">Tu le repousses plaisamment!</l>
+          <l met="8">Tu t'y prends si nonchalamment,</l>
+          <l met="4">Si doucement,</l>
+          <l met="4">Si mollement,</l>
+          <l met="8">Qu'il y revient à tout moment.</l>
+        </sp>
+        <pb n="330"/>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>Ah! Mon oncle, que vous expliquez mal la manière dont je reçois les airs familiers de Léandre!</p>
+        </sp>
+        <spGrp who="#colette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#coucou">Comme un coucou que l'amour presse</title>
+            </desc>
+          </head>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <l met="8">Devez-vous, sur ces apparences,</l>
+            <l met="8">Juger que je l'aime en effet?</l>
+            <l met="8">Ce sont de petites licences</l>
+            <l met="8">Que le cousinage permet.</l>
+          </sp>
+        </spGrp>
+        <sp who="#letabellion">
+          <speaker>Le tabellion</speaker>
+          <p>Je veux bien croire que je m'abuse; mais il faut avouer que l'amour de ton cousin fait bien ses orges avec ta bonne amitié.</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>Allons, le commissaire de la revue nous fera voir tantôt qui de nous deux est dans l'erreur.</p>
+        </sp>
+        <stage>Ils s'en vont.</stage>
+        <pb n="331"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Léandre, Arlequin</stage>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <p>J'aperçois ma chère Colette; suivons-là. Je veux pratiquer auprès d'elle l'artifice que tu me conseilles d'employer.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Non, vous prendriez mal votre temps, puisque son oncle est avec elle; mais dès que vous la trouverez seule, je vous réponds qu'en usant de ma recette, vous l'obligerez à se démasquer. Car enfin, suivant votre rapport, vous êtes plus heureux que vous ne croyez l'être.</p>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bruit_armes">J'entends déjà le bruit des armes</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Avec l'objet qui sait vous plaire,</l>
+            <l met="8">Vous ne plaidez que pour un nom.</l>
+            <l met="8">Son cœur, bizarrement sévère,</l>
+            <l met="8">Refuse à votre passion</l>
+            <l met="8">Le titre de pensionnaire</l>
+            <l met="8">Mais vous touchez la pension.</l>
+          </sp>
+        </spGrp>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <p>Je ne sais si ta conjecture...</p>
+        </sp>
+        <pb n="332"/>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Vous ne connaissez pas encore l'amour, quoique vous soyez fort amoureux. C'est un petit rusé, qui emprunte toutes sortes de déguisements, pour entrer dans des cœurs qui le mettraient à la porte s'il se présentait sans masque.</p>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#apercus_en_songe">L'autre nuit, j'aperçus en songe</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Il se masque en reconnaissance,</l>
+            <l met="8">En estime il se travestit,</l>
+            <l met="8">Il prend de la pitié l'habit,</l>
+            <l met="8">Et les traits de la bienveillance;</l>
+            <l met="8">La haine même quelquefois</l>
+            <l met="8">Lui prête son affreux minois.</l>
+            <p>Mais allez épier le moment où vous pourrez entretenir Colette en particulier.</p>
+          </sp>
+        </spGrp>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <p>Adieu, jusqu'à tantôt.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Arlequin, Madame Doucet<stage>veuve</stage>
+        </stage>
+        <sp who="#mmedoucet">
+          <speaker>Madame doucet</speaker>
+          <p>Je ne conçois pas ce que l'amour peut</p>
+          <p>avoir à démêler avec Madame Doucet, qui, sans contredit, est la femme de Paris la plus édifiante.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Où est donc cette édifiante Madame Doucet?</p>
+        </sp>
+        <sp who="#mmedoucet">
+          <speaker>Madame doucet</speaker>
+          <p>Vous la voyez.</p>
+        </sp>
+        <spGrp who="#mmedoucet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#coucou">Comme un coucou que l'amour presse</title>
+            </desc>
+          </head>
+          <sp who="#mmedoucet">
+            <speaker>Madame doucet</speaker>
+            <l met="8">Je suis une riche douairière.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">À votre air je m'en aperçois.</l>
+        </sp>
+        <sp who="#mmedoucet">
+          <speaker>Madame doucet</speaker>
+          <l met="8">Pour une femme régulière,</l>
+          <l met="8">Le marais ne cite que moi.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Je vous en fais mon compliment.</p>
+        </sp>
+        <sp who="#mmedoucet">
+          <speaker>Madame doucet</speaker>
+        </sp>
+        <spGrp who="#mmedoucet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quel_plaisir_d_aimer_sans_contrainte">Quel plaisir d'aimer sans contrainte</title>
+            </desc>
+          </head>
+          <sp who="#mmedoucet">
+            <speaker>Madame doucet</speaker>
+            <l met="8">Ah! Peut-on traîner à Cythère,</l>
+            <l met="9">Femme d'un visage si sévère!</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="9">Votre petit cœur n'est pas, je gage,</l>
+          <l met="9">Aussi prude que votre visage.</l>
+        </sp>
+        <pb n="334"/>
+        <sp who="#mmedoucet">
+          <speaker>Madame doucet</speaker>
+          <p>Vous n'êtes pas bon physionomiste.</p>
+        </sp>
+        <spGrp who="#mmedoucet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lanturlu">Lanturlu</title>
+            </desc>
+          </head>
+          <sp who="#mmedoucet">
+            <speaker>Madame doucet</speaker>
+            <l met="5">Je fuis l'esclavage</l>
+            <l met="5">Du dieu des amours;</l>
+            <l met="5">Dans un doux veuvage</l>
+            <l met="5">Je passe mes jours.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="5">C'est être bien sage.</l>
+        </sp>
+        <sp who="#mmedoucet">
+          <speaker>Madame doucet</speaker>
+          <l met="7">Je n'aime que la vertu.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="10">Lanturlu, Lanturlu, Lanturelu.</l>
+        </sp>
+        <stage>À part.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Voici quelque amour hypocrite.</p>
+        </sp>
+        <sp who="#mmedoucet">
+          <speaker>Madame doucet</speaker>
+          <p>J'ai surtout une extrême sensibilité pour les malheurs d'autrui. J'ai retiré chez moi Damis, jeune homme aimable et vertueux, qui était dans une indigence... Il n'avait pas d'habit.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mille_allarmes">Ah! Quel plaisir, lorsqu'après mille alarmes</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="10">Ah! Quel plaisir de couvrir la misère</l>
+            <l met="10">D'un jouvenceau sans argent, et tout nu.</l>
+          </sp>
+        </spGrp>
+        <pb n="335"/>
+        <sp who="#mmedoucet">
+          <speaker>Madame doucet</speaker>
+          <l met="10">Le pauvre enfant manquait du nécessaire.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="10">Il a chez vous trouvez du superflu.</l>
+        </sp>
+        <sp who="#mmedoucet">
+          <speaker>Madame doucet</speaker>
+          <p>Je le rencontrai chez une vieille dame de mes amies, dont il allait implorer le crédit pour avoir un emploi. Dans l'abattement où le mettait sa mauvaise fortune, il avait un air triste, mais touchant, de longs cheveux blonds négligés, mais beaux; enfin, c'était une belle fleur, qui séchait sur pied, faute de suc alimentaire.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Vous arrivâtes là, comme une pluie après trois mois de sécheresse.</p>
+        </sp>
+        <sp who="#mmedoucet">
+          <speaker>Madame doucet</speaker>
+          <stage>déclamant</stage>
+          <l met="12">Voilà comme Damis vint s'offrir à ma vue.</l>
+          <l met="12">Je l'avouerai, d'abord mon âme en fut émue:</l>
+          <l met="12">Et ma vertu frémit de cette émotion:</l>
+          <l met="12">Mais, voyant que c'était pure compassion,</l>
+          <l met="12">Aussitôt je formai le dessein charitable</l>
+          <l met="12">De tendre à ce jeune homme une main secourable.</l>
+        </sp>
+        <pb n="336"/>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>C'est une belle chose que la pitié!</p>
+        </sp>
+        <sp who="#mmedoucet">
+          <speaker>Madame doucet</speaker>
+          <p>Je l'emmenai chez moi, je le fis mon intendant, et je n'ai pas sujet de m'en repentir.</p>
+        </sp>
+        <spGrp who="#mmedoucet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#faire_l_amour">Faire l'amour la nuit et le jour</title>
+            </desc>
+          </head>
+          <sp who="#mmedoucet">
+            <speaker>Madame doucet</speaker>
+            <l met="6">Cet aimable blondin</l>
+            <l met="6">Donne à son ministère</l>
+            <l met="6">Les heures du matin,</l>
+            <l met="6">Et s'occupe à me faire</l>
+            <l met="2">Sa cour</l>
+            <l met="5">Le reste du jour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Et vous recueillez avec usure le fruit de votre pitié.</p>
+        </sp>
+        <sp who="#mmedoucet">
+          <speaker>Madame doucet</speaker>
+          <p>Vous badinez, je pense.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lonlanla_derirette">Lonlanla, derirette</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Oh! Je n'ai garde, en vérité;</l>
+            <l met="8">Et votre régularité,</l>
+            <l met="6">Lonlanla, derirette,</l>
+            <l met="8">M'inspire un respect infini,</l>
+            <l met="6">Lonlanla, deriri.</l>
+            <p>Allez, Madame la pitoyable, allez à la revue. Vous n'y serez pas de trop.</p>
+          </sp>
+        </spGrp>
+        <pb n="337"/>
+        <sp who="#mmedoucet">
+          <speaker>Madame doucet</speaker>
+          <p>L'imbécile! Il prend ma pitié pour un amour déguisé.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Arlequin, un Suisse<stage>ivre</stage>
+        </stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Que vois-je? Un Suisse à la revue des Amours?</p>
+        </sp>
+        <sp who="#lesuisse">
+          <speaker>Le suisse</speaker>
+          <stage>chancelant</stage>
+        </sp>
+        <spGrp who="#lesuisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mirlababibobette">Mirlababibobette</title>
+            </desc>
+          </head>
+          <sp who="#lesuisse">
+            <speaker>Le suisse</speaker>
+            <l met="8">L'être ein brave amant que t'y vois,</l>
+            <l met="6">Mirlapapipopette,</l>
+            <l met="6">Par mon foi.</l>
+          </sp>
+          <sp who="#lesuisse">
+            <speaker>Le suisse</speaker>
+            <l met="8">Moi, soupirer à la franquette,</l>
+            <l met="8">Mirlapapi, sarlapapo,</l>
+            <l met="6">Mirlapapipopette,</l>
+            <l met="6">Sarlapaporita</l>
+          </sp>
+          <sp who="#lesuisse">
+            <speaker>Le suisse</speaker>
+            <l met="4">Moi blessé là.</l>
+          </sp>
+        </spGrp>
+        <stage>Il fait un rot.</stage>
+        <stage>Montrant son cœur.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>lui portant le doigt sur le front</stage>
+          <p>C'est plus haut, mon camarade, c'est plus haut.</p>
+        </sp>
+        <sp who="#lesuisse">
+          <speaker>Le suisse</speaker>
+          <stage>se touchant le front</stage>
+        </sp>
+        <spGrp who="#lesuisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#talaleri">Talalerire</title>
+            </desc>
+          </head>
+          <sp who="#lesuisse">
+            <speaker>Le suisse</speaker>
+            <l met="8">Sti tête de raison pourvue,</l>
+            <l met="8">Savoir conservir son sang-froid;</l>
+            <l met="8">Et por briller dans la revue,</l>
+            <l met="8">Moi l'être ici venu tout droit.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Tout droit, cela vous plaît à dire.</l>
+        </sp>
+        <spGrp>
+          <caption>Tous deux</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="12">Talaleri, talaleri, talalerite.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cabaretiere">La Cabaretière</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Sachons quel beau feu vous anime.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lesuisse">
+          <speaker>Le suisse</speaker>
+          <l met="8">Ch'aime Monmoiselle Catin,</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">C'est que ce nom finit en in,</l>
+          <l met="7">Et qu'il rime, rime, rime,</l>
+          <l met="8">C'est que ce nom finit en in,</l>
+          <l met="7">Et qu'il rime avec le vin.</l>
+        </sp>
+        <pb n="339"/>
+        <sp who="#lesuisse">
+          <speaker>Le suisse</speaker>
+          <p>Parti par mon foi, vous l'être coquenard, Monsir.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Moi guoguenard! Je considère trop les tendres amants.</p>
+        </sp>
+        <sp who="#lesuisse">
+          <speaker>Le suisse</speaker>
+        </sp>
+        <spGrp who="#lesuisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lampons">Lampons</title>
+            </desc>
+          </head>
+          <sp who="#lesuisse">
+            <speaker>Le suisse</speaker>
+            <l met="7">Rien n'égalir mon ardeur,<stage type="bis">bis</stage>
+            </l>
+            <l met="7">Ch'avre là-dedans ein cœur<stage type="bis">bis</stage>
+            </l>
+            <l met="7">De la première cuvée.</l>
+          </sp>
+        </spGrp>
+        <stage>Il fait encore un rot.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>à part</stage>
+          <l met="7">Son ardeur est envinée.</l>
+        </sp>
+        <stage>Haut.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="4">lampons, lampons.</l>
+        </sp>
+        <sp who="#lesuisse">
+          <speaker>Le suisse</speaker>
+          <l met="7">Camerade, lampons.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Voilà, sans doute, votre air favori. Mais, dites-moi un peu, quel métier fait cette mademoiselle Catin, que vous aimez si délicatement?</p>
+        </sp>
+        <sp who="#lesuisse">
+          <speaker>Le suisse</speaker>
+          <p>Monmoiselle Catin l'être ein fameuse caperetière.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Une vendeuse de câpres? Une épicière?</p>
+        </sp>
+        <sp who="#lesuisse">
+          <speaker>Le suisse</speaker>
+          <p>Hé! Non, monsir, vous n'entendre pas moi. Catin tenir ein taverne à l'Porcherons.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Ha! Je vous entends! C'est une fameuse cabaretière de guinguette.</p>
+        </sp>
+        <sp who="#lesuisse">
+          <speaker>Le suisse</speaker>
+          <p>
+            <emph>Ya, ya.</emph>
+          </p>
+        </sp>
+        <spGrp who="#lesuisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reguingue">Ô reguingué, ô lonlanla</title>
+            </desc>
+          </head>
+          <sp who="#lesuisse">
+            <speaker>Le suisse</speaker>
+            <l met="8">Moi va chez elle assitûment.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Il y paraît assurément.</l>
+        </sp>
+        <sp who="#lesuisse">
+          <speaker>Le suisse</speaker>
+          <l met="8">Ô requinqué, ô linlonla!</l>
+          <l met="8">Ses chambres sont mes calleries.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Ses caves sont vos Tuilleries.</l>
+        </sp>
+        <stage>À part.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Cet honnête Suisse croit aimer la</p>
+          <p>maîtresse du cabaret, et il n'en aime que les tonneaux. Ce n'est pas un amour déguisé, c'est une ivrognerie masquée.</p>
+        </sp>
+        <sp who="#lesuisse">
+          <speaker>Le suisse</speaker>
+        </sp>
+        <spGrp who="#lesuisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#feuillantines">Les feuillantines</title>
+            </desc>
+          </head>
+          <sp who="#lesuisse">
+            <speaker>Le suisse</speaker>
+            <l met="7">Moi che l'aime en vérité,</l>
+            <l met="3">Son beauté,</l>
+            <l met="7">Qui n'être point frelaté.</l>
+            <l met="7">De sti file si cholie,</l>
+            <l met="7">Ch'en boirai<stage type="bis">bis</stage>chusqu'à la lie.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Ma foi, camarade Suisse, dispensez-vous de vous présenter à la revue des Amours. Vous y seriez reçu comme un frelon dans un essaim d'abeilles. D'ailleurs, je vous avertis qu'il n'y a point là de cantine. Cupidon ne veut pas qu'on y boive du vin.</p>
+        </sp>
+        <sp who="#lesuisse">
+          <speaker>Le suisse</speaker>
+          <stage>étonné</stage>
+        </sp>
+        <spGrp who="#lesuisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nanon_dormait">Allons à la guinguette</title>
+            </desc>
+          </head>
+          <sp who="#lesuisse">
+            <speaker>Le suisse</speaker>
+            <l met="4">Quoi? sti liqueur</l>
+            <l met="6">L'être ici défendue!</l>
+            <l met="4">Moi, point de cœur</l>
+            <l met="6">D'allir à ton revue.</l>
+            <l met="6">Ritourne à l'Polcherons:</l>
+            <l met="4">Allons, allons,</l>
+            <l met="8">Allons à sti quinquette, allons.</l>
+          </sp>
+        </spGrp>
+        <pb n="342"/>
+        <stage>Il s'en va en faisant des esses.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Voilà un suisse bien conditionné. Le digne amant! Bacchus peut à juste titre revendiquer ses soupirs.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Arlequin, Mademoiselle Raffinot</stage>
+        <sp who="#melleraffinot">
+          <speaker>Mademoiselle raffinot</speaker>
+          <p>Oh! Pour cela, rien n'est plus disgracieux!</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Vous vous plaignez des amours, apparemment.</p>
+        </sp>
+        <sp who="#melleraffinot">
+          <speaker>Mademoiselle raffinot</speaker>
+          <p>Oui. Leur procédé est autrement tyrannique.</p>
+          <p>Quoi? Mademoiselle Rafinnot, fille teinte de sagesse, et propriétaire de sa liberté, se verra livrée à la discrétion de l'audace de ces petits étourdis!</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>à part</stage>
+          <p>Voici, ce me semble, une précieuse</p>
+          <p>ridicule.<stage>Haut.</stage>Qui êtes-vous, mademoiselle?</p>
+        </sp>
+        <pb n="343"/>
+        <sp who="#melleraffinot">
+          <speaker>Mademoiselle raffinot</speaker>
+        </sp>
+        <spGrp who="#melleraffinot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#j_ai_fait_souvent_resonner_ma_musette">J'ai fait souvent résonner ma musette</title>
+            </desc>
+          </head>
+          <sp who="#melleraffinot">
+            <speaker>Mademoiselle raffinot</speaker>
+            <l met="10">Je suis l'appui du style énigmatique,</l>
+            <l met="10">Qui fait le beau des modernes écrits.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="10">Ah! Vous donnez dans le néologique,</l>
+          <l met="10">Autrement dit l'argot des beaux-esprits.</l>
+        </sp>
+        <sp who="#melleraffinot">
+          <speaker>Mademoiselle raffinot</speaker>
+          <p>Que voulez-vous dire, mon ami, par votre argot? Il faut que vous soyez d'un esprit bien agreste et bien infortuné, pour vous permettre à l'ironie, sur un style qui met vos lumière en échec et qui passe les bornes de vos conceptions.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>C'est ce qui vous trompe, Mademoiselle Raffinot. J'ai été deux ans garçon dans un café, ou l'on ne crachait que Phœbus. Là, les génies de la grande espèce ont fait sortir mon esprit de sa coquille; et je puis dire qu'en les écoutant, j'ai perçu les émoluments de mon attention.</p>
+        </sp>
+        <pb n="344"/>
+        <sp who="#melleraffinot">
+          <speaker>Mademoiselle raffinot</speaker>
+          <p>Mais, vraiment, vous m'en montrer déjà un bel échantillon.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Mais venons au fait. Pourquoi les Amours vous ont-ils amenée ici?</p>
+        </sp>
+        <sp who="#melleraffinot">
+          <speaker>Mademoiselle raffinot</speaker>
+          <p>C'est ce que j'ignore. J'étais dans ma bibliothèque, où mon esprit, par le voiture de mes yeux, faisait le voyage du monde de la lune.</p>
+        </sp>
+        <spGrp who="#melleraffinot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ramonez_ci">Ramonez-ci, ramonez là</title>
+            </desc>
+          </head>
+          <sp who="#melleraffinot">
+            <speaker>Mademoiselle raffinot</speaker>
+            <l met="7">Pendant que j'étais à faire</l>
+            <l met="7">Ce voyage sédentaire,</l>
+            <l met="7">Les amours m'ont prise, hélas!</l>
+            <l met="8">L'un par ici, l'autre par là</l>
+            <l met="3">La, la, la;</l>
+            <l met="8">Et me voici dans leurs états.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Il faut bien qu'ils vous soupçonnent de vous être coiffée d'un quelqu'un.</p>
+        </sp>
+        <sp who="#melleraffinot">
+          <speaker>Mademoiselle raffinot</speaker>
+          <p>Ha! Je vois ce que c'est. Dorimon, mon</p>
+          <p>beau voisin, homme qui a donné beaucoup d'éducation à son esprit, vient souvent s'enfermer avec moi dans mon cabinet.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>à part</stage>
+          <p>Nous y voilà.</p>
+        </sp>
+        <sp who="#melleraffinot">
+          <speaker>Mademoiselle raffinot</speaker>
+          <p>Nous y faisons des collections des termes nouveaux, que forgent tous les jours sur l'enclume du bon goût, les génies conséquents et lumineux.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Fort bien. Poursuivez.</p>
+        </sp>
+        <sp who="#melleraffinot">
+          <speaker>Mademoiselle raffinot</speaker>
+          <p>Comme la personne de Dorimon est un fardeau de grâces nobles et imposantes, et que j'ai, sans vanité, sur les agréments, un visage assez disciplinables, les Amours se seront imaginés que nous sommes tombés amoureux l'un de l'autre.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Tomber amoureux. Oh! Pour celui-là, je ne l'avais pas encore entendu.</p>
+        </sp>
+        <sp who="#melleraffinot">
+          <speaker>Mademoiselle raffinot</speaker>
+          <p>Hé, oui tomber amoureux. Ne dit-on</p>
+          <p>pas tomber malade? Or, comme l'amour est une maladie, on doit dire tomber amoureux et tomber en amour, comme tomber en apoplexie.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Laissons-là le terme et revenons à Dorimon.</p>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#si_l_on_menait_a_a_guerre">Si l'on menait à la guerre</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Il paraît, ma bonne dame,</l>
+            <l met="7">Qu'avec ce joli mortel,</l>
+            <l met="7">Vous abandonnez votre âme</l>
+            <l met="7">À son geste naturel.</l>
+            <p>C'est-à-dire, en bon français, que je crois que vous avez de l'amour pour lui.</p>
+          </sp>
+        </spGrp>
+        <sp who="#melleraffinot">
+          <speaker>Mademoiselle raffinot</speaker>
+          <p>Non, je n'en ai point. Cela est décidé. Il est bien vrai qu'un sentiment d'estime vif et délicat nous uniformise l'un et l'autre.</p>
+        </sp>
+        <spGrp who="#melleraffinot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#eh_ne_vous_estimez_pas_tant">Eh! Ne vous estimez pas tant</title>
+            </desc>
+          </head>
+          <sp who="#melleraffinot">
+            <speaker>Mademoiselle raffinot</speaker>
+            <l met="8">Nous nous estimons fortement.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Eh! Ne vous estimez pas tant!</l>
+        </sp>
+        <sp who="#melleraffinot">
+          <speaker>Mademoiselle raffinot</speaker>
+          <l met="8">Au point que pour nous un moment</l>
+          <l met="4">D'éloignement,</l>
+          <l met="4">Est un tourment.</l>
+        </sp>
+        <pb n="347"/>
+        <spGrp>
+          <head type="melody" subtype="melody_part">
+            <desc type="part">fin de l'air</desc>
+            <title>
+              <title ref="#charlot">M.Charlot</title>
+            </title>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Ah! Ne vous zeste, zeste, zeste,</l>
+            <l met="8">Eh! Ne vous estimez pas tant!</l>
+            <p>Tudieu! Voilà un sentiment s'estime à vingt-quatre carats!</p>
+            <l met="4">Qu'il est joli!</l>
+            <l met="4">Qu'il est gentil,</l>
+            <l met="12">À l'Amour il ressemble, on dirait que c'est lui.</l>
+          </sp>
+        </spGrp>
+        <sp who="#melleraffinot">
+          <speaker>Mademoiselle raffinot</speaker>
+          <p>Allez, mon cher, vous jugez mal de la figure de mes sentiments. La lorgnette de votre pénétration est trouble.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Tirez, tirez, Madame la précieuse. Les Amours vous feront bien voir que vous jouissez frauduleusement de leurs biens.</p>
+        </sp>
+        <sp who="#melleraffinot">
+          <speaker>Mademoiselle raffinot</speaker>
+          <stage>en colère</stage>
+          <p>Vous êtes un insolent! Si les femmes portaient à leur côté un fardeau secourable, je vous le passerais au travers du corps</p>
+        </sp>
+        <stage>Elle se retire.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Quelle amazone de Parnasse!... Il vaudrait mieux qu'elle eût à la tête un fardeau de bon sens.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="characters">Arlequin, Farinette<stage>boulangère, représentée par Pierrot</stage>
+        </stage>
+        <sp who="#farinette">
+          <speaker>Farinette</speaker>
+          <stage>à la cantonade</stage>
+          <p>Vous êtes des malavisés d'en agir de la manière avec madame Farinette. Voyez donc ces pestes d'Amours.</p>
+        </sp>
+        <spGrp who="#farinette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#est_ce_ainsi_qu_on_prend_les_belles">Est-ce ainsi qu'on prend les belles</title>
+            </desc>
+          </head>
+          <sp who="#farinette">
+            <speaker>Farinette</speaker>
+            <l met="7">Je vous couperai les ailes,</l>
+            <l met="7">Je me vengerai, ma foi!</l>
+            <l met="7">Pour me mettre en leurs nacelles,</l>
+            <l met="7">Trois se sont jetés sur moi.</l>
+            <l met="7">Est-ce ainsi qu'on prend les belles?</l>
+            <l met="3">Lonlanla,</l>
+            <l met="4">O gué lonla.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>à part</stage>
+          <p>Ho-ho! Voilà une grosse boulangère bien fâchée.<stage>Haut.</stage>Remettez-vous, ma poule-d'Inde.</p>
+        </sp>
+        <pb n="349"/>
+        <sp who="#farinette">
+          <speaker>Farinette</speaker>
+        </sp>
+        <spGrp who="#farinette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#farinette">
+            <speaker>Farinette</speaker>
+            <l met="8">Les Amours sont de sottes bêtes!</l>
+            <l met="8">Je ne suis point de leur gibier.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>à part</stage>
+          <l met="8">Oh! Par ma foi, si vous en êtes,</l>
+          <l met="8">Je ne serai pas braconnier.</l>
+        </sp>
+        <sp who="#farinette">
+          <speaker>Farinette</speaker>
+        </sp>
+        <spGrp who="#farinette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#landeriri">Landeriri</title>
+            </desc>
+          </head>
+          <sp who="#farinette">
+            <speaker>Farinette</speaker>
+            <l met="8">Que me veux-tu dans ce séjour?</l>
+            <l met="8">Je n'ai jamais senti d'amour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="4">Landerirette.</l>
+        </sp>
+        <sp who="#farinette">
+          <speaker>Farinette</speaker>
+          <l met="8">Pas même pour feu mon mari.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="4">Landeriri.</l>
+        </sp>
+        <sp who="#farinette">
+          <speaker>Farinette</speaker>
+        </sp>
+        <spGrp who="#farinette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#n_aurais_je_jamais_un_amant">N'aurai-je jamais un amant</title>
+            </desc>
+          </head>
+          <sp who="#farinette">
+            <speaker>Farinette</speaker>
+            <l met="8">Je ne veux point avoir d'amant,</l>
+            <l met="6">J'ai tout ce qu'il me faut.</l>
+            <l met="7">Et si j'en voulais, vraiment,</l>
+            <l met="7">J'en trouverais aisément.</l>
+            <l met="5">Et toutes en ont,</l>
+            <l met="5">Et la Madelon,</l>
+            <l met="5">Et la Jeanneton,</l>
+            <l met="5">Et la Margoton,</l>
+            <l met="5">J'ai mon tire-lire,</l>
+            <l met="3">Boutefire,</l>
+            <l met="7">Vironfa. Si quelque sire</l>
+            <l met="7">Vient me raisonner...er,</l>
+            <l met="6">Je sais que lui donner.</l>
+          </sp>
+        </spGrp>
+        <pb n="350"/>
+        <stage>Elle donne, par démonstration, un soufflet à Arlequin.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>portant la main à sa joue</stage>
+          <p>Doucement, Madame Farinette! Je ne vous dis mot, et n'ai aucune envie de vous en conter.</p>
+        </sp>
+        <sp who="#farinette">
+          <speaker>Farinette</speaker>
+          <p>Tredame! Vous êtes bien dégoûté! Je suis pourtant la perle de Gonesse.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Vous êtes une perle furieusement ronde.</p>
+        </sp>
+        <sp who="#farinette">
+          <speaker>Farinette</speaker>
+          <p>Que dites-vous de ces friponniers d'Amours, qui m'ont entraînée ici?</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Apparemment qu'ils sont fondés en raisons.</p>
+        </sp>
+        <pb n="351"/>
+        <sp who="#farinette">
+          <speaker>Farinette</speaker>
+          <p>Ils disent comme ça que je suis embéguinée de Thomas mon mitron, et si pourtant je n'ai que de la reconnaissance pour lui.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Et sur quoi soupçonnent-ils cela?</p>
+        </sp>
+        <sp who="#farinette">
+          <speaker>Farinette</speaker>
+          <p>Que sais-je moi? C'est peut-être parce que je lui chante tous les matins:</p>
+        </sp>
+        <spGrp who="#farinette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_thomas_reveille">Ah! Thomas, réveille-toi</title>
+            </desc>
+          </head>
+          <sp who="#farinette">
+            <speaker>Farinette</speaker>
+            <l met="8">C'est trop longtemps dormir, ma foi,</l>
+            <l met="7">Ah! Thomas, réveille-toi!</l>
+            <l met="8">Je te donnerai de l'emploi.</l>
+            <l met="2">Thomas!</l>
+            <l met="8">Ah! Thomas, réveille, réveille,</l>
+            <l met="7">Ah! Thomas, réveille-toi!</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>C'est, sans doute, un joli garçon que ce Thomas-là.</p>
+        </sp>
+        <sp who="#farinette">
+          <speaker>Farinette</speaker>
+          <p>Oh, dame! Oui.</p>
+        </sp>
+        <spGrp who="#farinette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#he_dru_dru_dru">Hé, dru, dru, dru</title>
+            </desc>
+          </head>
+          <sp who="#farinette">
+            <speaker>Farinette</speaker>
+            <l met="8">C'est un petit brunet trapu,</l>
+            <l met="6">À la fleur de son âge.</l>
+            <l met="8">Il fait le gros et le menu</l>
+            <l met="6">Lui seul dans mon ménage.</l>
+            <l met="4">Hé, dru, dru, dru!</l>
+            <l met="6">Je n'en ai jamais vu</l>
+            <l met="6">De si rude à l'ouvrage.</l>
+          </sp>
+        </spGrp>
+        <pb n="352"/>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Je vous en félicite.</p>
+        </sp>
+        <sp who="#farinette">
+          <speaker>Farinette</speaker>
+        </sp>
+        <spGrp who="#farinette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_va_son_train">Il va son train</title>
+            </desc>
+          </head>
+          <sp who="#farinette">
+            <speaker>Farinette</speaker>
+            <l met="6">Il blute sa farine,</l>
+            <l met="6">Dès la pointe du jour,</l>
+            <l met="6">Pétrit, fait la cuisine,</l>
+            <l met="6">Et met la pâte au four.</l>
+            <l met="4">Mon gros Thomas,</l>
+            <l met="4">N'est jamais là;</l>
+            <l met="4">Il va son train</l>
+            <l met="4">Soir et matin.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Oh, diable! Madame Farinette, c'est un trésor que ce mitron-là! Vous ne pouvez avoir trop de reconnaissance pour un si bon ouvrier.</p>
+        </sp>
+        <sp who="#farinette">
+          <speaker>Farinette</speaker>
+          <p>Aussi en ai-je et de la plus fine encore.</p>
+          <p>Je le traite à bouche que veux-tu, il est chez moi à même de tout.</p>
+        </sp>
+        <pb n="353"/>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Mais s'il prenait envie à quelque boulangère de vous souffler l'infatigable Thomas, que dirait à cela votre reconnaissance?</p>
+        </sp>
+        <sp who="#farinette">
+          <speaker>Farinette</speaker>
+          <p>Oh! Je l'étranglerais, la chienne!</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Sans doute, à cause du profit qu'il vous fait dans votre boutique.</p>
+        </sp>
+        <sp who="#farinette">
+          <speaker>Farinette</speaker>
+          <p>Non, ce n'est point l'intérêt qui me mène.</p>
+        </sp>
+        <spGrp who="#farinette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_ne_saurais">Je n'saurais</title>
+            </desc>
+          </head>
+          <sp who="#farinette">
+            <speaker>Farinette</speaker>
+            <l met="7">J'aimerais mieux aller nue,</l>
+            <l met="7">Et coucher même sans draps,</l>
+            <l met="5">Que d'écus cousue,</l>
+            <l met="7">Et de vivre sans Thomas.</l>
+            <l met="3">Je n'saurais</l>
+            <l met="7">Perdre ce garçon de vue,</l>
+            <l met="3">J'en mourrais.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Ouida! Ho-bien, Madame Farinette,</p>
+          <p>donnez-vous la peine de vous rendre au camp. Votre reconnaissance est d'une pâte à devoir être enfournée dans les registres de Cythère.</p>
+        </sp>
+        <sp who="#farinette">
+          <speaker>Farinette</speaker>
+          <p>J'y vais, mais nous verrons beau jeu.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="characters">Arlequin, Monsieur Pié-de-mouche<stage>procureur</stage>
+        </stage>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <stage>en colère</stage>
+        </sp>
+        <spGrp who="#mpiedemouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reguingue">Ô reguingué, ô lonlanla</title>
+            </desc>
+          </head>
+          <sp who="#mpiedemouche">
+            <speaker>Monsieur pié-de-mouche</speaker>
+            <l met="8">Je ne souffrirai pas ceci:</l>
+            <l met="8">Je vais bien plaider, dieu merci,</l>
+            <l met="8">Car je crois qu'on trouve à Cythère</l>
+            <l met="8">Plus d'un honnête commissaire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#de_quoi_vous_plaignez_vous">De quoi vous plaignez-vous</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="6">De quoi vous plaignez-vous</l>
+          </sp>
+        </spGrp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <l met="7">Je leur en dira de belles!</l>
+        </sp>
+        <pb n="355"/>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="6">De quoi vous plaignez-vous</l>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <l met="6">C'est de certains filous,</l>
+          <l met="7">Armez de flèches cruelles,</l>
+          <l met="7">En main portant des brandons,</l>
+          <l met="6">Et sur le dos des ailes.</l>
+          <l met="6">Oh! Les maîtres fripons!</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Comment diable! Vous voulez intentez un procès aux Amours!</p>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <p>Sans doute. Je suis la partie et le procureur.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Votre affaire n'en ira pas mieux.</p>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <p>Je m'appelle Maître Jean-Gille Pié-de-mouche. Mon nom est fort célèbre dans les greffes du palais.</p>
+        </sp>
+        <spGrp who="#mpiedemouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nos_plaisirs_seront_peu_durables">Nos plaisirs seront peu durables</title>
+            </desc>
+          </head>
+          <sp who="#mpiedemouche">
+            <speaker>Monsieur pié-de-mouche</speaker>
+            <l met="8">Les manceaux briguent mes services</l>
+            <l met="8">Des normands, presque aussi malins,</l>
+            <l met="8">J'ai toujours été les délices.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Et la terreur des orphelins.</l>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+        </sp>
+        <spGrp who="#mpiedemouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#laire_la">Laire la, laire lanlaire</title>
+            </desc>
+          </head>
+          <sp who="#mpiedemouche">
+            <speaker>Monsieur pié-de-mouche</speaker>
+            <l met="8">Dans ces lieux je viens à regret.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Y venez-vous mettre en décret</l>
+          <l met="8">Le château du dieu de Cythère?</l>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <stage>branlant la tête</stage>
+          <l met="7">Laire la, lairelanlaire,</l>
+          <l met="3">Lairela,</l>
+          <l met="4">Lairelanla.</l>
+          <p>Voilà pourquoi je comparais à l'interrogatoire de la revue des Amours. C'est sur un avenir signifié par eux à ma femme. Je viens la revendiquer, comme n'étant pas de la compétence du bailli de Cythère. Il est vrai que Madame Pié-de-mouche m'aime, mais l'amour conjugal n'est pas justiciable de l'amour galant, quoiqu'il s'empare souvent de l'usufruit de ses biens.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Mais, Monsieur Pié-de-mouche, êtes-vous</p>
+          <p>bien assuré que l'amour conjugal soit le seul amour qui appointe les affaires de Madame Pié-de-mouche?</p>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <p>Révoquez vos soupçons diffamatoires, mon ami. Ma femme est fort retirée. Point de bal pour elle, point de promenade, point de spectacle.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Ah! Que dites-vous là!</p>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <p>Point même de Quadrille.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Mais cela n'est pas possible.</p>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+        </sp>
+        <spGrp who="#mpiedemouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_raison">Ma raison s'en va bon train</title>
+            </desc>
+          </head>
+          <sp who="#mpiedemouche">
+            <speaker>Monsieur pié-de-mouche</speaker>
+            <l met="7">Elle vit fort simplement:</l>
+            <l met="8">Elle se met fort proprement,</l>
+            <l met="5">Mais modestement,</l>
+            <l met="5">Très bourgeoisement,</l>
+            <l met="6">Et n'est point orgueilleuse.</l>
+            <l met="8">On ne la prendrait pas, vraiment,</l>
+            <l met="8">Pour une procureuse, lonla</l>
+            <l met="6">Pour une procureuse.</l>
+          </sp>
+        </spGrp>
+        <pb n="358"/>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Oh, diable! Cela suppose une femme gonflée de vertu.<stage>À part.</stage>Les Amours auraient-ils fait un pas de clerc?</p>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+        </sp>
+        <spGrp who="#mpiedemouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Voulez-vous savoir qui des deux</title>
+            </desc>
+          </head>
+          <sp who="#mpiedemouche">
+            <speaker>Monsieur pié-de-mouche</speaker>
+            <l met="8">Ma femme fait tout son bonheur</l>
+            <l met="8">De suivre les lois de l'honneur,</l>
+            <l met="8">Elle n'en passe point les bornes.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Serait-il possible en effet</l>
+          <l met="8">Que vous n'eussiez point d'autres cornes</l>
+          <l met="8">Que celle de votre bonnet?</l>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <p>C'est de quoi je puis me flatter. Entre nous, je ne connais point à Madame Pié-de-mouche d'autre passion, après l'amour qu'elle a pour moi, que la haine qu'elle porte à mon Maître Clerc.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Comment? Elle hait votre Maître Clerc!</p>
+        </sp>
+        <pb n="359"/>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+        </sp>
+        <spGrp who="#mpiedemouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#robin_ture_lure_lure">Robin, turelure lure</title>
+            </desc>
+          </head>
+          <sp who="#mpiedemouche">
+            <speaker>Monsieur pié-de-mouche</speaker>
+            <l met="7">Toujours après ce garçon</l>
+            <l met="7">Elle tempête, elle jure,</l>
+            <l met="7">Le tourmente sans raison.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="3">Turelure!</l>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <l met="7">Il souffre tout sans murmure.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="7">Robin, turelure, lure.</l>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <p>J'ai beau la prier de le laisser en repos, elle le persécute sans cesse. C'est une femme insupportable là-dessus.</p>
+        </sp>
+        <spGrp who="#mpiedemouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#filles_montpellier">Aïe, aïe, aïe, Jeannette</title>
+            </desc>
+          </head>
+          <sp who="#mpiedemouche">
+            <speaker>Monsieur pié-de-mouche</speaker>
+            <l met="7">Je n'ai pu jusqu'aujourd'hui</l>
+            <l met="7">En réformer les manières.</l>
+            <l met="7">Elle a, par rapport à lui,</l>
+            <l met="7">Chassé quatre cuisinières.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="3">Aïe, aïe, aïe!</l>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <l met="5">Qui n'étaient point fières.</l>
+        </sp>
+        <pb n="360"/>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="5">Jean-Gille, aïe, aïe, aïe!</l>
+          <p>Parbleu! Il faut que Madame Pié-de-mouche ait bien de l'aversion pour ce Clerc-là.</p>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <p>Cela n'est pas concevable. J'ai voulu plus d'une fois, par considération pour ma femme, me défaire de lui; mais elle s'y est opposée en me disant: Non, mon fils, je ne veux point absolument que, pour l'amour de moi, vous chassiez un homme qui fait bien vos affaires. Je sacrifie ma haine à votre utilité.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Vous avez là une femme de tête, Monsieur Pié-de-mouche.</p>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <p>Je vous en réponds. Elle est d'une politique... Croiriez-vous que, malgré l'aversion qu'elle a pour ce Clerc, elle lui sert ce qu'il y a de meilleur sur la table.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Ah! Quelle haine!</p>
+        </sp>
+        <pb n="361"/>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <p>Après cela, qu'on vienne me dire que les Amours sont bien fondés dans la sommation qu'ils ont faite à ma femme.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Ils ont mal expliqué son aversion.</p>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <p>Oh! Je leur montrerai bien leur bec jaune, à ces petits drôles-là! Je leur apprendrai à se jouer à un procureur. Je leur ferai manger en frais jusqu'à leurs flèches et leurs carquois.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jean_gille">Jean-Gille</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Ah! Modérez votre bile,</l>
+            <l met="2">Jean-Gille</l>
+            <l met="5">Gille, joli Jean!</l>
+            <l met="7">Chez vous, en mari docile,</l>
+            <l met="2">Jean-Gille,</l>
+            <l met="5">Gille, joli Gille,</l>
+            <l met="5">Gille, joli Jean,</l>
+            <l met="5">Joli Jean, Jean-Gille,</l>
+            <l met="5">Retournez-vous en.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <p>Pourquoi cela?</p>
+        </sp>
+        <pb n="362"/>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Peut-être qu'en ce moment Madame Pié-de-mouche étrangle votre Maître Clerc, à force de le haïr.<stage>Il lui montre les cornes.</stage>
+          </p>
+        </sp>
+        <sp who="#mpiedemouche">
+          <speaker>Monsieur pié-de-mouche</speaker>
+          <p>Vous êtes un mauvais plaisant.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Et vous un coucou.</p>
+        </sp>
+        <stage>Le procureur veut maltraiter Arlequin, qui le chasse à coups de batte.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 13</head>
+        <stage type="characters">Arlequin, Léandre</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Hé bien, l'artifice a-t-il réussi auprès de votre belle cousine?</p>
+        </sp>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <p>Je n'ai pas pu la rencontrer encore... Mais cela est heureux, je la vois qui s'approche. Elle est seule.</p>
+        </sp>
+        <pb n="363"/>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Je vous laisse avec elle. Profitez de l'occasion. Pendant ce temps-là, je vais voir si tout est prêt pour notre revue.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 14</head>
+        <stage type="characters">Léandre, Colette</stage>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <p>Comment donc, ma cousine? Vous, à Cythère!</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+        </sp>
+        <spGrp who="#colette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#qui_veut_se_mettre_en_menage">Qui veut se mettre en ménage</title>
+            </desc>
+          </head>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <l met="7">J'en suis moi-même étonnée,</l>
+            <l met="7">Et je ne sais pas pourquoi</l>
+            <l met="7">Les Amours m'ont amenée</l>
+            <l met="7">Dans cette île, malgré moi</l>
+            <l met="7">Fort sujets à se méprendre,</l>
+            <l met="7">Ont-ils cru, ces petits fous,</l>
+            <l met="7">Qu'on ne pouvait se défendre</l>
+            <l met="7">D'un amant fait comme vous?</l>
+          </sp>
+        </spGrp>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <p>Ils auraient tort. Et ils n'ont pas effectivement raison de vouloir que vous paraissiez à leur revue, vous qui n'êtes</p>
+          <p>sensible aux soupirs d'aucun amant, et qui voyez, sans pitié, jusqu'à votre cousin mourir d'amour pour vous.</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>De grâce, Léandre, ne me parlez plus sur ce ton-là.</p>
+        </sp>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+        </sp>
+        <spGrp who="#leandre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#d_une_main_je_tiens_mon_pot">De mon pot, je vous en réponds</title>
+            </desc>
+          </head>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="7">Quoi? Sans cesse à mon ardeur</l>
+            <l met="6">Opposer la rigueur!</l>
+          </sp>
+        </spGrp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <l met="8">Vous me verrez toujours la même.</l>
+          <l met="8">Si vous voulez que je vous aime,</l>
+          <l met="8">D'amitié, je vous en réponds,</l>
+          <l met="6">Mais pour d'amour, non, non.</l>
+        </sp>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <p>Ah! C'en est trop, cruelle! Vous me poussez à bout. Hé bien...</p>
+        </sp>
+        <spGrp who="#leandre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_mariez_moi">Vous me l'avez dit, souvenez-vous en</title>
+            </desc>
+          </head>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="7">Votre ordre est exécuté,</l>
+            <l met="7">Je ne suis dans ce moment,</l>
+            <l met="10">Puisqu'il ne faut plus être votre amant,</l>
+            <l met="7">Je ne suis dans ce moment</l>
+            <l met="7">Que votre ami seulement.</l>
+          </sp>
+        </spGrp>
+        <pb n="365"/>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>J'en suis ravie.</p>
+        </sp>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <stage>vivement</stage>
+          <p>Non, que votre ami, au pied de la lettre.</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>À la bonne heure.</p>
+        </sp>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <stage>avec agitation</stage>
+          <p>J'ai déjà gagné sur moi de n'avoir plus pour vous qu'un simple, qu'une tranquille amitié.</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>C'est fort bien fait.</p>
+        </sp>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <p>Je ferai encore mieux. Je vais porter à une autre la tendresse que j'avais pour vous.</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>À vous permis.</p>
+        </sp>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+        </sp>
+        <spGrp who="#leandre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nanon_dormait">Nanon dormait sur la verte fougère</title>
+            </desc>
+          </head>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="4">De mon amour</l>
+            <l met="6">Vous triomphez, Colette;</l>
+            <l met="4">Et, dès ce jour,</l>
+            <l met="6">De la jeune Lisette</l>
+            <l met="6">Je deviendrai l'amant.</l>
+          </sp>
+        </spGrp>
+        <pb n="366"/>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <stage>saisie</stage>
+          <l met="12">J'en ai... j'en ai... j'en ai bien du plaisir, vraiment.</l>
+        </sp>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <p>Adieu. Je vais chercher mes nouvelles amours.</p>
+        </sp>
+        <stage>Il fait trois ou quatre pas, comme pour s'en aller.</stage>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>Bon voyage...<stage>Elle rêve un moment et appelle Léandre.</stage>Mais attendez, Léandre, attendez.</p>
+        </sp>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <stage>revenant</stage>
+          <p>Vraiment, non. Je n'ai pas dessein de cesser de l'être.</p>
+        </sp>
+        <stage>Il fait quelques pas, comme pour se retirer.</stage>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <stage>après avoir rêvé, le rappelle encore</stage>
+          <p>Mon cousin! Encore un mot.</p>
+        </sp>
+        <pb n="367"/>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <stage>froidement</stage>
+          <p>Que vous plaît-il?</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <stage>troublée</stage>
+          <p>Je ne sais plus ce que je voulais vous dire... Ha! Voici ce que c'est. Promettez-moi que vous serez toujours plus attaché à Colette par votre amitié, qu'à Lisette par votre amour. Je vous demande cela, au moins.</p>
+        </sp>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <p>Vous exigez de moi une chose impossible. L'amour est une passion impérieuse, qui veut occuper la première place.</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+        </sp>
+        <spGrp who="#colette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+            </desc>
+          </head>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <l met="8">Puisque vous le prenez par là</l>
+            <l met="8">Mon cousin, Colette fera</l>
+            <l met="6">Ce qu'il faut qu'elle fasse</l>
+          </sp>
+        </spGrp>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <l met="2">Hé bien?</l>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <l met="6">Pour avoir cette place...</l>
+          <l met="5">Vous m'entendez bien.</l>
+        </sp>
+        <pb n="368"/>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <stage>lui baisant la main</stage>
+          <p>Ah! Ma chère Colette, vous l'avez toujours eu et vous ne la perdrez jamais.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 15</head>
+        <stage type="characters">Colette, Léandre, Arlequin</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>À quel chapitre en êtes-vous, mes enfants?</p>
+        </sp>
+        <sp who="#leandre">
+          <speaker>Léandre</speaker>
+          <p>Au chapitre de l'amour déguisé en amitié.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Bon!</p>
+        </sp>
+        <sp who="#colette">
+          <speaker>Colette</speaker>
+          <p>Que j'étais folle d'attribuer à la simple amitié tout ce que je sentais pour Léandre!</p>
+        </sp>
+        <spGrp who="#colette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ce_sont_les_amours">Ce sont les Amours</title>
+            </desc>
+          </head>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <l met="5">L'amitié peut-elle</l>
+            <l met="5">Faire naître en nous</l>
+            <l met="5">Des plaisirs si doux?</l>
+            <l met="5">Une ardeur si belle?</l>
+            <l met="5">Ce sont les Amours</l>
+            <l met="5">Qui font les beaux jours.</l>
+          </sp>
+        </spGrp>
+        <pb n="369"/>
+        <spGrp>
+          <caption>Tous trois</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="5">Ce sont les Amours</l>
+            <l met="5">Qui font les beaux jours.</l>
+          </sp>
+        </spGrp>
+        <stage>On entend un son confus de plusieurs instruments.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Voici les Amours qui se préparent à faire leur revue. Ils vont débuter par des chants et des danses. C'est ordinairement par là que commence et se termine l'exercice des Amours.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 16</head>
+        <stage type="location">et dernière</stage>
+        <stage type="characters">Léandre, Colette, Arlequin, troupe d'amants de toutes les nations, troupe d'amours et de plaisirs.</stage>
+        <stage>On danse, après quoi on chante le vaudeville.</stage>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#monsieur_l_abbe">Monsieur l'abbé</title>
+            </desc>
+          </head>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">1</head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="6">À l'enfant de Vénus,</l>
+            <l met="6">Quand ses traits sont connus</l>
+            <l met="6">L'on refuse la porte.</l>
+            <l met="6">Contre lui l'on s'emporte.</l>
+            <l met="6">L'aspect de Cupidon</l>
+            <l met="6">Effarouche un tendron:</l>
+            <l met="6">Mais qu'il emprunte un nom,</l>
+            <l met="6">Une allure, un jargon,</l>
+            <l met="6">Le cœur le plus fantasque</l>
+            <l met="4">Trouve l'amour</l>
+            <l met="5">Tourelourelour,</l>
+            <l met="6">Fort joli sous le masque.</l>
+          </sp>
+        </spGrp>
+        <pb n="370"/>
+        <spGrp>
+          <head type="vaudeville-chorus">2</head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="6">Qu'un jeune cavalier,</l>
+            <l met="6">Sur un ton d'écolier,</l>
+            <l met="6">Cajole sa voisine,</l>
+            <l met="6">On lui fera la mine.</l>
+            <l met="6">Quand le drôle plus fin,</l>
+            <l met="6">Lui dit, d'un ton badin:</l>
+            <l met="6">Rions, soir et matin,</l>
+            <l met="6">Je suis un bon voisin.</l>
+            <l met="6">Ne craignez point de frasque.</l>
+            <l met="5">Ce sont les Amours</l>
+            <l met="5">Qui font les beaux jours.</l>
+            <l met="4">Ah! Que l'amour,</l>
+            <l met="5">Toureloureloure,</l>
+            <l met="6">Est joli sous le masque!</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">3</head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="6">Un objet innocent</l>
+            <l met="6">Fuit un blondin pressant</l>
+            <l met="6">Et se plaint à sa mère</l>
+            <l met="6">De ce qu'on veut lui plaire.</l>
+            <l met="6">Mais qu'un cousin bouffon</l>
+            <l met="6">S'y prenne sans façon,</l>
+            <l met="6">La belle sans soupçon,</l>
+            <l met="6">Cousine outre raison;</l>
+            <l met="6">Son cœur est comme un basque.</l>
+            <l met="4">Ah! Que l'amour,</l>
+            <l met="5">Tourelourelour,</l>
+            <l met="6">Est joli sous le masque!</l>
+          </sp>
+        </spGrp>
+        <pb n="371"/>
+        <spGrp>
+          <head type="vaudeville-chorus">4</head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="6">Le guerrier, en amour,</l>
+            <l met="6">Marche au bruit du tambour,</l>
+            <l met="6">Et souvent sont audace</l>
+            <l met="6">Lui fait manquer la place.</l>
+            <l met="6">Mais un abbé discret,</l>
+            <l met="6">Sans dire son secret,</l>
+            <l met="6">Va doucement au fait,</l>
+            <l met="6">Et le Petit-collet</l>
+            <l met="6">L'emporte sur le casque.</l>
+            <l met="4">Ah! Que l'amour,</l>
+            <l met="5">Tourelourelour,</l>
+            <l met="6">Est joli sous ce masque!</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">5</head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="6">Les antiques galants,</l>
+            <l met="6">Muguets à cheveux blancs,</l>
+            <l met="6">Ont beau cacher leurs nuques</l>
+            <l met="6">Sous de noires perruques</l>
+            <l met="6">On souffre le barbon,</l>
+            <l met="6">Qui lache le teston,</l>
+            <l met="6">mais lorsque le grison</l>
+            <l met="6">Ne soutient d'aucun don</l>
+            <l met="6">L'offre d'un cœur trop flasque,</l>
+            <l met="4">Ma foi, l'amour,</l>
+            <l met="6">Toure reloure lour,<note>Versification: S. Rousseau</note>
+            </l>
+            <l met="6">N'est pas beau sous le masque.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">6</head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="6">Que votre jugement</l>
+            <l met="6">Nous traite doucement:</l>
+            <l met="6">Messieurs, votre indulgence</l>
+            <l met="6">Est notre récompense.</l>
+            <l met="6">Si nos auteurs peureux,</l>
+            <l met="6">Par un succès heureux,</l>
+            <l met="6">Voient combler leurs vœux,</l>
+            <l met="6">Si ce jour dangereux</l>
+            <l met="6">S'achève sans bourrasque,</l>
+            <l met="4">Ah! Dès ce jour,</l>
+            <l met="5">Tourelourelour,</l>
+            <l met="6">Ils lèveront le masque.</l>
+          </sp>
+        </spGrp>
+        <stage>Aux spectateurs.</stage>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

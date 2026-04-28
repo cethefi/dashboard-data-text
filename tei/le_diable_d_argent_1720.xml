@@ -1,0 +1,922 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="le_diable_d_argent_1720">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Le Diable d'argent</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>d'Orneval</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">FIXME - missing source</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="diable" sex="UNKNOWN">
+            <persName>Le diable d'argent</persName>
+          </person>
+          <person xml:id="folie" sex="UNKNOWN">
+            <persName>La Folie</persName>
+          </person>
+          <person xml:id="hautlepied" sex="UNKNOWN">
+            <persName>Monsieur Haut-le-Pied</persName>
+          </person>
+          <person xml:id="grapillon" sex="UNKNOWN">
+            <persName>Madame Grappillon</persName>
+          </person>
+          <person xml:id="chevaliergrelac" sex="UNKNOWN">
+            <persName>Le Chevalier de Grélac</persName>
+          </person>
+          <person xml:id="fretillon" sex="UNKNOWN">
+            <persName>Mademoiselle Frétillon</persName>
+          </person>
+          <person xml:id="pintebroc" sex="UNKNOWN">
+            <persName>Pinte-Broc</persName>
+          </person>
+          <person xml:id="timbre" sex="UNKNOWN">
+            <persName>Monsieur Timbré</persName>
+          </person>
+          <person xml:id="sagouinius" sex="UNKNOWN">
+            <persName>Monsieur Sagouinius</persName>
+          </person>
+          <person xml:id="pierrot" sex="UNKNOWN">
+            <persName>Pierrot</persName>
+          </person>
+          <person xml:id="arlequin" sex="UNKNOWN">
+            <persName>Arlequin</persName>
+          </person>
+          <person xml:id="choeura" sex="UNKNOWN">
+            <persName>Chœur de suppliants</persName>
+          </person>
+          <person xml:id="le_diable_d_argent" sex="UNKNOWN">
+            <persName>Le diable d'argent</persName>
+          </person>
+          <person xml:id="la_folie" sex="UNKNOWN">
+            <persName>La Folie</persName>
+          </person>
+          <person xml:id="monsieur_haut_le_pied" sex="UNKNOWN">
+            <persName>Monsieur Haut-le-Pied</persName>
+          </person>
+          <person xml:id="madame_grapillon" sex="UNKNOWN">
+            <persName>Madame Grapillon</persName>
+          </person>
+          <person xml:id="le_chevalier_de_grelac" sex="UNKNOWN">
+            <persName>Le Chevalier de Grélac</persName>
+          </person>
+          <person xml:id="mademoiselle_fretillon" sex="UNKNOWN">
+            <persName>Mademoiselle Frétillon</persName>
+          </person>
+          <person xml:id="pinte_broc" sex="UNKNOWN">
+            <persName>Pinte-Broc</persName>
+          </person>
+          <person xml:id="monsieur_timbre" sex="UNKNOWN">
+            <persName>Monsieur Timbré</persName>
+          </person>
+          <person xml:id="monsieur_sagouinius" sex="UNKNOWN">
+            <persName>Monsieur Sagouinius</persName>
+          </person>
+          <person xml:id="arlequin_et_sa_troupe" sex="UNKNOWN">
+            <persName>Arlequin et sa troupe</persName>
+          </person>
+          <person xml:id="troupe_de_suppliants" sex="UNKNOWN">
+            <persName>Troupe de suppliants</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1720">
+        <desc> 1720</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#le_diable_d_argent">Le diable d'argent</role>
+        </castItem>
+        <castItem>
+          <role ana="#la_folie">La Folie</role>
+          <roleDesc>sa favorite</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#monsieur_haut_le_pied">Monsieur Haut-le-Pied</role>
+          <roleDesc>banquier</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#madame_grapillon">Madame Grapillon</role>
+          <roleDesc>procureuse</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#le_chevalier_de_grelac">Le Chevalier de Grélac</role>
+          <roleDesc>gascon</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#mademoiselle_fretillon">Mademoiselle Frétillon</role>
+          <roleDesc>danseuse</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#pinte_broc">Pinte-Broc</role>
+          <roleDesc>suisse</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#monsieur_timbre">Monsieur Timbré</role>
+          <roleDesc>poète</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#monsieur_sagouinius">Monsieur Sagouinius</role>
+          <roleDesc>professeur de philosophie</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#pierrot">Pierrot</role>
+          <roleDesc>gargotier<emph>
+              <note type="definition">Gargotier: Celui ou celle qui tient une gargote. Il se dit aussi par mépris de tous les méchants cabaretiers et de tous les cuisiniers qui apprêtent mal à manger (Acad.1762)</note>
+            </emph>
+          </roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#arlequin_et_sa_troupe">Arlequin et sa troupe</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_suppliants">Troupe de suppliants</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <spGrp rend="trpta">
+          <sp who="#choeura">
+            <speaker>Chœur de suppliants</speaker>
+            <p>Diable d'argent, seul objet de nos soins, entends nos cris, soulage nos besoins.</p>
+          </sp>
+        </spGrp>
+        <stage type="location">La scène est dans le temple du diable d'argent.</stage>
+        <stage type="location">Le théâtre représente le temple du diable d'argent, orné de toutes sortes de richesses.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Le diable d'argent, la folie, foule de suppliants</stage>
+        <stage>On entend d'abord des trompettes et des timbales et l'orchestre joue ensuite une marche, pendant laquelle le diable d'argent entre et se promène dans son temple, tenant par la main la Folie, sa favorite. Plusieurs personnes le suivent, en le tirant par sa queue qui est parsemée de pièces d'or et d'argent ainsi que tout son corps. Il a une longue barbe de cannetille<emph>
+            <note type="definition">Cannetille: Petite lame très fine d'or ou d'argent tortillé (Acad.1762)</note>
+          </emph>d'or et des cheveux de cannetille d'argent. Il porte sur sa tête deux cornes de rubis et une grosse bourse à la main.</stage>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Vous m'étourdissez.</p>
+        </sp>
+        <sp who="#choeura">
+          <speaker>Chœur de suppliants</speaker>
+          <p>Diable d'argent, etc.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Laissez-nous en repos.</p>
+        </sp>
+        <sp who="#choeura">
+          <speaker>Chœur de suppliants</speaker>
+          <p>Diable d'argent, etc.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Retirez-vous. Je ne puis vous entendre si vous parlez tous à la fois.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Sortez du temple, et rentrez l'un après l'autre. Nous vous donnerons audience.</p>
+        </sp>
+        <stage>Ils sortent tous.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Le diable, la Folie</stage>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Aimable Folie, ma favorite, je me sais bon gré d'avoir fait choix de vous pour distribuer mes bienfaits. Vous les répandez avec un merveilleux discernement.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>N'est-il pas vrai?</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Assurément. Avant vous, je me servais de la Raison pour faire mes largesses; mais c'était une ridicule qui ne les distribuait qu'à de certaines gens qui ne me convenaient pas. Aussi m'en suis-je bientôt défait.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Oh, vous ne vous plaindrez pas de moi! Je ne donne votre argent qu'à de bons sujets, à des avares ou à des prodigues.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Je suis fort content de vous. Et vous serez toujours le canal de mes grâces.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Or sus<note type="definition">Sus: Interjection dont on se sert pour exhorter, pour inciter (Acad.1694)</note>, écoutons tous ces gens-ci. Ne favorisons que ceux qui en seront dignes.<stage>Elle appelle.</stage>Hola hhé<note>Édition originale: « hée ».</note>! Entrez, quelqu'un.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Le Diable, la Folie, Monsieur Haut-le-Pied<stage>banquier, faisant de grandes révérences</stage>
+        </stage>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Avancez, avancez. Trêve de révérences.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Eh, c'est Monsieur Haut-le-Pied, notre ami le banquier!</p>
+        </sp>
+        <sp who="#hautlepied">
+          <speaker>Monsieur Haut-le-Pied</speaker>
+          <p>C'est lui-même, charmante Folie. Comme j'ai toujours été de vos partisans, j'espère que vous engagerez le diable d'argent à m'être favorable.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>C'est-à-dire que votre banque est à sec.</p>
+        </sp>
+        <sp who="#hautlepied">
+          <speaker>Monsieur Haut-le-Pied</speaker>
+          <p>Hélas, oui! J'ai dépensé des biens immenses, et je serai obligé de faire banqueroute pour la dernière fois si vous ne me secourez.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <stage>riant</stage>
+          <p>Ha, ha, ha! Vous ne m'avez pas trompée, Monsieur Haut-le-Pied. Lorsque je vous vis commencer votre métier à Lyon, vous me parûtes né pour faire du bruit dans le monde.</p>
+        </sp>
+        <sp who="#hautlepied">
+          <speaker>Monsieur Haut-le-Pied</speaker>
+          <p>Aussi en ai-je fait. Et la conduite que j'ai tenue dans ma prospérité ne doit pas vous avoir déplu.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>D'accord. Vous avez donné dans le luxe, dans les bâtiments, dans la bonne chère,<emph>et cætera</emph>. Vous vous êtes signalé par toutes sortes d'extravagances, c'est une justice que je vous rends; mais j'ai à me plaindre de vous.</p>
+        </sp>
+        <sp who="#hautlepied">
+          <speaker>Monsieur Haut-le-Pied</speaker>
+          <p>Pourquoi?</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Vous étiez entre les mains d'une beauté fameuse, qui vous menait bon train; vous vous êtes avisé de la quitter. Ce trait de prudence m'a choquée.</p>
+        </sp>
+        <sp who="#hautlepied">
+          <speaker>Monsieur Haut-le-Pied</speaker>
+          <p>Mais elle me ruinait.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Mais, mais, il fallait vous laisser ruiner, vous laisser achever. Je ne veux pas qu'on fasse des réflexions quand on aime. Fi, cela n'est pas excusable dans un Français!</p>
+        </sp>
+        <sp who="#hautlepied">
+          <speaker>Monsieur Haut-le-Pied</speaker>
+          <p>Je reconnais ma faute; et je promets de n'y plus retomber, si vous me la pardonnez.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <stage>au diable</stage>
+          <p>Recevrons-nous ses excuses?</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Oui, en faveur de son repentir.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <stage>à Monsieur Haut-le-Pied</stage>
+          <p>Allez donc, mon ami. Rendez-vous dans la rue Quincampoix<note>Rue de Paris, où était établie la banque de Law.</note>. C'est là que vous trouverez bien vite une nouvelle fortune.</p>
+        </sp>
+        <sp who="#hautlepied">
+          <speaker>Monsieur Haut-le-Pied</speaker>
+          <p>Mille remerciements.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Mais prenez garde d'en faire un usage sensé.</p>
+        </sp>
+        <sp who="#hautlepied">
+          <speaker>Monsieur Haut-le-Pied</speaker>
+          <stage>s'en allant</stage>
+          <p>Oh, je n'ai pas envie de me brouiller avec vous!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Le diable, la Folie, Madame Grappillon<stage>procureuse</stage>
+        </stage>
+        <sp who="#grapillon">
+          <speaker>Madame Grappillon</speaker>
+          <p>Charmant diable d'argent, idole des procureurs, vous voyez la femme d'un de ces messieurs, qui prend la liberté de venir pour elle et pour toutes les procureuses de Paris, vous faire les reproches que vous méritez.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Quels reproches?</p>
+        </sp>
+        <sp who="#grapillon">
+          <speaker>Madame Grappillon</speaker>
+          <p>Vous nous fuyez, cruel! Nous qui vous aimons à la folie, nous qui donnerions pour vous ce que nous avons de plus cher au monde. Vous vous contentez de verser à pleines mains vos faveurs sur nos hiboux de maris, qui nous laissent manquer de tout.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Cela me paraît digne de quelque attention.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Mais, Madame, la magnificence de vos habits ne s'accorde pas avec ce discours.</p>
+        </sp>
+        <sp who="#grapillon">
+          <speaker>Madame Grappillon</speaker>
+          <p>Oh, mon mari n'a qu'une part très indirecte à cette magnificence! Vraiment, vraiment, vous ne connaissez guère les procureurs. Parlez-leur, à ces animaux-là, parlez-leur de lever une jupe, vous les mettez de mauvaise humeur.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Comment faites-vous donc, vous autres, pour être si braves?</p>
+        </sp>
+        <sp who="#grapillon">
+          <speaker>Madame Grappillon</speaker>
+          <p>Comment? Nous sommes obligées de grappiller sur la cuisine et de rendre nos pauvres clercs étiques pour nous donner nos besoins.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Voyez ce que fait faire la nécessité!</p>
+        </sp>
+        <sp who="#grapillon">
+          <speaker>Madame Grappillon</speaker>
+          <p>Ne vous serait-il pas plus glorieux de répandre sur nous vos largesses? Nous ne vous laisserions pas, comme nos maris, moisir dans un coffre-fort; nous vous mettrions bien en étalage.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <stage>à part</stage>
+          <p>Je crois qu'elle a raison.</p>
+        </sp>
+        <sp who="#grapillon">
+          <speaker>Madame Grappillon</speaker>
+          <p>Que de galon<note type="definition">Galon: Tissu d'or, d'argent, de soie, de fil, de laine, etc. [...] que l'on met au bord ou sur les coutures des habits [...] pour servir d'ornement (Acad.1762)</note>, que de cerceaux<note>Fil d'or rond qui entourait certains boutons sur les vêtements. Voir  Roland de La Platière,<emph>Encyclopédie méthodique. Manufacture, Arts et métiers</emph>, Paris, Panckoucke, 1785, p. 226.</note>, que de frange<note type="definition">Frange: Tissu de quelque fil que ce soit, d'où pendent des filets et dont on se sert pour ornement dans les habits, dans les meubles (Acad.1694)</note>! De grâce, cher diable, laissez-vous toucher.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <stage>à la Folie</stage>
+          <p>Que me conseillez-vous de faire pour elle?</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <stage>tirant une clef de sa poche</stage>
+          <p>J'ai son affaire en poche.<stage>À Madame Grappillon, lui mettant la clef entre les mains.</stage>Tenez, ma bonne. Voici une clef qui ouvrira le coffre-fort de votre mari.</p>
+        </sp>
+        <sp who="#grapillon">
+          <speaker>Madame Grappillon</speaker>
+          <p>Quelle joie!</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Faites-en un usage digne de celle qui vous la donne.</p>
+        </sp>
+        <sp who="#grapillon">
+          <speaker>Madame Grappillon</speaker>
+          <p>Oh, laissez-moi faire! Ayez soin seulement de remplir son coffre, je me charge de le vider.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Je m'intéresse pour les clercs, moi. Songez à les rengraisser.</p>
+        </sp>
+        <sp who="#grapillon">
+          <speaker>Madame Grappillon</speaker>
+          <p>Je n'y manquerai pas.</p>
+        </sp>
+        <stage>Elle fait une révérence, et s'en va.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Le diable, la Folie, le chevalier de Grélac<stage>gascon</stage>
+        </stage>
+        <sp who="#chevaliergrelac">
+          <speaker>Le Chevalier de Grélac</speaker>
+          <p>Par la sandis, Monsu le diable d'argent, vous avez tort de vous être brouillé avec les enfants de la Garounne<note>Périphrase désignant les Gascons.</note>. Certes, vous n'avez point de sujets au reste du monde qui vous fassent plus d'honnur et de profit.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Et de profit!</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <stage>au diable</stage>
+          <p>Il va nous le prouver.</p>
+        </sp>
+        <sp who="#chevaliergrelac">
+          <speaker>Le Chevalier de Grélac</speaker>
+          <p>Oui, diou me damne, je le prouverai. Premièrement, tout cadet de Gascougne a le talent de vous multiplier.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Comment cela?</p>
+        </sp>
+        <sp who="#chevaliergrelac">
+          <speaker>Le Chevalier de Grélac</speaker>
+          <p>Que je tire de vous, par ézemple, une soumme de dix mille francs, sur-le-champ je vous ajoute un zéro, crac! Et je me dounne pour un gentilhoumme de cent mille livres.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <stage>au diable</stage>
+          <p>Je vous l'ai bien dit.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>À quoi vous occupez-vous ordinairement?</p>
+        </sp>
+        <sp who="#chevaliergrelac">
+          <speaker>Le Chevalier de Grélac</speaker>
+          <p>À rien. Que voulez-vous que je fasse, présentement que l'État est en paix et que les duels sont défendus?</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Voilà une triste conjoncture pour les Gascons.</p>
+        </sp>
+        <sp who="#chevaliergrelac">
+          <speaker>Le Chevalier de Grélac</speaker>
+          <p>Ne pouvant tuer persounne, je tue le temps. Je passe le matin à entendre des sottises dans un café. De là, je vais dîner chez quelque duc de mes amis et le soir je me jette dans un pharaon<note type="definition">Pharaon: Jeu de hasard qui se joue avec des cartes; le banquier y joue seul contre un nombre indéterminé de joueurs, dont chacun met son enjeu sur une des cinquante-deux cartes dont se compose un jeu entier. Le banquier a un jeu pareil; il en tire deux cartes, l'une pour lui à droite, et l'autre pour les joueurs à gauche; il gagne tout l'argent sur la carte de droite, et double les sommes placées sur celle de gauche (Littré)</note>.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Je gage que vous passez la nuit à jouer.</p>
+        </sp>
+        <sp who="#chevaliergrelac">
+          <speaker>Le Chevalier de Grélac</speaker>
+          <p>Je le voudrais, mais je ne puis.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <stage>au diable</stage>
+          <p>Il ne manque pas de bonne volonté, il faut l'aider. Donnons-lui de quoi ponter<note type="definition">Ponter: Être ponte, jouer contre le banquier à la bassette ou au pharaon (Acad.1762)</note>.</p>
+        </sp>
+        <sp who="#chevaliergrelac">
+          <speaker>Le Chevalier de Grélac</speaker>
+          <p>Ce n'est pas là mon compte. Je ne veux pas jouer en dupe. Puisque vous avez pour agréable de me faire plaisir, avancez-moi seulement un millier d'écus pour être croupier de banque.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Cela n'est pas si mal pensé.</p>
+        </sp>
+        <sp who="#chevaliergrelac">
+          <speaker>Le Chevalier de Grélac</speaker>
+          <p>Hé donc? C'est placer son argent à mille pour cent.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <stage>lui donnant une bourse</stage>
+          <p>Hé bien, voici une bourse de trois cents pistoles dont je vous fais présent.</p>
+        </sp>
+        <sp who="#chevaliergrelac">
+          <speaker>Le Chevalier de Grélac</speaker>
+          <p>Ah, cadedis, je vais bien gagner! Généreux diable, que je vous aime! Je trahirais pour vous le meilleur de mes amis.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>J'en suis persuadée. Vous m'aimez bien aussi, n'est-ce pas?</p>
+        </sp>
+        <sp who="#chevaliergrelac">
+          <speaker>Le Chevalier de Grélac</speaker>
+          <stage>s'en allant</stage>
+          <p>Vous me mettez en état de vous le faire voir.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Le diable, la Folie, Mademoiselle Frétillon<stage>danseuse</stage>
+        </stage>
+        <sp who="#fretillon">
+          <speaker>Mademoiselle Frétillon</speaker>
+          <p>Oh, pour cela, Monsieur le diable, vous méritez bien que je vous vienne chanter pouilles!</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>D'où vient?</p>
+        </sp>
+        <sp who="#fretillon">
+          <speaker>Mademoiselle Frétillon</speaker>
+          <p>Vous faites pleuvoir vos trésors sur mes voisines, et vous ne songez pas à la malheureuse Frétillon. Que font-elles donc que je ne fasse pas pour gagner votre affection? Je sue sang et eau, je me mets en quatre pour vous attirer chez moi, et vous ne payez mes soins que d'ingratitude.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Hé, que faites-vous donc tant pour captiver sa bienveillance?</p>
+        </sp>
+        <sp who="#fretillon">
+          <speaker>Mademoiselle Frétillon</speaker>
+          <p>J'emploie tous mes talents.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Quels sont-ils ces talents?</p>
+        </sp>
+        <sp who="#fretillon">
+          <speaker>Mademoiselle Frétillon</speaker>
+          <p>Je sais broder en perfection.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Cela n'enrichit point.</p>
+        </sp>
+        <sp who="#fretillon">
+          <speaker>Mademoiselle Frétillon</speaker>
+          <p>Je fais des garnitures à la mode.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Bagatelles que cela.</p>
+        </sp>
+        <sp who="#fretillon">
+          <speaker>Mademoiselle Frétillon</speaker>
+          <p>Et j'ose me vanter d'être une excellente couturière.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Hé, fi, vous ne travaillez que pour vivre!</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Il faut savoir des choses plus solides pour m'avoir.</p>
+        </sp>
+        <sp who="#fretillon">
+          <speaker>Mademoiselle Frétillon</speaker>
+          <p>Quoi, par exemple?</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Chanter, jouer de quelque instrument.</p>
+        </sp>
+        <sp who="#fretillon">
+          <speaker>Mademoiselle Frétillon</speaker>
+          <p>Pour la musique, je ne m'y suis point appliquée; mais je sais danser.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Vous savez danser?</p>
+        </sp>
+        <sp who="#fretillon">
+          <speaker>Mademoiselle Frétillon</speaker>
+          <p>Passablement.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Oh, vous dansez! Il n'en faut pas davantage. Allez m'attendre à l'Opéra.</p>
+        </sp>
+        <stage>Mademoiselle Frétillon le remercie par une profonde révérence et se retire.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Le diable, la Folie, Pinte-Broc<stage>Suisse</stage>
+        </stage>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Voyons ce que nous veut ce Suisse.</p>
+        </sp>
+        <sp who="#pintebroc">
+          <speaker>Pinte-Broc</speaker>
+          <stage>au diable</stage>
+          <p>
+            <emph>Grosser Geld Teuffel<note>Nous traduisons: « Grand diable d'argent ».</note>
+            </emph>, pourquoi toi n'y plus venir dans le poche del pauvre diable de Pinte-Broc? Depuis que j'avre quitté sti gros financier que le chambre de Justice l'avre fait rendre gorge, moi point revoir toi di-tout!</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Où sers-tu donc présentement?</p>
+        </sp>
+        <sp who="#pintebroc">
+          <speaker>Pinte-Broc</speaker>
+          <p>Chel garde le porte d'ein vieille dame de marquise où moi point gagner par chour por poire chopine et fumer ein pipe.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Je ne m'en étonne pas. Va. Place-toi chez une jeune coquette et j'irai t'y voir.</p>
+        </sp>
+        <sp who="#pintebroc">
+          <speaker>Pinte-Broc</speaker>
+          <p>Moi l'être obligé à vous eincore plus que davantage. Grossen dank<note>Nous traduisons: « Merci beaucoup ».</note>.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Le diable, la Folie, Monsieur Timbré<stage>poète</stage>
+        </stage>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>J'aperçois un autre original. C'est Monsieur Timbré, le poète.</p>
+        </sp>
+        <sp who="#timbre">
+          <speaker>Monsieur Timbré</speaker>
+          <stage>au diable, déclamant</stage>
+          <l met="12">Grand diable, à qui sans fruit je consacre mes veilles,</l>
+          <l met="12">Pour un fils d'Apollon n'auras-tu point d'oreilles?</l>
+          <l met="12">À la ville, à la cour, tout est content de toi;</l>
+          <l met="12">Fais donc dans ce bon temps quelque chose pour moi.</l>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>N'attends rien du diable d'argent, tant que tu feras le même métier.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <stage>au diable</stage>
+          <p>Tout beau, mon mignon! Les poètes sont mes plus chers amis; puisque je dispense vos faveurs, je dois leur en faire part.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Vous êtes la maîtresse.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Allez, Monsieur Timbré. Composez une ode à la louange de quelque commis de la banque, il fera votre fortune.</p>
+        </sp>
+        <sp who="#timbre">
+          <speaker>Monsieur Timbré</speaker>
+          <stage>déclamant</stage>
+          <l met="12">Ah, déesse, je vais dans mon enthousiasme</l>
+          <l met="12">Pour chanter vos vertus, enchérir sur Érasme<note>Allusion à l'<emph>Éloge de la folie</emph>d'Érasme (1511).</note>.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Le Diable, la Folie, Monsieur Sagouinius<stage>professeur de philosophie</stage>, Pierrot<stage>gargotier, tenant un registre</stage>
+        </stage>
+        <sp who="#sagouinius">
+          <speaker>Monsieur Sagouinius</speaker>
+          <stage>au diable</stage>
+          <p>
+            <emph>Si vales, bene est<note>Nous traduisons: « Si tu vas bien, tant mieux ».</note>.</emph>Je viens ici, Seigneur diable, pour vous représenter l'ignominie dont vous couvrez les sciences<emph>negativè</emph>
+            <note>Négativement.</note>, en laissant un virtuose dans l'indigence où je vis depuis si longtemps.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>On voit à ses habits que c'est un savant.</p>
+        </sp>
+        <sp who="#sagouinius">
+          <speaker>Monsieur Sagouinius</speaker>
+          <p>Ah, certes, vous pouvez hardiment me donner ce nom. Je suis ce qu'on appelle un érudit. Il y a plus de trente années que je professe la philosophie dans mon collège avec l'applaudissement des Hibernois<note>Nom donné aux Irlandais ayant quitté leur île.</note>, nation sagace et dialecticienne, dont je fais gloire d'être.</p>
+        </sp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <p>Oh, dame! C'est un habile homme que le docteur Sagouinius! Il parle latin comme un Aristote<note>Aristote était grec.</note>.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <stage>montrant Pierrot</stage>
+          <p>Qui est cet homme-là?</p>
+        </sp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <p>Monsieur le diable, je suis son aubergiste et si je ne lui faisais pas crédit, le pauvre chrétien serait bientôt fricassé.</p>
+        </sp>
+        <sp who="#sagouinius">
+          <speaker>Monsieur Sagouinius</speaker>
+          <p>
+            <emph>Autos epha</emph>
+            <note>« Il l'a dit lui-même » (grec).</note>, il vous accuse juste.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>À ce que je vois, Docteur, votre collège n'est pas des plus florissants.</p>
+        </sp>
+        <sp who="#sagouinius">
+          <speaker>Monsieur Sagouinius</speaker>
+          <p>
+            <emph>Tantum abest</emph>
+            <note>« Il s'en faut de beaucoup » (latin).</note>. Il n'a pas même l'air habitable. L'herbe y croît jusque dans les classes. On dirait que c'est un collège en décret<note type="definition">Décret: Ordonnance du magistrat qui porte ordinairement saisie de la personne ou des biens (Acad.1694)</note>.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Je ne m'étonne pas si l'aubergiste est si bien payé.</p>
+        </sp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <stage>lui présentant son registre</stage>
+          <p>Si bien payé! Ventrebille, vous allez voir ce qui m'est dû par Monsieur Sagouinius!</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <stage>prenant le livre</stage>
+          <p>Lisons par curiosité.<stage>Elle lit.</stage>Monsieur le chevalier de Spadagnac doit deux portions de choux-fleur, quatre d'haricots, trois d'œufs au miroir et cinq de bœuf à la mode<note type="definition">Bœuf à la mode: C'est du bœuf assaisonné et cuit dans son jus (Acad.1694)</note>.</p>
+        </sp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <p>Ce n'est pas cela. Tournez le feuillet. Lisez, lisez.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Monsieur l'Abbé Gillotin doit quatre potages gras sans viande, huit assiettes d'épinards, et sa part d'une salade de six sols servie à trois personnes.</p>
+        </sp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <p>Ce n'est pas encore cela. Plus bas, plus bas.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Monsieur le Docteur Sagouinius...</p>
+        </sp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <p>Vous y êtes.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Doit quarante-deux ordinaires de bouilli et de rôti, dix de fèves, sept de navets à l'huile et quatorze de carpe à l'étuvée<note type="definition">Étuvée: Manière de cuire les aliments dans leur vapeur (Littré)</note>.</p>
+        </sp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <p>N'est-ce pas là bien du crédit pour un pauvre diable de gargotier?</p>
+        </sp>
+        <sp who="#sagouinius">
+          <speaker>Monsieur Sagouinius</speaker>
+          <p>Puissant diable et vous, adorable Folie, daignez jeter les yeux sur moi. Est-il juste qu'un philosophe aille vêtu comme je suis et meure de faim; pendant que des maîtres à danser, à chanter, et tant d'autres gens inutiles dans la société civile vivent grassement, vont en phaéton<note type="definition">Phaéton: Petite calèche à deux roues fort légère et découverte (Acad.1762)</note>, et sont galonnés comme des timbaliers?</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Je vous trouve bien audacieux, Monsieur le philosophe, de venir ici demander des richesses, et de vous offrir devant moi, vous qui enseignez la philosophie aux jeunes gens.</p>
+        </sp>
+        <sp who="#sagouinius">
+          <speaker>Monsieur Sagouinius</speaker>
+          <p>Ah, grande déesse, vous ne devez pas m'en vouloir pour cela! Je professe la sagesse, il est vrai; mais je n'ai point de disciples.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Le beau raisonnement! Hé, quoi, ne suffit-il pas, pour mériter ma haine, de tenir école de sagesse? Vos leçons, quoique inutiles, blessent mes maximes et il ne tient pas à vous que vous n'abattiez mes autels. Allez, misérables, vous n'obtiendrez rien de nous. Tirez.</p>
+        </sp>
+        <stage>Elle les frappe tous deux de sa vessie<note>Attribut traditionnel de la Folie que l'on voit sur la gravure de frontispice au bout d'un bâton.</note>.</stage>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <stage>pleurant</stage>
+          <p>Hé, mais, mais, je ne suis point philosophe, moi.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Non; mais vous nourrissez la philosophie.</p>
+        </sp>
+        <sp who="#sagouinius">
+          <speaker>Monsieur Sagouinius</speaker>
+          <stage>s'en allant</stage>
+          <p>
+            <emph>Ô Jupiter omnipotens</emph>
+            <note>Nous traduisons : « Ô Jupiter tout puissant ».</note>! Pouvez-vous souffrir qu'on traite la science avec tant d'indignité?</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="location">et dernière.</stage>
+        <stage type="characters">Le diable, la Folie, Arlequin et sa troupe</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>saluant le diable</stage>
+          <p>
+            <emph>Ô carissimo Diavolo</emph>
+            <note>Nous traduisons: « Ô très cher diable ».</note>! Le plus puissant diable de toute la diablerie! Vous qui tenez la première place dans le cœur des humains! Grand factoton<note type="definition">Factoton: Celui qui se mêle, qui s'ingère de tout dans une maison (Acad.1762)</note>, qui faites bouillir toutes les marmites du monde, qui ouvrez la porte des cabarets, qui amenez à Paris le fromage de Milan! Merveilleuse machine qui faites aller et venir les hommes et qui mettez les femmes en mouvement; vous enfin, qui n'êtes plus si rébarbatif qu'autrefois, et qui enrichissez à présent tant de faquins, devez-vous mettre le pauvre Arlequin en oubli?<stage>Il pleure.</stage>Hiaouf!</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Essuie tes larmes, mon cher enfant. Puisque c'est moi qui suis la favorite et le conseil du diable d'argent, j'aurais tort d'abandonner Arlequin, le plus zélé de mes serviteurs, lui qui me fait élever des autels aux foires, où il est, pour ainsi dire, mon grand-prêtre.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Ah, généreuse folie, que je vous suis redevable! Conseillez donc à votre ami de venir chez nous: car il n'est pas un de ces diables qui font enrager les pauvres gens en assiégeant leur porte; nous serons charmés de le voir à la nôtre.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Hé bien, Arlequin, tu nous verras chez toi, pourvu que tu donnes de bonnes pièces nouvelles.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Oh, voilà le chiendent! Hé, comment voulez-vous que je donne de bonnes pièces à l'heure qu'il est? Vous avez débauché tous les auteurs.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Moi, je les ai débauchés!</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Vous-même. Ils ont abandonné le Parnasse et se sont retirés dans la fameuse<emph>province</emph>de Quincampoix.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Il est vrai. Ils sont presque tous devenus actionnaires. Tandis qu'ils seront riches, adieu les ouvrages d'esprit.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>C'est ce qui fait mon embarras.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Je veux t'en tirer, moi. Je sais ce qu'il te faut. En te donnant sur la tête trois coups de ma vessie, je vais remplir ta cervelle d'idées polissonnes, de fadaises et de balivernes.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Je vous serai bien obligé.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <stage>le frappant de sa vessie</stage>
+          <p>Tiens. Te voilà maintenant en état d'attirer tout Paris.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Grand merci. Effectivement, je me sens dans la tête une nouvelle provision de quolibets, de billevesées<note type="definition">Billevesée: Il signifiait autrefois une balle soufflée et pleine de vent. On ne le dit plus qu'au figuré pour signifier des discours frivoles, des contes vains et ridicules (Féraud)</note>et de babioles propres à délasser les génies supérieurs de la rue Quincampoix de leurs sérieuses occupations<note>Nous l'avons vu plus haut, plusieurs banques s'étaient établies dans cette rue. Arlequin évoque les financiers et commerçants qui peuplaient la rue.</note>. Je vais commencer par<emph>Arlequin roi des ogres</emph>et<emph>La Queue de Vérité</emph>.</p>
+        </sp>
+        <sp who="#diable">
+          <speaker>Le diable d'argent</speaker>
+          <p>Cela me parait convenable à ton théâtre.</p>
+        </sp>
+        <sp who="#folie">
+          <speaker>La Folie</speaker>
+          <p>Va te préparer, mon ami. Nous allons te suivre.</p>
+        </sp>
+        <stage>Fin du prologue</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

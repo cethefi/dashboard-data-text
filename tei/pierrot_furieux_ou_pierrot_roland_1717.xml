@@ -1,0 +1,1531 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="pierrot_furieux_ou_pierrot_roland_1717">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Pierrot furieux</title>
+        <title type="sub">Pierrot Roland</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Louis Fuzelier</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>B. Ourcel</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BnF ms. fr. 9335.</bibl>
+        <bibl type="intermediarySource">
+          <emph>Théâtre de la Foire, Anthologie de pièces inédites 1712-1736</emph>, dir. F. Rubellin, Éditions Espaces 34, 2005.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="olivette" sex="UNKNOWN">
+            <persName>Olivette</persName>
+          </person>
+          <person xml:id="grosjean" sex="UNKNOWN">
+            <persName>Gros-Jean</persName>
+          </person>
+          <person xml:id="arlequin" sex="UNKNOWN">
+            <persName>Arlequin</persName>
+          </person>
+          <person xml:id="pierrot" sex="UNKNOWN">
+            <persName>Pierrot</persName>
+          </person>
+          <person xml:id="antoine" sex="UNKNOWN">
+            <persName>Antoine</persName>
+          </person>
+          <person xml:id="margot" sex="UNKNOWN">
+            <persName>Margot</persName>
+          </person>
+          <person xml:id="grandcolas" sex="UNKNOWN">
+            <persName>Grand-Colas</persName>
+          </person>
+          <person xml:id="mathurine" sex="UNKNOWN">
+            <persName>Mathurine</persName>
+          </person>
+          <person xml:id="gros_jean" sex="UNKNOWN">
+            <persName>Gros-Jean</persName>
+          </person>
+          <person xml:id="grand_colas" sex="UNKNOWN">
+            <persName>Grand-Colas</persName>
+          </person>
+          <person xml:id="garcons_de_la_guinguette" sex="UNKNOWN">
+            <persName>Garçons de la guinguette</persName>
+          </person>
+          <person xml:id="troupe_de_paysans_et_de_paysannes" sex="UNKNOWN">
+            <persName>Troupe de paysans et de paysannes</persName>
+          </person>
+          <person xml:id="joueur_de_violons" sex="UNKNOWN">
+            <persName>Joueur de violons</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">[Parodie en un acte de la tragédie lyrique de<emph>Roland</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1717">
+        <desc>[Représentée au Jeu de Paume d'Orléans à la Foire Saint-Germain] 1717</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#olivette">Olivette</role>
+        </castItem>
+        <castItem>
+          <role ana="#gros_jean">Gros-Jean</role>
+        </castItem>
+        <castItem>
+          <role ana="#arlequin">Arlequin</role>
+        </castItem>
+        <castItem>
+          <role ana="#pierrot">Pierrot</role>
+        </castItem>
+        <castItem>
+          <role ana="#antoine">Antoine</role>
+          <roleDesc>paysan</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#margot">Margot</role>
+          <roleDesc>servante du cabaret</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#grand_colas">Grand-Colas</role>
+          <roleDesc>accordé</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#mathurine">Mathurine</role>
+          <roleDesc>accordée</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#garcons_de_la_guinguette">Garçons de la guinguette</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_paysans_et_de_paysannes">Troupe de paysans et de paysannes</role>
+        </castItem>
+        <castItem>
+          <role ana="#joueur_de_violons">Joueur de violons</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">Le théâtre représente un cabaret de Vaugirard.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">olivette</stage>
+        <sp who="#olivette">
+          <speaker>Olivette</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#olivette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#de_son_lan_la">Ô lon lan la landerirette</title>
+            </desc>
+          </head>
+          <sp who="#olivette">
+            <speaker>Olivette</speaker>
+            <l met="8">Par ma foi, dans cette guinguette,</l>
+            <l met="8">Ô lon lan la landerira,</l>
+            <l met="8">Je vais faire un tour de coquette,</l>
+            <l met="8">Ô lon lan la landerirette,</l>
+            <l met="8">Ô lon lan la landerira.</l>
+          </sp>
+          <sp who="#olivette">
+            <speaker>Olivette</speaker>
+            <l met="8">Olivette engage son cœur,</l>
+            <l met="6">Colin en est vainqueur.</l>
+          </sp>
+        </spGrp>
+        <stage>Elle écrit sur un piédestal et dit:</stage>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#olivette">
+            <speaker>Olivette</speaker>
+            <l met="8">Voyons, quand Pierrot me muguette,</l>
+            <l met="8">Ô lon lan la landerira</l>
+            <l met="8">Si c'est amour ou amourette</l>
+            <l met="8">Ô lon lan la landerirette</l>
+            <l met="8">Ô lon lan la landerira.</l>
+          </sp>
+          <sp who="#olivette">
+            <speaker>Olivette</speaker>
+            <l met="6">Que Colin est heureux,</l>
+            <l met="8">Olivette a comblé ses vœux.</l>
+          </sp>
+        </spGrp>
+        <stage>Elle écrit sur un autre piédestal et dit:</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">gros-jean, olivette</stage>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <stage>surprend Olivette écrivant</stage>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="8">Sous ces ormeaux, ici, seulette,</l>
+            <l met="8">Ô lon lan la landerira</l>
+            <l met="8">Qu'écrivez-vous donc, Olivette?</l>
+            <l met="8">Ô lon lan la landerirette</l>
+            <l met="8">Ô lon lan la landerira.</l>
+          </sp>
+        </spGrp>
+        <sp who="#olivette">
+          <speaker>Olivette</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#olivette">
+            <speaker>Olivette</speaker>
+            <l met="8">Une petite chansonnette</l>
+            <l met="8">Ô lon lan la landerira.</l>
+          </sp>
+        </spGrp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="8">Ah, c'est pour Pierrot qu'elle est faite</l>
+          <l met="8">Ô lon lanla landerirette</l>
+          <l met="8">Ô lon la landerira.</l>
+        </sp>
+        <sp who="#olivette">
+          <speaker>Olivette</speaker>
+          <p>Justement.</p>
+        </sp>
+        <spGrp who="#olivette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dondaine_dondaine">Un moine de notre couvent</title>
+            </desc>
+          </head>
+          <sp who="#olivette">
+            <speaker>Olivette</speaker>
+            <l met="8">Pierrot me marque de l'ardeur...<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Et moi je sens qu'à la fureur</l>
+            <l met="5">Je l'aime, je l'aime,</l>
+            <l met="8">Je veux éprouver si son cœur</l>
+            <l met="4">M'aime de même.</l>
+          </sp>
+        </spGrp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+        </sp>
+        <spGrp who="#grosjean">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Un capucin</title>
+            </desc>
+          </head>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="8">Morgué, je pense que dans l'homme</l>
+            <l met="8">L'amour, ma chère, est tout droit comme</l>
+            <l met="8">Ces jolis bijoux qu'on fait d'or;</l>
+            <l met="8">L'éprouver est contre l'usage,</l>
+            <l met="8">Souvent dans ce galant trésor</l>
+            <l met="8">Il entre deux tiers d'alliage.</l>
+            <p>Et je crains que le bijou de Pierrot ne soit un carat bien bas.</p>
+          </sp>
+        </spGrp>
+        <sp who="#olivette">
+          <speaker>Olivette</speaker>
+        </sp>
+        <spGrp who="#olivette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#inconnu">Un inconnu</title>
+            </desc>
+          </head>
+          <sp who="#olivette">
+            <speaker>Olivette</speaker>
+            <l met="10">Voilà, mon cher, justement l'anicroche.</l>
+            <l met="10">Je ne veux pas trouver dans un amant</l>
+            <l met="4">De fer qui loche.</l>
+            <l met="4">Dans un moment</l>
+            <l met="10">J'éprouverai Pierrot bien rudement,</l>
+            <l met="10">Je ne veux point acheter chat en poche.</l>
+          </sp>
+        </spGrp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+        </sp>
+        <spGrp who="#grosjean">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="8">À Pierrot vous cherchez castille,</l>
+            <l met="8">Vous allez le faire enrager.</l>
+            <l met="8">Mais au moins n'allez pas changer,</l>
+            <l met="6">Ne soyez pas trop fille.</l>
+          </sp>
+        </spGrp>
+        <sp who="#olivette">
+          <speaker>Olivette</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#olivette">
+            <speaker>Olivette</speaker>
+            <l met="6">Quand j'ai donné mon cœur</l>
+            <l met="4">Je me fais gloire</l>
+            <l met="4">De la victoire</l>
+            <l met="4">De mon vainqueur,</l>
+            <l met="6">Loin de bannir ma flamme,</l>
+            <l met="4">J'ouvre mon âme</l>
+            <l met="4">À son ardeur,</l>
+            <l met="6">L'amour m'en récompense</l>
+            <l met="4">Et ma constance</l>
+            <l met="4">Fait mon bonheur.</l>
+          </sp>
+        </spGrp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <p>Voilà du céladon aussi doux que de l'hypocras, mais n'est-il point aussi trop frelaté? Enfin que prétendez-vous faire?</p>
+        </sp>
+        <sp who="#olivette">
+          <speaker>Olivette</speaker>
+        </sp>
+        <spGrp who="#olivette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#confiteor">Confiteor</title>
+            </desc>
+          </head>
+          <sp who="#olivette">
+            <speaker>Olivette</speaker>
+            <l met="8">Je veux rendre Pierrot jaloux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="8">Il ne sera pas à la mode.</l>
+        </sp>
+        <sp who="#olivette">
+          <speaker>Olivette</speaker>
+          <l met="8">Comme j'en veux faire un époux...</l>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="8">Il faut le souhaiter commode.</l>
+        </sp>
+        <sp who="#olivette">
+          <speaker>Olivette</speaker>
+          <l met="8">Je veux savoir s'il est constant.</l>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="8">Et s'il est bien persécutant.</l>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="9">Croyez-moi, plantez-moi là, fillette,</l>
+            <l met="9">Un dessein qui peut vous chagriner.</l>
+            <l met="9">Il ne faut jamais tant lanterner.</l>
+            <l met="11">Suivez mes avis, vous savez, Olivette,</l>
+            <l met="9">Que Gros-Jean peut très bien opiner,</l>
+            <l met="6">Qu'on vient me consulter</l>
+            <l met="6">Jusque dans ma guinguette,</l>
+            <l met="9">Oui, chacun m'estime à Vaugirard,</l>
+            <l met="8">J'y brille pour les pois au lard.</l>
+          </sp>
+        </spGrp>
+        <sp who="#olivette">
+          <speaker>Olivette</speaker>
+        </sp>
+        <spGrp who="#olivette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sur_le_rhin_parut_une_bete">Sur le Rhin parut une bête</title>
+            </desc>
+          </head>
+          <sp who="#olivette">
+            <speaker>Olivette</speaker>
+            <l met="8">Pierrot dans ces lieux doit se rendre,</l>
+            <l met="8">Il se flatte de m'y trouver.</l>
+            <l met="8">C'est là que je veux éprouver</l>
+            <l met="6">Ce que j'en dois attendre.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#olivette">
+            <speaker>Olivette</speaker>
+            <l met="7">À Pierrot je fais un tour</l>
+            <l met="6">Qui pourra le surprendre,</l>
+            <l met="7">Avant la fin de ce jour</l>
+            <l met="6">Je compte ici d'apprendre</l>
+            <l met="6">S'il va droit<stage type="bis">bis</stage>en amour</l>
+            <l met="6">Et si son cœur est tendre.</l>
+          </sp>
+        </spGrp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+        </sp>
+        <spGrp who="#grosjean">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_triolets">Le premier jour du mois de mai</title>
+            </desc>
+          </head>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="8">Pierrot est un bon gros garçon</l>
+            <l met="8">Qui par ma foi de rien ne grogne.</l>
+            <l met="8">Je crois qu'il fait tout sans façon,</l>
+            <l met="8">Pierrot est un bon gros garçon.</l>
+            <l met="8">Il ne va point à la leçon</l>
+            <l met="8">Sous les amoureux de Gascogne.</l>
+            <l met="8">Pierrot est un bon gros garçon,</l>
+            <l met="8">Je crois qu'il va droit en besogne.</l>
+          </sp>
+        </spGrp>
+        <sp who="#olivette">
+          <speaker>Olivette</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#olivette">
+            <speaker>Olivette</speaker>
+            <l met="8">Quel pays n'a pas ses Gascons?</l>
+            <l met="8">Il en pleut surtout à Cythère.</l>
+            <l met="8">Oh, qu'il est d'amours fanfarons!</l>
+            <l met="8">Quel pays n'a pas ses Gascons?</l>
+            <l met="8">Hélas, hélas pour ces fripons,</l>
+            <l met="8">Il n'est point de terre étrangère.</l>
+            <l met="8">Quel pays n'a pas ses Gascons?</l>
+            <l met="8">Il en pleut surtout à Cythère.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#olivette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#du_haut_en_bas">Du haut en bas</title>
+            </desc>
+          </head>
+          <sp who="#olivette">
+            <speaker>Olivette</speaker>
+            <l met="4">Adieu Gros-Jean.</l>
+          </sp>
+        </spGrp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <p>Quoi, vous ne restez pas aux accordailles de Mathurine et de Grand-Colas? Tout Vaugirard y sera.</p>
+        </sp>
+        <sp who="#olivette">
+          <speaker>Olivette</speaker>
+          <p>Oh, je n'ai garde; tenez.</p>
+        </sp>
+        <spGrp who="#olivette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#charlot">Monsieur Charlot, dessus le pont</title>
+            </desc>
+          </head>
+          <sp who="#olivette">
+            <speaker>Olivette</speaker>
+            <l met="4">Contre Pierrot,</l>
+            <l met="6">Dans le tour que j'apprête,</l>
+            <l met="6">Tous les gens de la fête</l>
+            <l met="4">Sont du complot.</l>
+            <l met="4">Ne dites mot</l>
+            <l met="6">Quand ils joueront leurs rôles.</l>
+          </sp>
+        </spGrp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="5">Suis-je donc un sot?</l>
+          <l met="4">Ici j'ai vu</l>
+          <l met="6">Mille tours bien plus drôles</l>
+          <l met="5">Que j'ai toujours tus.</l>
+          <p>Oh! Nous autres maîtres de guinguette, nous sommes obligés au secret.</p>
+        </sp>
+        <sp who="#olivette">
+          <speaker>Olivette</speaker>
+        </sp>
+        <spGrp who="#olivette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#du_haut_en_bas">Du haut en bas</title>
+            </desc>
+          </head>
+          <sp who="#olivette">
+            <speaker>Olivette</speaker>
+            <l met="4">Adieu Gros-Jean.</l>
+          </sp>
+        </spGrp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="8">Adieu donc, madame Olivette.</l>
+        </sp>
+        <sp who="#olivette">
+          <speaker>Olivette</speaker>
+          <l met="4">Adieu Gros-Jean.</l>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="8">Adieu bergère de roman.</l>
+        </sp>
+        <sp who="#olivette">
+          <speaker>Olivette</speaker>
+          <l met="8">Grand oracle de la guinguette.</l>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="8">Vous me turlupinez, follette.</l>
+        </sp>
+        <sp who="#olivette">
+          <speaker>Olivette</speaker>
+          <l met="4">Adieu Gros-Jean.</l>
+        </sp>
+        <stage>Elle s'en va.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">gros-jean<stage>seul</stage>
+        </stage>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <stage>i</stage>
+        </sp>
+        <stage>Il regarde l'écriture d'Olivette.</stage>
+        <spGrp who="#grosjean">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#robin_ture_lure_lure">Robin turelure</title>
+            </desc>
+          </head>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="7">Si je savais lire, hélas!</l>
+            <l met="7">La méchante créature,</l>
+            <l met="7">Et ne devait-elle pas</l>
+            <l met="3">Turelure</l>
+            <l met="7">M'expliquer cette écriture?</l>
+            <l met="7">Robin turelure.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#grosjean">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fais_le_moi_donc_connaitre">Fais-le-moi donc connaître</title>
+            </desc>
+          </head>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="8">Nargue du tour qu'elle jouera</l>
+            <l met="6">Pierrot sera fidèle,</l>
+            <l met="4">Elle en aura</l>
+            <l met="4">Elle en aura</l>
+            <l met="6">Elle en aura dans l'aile</l>
+            <l met="4">Elle en aura</l>
+            <l met="6">Elle en aura dans l'aile.</l>
+          </sp>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="2">Allons</l>
+            <l met="6">Allons à la guinguette</l>
+            <l met="2">Allons.</l>
+          </sp>
+        </spGrp>
+        <stage>On entend chanter Arlequin sans le voir:</stage>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+        </sp>
+        <spGrp who="#grosjean">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Tout cela m'est indifférent</title>
+            </desc>
+          </head>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="8">Cet écornifleur d'Arlequin</l>
+            <l met="8">Boit chaque jour ici mon vin</l>
+            <l met="8">Sans jamais me donner la maille.</l>
+            <l met="8">C'est un imbécile, un franc sot.</l>
+            <l met="8">Il faut que de lui je me raille,</l>
+            <l met="8">Plus d'un paie ainsi son écot.</l>
+          </sp>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="2">Allons,</l>
+            <l met="6">Allons à la guinguette,</l>
+            <l met="2">Allons.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">arlequin, gros-jean</stage>
+        <stage>Arlequin entre en chantant.</stage>
+        <stage>À Gros-Jean.</stage>
+        <spGrp who="#grosjean">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#du_haut_en_bas">Du haut en bas</title>
+            </desc>
+          </head>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="4">Bonjour Gros-Jean.</l>
+          </sp>
+        </spGrp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <p>Encore Gros-Jean.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Ah! Qu'il fait bon dans ta guinguette</l>
+          <l met="4">Mon cher Gros-Jean.</l>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="8">Voyez ce petit cormoran,</l>
+          <l met="8">Comme il vient me conter fleurette!</l>
+          <l met="8">Voilà tout l'argent qu'il me jette:</l>
+          <l met="4">Bonjour Gros-Jean,</l>
+          <l met="4">Bonjour Gros-Jean.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, [belle endormie]</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Morbleu, quel charmant équipage,</l>
+            <l met="8">Qu'un cabaretier a d'appas!</l>
+          </sp>
+        </spGrp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="8">Toujours grand appétit, je gage.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Oh, gagez, vous ne perdrez pas!</l>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+        </sp>
+        <spGrp who="#grosjean">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_suis_la_fleur_des_garcons_du_village">Je suis la fleur des bergers [du village]</title>
+            </desc>
+          </head>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="10">Pardi, mon cher, vous parlez à merveille,</l>
+            <l met="8">Que vous venez de bien tomber!</l>
+            <l met="10">Je suis tenté de vous payer bouteille.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Dépêchez-vous de succomber.</l>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <p>Ah, pardi, petit écornifleur, je vous bernerai.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#allons_gai_d_un_air_gai">D'un air gai, allons gai</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="6">Tenez, je suis bon diable,</l>
+            <l met="6">Ne faites point de frais.</l>
+          </sp>
+        </spGrp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <p>Non, non.</p>
+        </sp>
+        <stage>Il appelle un garçon et lui donne le mot à l'oreille.</stage>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="6">Eh garçon! Une table,</l>
+          <l met="6">Des verres, du vin frais,</l>
+          <l met="3">D'un air gai,</l>
+          <l met="3">Allons gai</l>
+          <l met="3">Talera ...</l>
+        </sp>
+        <stage>On apporte une table et des couverts.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>venant</stage>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#confiteor">Confiteor</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Je vous dois déjà vingt écots.</l>
+          </sp>
+        </spGrp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="8">Ne parlons pas de ces sornettes.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Oh! volontiers, tenez, mettons une amende pour celui qui en parlera le premier.</p>
+        </sp>
+        <stage>Arlequin se met à table, Gros-Jean sonne la sonnette du cabaret.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Allons, étendons nos gigots</l>
+          <l met="8">Vive le concert des clochettes.</l>
+          <l met="8">Leur bruit fort souvent indiscret</l>
+          <l met="8">Ne me charme qu'au cabaret.</l>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <stage>se met aussi à table et appelle ses garçons</stage>
+          <p>Eh! Garçon! Que l'on nous serve cette soupe aux choux qui mitonne depuis une heure, et que l'on nous donne de ce vin que je réserve pour les bons payeurs.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Je n'ai pas encore bu de ce vin-là.</p>
+        </sp>
+        <stage>On apporte la soupe et Gros-Jean en donne à Arlequin, qui, voyant qu'il n'y a rien dans le plat, se recule de la table avec surprise.</stage>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+        </sp>
+        <spGrp who="#grosjean">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lonlanla_derirette">Lon lan la derirette</title>
+            </desc>
+          </head>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="8">Mangez, qui vous fait reculer?</l>
+            <l met="8">Eh! Craignez-vous de vous brûler?</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="6">Lon lan la derirette.</l>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <p>La soupe n'est pas trop chaude.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Ma foi ni trop épaisse aussi</l>
+          <l met="6">Lon lan la deriri.</l>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <stage>appelle ses garçons</stage>
+          <p>Eh! Garçons, ôtez la soupe! Prenez garde, vous renversez sur moi.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Oui, prenez garde de me tacher.</p>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <p>Croyez-moi, mon cher, passons le bouilli.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Soit, je ne suis pas tenté de voir un bouilli qui fait une soupe si claire.</p>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, [belle endormie]</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Avec sa soupe transparente</l>
+            <l met="8">Il extravague, par ma foi.</l>
+          </sp>
+        </spGrp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <stage>appelle ses garçons</stage>
+          <p>Eh! la poularde!</p>
+        </sp>
+        <stage>Arlequin se remet à table.</stage>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="8">Allons, mangez, elle est charmante!</l>
+          <l met="8">Tenez, c'est un morceau de roi.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>Oui, du roi Démogorgon; où prenez-vous ces poulardes-là, mon ami?</p>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+        </sp>
+        <spGrp who="#grosjean">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Que j'estime mon cher voisin</title>
+            </desc>
+          </head>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="8">Le cresson est tendre, pour moi</l>
+            <l met="6">Je l'aime à la folie.</l>
+            <l met="8">Il faut vous réveiller ma foi.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <p>La fumée des viandes ne m'endort pourtant pas.</p>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <p>Des verres, je vous prie.</p>
+        </sp>
+        <stage>Un garçon apporte une bouteille, mais il n'y a rien dedans.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>voyant venir la bouteille</stage>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Un capucin</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">La bouteille est bien cachetée</l>
+            <l met="8">Et de sable encor mouchetée,</l>
+            <l met="8">Tout ceci me fait espérer.</l>
+            <l met="8">Allons, dépêchez-vous, mon maître!</l>
+            <l met="8">Je pourrai me désaltérer</l>
+            <l met="8">Si je n'ai pas pu me repaître.</l>
+          </sp>
+        </spGrp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <p>Allons, à votre santé, Monsieur Arlequin, c'est du vin à trente sols la bouteille.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>au garçon</stage>
+          <p>Allons, verse donc, mon ami.</p>
+        </sp>
+        <stage>Quand il voit qu'il n'y a rien dans la bouteille, il casse son verre et dit à part:</stage>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_mariez_moi">Ma mère, mariez-moi</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Peste soit du gros cochon,</l>
+            <l met="7">De sa poularde au cresson,</l>
+            <l met="7">De son vin à trente sols,</l>
+            <l met="5">De sa soupe aux choux,<stage type="bis">bis</stage>
+            </l>
+            <l met="7">Je ne puis me dispenser</l>
+            <l met="7">De l'en bien récompenser.</l>
+          </sp>
+        </spGrp>
+        <stage>Il chasse Gros-Jean à coups de bâton, les garçons viennent desservir et Arlequin dit:</stage>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Que j'estime mon cher voisin</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Ce repas est des plus bouffons</l>
+            <l met="6">Je le paie avec joie...</l>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Il faut aussi pour les garçons</l>
+            <l met="6">Donner quelque monnaie.</l>
+          </sp>
+        </spGrp>
+        <stage>Apercevant les garçons.</stage>
+        <stage>Il donne aussi des coups de bâton aux garçons et s'en va.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">pierrot, antoine, paysan</stage>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <p>Va, ton soin m'importune, Antoine laisse-moi!</p>
+        </sp>
+        <sp who="#antoine">
+          <speaker>Antoine</speaker>
+          <p>Quel charme vous retient tout seul à la guinguette?</p>
+        </sp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <l met="7">Ami, je n'ai point pour toi</l>
+          <l met="7">De secret ni de défaite,</l>
+          <l met="8">Olivette ne me fuit plus.</l>
+        </sp>
+        <spGrp who="#pierrot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#belle_brune">[Belle brune]</title>
+            </desc>
+          </head>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="3">Sur la brune,</l>
+            <l met="3">Sur la brune,</l>
+            <l met="7">Ami, je l'attends ici.</l>
+            <l met="7">Il n'est point de clair de lune</l>
+            <l met="3">Sur la brune</l>
+            <l met="3">Sur la brune.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#pierrot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#catherine">Ton humeur est, Catherine</title>
+            </desc>
+          </head>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="7">Mordi, l'objet qui m'enchante</l>
+            <l met="7">Ne m'a jamais tant charmé.</l>
+            <l met="7">Ami, que l'amour augmente</l>
+            <l met="7">Par le plaisir d'être aimé!</l>
+          </sp>
+        </spGrp>
+        <sp who="#antoine">
+          <speaker>Antoine</speaker>
+          <l met="7">Je crois plutôt le contraire</l>
+          <l met="7">Car on dit que les amours,</l>
+          <l met="7">Dans leur manège ordinaire,</l>
+          <l met="7">À contre-poil vont toujours.</l>
+        </sp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="6">On m'a, dans ce jardin,</l>
+            <l met="6">Marqué le rendez-vous.</l>
+            <l met="6">J'attends mon Olivette,</l>
+            <l met="6">Si la corde ne rompt</l>
+            <l met="8">Aïe, aïe, aïe, aïe, aïe, aïe, aïe, aïe,</l>
+            <l met="5">Nous verrons beau jeu.</l>
+          </sp>
+        </spGrp>
+        <sp who="#antoine">
+          <speaker>Antoine</speaker>
+          <l met="6">Le grand cœur de Pierrot</l>
+          <l met="6">N'est fait que pour la treille.</l>
+        </sp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+        </sp>
+        <spGrp who="#pierrot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#branle_de_metz">Dans le fond d'une écurie</title>
+            </desc>
+          </head>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="7">Quoi, tu ne sais pas encore</l>
+            <l met="7">Quitter les gens à propos!</l>
+            <l met="7">Apprends, Phœnix des nigauds,</l>
+            <l met="7">Que tu n'es qu'une pécore,</l>
+            <l met="7">Tu viens me sermonner, moi,</l>
+            <l met="7">Quand j'attends ce que j'adore.</l>
+            <l met="7">Tiens, voilà ce que je dois</l>
+            <l met="7">Aux conseillers comme toi.</l>
+          </sp>
+        </spGrp>
+        <stage>Il lui donne un coup de pied au cul et il s'en va.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">pierrot, margot<stage>servante du cabaret</stage>
+        </stage>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <l met="4">Quelle heure est-il?</l>
+          <l met="2">Margot,</l>
+          <l met="4">Quelle heure est-il?</l>
+        </sp>
+        <sp who="#margot">
+          <speaker>Margot</speaker>
+          <l met="4">Il est midi,</l>
+          <l met="2">Monsieur,</l>
+          <l met="4">Il est midi.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">pierrot<stage>seul</stage>
+        </stage>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <stage>i</stage>
+          <l met="12">Ah! J'attendrai longtemps, la nuit est loin encore.</l>
+        </sp>
+        <spGrp who="#pierrot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#un_petit_maitre_limousin">Un petit-maître limousin</title>
+            </desc>
+          </head>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="8">C'est grand dommage assurément</l>
+            <l met="8">Car, par ma foi, dans ce moment,</l>
+            <l met="8">Pardi, je suis en belle humeur.</l>
+            <l met="8">Mais... ô nuit, favorisez</l>
+            <l met="6">Mes désirs amoureux.</l>
+            <p>Il est de certains petits moments où les dames se rendent aisément.</p>
+            <l met="6">Ô nuit, favorisez</l>
+            <l met="6">Mes désirs amoureux.</l>
+            <p>Faisons un petit tour de jardin pour tuer le temps.</p>
+          </sp>
+        </spGrp>
+        <stage>Il se promène et les violons jouent.</stage>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <l met="6">Que ces gazons sont verts,</l>
+          <l met="6">Que la guinguette est belle.</l>
+        </sp>
+        <stage>Il regarde des piédestaux.</stage>
+        <spGrp who="#pierrot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, [belle endormie]</title>
+            </desc>
+          </head>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="8">Sur ces piédestaux et ces arbres</l>
+            <l met="8">Quelqu'un a griffonné des vers,</l>
+            <l met="8">Lisons, j'aime la poésie</l>
+            <l met="8">Je m'amuse à rimer souvent.</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Ils sont gaillards ma foi, c'est une jouissance de guinguette.</p>
+            <l met="8">Voyons tout... Qu'est-ce que je vois?</l>
+            <l met="12">Ces mots semblent tracés de la main d'Olivette.</l>
+            <l met="8">Ciel! C'est pour un autre que moi</l>
+            <l met="6">Que chante la coquette.</l>
+          </sp>
+        </spGrp>
+        <stage>Il lit et dit:</stage>
+        <stage>Il chante touchant ce qu'a écrit Olivette.</stage>
+        <spGrp who="#pierrot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reviendrai_demain">Tu n'as pas le pouvoir</title>
+            </desc>
+          </head>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="8">Olivette engage son cœur</l>
+            <l met="6">Colin en est vainqueur.</l>
+            <l met="12">Elle m'aurait flatté d'une vaine espérance,</l>
+            <l met="12">La masque? N'est-ce point un soupçon qui l'offense?</l>
+            <l met="12">Colin en est vainqueur. Non, je n'ai point encor</l>
+            <l met="8">Entendu parler de Colin.</l>
+            <l met="12">Mon amour aurait lieu de prendre des alarmes</l>
+            <l met="8">Si je trouvais ici le nom</l>
+            <l met="8">De Thibaud ou du gros Lucas,</l>
+            <l met="12">Ou quelque autre fermier, l'un des coqs du village.</l>
+            <l met="8">Olivette n'a pas osé</l>
+            <l met="12">Avouer de son cœur le véritable maître,</l>
+            <l met="8">Et je puis aisément connaître</l>
+            <l met="12">Que c'est moi dans ces vers qu'elle a colinisé.</l>
+            <l met="8">C'est pour moi seul qu'elle soupire,</l>
+            <l met="12">Puisqu'elle me l'a dit, n'en suis-je pas certain?</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="12">Lisons ces autres mots, ils sont d'une autre main.</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="8">Qu'ai-je lu? Ciel! Il faut relire.</l>
+          </sp>
+        </spGrp>
+        <stage>Il regarde sur un autre piédestal.</stage>
+        <stage>Il lit.</stage>
+        <spGrp who="#pierrot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#adieu_paniers">Adieu panier, [vendanges sont faites]</title>
+            </desc>
+          </head>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="8">Dans cette charmante guinguette</l>
+            <l met="8">Hélas, que Colin est heureux!</l>
+            <l met="8">Olivette a comblé ses vœux... Oïmé!</l>
+            <l met="9">Adieu panier, vendanges sont faites.</l>
+            <l met="12">Ce Colin, quel qu'il soit, se lit sans commentaire</l>
+            <l met="12">Et cet heureux amant n'a pas le style obscur.</l>
+            <l met="6">Elle a pu me trahir...</l>
+            <l met="6">Non, non, c'est une bourde,</l>
+            <l met="8">Non, non, quelque auteur marotique</l>
+            <l met="6">A voulu par ces vers</l>
+            <l met="6">Noircir l'objet que j'aime</l>
+            <l met="6">Et troubler mon cerveau.</l>
+          </sp>
+        </spGrp>
+        <stage>On entend des violons.</stage>
+        <spGrp who="#pierrot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#belle_manon">Belle Manon</title>
+            </desc>
+          </head>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="8">On accorde ici Mathurine</l>
+            <l met="8">J'entends venir les violons,</l>
+            <l met="8">Cherchons Olivette, peut-être</l>
+            <l met="8">Est-elle dans ces cabinets.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">grand-colas<stage>accordé</stage>, mathurine<stage>accordée</stage>, troupe de paysans et de paysannes des accordailles</stage>
+        <stage>Danse de paysans et de paysannes.</stage>
+        <sp who="#grandcolas">
+          <speaker>Grand-Colas</speaker>
+          <l met="8">C'est aujourd'hui mes accordailles.</l>
+          <l met="12">Sans rechigner, amis, le vin sera versé.</l>
+          <l met="6">Quand vous aurez dansé</l>
+          <l met="8">Vous ferez danser nos futailles.</l>
+        </sp>
+        <stage>À Mathurine.</stage>
+        <sp who="#grandcolas">
+          <speaker>Grand-Colas</speaker>
+          <l met="12">Toi, ne me donne pas d'importune leçon,</l>
+          <l met="8">Mathurine, veux-tu m'en croire?</l>
+          <l met="12">Laisse-moi trinquer sans façon, je prétends boire.</l>
+          <l met="7">Autant mari que garçon.</l>
+        </sp>
+        <stage>Ici recommence le ballet.</stage>
+        <sp who="#grandcolas">
+          <speaker>Grand-Colas</speaker>
+          <l met="8">J'aimerai toujours Mathurine.</l>
+        </sp>
+        <sp who="#mathurine">
+          <speaker>Mathurine</speaker>
+          <l met="8">J'aimerai toujours Grand-Colas.</l>
+        </sp>
+        <sp who="#grandcolas">
+          <speaker>Grand-Colas</speaker>
+          <l met="6">Je le vois à sa mine</l>
+          <l met="8">J'aimerai toujours Mathurine.</l>
+        </sp>
+        <sp who="#mathurine">
+          <speaker>Mathurine</speaker>
+          <l met="6">Mon cœur ne change pas</l>
+          <l met="8">J'aimerai toujours Grand-Colas.</l>
+        </sp>
+        <sp who="#grandcolas">
+          <speaker>Grand-Colas</speaker>
+          <l met="8">J'aimerai toujours Mathurine.</l>
+        </sp>
+        <sp who="#mathurine">
+          <speaker>Mathurine</speaker>
+          <l met="8">J'aimerai toujours Grand-Colas.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="5">Dupont mon ami,</l>
+          <l met="5">Qui t'a fait si sage?</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">gros-jean, mathurine, grand-colas, arlequin, pierrot, troupe de paysans et de paysannes</stage>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <stage>tenant une broche à la main</stage>
+          <p>Mes amis, je viens de tirer le gigot et le coq d'Inde, c'est tout jus.</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>lèche la broche et dit</stage>
+          <p>C'est tout jus.</p>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+        </sp>
+        <spGrp who="#grosjean">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_faut_pour_le_coup_que_ma_muse">Il faut, pour le coup, que ma muse</title>
+            </desc>
+          </head>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="10">N'oublions pas ce qu'Olivette projette</l>
+            <l met="6">Pour alarmer Pierrot.</l>
+            <l met="8">On vient de me donner le mot,</l>
+            <l met="8">L'aventure sera drôlette,</l>
+            <l met="10">N'oublions pas ce qu'Olivette projette</l>
+            <l met="6">Pour alarmer Pierrot.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <stage>regarde toutes les paysannes et ne trouve point Olivette</stage>
+        </sp>
+        <spGrp who="#pierrot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, [belle endormie]</title>
+            </desc>
+          </head>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="8">Où diable se fourre Olivette?</l>
+            <l met="8">Ne viendra-t-elle pas bientôt?</l>
+            <l met="8">Olivette, ingrate, inhumaine...</l>
+          </sp>
+        </spGrp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="6">Attendez-la sous l'orme,</l>
+          <l met="6">Vous l'attendrez longtemps.</l>
+        </sp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <p>Comment donc?</p>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+        </sp>
+        <spGrp who="#grosjean">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_je_ne_ferai_pas">Non, je ne ferai pas ce qu'on veut que je fasse</title>
+            </desc>
+          </head>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="12">Pour aller à Passy, j'ai vu partir la belle.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <l met="12">Olivette est partie?</l>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="12">Et Colin avec elle</l>
+          <l met="12">De leur petit voyage elle a pris tout le soin.</l>
+        </sp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <l met="12">Ils sont partis ensemble.</l>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="12">Ils sont déjà bien loin.</l>
+        </sp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <p>Ah! Maudit Colin.</p>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="7">Morbleu, si je te tenais</l>
+            <l met="13">Comme je t'étrille, je t'étrille, je t'étrille,</l>
+            <l met="7">Morbleu, si je te tenais</l>
+            <l met="9">Morbleu, comme je t'étrillerais!</l>
+          </sp>
+        </spGrp>
+        <sp who="#grandcolas">
+          <speaker>Grand-Colas</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#grandcolas">
+            <speaker>Grand-Colas</speaker>
+            <l met="8">On ne peut s'aimer davantage,</l>
+            <l met="8">Jamais bonheur ne fut plus doux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mathurine">
+          <speaker>Mathurine</speaker>
+          <l met="8">Ils se sont donné devant nous</l>
+          <l met="6">La foi de mariage.</l>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+        </sp>
+        <spGrp who="#grosjean">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#passant_sur_le_pont_neuf">Passant sur le Pont-Neuf</title>
+            </desc>
+          </head>
+          <sp who="#grosjean">
+            <speaker>Gros-Jean</speaker>
+            <l met="12">Ils étaient enchantés dans ces belles retraites</l>
+            <l met="12">Dans tous ces cabinets ils allaient en cachette,</l>
+            <l met="8">Toujours avec son Olivette</l>
+            <l met="12">Colin, soir et matin, gambadait sur l'herbette.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <l met="6">Ciel, puis-je être accablé</l>
+          <l met="6">Par un coup plus affreux!</l>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <l met="8">Bénissons l'amour d'Olivette</l>
+          <l met="8">Bénissons l'amour de Colin.</l>
+        </sp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <stage>lui donne un coup sur l'épaule</stage>
+          <p>Peste du gueulard, voilà des bénédictions bien placées.</p>
+        </sp>
+        <spGrp>
+          <caption>Tous ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Bénissons l'amour d'Olivette</l>
+            <l met="8">Bénissons l'amour de Colin.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <stage>arrache la broche que tient Gros-Jean</stage>
+          <l met="12">Taisez-vous, sots braillards, oserez-vous sans cesse</l>
+          <l met="12">Percer mon triste cœur des plus horribles coups!</l>
+          <l met="8">Ma foi, malgré votre bassesse,</l>
+          <l met="8">Je veux bien vous rouer de coups.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">arlequin, pierrot, gros-jean</stage>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <l met="10">Je suis trahi. Ciel! Qui l'aurait pu croire?</l>
+          <l met="12">Ô ciel! Je suis trahi par l'ingrate beauté</l>
+          <l met="10">Pour qui l'amour m'a fait manquer à boire</l>
+          <l met="10">D'un vin charmant dont j'étais enchanté,</l>
+          <l met="12">Et dans un cabaret à jeun je suis resté.</l>
+        </sp>
+        <sp who="#grosjean">
+          <speaker>Gros-Jean</speaker>
+          <p>Il enrage, cela est fort plaisant.</p>
+        </sp>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <l met="8">Témoins d'une flamme coquette,</l>
+          <l met="8">Vous avez trop blessé mes yeux.</l>
+          <l met="8">Que tout ressente dans ces lieux</l>
+          <l met="8">L'horreur que j'ai pour Olivette.</l>
+        </sp>
+        <stage>Il casse quelques tables de la guinguette.</stage>
+        <sp who="#pierrot">
+          <speaker>Pierrot</speaker>
+          <l met="12">Ah! Je suis descendu dans un sombre caveau.</l>
+          <l met="10">Faut-il encor que l'amour me poursuive?</l>
+          <l met="8">De Bacchus au fond du tonneau</l>
+          <l met="6">J'entends la voix plaintive.</l>
+          <l met="12">La trappe s'ouvre, hélas, qu'est-ce que j'aperçois?</l>
+          <l met="8">Ah! Quelle voix rauque me brave?</l>
+          <l met="8">La bougie en main contre moi</l>
+          <l met="8">Je vois descendre un rat de cave.</l>
+          <l met="8">Barbare, ah! Tu jauges mon vin!</l>
+          <l met="10">Que prétends-tu? Parle, ô visite horrible!</l>
+          <l met="10">Il faut montrer un exemple terrible</l>
+          <l met="8">Aux mouchards du dieu du raisin,</l>
+          <l met="9">Et allons, ma tourelourirette,</l>
+          <l met="9">Et allons, ma tourelouriron.</l>
+        </sp>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

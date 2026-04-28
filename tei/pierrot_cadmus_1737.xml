@@ -1,0 +1,2833 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="pierrot_cadmus_1737">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Pierrot Cadmus</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Denis Carolet</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>J. Coignard</name>
+        </respStmt>
+        <respStmt>
+          <resp>Relecture</resp>
+          <name>B. de Cornulier et tout repris : FR le 31 oct 2013</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Paris, Veuve Valleyre et Gandouin l'aîné, 1737</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="cadmus" sex="UNKNOWN">
+            <persName>Cadmus</persName>
+          </person>
+          <person xml:id="premierprince" sex="UNKNOWN">
+            <persName>Le premier prince</persName>
+          </person>
+          <person xml:id="deuxiemeprince" sex="UNKNOWN">
+            <persName>Le second prince</persName>
+          </person>
+          <person xml:id="hermione" sex="UNKNOWN">
+            <persName>Hermione</persName>
+          </person>
+          <person xml:id="arbas" sex="UNKNOWN">
+            <persName>Arbas</persName>
+          </person>
+          <person xml:id="geant" sex="UNKNOWN">
+            <persName>Le géant</persName>
+          </person>
+          <person xml:id="nourrice" sex="UNKNOWN">
+            <persName>La nourrice</persName>
+          </person>
+          <person xml:id="charite" sex="UNKNOWN">
+            <persName>Charite</persName>
+          </person>
+          <person xml:id="junon" sex="UNKNOWN">
+            <persName>Junon</persName>
+          </person>
+          <person xml:id="pallas" sex="UNKNOWN">
+            <persName>Pallas</persName>
+          </person>
+          <person xml:id="amour" sex="UNKNOWN">
+            <persName>L’Amour</persName>
+          </person>
+          <person xml:id="thomas" sex="UNKNOWN">
+            <persName>Le grand Thomas</persName>
+          </person>
+          <person xml:id="mars" sex="UNKNOWN">
+            <persName>Mars</persName>
+          </person>
+          <person xml:id="deux_princes_tyriens" sex="UNKNOWN">
+            <persName>Deux princes tyriens</persName>
+          </person>
+          <person xml:id="le_geant_draco" sex="UNKNOWN">
+            <persName>Le Géant Draco</persName>
+          </person>
+          <person xml:id="la_nourrice_d_hermione" sex="UNKNOWN">
+            <persName>La nourrice d'Hermione</persName>
+          </person>
+          <person xml:id="l_amour" sex="UNKNOWN">
+            <persName>L'Amour</persName>
+          </person>
+          <person xml:id="deux_porteurs_d_eau" sex="UNKNOWN">
+            <persName>Deux porteurs d'eau</persName>
+          </person>
+          <person xml:id="le_grand_thomas" sex="UNKNOWN">
+            <persName>Le grand Thomas</persName>
+          </person>
+          <person xml:id="geant_et_africains" sex="UNKNOWN">
+            <persName>Géant et africains</persName>
+          </person>
+          <person xml:id="decrotteurs_de_la_suite_du_grand_thomas" sex="UNKNOWN">
+            <persName>Décrotteurs de la suite du grand Thomas</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Opéra-comique</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q192881</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1737">
+        <desc>Représenté pour la première fois sur le Théâtre de l'Opéra-Comique du faubourg Saint-Laurent le samedi 31 août 1737</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#cadmus">Cadmus</role>
+        </castItem>
+        <castItem>
+          <role ana="#deux_princes_tyriens">Deux princes tyriens</role>
+        </castItem>
+        <castItem>
+          <role ana="#hermione">Hermione</role>
+        </castItem>
+        <castItem>
+          <role ana="#arbas">Arbas</role>
+          <roleDesc>confident de Cadmus</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#le_geant_draco">Le Géant Draco</role>
+          <roleDesc>roi d'Aonie</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#la_nourrice_d_hermione">La nourrice d'Hermione</role>
+        </castItem>
+        <castItem>
+          <role ana="#charite">Charite</role>
+          <roleDesc>suivante d'Hermione</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#junon">Junon</role>
+        </castItem>
+        <castItem>
+          <role ana="#pallas">Pallas</role>
+        </castItem>
+        <castItem>
+          <role ana="#l_amour">L'Amour</role>
+        </castItem>
+        <castItem>
+          <role ana="#mars">Mars</role>
+        </castItem>
+        <castItem>
+          <role ana="#deux_porteurs_d_eau">Deux porteurs d'eau</role>
+        </castItem>
+        <castItem>
+          <role ana="#le_grand_thomas">Le grand Thomas</role>
+        </castItem>
+        <castItem>
+          <role ana="#geant_et_africains">Géant et africains</role>
+          <roleDesc>danseurs</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#decrotteurs_de_la_suite_du_grand_thomas">Décrotteurs de la suite du grand Thomas</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène est chez le géant Draco.</stage>
+      </prologue>
+      <pb n="3"/>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Cadmus, Deux princes Tyriens</stage>
+        <stage>Le théâtre représente un jardin.</stage>
+        <sp who="#premierprince">
+          <speaker>Le premier prince</speaker>
+        </sp>
+        <spGrp who="#premierprince">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nouveau_monde">Suis-je dans l'âge de raison</title>
+            </desc>
+          </head>
+          <sp who="#premierprince">
+            <speaker>Le premier prince</speaker>
+            <l met="8">Quoi d'un grand Roi l'enfant gâté</l>
+            <l met="8">Cadmus ne se sent point tenté</l>
+            <l met="8">De revoir sa chère patrie!</l>
+            <l met="8">Votre père nous croit péris,</l>
+            <l met="8">Quoi! se peut-il que du pays</l>
+            <l met="8">Vous n'ayez point la maladie?</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_je_ne_ferai_pas">Non, je ne ferai pas, [ce qu'on veut que je fasse]</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="12">J'aimerais à revoir les lieux de ma naissance,</l>
+            <l met="12">Mais je dois achever une juste vengeance:</l>
+          </sp>
+        </spGrp>
+        <pb n="4"/>
+        <sp who="#deuxiemeprince">
+          <speaker>Le second prince</speaker>
+          <l met="12">Voilà tout Don Quichotte, il n'était pas plus fou.</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="12">Je dois chercher ma sœur qui court le guilledou.</l>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">Pour trouver cette garçonnière</l>
+            <l met="8">J'ai parcouru plus d'un endroit,</l>
+            <l met="8">Si je la trouve, elle ira droit</l>
+            <l met="6">À la Salpêtrière.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#moment_plus_tard">Un petit moment plus tard</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">Mais c'est en vain que j'ai couru</l>
+            <l met="5">Et la terre et l'onde:</l>
+            <l met="8">Son ravisseur a disparu,</l>
+            <l met="5">O douleur profonde!</l>
+            <l met="7">Pour Cadmus quel crève-cœur!</l>
+            <l met="6">Un coup pareil me tue,</l>
+            <l met="7">En vain je cherche ma sœur,</l>
+            <l met="6">[Elle est,] elle est perdue.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vaudeville_de_l_allumette">L'allumette</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">Pauvre Cadmus, cet affront-là</l>
+            <l met="8">A terni ton nom et ta gloire,</l>
+            <l met="8">On te déchire à l'Opéra,</l>
+            <l met="8">Et l'on te critique à la Foire.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lanturlu">Lanturlu</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="5">Mais le Ciel termine</l>
+            <l met="5">Ma course en ces lieux;</l>
+            <l met="5">Et si je m'obstine...</l>
+          </sp>
+        </spGrp>
+        <pb n="5"/>
+        <sp who="#premierprince">
+          <speaker>Le premier prince</speaker>
+          <l met="5">Je vois dans vos yeux</l>
+          <l met="5">Que l'Amour machine</l>
+          <l met="7">Quelque galant impromptu;</l>
+          <l met="9">Lanturlu, lanturlu, lanturlu.</l>
+        </sp>
+        <sp who="#deuxiemeprince">
+          <speaker>Le second prince</speaker>
+        </sp>
+        <spGrp who="#deuxiemeprince">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nya_pas_dmal">N'y a pas de mal à ça</title>
+            </desc>
+          </head>
+          <sp who="#deuxiemeprince">
+            <speaker>Le second prince</speaker>
+            <l met="5">Serait-il possible?</l>
+            <l met="5">Qu'est-ce qu'on dira!</l>
+          </sp>
+        </spGrp>
+        <sp who="#premierprince">
+          <speaker>Le premier prince</speaker>
+          <l met="5">De Cadmus sensible</l>
+          <l met="5">L'univers rira.</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="5">N'y a pas de mal à ça.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#simone_ma_simone">Simone, ma Simone</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="7">Je voudrais bien vous y voir</l>
+            <l met="5">Tout cède au pouvoir</l>
+            <l met="7">Du petit Dieu des amours,</l>
+            <l met="6">Mignonne, ma mignonne;</l>
+            <l met="7">Je vous aimerai toujours,</l>
+            <l met="6">Ma charmante Hermione.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#beaux_yeux_nicole">Tes beaux yeux, ma Nicole</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="6">Le Dieu Mars est son père,</l>
+            <l met="6">Elle en a la beauté,</l>
+            <l met="6">Vénus en est la mère,</l>
+            <l met="6">C'est toute sa beauté:</l>
+            <l met="6">Elle a son teint de rose,</l>
+            <l met="6">Sa bouche,<emph>et cœtera</emph>.</l>
+            <l met="6">Elle a bien autre chose</l>
+            <l met="6">Qui surpasse cela.</l>
+          </sp>
+        </spGrp>
+        <pb n="6"/>
+        <sp who="#deuxiemeprince">
+          <speaker>Le second prince</speaker>
+        </sp>
+        <spGrp who="#deuxiemeprince">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mitron_de_gonesse">Boulanger de Gonesse</title>
+            </desc>
+          </head>
+          <sp who="#deuxiemeprince">
+            <speaker>Le second prince</speaker>
+            <l met="6">Aimer sans espérance,</l>
+            <l met="6">C'est aimer follement,</l>
+            <l met="6">Elle est sous la puissance</l>
+            <l met="6">D'un vigoureux Géant:</l>
+            <l met="5">Ce n'est pas pour vous</l>
+            <l met="4">Que le four chauffe,</l>
+            <l met="5">Ce n'est pas pour vous;</l>
+            <l met="4">Retirons-nous.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#deuxiemeprince">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#joconde">Joconde</title>
+            </desc>
+          </head>
+          <sp who="#deuxiemeprince">
+            <speaker>Le second prince</speaker>
+            <l met="8">Mars est père de ce Géant,</l>
+            <l met="6">Et Mars le favorise,</l>
+            <l met="8">À ce colosse déplaisant</l>
+            <l met="6">Hermione est promise,</l>
+            <l met="8">La prendre pour femme est son but.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="6">Cela ne se peut faire,</l>
+          <l met="8">Voudrais-tu qu'Hermione fût</l>
+          <l met="6">La femme de son frère!</l>
+        </sp>
+        <sp who="#premierprince">
+          <speaker>Le premier prince</speaker>
+        </sp>
+        <spGrp who="#premierprince">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#apercus_en_songe">L'autre nuit, j'aperçus en songe</title>
+            </desc>
+          </head>
+          <sp who="#premierprince">
+            <speaker>Le premier prince</speaker>
+            <l met="8">Il n'a pas l'âme délicate</l>
+            <l met="8">Sur les degrés de parenté,</l>
+            <l met="8">Il est fort, il est entêté,</l>
+            <l met="8">Et si vous tombez sous sa patte,</l>
+            <l met="8">D'importance il vous traitera.</l>
+          </sp>
+        </spGrp>
+        <pb n="7"/>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <stage>fièrement</stage>
+          <l met="8">S'il faut périr, on périra.</l>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#coucou">Comme un coucou</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">Hermione vaut bien la peine</l>
+            <l met="8">Qu'on meure en cette occasion,</l>
+            <l met="8">Mais par une danse africaine</l>
+            <l met="8">Commençons l'opération.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Cadmus, Arbas, Les deux princes</stage>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Que j'estime mon cher voisin</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">Arbas, aurons-nous un ballet?</l>
+          </sp>
+        </spGrp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="6">On recorde les danses,</l>
+          <l met="8">Mais le chien de Géant me met</l>
+          <l met="6">Dans des mortelles transes.</l>
+        </sp>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#capucin">Capucins</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="8">Il veut que ses Géants figurent;</l>
+            <l met="8">En vain nos danseurs en murmurent.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="8">Ce contraste serait affreux!</l>
+        </sp>
+        <pb n="8"/>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="8">Il le veut...</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="8">On ne le peut faire.</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="8">Oh! Quand il a dit, je le veux,</l>
+          <l met="8">C'est un acte devant notaire.</l>
+        </sp>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#troubler_ignorance">Je ne veux point troubler votre ignorance</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="10">Ah! contre lui que j'ai vomi d'injures!</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="10">Je te croyais plus d'éducation:</l>
+          <l met="10">C'est un roi</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="10">Bon, en gardant des mesures</l>
+          <l met="10">Je serais mort d'une réplétion.</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_amour_me_fait">L'amour me fait</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="6">Usons de complaisance,</l>
+            <l met="6">Ménageons le Géant,</l>
+            <l met="6">Ses gens aiment la danse,</l>
+            <l met="6">Qu'ils dansent, mon enfant,</l>
+            <l met="7">Nous ne sommes point chez nous,</l>
+            <l met="6">Cher Arbas, filons doux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+        </sp>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#naiades">Bouchez, Naïades, vos fontaines</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="8">Seigneur, vous avez l'âme bonne.</l>
+          </sp>
+        </spGrp>
+        <pb n="9"/>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="8">N'est-il pas maître d'Hermione?</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="8">Au lieu de voir faire des sauts,</l>
+          <l met="8">Au Géant j'irais faire tête.</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="8">Si je cesse d'être héros,</l>
+          <l met="8">C'est pour amener une fête.</l>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ciel_benisse_besogne">la besogne</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">Au nez du Géant amoureux,</l>
+            <l met="8">Hermione apprendra mes feux</l>
+            <l met="8">Par une danse pantomime,</l>
+            <l met="8">J'aime la princesse sans crime.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vive_michel_nostradamus">Vive Michel Nostradamus</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">Sortons, la princesse s'avance.</l>
+            <l met="8">Restez, voilà l'occasion</l>
+            <l met="8">De montrer votre passion.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <stage>sortant</stage>
+          <l met="8">Préparons tout en diligence.</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="8">Sa maîtresse vient, il s'en va,</l>
+          <l met="8">Voyez comme il l'attrapera.</l>
+        </sp>
+        <pb n="10"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Arbas<stage>seul</stage>
+        </stage>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#dans_ma_jeunesse">Cahin caha</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="4">Dans sa jeunesse</l>
+            <l met="6">Cadmus était bouffon,</l>
+            <l met="6">Amusant, polisson,</l>
+            <l met="6">Un peu même histrion,</l>
+            <l met="6">Il était sans façon,</l>
+            <l met="6">Quoique plein de noblesse.</l>
+            <l met="8">Aujourd'hui ce n'est plus cela,</l>
+            <l met="5">Ce héros étique,</l>
+            <l met="5">Froid, mélancolique,</l>
+            <l met="5">N'a plus l'air comique,</l>
+            <l met="5">Suivant la critique</l>
+            <l met="4">Cadmus ira,</l>
+            <l met="4">Cahin caha.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Hermione, sa nourrice</stage>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+        </sp>
+        <spGrp who="#hermione">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vert_bocage">À l'ombre de ce vert bocage</title>
+            </desc>
+          </head>
+          <sp who="#hermione">
+            <speaker>Hermione</speaker>
+            <l met="8">À l'ombre de ce vert bocage</l>
+            <l met="8">On brave les coups de soleil,</l>
+            <l met="8">Les oiseaux par leur doux ramage</l>
+            <l met="8">Savent inviter au sommeil,</l>
+            <l met="8">Mais hélas! partout l'Amour perce,</l>
+            <l met="8">Et dans cet asile enchanté,</l>
+            <l met="8">Ce petit dieu malin renverse</l>
+            <l met="8">Et ma cervelle, et ma fierté.</l>
+          </sp>
+        </spGrp>
+        <pb n="11"/>
+        <spGrp who="#hermione">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_m_entendez_vous_pas">Ne m'entendez-vous pas</title>
+            </desc>
+          </head>
+          <sp who="#hermione">
+            <speaker>Hermione</speaker>
+            <l met="6">Vous qui suivez mes pas,</l>
+            <l met="6">Par une chansonnette,</l>
+            <l met="6">De mon âme inquiète</l>
+            <l met="6">Soulagez l'embarras;</l>
+            <l met="6">Ne m'entendez-vous pas?</l>
+          </sp>
+        </spGrp>
+        <sp who="#nourrice">
+          <speaker>La nourrice</speaker>
+        </sp>
+        <spGrp who="#nourrice">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_fille_je_vous_aime_bien">Ma fille, je vous aime bien</title>
+            </desc>
+          </head>
+          <sp who="#nourrice">
+            <speaker>La nourrice</speaker>
+            <l met="8">Ma fille, je vous entends bien,<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Vous aimez, mais n'espérez rien,</l>
+            <l met="8">Le Géant n'entend point raison;</l>
+            <l met="7">Et dans ces lieux il prend garde</l>
+            <l met="6">À votre cotillon.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+        </sp>
+        <spGrp who="#hermione">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_ne_saurais">Je ne saurais</title>
+            </desc>
+          </head>
+          <sp who="#hermione">
+            <speaker>Hermione</speaker>
+            <l met="7">Ce discours me désespère,</l>
+            <l met="7">Mon cœur en frémit d'effroi.</l>
+          </sp>
+        </spGrp>
+        <sp who="#nourrice">
+          <speaker>La nourrice</speaker>
+          <l met="7">C'est un terrible compère,</l>
+          <l met="7">Épousez-le, croyez-moi.</l>
+        </sp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <l met="4">Je ne saurais,</l>
+          <l met="7">Y penses-tu bien, ma chère,</l>
+          <l met="3">J'en mourrais.</l>
+        </sp>
+        <pb n="12"/>
+        <spGrp who="#hermione">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#belle_brune">Belle brune</title>
+            </desc>
+          </head>
+          <sp who="#hermione">
+            <speaker>Hermione</speaker>
+            <l met="3">Ah! Nourrice,</l>
+            <l met="3">Ah! Nourrice,</l>
+            <l met="7">Si je n'épouse Cadmus,</l>
+            <l met="7">Je mourrai de la jaunisse,</l>
+            <l met="3">Ah! Nourrice.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#nourrice">
+          <speaker>La nourrice</speaker>
+        </sp>
+        <spGrp who="#nourrice">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#de_quoi_vous_plaignez_vous">De quoi vous plaignez-vous</title>
+            </desc>
+          </head>
+          <sp who="#nourrice">
+            <speaker>La nourrice</speaker>
+            <l met="6">Oui, nous vous plaignons tous,</l>
+            <l met="7">Car nous vous trouvons à plaindre;</l>
+            <l met="6">Oui, nous vous plaignons tous,</l>
+            <l met="6">Mais que peut-on pour vous?</l>
+            <l met="7">Le Géant est trop à craindre,</l>
+            <l met="6">Il vous aime, il est jaloux,</l>
+            <l met="6">Vous êtes bien à plaindre,</l>
+            <l met="6">Et nous vous plaignons tous.</l>
+          </sp>
+        </spGrp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+        </sp>
+        <spGrp who="#hermione">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_mie_margot">Ma mie Margot</title>
+            </desc>
+          </head>
+          <sp who="#hermione">
+            <speaker>Hermione</speaker>
+            <l met="8">Un africain, deux africains,</l>
+            <l met="6">Trois africains ensemble</l>
+            <l met="6">Arrivent en ces lieux,</l>
+            <l met="8">Mais les Géants sont avec eux,</l>
+            <l met="6">Quelle fête! j'en tremble.</l>
+          </sp>
+        </spGrp>
+        <pb n="13"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Les africains, les géants, Hermione, Cadmus, la nourrice, le géant Draco, Arbas</stage>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+        </sp>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#voici_du_bon_bon_compere_simon">Voici du bon bon, compère Simon</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="5">Suivons Cupidon,</l>
+            <l met="5">Non, rien n'est si bon,</l>
+            <l met="5">Suivons Cupidon</l>
+            <l met="2">Sans cesse.<stage type="musical_resumption">fin</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="5">Suivons Cupidon...<stage type="musical_resumption">au mot fin</stage>
+          </l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="5">L'aimable mignon,</l>
+          <l met="5">Qu'à chanter son nom</l>
+          <l met="5">Tout en ce canton</l>
+          <l met="2">S'empresse.</l>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="5">Suivons Cupidon...<stage type="musical_resumption">au mot fin</stage>
+          </l>
+        </sp>
+        <stage>Les géants et les Africains dansent ensemble, après la danse Hermione se lève et comme elle va sortir, le Géant Draco l'arrête.</stage>
+        <pb n="16"/>
+        <sp who="#geant">
+          <speaker>Le géant</speaker>
+        </sp>
+        <spGrp who="#geant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_ricandene_ricandon">Oricandaine</title>
+            </desc>
+          </head>
+          <sp who="#geant">
+            <speaker>Le géant</speaker>
+            <l met="8">C'est assez danser, sachons donc,</l>
+            <l met="8">Oricandaine, oricandon,</l>
+            <l met="8">Quand vous m'aimerez, mon trognon;</l>
+            <l met="8">Où courez-vous? Quelle façon!</l>
+          </sp>
+        </spGrp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <l met="8">J'ai vu danser un cotillon,</l>
+          <l met="8">Et je me retire</l>
+        </sp>
+        <sp who="#geant">
+          <speaker>Le géant</speaker>
+          <l met="8">Oh! que non:</l>
+          <l met="3">Ricandaine.</l>
+        </sp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <l met="8">Moi, je suis sœur de Cupidon,</l>
+          <l met="8">Ce Dieu ne trouverait pas bon...</l>
+        </sp>
+        <sp who="#geant">
+          <speaker>Le géant</speaker>
+          <l met="8">Bientôt vous entendrez raison,</l>
+          <l met="1">Car</l>
+          <l met="6">Je vous observerai,</l>
+          <l met="4">Oricandaine,</l>
+          <l met="6">Je vous tourmenterai,</l>
+          <l met="4">Oricandé.</l>
+        </sp>
+        <stage>Hermione se sauve, le géant la suit et les danseurs sortent.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Cadmus, Arbas</stage>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_suis_le_precepteur_d_amour">Je suis un précepteur d'Amour</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">Je crois qu'il est temps d'éclater,</l>
+            <l met="8">Que dis-tu de ma patience?</l>
+          </sp>
+        </spGrp>
+        <pb n="15"/>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="8">Je l'admire.</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="8">Allons tout tenter.</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="8">Nous risquons plus que l'on ne pense.</l>
+        </sp>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#les_triolets">Triolets</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="8">Nous avons le dragon de Mars,</l>
+            <l met="8">Qui ne nous respectera guère.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="8">J'affronterai tous les hasards!</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="8">Nous avons le dragon de Mars!</l>
+          <l met="8">Il faut que ses chicots épars</l>
+          <l met="8">Produisent des hommes de guerre;</l>
+          <l met="8">Ma foi, nous serons bien camards,</l>
+          <l met="8">En les voyant sortir de terre.</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#qu_importe">Qu'importe</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">Je vois Hermione souffrir,</l>
+            <l met="8">Ne dois-je pas la secourir?</l>
+            <l met="8">Si le dragon nous engloutit,</l>
+            <l met="5">Qu'importe, qu'importe.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="8">Comme je sais son appétit</l>
+          <l met="6">Moi, je gagne la porte.</l>
+        </sp>
+        <stage>Arbas sort.</stage>
+        <pb n="16"/>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vas_y_vas_y">Vas-y, vas-y</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">Quand je vois la pauvre Hermione,</l>
+            <l met="8">Qu'un Géant sans cesse talonne,</l>
+            <l met="8">Dois-je faire le sot ici?</l>
+            <l met="4">Nenni, nenni.</l>
+            <l met="8">Rien ne m'épouvante, courage;</l>
+            <l met="8">L'amour me dit en son langage,</l>
+            <l met="4">Vas-y, vas-y.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Cadmus, Junon, Pallas</stage>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <stage>à Cadmus</stage>
+        </sp>
+        <spGrp who="#junon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tourelouribo">Marie Salisson est en colère</title>
+            </desc>
+          </head>
+          <sp who="#junon">
+            <speaker>Junon</speaker>
+            <l met="9">Où portes-tu tes pas, téméraire?</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="7">Oh, oh, tourelouribeau!</l>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <l met="7">De Mars reconnais la mère!</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="7">Oh, oh, tourelouribeau!</l>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <l met="7">Tu vas faire de l'eau claire.</l>
+        </sp>
+        <pb n="17"/>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <stage>raillant</stage>
+          <l met="8">Oh, oh, oh, tourelouribeau!</l>
+        </sp>
+        <spGrp who="#pallas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sans_dessus_dessous">Sens dessus dessous</title>
+            </desc>
+          </head>
+          <sp who="#pallas">
+            <speaker>Pallas</speaker>
+            <l met="8">Laisse-la dire, ne crains pas,</l>
+            <l met="8">Je suis la guerrière Pallas,</l>
+            <l met="8">Puisque Hermione a su te plaire,</l>
+            <l met="10">Sens dessus dessous, sens devant derrière,</l>
+            <l met="8">Va t'exposer pour elle aux coups,</l>
+            <l met="10">Sans devant derrière, sans dessus dessous.</l>
+          </sp>
+        </spGrp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <stage>à Pallas, ironiquement</stage>
+        </sp>
+        <spGrp who="#junon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#etes_vous_de_gentilly">Êtes-vous de Gentilly</title>
+            </desc>
+          </head>
+          <sp who="#junon">
+            <speaker>Junon</speaker>
+            <l met="7">Vous lui prêtez votre appui?</l>
+          </sp>
+        </spGrp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <l met="7">Vraiment, ma commère, oui.</l>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <l met="7">Quoi, Pallas! le dois-je croire?</l>
+        </sp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <l met="7">Vraiment, ma commère ouaire,</l>
+          <l met="7">Vraiment, ma commère, oui.</l>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+        </sp>
+        <spGrp who="#junon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_obligeante">Ma mère était bien obligeante</title>
+            </desc>
+          </head>
+          <sp who="#junon">
+            <speaker>Junon</speaker>
+            <l met="8">Pallas est des plus obligeante,</l>
+            <l met="8">Vénus ne le serait pas plus,</l>
+            <l met="8">La sagesse est accommodante;</l>
+          </sp>
+        </spGrp>
+        <pb n="18"/>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <l met="8">Je sais comme pense Cadmus;</l>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <l met="8">Pallas est des plus obligeante,</l>
+          <l met="8">Vénus ne le serait pas plus,</l>
+        </sp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <stage>à Cadmus</stage>
+        </sp>
+        <spGrp who="#pallas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_mariez_moi">Ma mère, mariez-moi</title>
+            </desc>
+          </head>
+          <sp who="#pallas">
+            <speaker>Pallas</speaker>
+            <l met="7">Profite de mes leçons.</l>
+          </sp>
+        </spGrp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <l met="7">Suis mes conseils, ils sont bons.</l>
+        </sp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <l met="7">Va.</l>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <l met="7">N'en fais rien, reste.</l>
+        </sp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <l met="7">Non.</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="10">Accordez-vous donc; accordez-vous donc;</l>
+          <l met="7">L'amour m'appelle, au revoir,</l>
+          <l met="7">Je vous donne le bon soir.</l>
+        </sp>
+        <stage>Il sort, et les déesses s'en vont chacune de leur côté.</stage>
+        <pb n="19"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Charite, Arbas</stage>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+        </sp>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lampons">Lampons</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="7">Charite, c'en est donc fait,<stage type="bis">bis</stage>
+            </l>
+            <l met="7">Cadmus a fait son paquet,<stage type="bis">bis</stage>
+            </l>
+            <l met="7">Au Géant qu'il a fait rire,</l>
+            <l met="7">Face à face il vient de dire,</l>
+            <l met="4">Non, non, non, non,</l>
+            <l met="7">Je ne crains point ton dragon.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#gardons_moutons">Je veux garder ma liberté</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="8">Il veut rendre la liberté</l>
+            <l met="7">À sa chère Hermione,</l>
+            <l met="8">De la belle, il est enchanté;</l>
+            <l met="6">Et par malheur, friponne,</l>
+            <l met="5">Il faut qu'en ce jour,</l>
+            <l met="5">À son fol amour</l>
+            <l met="6">J'immole ma personne.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sans_dire_un_mot">Sans dire un mot</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="8">Quoi! lorsque je te dis adieu,</l>
+            <l met="8">Après un si charmant aveu</l>
+            <l met="8">Tu restes droite comme un pieu,</l>
+            <l met="4">Sans dire mot,</l>
+            <l met="4">Sans sonner mot!</l>
+          </sp>
+        </spGrp>
+        <sp who="#charite">
+          <speaker>Charite</speaker>
+          <l met="8">La tristesse me touche peu,</l>
+          <l met="4">Pars au galop.</l>
+        </sp>
+        <pb n="20"/>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+        </sp>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_a_le_secret_d_ennuyer">Il a le secret d'ennuyer</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="7">Un amant plein de tendresse,</l>
+            <l met="7">N'a-t-il rien qui t'intéresse?</l>
+          </sp>
+        </spGrp>
+        <sp who="#charite">
+          <speaker>Charite</speaker>
+          <l met="8">Il a le secret d'ennuyer;</l>
+          <l met="7">Mais aussitôt qu'il soupire,</l>
+          <l met="7">Et qu'il vient à larmoyer,</l>
+          <l met="8">Il a celui de faire rire.</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+        </sp>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#diogene_fameux">Le fameux Diogène</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="6">En m'écoutant tu bailles,</l>
+            <l met="6">En me parlant tu railles.</l>
+          </sp>
+        </spGrp>
+        <sp who="#charite">
+          <speaker>Charite</speaker>
+          <l met="6">Je te trouve charmant,</l>
+          <l met="6">Tes grimaces m'amusent.</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="6">À pleurer mes yeux s'usent;</l>
+          <l met="6">Tu ris de mon tourment.</l>
+        </sp>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#robin_ture_lure_lure">Robin turelure</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="7">Je brûle, ne veux-tu pas</l>
+            <l met="7">Guérir le mal que j'endure?</l>
+          </sp>
+        </spGrp>
+        <sp who="#charite">
+          <speaker>Charite</speaker>
+          <l met="7">Je n'ai point, mon cher Arbas,</l>
+          <l met="3">Turelure,</l>
+          <l met="7">D'onguent pour cette brûlure,</l>
+          <l met="8">Robin turelure lure.</l>
+        </sp>
+        <pb n="21"/>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+        </sp>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#voici_dragons">Voici les dragons qui viennent</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="7">Mais j'aperçois la Nourrice,</l>
+            <l met="5">Vite sauvons-nous.</l>
+          </sp>
+        </spGrp>
+        <sp who="#charite">
+          <speaker>Charite</speaker>
+          <l met="7">Pourquoi la fuir? quel caprice!</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="7">Cette vieille est un vrai Suisse.</l>
+        </sp>
+        <sp who="#nourrice">
+          <speaker>La nourrice</speaker>
+          <stage>l'arrêtant</stage>
+          <l met="4">Mon  fils, tout doux.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">La Nourrice, Charite, Arbas</stage>
+        <sp who="#nourrice">
+          <speaker>La nourrice</speaker>
+        </sp>
+        <spGrp who="#nourrice">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fraises">Des fraises</title>
+            </desc>
+          </head>
+          <sp who="#nourrice">
+            <speaker>La nourrice</speaker>
+            <l met="7">Vous m'évitez, beau vainqueur.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <stage>à part</stage>
+          <l met="6">Que le diable t'emporte;</l>
+        </sp>
+        <stage>Haut.</stage>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="7">J'ai besoin de ma vigueur,</l>
+          <l met="7">N'amollissez point mon cœur.</l>
+        </sp>
+        <sp who="#nourrice">
+          <speaker>La nourrice</speaker>
+          <l met="8">Qu'importe, qu'importe, qu'importe.</l>
+        </sp>
+        <pb n="22"/>
+        <spGrp who="#nourrice">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ici_chacun">Malheureuse journée</title>
+            </desc>
+          </head>
+          <sp who="#nourrice">
+            <speaker>La nourrice</speaker>
+            <l met="6">Ton cœur est bien barbare,</l>
+            <l met="6">Mais je le réduirai.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="6">Cadmus m'attend.</l>
+        </sp>
+        <sp who="#nourrice">
+          <speaker>La nourrice</speaker>
+          <l met="6">Tarare.</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="6">Oh! je décamperai!</l>
+        </sp>
+        <sp who="#nourrice">
+          <speaker>La nourrice</speaker>
+          <l met="6">Si j'avais de Charite</l>
+          <l met="6">Le petit air coquet,</l>
+          <l met="6">Loin de sortir si vite,</l>
+          <l met="6">Tu n'aurais jamais fait.</l>
+        </sp>
+        <spGrp who="#nourrice">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#en_verite_severe_margoton">En vérité, sévère Margoton</title>
+            </desc>
+          </head>
+          <sp who="#nourrice">
+            <speaker>La nourrice</speaker>
+            <l met="10">Tu lui parlais avec émotion,</l>
+            <l met="10">Que ne sais-tu me parler sur ce ton?</l>
+            <l met="10">Ah! je vois bien, mon tonton, mon chaton;</l>
+            <l met="10">Que sur ton cœur je ne dois rien prétendre:</l>
+            <l met="9">Je me meurs.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="9">Un adieu sec et prompt</l>
+          <l met="9">Est le ton qu'avec vous il faut prendre.</l>
+        </sp>
+        <stage>Il se sauve.</stage>
+        <pb n="23"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">La Nourrice, Charite</stage>
+        <sp who="#nourrice">
+          <speaker>La nourrice</speaker>
+        </sp>
+        <spGrp who="#nourrice">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">Vieillards,tiré de <title ref="#thesee">Thésée</title> ()</desc>
+          </head>
+          <sp who="#nourrice">
+            <speaker>La nourrice</speaker>
+            <l met="9">Pour le peu de beauté qu'il me reste,</l>
+            <l met="5">Rien n'est si funeste</l>
+            <l met="4">Que ce mépris.</l>
+            <l met="6">On peut bien à mes charmes</l>
+            <l met="5">Rendre encor les armes:</l>
+            <l met="7">Je sais conduire un souris,</l>
+            <l met="5">J'ai de la souplesse,</l>
+            <l met="5">De la gentillesse.</l>
+            <l met="5">Et de mes attraits,</l>
+            <l met="5">La verte jeunesse</l>
+            <l met="4">Ressent les traits.</l>
+          </sp>
+        </spGrp>
+        <sp who="#charite">
+          <speaker>Charite</speaker>
+        </sp>
+        <spGrp who="#charite">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nanette_dormez_vous">Nanette, dormez-vous</title>
+            </desc>
+          </head>
+          <sp who="#charite">
+            <speaker>Charite</speaker>
+            <l met="12">Nourrice, croyez-moi, (<emph>bis</emph>)</l>
+            <l met="12">Ce dépit est de trop.</l>
+          </sp>
+        </spGrp>
+        <sp who="#nourrice">
+          <speaker>La nourrice</speaker>
+          <l met="12">Vraiment c'est bien à toi</l>
+          <l met="12">À me prêcher ici, je fais ce que je doi.</l>
+        </sp>
+        <spGrp who="#nourrice">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_faut_envoyer_a_l_ecole">Il faut envoyer à l'école</title>
+            </desc>
+          </head>
+          <sp who="#nourrice">
+            <speaker>La nourrice</speaker>
+            <l met="8">Il te sied bien, jeune embryon,</l>
+            <l met="8">De faire ici la raisonneuse,</l>
+            <l met="3">La morveuse!</l>
+            <l met="8">Elle me fait compassion.</l>
+          </sp>
+        </spGrp>
+        <pb n="24"/>
+        <sp who="#charite">
+          <speaker>Charite</speaker>
+          <l met="8">À mon âge on doit être folle,</l>
+          <l met="8">Mais vous, dont le poil est grison,</l>
+          <l met="3">Devrait-on</l>
+          <l met="8">Vous dire d'aller à l'école?</l>
+        </sp>
+        <sp who="#nourrice">
+          <speaker>La nourrice</speaker>
+        </sp>
+        <spGrp who="#nourrice">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#pere_barnabas">Père Barnabas</title>
+            </desc>
+          </head>
+          <sp who="#nourrice">
+            <speaker>La nourrice</speaker>
+            <l met="6">Je n'y saurais tenir,</l>
+            <l met="6">Trop impudente fille,</l>
+            <l met="6">Oses-tu me honnir?</l>
+            <l met="6">De courroux je pétille.</l>
+          </sp>
+        </spGrp>
+        <sp who="#charite">
+          <speaker>Charite</speaker>
+          <l met="7">Grand-mère de famille,</l>
+          <l met="6">Tu vieillis à grand pas,</l>
+          <l met="6">Il te faut la béquille</l>
+          <l met="6">Du Père Barnabas.</l>
+        </sp>
+        <spGrp who="#charite">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pour_la_baronne">Pour la Baronne</title>
+            </desc>
+          </head>
+          <sp who="#charite">
+            <speaker>Charite</speaker>
+            <l met="4">Sortons, la mère,</l>
+            <l met="8">La princesse vient en ces lieux,</l>
+            <l met="8">Cadmus la suit, ils vont se faire</l>
+            <l met="8">Des compliments et des adieux,</l>
+            <l met="4">Sortons la mère.</l>
+          </sp>
+        </spGrp>
+        <stage>Elles sortent.</stage>
+        <pb n="25"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="characters">Cadmus, Hermione</stage>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#charmante_gabrielle">Charmante Gabrielle</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="6">Je vais, belle Hermione,</l>
+            <l met="6">Partir dans un moment,</l>
+            <l met="6">Ce que l'amour ordonne</l>
+            <l met="6">N'effraie nullement,</l>
+            <l met="6">Cruelle départie!</l>
+            <l met="4">Malheureux jour!</l>
+            <l met="6">Que ne suis-je sans vie,</l>
+            <l met="4">Ou sans amour!</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_philis">Ah! Fanchon, je vous vois, je vous aime</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="9">Vous voir, vous dire que je vous aime,</l>
+            <l met="9">C'en est assez pour mourir content.</l>
+          </sp>
+        </spGrp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <l met="8">Ah! Cadmus, si vous m'aimez tant,</l>
+          <l met="11">Pourquoi courez-vous où la mort vous attend?</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="9">Vous voir, vous dire que je vous aime,</l>
+          <l met="9">C'en est assez pour mourir content.</l>
+        </sp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+        </sp>
+        <spGrp who="#hermione">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Prévôt des marchands</title>
+            </desc>
+          </head>
+          <sp who="#hermione">
+            <speaker>Hermione</speaker>
+            <l met="8">Vivez, mon cher, si vous m'aimez.</l>
+            <l met="8">Le grand dessein que vous formez</l>
+            <l met="8">Ne seconde point mon envie,</l>
+            <l met="8">Car n'en doutez pas, beau Cadmus,</l>
+            <l met="8">Si vous alliez perdre la vie,</l>
+            <l met="8">Ma foi, nous ne nous verrions plus.</l>
+          </sp>
+        </spGrp>
+        <pb n="28"/>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#les_pelerins">Pèlerins de Saint-Jacques</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">Quand je pense au Géant, je tremble,</l>
+            <l met="4">Hélas! grands Dieux,</l>
+            <l met="8">Mars prétend vous unir ensemble.</l>
+          </sp>
+        </spGrp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <l met="4">J'aime encor mieux</l>
+          <l met="8">Souffrir... vivez, ou je mourrais.</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="4">Quoi! ce colosse</l>
+          <l met="8">Vous obtiendrait? et je serais</l>
+          <l met="6">Le garçon de sa noce?</l>
+        </sp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+        </sp>
+        <spGrp who="#hermione">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_quitez_pas_votre_houlette">N'oubliez pas votre houlette, [Lisette]</title>
+            </desc>
+          </head>
+          <sp who="#hermione">
+            <speaker>Hermione</speaker>
+            <l met="8">Soyez sensible à mes alarmes,</l>
+            <l met="2">Mes larmes</l>
+            <l met="6">Disent assez que non,</l>
+            <l met="8">Ne partez pas, mon cher mignon,</l>
+            <l met="8">Contremandez tous vos gendarmes,</l>
+            <l met="8">Soyez sensible à mes alarmes,</l>
+            <l met="2">Mes larmes</l>
+            <l met="6">Disent assez que non.</l>
+          </sp>
+        </spGrp>
+        <pb n="27"/>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jupin_du_grand_matin">Jupin de grand matin</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="6">Je veux vous secourir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <l met="5">Vous allez périr,</l>
+          <l met="6">Où voulez-vous courir?</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="3">Quel plaisir!</l>
+          <l met="5">Quand on peut mourir,</l>
+          <l met="5">En voulant servir</l>
+          <l met="6">L'objet de son désir.</l>
+          <l met="6">Plus léger qu'un zéphir</l>
+          <l met="4">Je vais partir.</l>
+        </sp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <l met="6">Vous pourriez en pâtir,</l>
+          <l met="4">Le repentir</l>
+          <l met="6">Saura tout à loisir</l>
+          <l met="4">Vous en punir.</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="7">Un héros doit-il frémir</l>
+          <l met="3">Et pâlir?</l>
+        </sp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <l met="6">Que vais-je devenir?</l>
+          <l met="4">Quoi! ce soupir</l>
+          <l met="6">Ne peut vous retenir</l>
+          <l met="4">Et vous fléchir?</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="6">Vous voulez m'attendrir,</l>
+          <l met="9">Mais je ne dois point vous obéir.</l>
+        </sp>
+        <pb n="28"/>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#oh_que_nenni">Oh! que nenni</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="7">Vous m'allez revoir ici.</l>
+          </sp>
+        </spGrp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <l met="8">L'Amour m'assure du contraire,</l>
+          <l met="7">Ce dieu ne me trompe guère.</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="3">Oh! que si.</l>
+          <l met="7">L'amour me dit à l'oreille,</l>
+          <l met="7">Que je vais faire merveille.</l>
+        </sp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <l met="4">Oh! que nenni.</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quel_caprice">Quel caprice</title>
+            </desc>
+          </head>
+          <cols n="2"/>
+          <sp who="#hermione">
+            <speaker>Hermione</speaker>
+            <l met="3">Quel supplice!</l>
+            <l met="4">Quelle injustice!</l>
+            <l met="4">Quel précipice</l>
+            <l met="5">S'ouvre sous tes pas!</l>
+            <l met="3">Quel supplice!</l>
+            <l met="4">Quelle injustice!</l>
+            <l met="4">Quel précipice</l>
+            <l met="5">Ne le crains-tu pas?</l>
+            <l met="8">Qu'un tendre amour cause de mal!</l>
+            <l met="8">Cadmus, le dragon est brutal,</l>
+            <l met="4">Craignez ses dents,</l>
+            <l met="8">Il mangera vous et vos gens,</l>
+            <l met="6">Mon cher Cadmus, demeure,</l>
+            <l met="9">Ou dans l'instant il faut que je meure,</l>
+            <l met="5">Tu sais mes tourments,</l>
+            <l met="8">Mais que vois-je? Tu deviens pâle,</l>
+            <l met="4">Ta vigueur mâle</l>
+            <l met="5">Se dément un peu;</l>
+            <l met="3">Je frissonne,</l>
+            <l met="4">Rien ne l'étonne,</l>
+            <l met="4">Il m'abandonne,</l>
+            <l met="5">Cher Cadmus, adieu.</l>
+          </sp>
+          <cb/>
+        </spGrp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="6">Bon, bon, bon, bon, bon, bon,</l>
+          <l met="7">Ma chère, ne craignez pas,</l>
+          <l met="5">Comptez sur mon bras;</l>
+          <l met="6">Bon, bon, bon, bon, bon, bon,</l>
+          <l met="7">Je sais braver le trépas.</l>
+          <l met="8">Qu'un tendre amour cause de mal!</l>
+          <l met="8">Il faut vaincre un dragon brutal,</l>
+          <l met="8">Mais malgré ce monstre et ses dents,</l>
+          <l met="9">Je t'obtiendrai, non, non, je prétends</l>
+          <l met="3">Que mes gens,</l>
+          <l met="6">Sèment au milieu des champs</l>
+          <l met="5">Ses crocs menaçants,</l>
+          <l met="6">Non, non, non, non, non, non,</l>
+          <l met="9">En vain tu crois m'attendrir un peu.</l>
+          <l met="8">Ah! je sens... mais je t'abandonne,</l>
+          <l met="5">Hermione, adieu.</l>
+        </sp>
+        <cols n="1"/>
+        <stage>Il sort.</stage>
+        <pb n="29"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="characters">Hermione<stage>seule</stage>
+        </stage>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#hermione">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#hermione">
+            <speaker>Hermione</speaker>
+            <l met="8">Cruel quinze-vingts de l'Olympe,</l>
+            <l met="8">Lorsqu'au cerveau le rat te grimpe,</l>
+            <l met="8">Tu nous fais maudire ta loi,</l>
+            <l met="8">Des bons tu rejettes l'offrande,</l>
+            <l met="8">Et ce sont toujours avec toi</l>
+            <l met="8">Les battus qui payent l'amende.</l>
+          </sp>
+        </spGrp>
+        <pb n="30"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 13</head>
+        <stage type="characters">Hermione, L'Amour</stage>
+        <sp who="#amour">
+          <speaker>L’Amour</speaker>
+        </sp>
+        <spGrp who="#amour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#catherine">Ton humeur est, Catherine</title>
+            </desc>
+          </head>
+          <sp who="#amour">
+            <speaker>L’Amour</speaker>
+            <l met="7">Ta douleur, belle Hermione,</l>
+            <l met="7">M'amène dans ce jardin,</l>
+            <l met="7">Une fête que j'ordonne,</l>
+            <l met="7">Dissipera ton chagrin.</l>
+          </sp>
+        </spGrp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <l met="7">Mon amant risque sa vie,</l>
+          <l met="7">Tu me proposes cela,</l>
+          <l met="7">Pareille galanterie</l>
+          <l met="7">Ne passe qu'à l'Opéra.</l>
+        </sp>
+        <sp who="#amour">
+          <speaker>L’Amour</speaker>
+        </sp>
+        <spGrp who="#amour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#y_avance_y_avance">Eh, avance</title>
+            </desc>
+          </head>
+          <sp who="#amour">
+            <speaker>L’Amour</speaker>
+            <l met="8">Ne crains rien, je dois mon secours</l>
+            <l met="8">À ton amant.</l>
+          </sp>
+        </spGrp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <l met="8">Va donc.</l>
+        </sp>
+        <sp who="#amour">
+          <speaker>L’Amour</speaker>
+          <l met="8">J'y cours.</l>
+        </sp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <l met="8">Ne tarde pas, fais diligence,</l>
+          <l met="9">Eh avance, eh avance, eh avance,</l>
+          <l met="8">Laisse-là tes chants et ta danse.</l>
+        </sp>
+        <stage>Hermione sort et l'Amour s'envole.</stage>
+        <pb n="31"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 14</head>
+        <stage type="location">Le théâtre représente une grotte et une fontaine.</stage>
+        <stage type="characters">Arbas, les deux princes Tyriens</stage>
+        <sp who="#premierprince">
+          <speaker>Le premier prince</speaker>
+        </sp>
+        <spGrp who="#premierprince">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#en_toute_chose_il_est_bon">En toute chose, il est bon</title>
+            </desc>
+          </head>
+          <sp who="#premierprince">
+            <speaker>Le premier prince</speaker>
+            <l met="7">Crains-tu le dragon de Mars?</l>
+          </sp>
+        </spGrp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="7">Voyez la belle demande.</l>
+        </sp>
+        <sp who="#deuxiemeprince">
+          <speaker>Le second prince</speaker>
+          <l met="7">Tu détournes tes regards.</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="7">Ma frayeur me le commande;</l>
+          <l met="7">En toute chose il est bon</l>
+          <l met="7">D'user de précaution.</l>
+        </sp>
+        <sp who="#premierprince">
+          <speaker>Le premier prince</speaker>
+        </sp>
+        <spGrp who="#premierprince">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_nos_forets">On n'aime point, dans nos forêts</title>
+            </desc>
+          </head>
+          <sp who="#premierprince">
+            <speaker>Le premier prince</speaker>
+            <l met="8">Qui voudrait s'attaquer à toi?</l>
+            <l met="8">Ta valeur n'est pas des plus minces.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="8">En me raillant ainsi, ma foi,</l>
+          <l met="8">Vous ne sentez pas trop vos princes</l>
+          <l met="8">Turlupiner en pareil cas,</l>
+          <l met="8">C'est au grand mêler bien du bas.</l>
+        </sp>
+        <pb n="32"/>
+        <sp who="#deuxiemeprince">
+          <speaker>Le second prince</speaker>
+        </sp>
+        <spGrp who="#deuxiemeprince">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#davantage">Et non, non, je n'en veux pas d'avantage</title>
+            </desc>
+          </head>
+          <sp who="#deuxiemeprince">
+            <speaker>Le second prince</speaker>
+            <l met="7">Pestons tous les trois ensemble,</l>
+            <l met="7">En trio contre l'Amour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="7">Vous me faites, ce me semble,</l>
+          <l met="7">Beaucoup d'honneur en ce jour.</l>
+        </sp>
+        <sp who="#premierprince">
+          <speaker>Le premier prince</speaker>
+          <l met="7">Le péril qui nous rassemble</l>
+          <l met="8">Nous rend égaux, mon cher garçon.</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="4">Eh non, non, non,</l>
+          <l met="7">Je chante mal quand je tremble.</l>
+        </sp>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#preparons_nous">Préparons-nous</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="10">Préparons tout.</l>
+          </sp>
+        </spGrp>
+        <sp who="#deuxiemeprince">
+          <speaker>Le second prince</speaker>
+          <l met="10">Te sens-tu du courage?</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="8">Plus que vous peut-être, je gage!</l>
+          <l met="12">On vient puiser de l'eau</l>
+        </sp>
+        <stage>Aux porteurs d'eau.</stage>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="12">Mes amis, avancez!</l>
+        </sp>
+        <stage>Aux princes.</stage>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="10">Messieurs, l'honneur vous appartient, passez.</l>
+        </sp>
+        <pb n="33"/>
+        <stage>Dans le temps que les porteurs d'eau s'avancent pour puiser, le dragon s'élance sur eux et les entraîne.</stage>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#coucherai_je_au_grand_lit_ma_mere">Coucherai-je au grand lit, ma mère</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="8">Quel affreux serpent! Ohimè,</l>
+            <l met="8">Fuyons, oh qu'il est affamé!</l>
+            <l met="8">De quinze jours il n'a mangé,</l>
+            <l met="6">Qu'il est grand! qu'il est long!</l>
+            <l met="6">L'effroyable dragon!</l>
+            <l met="8">Évitons sa dent meurtrière,</l>
+            <l met="8">Fuyons, oh qu'il est affamé!</l>
+          </sp>
+        </spGrp>
+        <stage>Arbas veut se sauver, et Cadmus qui survient l'arrête.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 15</head>
+        <stage type="characters">Cadmus, Arbas</stage>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_m_entendez_bien">Je n'irai plus à l'Opéra</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">Où courez-vous, Monsieur Arbas?</l>
+            <l met="8">Parlez donc.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="8">Le dragon, hélas!</l>
+          <l met="8">Le dragon...</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="8">Misérable! Hé bien?</l>
+        </sp>
+        <pb n="34"/>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="6">Le dragon est à table,</l>
+          <l met="5">Vous m'entendez bien.</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tanturlurette">Tanturlurette</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="7">Es-tu seul?</l>
+          </sp>
+        </spGrp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="7">Ah! quel glouton!</l>
+          <l met="7">Deux hommes pour ce dragon</l>
+          <l met="7">Sont moins qu'une tartelette,</l>
+          <l met="7">Turlurette, turlurette,</l>
+          <l met="5">La tanturlurette.</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_serrure">Faites boire à triple mesure</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">À ce dragon je vais apprendre</l>
+            <l met="8">Si l'on doit jouer de tels tours.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <stage>sortant</stage>
+          <l met="8">Moi je vais là-bas vous attendre,</l>
+          <l met="8">Que le ciel conserve vos jours.</l>
+        </sp>
+        <stage>Ici, Cadmus combat le dragon, et le tue.</stage>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#abbe_dans_coin">Un berger dans un coin</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="6">Voici le dragon mort,</l>
+            <l met="3">Je suis fort,</l>
+            <l met="6">Voici le dragon mort,</l>
+            <l met="6">Ses dents, comme je pense,</l>
+            <l met="6">Ne m'échapperont pas,</l>
+            <l met="6">Allons en diligence</l>
+            <l met="6">Chercher le gros Thomas.</l>
+          </sp>
+        </spGrp>
+        <stage>Il sort.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 16</head>
+        <stage type="characters">Arbas<stage>paraissant l'épée à la main</stage>
+        </stage>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#votre_toutou_vous_flatte">Votre toutou vous flatte</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="6">Au défaut de mon maître,</l>
+            <l met="6">Je t'aurais bien fait voir</l>
+            <l met="6">Que je n'ai qu'à paraître...</l>
+            <l met="6">Qu'il a le regard noir!</l>
+            <l met="2">Ah, traître!</l>
+            <l met="8">Ce bras dans mon juste courroux</l>
+            <l met="8">Veut te porter (<emph>bis</emph>) les derniers coups.</l>
+          </sp>
+        </spGrp>
+        <stage>Arbas frappe le monstre mort, et fait voir sa frayeur en le frappant.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 17</head>
+        <stage type="characters">Arbas, les deux princes Tyriens</stage>
+        <sp who="#premierprince">
+          <speaker>Le premier prince</speaker>
+        </sp>
+        <spGrp who="#premierprince">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#joconde_nouveau">Nouveau joconde</title>
+            </desc>
+          </head>
+          <sp who="#premierprince">
+            <speaker>Le premier prince</speaker>
+            <l met="8">Eh quoi! le dragon est à bas?</l>
+            <l met="6">Conte-nous cette histoire.</l>
+          </sp>
+        </spGrp>
+        <pb n="36"/>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <stage>fièrement</stage>
+          <l met="8">Princes, vous ne méritez pas</l>
+          <l met="6">D'avoir part à ma gloire.</l>
+        </sp>
+        <sp who="#deuxiemeprince">
+          <speaker>Le second prince</speaker>
+          <l met="8">Nous sommes bien fâché d'avoir</l>
+          <l met="6">Manqué cette conquête,</l>
+          <l met="8">Le grand Thomas vient, tu vas voir</l>
+          <l met="6">Une brillante tête.</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <stage>essuyant son épée</stage>
+        </sp>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lapalisse">la Palisse</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="7">Vous êtes de francs poltrons.</l>
+          </sp>
+        </spGrp>
+        <sp who="#deuxiemeprince">
+          <speaker>Le second prince</speaker>
+          <l met="7">Cadmus nous rendra justice,</l>
+          <l met="7">Il nous connaît.</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="7">Rengainons,</l>
+          <l met="7">Cette lame a du service.</l>
+        </sp>
+        <pb n="37"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 18</head>
+        <stage type="characters">Le grand Thomas, Suite, Cadmus, Arbas, les deux princes, deux Décrotteurs</stage>
+        <spGrp who="#arbas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_le_dieu_des_eaux_qui_va_paraitre">C'est le dieu des eaux</title>
+            </desc>
+          </head>
+          <sp who="#arbas">
+            <speaker>Arbas</speaker>
+            <l met="9">C'est le grand Thomas qui va paraître,</l>
+            <l met="8">Rangeons-nous près de notre maître.</l>
+          </sp>
+        </spGrp>
+        <stage type="musical_indication">Marche comique du grand Thomas et de sa Suite</stage>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <stage>au grand Thomas</stage>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reviendrai_demain">Je ferai mon devoir</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">Voici des dents qu'il faut avoir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thomas">
+          <speaker>Le grand Thomas</speaker>
+          <l met="6">Je ferai mon devoir.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <stage>aux siens</stage>
+          <l met="8">Tandis qu'il tirera ces dents,</l>
+          <l met="6">Chantons Mars, mes enfants.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <stage>Le grand Thomas arrache les dents du dragon et les met dans un sac; Cadmus commence l'invocation.</stage>
+        <pb n="38"/>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_suis_madelon_friquet">Je suis Madelon Friquet</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="7">Mars, ô Mars reçois nos vœux;</l>
+            <l met="4">Sois plus affable,</l>
+            <l met="4">Sois plus traitable;</l>
+            <l met="7">Mars, ô Mars reçois nos vœux;</l>
+            <l met="8">Ton courroux est trop dangereux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="7">Mars, ô Mars, ...</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="8">Les coups de canon sont tes jeux,</l>
+          <l met="8">Mars est un Dieu pire qu'un diable,</l>
+          <l met="6">Il est toujours furieux...</l>
+          <l met="7">Mars, ô Mars, ...</l>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="7">Mars, ô Mars, ...</l>
+        </sp>
+        <stage>Danse sur cet air.</stage>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">Trembleurs,tiré d' <title ref="#isis">Isis</title> ()</desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="7">Mars, ô Mars impitoyable,</l>
+            <l met="7">Est-il donc irrévocable?</l>
+            <l met="7">Que ta haine est implacable!</l>
+            <l met="7">Que nous sommes malheureux!</l>
+            <l met="7">Notre âme est inébranlable;</l>
+            <l met="7">Mais si ta main nous accable,</l>
+            <l met="7">Nous irons bientôt au diable,</l>
+            <l met="7">Fussions-nous cent contre deux.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 19</head>
+        <stage type="characters">Mars, les acteurs précédents</stage>
+        <sp who="#mars">
+          <speaker>Mars</speaker>
+          <stage>à Cadmus et aux chœurs</stage>
+        </sp>
+        <spGrp who="#mars">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nuit_et_jour">J'ai passé la nuit et le jour</title>
+            </desc>
+          </head>
+          <sp who="#mars">
+            <speaker>Mars</speaker>
+            <l met="8">En vain vous épuisez pour moi,</l>
+            <l met="8">Le Dictionnaire des rimes;</l>
+            <l met="8">Pauvre Cadmus, retire-toi,</l>
+            <l met="8">Tes concerts sont autant de crimes,</l>
+            <l met="8">Vos chants ne font que m'irriter,</l>
+            <l met="8">En ces lieux venez-vous chanter</l>
+            <l met="4">Pour m'insulter?<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Je ne saurais vous écouter.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#mars">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bon_soldat">Je suis un bon soldat</title>
+            </desc>
+          </head>
+          <sp who="#mars">
+            <speaker>Mars</speaker>
+            <l met="6">Je veux qu'un bon soldat,</l>
+            <l met="3">Titata,</l>
+            <l met="6">À m'honorer s'applique,</l>
+            <l met="6">Par un combat sanglant,</l>
+            <l met="3">Patapan,</l>
+            <l met="6">Et non par la musique.</l>
+          </sp>
+          <sp who="#mars">
+            <speaker>Mars</speaker>
+            <l met="7">Mars, ô Mars, reçois nos vœux, ...</l>
+          </sp>
+        </spGrp>
+        <stage>Mars renverse l'autel d'un coup de pied et s'en va: les chœurs reprennent en sortant.</stage>
+        <pb n="40"/>
+        <sp who="#thomas">
+          <speaker>Le grand Thomas</speaker>
+          <stage>à Cadmus</stage>
+        </sp>
+        <spGrp who="#thomas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#petits_grands">Or, écoutez, petits et grands</title>
+            </desc>
+          </head>
+          <sp who="#thomas">
+            <speaker>Le grand Thomas</speaker>
+            <l met="8">Brave Cadmus, voici les dents,</l>
+            <l met="8">Mais pour ma peine et pour mon temps,</l>
+            <l met="8">J'en retiens une, ma boutique,</l>
+            <l met="8">En deviendra plus magnifique,</l>
+            <l met="8">Et ce croc si fort et si long</l>
+            <l met="8">Fera ma réputation.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 20</head>
+        <stage type="location">Le théâtre représente le champ de Mars.</stage>
+        <stage type="characters">Cadmus, Arbas</stage>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_sais_quoi">Un certain je ne sais qu'est-ce</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">Arbas, voici le champ de Mars,</l>
+            <l met="6">Allons, point de faiblesse,</l>
+            <l met="8">Semons ces dents.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="8">Mille hasards.</l>
+          <l met="6">Me font trembler sans cesse,</l>
+          <l met="8">Il en va naître une jeunesse</l>
+          <l met="8">Qui doit,<note>Il fait l'action de pousser des bottes.</note>et je suis poltron, moi,</l>
+          <l met="9">Faute d'un certain je ne sais qu'est-ce,</l>
+          <l met="9">Faute d'un certain je ne sais quoi.</l>
+        </sp>
+        <pb n="41"/>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_avez_bien_de_la_bonte">Vous avez bien de la bonté</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">Mon cher, tu connais mon amour,</l>
+            <l met="6">Avec moi, je te garde.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <stage>tremblant</stage>
+          <l met="8">Mais, Seigneur...</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="8">Si je perds le jour...</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="6">Par ma couleur blafarde,</l>
+          <l met="8">Vous devez être intimidé,</l>
+          <l met="8">Hélas! pour vous seul je frissonne.</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <stage>riant</stage>
+          <l met="4">Chez Hermione,</l>
+          <l met="6">Va vite...</l>
+        </sp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <l met="6">En vérité,</l>
+          <l met="8">Vous avez bien de la bonté.</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dupont_mon_ami">Dupont, mon ami</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="5">Dis-lui, mon ami,</l>
+            <l met="5">Que pour son service</l>
+            <l met="5">Je vais faire ici</l>
+            <l met="5">Un rude exercice,</l>
+            <l met="7">Si mes soins sont superflus...</l>
+          </sp>
+        </spGrp>
+        <sp who="#arbas">
+          <speaker>Arbas</speaker>
+          <stage>sortant</stage>
+          <l met="7">Vous ne la reverrez plus.</l>
+        </sp>
+        <pb n="42"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 21</head>
+        <stage type="characters">L'Amour, Cadmus</stage>
+        <sp who="#amour">
+          <speaker>L’Amour</speaker>
+        </sp>
+        <spGrp who="#amour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#d_une_main_je_tiens_mon_pot">De mon pot, je vous en réponds</title>
+            </desc>
+          </head>
+          <sp who="#amour">
+            <speaker>L’Amour</speaker>
+            <l met="7">Cadmus, reçois ce pétard,</l>
+            <l met="6">Et ne crains nul hasard,</l>
+            <l met="8">Cet échantillon du tonnerre,</l>
+            <l met="8">Aux combattants sera contraire,</l>
+            <l met="8">Du pétard, oh je t'en réponds.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="6">J'obéis, commençons.</l>
+        </sp>
+        <stage>L'Amour s'envole, Cadmus sème les dents du dragon, elles produisent des hommes armés qui envisagent Cadmus; il allume le pétard, et il le jette au milieu d'eux, aussitôt ils s'entretuent et un seul reste qui se présente à Cadmus.</stage>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <stage>à ce combattant</stage>
+        </sp>
+        <spGrp who="#cadmus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quand_je_suis_dans_mon_corps_de_garde">Quand je suis dans mon corps de garde</title>
+            </desc>
+          </head>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="8">J'ai bravé la serre cruelle</l>
+            <l met="8">Qui voulait s'emparer de moi,</l>
+            <l met="8">Si tu fais ici le rebelle,</l>
+            <l met="8">Je saurai triompher de toi.</l>
+          </sp>
+        </spGrp>
+        <stage>Le combattant se jette aux pieds de Cadmus, lui rend son épée et s'en va.</stage>
+        <pb n="43"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 22</head>
+        <stage type="characters">Cadmus, le Géant Draco, Pallas</stage>
+        <sp who="#geant">
+          <speaker>Le géant</speaker>
+        </sp>
+        <spGrp who="#geant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tique_tique_taque">Tique tique tac et lon lan la</title>
+            </desc>
+          </head>
+          <sp who="#geant">
+            <speaker>Le géant</speaker>
+            <l met="7">C'est à nous deux à présent</l>
+            <l met="7">À vider le différent.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="7">Tope, je suis en haleine,</l>
+          <l met="9">Voyons...</l>
+        </sp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <stage>survenant</stage>
+          <l met="9">Cadmus, reconnais Pallas,</l>
+          <l met="7">Va, tu n'auras d'autre peine</l>
+          <l met="7">Que d'aller cligner là-bas.</l>
+        </sp>
+        <stage>Cadmus va se cacher; Pallas montre son bouclier au Géant, et le change en statue.</stage>
+        <spGrp who="#pallas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_la_tete_de_meduse">C'est la tête de Méduse</title>
+            </desc>
+          </head>
+          <sp who="#pallas">
+            <speaker>Pallas</speaker>
+            <l met="8">Jamais Pallas ne se refuse</l>
+            <l met="8">À ceux qui vont droit en amour;</l>
+            <l met="8">Oh! que Junon sera camuse,</l>
+            <l met="8">Je me venge bien en ce jour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <stage>reparaissant</stage>
+          <l met="8">Vous lui jouez un vilain tour.</l>
+        </sp>
+        <pb n="44"/>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <l met="7">C'est la tête de Méduse.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <spGrp who="#pallas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#menuet_de_granval">Menuet de Grandval</title>
+            </desc>
+          </head>
+          <sp who="#pallas">
+            <speaker>Pallas</speaker>
+            <l met="7">Ton Hermione impatiente</l>
+            <l met="8">Avance à grands pas en ces lieux,</l>
+            <l met="8">Je pourrais, si j'étais présente,</l>
+            <l met="7">Troubler ces moments précieux.</l>
+          </sp>
+        </spGrp>
+        <stage>Elle sort.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 23</head>
+        <stage type="characters">Hermione, Cadmus</stage>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+        </sp>
+        <spGrp who="#hermione">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_plaisir_passe_la_peine">La peine passe le plaisir</title>
+            </desc>
+          </head>
+          <sp who="#hermione">
+            <speaker>Hermione</speaker>
+            <l met="8">Quand par sa rigueur inhumaine</l>
+            <l met="8">Le Ciel rompt une tendre chaîne,</l>
+            <l met="8">La peine passe le plaisir,</l>
+            <l met="8">Mais quand il a calmé sa haine,</l>
+            <l met="8">Qu'il est doux de s'en souvenir!</l>
+            <l met="7">Le plaisir passe la peine.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <caption>Ensemble</caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_thereze_qu_on_est_aise">Ah! Thérèse</title>
+            </desc>
+          </head>
+          <cols n="2"/>
+          <sp who="#cadmus">
+            <speaker>Cadmus</speaker>
+            <l met="3">Ma Hermione,</l>
+            <l met="3">Ma pouponne,</l>
+            <l met="3">Ma bouchonne,</l>
+            <l met="3">Est à moi.</l>
+            <l met="3">Ma Hermione,</l>
+            <l met="3">Ma bichonne,</l>
+            <l met="3">Ma ratonne,</l>
+            <l met="3">A ma foi.</l>
+          </sp>
+          <cb/>
+        </spGrp>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <l met="3">Ta Hermione,</l>
+          <l met="3">Ta pouponne,</l>
+          <l met="3">Ta bouchonne,</l>
+          <l met="3">Est à toi.</l>
+          <l met="3">Ta Hermione,</l>
+          <l met="3">Ta bichonne,</l>
+          <l met="3">Ta ratonne,</l>
+          <l met="3">A ta foi.<stage type="musical_resumption">fin</stage>
+          </l>
+        </sp>
+        <cols n="1"/>
+        <pb n="45"/>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <l met="8">À tes transports je m'abandonne.</l>
+        </sp>
+        <sp who="#cadmus">
+          <speaker>Cadmus</speaker>
+          <l met="3">Viens friponne,</l>
+          <l met="4">Je suis à toi.</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="3">Hermione<stage type="musical_resumption">comme ci-dessus au mot fin.</stage>
+            </l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 24</head>
+        <stage type="location">Le théâtre s'obscurcit.</stage>
+        <stage type="characters">Junon, Hermione, Cadmus</stage>
+        <sp who="#hermione">
+          <speaker>Hermione</speaker>
+          <stage>effrayée</stage>
+        </sp>
+        <spGrp who="#hermione">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#hesione">Menuet d'Hésione</title>
+            </desc>
+          </head>
+          <sp who="#hermione">
+            <speaker>Hermione</speaker>
+            <l met="8">Mon cher, nous aurons de la pluie,</l>
+            <l met="8">Où nous cacher dans ce désert?</l>
+          </sp>
+        </spGrp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <stage>survenant</stage>
+          <l met="8">Vous n'irez pas bien loin, ma mie,</l>
+          <l met="8">Junon va vous mettre à couvert.</l>
+        </sp>
+        <pb n="46"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 25</head>
+        <stage type="characters">Junon, Hermione, Cadmus, Pallas</stage>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+        </sp>
+        <spGrp who="#pallas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#contre_mon_gre">Contre mon gré, je chéris l'eau</title>
+            </desc>
+          </head>
+          <sp who="#pallas">
+            <speaker>Pallas</speaker>
+            <l met="8">Belle Hermione, fier Cadmus,</l>
+            <l met="8">Tout est fini, ne craignez plus,</l>
+            <l met="8">Junon, vous comptiez sans votre hôte,</l>
+            <l met="8">L'Olympe pour eux est d'accord;</l>
+            <l met="8">Çà, reconnaissez votre faute,</l>
+            <l met="8">Jupiter vous donne le sort.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#pallas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_cure_de_saint_pierre_a_dit">Le curé de Saint-Pierre a dit</title>
+            </desc>
+          </head>
+          <sp who="#pallas">
+            <speaker>Pallas</speaker>
+            <l met="8">Mon papa Jupiter m'a dit,</l>
+            <l met="9">Puisqu'Hermione à Cadmus a su plaire,</l>
+            <l met="8">Mon papa Jupiter m'a dit,</l>
+            <l met="9">Qu'il voulait que leur nôce se fît.</l>
+          </sp>
+        </spGrp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <l met="8">Puisque Jupiter vous l'a dit,</l>
+          <l met="9">Dérouillons, dérouillons, ma commère,</l>
+          <l met="8">Puisque Jupiter vous l'a dit,</l>
+          <l met="9">Dérouillons nos jarrets, il suffit.</l>
+        </sp>
+        <spGrp>
+          <caption>Tous quatre ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="9">Dérouillons, ...</l>
+          </sp>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <p>L'auteur de cette petite pièce aurait cru manquer au respect qu'on doit aux paroles originales de Cadmus, composées par l'illustre M. Quinault, s'il les avait parodiées conformément aux changements qu'on en a faits à l'Opéra.</p>
+          </sp>
+        </spGrp>
+        <stage>La pièce finit par une danse comique des dieux et des déesses, sur l'air précédent.</stage>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,1688 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="celeste">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Céleste</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>[Jean Bardou]</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>J. Coignard</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Paris, Vente, 1784</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="damete" sex="UNKNOWN">
+            <persName>Damete</persName>
+          </person>
+          <person xml:id="celeste" sex="UNKNOWN">
+            <persName>Céleste</persName>
+          </person>
+          <person xml:id="bascule" sex="UNKNOWN">
+            <persName>Bascule</persName>
+          </person>
+          <person xml:id="apollon" sex="UNKNOWN">
+            <persName>Apollon</persName>
+          </person>
+          <person xml:id="avendre" sex="UNKNOWN">
+            <persName>Avendre</persName>
+          </person>
+          <person xml:id="persduchoeur" sex="UNKNOWN">
+            <persName>Un personnage du chœur</persName>
+          </person>
+          <person xml:id="leheraut" sex="UNKNOWN">
+            <persName>Le héraut</persName>
+          </person>
+          <person xml:id="unautre" sex="UNKNOWN">
+            <persName>Un autre</persName>
+          </person>
+          <person xml:id="lepremier" sex="UNKNOWN">
+            <persName>Le premier</persName>
+          </person>
+          <person xml:id="lesecond" sex="UNKNOWN">
+            <persName>Le second</persName>
+          </person>
+          <person xml:id="legrandpretre" sex="UNKNOWN">
+            <persName>Le grand prêtre</persName>
+          </person>
+          <person xml:id="lastatue" sex="UNKNOWN">
+            <persName>La statue</persName>
+          </person>
+          <person xml:id="choeurdesdemons" sex="UNKNOWN">
+            <persName>Chœur des démons</persName>
+          </person>
+          <person xml:id="undemon" sex="UNKNOWN">
+            <persName>Un démon</persName>
+          </person>
+          <person xml:id="ledemon" sex="UNKNOWN">
+            <persName>Le démon</persName>
+          </person>
+          <person xml:id="demons" sex="UNKNOWN">
+            <persName>Démons</persName>
+          </person>
+          <person xml:id="grand_pretre_d_apollon" sex="UNKNOWN">
+            <persName>Grand prêtre d'Apollon</persName>
+          </person>
+          <person xml:id="peuples_ou_cour_de_thessalie" sex="UNKNOWN">
+            <persName>Peuples ou Cour de Thessalie</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Opéra parodie-burlesque en trois actes et en vaudeville d'<emph>Alceste</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#damete">Damete</role>
+          <roleDesc>roi de Thessalie</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#celeste">Céleste</role>
+          <roleDesc>épouse de Damete</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#bascule">Bascule</role>
+        </castItem>
+        <castItem>
+          <role ana="#apollon">Apollon</role>
+        </castItem>
+        <castItem>
+          <role ana="#grand_pretre_d_apollon">Grand prêtre d'Apollon</role>
+        </castItem>
+        <castItem>
+          <role ana="#avendre">Avendre</role>
+          <roleDesc>officier de Damete</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#demons">Démons</role>
+        </castItem>
+        <castItem>
+          <role ana="#peuples_ou_cour_de_thessalie">Peuples ou Cour de Thessalie</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène est dans la ville de Thessalie.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="act">
+        <head>ACTE 1</head>
+        <stage type="location">Le théâtre représente une place publique. Sur un des côtés, on voit le palais de Damete, sur la porte duquel est un balcon en saillie. Le peuple remplit la place, il est dans l'attitude de la douleur.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Chœur</stage>
+          <spGrp who="#None">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#malbrough">Malbrouk</title>
+              </desc>
+            </head>
+            <sp who="#None">
+              <speaker/>
+              <l met="6">Notre bon Roi Damete</l>
+              <l met="8">Depuis deux jours a mal de tête,</l>
+              <l met="6">Notre bon Roi Damete</l>
+              <l met="6">Est malade en son lit,<stage type="bis">bis</stage>
+              </l>
+              <l met="6">Il n'a point d'appétit.</l>
+              <l met="6">La Reine, son épouse,</l>
+              <l met="8">De sa santé si fort jalouse,</l>
+              <l met="6">La Reine, son épouse,</l>
+              <l met="6">Trouve qu'il est fort bas,<stage type="bis">bis</stage>
+              </l>
+              <l met="6">Et pousse des hélas!</l>
+              <l met="1">Qui...</l>
+            </sp>
+          </spGrp>
+          <stage>Le héraut sur le balcon sonne de la trompe.</stage>
+          <sp who="#persduchoeur">
+            <speaker>Un personnage du chœur</speaker>
+          </sp>
+          <spGrp who="#persduchoeur">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#tout_cela_est_indifferent">Monsieur le Prévôt des marchands</title>
+              </desc>
+            </head>
+            <sp who="#persduchoeur">
+              <speaker>Un personnage du chœur</speaker>
+              <l met="8">Mais qu'annonce cet instrument?</l>
+              <l met="8">Là-haut va-t-on faire un encan<note type="definition">Encan: Cri public qui se fait par un sergent pour vendre les meubles à l'enchère (Acad. 1762)</note>?</l>
+            </sp>
+          </spGrp>
+          <pb n="4"/>
+          <sp who="#leheraut">
+            <speaker>Le héraut</speaker>
+            <l met="8">Amis, il faut que le Roi meure.</l>
+            <l met="8">Près de lui pour l'expédier,</l>
+            <l met="8">Il vient d'arriver tout à l'heure</l>
+            <l met="8">Deux médecins de Montpellier!</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="10">À ce malheur devions-nous nous attendre?</l>
+            <l met="10">Qui tarira la source de nos pleurs?</l>
+            <l met="10">Ce bon Damete avait l'âme si tendre,</l>
+            <l met="10">Qu'on l'aurait pu nommer le Roi de cœur.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Avendre, le chœur</stage>
+          <sp who="#avendre">
+            <speaker>Avendre</speaker>
+          </sp>
+          <spGrp who="#avendre">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#capucin">De tous les capucins du monde</title>
+              </desc>
+            </head>
+            <sp who="#avendre">
+              <speaker>Avendre</speaker>
+              <l met="8">Messieurs, Messieurs, voici la Reine.</l>
+            </sp>
+          </spGrp>
+          <sp who="#persduchoeur">
+            <speaker>Un personnage du chœur</speaker>
+            <l met="8">Sur cette place qui l'amène?</l>
+            <l met="8">Ne serait-il pas plus décent</l>
+            <l met="8">Qu'auprès de son mari Damete?</l>
+          </sp>
+          <sp who="#avendre">
+            <speaker>Avendre</speaker>
+            <l met="8">Elle n'est ici qu'en passant,</l>
+            <l met="8">Et pour chanter une ariette.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Les précédents, Céleste et sa suite<stage>elle tient ses deux enfants à la main</stage>
+          </stage>
+          <sp who="#persduchoeur">
+            <speaker>Un personnage du chœur</speaker>
+          </sp>
+          <spGrp who="#persduchoeur">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#bossus">Bossus</title>
+              </desc>
+            </head>
+            <sp who="#persduchoeur">
+              <speaker>Un personnage du chœur</speaker>
+              <l met="10">À chaque main elle tient un enfant.</l>
+            </sp>
+          </spGrp>
+          <sp who="#unautre">
+            <speaker>Un autre</speaker>
+            <l met="10">Elle fait bien, c'est deux fois plus touchant.</l>
+          </sp>
+          <sp who="#lepremier">
+            <speaker>Le premier</speaker>
+            <l met="10">Vois-tu comme elle a l'air intéressant?</l>
+            <l met="10">Que son regard est tendre et languissant!</l>
+          </sp>
+          <sp who="#lesecond">
+            <speaker>Le second</speaker>
+            <l met="10">Comme elle marche en cadence pourtant.</l>
+          </sp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+          </sp>
+          <spGrp who="#celeste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#l_avez_vous_vu_mon_bien_aime">L'avez-vous vu, mon bien-aimé</title>
+              </desc>
+            </head>
+            <sp who="#celeste">
+              <speaker>Céleste</speaker>
+              <l met="8">Que mon destin est rigoureux,</l>
+              <l met="6">Me voilà presque veuve!</l>
+              <l met="8">Deviez-vous me mettre, grands dieux,</l>
+              <l met="6">À cette rude épreuve?</l>
+              <l met="8">Le veuvage est, dit-on, un bien,</l>
+              <l met="8">Mais je sens qu'il ne me vaut rien.</l>
+              <l met="4">Oh! mes enfants,</l>
+              <l met="4">Mes chers enfants,</l>
+              <l met="6">Quelle est votre misère!</l>
+              <l met="4">Affligez-vous</l>
+              <l met="4">Car mon époux</l>
+              <l met="6">Était bien votre père!</l>
+            </sp>
+          </spGrp>
+          <pb n="5"/>
+          <spGrp who="#celeste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_suis_lindor">Je suis Lindor</title>
+              </desc>
+            </head>
+            <sp who="#celeste">
+              <speaker>Céleste</speaker>
+              <l met="10">Dans nos malheurs, il n'est qu'une ressource.</l>
+              <l met="10">C'est d'implorer la clémence des dieux.</l>
+              <l met="10">Allons au temple, au sortir de ces lieux.</l>
+            </sp>
+          </spGrp>
+          <sp who="#avendre">
+            <speaker>Avendre</speaker>
+            <l met="10">Avez-vous mis de l'or dans votre bourse?</l>
+          </sp>
+          <stage>Elle fait signe que non et ils sortent tous.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="location">Le théâtre représente le temple d'Apollon. La statue de ce dieu est au fond.</stage>
+          <stage type="characters">Le grand prêtre et ses prêtres</stage>
+          <sp who="#legrandpretre">
+            <speaker>Le grand prêtre</speaker>
+          </sp>
+          <spGrp who="#legrandpretre">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#toujours_seule_disait_nina">Toujours seule, disait Nina</title>
+              </desc>
+            </head>
+            <sp who="#legrandpretre">
+              <speaker>Le grand prêtre</speaker>
+              <l met="8">Dieu puissant de qui nous faisons</l>
+              <l met="6">Bien payer les miracles,</l>
+              <l met="8">Ô toi, qui fais des guérisons</l>
+              <l met="6">Renverser les obstacles,</l>
+              <l met="8">Fais que notre maître alité,</l>
+              <l met="8">Par toi recouvre la santé.</l>
+              <l met="4">par ton secours,</l>
+              <l met="4">Contre ses jours,</l>
+              <l met="7">Rend l'effort du médecin</l>
+              <l met="1">Vain.</l>
+              <l met="8">Ressouviens-toi que dans ces lieux,</l>
+              <l met="6">Lorsque pour tes fredaines,</l>
+              <l met="9">Jupiter t'exila de ces lieux</l>
+              <l met="6">Pendant quelques semaines,</l>
+              <l met="8">Le Roi pour qui nous t'implorons</l>
+              <l met="8">Eut pour toi cent bonnes façons.</l>
+              <l met="4">Il te logea</l>
+              <l met="4">Et te donna,</l>
+              <l met="7">Table, lit,<emph>et cætera</emph>
+              </l>
+              <l met="1">Da.</l>
+            </sp>
+          </spGrp>
+          <stage>Le chœur des prêtres répète les trois derniers vers de chaque couplet.</stage>
+          <sp who="#legrandpretre">
+            <speaker>Le grand prêtre</speaker>
+          </sp>
+          <spGrp who="#legrandpretre">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#l_occasion_fait_le_larron">L'occasion fait le larron</title>
+              </desc>
+            </head>
+            <sp who="#legrandpretre">
+              <speaker>Le grand prêtre</speaker>
+              <l met="10">la Reine vient suspendons nos mystères,</l>
+              <l met="10">Dans un moment quitte à recommencer.</l>
+              <l met="10">Mais il est bon de voir par nos salaires</l>
+              <l met="8">Sur quel ton il faudra chanter.</l>
+            </sp>
+          </spGrp>
+          <pb n="6"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Les précédents, Céleste, ses enfants, sa suite, le peuple</stage>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <stage>présentant une bourse au grand prêtre</stage>
+            <l met="8">Perdrai-je Damete en ce jour?</l>
+            <l met="8">Dites-moi s'il faut que je meure.</l>
+          </sp>
+          <stage type="musical_indication">Récitatif,tiré du <title ref="#devin_du_village">Devin du village</title> ()</stage>
+          <sp who="#legrandpretre">
+            <speaker>Le grand prêtre</speaker>
+          </sp>
+          <spGrp who="#legrandpretre">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#que_du_monde_il_nous_vient">Que du monde il nous vient</title>
+              </desc>
+            </head>
+            <sp who="#legrandpretre">
+              <speaker>Le grand prêtre</speaker>
+              <l met="6">Reine, tu vas savoir</l>
+              <l met="5">Si tu peux avoir</l>
+              <l met="5">Encor de l'espoir.</l>
+              <l met="8">Apollon est si complaisant,</l>
+              <l met="5">Que pour son argent</l>
+              <l met="6">Tout le monde est content.</l>
+              <l met="6">L'Oracle va parler</l>
+              <l met="4">Et révéler</l>
+              <l met="6">Ce qu'on doit espérer</l>
+              <l met="4">Ou redouter.</l>
+              <l met="6">Il faut t'en contenter</l>
+              <l met="4">Sans murmurer.</l>
+              <l met="11">Mais surtout, donne-toi garde d'en douter.</l>
+              <l met="10">Un oracle est toujours cru d'un chacun,</l>
+              <l met="10">Quand même il n'aurait pas le sens-commun.</l>
+              <l met="5">Dans la religion,</l>
+              <l met="8">Reine il faut de la soumission.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lastatue">
+            <speaker>La statue</speaker>
+          </sp>
+          <spGrp who="#lastatue">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#bon_tabac">J'ai du bon tabac</title>
+              </desc>
+            </head>
+            <sp who="#lastatue">
+              <speaker>La statue</speaker>
+              <l met="5">Damete aujourd'hui</l>
+              <l met="5">Sera dans la bière,</l>
+              <l met="5">Si quelqu'un pour lui</l>
+              <l met="5">Ne prend ce souci.</l>
+              <l met="8">Au temple il faut absolument</l>
+              <l met="8">Dans ce jour un enterrement.</l>
+              <l met="10">Arrangez-vous donc de quelque manière,</l>
+              <l met="5">Des dieux en un mot,</l>
+              <l met="5">C'est le dernier mot.</l>
+            </sp>
+          </spGrp>
+          <sp who="#legrandpretre">
+            <speaker>Le grand prêtre</speaker>
+          </sp>
+          <spGrp who="#legrandpretre">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#diableton">Diableton</title>
+              </desc>
+            </head>
+            <sp who="#legrandpretre">
+              <speaker>Le grand prêtre</speaker>
+              <l met="8">Si quelqu'un de vous veut mourir</l>
+              <l met="8">Pour votre maître à l'agonie,</l>
+              <l met="8">De ce lieu même sans sortir</l>
+              <l met="8">Il peut en immolant sa vie</l>
+              <l met="8">Avoir l'honneur de le guérir.</l>
+              <l met="8">Mais, tromperiez-vous notre attente?</l>
+              <l met="8">Ô ciel! je tombe de mon haut.</l>
+              <l met="8">Quoi, personne ne se présente!</l>
+            </sp>
+          </spGrp>
+          <pb n="7"/>
+          <stage>Le chœur sort.</stage>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <stage>au grand prêtre qui sort</stage>
+          </sp>
+          <spGrp who="#celeste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#raretes">Va t'en voir s'ils viennent, Jean</title>
+              </desc>
+            </head>
+            <sp who="#celeste">
+              <speaker>Céleste</speaker>
+              <l met="7">Quoi, vous me quittez ainsi</l>
+              <l met="5">Maudit astrologue!</l>
+            </sp>
+          </spGrp>
+          <sp who="#legrandpretre">
+            <speaker>Le grand prêtre</speaker>
+            <l met="7">Je vous laisse faire ici</l>
+            <l met="5">Votre monologue.</l>
+            <l met="7">Je sens très bien que cela</l>
+            <l met="5">N'est pas fort honnête,</l>
+            <l met="7">Mais l'auteur de l'opéra</l>
+            <l met="5">L'a mis dans sa tête.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">Céleste</stage>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#celeste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#lapalisse">Monsieur de [la] Palisse est mort</title>
+              </desc>
+            </head>
+            <sp who="#celeste">
+              <speaker>Céleste</speaker>
+              <l met="7">Dieux! dans quel gouffre d'ennuis</l>
+              <l met="7">Votre cruauté me plonge.</l>
+              <l met="7">Mes beaux jours, mes bonnes nuits,</l>
+              <l met="7">Tout a passé comme un songe.</l>
+              <l met="7">Comment vouloir que les gens</l>
+              <l met="7">Pour nous immolent leur vie?</l>
+              <l met="7">C'est bien bon dans les romans,</l>
+              <l met="7">Ou dans quelque tragédie.</l>
+              <l met="7">Mais tout à coup quel projet</l>
+              <l met="7">Vient me passer dans la tête!</l>
+              <l met="7">Je m'y livre, c'en est fait,</l>
+              <l met="7">Je meurs pour toi, cher Damete!</l>
+              <l met="7">Admire mon procédé,</l>
+              <l met="7">Noble, plein de grandeur d'âme,</l>
+              <l met="7">Qui te rendant la santé,</l>
+              <l met="7">Te délivre de ta femme!</l>
+              <l met="7">Mes enfants, j'en laisse deux.</l>
+              <l met="7">Ô regret qui me dévore,</l>
+              <l met="7">Je regrette surtout ceux</l>
+              <l met="7">Que j'aurais pu faire encore.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">Céleste, le grand prêtre</stage>
+          <sp who="#legrandpretre">
+            <speaker>Le grand prêtre</speaker>
+          </sp>
+          <spGrp who="#legrandpretre">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+              </desc>
+            </head>
+            <sp who="#legrandpretre">
+              <speaker>Le grand prêtre</speaker>
+              <l met="8">L'enfer accepte sa victime</l>
+              <l met="8">Et je rentre pour t'annoncer</l>
+              <l met="8">Que ce soir dans le sombre abime</l>
+              <l met="8">Le diable viendra t'emporter.</l>
+            </sp>
+          </spGrp>
+          <pb n="8"/>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+          </sp>
+          <spGrp who="#celeste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#tiens_voila_ma_pipe">Tiens, voilà ma pipe</title>
+              </desc>
+            </head>
+            <sp who="#celeste">
+              <speaker>Céleste</speaker>
+              <l met="12">J'y volerai remplir un devoir qui m'est cher,</l>
+              <l met="12">Et n'invoquerai point les déités d'enfer.</l>
+              <l met="12">J'espère cependant que, comme à l'Opéra,</l>
+              <l met="12">De ces gouffres profonds quelqu'un me tirera.</l>
+            </sp>
+          </spGrp>
+          <stage>Fin de l'acte</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <stage type="location">Le théâtre représente une vaste salle du palais de Damete.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="location">Peuple qui entre en chantant et dansant.</stage>
+          <stage type="characters">Avendre et chœur</stage>
+          <spGrp>
+            <caption>Avendre et chœur</caption>
+          </spGrp>
+          <spGrp who="#ensemble">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#allons_gai_rejouissons_nous">Allons gai, réjouissons-nous</title>
+              </desc>
+            </head>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="8">Allons gai, réjouissons-nous</l>
+              <l met="5">Notre Roi réchappe.</l>
+              <l met="8">Allons gai, réjouissons-nous</l>
+              <l met="5">Et faisons les fous.<stage type="bis">bis</stage>
+              </l>
+            </sp>
+          </spGrp>
+          <sp who="#avendre">
+            <speaker>Avendre</speaker>
+            <l met="7">Si vous l'aviez vu narguer</l>
+            <l met="5">La mort qui l'attrape</l>
+            <l met="7">De son lit en bas sauter</l>
+            <l met="7">Et mander son perruquier.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="8">Allons gai, ...</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Les précédents, Damete</stage>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+          </sp>
+          <spGrp who="#damete">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_pagnote">La Pagnote<note type="definition">Pagnote: Poltron, lâche, qui manque de courage (Acad. 1694)</note>
+                </title>
+              </desc>
+            </head>
+            <sp who="#damete">
+              <speaker>Damete</speaker>
+              <l met="8">Ô mes enfants, ô mes amis,</l>
+              <l met="6">Quelle est mon allégresse!</l>
+              <l met="8">Dieu merci, me voilà remis,</l>
+              <l met="6">Que votre crainte cesse.</l>
+              <l met="4">Mais, dites-moi,</l>
+              <l met="4">Comment, pourquoi</l>
+              <l met="6">S'est fait un tel miracle!</l>
+              <l met="4">Quand presque mort</l>
+              <l met="4">Je suis si fort.</l>
+            </sp>
+          </spGrp>
+          <pb n="9"/>
+          <sp who="#avendre">
+            <speaker>Avendre</speaker>
+            <l met="6">C'est l'effet de l'oracle.</l>
+          </sp>
+          <spGrp who="#avendre">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#philis_demande_son_portrait">Philis demande son portrait</title>
+              </desc>
+            </head>
+            <sp who="#avendre">
+              <speaker>Avendre</speaker>
+              <l met="8">Par un expédient nouveau</l>
+              <l met="6">Les dieux vous ont fait grâce,</l>
+              <l met="8">Pourvu que quelqu'un au tombeau</l>
+              <l met="6">Se mit à votre place.</l>
+              <l met="8">Un inconnu sauve vos jours,</l>
+              <l met="6">Qu'il paiera de sa tête,</l>
+              <l met="8">Heureux d'en prolonger le cours.</l>
+            </sp>
+          </spGrp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="6">Le trait est bien honnête.</l>
+          </sp>
+          <spGrp who="#damete">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#epousons_nous_donc_ma_reine">Épousons-nous donc, ma Reine</title>
+              </desc>
+            </head>
+            <sp who="#damete">
+              <speaker>Damete</speaker>
+              <l met="7">Mais où peut être ma femme,</l>
+              <l met="7">Pourquoi ne vient-elle pas?</l>
+              <l met="7">Dans le transport qui m'enflamme,</l>
+              <l met="7">La, la, dara, la, la, la,</l>
+              <l met="8">La, la, la, la, dara, dara,</l>
+              <l met="7">Je voudrais... bon, la voilà!</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Les précédents, Céleste</stage>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+          </sp>
+          <spGrp who="#celeste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#on_dit_qua_15ans">On dit qu'à quinze ans</title>
+              </desc>
+            </head>
+            <sp who="#celeste">
+              <speaker>Céleste</speaker>
+              <l met="5">Ah! mon bon ami</l>
+              <l met="4">Mon cher mari.</l>
+            </sp>
+          </spGrp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="4">Ma chère femme.</l>
+          </sp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <l met="5">Quel contentement</l>
+            <l met="8">De te trouver si bien portant!</l>
+            <l met="6">Dans tes yeux quelle flamme,</l>
+            <l met="8">Il n'est rien de plus étonnant.</l>
+            <l met="6">Tu n'as pas, sur mon âme,</l>
+            <l met="6">l'air d'un convalescent.</l>
+            <l met="5">Ah! mon bon ami</l>
+            <l met="4">Mon cher mari.</l>
+          </sp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="4">Ma chère femme.</l>
+          </sp>
+          <spGrp>
+            <caption>Ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="5">Quel ravissement,</l>
+              <l met="8">J'éprouve en ces heureux moments.</l>
+            </sp>
+          </spGrp>
+          <pb n="10"/>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+          </sp>
+          <spGrp who="#choeur">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#que_ce_sabot">Que ce sabot</title>
+              </desc>
+            </head>
+            <sp who="#choeur">
+              <speaker>Le choeur</speaker>
+              <l met="10">Tendres époux, que votre sort est beau!</l>
+              <l met="10">vous vous aimez, chose rare en ménage.</l>
+              <l met="10">Presque échappés de la nuit du tombeau,</l>
+              <l met="10">Vos plaisirs vont être un rayon nouveau.</l>
+            </sp>
+          </spGrp>
+          <sp who="#avendre">
+            <speaker>Avendre</speaker>
+            <l met="10">Que dans neuf mois un poupon soit le gage</l>
+            <l met="10">De votre chaste et touchante union.</l>
+            <l met="10">Qu'à l'univers il porte un témoignage</l>
+            <l met="10">De notre Roi la résurrection.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="10">Tendres époux, ...</l>
+          </sp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+          </sp>
+          <spGrp who="#celeste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#capucin">De tous les capucins du monde</title>
+              </desc>
+            </head>
+            <sp who="#celeste">
+              <speaker>Céleste</speaker>
+              <l met="8">Ce chants me donnent la colique.</l>
+            </sp>
+          </spGrp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="8">Eh! mais quelle mouche vous pique?</l>
+            <l met="8">Ma femme, c'est de votre amour</l>
+            <l met="8">Me donner une étrange preuve</l>
+            <l met="8">Que me laisser voir en ce jour</l>
+            <l met="8">Le regret de n'être pas veuve.</l>
+          </sp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+          </sp>
+          <spGrp who="#celeste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#charmante_gabrielle">Charmante Gabrielle</title>
+              </desc>
+            </head>
+            <sp who="#celeste">
+              <speaker>Céleste</speaker>
+              <l met="6">Je ne chéris la vie</l>
+              <l met="6">Que pour l'amour de toi.</l>
+              <l met="6">Qu'elle me soit ravie,</l>
+              <l met="6">Pour te prouver ma foi.</l>
+              <l met="6">Du feu qui me dévore</l>
+              <l met="4">Quand je mourrai,</l>
+              <l met="6">Dans les enfers encore</l>
+              <l met="4">Je brulerai.</l>
+            </sp>
+          </spGrp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+          </sp>
+          <spGrp who="#damete">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#l_occasion_fait_le_larron">L'occasion fait le larron</title>
+              </desc>
+            </head>
+            <sp who="#damete">
+              <speaker>Damete</speaker>
+              <l met="10">Si c'est ainsi, pourquoi verser des larmes?</l>
+              <l met="10">À ta douleur, moi, je ne conçois rien.</l>
+              <l met="10">Nos chers enfants causent-ils nos alarmes?</l>
+            </sp>
+          </spGrp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <l met="8">Non, tous les deux se portent bien.</l>
+          </sp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+          </sp>
+          <spGrp who="#damete">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#laissons_nous_charmer_du_plaisir_d_aimer">Laissons-nous charmer</title>
+              </desc>
+            </head>
+            <sp who="#damete">
+              <speaker>Damete</speaker>
+              <l met="5">Je me porte aussi</l>
+              <l met="5">Très bien, Dieu merci.</l>
+              <l met="6">Calme donc le souci</l>
+              <l met="5">De ton cœur transi.</l>
+            </sp>
+          </spGrp>
+          <pb n="11"/>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <l met="5">Non, je ne le puis.</l>
+          </sp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="5">Quels sont tes ennuis?</l>
+          </sp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <l met="6">Ne m'interroge pas.</l>
+          </sp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="5">Tu me le diras.</l>
+          </sp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <l met="3">Quel supplice!</l>
+          </sp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="3">Quel caprice!</l>
+          </sp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <l met="3">Ô tourment!</l>
+          </sp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="3">Tu me fâches</l>
+            <l met="3">Si tu caches</l>
+            <l met="5">Le sujet, enfin,</l>
+            <l met="5">De ce noir chagrin.</l>
+          </sp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <l met="5">Ne t'a-t-on pas dit</l>
+            <l met="5">L'oracle maudit,</l>
+            <l met="10">Et pour toi quelqu'un aujourd'hui périt?</l>
+          </sp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="5">Oui, sais-tu le nom</l>
+            <l met="5">Du mortel si bon?</l>
+          </sp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <l met="6">Peux-tu le demander?</l>
+          </sp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="5">Sais-je deviner?</l>
+          </sp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+          </sp>
+          <spGrp who="#celeste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#que_suis_fougere">Que ne suis-je La Fougère</title>
+              </desc>
+            </head>
+            <sp who="#celeste">
+              <speaker>Céleste</speaker>
+              <l met="7">Et quel autre que ta femme</l>
+              <l met="7">Pourrait s'immoler pour toi?</l>
+            </sp>
+          </spGrp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="7">Tu te moques, ma chère âme,</l>
+            <l met="7">Tu te portes mieux que moi.</l>
+          </sp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <l met="7">Oui, mais c'est une finesse</l>
+            <l met="7">Très facile à concevoir.</l>
+            <l met="7">Pour faire durer la pièce,</l>
+            <l met="7">Je ne mourrai que ce soir.</l>
+          </sp>
+          <pb n="12"/>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+          </sp>
+          <spGrp who="#damete">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#non_je_ne_ferai_pas">Non, je ne ferai point [ce qu'on veut que je fasse]</title>
+              </desc>
+            </head>
+            <sp who="#damete">
+              <speaker>Damete</speaker>
+              <l met="12">Je ne souffrirai point une telle sottise.</l>
+              <l met="12">Puisque vous m'y forcez, il faut que je vous dise</l>
+              <l met="12">Qu'ayant de vos appas pleine possession,</l>
+              <l met="12">Vous ne pouvez mourir sans ma permission.</l>
+            </sp>
+          </spGrp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+          </sp>
+          <spGrp who="#celeste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_confession">La Confession</title>
+              </desc>
+            </head>
+            <sp who="#celeste">
+              <speaker>Céleste</speaker>
+              <l met="5">Les dieux de mes jours</l>
+              <l met="8">Ont accepté le sacrifice.</l>
+            </sp>
+          </spGrp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="6">À ces dieux je recours.</l>
+            <l met="8">Ils m'entendront s'ils ne sont sourds.</l>
+            <l met="9">Que sur moi leur fureur s'assouvisse,</l>
+            <l met="5">Et que je périsse.</l>
+            <l met="9">Je ne veux point de leur injustice</l>
+            <l met="5">Être le complice.</l>
+          </sp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <l met="5">Ces dieux de mes jours</l>
+            <l met="8">Ont accepté le sacrifice.</l>
+          </sp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="6">À ces dieux je recours.</l>
+            <l met="8">Ils m'entendront s'ils ne sont sourds.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Céleste, peuple</stage>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+          </sp>
+          <spGrp who="#celeste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_furstenberg">La Fürstenberg</title>
+              </desc>
+            </head>
+            <sp who="#celeste">
+              <speaker>Céleste</speaker>
+              <l met="7">Pour le coup je perds courage</l>
+              <l met="6">De mon prochain décès.</l>
+              <l met="6">Adieu tous les projets</l>
+              <l met="7">Lorsque pour le grand voyage</l>
+              <l met="7">J'avais fait tous mes paquets.</l>
+              <l met="7">Ce Damete me désole,</l>
+              <l met="7">Il me fera venir folle.</l>
+              <l met="5">Quel entêtement!</l>
+              <l met="4">Absolument</l>
+              <l met="8">Il veut descendre au monument.</l>
+              <l met="10">Il m'arrache le cœur en me quittant.</l>
+              <l met="8">Mais il verra, sur ma parole,</l>
+              <l met="4">Qu'un' femme enfin</l>
+              <l met="4">Tient dans sa main</l>
+              <l met="6">D'un mari le destin.<stage type="musical_resumption">fin</stage>
+              </l>
+            </sp>
+          </spGrp>
+          <pb n="13"/>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="4">Quel désespoir!</l>
+            <l met="8">Céleste, malheureux Damete,</l>
+            <l met="4">Quel désespoir!</l>
+            <l met="8">Un de vous deux mourra ce soir.<stage type="musical_resumption">fin</stage>
+            </l>
+            <l met="5">Elle est si bien faite,</l>
+            <l met="8">Et lui si bon qu'il en est bête.</l>
+            <l met="5">Quand on les regrette,</l>
+            <l met="8">On en fait rien que son devoir.</l>
+            <l met="4">Quel désespoir! ...</l>
+          </sp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <stage>après le chœur</stage>
+            <l met="7">Ce Damete me désole, ...</l>
+          </sp>
+          <stage>Fin de l'acte</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 3</head>
+        <stage type="location">Le théâtre représente la même place publique du premier acte.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Avendre, peuple</stage>
+          <spGrp who="#celeste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mon_coeur_charme_de_sa_chaine">Mon cœur charmé de sa chaîne</title>
+              </desc>
+            </head>
+            <sp who="#celeste">
+              <speaker>Céleste</speaker>
+              <l met="7">Que de nos amères larmes</l>
+              <l met="7">Nos mouchoirs soient arrosés,</l>
+              <l met="7">Et que de notre eau des charmes</l>
+              <l met="7">Les flacons soient épuisés.</l>
+              <l met="2">Hélas!</l>
+              <l met="2">Hélas!</l>
+              <l met="7">Le Roi, la Reine et ses charmes</l>
+              <l met="7">Vont bientôt passer le pas.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Les précédents, Bascule</stage>
+          <sp who="#bascule">
+            <speaker>Bascule</speaker>
+          </sp>
+          <spGrp who="#bascule">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#aussitot_que_la_lumiere">Aussitôt que la lumière</title>
+              </desc>
+            </head>
+            <sp who="#bascule">
+              <speaker>Bascule</speaker>
+              <l met="7">Sur les bords de la Garonne,</l>
+              <l met="7">C'est assez casser des os.</l>
+              <l met="7">Enfin, je les abandonne</l>
+              <l met="7">Pour me livrer au repos.</l>
+              <l met="7">Le Roi m'aime il a su perdre</l>
+              <l met="7">Une charmante moitié,</l>
+              <l met="7">Et je viens ici lui rendre</l>
+              <l met="7">Les devoirs de l'amitié.</l>
+            </sp>
+          </spGrp>
+          <pb n="14"/>
+          <spGrp who="#bascule">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#joconde">Joconde</title>
+              </desc>
+            </head>
+            <sp who="#bascule">
+              <speaker>Bascule</speaker>
+              <l met="8">Mais que veulent dire ces pleurs,</l>
+              <l met="6">Cette douleur si vive?</l>
+            </sp>
+          </spGrp>
+          <sp who="#avendre">
+            <speaker>Avendre</speaker>
+            <l met="8">Ignorez-vous tous nos malheurs?</l>
+          </sp>
+          <sp who="#bascule">
+            <speaker>Bascule</speaker>
+            <l met="6">Dans le moment j'arrive.</l>
+          </sp>
+          <sp who="#avendre">
+            <speaker>Avendre</speaker>
+            <l met="8">Le Roi... la Reine... de tous deux</l>
+            <l met="6">La mort est très prochaine.</l>
+          </sp>
+          <sp who="#bascule">
+            <speaker>Bascule</speaker>
+            <l met="8">Passe pour le Roi, mais je veux</l>
+            <l met="6">Vous conserver la Reine.</l>
+          </sp>
+          <spGrp who="#bascule">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ne_songeons_plus_qu_au_doux_lien">Ne songeons plus qu'au doux lien</title>
+              </desc>
+            </head>
+            <sp who="#bascule">
+              <speaker>Bascule</speaker>
+              <l met="8">Oui, je saurai, n'en doutez pas,</l>
+              <l met="8">Par le seul effort de mon bras,</l>
+              <l met="8">La tirer de ce maudit pas.</l>
+              <l met="8">Quand des gouffres les plus profonds,</l>
+              <l met="8">Il me faudrait descendre au fonds,</l>
+              <l met="8">Je le jure, foi de Gascon.</l>
+            </sp>
+          </spGrp>
+          <stage>Ils sortent tous.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="location">Le théâtre représente l'entrée des enfers. l'autel de la mort est sur un des côtés, de l'autre est une caravane d'où il sort de temps en temps un feu obscur.</stage>
+          <stage type="characters">Céleste</stage>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#celeste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ca_dis_moi_sans_detour">Çà, dis-moi sans détour</title>
+              </desc>
+            </head>
+            <sp who="#celeste">
+              <speaker>Céleste</speaker>
+              <l met="6">À ce cœur que j'avais</l>
+              <l met="6">Quelle frayeur succède!</l>
+              <l met="6">Je ne pourrai jamais</l>
+              <l met="6">Accomplir mes projets.</l>
+              <l met="6">Tout mon courage cède</l>
+              <l met="6">À ces tristes apprêts.</l>
+              <l met="6">Dieux! que la mort est laide</l>
+              <l met="2">De près.</l>
+              <l met="6">Mais l'amour par bonheur</l>
+              <l met="6">Me remonte à la tête,</l>
+              <l met="6">D'une nouvelle ardeur</l>
+              <l met="6">Il anime mon cœur.</l>
+              <l met="6">Pour te sauver Damete</l>
+              <l met="6">De ces lieux plein d'horreur</l>
+              <l met="6">Dans ce trou je me jette</l>
+              <l met="2">Sans peur.</l>
+            </sp>
+          </spGrp>
+          <pb n="15"/>
+          <stage>Elle va vers la trappe.</stage>
+          <sp who="#choeurdesdemons">
+            <speaker>Chœur des démons</speaker>
+            <stage>qu'on ne voit pas</stage>
+          </sp>
+          <spGrp who="#choeurdesdemons">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#gregoire_est_mort">Grégoire est mort</title>
+              </desc>
+            </head>
+            <sp who="#choeurdesdemons">
+              <speaker>Chœur des démons</speaker>
+              <l met="4">Attends, attends,</l>
+              <l met="4">Il n'est pas temps.</l>
+              <l met="8">Mais tu n'attendras pas longtemps.</l>
+            </sp>
+          </spGrp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+          </sp>
+          <spGrp who="#celeste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#folia">Folies d'Espagne</title>
+              </desc>
+            </head>
+            <sp who="#celeste">
+              <speaker>Céleste</speaker>
+              <l met="10">N'attendez pas que d'un ton lamentable,</l>
+              <l met="10">En ma faveur je cherche à vous toucher.</l>
+              <l met="10">Mon parti pris, je suis inébranlable,</l>
+              <l met="10">Dans les enfers ce soir je vais coucher.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Céleste, Damete</stage>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+          </sp>
+          <spGrp who="#damete">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#petits_grands">Pendus</title>
+              </desc>
+            </head>
+            <sp who="#damete">
+              <speaker>Damete</speaker>
+              <l met="8">C'est Céleste, dieu tout puissant!</l>
+              <l met="8">Je te croyais déjà dedans.</l>
+            </sp>
+          </spGrp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <l met="8">Malheureux ici qui t'amène?</l>
+          </sp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="8">Je viens y jouer une scène</l>
+            <l met="8">Faite sur le même patron</l>
+            <l met="8">De celle de l'acte second.</l>
+          </sp>
+          <spGrp who="#damete">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#exaudet_menuet">Menuet d'Exaudet</title>
+              </desc>
+            </head>
+            <sp who="#damete">
+              <speaker>Damete</speaker>
+              <l met="3">Commençons.</l>
+            </sp>
+          </spGrp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <l met="3">Finissons,</l>
+            <l met="3">Au contraire.</l>
+            <l met="7">Tu vas me dire d'abord</l>
+            <l met="6">Que tu cours à la mort.</l>
+          </sp>
+          <pb n="16"/>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="6">pas tout à fait, ma chère.</l>
+            <l met="3">Apollon</l>
+            <l met="3">Tout de bon</l>
+            <l met="3">Me repousse,</l>
+            <l met="7">Et prétend faire cadeau</l>
+            <l met="6">À Pluton de ta peau</l>
+            <l met="2">Si douce.</l>
+            <l met="7">Juge si cela me pique,</l>
+            <l met="7">Moi, qui me trouvait unique,</l>
+            <l met="3">Et qui fis</l>
+            <l met="3">Des maris</l>
+            <l met="3">La critique,</l>
+            <l met="7">Ayant toujours cru mon front</l>
+            <l met="6">Exempt de tout affront</l>
+            <l met="2">Cynique.</l>
+            <l met="3">Mais aussi</l>
+            <l met="3">Me voici</l>
+            <l met="3">Pour défendre</l>
+            <l met="7">Ton honneur, tes jours si chers.</l>
+            <l met="6">Je prétends aux enfers</l>
+            <l met="6">T'empêcher de descendre.</l>
+            <l met="3">Ce projet</l>
+            <l met="3">Te déplait</l>
+            <l met="3">Et t'étonne.</l>
+            <l met="7">Mais c'est un mari qui craint</l>
+            <l met="6">Le mal dont on ne plaint</l>
+            <l met="2">Personne.</l>
+          </sp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+          </sp>
+          <spGrp who="#celeste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#reste_encore_un_moment">Reste encore un moment</title>
+              </desc>
+            </head>
+            <sp who="#celeste">
+              <speaker>Céleste</speaker>
+              <l met="6">Vis encor quelque temps,</l>
+              <l met="7">Et pour passer l'onde noire,</l>
+              <l met="6">Attends que nos enfants</l>
+              <l met="7">Soient encore un peu plus grands.<stage type="musical_resumption">fin</stage>
+              </l>
+              <l met="6">De garder ma mémoire,</l>
+              <l met="8">Fais-moi seulement le serment.</l>
+              <l met="6">Je veux bien ne pas croire</l>
+              <l met="8">Qu'autant en emporte le vent.</l>
+              <l met="6">Vis, ...</l>
+            </sp>
+          </spGrp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+          </sp>
+          <spGrp who="#damete">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#o_ma_tendre_musette">Ô, ma tendre musette</title>
+              </desc>
+            </head>
+            <sp who="#damete">
+              <speaker>Damete</speaker>
+              <l met="6">Ces enfants-là, ma chère,</l>
+              <l met="6">Dans leur tendre transport,</l>
+              <l met="6">Demanderont leur mère.</l>
+              <l met="6">Que leur dirai-je alors?</l>
+              <l met="6">Ce titre qu'on révère</l>
+              <l met="6">Est au moins bien certain.</l>
+              <l met="6">L'enfant qui n'a qu'un père</l>
+              <l met="6">Est peut-être orphelin.</l>
+            </sp>
+          </spGrp>
+          <pb n="17"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Les précédents, démons</stage>
+          <sp who="#undemon">
+            <speaker>Un démon</speaker>
+          </sp>
+          <spGrp who="#undemon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#divers_cassandre">Vive Henri IV</title>
+              </desc>
+            </head>
+            <sp who="#undemon">
+              <speaker>Un démon</speaker>
+              <l met="4">Caron t'appelle,</l>
+              <l met="6">N'entends-tu pas la voix?</l>
+              <l met="4">Dans sa nacelle</l>
+              <l met="6">Il attend que tu sois.</l>
+            </sp>
+          </spGrp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <l met="4">Je vais m'y rendre,</l>
+            <l met="7">Mais sa voix, en vérité,</l>
+            <l met="5">Je ne puis l'entendre.</l>
+          </sp>
+          <sp who="#ledemon">
+            <speaker>Le démon</speaker>
+            <l met="6">C'est qu'il est enrhumé.</l>
+          </sp>
+          <stage>Troupe de démons qui surviennent.</stage>
+          <sp who="#undemon">
+            <speaker>Un démon</speaker>
+          </sp>
+          <spGrp who="#undemon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#le_premier_du_mois_de_janvier">Le premier du mois de janvier</title>
+              </desc>
+            </head>
+            <sp who="#undemon">
+              <speaker>Un démon</speaker>
+              <l met="8">Allons, il faut vous dépêcher,</l>
+              <l met="8">Monsieur Pluton veut se coucher.</l>
+              <l met="8">Quels délais sont enfin les vôtres?</l>
+            </sp>
+          </spGrp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="8">Que ce démon-là me déplait,</l>
+            <l met="8">Je le rosserais, s'il n'était</l>
+            <l met="8">Accompagné de plusieurs autres.</l>
+          </sp>
+          <sp who="#choeurdesdemons">
+            <speaker>Chœur des démons</speaker>
+            <stage>qui entourent Céleste en dansant</stage>
+          </sp>
+          <spGrp>
+            <head type="melody" subtype="empty_melody">Air vide</head>
+            <spGrp rend="braced(right)">
+              <sp who="#choeurdesdemons">
+                <speaker>Chœur des démons</speaker>
+                <l met="9">Suivez-nous, Madame, sans façon.</l>
+                <l met="9">Entrez dans la barque de Caron.</l>
+                <l met="9">Ce nocher va d'un coup d'aviron</l>
+                <l met="8">Vous faire passer l'Achéron.<stage type="musical_resumption">fin</stage>
+                </l>
+              </sp>
+              <stage>
+                <stage type="bis">bis</stage>
+              </stage>
+            </spGrp>
+          </spGrp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="5">Messieurs les démons,</l>
+            <l met="4">Laissez-la donc.</l>
+          </sp>
+          <sp who="#demons">
+            <speaker>Démons</speaker>
+            <l met="5">Voudrais-tu chercher</l>
+            <l met="4">À nous toucher?</l>
+            <l met="4">Va te coucher.</l>
+            <l met="9">Suivez-nous, ...</l>
+          </sp>
+          <stage>Ils entrainent Céleste.</stage>
+          <pb n="18"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">Les précédents, Bascule</stage>
+          <sp who="#bascule">
+            <speaker>Bascule</speaker>
+          </sp>
+          <spGrp who="#bascule">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#r_lan_tan_plan">R'lan tan plan</title>
+              </desc>
+            </head>
+            <sp who="#bascule">
+              <speaker>Bascule</speaker>
+              <l met="7">Pour faire le dénouement,</l>
+              <l met="8">R'lan tan plan tirelire en plan,</l>
+              <l met="7">Pour faire le dénouement,</l>
+              <l met="6">Tout à propos j'arrive.<stage type="bis">bis</stage>
+              </l>
+              <l met="6">Fuyez, troupe craintive,</l>
+              <l met="7">Et rendez-moi dans l'instant,</l>
+              <l met="8">R'lan [tan plan tirelire en plan],</l>
+              <l met="7">Et rendez-moi [dans l'instant],</l>
+              <l met="6">Votre belle captive.</l>
+            </sp>
+          </spGrp>
+          <sp who="#demons">
+            <speaker>Démons</speaker>
+          </sp>
+          <spGrp who="#demons">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#attendez_moi_sous_l_orme_2">Attendez-moi sous l'orme</title>
+              </desc>
+            </head>
+            <sp who="#demons">
+              <speaker>Démons</speaker>
+              <l met="6">La peste comme il frappe,</l>
+              <l met="6">Ce maudit furibond!</l>
+              <l met="6">Regagnons notre trappe.</l>
+            </sp>
+          </spGrp>
+          <stage>Ils rentrent dans la trappe.</stage>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <stage>à Bascule</stage>
+            <l met="6">D'où diable sors-tu donc?</l>
+            <l met="6">Tombé comme des nues,</l>
+            <l met="6">Qui t'eut deviné là?</l>
+          </sp>
+          <sp who="#bascule">
+            <speaker>Bascule</speaker>
+            <l met="6">Ces choses imprévues</l>
+            <l met="6">Sont un tour d'opéra.</l>
+          </sp>
+          <spGrp who="#bascule">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#voici_la_blanchisseuse">Voici la blanchisseuse</title>
+              </desc>
+            </head>
+            <sp who="#bascule">
+              <speaker>Bascule</speaker>
+              <l met="6">Ami, voilà ta femme,</l>
+              <l met="6">Reprends-la, c'est ton bien.</l>
+              <l met="6">Elle est en corps, en âme,</l>
+              <l met="6">Et ne lui manque rien.</l>
+            </sp>
+          </spGrp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="6">Sur ma reconnaissance</l>
+            <l met="6">Tu peux compter d'avance.</l>
+          </sp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <l met="6">Sur la mienne aussi.</l>
+          </sp>
+          <sp who="#bascule">
+            <speaker>Bascule</speaker>
+            <stage>à Céleste</stage>
+            <l met="6">Je l'entends bien ainsi.</l>
+          </sp>
+          <pb n="19"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">Les précédents, Apollon<stage>dans son char</stage>
+          </stage>
+          <sp who="#apollon">
+            <speaker>Apollon</speaker>
+            <l met="6">Digne fils de ton père,</l>
+            <l met="6">À cet exploit nouveau,</l>
+            <l met="6">Je descends sur la terre</l>
+            <l met="6">Pour te crier: bravo!</l>
+            <l met="12">Ce n'est pas tout encore. Aidé du machiniste,</l>
+            <l met="8">D'un coup de sifflet à l'instant,</l>
+            <l met="8">Je vais en un palais brillant</l>
+            <l met="6">Changer ce lieu si triste.</l>
+          </sp>
+          <stage>Le théâtre représente le palais de Damete.</stage>
+          <sp who="#apollon">
+            <speaker>Apollon</speaker>
+            <stage>à Céleste et Damete</stage>
+            <l met="6">Le destin du Ténare</l>
+            <l met="6">A voulu vous sauver,</l>
+            <l met="6">Votre espèce est si rare</l>
+            <l met="6">Qu'il faut la conserver.</l>
+            <l met="12">Venez, peuples heureux de ce Roi débonnaire,</l>
+            <l met="8">Sur deux lignes rangez-vous là,</l>
+            <l met="8">Et terminez cet opéra</l>
+            <l met="6">Dans la forme ordinaire.</l>
+          </sp>
+          <stage>Le char remonte.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">Damete, Céleste, leurs enfants, bascule, Avendre, peuples</stage>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+          </sp>
+          <spGrp who="#celeste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#toi_n_epargne_pas_l_amorce">Toi, n'épargne pas l'amorce</title>
+              </desc>
+            </head>
+            <sp who="#celeste">
+              <speaker>Céleste</speaker>
+              <l met="7">Ah! que mon âme est ravie,</l>
+              <l met="7">On amène nos enfants!</l>
+            </sp>
+          </spGrp>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="7">Ne trouves-tu pas ma mie</l>
+            <l met="7">Qu'ils sont devenus bien grands?</l>
+          </sp>
+          <sp who="#celeste">
+            <speaker>Céleste</speaker>
+            <l met="9">Ils le sont, personne ne l'ignore,</l>
+            <l met="9">Et pourtant ne parlent point encore.</l>
+          </sp>
+          <pb n="20"/>
+          <sp who="#damete">
+            <speaker>Damete</speaker>
+            <l met="8">Oui, mais puisque tu les as faits,</l>
+            <l met="8">Ils ne peuvent être muets.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+          </sp>
+          <spGrp who="#choeur">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">Le dernier vaudeville,tiré de <title ref="#cassandre_oculiste">Cassandre Oculiste</title> ()</desc>
+            </head>
+            <sp who="#choeur">
+              <speaker>Le choeur</speaker>
+              <l met="8">L'hyménée, à ce que l'on dit,</l>
+              <l met="3">Aux amours,</l>
+              <l met="2">Toujours</l>
+              <l met="5">Ôte l'appétit,</l>
+              <l met="3">Et pourtant</l>
+              <l met="6">Ce couple intéressant</l>
+              <l met="9">De ces mets est toujours plus friands!</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <caption>Damete et céleste</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Pour sentir notre bonheur,</l>
+              <l met="8">Il faudrait avoir votre cœur.</l>
+            </sp>
+          </spGrp>
+          <sp who="#bascule">
+            <speaker>Bascule</speaker>
+            <l met="10">Souvenez-vous au moins que l'amitié</l>
+            <l met="10">De vos plaisirs veut être de moitié.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="8">L'hyménée, ...</l>
+          </sp>
+          <stage>Fin</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

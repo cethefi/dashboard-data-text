@@ -1,0 +1,2220 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="arlequin_bohemienne_ou_la_galiote_engravee">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Arlequin bohémienne</title>
+        <title type="sub">La Galiote engravée</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Anonyme</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Rousseau</name>
+        </respStmt>
+        <respStmt>
+          <resp>Relecture</resp>
+          <name>P. Beaucé</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BnF ms. fr. 9260</bibl>
+        <bibl type="intermediarySource">P. Beaucé</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="patagon" sex="UNKNOWN">
+            <persName>Patagon</persName>
+          </person>
+          <person xml:id="nicole" sex="UNKNOWN">
+            <persName>Nicole</persName>
+          </person>
+          <person xml:id="eugenie" sex="UNKNOWN">
+            <persName>Eugénie</persName>
+          </person>
+          <person xml:id="lucas" sex="UNKNOWN">
+            <persName>Lucas</persName>
+          </person>
+          <person xml:id="lemporte" sex="UNKNOWN">
+            <persName>L'emporté</persName>
+          </person>
+          <person xml:id="pastrop" sex="UNKNOWN">
+            <persName>Pastrop</persName>
+          </person>
+          <person xml:id="lesbateliers" sex="UNKNOWN">
+            <persName>Les bateliers</persName>
+          </person>
+          <person xml:id="choeurdesbateliers" sex="UNKNOWN">
+            <persName>Chœur des bateliers</persName>
+          </person>
+          <person xml:id="choeurdebateliers" sex="UNKNOWN">
+            <persName>Chœur de bateliers</persName>
+          </person>
+          <person xml:id="unefille" sex="UNKNOWN">
+            <persName>Une fille</persName>
+          </person>
+          <person xml:id="labohemienne" sex="UNKNOWN">
+            <persName>La bohémienne</persName>
+          </person>
+          <person xml:id="unbatelier" sex="UNKNOWN">
+            <persName>Un batelier</persName>
+          </person>
+          <person xml:id="bateliers" sex="UNKNOWN">
+            <persName>Bateliers</persName>
+          </person>
+          <person xml:id="batelier" sex="UNKNOWN">
+            <persName>Batelier</persName>
+          </person>
+          <person xml:id="lucine" sex="UNKNOWN">
+            <persName>Lucine</persName>
+          </person>
+          <person xml:id="choeurdesbouchers" sex="UNKNOWN">
+            <persName>Chœur des bouchers</persName>
+          </person>
+          <person xml:id="lesbouchers" sex="UNKNOWN">
+            <persName>Les bouchers</persName>
+          </person>
+          <person xml:id="lebailli" sex="UNKNOWN">
+            <persName>Le bailli</persName>
+          </person>
+          <person xml:id="lesdeuxchoeurs" sex="UNKNOWN">
+            <persName>Les deux chœurs</persName>
+          </person>
+          <person xml:id="unhommeduchoeur" sex="UNKNOWN">
+            <persName>Un homme du chœur</persName>
+          </person>
+          <person xml:id="l_emporte" sex="UNKNOWN">
+            <persName>L'Emporté</persName>
+          </person>
+          <person xml:id="le_bailli" sex="UNKNOWN">
+            <persName>Le bailli</persName>
+          </person>
+          <person xml:id="une_bohemienne" sex="UNKNOWN">
+            <persName>Une bohémienne</persName>
+          </person>
+          <person xml:id="bouchers" sex="UNKNOWN">
+            <persName>Bouchers</persName>
+          </person>
+          <person xml:id="filles_et_femmes_de_saint_germain" sex="UNKNOWN">
+            <persName>Filles et femmes de Saint-Germain</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie en deux actes mêlée de vaudevilles</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#patagon">Patagon</role>
+          <roleDesc>patron de la galiote</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#nicole">Nicole</role>
+          <roleDesc>sa femme</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#eugenie">Eugénie</role>
+          <roleDesc>leur fille</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#lucas">Lucas</role>
+          <roleDesc>batelier</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#l_emporte">L'Emporté</role>
+          <roleDesc>boucher de Poissy</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#pastrop">Pastrop</role>
+          <roleDesc>garçon boucher</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#le_bailli">Le bailli</role>
+        </castItem>
+        <castItem>
+          <role ana="#une_bohemienne">Une bohémienne</role>
+          <roleDesc>un Arlequin</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#bateliers">Bateliers</role>
+        </castItem>
+        <castItem>
+          <role ana="#bouchers">Bouchers</role>
+        </castItem>
+        <castItem>
+          <role ana="#filles_et_femmes_de_saint_germain">Filles et femmes de Saint-Germain</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène est au port du Pecq.</stage>
+        <stage type="musical_indication">Ouverture:<emph>Les Folies d'Espagne</emph>
+        </stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="act">
+        <head>ACTE 1</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="location">Le théâtre représente le port du Pecq. On entrevoit dans le lointain la machine de Marly. La galiote occupe une des principales parties du fond, et est entourée de petits batelets dont les banderoles tombent; d'un coté l'on voit une mauvaise tente de toile comme les bateliers, de l'autre une façon de paillote enfumée en forme d'antre de Sybille.</stage>
+          <stage type="characters">[patagon<stage>seul</stage>]</stage>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#patagon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_confession">la Confession</title>
+              </desc>
+            </head>
+            <sp who="#patagon">
+              <speaker>Patagon</speaker>
+              <l met="5">Je ne puis partir</l>
+              <l met="4">Que devenir?</l>
+              <l met="4">Quelle disgrâce!</l>
+              <l met="5">Dans le port du Pecq</l>
+              <l met="8">Hélas, la rivière est à sec.</l>
+              <p>Cependant nous pourrions avoir de l'eau; une bohémienne nous en promet. Mais, morbleu, s'il faut lui donner ma fille je n'y consentirai jamais.</p>
+            </sp>
+          </spGrp>
+          <spGrp who="#patagon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#noel_suisse">Noël suisse</title>
+              </desc>
+            </head>
+            <sp who="#patagon">
+              <speaker>Patagon</speaker>
+              <l met="5">Quoi, mon Eugénie</l>
+              <l met="5">Me serait ravie!</l>
+              <l met="5">Dussè-je en mourir</l>
+              <l met="6">Je ne puis le souffrir:</l>
+              <l met="5">Pour venger un frère</l>
+              <l met="5">Perdre son enfant:</l>
+              <l met="5">Il faudrait qu'un père</l>
+              <l met="5">Fût extravagant.</l>
+              <p>Cela n'est pourtant pas sans exemple.</p>
+            </sp>
+          </spGrp>
+          <spGrp who="#patagon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#dans_paris">Dans Paris</title>
+              </desc>
+            </head>
+            <sp who="#patagon">
+              <speaker>Patagon</speaker>
+              <l met="9">On m'a dit qu'un beau jour en Aulide,</l>
+              <l met="9">On m'a dit qu'on vit le même cas.</l>
+              <l met="9">Agamemnon, d'un cœur homicide,</l>
+              <l met="10">Livra sa fille au meurtrier Calchas.</l>
+              <l met="5">Au fond de mon âme,</l>
+              <l met="5">Ma foi, je le blâme</l>
+              <l met="11">D'avoir pu former ce projet inhumain;</l>
+              <l met="5">D'un trait si coupable</l>
+              <l met="5">S'il fut bien capable,</l>
+              <l met="11">C'est que d'être père il n'était pas certain.</l>
+              <p>Oh, oui ma foi, si peu que la nature parle, un père est toujours père... J'ai pourtant promis de faire la même sottise! Mais après tout, on a son dit et son dédit. Pourvu que mon commissionnaire ne se soit pas amusé à boire en chemin et qu'il arrive à temps: il n'y aura rien de gâté.</p>
+            </sp>
+          </spGrp>
+          <spGrp who="#patagon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#brillant_soleil">Brillant soleil</title>
+              </desc>
+            </head>
+            <sp who="#patagon">
+              <speaker>Patagon</speaker>
+              <l met="8">Brillant soleil! brillant soleil!</l>
+              <l met="7">Toi, qui n'as point de pareil.</l>
+              <l met="7">Dans le séjour de Marly,</l>
+              <l met="7">Retiens ma chère famille.</l>
+              <l met="7">Si ma femme vient ici</l>
+              <l met="7">Ah, c'en est fait de ma fille!</l>
+              <l met="8">Brillant soleil! brillant soleil!</l>
+              <l met="7">Tu n'auras point de pareil.</l>
+              <p>Il faut convenir que j'ai eu le nez fin quand j'ai envoyé le compère Lucas au devant d'elles! Il va leur débiter adroitement que mon gendre prétendu, Monsieur L'Emporté, n'est qu'un petit infidèle, qu'il en conte à toutes les filles de Saint-Germain. À ce beau récit la mère et la fille vont prendre la chèvre, elles croiront le mariage à vau l'eau, elles resteront à la machine et moi je me moquerai ici de la bohémienne et des bateliers.</p>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">patagon, la bohémienne, bateliers</stage>
+          <stage>On voit entrer les bateliers sortant de l'antre. Les premiers portent avec étalage un escabeau, une table de bois et les deux derniers soutiennent la bohémienne par-dessous les bras.</stage>
+          <sp who="#choeurdesbateliers">
+            <speaker>Chœur des bateliers</speaker>
+          </sp>
+          <spGrp who="#choeurdesbateliers">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#cet_oracle_est_plus_sur_que_celui_de_calchas_">Cet oracle est plus sûr [que celui de Calchas]</title>
+              </desc>
+            </head>
+            <sp who="#choeurdesbateliers">
+              <speaker>Chœur des bateliers</speaker>
+              <l met="8">C'est trop faire de résistance,</l>
+              <l met="8">Lucine, rompez le silence,</l>
+              <l met="12">Parlez, contentez-nous, surtout ne mentez pas.</l>
+            </sp>
+          </spGrp>
+          <sp who="#labohemienne">
+            <speaker>La bohémienne</speaker>
+            <l met="8">Sachez qu'en tout il faut me croire,</l>
+            <l met="8">Je vais consulter mon grimoire.</l>
+            <l met="12">Mon oracle est plus sûr que celui de Calchas.</l>
+          </sp>
+          <sp who="#lesbateliers">
+            <speaker>Les bateliers</speaker>
+            <l met="12">Son oracle est [plus sûr que celui de Calchas.]</l>
+          </sp>
+          <sp who="#labohemienne">
+            <speaker>La bohémienne</speaker>
+            <p>Écoutez, mes enfants, pour vous prouver la vertu de mes secrets</p>
+            <p>je m'en vais d'abord vous prédire tout ce qui s'est passé.<stage>Ici deux ou trois mots des nouvelles du jour chaque fois. Histoire des globes<note>Le manuscrit porte légèrement biffé:« Il y a eu cette année dans la capitale grand débit de nouveautés dramatiques. Les fabricants n'ont pas tous été heureux, mais enfin, quoique le zèle pare la marchandise, n'est pas marchand qui toujours gagne. Une révolution frappante s'est opérée sur les planches du palais de Terpsichore. On prétend qu'elle a proposé un cartel à Melpomène et que la première a été blessée; d'autres assurent qu'elle pourra s'en relever, vu que ce n'était qu'un faux pas ».PB</note>...</stage>
+            </p>
+            <p>On parle toujours ici des troubles de l'Amérique mais on y fait peu d'attention. Ce serait folie de s'occuper des sottises des autres quand on peut jouir de son propre bonheur.</p>
+          </sp>
+          <spGrp who="#labohemienne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#bonne_aventure">La bonne aventure</title>
+              </desc>
+            </head>
+            <spGrp rend="braced">
+              <sp who="#labohemienne">
+                <speaker>La bohémienne</speaker>
+                <l met="7">Les peuples de vos cantons</l>
+                <l met="5">Sont dans l'allégresse.</l>
+                <l met="7">Ils ont des maîtres si bons</l>
+                <l met="5">Que c'est une ivresse.</l>
+                <l met="7">Chaque jour nouveaux bienfaits</l>
+                <l met="7">Font répéter aux sujets</l>
+                <l met="7">Bonheur et tendresse, ô gué</l>
+                <l met="5">Bonheur et tendresse.</l>
+              </sp>
+            </spGrp>
+          </spGrp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Chaque jour [nouveaux bienfaits</l>
+            <l met="7">Font répéter aux sujets</l>
+            <l met="7">Bonheur et tendresse, ô gué</l>
+            <l met="5">Bonheur et tendresse.]</l>
+          </sp>
+          <sp who="#unbatelier">
+            <speaker>Un batelier</speaker>
+            <p>Ah morbleu, vous avez raison, quand vous liriez dans nos cœurs vous ne seriez pas mieux instruite... À présent, dites-nous un peu quelque chose au sujet de l'avenir et de notre voyage.</p>
+          </sp>
+          <sp who="#labohemienne">
+            <speaker>La bohémienne</speaker>
+            <p>Avec plaisir mes enfants,  ne me troublez pas. Je vas vous tirer tout ça au clair.</p>
+          </sp>
+          <stage>Elle prend ses cartes dans sa gibecière et les tire sur la table. Les bateliers observent en silence.</stage>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <stage>à part</stage>
+          </sp>
+          <spGrp who="#patagon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#cet_oracle_est_plus_sur_que_celui_de_calchas">Cet oracle [est plus sûr que celui de Calchas</title>
+              </desc>
+            </head>
+            <sp who="#patagon">
+              <speaker>Patagon</speaker>
+              <l met="8">Elle cède à leur violence,</l>
+              <l met="8">Morbleu! Je crains la confidence!</l>
+            </sp>
+          </spGrp>
+          <sp who="#labohemienne">
+            <speaker>La bohémienne</speaker>
+            <l met="12">Tremblez! Le charme est fait... Remarquez bien cet as.</l>
+          </sp>
+          <sp who="#bateliers">
+            <speaker>Bateliers</speaker>
+            <l met="8">Quel mauvais jeu! C'est tout du pique.</l>
+          </sp>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <p>Mais, mais... obéis!</p>
+          </sp>
+          <sp who="#labohemienne">
+            <speaker>La bohémienne</speaker>
+            <l met="8">Surtout, croyez-moi sans réplique:</l>
+            <l met="12">Mon oracle est plus sûr que celui de Calchas.</l>
+          </sp>
+          <sp who="#batelier">
+            <speaker>Batelier</speaker>
+            <l met="12">Son oracle est [plus sûr que celui de Calchas.]</l>
+          </sp>
+          <sp who="#labohemienne">
+            <speaker>La bohémienne</speaker>
+            <p>Silence! Écoutez bien. Votre galiote est engravée parce que la rivière est basse. Par mon pouvoir, je vous promets de vous remettre à flot mais je veux une récompense.</p>
+          </sp>
+          <sp who="#choeurdesbateliers">
+            <speaker>Chœur des bateliers</speaker>
+          </sp>
+          <spGrp who="#choeurdesbateliers">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mere_michel">Malgré la bataille [qu'on livre demain]</title>
+              </desc>
+            </head>
+            <sp who="#choeurdesbateliers">
+              <speaker>Chœur des bateliers</speaker>
+              <l met="5">Quelle récompense</l>
+              <l met="5">Peut-on vous offrir?</l>
+              <l met="5">Rompez le silence,</l>
+              <l met="5">L'on va vous servir.</l>
+            </sp>
+          </spGrp>
+          <sp who="#labohemienne">
+            <speaker>La bohémienne</speaker>
+            <l met="5">Bon! Je suis propice</l>
+            <l met="5">Suivant le comptant:</l>
+            <l met="5">On ne gagne un Suisse<note>Le manuscrit porte suscrit:« Car on n'a le suisse ».PB</note>
+            </l>
+            <l met="5">Qu'avec de l'argent.</l>
+            <p>Mes enfants, je ne suis pas cruelle, moi. Je ne veux le sang de personne, mais je suis vieille et j'ai besoin d'une servante, ainsi promettez-moi de me donner la fille que je vous demanderai et je vous ferai aller grand train.</p>
+          </sp>
+          <sp who="#lesbateliers">
+            <speaker>Les bateliers</speaker>
+            <p>Nommez-la, nous l'accordons.</p>
+          </sp>
+          <sp who="#labohemienne">
+            <speaker>La bohémienne</speaker>
+            <p>Je suis contente de votre soumission. Allez faire votre paquet. Je m'en vas tout dire à votre patron, et devant qu'il soit minuit vous chanterez:</p>
+            <l met="6">Et vogue la galère</l>
+            <l met="8">[Tant qu'elle, tant qu'elle, tant qu'elle</l>
+            <l met="6">Et vogue la galère,</l>
+            <l met="7">Tant qu'elle pourra voguer.]</l>
+          </sp>
+          <sp who="#lesbateliers">
+            <speaker>Les bateliers</speaker>
+            <stage>s'en vont en répétant</stage>
+            <l met="6">Et vogue la galère</l>
+            <l met="8">Tant qu'elle,[tant qu'elle, tant qu'elle</l>
+            <l met="6">Et vogue la galère,</l>
+            <l met="7">Tant qu'elle pourra voguer.]</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">patagon, la bohémienne</stage>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <p>Çà Lucine, nous sommes seuls, parlons raison.</p>
+          </sp>
+          <sp who="#lucine">
+            <speaker>Lucine</speaker>
+          </sp>
+          <spGrp who="#lucine">
+            <head type="melody" subtype="restored_melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#jean_gille">Jean Gille</title>
+              </desc>
+            </head>
+            <sp who="#lucine">
+              <speaker>Lucine</speaker>
+              <l met="7">Ce discours est inutile</l>
+              <l met="8">Jean Gilles, Gilles joli Jean.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#lucine">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ah_maman_que_je_l_echappe_belle_">Ah, maman, [que je l'échappe belle]</title>
+              </desc>
+            </head>
+            <sp who="#lucine">
+              <speaker>Lucine</speaker>
+              <l met="9">Le sort est tombé sur ta famille,</l>
+              <l met="5">Et tu m'as tantôt</l>
+              <l met="4">Comme un vrai sot</l>
+              <l met="4">Promis ta fille!</l>
+              <l met="9">Le sort est tombé sur ta famille</l>
+              <l met="5">Tu n'es plus à temps</l>
+              <l met="8">D'étaler les beaux sentiments.</l>
+            </sp>
+          </spGrp>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <l met="9">Quoi! tu veux qu'une fille charmante</l>
+            <l met="5">S'éloigne de moi</l>
+            <l met="4">Pour être à toi</l>
+            <l met="4">Comme servante!</l>
+          </sp>
+          <stage>À part.</stage>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <l met="9">Pour braver ce sort qui m'épouvante,</l>
+            <l met="5">Usons sans façon</l>
+            <l met="8">De quelque détour de gascon.</l>
+          </sp>
+          <stage type="musical_indication">Duo</stage>
+          <cols n="2"/>
+          <sp who="#lucine">
+            <speaker>Lucine</speaker>
+            <l met="5">Le sort est tombé ...</l>
+          </sp>
+          <cb/>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <l met="9">Ah! Quel deuil pour ma triste famille!</l>
+            <l met="5">Eh quoi donc tantôt</l>
+            <l met="4">J'ai comme un sot</l>
+            <l met="4">Promis ma fille!</l>
+            <l met="9">Ah! Quel deuil pour ma triste famille!</l>
+            <l met="5">Mais je suis à temps</l>
+            <l met="8">De rappeler mes sentiments.</l>
+            <p>Comment Jarnombille! Voudrais-tu me manquer de parole? Tu m'as juré ton gros juron...</p>
+          </sp>
+          <cols n="1"/>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+          </sp>
+          <spGrp who="#patagon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#sur_le_port_avec_manon_un_jour_">Sur le port avec Manon, [un jour]</title>
+              </desc>
+            </head>
+            <sp who="#patagon">
+              <speaker>Patagon</speaker>
+              <l met="8">Je connais mon engagement</l>
+              <l met="8">Je n'y veux pas manquer vraiment.</l>
+            </sp>
+          </spGrp>
+          <sp who="#labohemienne">
+            <speaker>La bohémienne</speaker>
+            <l met="8">Yaisément cela se peut croire.</l>
+          </sp>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <l met="8">Si ma fille paraît au Pec,</l>
+            <l met="8">Je consens qu'elle te soit<emph>hœc</emph>.</l>
+          </sp>
+          <sp who="#labohemienne">
+            <speaker>La bohémienne</speaker>
+            <p>Eh<emph>sangoue de mi</emph>!</p>
+            <l met="7">Voilà bien le tour d'un Grec</l>
+            <l met="6">Voyez qu'il est rusé!</l>
+            <l met="6">Mais ce tour trop usé</l>
+            <l met="8">Ne saurait plus m'en faire accroire.</l>
+            <p>Tu as beau faire pour sauver ton Eugénie, j'ai lu dans les cartes qu'elle va venir à jubé<note type="definition">Venir à jubé: se soumettre, venir à la raison par contrainte malgré qu'on en ait (Acad.1694)</note>.</p>
+          </sp>
+          <stage>On entend du bruit derrière.</stage>
+          <spGrp who="#labohemienne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#toujours_seule_disait_nina">Toujours seule disait, Nina</title>
+              </desc>
+            </head>
+            <sp who="#labohemienne">
+              <speaker>La bohémienne</speaker>
+              <l met="8">Ta Nicole vient dans ces lieux</l>
+              <l met="8">Que mon cœur est joyeux!</l>
+            </sp>
+          </spGrp>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <l met="8">Dieux!</l>
+          </sp>
+          <sp who="#choeurdebateliers">
+            <speaker>Chœur de bateliers</speaker>
+            <stage>traversant le théâtre</stage>
+            <l met="8">C'est la fille à notre patron,</l>
+            <l met="8">Qu'elle a bonne façon!</l>
+          </sp>
+          <sp who="#labohemienne">
+            <speaker>La bohémienne</speaker>
+            <l met="8">Bon.</l>
+            <l met="8">Regarde de ce côté-ci</l>
+            <l met="8">La vois-tu venir de Marly?</l>
+          </sp>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <l met="8">Évitons-la</l>
+          </sp>
+          <sp who="#labohemienne">
+            <speaker>La bohémienne</speaker>
+            <l met="8">La la la la, ...</l>
+          </sp>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <l met="8">Ah! La voilà, la voilà, là</l>
+          </sp>
+          <sp who="#labohemienne">
+            <speaker>La bohémienne</speaker>
+            <p>Là!</p>
+          </sp>
+          <stage>Patagon veut s'en aller, la bohémienne l'arrête.</stage>
+          <spGrp who="#labohemienne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#quoi_vous_partez_sans_que_rien_vous_arrete_">Quoi! vous partez [sans que rien vous arrête]</title>
+              </desc>
+            </head>
+            <sp who="#labohemienne">
+              <speaker>La bohémienne</speaker>
+              <l met="10">Quoi! vous partez sans que rien vous arrête?</l>
+            </sp>
+          </spGrp>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <l met="10">Oui, leur présence augmente mes douleurs.</l>
+          </sp>
+          <sp who="#labohemienne">
+            <speaker>La bohémienne</speaker>
+            <l met="10">Mais restez donc, montrez-vous plus honnête.</l>
+          </sp>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <l met="10">Je ne veux pas voir couler tant de pleurs.</l>
+          </sp>
+          <stage>Il s'en va, la bohémienne rentre dans sa niche.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">nicole et augénie<stage>arrivent dans une charrette de Saint-Germain,</stage>une foule de filles et de garçons<stage>avec des bouquets et des rubans, entoure la charrette</stage>
+          </stage>
+          <sp who="#unefille">
+            <speaker>Une fille</speaker>
+          </sp>
+          <spGrp who="#unefille">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#bel_oiseau_maman">Ah, le bel oiseau, [maman]</title>
+              </desc>
+            </head>
+            <spGrp rend="braced">
+              <sp who="#unefille">
+                <speaker>Une fille</speaker>
+                <l met="7">Chantons, dansons en l'honneur</l>
+                <l met="7">De cette fille si chère,</l>
+                <l met="7">Elle fera le bonheur</l>
+                <l met="7">De son père et de sa mère.</l>
+                <l met="7">Quel plaisir pour L'Emporté</l>
+                <l met="7">C'est l'époux qu'elle préfère;</l>
+                <l met="7">Ah! qu'elle a de majesté!</l>
+                <l met="7">Que de grâce et de beauté!</l>
+              </sp>
+            </spGrp>
+          </spGrp>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <stage>dans la charrette</stage>
+            <l met="7">Que cet hommage est flatteur,</l>
+            <l met="7">Que j'nous plaisons à l'entendre!</l>
+            <l met="7">Ah! vous saisissez  le cœur</l>
+            <l met="7">De la mère la plus tendre!</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Quel plaisir [pour L'Emporté</l>
+            <l met="7">C'est l'époux qu'elle préfère;</l>
+            <l met="7">Ah! qu'elle a de majesté!</l>
+            <l met="7">Que de grâce et de beauté!]</l>
+          </sp>
+          <sp who="#unhommeduchoeur">
+            <speaker>Un homme du chœur</speaker>
+            <stage>leur présentant la main pour descendre de la charrette</stage>
+          </sp>
+          <spGrp who="#unhommeduchoeur">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#nanon_dormait">Nanon dormait</title>
+              </desc>
+            </head>
+            <sp who="#unhommeduchoeur">
+              <speaker>Un homme du chœur</speaker>
+              <l met="4">Donnez la main,</l>
+              <l met="6">Venez, ne vous déplaise</l>
+              <l met="4">Hors du chemin</l>
+              <l met="6">Vous serez plus à l'aise.</l>
+              <l met="6">Nous sommes bons garçons,</l>
+              <l met="4">Allons, allons</l>
+              <l met="8">Avec nous soyez sans façon.</l>
+            </sp>
+          </spGrp>
+          <stage>Elles descendent.</stage>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <p>Mes enfants, je vous remercions de vot' politesse, et je comptons si bien dessus vot' honnêteté que sans plus de cérémonie je vous remettons not' filles entre les mains. Pour nous, j'allons de ce pas-ci trouver notre homme et savoir pourquoi qu'il ne s'est pas rencontré za not' débarquement.</p>
+          </sp>
+          <stage>À Eugénie.</stage>
+          <spGrp who="#nicole">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#paris_est_au_roi">Paris est au Roi</title>
+              </desc>
+            </head>
+            <sp who="#nicole">
+              <speaker>Nicole</speaker>
+              <l met="5">Demeure en ces lieux</l>
+              <l met="5">Et reçois leurs vœux,</l>
+              <l met="6">Danse et chante avec eux,</l>
+              <l met="6">Tu ne peux faire mieux.</l>
+              <l met="6">J'allons voir leur patron</l>
+              <l met="6">Ton papa Patagon,</l>
+              <l met="6">Car il nous faut savoir</l>
+              <l met="5">S'il veut nous revoir.</l>
+            </sp>
+            <sp who="#nicole">
+              <speaker>Nicole</speaker>
+              <l met="5">Restez en ces lieux,</l>
+              <l met="5">Recevez nos vœux,</l>
+              <l met="6">Nous sommes tous joyeux,</l>
+              <l met="6">Où seriez-vous mieux?</l>
+            </sp>
+          </spGrp>
+          <stage>Elle sort.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">eugénie, le chœur, un batelier</stage>
+          <stage>Le chœur reprend:</stage>
+          <stage>On danse à l'entour d'elle sur l'air du tambourin de<emph>Pyrame et Thisbé</emph>.</stage>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <stage>après la danse, aux bateliers</stage>
+          </sp>
+          <spGrp who="#eugenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#l_amour_m_a_fait_la_peinture">L'amour m'a fait la peinture</title>
+              </desc>
+            </head>
+            <sp who="#eugenie">
+              <speaker>Eugénie</speaker>
+              <l met="7">Ces danses dont on m'honore</l>
+              <l met="7">Pour mon cœur ont peu d'appas;</l>
+              <l met="7">Pour voir l'amant que j'adore</l>
+              <l met="7">Je viens ici dès l'aurore</l>
+              <l met="7">Et je ne l'y trouve pas.</l>
+            </sp>
+          </spGrp>
+          <sp who="#unbatelier">
+            <speaker>Un batelier</speaker>
+            <p>Allons Mademoiselle, dansez avec nous.</p>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+          </sp>
+          <spGrp who="#eugenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_ne_saurais_danser">Je ne saurais danser</title>
+              </desc>
+            </head>
+            <sp who="#eugenie">
+              <speaker>Eugénie</speaker>
+              <l met="6">J'n'ai pas l'cœur à ça</l>
+              <l met="7">J'ai d'autre chose à la tête,</l>
+              <l met="6">J'n'ai pas l'cœur à ça</l>
+              <l met="7">C'est bon pour vous ces jeux-là.</l>
+              <l met="4">Dansez vous autres</l>
+              <l met="7">Et moi je m'en vais chanter</l>
+              <l met="8">Oui, ça fera plus naturel.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#eugenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#folia">Charmantes fleurs</title>
+              </desc>
+            </head>
+            <sp who="#eugenie">
+              <speaker>Eugénie</speaker>
+              <l met="10">Ah! que l'amour cause dans un cœur tendre,</l>
+              <l met="10">Pour un amant, de trouble et de combats!</l>
+              <l met="10">Au rendez-vous peut-il se faire attendre</l>
+              <l met="10">Quand il devrait faire les premiers pas?<stage type="bis">bis</stage>
+              </l>
+            </sp>
+            <sp>
+              <l met="10">Il m'a tant dit que de la fleur nouvelle</l>
+              <l met="10">J'ai la fraîcheur l'éclat et l'agrément!</l>
+              <l met="10">Du papillon serait-il le modèle</l>
+              <l met="10">Et comme lui devient-il inconstant?<stage type="bis">bis</stage>
+              </l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">les susdits, nicole<stage>renvoyant tout le monde</stage>
+          </stage>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <p>Décampez, vous autres.</p>
+          </sp>
+          <stage>Ils s'en vont tous.</stage>
+          <spGrp who="#nicole">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#derouillons_ma_commere">Dérouillons, ma commère</title>
+              </desc>
+            </head>
+            <sp who="#nicole">
+              <speaker>Nicole</speaker>
+              <l met="7">Ah ma fille, quel outrage!</l>
+              <l met="7">J'apprends que ton cher amant</l>
+              <l met="7">Te refuse en mariage,</l>
+              <l met="7">Ah ma fille, quel outrage!</l>
+            </sp>
+          </spGrp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <l met="8">Qu'ai-je entendu? quel changement!</l>
+          </sp>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <l met="9">Mon enfant pour punir ce volage</l>
+            <l met="9">De ces lieux, faut partir à l'instant.</l>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <p>Ah maman, je me doutais presque de l'aventure. Quand j'ai vu que je ne le voyais pas, j'aurais parié qu'il y avait quelque chose là-dessous... mais à propos, avez-vous vu mon père?</p>
+          </sp>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <p>Ton père! Ah vraiment est-ce qu'on sait tant seulement où il se fourre? Y gnia pus moyen de le voir ni de l'y parler. Depis qu'il a été nommé  patron de ste galiote, il se crait trop grand seigneur pour nous, mais je venons de rencontrer le compère Lucas qui nous a découvert toute la mèche.</p>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <p>Ah! que je suis malheureuse!</p>
+          </sp>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <p>Eh mais, je crais que tu pleures. Fi donc! As-tu peur d'en manquer? Allons, allons, d'la fermeté et du courage, on ne gagne rien à pleurnicher et rester là les bras croisés. Faut se donner du mouvement.</p>
+          </sp>
+          <spGrp who="#nicole">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#catherine">Ton humeur est, Catherine</title>
+              </desc>
+            </head>
+            <sp who="#nicole">
+              <speaker>Nicole</speaker>
+              <l met="7">Qu'il craigne notre vengeance</l>
+              <l met="7">Je n'entendons pus raison.</l>
+              <l met="7">J'aurons bientôt l'assistance</l>
+              <l met="7">Des commères du canton.</l>
+              <l met="7">Nous couperons court aux trames</l>
+              <l met="7">De ses outrageants refus;</l>
+              <l met="7">Quoique je soyons des femmes</l>
+              <l met="7">Il n'aura pas le dessus.</l>
+            </sp>
+          </spGrp>
+          <stage>Elle s'en va.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">eugénie<stage>seule</stage>
+          </stage>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <stage>i</stage>
+            <p>Eh bien, ne voilà t-il pas que ma mère me quitte encor, sans me dire où elle va et sans savoir pourquoi! Elle veut que je parte d'ici pour oublier un ingrat et elle me laisse seule pour me consoler!... Allons, puisque cela est ainsi, pleurons, gémissons, et rappelons-nous les tendres promesses de mon cher L'Emporté. Peut-être qu'à force de me plaindre cela le fera revenir.</p>
+          </sp>
+          <spGrp who="#eugenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">Nous étions dans cet âge [encore]tiré du <title ref="#sorcier">Sorcier</title> ()</desc>
+            </head>
+            <sp who="#eugenie">
+              <speaker>Eugénie</speaker>
+              <l met="8">Quand l'amour veut mettre à la gêne,</l>
+              <l met="5">Il peut bien sans peine</l>
+              <l met="5">Surprendre nos cœurs;</l>
+              <l met="8">Il sait si bien parer sa chaîne!</l>
+              <l met="8">On n'y voit, hélas! que des fleurs.</l>
+            </sp>
+            <sp>
+              <l met="8">Mais ces fleurs dont il la compose,</l>
+              <l met="5">Que son art dispose,</l>
+              <l met="5">Passent tour à tour;</l>
+              <l met="8">Un seul matin fane la rose</l>
+              <l met="11">Et le nœud, et le nœud reste plus d'un jour.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#eugenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#malbrough">Monsieur de Malbrough</title>
+              </desc>
+            </head>
+            <sp who="#eugenie">
+              <speaker>Eugénie</speaker>
+              <l met="6">Faut encor rester fille</l>
+              <l met="3">Mirandon,</l>
+              <l met="6">Faut encor rester fille</l>
+              <l met="6">N'sait si c'est pour longtemps,</l>
+              <l met="6">N'sait si c'est [pour longtemps.]</l>
+              <l met="7">V'la comment sont les amants</l>
+              <l met="6">Près de fille gentille</l>
+              <l met="3">Mirandon,</l>
+              <l met="6">Près de fille gentille</l>
+              <l met="6">Ils sont tous inconstants.</l>
+            </sp>
+            <sp>
+              <l met="6">Ils disent q'çà tiendra,</l>
+              <l met="6">Viens écoutez tout ça,</l>
+              <l met="6">Ça chante et ça babille</l>
+              <l met="3">Mirandon,</l>
+              <l met="6">Ça chante et ça babille</l>
+              <l met="6">Puis ça vous plante-là.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">eugénie, l'emporté</stage>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <p>Mais je le vois paraître, ne faisons semblant de rien.</p>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <stage>du haut du théâtre</stage>
+            <p>Eh, cadédis<note>Le manuscrit porte« ô ciel »biffé.PB</note>, aurais-je la berlue?... Comment, vous au Pecq,</p>
+            <p>ma chère prétendue?</p>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <stage>avec dépit</stage>
+            <p>Laissez-moi, Monsieur.</p>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>Que je suis charmé de vous voir!... permettez...</p>
+          </sp>
+          <stage>Il veut l'embrasser.</stage>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <p>Finissez, Monsieur. Ces manières-là ne me conviennent pas.</p>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>Qu'est ce que cela veut dire? Ne venez vous pas ici pour vous marier à l'encontre dé<note>L'Emporté parle avec un accent gascon caractérisé par l'accentuation des e et par le remplacement de la consonne b par le v et inversement. Le copiste ne signale pas systématique ces marques d'accent gascon.PB</note>moi?</p>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <p>Moi, Monsieur! Quelque soit le dessein qui m'amène ici, ce n'est pas un perfide comme vous que je viens y chercher.</p>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>Un perfide? Est-ce à moi que vous parlez?</p>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <p>Et à qui donc<note>Le manuscrit porte biffé:« puisqu'il n'y a que vous ici ».PB</note>?</p>
+            <p>Allez Monsieur, retournez à votre nouvelle conquête, je ne m'opposerai point à vos engagements.</p>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>À mes engagements... Eh donc! Je n'en ai jamais eu qu'abec bous.</p>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+          </sp>
+          <spGrp who="#eugenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air d'</desc>
+              <desc type="title">
+                <title ref="#une_contredanse">une contredanse</title>
+              </desc>
+            </head>
+            <sp who="#eugenie">
+              <speaker>Eugénie</speaker>
+              <l met="7">Non, vous n'm'abuserez pas,</l>
+              <l met="3">Je m'en vas.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <l met="6">Eh, mais vous plaisantez,</l>
+            <l met="3">Arrêtez;</l>
+            <l met="6">D'où vient que vous sortez?</l>
+            <l met="3">Écoutez:</l>
+            <l met="5">D'une perfidie</l>
+            <l met="5">Qui pourrait oser</l>
+            <l met="3">M'accuser?</l>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <l met="5">Vous m'avez trahie</l>
+            <l met="5">Puis-je l'excuser?</l>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <l met="9">Ah, plutôt mourir en ces moments<note>Le manuscrit porte biffé:« Qui, moi? Briser des nœuds si charmant ». Il s'agit d'une citation exacte de l'opéra.PB</note>!</l>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <l met="9">Non, je n'écoute plus vos serments.</l>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <l met="5">Ma chère Eugénie</l>
+            <l met="5">Croyez le serment</l>
+            <l met="3">D'un amant.</l>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <l met="5">Vous m'avez trahie</l>
+            <l met="5">Rompons à l'instant.</l>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+          </sp>
+          <spGrp who="#lemporte">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#sous_le_nom_de_l_amitie">Sous le nom de l'amitié</title>
+              </desc>
+            </head>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <l met="7">Rendez-bous à mon ardeur</l>
+              <l met="6">L'amour qui me débore,</l>
+              <l met="6">L'amour [qui me débore]</l>
+              <l met="7">Mérite moins dé rigueur:</l>
+              <l met="6">Hélas! Jé bous adore!</l>
+              <l met="6">N'affligez plus mon cœur,</l>
+              <l met="6">Rendez-bous [à mon ardeur!]</l>
+            </sp>
+          </spGrp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <l met="7">J'en ai trop souffert de vous,</l>
+            <l met="6">Vous me trompez encore,</l>
+            <l met="6">Vous [me trompez encore.]</l>
+            <l met="7">Vous méritez mon courroux:</l>
+            <l met="6">Ingrat, je vous abhorre,</l>
+            <l met="6">Je ne veux plus d'époux;</l>
+            <l met="7">J'en ai trop [souffert de vous.]</l>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <p>Ainsi, Monsieur L'Emporté, tout est dit. Allez de votre côté et moi du mien.</p>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+          </sp>
+          <spGrp who="#lemporte">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#non_non_colette_n_est_point_trompeuse_">Non, non, Colette [n'est point trompeuse]</title>
+              </desc>
+            </head>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <l met="9">Non, non, ma flamme n'est point légère</l>
+              <l met="7">Ne doutez plus de mon cœur.</l>
+            </sp>
+          </spGrp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <l met="7">Monsieur, vous avez beau faire,</l>
+            <l met="7">Vous n'êtes qu'un imposteur.</l>
+          </sp>
+          <spGrp>
+            <caption>Ensemble</caption>
+            <cols n="2"/>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <l met="9">Non, non [ma flamme n'est point légère</l>
+              <l met="7">Ne doutez plus de mon cœur.]</l>
+            </sp>
+            <cb/>
+          </spGrp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <l met="9">Non, non, votre amour n'est point sincère.</l>
+            <l met="7">Je n'en crois plus votre cœur.</l>
+          </sp>
+          <cols n="1"/>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+          </sp>
+          <spGrp who="#eugenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#changez_moi_cette_tete">Changez-moi cette tête</title>
+              </desc>
+            </head>
+            <sp who="#eugenie">
+              <speaker>Eugénie</speaker>
+              <l met="6">Ah vous avez beau faire!</l>
+              <l met="5">Faire faire faire ...</l>
+              <l met="6">Votre flamme est légère.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>Allez, Madémoiselle tout cé jargon-là n'est qu'une défaite. Si vous m'aimiez autant qué jé bous aime, bous né m'iriez pas chercher midi à quatorze heures comme vous faites. Mais jé bois clair. C'est bous qui êtes une perfide, une ingrate, et bous prenez l'avance pour me fermer la bouche abec vos réproches. Qui? Moi?... L'Emporté té trahir! Hélas! l'eusses-tu-crû si tu</p>
+            <p>m'avais aimé?</p>
+          </sp>
+          <spGrp who="#lemporte">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#triste_raison_j_abjure_ton_empire_">Triste raison, [j'abjure ton empire]<note>Le manuscrit porte suscrit et biffé à ce titre celui d'un autre air:« Avec les jeux dans le village », qui n'a pas le même moule métrique.PB</note>
+                </title>
+              </desc>
+            </head>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <l met="10">Se peut-il bien qué d'être amant parjure</l>
+              <l met="10">Mon Eugénie ose ici m'accuser?</l>
+              <l met="10">Ah, dans nos cœurs instruits par la nature</l>
+              <l met="10">Jamais l'amour a-t-il pu l'abuser?</l>
+            </sp>
+            <sp>
+              <l met="10">Lé changément, l'éclat et la rupture</l>
+              <l met="10">Pour les seigneurs ont des charmes puissants;</l>
+              <l met="10">Mais nous sied-il d'imiter leur allure</l>
+              <l met="10">Et dé bouloir aimer comme les grands?</l>
+            </sp>
+          </spGrp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <p>Comme il est séduisant! Il n'y a pas moyen de lui résister! Allons, je ne veux plus bouder avec toi, et je t'en crois sur ta parole... Ce sont de mauvaises langues qui avaient rapporté cela à ma mère; mais crainte de nouvelles brouilleries, il faut nous marier tout de suite<note>Le manuscrit porte biffé plusieurs couplets sur l'air« Nous nous marierons dimanche »:« Oublions cela; / Comme à l'Opéra / Ne pensons plus qu'à la danse. L'Emporté: C'est prendre ici / Le bon parti / Je pense. Eugénie: C'est ce qu'on fait . Lorsque l'on est / Bien aise... / Chantons un duo. L'Emporté: Le faut-il de nouveau? Eugénie: Qu'importe pourvu qu'il plaise. Ensemble: Heureux destin! / J'obtiens ta main / Si blanche! / Ton coeur et le mien / S'accorderont bien / Nous nous marierons dimanche. »PB</note>
+            </p>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>Eh bien, attendez-moi, ma chère Eugénie; pour rendre la cérémonie plus touchante, je vais rebenir avec tous mes garçons bouchers et vous apporter les présents de la  noce.</p>
+          </sp>
+          <stage>Il s'en va.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 9</head>
+          <stage type="characters">eugénie<stage>seule</stage>
+          </stage>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <stage>i</stage>
+            <p>Allez, je vous attends... On est pourtant bien simple de se brouiller pour un malentenduquo.</p>
+          </sp>
+          <spGrp who="#eugenie" rend="braced">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_fricassee">la fricassée</title>
+              </desc>
+            </head>
+            <sp who="#eugenie">
+              <speaker>Eugénie</speaker>
+              <l met="7">Rien n'est tel que d's'expliquer!</l>
+              <l met="8">On sent le cœur qui se soulage;</l>
+              <l met="7">Rien n'est [tel que d's'expliquer,]</l>
+              <l met="8">C'est sottise de se piquer.</l>
+            </sp>
+            <sp>
+              <l met="7">Si quelque fois deux amants</l>
+              <l met="7">Passent de mauvais moments,</l>
+              <l met="7">Dans d'autres ils sont contents,</l>
+              <l met="6">C'est comme après l'orage</l>
+              <l met="6">On revoit le beau temps.</l>
+              <l met="7">Rien n'est [tel que d's'expliquer<emph>etc</emph>]</l>
+            </sp>
+          </spGrp>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">les filles<stage>reviennent</stage>, eugénie</stage>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+          </sp>
+          <spGrp who="#choeur">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mariez_mariez_moi">Mariez-vous</title>
+              </desc>
+            </head>
+            <sp who="#choeur">
+              <speaker>Le choeur</speaker>
+              <l met="7">À présent, rassurez-vous</l>
+              <l met="7">Vous n'avez plus rien à craindre,</l>
+              <l met="7">On vous donne un tendre époux</l>
+              <l met="7">Et vous n'êtes pas à plaindre.</l>
+              <l met="10">Égayez, égayez, égayez-vous,</l>
+              <l met="7">L'Emporté n'a rien à craindre.</l>
+              <l met="10">Mariez[, mariez, mariez]-vous</l>
+              <l met="7">Il est seul digne de vous.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">les susdits, nicole<stage>accourant</stage>
+          </stage>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <p>Pour le coup, ma fille, tout est bâclé, la noce s'apprête ton père lui-même est allé commander le repas... comme j'allons nous rengorger! Trédame! Le fillot d'une duchesse qui va m'appeler sa ch'mere!</p>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <p>Ah maman! que nous sommes heureuse!</p>
+          </sp>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <p>Quiens, ma fille, vois-tu stétalage? V'la L'Emporté qui vient à nous tout plein de son amour.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">les susdits: nicole, eugénie, l'emporté, pastrop, les garçons bouchers<stage>entrant en cérémonie, défilant sur une marche du<emph>Huron</emph>et portant une peau de loup et de taureau avec la tête.</stage>
+          </stage>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <stage>à Eugénie</stage>
+          </sp>
+          <spGrp who="#lemporte">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#petits_grands">Or écoutez, petits et grands</title>
+              </desc>
+            </head>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <l met="8">Les chers auteurs dé vos beaux jours</l>
+              <l met="8">Approuvent enfin nos amours;</l>
+              <l met="8">Il n'est plus temps dé s'en défendre;</l>
+              <l met="8">Patagon mé choisit pour gendre</l>
+              <l met="8">Mais, j'oubliais lé principal,</l>
+              <l met="8">Un présent pour vous sans égal.</l>
+            </sp>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <p>Avance, Pastrop...<stage>À Eugénie.</stage>Voilà, mademoiselle, mon compagnon, mon camarade, mon premier garçon que je vous présente. C'est un autre moi-même, un bon enfant: fort comme un Turc, hardi comme un lion... en un mot, c'est celui que j'estime le plus... après vous, s'entend. Je veux qu'il soit l'ami de la famille... Voici, de plus, une bête fameuse, un taureau furieux que j'ai vaincu à la joute à Poissy. Je vous en apporte la dépouille comme un hommage de mon amour et une preuve de mon courage.<stage>Aux bouchers.</stage>Allons, mes amis.</p>
+            </sp>
+          </spGrp>
+          <stage>À Pastrop.</stage>
+          <sp who="#pastrop">
+            <speaker>Pastrop</speaker>
+          </sp>
+          <spGrp who="#pastrop">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air du</desc>
+              <desc type="title">
+                <title ref="#carillon_dunkerque">Carillon de Dunkerque</title>
+              </desc>
+            </head>
+            <sp who="#pastrop">
+              <speaker>Pastrop</speaker>
+              <l met="6">Chantez à perdre haleine</l>
+              <l met="6">L'hymen qui nous enchaîne;</l>
+              <l met="6">Chantez ce jour heureux</l>
+              <l met="6">Qui comble tous mes vœux.</l>
+            </sp>
+          </spGrp>
+          <sp who="#choeurdesbouchers">
+            <speaker>Chœur des bouchers</speaker>
+            <l met="6">Chantons [à perdre haleine</l>
+            <l met="6">L'hymen qui nous enchaîne;</l>
+            <l met="6">Chantez ce jour heureux</l>
+            <l met="6">Qui comble tous mes vœux.]</l>
+          </sp>
+          <sp who="#pastrop">
+            <speaker>Pastrop</speaker>
+            <stage>aux femmes</stage>
+          </sp>
+          <spGrp>
+            <head type="melody" subtype="continued_melody">suite de l'air précédent</head>
+            <sp who="#pastrop">
+              <speaker>Pastrop</speaker>
+              <l met="6">Allez, vos ennemis</l>
+              <l met="6">Par lui seront punis;</l>
+              <l met="6">Par la honte pressés</l>
+              <l met="6">Ils seront renversés.</l>
+              <l met="6">Vous prenez un luron</l>
+              <l met="6">Qui n'entend pas raison,</l>
+              <l met="6">À grands coups de gourdin</l>
+              <l met="6">Il range les mutins.</l>
+            </sp>
+          </spGrp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="6">Chantons [à perdre haleine</l>
+            <l met="6">L'hymen qui nous enchaîne;</l>
+            <l met="6">Chantons ce jour heureux</l>
+            <l met="6">Qui comble tous vos vœux.]</l>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>En voila assez, mes enfants.<stage>À Eugénie.</stage>Venez ma fiancée, Patagon nous attend pour la cérémonie, allons au devant de lui.</p>
+          </sp>
+          <stage>Ils vont pour sortir, Lucas les arrête.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">les susdits, lucas<stage>entre et les arrête</stage>
+          </stage>
+          <sp who="#lucas">
+            <speaker>Lucas</speaker>
+          </sp>
+          <spGrp who="#lucas">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_m_entendez_bien">Où allez vous, Monsieur l'abbé?</title>
+              </desc>
+            </head>
+            <sp who="#lucas">
+              <speaker>Lucas</speaker>
+              <l met="4">Où allez-vous,</l>
+              <l met="3">Pauvre époux?</l>
+              <l met="8">Vous croyez ces moments bien doux!</l>
+              <l met="8">Mais un destin funeste...</l>
+            </sp>
+          </spGrp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <l met="8">Eh bien!</l>
+          </sp>
+          <sp who="#lucas">
+            <speaker>Lucas</speaker>
+            <l met="6">Est le seul qui vous reste.</l>
+            <l met="5">Vous m'entendez bien?</l>
+          </sp>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <p>Explique-toi donc mieux, messager de malheur.</p>
+          </sp>
+          <sp who="#lucas">
+            <speaker>Lucas</speaker>
+          </sp>
+          <spGrp who="#lucas">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_pauvre_bourbonnaise">La pauvre bourbonnaise</title>
+              </desc>
+            </head>
+            <sp who="#lucas">
+              <speaker>Lucas</speaker>
+              <l met="6">Votre pauvre Eugénie</l>
+              <l met="6">Cette fille chérie</l>
+              <l met="6">Va vous être ravie</l>
+              <l met="6">Autant vaut son trépas.</l>
+            </sp>
+          </spGrp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="4">Ah, ah, ah, ah</l>
+          </sp>
+          <sp who="#lucas">
+            <speaker>Lucas</speaker>
+            <l met="6">On l'ôte de vos bras...</l>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <l met="6">Quoi donc! Mon Eugénie!...</l>
+          </sp>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <l met="7">Quoi donc! Ma fille chérie</l>
+            <l met="6">Tu me serais ravie</l>
+            <l met="6">On t'ôte de mes bras.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="4">Ah, ah, ah, ah.</l>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <l met="6">Non ça ne sera pas.</l>
+          </sp>
+          <sp who="#lucas">
+            <speaker>Lucas</speaker>
+            <p>Écoutez en quatre mots, voilà, de quoi il retourne: la bohémienne a promis de faire mettre la galiote à flot à condition qu'on lui donne une fille pour servante. Vot' mari et les bateliers se sont engagés par</p>
+            <p>serment à la lui accorder, et c'est tout fin drès mademoiselle Eugénie que la sorcière a demandée.</p>
+          </sp>
+          <sp who="#lesbouchers">
+            <speaker>Les bouchers</speaker>
+            <p>Eugénie! Non morbleu! Nous ne le souffrirons pas.</p>
+          </sp>
+          <sp who="#pastrop">
+            <speaker>Pastrop</speaker>
+          </sp>
+          <spGrp who="#pastrop">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#folia">Folies d'Espagne</title>
+              </desc>
+            </head>
+            <sp who="#pastrop">
+              <speaker>Pastrop</speaker>
+              <l met="10">Ne craignez pas qu'on puisse nous la prendre,</l>
+              <l met="10">Nous veillerons sur elle et son époux;</l>
+              <l met="10">Pour conserver ses jours et les défendre,</l>
+              <l met="10">Nous nous battrons et nous périrons tous.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <l met="10">Malgré l'horreur d'une trame si noire</l>
+            <l met="10">Osons encor braver le sort jaloux!</l>
+            <l met="10">On est toujours certain de la victoire</l>
+            <l met="10">Lorsque l'amour combat pour les époux.</l>
+          </sp>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <stage>aux genoux de L'Emporté</stage>
+          </sp>
+          <spGrp who="#nicole">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#dans_les_gardes_francaises">Dans les gardes françaises</title>
+              </desc>
+            </head>
+            <sp who="#nicole">
+              <speaker>Nicole</speaker>
+              <l met="6">Pour une infortunée</l>
+              <l met="6">J'embrassons vos genoux;</l>
+              <l met="6">Je n'lavions amenée</l>
+              <l met="6">Que pour l'unir à vous.</l>
+              <l met="6">Vous lui servirez d'père</l>
+              <l met="6">Et d'époux en ces lieux!</l>
+              <l met="6">Je l'vois à la colère</l>
+              <l met="6">Qui brille dans vos yeux.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <stage>se campant fièrement</stage>
+            <p>Oui, sandis, rassurez-vous madame et sachez qué personne ici n'est fait pour mé couper l'herbe par-dessous le pied. Né craignez ni son père, ni les bateliers ni quelqu'un d'autre qu'il soit.</p>
+            <p>Rentrez chez bous et moi jé les attends dé pied ferme.</p>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <stage>s'en allant</stage>
+            <p>Songez toujours qu'il est mon père.</p>
+          </sp>
+          <stage>Elle s'en va.</stage>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>Votre père! Lui! cela ne se peut pas...</p>
+            <p>Il vient! Ouf, je trépigne de colère.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">l'emporté, patagon, bateliers</stage>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <stage>à Patagon</stage>
+            <p>Arrête!</p>
+          </sp>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <stage>à part</stage>
+            <p>C'est L'Emporté!... Lui en aurait-t-on soufflé quelque chose?</p>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+          </sp>
+          <spGrp who="#lemporte">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air du</desc>
+              <desc type="title">
+                <title ref="#mirliton">Mirliton</title>
+              </desc>
+            </head>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <l met="7">Jé sais lé projet barbare</l>
+              <l met="7">D'un père dénaturé;</l>
+              <l met="7">La fureur dé moi s'empare</l>
+              <l met="7">Mais tiens toi pour assuré</l>
+              <l met="11">Qué cé mirliton, mirliton, mirlitaine</l>
+            </sp>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <l met="7">Va té mettre à la raison<note>Le manuscrit porte souscrit et biffé:« Saura m'en faire raison ».PB</note>.</l>
+            </sp>
+          </spGrp>
+          <stage>Montrant son gourdin.</stage>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <p>Jeune freluquet, tu me fais la nique, je crois. Sais-tu bien que je n'ai de compte à rendre à personne! Que j'ai ici vingt patrons sous mes ordres et que toi-même tu me dois le respect!</p>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>Le respect, vêlitre! Je ne sais qui me tient... mais ta fille est à moi, tu me l'as promise et jarnidiou tu ne t'en dédiras pas, ou sinon</p>
+          </sp>
+          <spGrp who="#lemporte">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_veux_etre_un_chien">Je veux être un chien</title>
+              </desc>
+            </head>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <l met="6">Jé ferai carillon</l>
+              <l met="6">Brisérai ta maison</l>
+              <l met="9">Et mettrai lé feu dans lé billage.</l>
+            </sp>
+          </spGrp>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+          </sp>
+          <spGrp who="#patagon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#charlot">J'avais cent francs</title>
+              </desc>
+            </head>
+            <sp who="#patagon">
+              <speaker>Patagon</speaker>
+              <l met="4">Quel insolent!</l>
+              <l met="6">Sais-tu que je m'offense,</l>
+              <l met="6">Que ton impertinence</l>
+              <l met="6">Recevra châtiment.</l>
+              <l met="4">Quand je croyais</l>
+              <l met="4">Quand je comptais</l>
+              <l met="6">T'accorder Eugénie,</l>
+              <l met="6">Alors je le voulais.</l>
+              <l met="4">Mais franchement</l>
+              <l met="4">En ce moment</l>
+              <l met="6">Si j'ai quelqu'autre envie,</l>
+              <l met="6">Adieu l'engagement.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>Est-ce à moi qué l'on parle?</p>
+          </sp>
+          <spGrp who="#lemporte">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#palsangue_monsieur_le_cure">Palsangué, Monsieur le curé</title>
+              </desc>
+            </head>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <l met="8">Palsangué Monsu Patagon</l>
+              <l met="7">Abec cé ton dé monarque</l>
+              <l met="9">Pensez-bous mé traiter sans façon</l>
+              <l met="7">Commé les gens dé la barque?</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#lemporte">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ma_bonne_mere">Ma bonne mère</title>
+              </desc>
+            </head>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <l met="4">Barbare père</l>
+              <l met="4">Crains ma colère,</l>
+              <l met="4">Tu connaîtras</l>
+              <l met="6">La vigueur dé mon bras.</l>
+            </sp>
+          </spGrp>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <l met="4">Ah, téméraire</l>
+            <l met="4">Que crois-tu faire?</l>
+            <l met="4">Dé tes discours</l>
+            <l met="6">J'arrêterai lé cours</l>
+            <l met="7">Tu joues ici de ton reste,</l>
+            <l met="1">Peste!</l>
+            <l met="4">Mais avant peu</l>
+            <l met="5">Nous verrons beau jeu.</l>
+          </sp>
+          <stage type="musical_indication">Duo</stage>
+          <cols n="2"/>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <l met="4">Barbare père ...</l>
+          </sp>
+          <cb/>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <l met="4">Ah, téméraire ...</l>
+          </sp>
+          <cols n="1"/>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>Monstré que tu es! Harpie dénaturée! Tu fais venir ici ta fille sous le prétexte conjugal de la marier avecquè moi, et c'est pour la vendr'à une bohémienne. Ah Sandis! Est-cé là le trait d'un père! D'un honnête homme seulement?</p>
+          </sp>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <p>Insolent!</p>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+          </sp>
+          <spGrp who="#lemporte">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mer_rouge">Le saint, craignant de pécher</title>
+              </desc>
+            </head>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <l met="8">Arrête encore jé n'ai rien</l>
+              <l met="6">Qu'un seul mot à té dire</l>
+              <l met="7">Et si tu me comprends bien</l>
+              <l met="6">Cé seul mot doit suffire;</l>
+              <l met="7">Il faudra què ta fureur</l>
+              <l met="7">Mé perce plutôt lé cœur</l>
+              <l met="5">Que de m'enléver</l>
+              <l met="5">Que dé m'arracher</l>
+              <l met="5">Que dé mé priver</l>
+              <l met="5">De mon Eugénie</l>
+              <l met="5">Par moi si chérie.</l>
+            </sp>
+          </spGrp>
+          <stage>Il s'en va.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">patagon</stage>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <stage>i</stage>
+            <p>Le sort en est jeté et c'est à ce fanfaron-là et à ses rodomontades que ma fille aura l'obligation d'être livrée plutôt. C'en est fait. À moi bateliers!</p>
+          </sp>
+          <stage>Ils entrent.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">patagon, lucas, les bateliers</stage>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <p>Arrêtez mes amis, n'avancez pas. J'ai encor des réflexions à faire... mais ma femme et ma fille! Où sont-elles? Ah ciel, les voilà... Il me semble les voir, les entendre... Est-il bien vrai mon petit papa, que vous voulez me livrer à une sorcière? C'est ma fille qui dit ça. Hélas oui mon enfant. Comment oui, père barbare! C'est ma femme qui riposte: Époux dénaturé, déchire plutôt mon sein... mais ma chère femme... Fi donc, Monsieur, c'est une action indigne... Laissez, laissez maman!... C'est ma fille qui reprend... Hélas mon cher père, s'il ne faut que mon sang... Ton sang! Ah ma fille, plutôt le mien que la terre... Que le ciel... Que le tonnerre... Bon! Me voilà tout juste au point où je voulais me sentir, vite profitons-en. Écoute, Lucas, voilà mon dernier mot. Va-t'en trouver Nicole, dis-lui</p>
+            <p>qu'elle profite du bon moment que tu me vois là. Remettez-vous en route pour Marly avec ma fille et faites si bien qu'on ne la revoie plus ici. Allez!</p>
+          </sp>
+          <stage>Lucas et les bateliers s'en vont.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">patagon<stage>seul</stage>
+          </stage>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <stage>i</stage>
+            <p>Ah morbleu me voilà une fière épine hors du pied!</p>
+          </sp>
+          <spGrp who="#patagon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#maudit_amour_raison_severe_">Maudit amour, [raison sévère]</title>
+              </desc>
+            </head>
+            <sp who="#patagon">
+              <speaker>Patagon</speaker>
+              <l met="8">Ô chère enfant! fille adorable</l>
+              <l met="8">Que tant d'attraits me font chérir!</l>
+              <l met="8">Pardonne-moi, je suis coupable,</l>
+              <l met="8">Devine au moins mon repentir.</l>
+              <l met="8">Et toi, Lutin, qui nous tourmente,</l>
+              <l met="8">Tu ne voulais qu'une servante,</l>
+              <l met="8">Fais un échange plus flatteur</l>
+              <l met="8">Et prends-moi pour ton serviteur.</l>
+            </sp>
+          </spGrp>
+          <stage>Il s'en va.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 9</head>
+          <stage type="characters">eugénie, ses femmes, lucas, bateliers<stage>dans la coulisse</stage>
+          </stage>
+          <spGrp who="#patagon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#aux_armes">Aux armes, camarades</title>
+              </desc>
+            </head>
+            <sp who="#patagon">
+              <speaker>Patagon</speaker>
+              <l met="8">Arrête, téméraire, arrête,</l>
+              <l met="9">En quels lieux veux-tu guider ses pas?</l>
+              <l met="2">Arrête,</l>
+              <l met="9">De nos mains tu n'échapperas pas.</l>
+            </sp>
+          </spGrp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <stage>à Lucas</stage>
+            <p>Mon cher ami, crois-moi, tu vas te faire assommer inutilement.</p>
+          </sp>
+          <sp who="#lucas">
+            <speaker>Lucas</speaker>
+            <p>Ne craignez rien, allez je savons nous manier.<stage>Aux femmes.</stage>Vous autres, tenez-lui compagnie<note>Le manuscrit porte biffé:« pendant que ».PB</note>, nous</p>
+            <p>allons jouer du bâtonnet.</p>
+          </sp>
+          <stage>Il sort.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 10</head>
+          <stage type="characters">eugénie<stage>aux femmes</stage>
+          </stage>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <stage>i</stage>
+            <p>Non, je n'ai que faire de vous ici non plus, moi. Allez-vous-en au secours de  ma mère, moi je cède à mon sort, et puisqu'il faut servir, servons.</p>
+          </sp>
+          <stage>Les femmes sortent.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 11</head>
+          <stage type="characters">eugénie, l'emporté<stage>entre, tout échauffé, son gourdin à la main</stage>
+          </stage>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>Eugénie, suibez-moi. Né craignez ni leurs cri ni leurs menaces. L'Emporté bous prend dessous sa sauvégarde, et cadédis, vous répond de tout.</p>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <p>Hélas, mon père! mon devoir!...</p>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>Eh, sandis qué mé parlez bous de père?</p>
+            <p>Oubliés-bous donc que nous sommes fiancés<note>Dans le manuscrit, cette phrase est précédée de« Que conte me faites-bous là »biffé.PB</note>? Què le festin, la noce tout est prêt; què les biolons même, ils sont commandés et què si bous bous ostinez commé bous faites, nous en serons infructueusément pour nos frais.</p>
+          </sp>
+          <spGrp who="#lemporte">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ah_madame_anroux">Ah, madame Anroux</title>
+              </desc>
+            </head>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <l met="5">Ah mon pétit cœur!</l>
+              <l met="5">Mon cher pétit cœur</l>
+              <l met="5">Qué j'ai dé malheur</l>
+              <l met="5">J'enrage, j'endêve!</l>
+              <l met="5">Ah mon pétit cœur</l>
+              <l met="5">Si l'on bous enlève</l>
+              <l met="5">Je meurs dé douleur!</l>
+            </sp>
+          </spGrp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <p>J'en mourrai bien aussi car je ne vivais que pour vous, mais enfin à l'impossible nul n'est tenu.</p>
+          </sp>
+          <spGrp who="#eugenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">tiré des <title ref="#jumeaux_de_bergame">Jumeaux de Bergame</title> ()</desc>
+            </head>
+            <sp who="#eugenie">
+              <speaker>Eugénie</speaker>
+              <l met="10">Il faut du sort subir la loi suprême,</l>
+              <l met="10">Mais en cédant, bravons du moins ses coups;</l>
+              <l met="10">Jusqu'au tombeau je dirai je vous aime</l>
+              <l met="10">Convenez-en, c'est consolant pour vous.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <stage>même air</stage>
+            <l met="10">Par ces détours croyez vous qu'on m'abuse?</l>
+            <l met="10">C'est par son cœur què juge un tendr' amant;</l>
+            <l met="10">C'est vainement qu'on emploie la ruse</l>
+            <l met="10">Jamais l'esprit n'impose au sentiment.</l>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <p>Écoutez mon cher L'Emporté, il n'y a qu'un mot qui serve. Vous voyez bien que la barque ne peut démarrer sans le secours de la bohémienne. Vous ne pouvez arriver à Pontoise qu'au prix de ma liberté et puisqu'elle vous donnera occasion de vous signaler, je vous en fais de bon cœur le sacrifice... ainsi recevez mes derniers adieux!</p>
+          </sp>
+          <spGrp who="#eugenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#adieu_dame">Adieu, donc [dame Françoise]</title>
+              </desc>
+            </head>
+            <sp who="#eugenie">
+              <speaker>Eugénie</speaker>
+              <l met="7">Adieu donc, c'est pour la vie</l>
+              <l met="7">Mais soyez toujours constant.</l>
+              <l met="7">Séparons-nous dans l'instant</l>
+              <l met="7">N'oubliez pas qu'Eugénie</l>
+              <l met="7">Vous aime bien tendrement.</l>
+              <l met="7">Adieu donc, mon cher amant!</l>
+              <l met="7">Adieu donc [, c'est pour la vie.]</l>
+            </sp>
+          </spGrp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+          </sp>
+          <spGrp>
+            <head type="melody" subtype="same_melody">Même air</head>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <l met="7">Quel est donc cé verbiage?</l>
+              <l met="7">Je n'y puis comprendre un mot!</l>
+              <l met="7">Mé prenez-vous pour un sot</l>
+              <l met="7">De mé tenir cé langage?</l>
+              <l met="7">À quoi mé sert votr' amour</l>
+              <l met="7">Si jé vous perds en cé jour?</l>
+            </sp>
+            <cols n="2"/>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <l met="7">Finissez cette folie</l>
+              <l met="7">Et suivez un tendre amant.</l>
+            </sp>
+            <cb/>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <l met="7">Adieu donc, c'est pour la vie</l>
+              <l met="7">Mais soyez toujours constant.</l>
+            </sp>
+            <cols n="1"/>
+          </spGrp>
+          <stage type="musical_indication">Duo</stage>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <stage>la prenant par la main</stage>
+            <p>Allons, venez mon Eugénie...</p>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <p>Non, vous dis-je, laissez-moi. Pour qui me prenez-vous? Sachez que je suis une fille bien élevée, incapable de désobéir à mon cher père, et que je me tuerais de ma main s'il le fallait plutôt que de vous avoir l'obligation de ma liberté.</p>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>Sandis! Si bous appelez céla de l'amour, Mademoiselle, je né m'y connais guère plus. Au démeurant, obéissez, puisqué bous y êtes si entêtée, mais capedebious, ne croyez pas què jé bous cède en extravagance, boilà ma cerbelle qui sé monte et ils n'ont tous qu'a bien sé ténir!</p>
+          </sp>
+          <spGrp who="#lemporte">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air du</desc>
+              <desc type="title">
+                <title ref="#menuet_des_trompettes">Menuet des trompettes</title>
+              </desc>
+            </head>
+            <sp who="#lemporte">
+              <speaker>L'emporté</speaker>
+              <l met="5">Dans cé jour si fatal</l>
+              <l met="5">À tous en général,</l>
+              <l met="5">Jé vais donner le bal;</l>
+              <l met="4">Et cé bâton</l>
+              <l met="4">À la raison,</l>
+              <l met="3">Sans façon,</l>
+              <l met="7">Va mettre tout le canton</l>
+              <l met="4">Pis qu'un démon,</l>
+              <l met="3">Qu'un dragon</l>
+              <l met="5">La sorcière et Patagon,</l>
+              <l met="5">Les valets de la maison,</l>
+              <l met="8">Vont trembler et fuir à mon nom.</l>
+            </sp>
+          </spGrp>
+          <stage>Le plus haut possible.</stage>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <stage>s'égosillant pour finir l'air</stage>
+            <l met="8">Vous le prenez sur un haut ton!</l>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>C'est lé ton des trompettes, Mademoiselle. Au surplus, bous voilà vien abertie. Jé né mé connais plus, jé né réponds plus dé rien, et si dans ce bacchanal les vateliers, la sorcière, tout le billage et votre père lui-même, reste sur lè carreau, c'est bous Madémoiselle, bous seule qui serez cause de ce beau chef d'œuvre, adioufias.</p>
+          </sp>
+          <stage>Il s'en va.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 12</head>
+          <stage type="characters">eugénie, nicole<stage>entre en désordre avec ses femmes</stage>
+          </stage>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <p>Viens mon enfant, viens. Si je ne pouvons t'emmener, je verrons du moins s'ils oseront t'arracher de mes bras.</p>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <p>Mais ma mère, tout cela est inutile. Je n'ai pas résisté et refusé à mon amoureux, à mon fiancé, pour céder à ma mère peut-être. Je l'ai dit, je le redis encor, mon parti est pris, j'y suis butée. Je veux finir et je m'en vais trouver la bohémienne.</p>
+          </sp>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <p>Comment, fille ingrate! Crois-tu que je te laisserons partir comme ça? Tu veux donc que je meurs auparavant? eh bien v'la que c'en est fait. Tiens, regarde ce que t'y causes.</p>
+          </sp>
+          <stage>Elle s'évanouit dans les bras de ses femmes.</stage>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <p>Ô Ciel! ma mère!... mais voilà un événement qui est bien heureux pour moi. Profitons de stévanouissement-là pour nous échapper... Vous autres, restez là pour la faire revenir.</p>
+          </sp>
+          <stage>Elle s'en va.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 13</head>
+          <stage type="characters">nicole</stage>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <stage>i</stage>
+          </sp>
+          <stage>On la soigne, elle revient a elle.</stage>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <p>Ma fille! ma fille!... Où donc est-elle? La voilà partie... Ah, que j'ai donc mal fait de nous évanouir là quand j'aurions dû la retenir... mais dame aussi on n'est pas maîtresse de ça... Ces mouvements-là ça vous prend... et pis un peu pus un peu moins chacun y est sujet. C'est la sensibilité qui en décide, pas vrai mes enfants?</p>
+          </sp>
+          <spGrp>
+            <head type="melody" subtype="empty_melody">Air vide</head>
+            <sp who="#nicole">
+              <speaker>Nicole</speaker>
+              <p>Ah bon, quien,  vlati pas encor que je cause là, à présent que je chantons même. Ce que c'est que de nous pourtant? Comme on perd du temps! Allons, allons nous en voir ce que tout ça devient; vlaque ça commence à s'embrouiller, ah, vite faut dénouer tout ça.<stage>Aux femmes.</stage>À moi, vous autres.</p>
+            </sp>
+          </spGrp>
+          <stage>Elle s'en va avec ses femmes.</stage>
+          <stage>Le théâtre change, représente le rivage comme à la première scène devant la cabane de la bohémienne. Le peuple est amassé. Les bateliers amènent Eugénie. La bohémienne la reçoit.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 14</head>
+          <stage type="characters">la bohémienne</stage>
+          <sp who="#labohemienne">
+            <speaker>La bohémienne</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#labohemienne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ah_que_j_aime_mon">Ah, que j'aime mon</title>
+              </desc>
+            </head>
+            <sp who="#labohemienne">
+              <speaker>La bohémienne</speaker>
+              <l met="8">Vous m'amenez fort à propos</l>
+              <l met="4">Votre Eugénie.</l>
+              <l met="8">Je m'en vais terminer vos maux</l>
+              <l met="8">En prononçant deux ou trois mots</l>
+              <l met="6">De ma blanche magie.</l>
+              <l met="8">Vous connaîtrez à mes propos</l>
+              <l met="5">Ma sorcellerie.</l>
+            </sp>
+            <sp who="#labohemienne">
+              <speaker>La bohémienne</speaker>
+              <l met="6">Yau scours, yau scours, yau scours!</l>
+            </sp>
+          </spGrp>
+          <stage>Elle fait des gestes et des cercles avec sa baguette.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 15</head>
+          <stage type="characters">chœur de bateliers<stage>accourant</stage>
+          </stage>
+          <sp who="#labohemienne">
+            <speaker>La bohémienne</speaker>
+            <l met="6">Quoi donc qui vous alarme?</l>
+          </sp>
+          <sp who="#lesbateliers">
+            <speaker>Les bateliers</speaker>
+            <l met="6">Yau scours, yau scours, yau scours</l>
+            <l met="6">À vous j'avons recours.</l>
+          </sp>
+          <stage>Les bateliers qui sont sur le théâtre vont prendre leurs rames, leurs crocs, leurs avirons et se rangent autour de la bohémienne.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 16</head>
+          <stage type="characters">[l'emporté, pastrop, eugénie, des bouchers, des bateliers]</stage>
+          <stage>L'Emporté entre suivi de Pastrop et de ses bouchers armés de gourdins et ils s'emparent d'Eugénie et menacent les bateliers qui se rangent en face.</stage>
+          <sp who="#choeurdesbouchers">
+            <speaker>Chœur des bouchers</speaker>
+          </sp>
+          <spGrp who="#choeurdesbouchers">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_confession">la confession</title>
+              </desc>
+            </head>
+            <sp who="#choeurdesbouchers">
+              <speaker>Chœur des bouchers</speaker>
+              <l met="5">Pourquoi ce fracas?</l>
+              <l met="4">N'irritez pas</l>
+              <l met="4">Notre colère.</l>
+              <l met="5">Cessez vos efforts</l>
+              <l met="8">Vous ne serez pas les plus forts.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lesbateliers">
+            <speaker>Les bateliers</speaker>
+            <l met="9">Avançons, frappons ce téméraire</l>
+            <l met="5">Vengeons la sorcière!</l>
+          </sp>
+          <sp who="#lesdeuxchoeurs">
+            <speaker>Les deux chœurs</speaker>
+            <stage>ensemble</stage>
+            <l met="5">Pourquoi ce fracas?</l>
+            <l met="4">N'irritez pas</l>
+            <l met="4">[Notre colère.</l>
+            <l met="5">Cessez vos efforts</l>
+            <l met="8">Vous ne serez pas les plus forts.]</l>
+          </sp>
+          <stage>Il se fait un choc entre les deux troupes. La bohémienne se sauve par le village. Pastrop la poursuit. Nicole entre avec Patagon.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 17</head>
+          <stage type="characters">les susdits, nicole, patagon</stage>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <p>Ah ma fille! ah mon gendre...</p>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>Né craignez rien, Madame. Jé suis ici et jé réponds dé tout.</p>
+          </sp>
+          <stage>Les bateliers font un mouvement, Nicole les retenant à genoux:</stage>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>Miséricorde, arrêtez!</p>
+          </sp>
+          <spGrp>
+            <caption>L'emporté et le chœur</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="5">Ah n'avancez pas,</l>
+              <l met="4">N'irritez pas</l>
+              <l met="4">Notre colère.</l>
+              <l met="5">Cessez vos efforts</l>
+              <l met="8">Vous ne serez pas les plus forts.</l>
+            </sp>
+          </spGrp>
+          <stage>Il se fait un second choc. Le ciel s'obscurcit. Le tonnerre se fait entendre, le tonnement, la peur et la pluie arrêtent les deux troupes. Le combat cesse après un instant d'orage, les nuages se dissipent, la lumière revient.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 18</head>
+          <stage type="characters">les susdits, pastrop, patagon, le bailli<stage>avec un baromètre à la main et un calendrier</stage>
+          </stage>
+          <sp who="#pastrop">
+            <speaker>Pastrop</speaker>
+            <p>Vive la joie, mes amis, voici monsieur le bailli qui vient de nous rendre le plus grand service.</p>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <p>Oui mes enfants, j'ai été informé qu'une bohémienne avait voulu tromper monsieur Patagon et abuser de votre crédulité. Je viens de la faire mettre en prison et de la forcer à me découvrir tout le mystère. Cet almanach était son grimoire et le baromètre faisait toute sa magie. L'un nous annonce la nouvelle lune pour ce soir, l'autre marquait de la pluie, et voila sur quoi l'effrontée a fait vous promettre de l'eau et du vent.<stage>Ici la lune parait.</stage>Tenez, vous le voyez, déjà la lune paraît. La galiote sera bientôt à flot; Eugénie est en liberté, tous vos vœux  seront remplis et je veux moi-même assister à son mariage avec L'Emporté.</p>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>Vivat! voilà lé croissant. Sandis, c'est dé bon augure pour lé mariage.</p>
+          </sp>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <p>Ah, monsieur le bailli, mon gendre, que je vous embrassions!</p>
+          </sp>
+          <sp who="#lemporte">
+            <speaker>L'emporté</speaker>
+            <p>Taupe, cadédis, eh nargue du présage!</p>
+          </sp>
+          <sp who="#patagon">
+            <speaker>Patagon</speaker>
+            <p>Quel bonheur! Allons mes amis puisque nous voilà d'accord, oublions tous nos débats, commençons par faire la noce et nous partirons demain matin.<stage>Aux bateliers.</stage>Vous, camarades, préparez tout pour le voyage.</p>
+          </sp>
+          <spGrp who="#patagon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#une_jeune_bateliere_du_village_de_touchamp">Une jeune batelière, du village de Touchamp</title>
+              </desc>
+            </head>
+            <spGrp rend="braced">
+              <sp who="#patagon">
+                <speaker>Patagon</speaker>
+                <l met="7">Le temps nous réconcilie,</l>
+                <l met="7">Quel heureux événement!</l>
+                <l met="7">Nous venons au dénouement</l>
+                <l met="7">Sans l'effet de la magie!</l>
+                <l met="7">Allons, allons passer l'eau</l>
+                <l met="7">Entrons dans notre bateau.</l>
+              </sp>
+            </spGrp>
+          </spGrp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Allons, allons [passer l'eau,</l>
+            <l met="7">Entrons dans notre bateau.]</l>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <stage>à L'Emporté</stage>
+            <l met="7">Au cœur de ton Eugénie</l>
+            <l met="7">L'amour fait l'enchantement</l>
+            <l met="7">Et me rend à mon amant</l>
+            <l met="7">Sans l'effet de la magie</l>
+            <l met="7">Allons, allons [passer l'eau</l>
+            <l met="7">Entrons dans notre bateau.]</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Allons, allons [passer l'eau</l>
+            <l met="7">Entrons dans notre bateau.]</l>
+          </sp>
+          <sp who="#nicole">
+            <speaker>Nicole</speaker>
+            <l met="7">C'est ce dieu qui dans la vie</l>
+            <l met="7">Marque les heureux moments</l>
+            <l met="7">Croyez plus aux sentiments</l>
+            <l met="7">Qu'à l'effet de la magie</l>
+            <l met="7">Allons, allons [passer l'eau</l>
+            <l met="7">Entrons dans notre bateau].</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Allons, allons [passer l'eau</l>
+            <l met="7">Entrons dans notre bateau].</l>
+          </sp>
+          <sp who="#eugenie">
+            <speaker>Eugénie</speaker>
+            <stage>au public</stage>
+            <l met="7">Messieurs, à cette folie</l>
+            <l met="7">Accordez votre agrément;</l>
+            <l met="7">Faire votre amusement</l>
+            <l met="7">C'est la plus sûre magie</l>
+            <l met="7">Quand vous voudrez passer l'eau,</l>
+            <l met="7">Venez à notre bateau.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Quand vous voudrez [passer l'eau</l>
+            <l met="7">Venez à notre bateau]<note>Un dernier couplet suivi d'une reprise du chœur est biffé:« L'Emporté: Pour nous voir voguer sur Seine / Revenez ici souvent; / Car pour nous le meilleur vent / C'est celui qui vous amène: / Quand vous voudrez, ... »PB</note>.</l>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

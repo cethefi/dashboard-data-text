@@ -1,0 +1,829 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="la_toison_dor_ecriteaux_1724">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">La Toison d'or</title>
+        <title type="sub">Vaudeville</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Le Sage et d'Orneval</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Bnf. fr. 25471</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="tousdeux" sex="UNKNOWN">
+            <persName>Tous deux</persName>
+          </person>
+          <person xml:id="argonaute" sex="UNKNOWN">
+            <persName>Argonaute</persName>
+          </person>
+          <person xml:id="unesuivante" sex="UNKNOWN">
+            <persName>Une suivante</persName>
+          </person>
+          <person xml:id="suivante" sex="UNKNOWN">
+            <persName>Suivante</persName>
+          </person>
+          <person xml:id="jason" sex="UNKNOWN">
+            <persName>Jason</persName>
+          </person>
+          <person xml:id="thesee" sex="UNKNOWN">
+            <persName>Thésée</persName>
+          </person>
+          <person xml:id="orphee" sex="UNKNOWN">
+            <persName>Orphée</persName>
+          </person>
+          <person xml:id="arlequin" sex="UNKNOWN">
+            <persName>Arlequin</persName>
+          </person>
+          <person xml:id="gille" sex="UNKNOWN">
+            <persName>Gille</persName>
+          </person>
+          <person xml:id="medee" sex="UNKNOWN">
+            <persName>Médée</persName>
+          </person>
+          <person xml:id="dorine" sex="UNKNOWN">
+            <persName>Dorine</persName>
+          </person>
+          <person xml:id="troupe_d_argonautes" sex="UNKNOWN">
+            <persName>Troupe d'Argonautes</persName>
+          </person>
+          <person xml:id="troupe_de_soldats" sex="UNKNOWN">
+            <persName>Troupe de soldats</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1724">
+        <desc> 1724</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#jason">Jason</role>
+          <roleDesc>chef des Argonautes</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#thesee">Thésée</role>
+          <roleDesc>chef des Argonautes</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#orphee">Orphée</role>
+          <roleDesc>chef des Argonautes</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#arlequin">Arlequin</role>
+          <roleDesc>écuyer des chefs</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#scaramouche">Scaramouche</role>
+          <roleDesc>écuyer des chefs</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#gille">Gille</role>
+          <roleDesc>écuyer des chefs</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#medee">Médée</role>
+          <roleDesc>Princesse de Colchide</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#dorine">Dorine</role>
+          <roleDesc>suivante de Médée</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_d_argonautes">Troupe d'Argonautes</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_soldats">Troupe de soldats</role>
+          <roleDesc>nés des dents du dragon</roleDesc>
+        </castItem>
+      </castList>
+      <prologue>
+        <spGrp rend="trpta">
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <stage>dans la coulisse</stage>
+            <p>Arrivé, arrivé!</p>
+          </sp>
+        </spGrp>
+        <stage type="location">La scène est dans la Colchide.</stage>
+        <stage type="location">Le théâtre représente un fort dans le fond, un bout de mer dans l'une des ailes et un bois dans l'autre.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Jason, Thésée, Orphée, Scaramouche, Gille, Arlequin, troupe d'Argonautes</stage>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+          <p>Héé, vire la piautre<note>La piautre est un gouvernail. L'expression équivaut à « change de bord ».</note>!</p>
+        </sp>
+        <stage>On voit arriver un vaisseau des coulisses, du côté où la mer est représentée. Arlequin, Gille et Scaramouche sautent à terre, les autres défilent par la coulisse d'à côté.</stage>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+        </sp>
+        <spGrp who="#gille">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_que_le_jeu_du_flageolet">Ah, que le jeu du flageolet</title>
+            </desc>
+          </head>
+          <sp who="#gille">
+            <speaker>Gille</speaker>
+            <l met="8">Obéissons tous à la voix</l>
+            <l met="7">De Jason et de Thésée.</l>
+            <l met="8">Mettez-vous en marche, grivois<note type="definition">Grivois: Terme qui se dit d'un drille, d'un soldat qui est éveillé et alerte (Acad.1762)</note>:</l>
+            <l met="6">Le ravissant Orphée</l>
+            <l met="8">Mènera le branle gaiement</l>
+            <l met="8">Avec son gentil instrument.</l>
+          </sp>
+        </spGrp>
+        <stage>Ils se mettent tous en marche, Orphée à la tête, jouant de la vielle.</stage>
+        <sp who="#orphee">
+          <speaker>Orphée</speaker>
+        </sp>
+        <spGrp who="#orphee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_bon_branle">Le bon branle</title>
+            </desc>
+          </head>
+          <sp who="#orphee">
+            <speaker>Orphée</speaker>
+            <l met="8">Si notre flottante maison</l>
+            <l met="6">A bien dansé le branle,</l>
+            <l met="8">De ce château la garnison</l>
+            <l met="8">Pourra faire encore à Jason</l>
+            <l met="8">Danser un autre branle;</l>
+            <l met="8">Mais s'il emporte la toison,</l>
+            <l met="6">Ce sera le bon branle.</l>
+          </sp>
+        </spGrp>
+        <stage>Ils se retirent dans le bois où ils vont camper. Arlequin et Scaramouche restent pour faire la scène suivante.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Arlequin, Scaramouche</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#coucou">Comme un coucou [que l'amour presse]</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Ami, ce fort est donc le gîte</l>
+            <l met="8">De cette riche Toison d'or?</l>
+          </sp>
+        </spGrp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="8">Nos guerriers se rendront bien vite</l>
+          <l met="8">Maîtres de ce trésor.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#confiteor">Confiteor</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Pas si tôt.</l>
+          </sp>
+        </spGrp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="8">Mais ne vois-tu pas</l>
+          <l met="8">Que la Toison est mal gardée?</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Oui, je n'y vois point de soldats.</l>
+          <l met="8">Cela me fait naître une idée:</l>
+          <l met="8">Mon cher enfant, si tu le veux,</l>
+          <l met="8">Nous pouvons l'enlever tous deux.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#allons_gai_d_un_air_gai">Allons gai</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="6">Pendant qu'on délibère</l>
+            <l met="6">Là-dessus dans ce bois,</l>
+            <l met="6">Il serait beau de faire</l>
+            <l met="6">Le coup en tapinois.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tousdeux">
+          <speaker>Tous deux</speaker>
+          <l met="3">Allons gai, etc.</l>
+        </sp>
+        <stage>Arlequin dit par gestes qu'il n'a qu'à lui faire la courte échelle, qu'il va sauter dans le fort. Scaramouche applaudit au projet et va s'appuyer contre le mur en se courbant. Arlequin saute sur son dos, mais quand il est au haut du mur, un monstre effroyable se présente à lui et l'épouvante tellement qu'il se laisse dégringoler. Il court tout éperdu autour du théâtre. Scaramouche lui demande par signes ce qu'il a. Arlequin le lui explique. Scaramouche, après s'être moqué de lui comme d'un visionnaire, le traîne au pied du fort et saute sur son dos pour atteindre le haut de la muraille. Mais un géant terrible se montre à lui et le met dans le cas d'Arlequin qui se moque à son tour de son camarade.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Arlequin, Scaramouche, Jason, Thésée</stage>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+        </sp>
+        <spGrp who="#jason">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#grimaudin">Grimaudin</title>
+            </desc>
+          </head>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <l met="8">Allons, mon cher ami Thésée,</l>
+            <l met="4">Montons au fort.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thesee">
+          <speaker>Thésée</speaker>
+          <l met="8">J'en crois la prise fort aisée.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="4">Vous avez tort.</l>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="8">Je vois avancer nos soldats.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Ma foi, ne vous y frottez pas.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lanturlu">Lanturlu</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="5">Quittez ce rivage,</l>
+            <l met="5">Nobles jouvenceaux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="5">Ce fort sert de cage</l>
+          <l met="5">À nombre d'oiseaux</l>
+          <l met="5">De mauvais présage.</l>
+          <l met="7">Sauvons-nous, tout est perdu.</l>
+        </sp>
+        <sp who="#thesee">
+          <speaker>Thésée</speaker>
+          <l met="9">Lanturlu, lanturlu, lanturlu, etc.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Les acteurs de la scène précédente, Médée<stage>à une des fenêtres du fort</stage>, troupe d'Argonautes</stage>
+        <sp who="#argonaute">
+          <speaker>Argonaute</speaker>
+          <stage>à Jason</stage>
+        </sp>
+        <spGrp who="#argonaute">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_jeune_abbesse">La jeune abbesse</title>
+            </desc>
+          </head>
+          <sp who="#argonaute">
+            <speaker>Argonaute</speaker>
+            <l met="8">Brave guerrier, c'est en ce jour</l>
+            <l met="8">Qu'il faut montrer votre courage.</l>
+            <l met="8">Fondez partout comme un vautour,</l>
+            <l met="8">Attaquez, frappez, faites rage.</l>
+            <l met="9">Grand Jason, nous ne demandons tous</l>
+            <l met="8">Qu'à nous faire échiner pour vous.</l>
+          </sp>
+        </spGrp>
+        <stage>Les argonautes se rangent en bataille des deux côtés. Il sort des portes du fort deux monstres furieux qui se ruent sur les combattants et un terrible dragon, jetant du feu par la gueule, s'avance sur Jason. Ce héros lui coupe la tête, mais cette tête coupée revient sur Jason et sur Arlequin et va ensuite se rejoindre à son tronc. Pendant ce temps-là, les monstres ont étranglé la plus grande partie des soldats de Jason, ce qui oblige celui-ci à faire retraite.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>tremblant</stage>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#on_ne_vit_point_dans_nos_forets">On ne vit point dans nos forêts</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Vous voyez que ces animaux</l>
+            <l met="8">Font bouquer<note type="definition">Bouquer: Faire se résigner (Acad.1762)</note>la valeur humaine.</l>
+            <l met="8">J'ai cru vingt fois que ces brutaux</l>
+            <l met="8">Vous allaient percer la bedaine.</l>
+            <l met="8">Croyez-moi, n'y retournons plus.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <stage>s'en allant</stage>
+          <l met="8">Voyons nos guerriers là-dessus.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Arlequin, Scaramouche</stage>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#menuet_de_granval">Menuet de Grandval</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="8">Sans doute ils vont plier bagage.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Ils seraient, parbleu, des fous</l>
+          <l met="8">De rester ici davantage.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="8">Mais quelle femme vient à nous?</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Arlequin, Scaramouche, Dorine</stage>
+        <sp who="#dorine">
+          <speaker>Dorine</speaker>
+        </sp>
+        <spGrp who="#dorine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#pouvoir">Pouvoir</title>
+            </desc>
+          </head>
+          <sp who="#dorine">
+            <speaker>Dorine</speaker>
+            <l met="8">Messieurs, je cherche l'écuyer</l>
+            <l met="6">De ce vaillant guerrier<stage>bis</stage>
+            </l>
+            <l met="8">Qui n'a pas craint notre dragon.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="6">C'est moi, petit trognon.<stage>bis</stage>
+          </l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine</speaker>
+        </sp>
+        <spGrp who="#dorine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_gue_lon_la_lan_laire">Une jeune nonnette</title>
+            </desc>
+          </head>
+          <sp who="#dorine">
+            <speaker>Dorine</speaker>
+            <l met="6">Tantôt, par la fenêtre,</l>
+            <l met="4">Médée a vu</l>
+            <l met="6">Combattre votre maître</l>
+            <l met="4">Comme un perdu.</l>
+            <l met="6">Elle a dit: malgré mon papa</l>
+            <l met="5">Mon art aidera</l>
+            <l met="5">Ce beau garçon-là.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <caption>Arlequin et scaramouche</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="6">Ô gué lon la, lanlaire,</l>
+            <l met="4">Ô gué lon la.</l>
+          </sp>
+        </spGrp>
+        <sp who="#dorine">
+          <speaker>Dorine</speaker>
+        </sp>
+        <spGrp who="#dorine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pour_passer_doucement_la_vie">Pour passer doucement la vie</title>
+            </desc>
+          </head>
+          <sp who="#dorine">
+            <speaker>Dorine</speaker>
+            <l met="8">À l'instant, d'une vieille armoire,</l>
+            <l met="8">Elle a tiré ce ruban-ci;</l>
+            <l met="8">Puis, ayant ouvert son grimoire,</l>
+            <l met="8">Elle a lu les mots que voici:</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#dorine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air : Menuet d'<emph>Hésione</emph>
+            </desc>
+            <desc type="title"/>
+          </head>
+          <sp who="#dorine">
+            <speaker>Dorine</speaker>
+            <l met="8">Toute créature frappée</l>
+            <l met="8">Par le fer qui garni sera</l>
+            <l met="8">De ce magique nœud d'épée,</l>
+            <l met="8">Aussitôt morte tombera.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril [est agréable]</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Ah, s'il était une boutique</l>
+            <l met="8">Où l'on vendît de pareils nœuds<note>Note sur le manuscrit: « L'Opéra-Comique donna une pièce intitulée<emph>Les Nœuds</emph>, qui tomba ».</note>!</l>
+            <l met="8">Ils rapporteraient plus que ceux</l>
+            <l met="6">De l'Opéra-Comique.</l>
+          </sp>
+        </spGrp>
+        <sp who="#dorine">
+          <speaker>Dorine</speaker>
+          <stage>à Scaramouche</stage>
+        </sp>
+        <spGrp who="#dorine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quand_il_aime_il_aime">Quand il aime, il aime, [il aime, il aime]</title>
+            </desc>
+          </head>
+          <sp who="#dorine">
+            <speaker>Dorine</speaker>
+            <l met="9">À Jason allez porter vous-même</l>
+            <l met="9">Ce beau nœud qui vaut un bataillon.</l>
+          </sp>
+        </spGrp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="9">Il tiendra compte du stratagème,</l>
+          <l met="9">Car il aime, il aime, il aime, il aime,</l>
+          <l met="9">Car il aime un peu le cotillon.</l>
+        </sp>
+        <sp who="#dorine">
+          <speaker>Dorine</speaker>
+        </sp>
+        <spGrp who="#dorine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#j_ai_fait_souvent_resonner">J'ai fait souvent résonner<emph>
+                  <note>Ms: « raisonner ».</note>
+                </emph>ma musette</title>
+            </desc>
+          </head>
+          <sp who="#dorine">
+            <speaker>Dorine</speaker>
+            <l met="10">Il lui faudra du dragon mis par terre,</l>
+            <l met="10">Semer les dents, aussitôt, à foison.</l>
+            <l met="10">Soldats naîtront qui lui feront la guerre.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="10">Ah, que de mal nous cause une toison!</l>
+        </sp>
+        <stage>Scaramouche se retire.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Arlequin, Dorine</stage>
+        <sp who="#dorine">
+          <speaker>Dorine</speaker>
+        </sp>
+        <spGrp who="#dorine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#si_la_jeune_annette">Si la jeune Annette</title>
+            </desc>
+          </head>
+          <sp who="#dorine">
+            <speaker>Dorine</speaker>
+            <l met="5">Mon affaire est faite,</l>
+            <l met="5">Bonsoir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>la retenant</stage>
+          <l met="5">Laissez-moi, poulette,</l>
+          <l met="5">Vous faire un petit...</l>
+          <l met="11">Taleri, leritatou, talera, lire,</l>
+          <l met="5">Un petit compliment.</l>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lanmirtamplan">Lanmirtamplan</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Je suis votre vrai ballot,</l>
+            <l met="5">Soyez mon amante.</l>
+          </sp>
+        </spGrp>
+        <sp who="#dorine">
+          <speaker>Dorine</speaker>
+          <l met="7">Sans tourner autour du pot,</l>
+          <l met="10">Lanmirtamplan, lantire larigot,</l>
+          <l met="5">J'en suis bien contente.<stage>bis</stage>
+          </l>
+        </sp>
+        <stage>Elle s'enfuit en voyant arriver Jason.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Arlequin, Jason, Scaramouche</stage>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <stage>à Scaramouche</stage>
+        </sp>
+        <spGrp who="#jason">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, [belle endormie]</title>
+            </desc>
+          </head>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <l met="8">Cela suffit. Va, tout à l'heure<note>C'est-à-dire tout de suite.</note>,</l>
+            <l met="8">Avertir nos braves soldats.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">J'y vais aussi.</l>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="8">Pour toi, demeure.</l>
+          <l met="8">Je veux que tu suives mes pas.</l>
+        </sp>
+        <stage>Lazzis d'Arlequin avec son maître qui l'oblige de rester.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Jason, Arlequin</stage>
+        <stage>Jason, qui a mis à son épée le nœud magique que Médée lui a envoyé, entre dans le fort. Pendant qu'il y défait les monstres, Arlequin, en dehors, tient la porte fermée et fait le fanfaron, jusqu'à ce que son maître l'oblige de lui ouvrir. Jason sort tenant à sa main la tête du dragon qu'il a coupée. Arlequin la frappe de sa batte. Après ce lazzi, son maître et lui arrachent les dents du dragon. Jason les sème. Il sort de terre des soldats qui font fuir Arlequin, qui revient après le combat.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Jason, troupe d'Argonautes, troupe de soldats<stage>nés des dents du dragon</stage>
+        </stage>
+        <stage>Les trompettes sonnent la chasse, le combat se fait. Jason, aidé de ses compagnons, taille en pièce une partie de ses ennemis. L'autre se réfugie dans le fort que les Argonautes escaladent et dont ils se rendent les maîtres. Jason y entre et en sort un moment après, tenant d'une main la Toison d'or et de l'autre Médée, suivie de ses femmes. Ils se rangent tous en deux files.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="location">et dernière.</stage>
+        <stage type="characters">Les acteurs de la scène précédente, Médée, suivantes de Médée, Arlequin, Scaramouche</stage>
+        <sp who="#argonaute">
+          <speaker>Argonaute</speaker>
+        </sp>
+        <spGrp who="#argonaute">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pendant_que_nous_sommes">Pendant que nous sommes</title>
+            </desc>
+          </head>
+          <sp who="#argonaute">
+            <speaker>Argonaute</speaker>
+            <l met="5">Partageons ces belles,</l>
+            <l met="5">Nous autres grivois.</l>
+            <l met="7">Que chacun de nous entre elles</l>
+            <l met="7">D'une femme fasse choix.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#argonaute">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#toque_mon_tambourinet">Toque mon tambourinet</title>
+            </desc>
+          </head>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">0</head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="5">J'aime une vivante</l>
+            <l met="5">D'un minois coquet,</l>
+            <l met="5">Toujours sautillante.</l>
+          </sp>
+        </spGrp>
+        <sp who="#dorine">
+          <speaker>Dorine</speaker>
+          <l met="5">Tu fais mon portrait.</l>
+          <l met="6">Toque mon tambourin,</l>
+          <l met="1">Toque,</l>
+          <l met="7">Toque mon tambourinet.</l>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="1">Toque, etc.</l>
+        </sp>
+        <spGrp>
+          <head type="vaudeville-chorus">1</head>
+          <sp who="#dorine">
+            <speaker>Dorine</speaker>
+            <l met="5">Tu m'as gagné l'âme</l>
+            <l met="5">Par ton air follet.</l>
+            <l met="5">Prends-moi pour ta femme</l>
+            <l met="5">Mon petit brunet.</l>
+            <l met="1">Toque, etc.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="1">Toque, etc.</l>
+        </sp>
+        <spGrp>
+          <head type="vaudeville-chorus">2</head>
+          <sp who="#unesuivante">
+            <speaker>Une suivante</speaker>
+            <l met="5">Vous êtes mon homme,</l>
+            <l met="5">Mon beau dadouillet.</l>
+          </sp>
+        </spGrp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="5">J'ai tout le symptôme</l>
+          <l met="5">D'un mari complet.</l>
+        </sp>
+        <sp who="#suivante">
+          <speaker>Suivante</speaker>
+          <l met="1">Toque, etc.</l>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="1">Toque, etc.</l>
+        </sp>
+        <spGrp>
+          <head type="vaudeville-chorus">3</head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="5">Si de notre pièce,</l>
+            <l met="5">Un peu satisfait,</l>
+            <l met="5">Le public s'empresse</l>
+            <l met="5">De revoir Dolet,</l>
+            <l met="1">Toque, etc.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="1">Toque, etc.</l>
+        </sp>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

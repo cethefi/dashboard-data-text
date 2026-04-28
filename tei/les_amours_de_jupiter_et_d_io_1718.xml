@@ -1,0 +1,1128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="les_amours_de_jupiter_et_d_io_1718">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Les Amours de Jupiter et d'Io</title>
+        <title type="sub">Divertissement <span type="name">de Chaudronniers et de Marmitons</span>
+        </title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Jacques Charpentier</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>B. Ourcel</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BnF ms. fr.</bibl>
+        <bibl type="intermediarySource">L. Chahine</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="jupiter" sex="UNKNOWN">
+            <persName>Jupiter</persName>
+          </person>
+          <person xml:id="junon" sex="UNKNOWN">
+            <persName>Junon</persName>
+          </person>
+          <person xml:id="io" sex="UNKNOWN">
+            <persName>Io</persName>
+          </person>
+          <person xml:id="pan" sex="UNKNOWN">
+            <persName>Pan</persName>
+          </person>
+          <person xml:id="mercure" sex="UNKNOWN">
+            <persName>Mercure</persName>
+          </person>
+          <person xml:id="argus" sex="UNKNOWN">
+            <persName>Argus</persName>
+          </person>
+          <person xml:id="cupidon" sex="UNKNOWN">
+            <persName>Cupidon</persName>
+          </person>
+          <person xml:id="rosette" sex="UNKNOWN">
+            <persName>Rosette</persName>
+          </person>
+          <person xml:id="colinet" sex="UNKNOWN">
+            <persName>Colinet</persName>
+          </person>
+          <person xml:id="undemon" sex="UNKNOWN">
+            <persName>Un démon</persName>
+          </person>
+          <person xml:id="autredemon" sex="UNKNOWN">
+            <persName>Autre démon</persName>
+          </person>
+          <person xml:id="unebergere" sex="UNKNOWN">
+            <persName>Une bergère</persName>
+          </person>
+          <person xml:id="jupiteretjunon" sex="UNKNOWN">
+            <persName>Jupiter et junon</persName>
+          </person>
+          <person xml:id="_rosette_" sex="UNKNOWN">
+            <persName>[Rosette]</persName>
+          </person>
+          <person xml:id="_colinet_" sex="UNKNOWN">
+            <persName>[Colinet]</persName>
+          </person>
+          <person xml:id="venus" sex="UNKNOWN">
+            <persName>Vénus</persName>
+          </person>
+          <person xml:id="bacchus" sex="UNKNOWN">
+            <persName>Bacchus</persName>
+          </person>
+          <person xml:id="momus" sex="UNKNOWN">
+            <persName>Momus</persName>
+          </person>
+          <person xml:id="troupe_de_deesses" sex="UNKNOWN">
+            <persName>Troupe de Déesses</persName>
+          </person>
+          <person xml:id="troupe_de_bergers_et_de_bergeres" sex="UNKNOWN">
+            <persName>Troupe de Bergers et de Bergères</persName>
+          </person>
+          <person xml:id="troupe_de_chaudronniers_et_de_marmitons" sex="UNKNOWN">
+            <persName>Troupe de Chaudronniers et de Marmitons</persName>
+          </person>
+          <person xml:id="troupe_de_demons" sex="UNKNOWN">
+            <persName>Troupe de Démons</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie en deux actes avec un prologue</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1718">
+        <desc> 1718</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#jupiter">Jupiter</role>
+        </castItem>
+        <castItem>
+          <role ana="#junon">Junon</role>
+        </castItem>
+        <castItem>
+          <role ana="#io">Io</role>
+        </castItem>
+        <castItem>
+          <role ana="#pan">Pan</role>
+        </castItem>
+        <castItem>
+          <role ana="#mercure">Mercure</role>
+        </castItem>
+        <castItem>
+          <role ana="#argus">Argus</role>
+        </castItem>
+        <castItem>
+          <role ana="#cupidon">Cupidon</role>
+        </castItem>
+        <castItem>
+          <role ana="#_rosette_">[Rosette]</role>
+        </castItem>
+        <castItem>
+          <role ana="#_colinet_">[Colinet]</role>
+        </castItem>
+        <castItem>
+          <role ana="#venus">Vénus</role>
+        </castItem>
+        <castItem>
+          <role ana="#bacchus">Bacchus</role>
+        </castItem>
+        <castItem>
+          <role ana="#momus">Momus</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_deesses">Troupe de Déesses</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_bergers_et_de_bergeres">Troupe de Bergers et de Bergères</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_chaudronniers_et_de_marmitons">Troupe de Chaudronniers et de Marmitons</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_demons">Troupe de Démons</role>
+        </castItem>
+      </castList>
+    </front>
+    <body>
+      <div type="act">
+        <head>ACTE 1</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">mercure<stage>porté dans un chaudron par deux lutins, et ayant une cuiller à pot pour caducée</stage>
+          </stage>
+          <stage>Il dit que Comus l'a tant fait boire dans sa cuisine qu'il a été obligé de se servir de cette voiture pour se rendre sur la terre, où Jupiter l'envoie pour séduire la nymphe Io.</stage>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+          </sp>
+          <spGrp who="#mercure">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#pelerins">Pèlerins</title>
+              </desc>
+            </head>
+            <sp who="#mercure">
+              <speaker>Mercure</speaker>
+              <l met="8">Je suis un dieu d'humeur commode</l>
+              <l met="4">Pour un galant.</l>
+              <l met="8">Ici-bas, on suit cette mode:</l>
+              <l met="4">Sans ce talent,</l>
+              <l met="8">Dorimène tendrait la main</l>
+              <l met="4">Dans un passage;</l>
+              <l met="8">Le vieux Damon, votre voisin,</l>
+              <l met="6">N'aurait pas d'équipage.</l>
+              <p>La nymphe approche; et je crois que le hasard l'amène ici, par un cas fortuit bien mûrement médité.</p>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">mercure, io</stage>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <l met="12">... Me cherchiez-vous, Madame?</l>
+            <l met="12">Un espoir si charmant me serait-il permis?</l>
+          </sp>
+          <sp who="#io">
+            <speaker>Io</speaker>
+            <l met="12">Je passais jusqu'au[x] lieux ou sont les pissenlits.</l>
+            <l met="12">J'en veux cueillir moi-même une fine salade,</l>
+            <l met="12">Dont, avec le secours d'une capilotade,</l>
+            <l met="12">Mes compagnes et moi ferons un bon repas.</l>
+            <l met="12">Vous voyez bien, Seigneur, qu'on ne vous cherche pas!</l>
+          </sp>
+          <stage>Mercure lui propose sans façon un tête-à-tête avec Jupiter dans un lieu écarté ou obscur à son choix. Io le rebute; Mercure l'en conjure au nom des dieux et par tous les diables, Io est inflexible. Mercure se sert pour la persuader de la tirade, qu'Arlequin Mercure Galant, emploie en pareil cas auprès de [Rosalbe] dans la pièce qui porte ce titre, dans l'Ancien Théâtre Italien. Io se rend enfin, à condition, que cette démarche ne passera dans le monde que pour une rencontre et non pour rendez-vous.</stage>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+          </sp>
+          <spGrp who="#mercure">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#tout_comme_il_vous_plaira">[Tout comme il vous plaira]</title>
+              </desc>
+            </head>
+            <sp who="#mercure">
+              <speaker>Mercure</speaker>
+              <l met="6">Tout comme il vous plaira,</l>
+              <l met="3">Larira, ...</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">mercure, pan</stage>
+          <stage>Pan veut adroitement savoir de Mercure ce qui l'amène sur la terre. Mercure, pour le dépayser, lui débite la tirade des nouvelles de la terre et des cieux, qui est dans Arlequin Mercure Galant, Ancien Théâtre Italien. Pan sort. Et Mercure voyant arriver l'heure du rendez-vous, se prépare à voltiger sur les ailes, crainte de surprise.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">io<stage>[seule]</stage>
+          </stage>
+          <sp who="#io">
+            <speaker>Io</speaker>
+            <stage>i</stage>
+          </sp>
+          <stage>Réfléchit sur la promesse qu'elle a faite à Mercure: elle balance à tenir sa parole: enfin elle se résout.</stage>
+          <spGrp who="#io">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#o_reguingue">Ô reguingué</title>
+              </desc>
+            </head>
+            <sp who="#io">
+              <speaker>Io</speaker>
+              <l met="8">Quoi, des dieux tromper le doyen,</l>
+              <l met="8">Lui refuser un entretien?</l>
+              <l met="8">Ô reguingué, [ô lon lan la.]</l>
+              <l met="8">La chose serait ridicule.</l>
+              <l met="8">C'en est fait; fuyez, vain scrupule!</l>
+              <p>J'ai eu de la peine à me déterminer; on en aurait à moins, et je le donne en trois à la plus fière actrice de l'Opéra.</p>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">io, jupiter<stage>arrivant sur un âne</stage>
+          </stage>
+          <stage>Jupiter presse Io, qui fait beaucoup de résistance. Il lui dit:</stage>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+          </sp>
+          <spGrp who="#jupiter">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+              </desc>
+            </head>
+            <sp who="#jupiter">
+              <speaker>Jupiter</speaker>
+              <l met="8">Nymphe, finissez vos façons,</l>
+              <l met="8">Je ne viens point dans ces vallons,</l>
+              <l met="6">Pour enfiler des perles,</l>
+              <l met="2">Eh bien!</l>
+              <l met="6">Ni dénicher des merles...</l>
+              <l met="5">Vous m'entendez bien!</l>
+            </sp>
+          </spGrp>
+          <stage>Io ne peut s'accommoder des manières pétulantes de Jupiter, il lui faut du tendre, du passionné des chansonnettes de Quinault mises en musique par Lulli.</stage>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <stage>impatient, appelle</stage>
+            <p>Cupidon!</p>
+          </sp>
+          <sp who="#cupidon">
+            <speaker>Cupidon</speaker>
+            <stage>caché dans une touffe d'arbres</stage>
+            <p>Plaît-il, maître?</p>
+          </sp>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <p>Es-tu là?</p>
+          </sp>
+          <sp who="#cupidon">
+            <speaker>Cupidon</speaker>
+            <p>Oui, maître!</p>
+          </sp>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <p>Allons, mon mignon, exerce-toi sur ce cœur de rocher. Silence. À droite: présentez vos armes. Bandez votre arc: ôtez la flèche du carquois: En joue; une; deux; trois; tirez!</p>
+          </sp>
+          <stage>Cupidon dans la touffe d'arbres fait l'exercice, ainsi que Jupiter le lui ordonne.</stage>
+          <sp who="#io">
+            <speaker>Io</speaker>
+            <stage>après avoir reçu le coup de flèche</stage>
+            <p>Que sens-je! Hélas! Quand l'amour s'en mêle, adieu la pudeur et la raison. Il est vrai, après tout, que ce n'est pas une grosse perte.</p>
+          </sp>
+          <stage>Jupiter l'entraîne dans le bois.</stage>
+          <sp who="#cupidon">
+            <speaker>Cupidon</speaker>
+            <stage>hors de l'arbre</stage>
+          </sp>
+          <spGrp who="#cupidon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+              </desc>
+            </head>
+            <sp who="#cupidon">
+              <speaker>Cupidon</speaker>
+              <l met="8">Dans une fille les froideurs</l>
+              <l met="8">Sont des préjugés bien trompeurs:</l>
+              <l met="6">Telle fait la sévère,</l>
+              <l met="2">Eh bien!</l>
+              <l met="6">Qui voudrait déjà faire...</l>
+              <l met="5">Vous m'entendez bien!</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">junon<stage>arrive dans une vinaigrette</stage>
+          </stage>
+          <stage>Elle se plaint des froideurs et des dissipations de Jupiter, qui lui rogne son ordinaire pour en faire part à d'autres. Elle menace de le fustiger si elle le trouve<emph>in flagranti</emph>.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">jupiter, io<stage>sortant du bois</stage>
+          </stage>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <p>Eh bien, ma belle enfant, vous n'êtes plus si fâchée que vous l'étiez.</p>
+          </sp>
+          <sp who="#io">
+            <speaker>Io</speaker>
+            <p>Non, en vérité. Je suis tout à fait revenue de mes frayeurs.</p>
+            <l met="8">Quand le péril est agréable</l>
+            <l met="8">Le moyen de s'en alarmer...</l>
+          </sp>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <stage>baillant</stage>
+          </sp>
+          <spGrp who="#jupiter">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#et_zon_zon_zon">Et zon, zon, zon</title>
+              </desc>
+            </head>
+            <sp who="#jupiter">
+              <speaker>Jupiter</speaker>
+              <l met="6">Malgré votre pudeur,</l>
+              <l met="6">Que vous êtes fringante!</l>
+              <l met="6">Dites-moi, mon cher cœur,</l>
+              <l met="6">N'êtes-vous pas contente?</l>
+              <l met="4">Et zon, [zon, zon,</l>
+              <l met="6">Lisette, la Lisette,</l>
+              <l met="4">Et zon, zon, zon,</l>
+              <l met="6">Lisette, la Lison.]</l>
+              <p>De bonne foi, ma conversation vous déplaît-elle?</p>
+            </sp>
+          </spGrp>
+          <sp who="#io">
+            <speaker>Io</speaker>
+          </sp>
+          <spGrp>
+            <head type="melody" subtype="same_melody">Même air</head>
+            <sp who="#io">
+              <speaker>Io</speaker>
+              <l met="6">Vous avez tant d'appas,</l>
+              <l met="6">Et vous êtes si tendre,</l>
+              <l met="6">Qu'on ne se lasse pas,</l>
+              <l met="6">Seigneur, de vous entendre,</l>
+              <l met="4">Et zon, [zon, zon,</l>
+              <l met="6">Lisette, la Lisette,</l>
+              <l met="4">Et zon, zon, zon,</l>
+              <l met="6">Lisette, la Lison.]</l>
+            </sp>
+          </spGrp>
+          <stage>Junon paraît. Jupiter s'enfuit. Io reste immobile de surprise.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">junon, io</stage>
+          <stage>Junon fustige Io.</stage>
+          <sp who="#io">
+            <speaker>Io</speaker>
+            <p>Pardon madame, pardon.</p>
+          </sp>
+          <sp who="#junon">
+            <speaker>Junon</speaker>
+          </sp>
+          <spGrp who="#junon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#flon_flon">Flon, flon</title>
+              </desc>
+            </head>
+            <sp who="#junon">
+              <speaker>Junon</speaker>
+              <l met="6">Chatte, gueuse, diablesse,</l>
+              <l met="6">Digne du pilori</l>
+              <l met="6">Crois-tu, que je te laisse</l>
+              <l met="6">Faire avec mon mari</l>
+              <l met="2">Flon, flon,</l>
+              <l met="5">[Larira, dondaine,</l>
+              <l met="2">Flon, flon,</l>
+              <l met="5">Larira, dondon.]</l>
+            </sp>
+          </spGrp>
+          <sp who="#io">
+            <speaker>Io</speaker>
+          </sp>
+          <spGrp>
+            <head type="melody" subtype="same_melody">Même air</head>
+            <sp who="#io">
+              <speaker>Io</speaker>
+              <l met="6">De quoi suis-je coupable?</l>
+              <l met="6">Quel est donc mon forfait?</l>
+              <l met="6">Est-ce un cas punissable,</l>
+              <l met="6">D'avoir un peu fait</l>
+              <l met="2">Flon, flon,</l>
+              <l met="5">[Larira, dondaine,</l>
+              <l met="2">Flon, flon,</l>
+              <l met="5">Larira, dondon.]</l>
+            </sp>
+          </spGrp>
+          <stage>Junon la menace.</stage>
+          <sp who="#io">
+            <speaker>Io</speaker>
+            <p>Pardon, madame, je ne l'ai pas fait exprès</p>
+          </sp>
+          <sp who="#junon">
+            <speaker>Junon</speaker>
+            <p>Comment donc, petite vaurienne! Cela se fait-il sans y penser, ou bien par procureur? Demeure-là. Astarot! Léviathan! Belzébuth! Asmodée!</p>
+            <l met="12">
+              <emph>Flectere si nequeo, superos Acheronta movebo.</emph>
+            </l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 9</head>
+          <stage type="location">Le théâtre représente les enfers.</stage>
+          <stage type="characters">junon, io, quatre démons</stage>
+          <sp who="#undemon">
+            <speaker>Un démon</speaker>
+          </sp>
+          <spGrp who="#undemon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#lonlanla_derirette">Lon lan la derirette</title>
+              </desc>
+            </head>
+            <sp who="#undemon">
+              <speaker>Un démon</speaker>
+              <l met="8">Nous nous complaisons dans le mal,</l>
+              <l met="8">Autant qu'un fermier général,</l>
+              <l met="6">Lon lan [la derirette,]</l>
+              <l met="8">Autant que les traitants aussi,</l>
+              <l met="6">Lon lan [la deriri.]</l>
+            </sp>
+          </spGrp>
+          <sp who="#autredemon">
+            <speaker>Autre démon</speaker>
+          </sp>
+          <spGrp>
+            <head type="melody" subtype="same_melody">Même air</head>
+            <sp who="#autredemon">
+              <speaker>Autre démon</speaker>
+              <l met="8">Nos camarades les lutins</l>
+              <l met="8">Cachés dans des corps féminins,</l>
+              <l met="6">Lon lan [la derirette,]</l>
+              <l met="8">Bien souvent font charivari,</l>
+              <l met="6">Lon lan [la deriri.]</l>
+            </sp>
+          </spGrp>
+          <stage>Junon ordonne aux démons de tourmenter Io.</stage>
+          <sp who="#junon">
+            <speaker>Junon</speaker>
+            <p>Imaginez pour elle un nouveau genre de supplice. Montrez-lui des miroirs où elle se voie laide et dégoûtante, sans dents, les cheveux gris, les yeux battus et le nez aussi rouge que le mien.</p>
+          </sp>
+          <stage>Les démons obéissent. Io fait des cris des frayeurs. L'Enfer disparaît. Un rocher s'élève, ce qui donne lieu à la métamorphose.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 10</head>
+          <stage type="characters">jupiter, io<stage>en vache</stage>
+          </stage>
+          <stage>Jupiter se félicite d'avoir évité la colère de sa femme. Il paraît très surpris de la métamorphose d'Io, et dit</stage>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <p>Voyez un peu jusqu'où va la malice d'une femme!</p>
+          </sp>
+          <spGrp who="#jupiter">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#philis_avare">Réveillez-vous, [belle endormie]</title>
+              </desc>
+            </head>
+            <sp who="#jupiter">
+              <speaker>Jupiter</speaker>
+              <l met="8">Junon jalouse, à mon Inache,</l>
+              <l met="8">A fait présent de ce museau,</l>
+              <l met="8">Afin, je pense, qu'étant vache,</l>
+              <l met="8">Elle n'accouche que d'un veau.</l>
+              <p>Cette pauvre nymphe peut courir le bal sans crainte d'être reconnue. Ce n'est pas comme cela que les femmes d'ici-bas s'y prennent pour se venger</p>
+              <p>des infidélités de leurs maris.</p>
+            </sp>
+          </spGrp>
+          <spGrp who="#jupiter">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#joconde">Joconde</title>
+              </desc>
+            </head>
+            <sp who="#jupiter">
+              <speaker>Jupiter</speaker>
+              <l met="8">Quand un époux est inconstant</l>
+              <l met="6">Ici-bas, dans la France.</l>
+              <l met="8">Sa femme s'y prend autrement</l>
+              <l met="6">Pour en tirer vengeance.</l>
+              <l met="8">Tandis que Monsieur, à Passy,</l>
+              <l met="6">Danse avec sa Climène;</l>
+              <l met="8">Madame et son amant Tirsis</l>
+              <l met="6">S'ébattent dans Vincennes.</l>
+            </sp>
+            <sp who="#jupiter">
+              <speaker>Jupiter</speaker>
+              <p>Fort bien. Poussez à présent les beaux sentiments: chantez-nous les airs de Lully!<stage>Il la caresse et paraît très fatigué.</stage>Ma foi, je n'en puis plus, la besogne est trop rude.</p>
+            </sp>
+          </spGrp>
+          <stage>Io mugit.</stage>
+          <spGrp who="#jupiter">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ne_m_entendez_vous_pas">[Ne m'entendez-vous pas]</title>
+              </desc>
+            </head>
+            <sp who="#jupiter">
+              <speaker>Jupiter</speaker>
+              <l met="8">Il vous faut un taureau,</l>
+              <l met="8">Puisque vous êtes vache!</l>
+              <l met="8">Je me meurs, chère Inache,</l>
+              <l met="8">Ah, je suis tout en eau!</l>
+              <l met="8">Il vous faut un taureau.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 11</head>
+          <stage type="characters">jupiter, argus, io<stage>en vache</stage>
+          </stage>
+          <stage>Argus veut emmener Io, Jupiter s'y oppose, ils se chamaillent. Tandis qu'ils se battent un taureau en furie sort du bois. Ils lâchent prise. Jupiter saute sur le taureau, Argus sur la vache; ils sont emportés par ces animaux, dont les queues jettent des fusées, ce qui finit l'acte.</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">jupiter<stage>se frottant les épaules</stage>
+          </stage>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <stage>i</stage>
+            <l met="12">Ah, que sens je? Est-ce Argus, et suis-je Jupiter?</l>
+            <l met="12">On me prend donc ici pour quelque pauvre clerc?</l>
+            <l met="12">Un vacher... C'en est trop! Faisons un bruit de Diable.</l>
+            <l met="12">Tonnons, jurons, pestons, rendons-nous redoutable.</l>
+          </sp>
+          <stage>On entend le tonnerre.</stage>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <p>Voilà bien du bruit qui ne sert pas de grand-chose. Il est écrit que je régenterai l'univers, mais que ma femme me régentera toujours.</p>
+          </sp>
+          <spGrp who="#jupiter">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#tout_cela_est_indifferent">Le Prévôt [des marchands]</title>
+              </desc>
+            </head>
+            <sp who="#jupiter">
+              <speaker>Jupiter</speaker>
+              <l met="8">Souverain absolu des Cieux</l>
+              <l met="8">Mon tonnerre est craint en tous lieux:</l>
+              <l met="8">Malgré cela, je suis pagnotte,</l>
+              <l met="8">Un pauvre sire, un franc oison.</l>
+              <l met="8">Ma femme porte la culotte,</l>
+              <l met="8">Est la maîtresse a la maison.</l>
+              <p>Après tout, je dois me consoler; il y a tant de maris qui me ressemblent. Il faut chercher du remède à mes maux et ravoir s'il se peut ma pauvre vache. Appelons Mercure, il me servira là-dedans mieux que personne.</p>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">jupiter, mercure</stage>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <stage>sifflant</stage>
+            <p>Holà ho, poisson d'avril!</p>
+          </sp>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <stage>accourant</stage>
+            <p>Signor si! Qu'y a-t-il pour votre service?</p>
+          </sp>
+          <stage>Jupiter lui ordonne de tout mettre en œuvre pour tirer Io des mains d'Argus. Il lui dit:</stage>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+          </sp>
+          <spGrp who="#jupiter">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#tout_cela_est_indifferent">Le Prévôt [des marchands]</title>
+              </desc>
+            </head>
+            <sp who="#jupiter">
+              <speaker>Jupiter</speaker>
+              <l met="8">Pour l'endormir, tu chanteras</l>
+              <l met="8">Les airs des nouveaux opéras,</l>
+              <l met="8">Triolets ou bien ritournelles:</l>
+              <l met="8">Mais, je me trompe, on n'en fait plus;</l>
+              <l met="8">Au défaut des chansons nouvelles,</l>
+              <l met="8">Chante-lui des lantur[e]lus.</l>
+              <p>En un mot, fais si bien qu'il fasse dodo.</p>
+            </sp>
+          </spGrp>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <p>Un diamant, une montre d'or feraient plus d'effet que toutes les chansons du monde. Ces bagatelles-là ferment les yeux, bouchent les oreilles et lient la langue.</p>
+          </sp>
+          <spGrp who="#mercure">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#philis_avare">Réveillez-vous, [belle endormie]</title>
+              </desc>
+            </head>
+            <sp who="#mercure">
+              <speaker>Mercure</speaker>
+              <l met="8">Le son d'une douce musette,</l>
+              <l met="8">N'égale pas celui de l'or.</l>
+              <l met="8">À son aspect, Argus, soubrette,</l>
+              <l met="8">Ouvre la main, clôt l'œil et dort.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">argus, [io<stage>en vache</stage>]</stage>
+          <stage>Il raisonne sur la commission que Junon lui a donné de garder Io, et paraît en être fort embarrassé. Il dit à Io, qui veut s'échapper:</stage>
+          <sp who="#argus">
+            <speaker>Argus</speaker>
+            <p>Tout beau, nymphe, tout beau! Vous êtes trop remuante; il faut vous défaire de vos inclinations de fille.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">argus, [io<stage>en vache</stage>], bergers et nymphes<stage>qui cherchent Io</stage>
+          </stage>
+          <stage>Les Nymphes et les Bergers témoignent à Argus l'inquiétude où ils sont du sort d'Io, qu'ils cherchent en vain. Argus la leur montre et leur apprend la cause de sa métamorphose.</stage>
+          <sp who="#unebergere">
+            <speaker>Une bergère</speaker>
+          </sp>
+          <spGrp who="#unebergere">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#folia">Folies d'Espagne</title>
+              </desc>
+            </head>
+            <sp who="#unebergere">
+              <speaker>Une bergère</speaker>
+              <l met="10">Dans le Tartare, où Mégère se cache,</l>
+              <l met="10">Ce châtiment paraît imaginé;</l>
+              <l met="10">Quoi! Pour si peu, devenir une vache?</l>
+              <l met="10">Quoi! Pour avoir une fois badiné?</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">[les acteurs précédents], colinet, rosette, enfants</stage>
+          <sp who="#colinet">
+            <speaker>Colinet</speaker>
+            <l met="12">Allons, Rosette, allons nous jouer dans ce bois;</l>
+            <l met="12">J'ai découvert un lieu qui regorge de noix.</l>
+            <l met="12">Viens! Je t'y donnerai, tous deux assis à l'ombre,</l>
+            <l met="12">Des prunettes, des fleurs, et des baisers sans nombre.</l>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <l met="12">Ah! non, non, Colinet, je crains trop à présent.</l>
+            <l met="12">Je pourrais devenir...</l>
+          </sp>
+          <sp who="#colinet">
+            <speaker>Colinet</speaker>
+            <l met="12">Quoi?</l>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <l met="12">Belette ou serpent.</l>
+            <l met="12">Regarde!</l>
+          </sp>
+          <stage>Elle montre la vache.</stage>
+          <sp who="#colinet">
+            <speaker>Colinet</speaker>
+            <l met="12">Que nous fait cette métamorphose?</l>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <l met="12">On m'a dit que ce jeu, vois-tu bien, en est cause.</l>
+          </sp>
+          <sp who="#colinet">
+            <speaker>Colinet</speaker>
+            <l met="12">Ne crains rien; elle aurait encore les yeux doux</l>
+            <l met="12">Si la belle n'avait joué que comme nous.</l>
+          </sp>
+          <sp who="#rosette">
+            <speaker>Rosette</speaker>
+            <l met="12">Ah! Mon cher Colinet, ton discours m'encourage;</l>
+            <l met="12">Donne ta main... Rit-on jamais mieux qu'à notre âge?</l>
+          </sp>
+          <spGrp>
+            <caption>Ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="4">Qui cherche à plaire</l>
+              <l met="3">Peut risquer.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">argus, mercure<stage>en vielleux</stage>, [io<stage>en vache</stage>]</stage>
+          <stage>Argus, charmé d'entendre le son de la vielle, fait approcher Mercure, à qui il dit qu'il aime les instruments autant que femme du monde. Après que Mercure a joué quelques temps, Argus s'endort. Le dieu emmène la vache, en disant:</stage>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+          </sp>
+          <spGrp who="#mercure">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#robin_ture_lure_lure">Robin ture lure</title>
+              </desc>
+            </head>
+            <sp who="#mercure">
+              <speaker>Mercure</speaker>
+              <l met="7">Malgré tous les soins jaloux</l>
+              <l met="7">D'une déesse trop dure,</l>
+              <l met="7">Enfin, la vache est à nous,</l>
+              <l met="3">Turelure!</l>
+              <l met="7">Je la tiens par la frisure,</l>
+              <l met="7">Robin [turelure lure].</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">jupiter, mercure, io<stage>en vache</stage>
+          </stage>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <p>Ah! ma pauvre vache, je tiens! Quel plaisir de te retrouver fidèle; à moins que tu n'aies badiné avec ce taureau qui m'a fait tant de peur.<stage>Voyant qu'elle fait ses ordures.</stage>Fi, la salope!</p>
+          </sp>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <p>C'est pour vous marquer la joie qu'elle a de vous retrouver.</p>
+          </sp>
+          <stage>Il voit Junon et s'enfuit.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">jupiter, junon, argus, io<stage>en vache</stage>
+          </stage>
+          <stage>Junon prend Jupiter au collet. Celui-ci crie au guet! à l'aide!</stage>
+          <sp who="#junon">
+            <speaker>Junon</speaker>
+          </sp>
+          <spGrp who="#junon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#gardons_moutons">Gardons nos moutons</title>
+              </desc>
+            </head>
+            <sp who="#junon">
+              <speaker>Junon</speaker>
+              <l met="8">Ici-bas, indigne maraud,</l>
+              <l met="6">Tu pousse[s] la fleurette,</l>
+              <l met="8">Tandis que je souffre là-haut</l>
+              <l met="6">Une affreuse disette.</l>
+              <l met="5">Si quelqu'un de moi</l>
+              <l met="5">Voulait faire emploi,</l>
+              <l met="6">Tu porterais l'aigrette.</l>
+            </sp>
+          </spGrp>
+          <stage>Elle fustige Argus et Jupiter.</stage>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <p>Aïe, aïe, aïe! Cela ne m'arrivera plus.</p>
+          </sp>
+          <spGrp who="#jupiter">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air du</desc>
+              <desc type="title">
+                <title ref="#pouvoir">Pouvoir</title>
+              </desc>
+            </head>
+            <sp who="#jupiter">
+              <speaker>Jupiter</speaker>
+              <l met="8">Je te demande bien pardon,</l>
+              <l met="6">Ma très chère Junon;</l>
+              <l met="8">Et je te promets que ce soir,</l>
+              <l met="6">Je ferai le devoir.</l>
+            </sp>
+          </spGrp>
+          <stage>Junon est si aise de cette promesse qu'elle s'en évanouit.</stage>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <p>Au vinaigre! Au vinaigre! Ma femme se meurt? Foin de moi! Je ne serai jamais si heureux: la chienne de Nature est immortelle!</p>
+          </sp>
+          <stage>Junon revenu[e] de sa pâmoison promet à Jupiter d'être chaste comme Lucrèce.</stage>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+          </sp>
+          <spGrp who="#jupiter">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#joconde">Joconde</title>
+              </desc>
+            </head>
+            <sp who="#jupiter">
+              <speaker>Jupiter</speaker>
+              <l met="8">Pour que dans ce jour de faveur,</l>
+              <l met="6">Rien ne semble difforme,</l>
+              <l met="8">À cette nymphe qui fait peur,</l>
+              <l met="6">Rend sa première forme!</l>
+              <l met="8">Si tu veux que mes tendres soins,</l>
+              <l met="6">Cette nuit soient sans bornes</l>
+              <l met="8">Ma mignonne, ôte-lui, du moins,</l>
+              <l met="6">Et la queue et les cornes.</l>
+              <p>Ces ornements ne lui conviennent point du tout.</p>
+            </sp>
+          </spGrp>
+          <stage>Junon n'y veut point consentir, malgré les promesses de fidélité, que lui fait Jupiter. Ce qui le force à faire ce serment.</stage>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <l met="12">Égout Montmartre, égout toujours rempli d'ordure,</l>
+            <l met="12">Cloaque, noir bourbier; c'est par vous que je jure,</l>
+            <l met="12">Soyez bien attentif au serment que je fais.</l>
+            <l met="12">Si cette vache, enfin, reprend tous ses attraits,</l>
+            <l met="12">Si ma Junon lui rend sa première fressure,</l>
+            <l met="12">Je jure tout en plein qu'on ne verra jamais</l>
+            <l met="12">De rivière sans eau, ni de pré sans verdure,</l>
+            <l met="12">D'humbles comédiens, de fidèles valets,</l>
+            <l met="12">De belles sans orgueil, de fiacres satisfaits.</l>
+            <l met="12">Égout Montmartre, égout toujours rempli d'ordure,</l>
+            <l met="12">Cloaque, noir bourbier, c'est par vous que j'en jure.</l>
+          </sp>
+          <stage>Junon, contente de cet horrible serment, dit:</stage>
+          <sp who="#junon">
+            <speaker>Junon</speaker>
+          </sp>
+          <spGrp who="#junon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+              </desc>
+            </head>
+            <sp who="#junon">
+              <speaker>Junon</speaker>
+              <l met="8">Je t'accorde tout, beau camus,</l>
+              <l met="8">Et même je veux faire plus:</l>
+              <l met="6">Par grâce singulière...</l>
+            </sp>
+          </spGrp>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <l met="2">Eh bien?</l>
+          </sp>
+          <sp who="#junon">
+            <speaker>Junon</speaker>
+            <l met="6">Qu'elle paraisse entière.</l>
+          </sp>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <l met="5">Je vous entends bien.</l>
+          </sp>
+          <stage>Le rocher s'élève et la métamorphose se fait.</stage>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+          </sp>
+          <spGrp who="#jupiter">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#gardons_moutons">Gardons nos moutons</title>
+              </desc>
+            </head>
+            <sp who="#jupiter">
+              <speaker>Jupiter</speaker>
+              <l met="8">Qu'une femme soit en courroux,</l>
+              <l met="6">Tempête et fasse rage,</l>
+              <l met="8">Avec deux ou trois mots, l'époux</l>
+              <l met="6">Peut apaiser l'orage:</l>
+              <l met="5">Toujours avec soi,</l>
+              <l met="5">Il porte de quoi</l>
+              <l met="7">Faire la paix du ménage.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 9</head>
+          <stage type="characters">jupiter, junon, io<stage>sous sa première forme</stage>
+          </stage>
+          <stage>Jupiter est enchanté du plaisir de revoir Io, à qui il demande quand ils renoueront connaissance.</stage>
+          <sp who="#io">
+            <speaker>Io</speaker>
+            <p>Tuchou! C'est le ventre de ma mère, je n'y retourne plus.</p>
+          </sp>
+          <stage>Junon menace Jupiter qui file doux et demande à Io ce qui lui a fait plus de peine dans sa métamorphose.</stage>
+          <sp who="#io">
+            <speaker>Io</speaker>
+            <p>C'était ce vilain poil que j'avais par tout le corps; cela est tout différent à présent.</p>
+          </sp>
+          <spGrp who="#io">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+              </desc>
+            </head>
+            <sp who="#io">
+              <speaker>Io</speaker>
+              <l met="8">Je ne convenais qu'aux buveurs</l>
+              <l met="8">De lait, et d'eau de mille fleurs;</l>
+              <l met="6">Mais, me voilà remise,</l>
+              <l met="2">Eh bien!</l>
+              <l met="6">J'ai d'autre marchandise.</l>
+            </sp>
+          </spGrp>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <l met="5">Je vous entends bien.</l>
+          </sp>
+          <stage>Junon dit qu'elle veut mettre Io au rang des dieux. On en convoque l'assemblée.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 10</head>
+          <stage type="characters">jupiter, junon, io, les autres divinités</stage>
+          <sp who="#junon">
+            <speaker>Junon</speaker>
+            <stage>à Io</stage>
+            <l met="10">Après les maux de votre hydropisie,</l>
+            <l met="10">Revêtez-vous du jupon cramoisi;</l>
+            <l met="8">Et sous le nouveau nom d'Isis,</l>
+            <l met="6">Crevez-vous d'ambroisie!</l>
+          </sp>
+          <sp who="#jupiteretjunon">
+            <speaker>Jupiter et junon</speaker>
+            <l met="12">Dieux! Permettez qu'Isis boive dans votre coupe;</l>
+            <l met="12">Chaudronniers, marmitons, dressez-lui de la soupe!</l>
+          </sp>
+          <stage>On chante.</stage>
+          <spGrp who="#jupiteretjunon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#jean_aime_jeanne">Jean aime Jeanne</title>
+              </desc>
+            </head>
+            <sp who="#jupiteretjunon">
+              <speaker>Jupiter et junon</speaker>
+              <l met="7">Chantons la Gloire d'Inache,</l>
+              <l met="7">Chantons les feux de Jupin.</l>
+              <l met="7">Rien n'est si charmant qu'Inache,</l>
+              <l met="7">Rien n'est si beau que Jupin.</l>
+              <l met="4">Chantons Inache,</l>
+              <l met="4">Chantons Jupin!</l>
+              <l met="10">Le joli Jupin aime bien Inache;</l>
+              <l met="10">La gentille Inache aime bien Jupin.</l>
+              <space dim="vertical" extent="1" unit="lines"/>
+              <l met="7">Après avoir été vache</l>
+              <l met="7">Et vu la feuille à l'envers;</l>
+              <l met="7">On verra la belle Inache,</l>
+              <l met="7">Manger là-haut des pois verts.</l>
+              <l met="4">Chantons Inache, ...</l>
+            </sp>
+          </spGrp>
+          <stage>Les acteurs du divertissement se retirent.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 11</head>
+          <stage type="characters">jupiter, junon, io</stage>
+          <stage>Jupiter congratule Isis sur sa façon de bien tenir sa morgue de déesse. Isis promet de la mieux tenir encore dans ses temples d'Égypte et d'être sage. Momus veut lancer quelques traits de raillerie sur la nouvelle divinité; Jupiter le bat, pour lui imposer silence. Junon, qui ce jour est maîtresse absolue dans l'Olympe, ordonne, qu'en réjouissance de la nouvelle déification, on donne à souper à chaque divinité, double portion de nectar et d'ambroisie. La pièce finit par le couplet que tous chantent.</stage>
+          <spGrp who="#jupiteretjunon">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#fraises">Des fraises</title>
+              </desc>
+            </head>
+            <sp who="#jupiteretjunon">
+              <speaker>Jupiter et junon</speaker>
+              <l met="7">À Paris, s'il arrivait</l>
+              <l met="6">Telles métamorphoses,</l>
+              <l met="7">Que de vachers il faudrait,</l>
+              <l met="7">Et combien on y verrait</l>
+              <l met="8">De choses, de choses, de choses.</l>
+            </sp>
+          </spGrp>
+          <stage>Fin</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,2892 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="amadis_1759">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Amadis</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>J. de Lagrange, Antoine-Jacques Labbet de Morembert et Antonio Jean Sticotti</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Rousseau</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Paris, Cailleau, 1760</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="amadis" sex="UNKNOWN">
+            <persName>Amadis</persName>
+          </person>
+          <person xml:id="oriane" sex="UNKNOWN">
+            <persName>Oriane</persName>
+          </person>
+          <person xml:id="florestan" sex="UNKNOWN">
+            <persName>Florestan</persName>
+          </person>
+          <person xml:id="corisande" sex="UNKNOWN">
+            <persName>Corisande</persName>
+          </person>
+          <person xml:id="arcabonne" sex="UNKNOWN">
+            <persName>Arcabonne</persName>
+          </person>
+          <person xml:id="arcalaus" sex="UNKNOWN">
+            <persName>Arcalaus</persName>
+          </person>
+          <person xml:id="lombre" sex="UNKNOWN">
+            <persName>L'ombre</persName>
+          </person>
+          <person xml:id="urgande" sex="UNKNOWN">
+            <persName>Urgande</persName>
+          </person>
+          <person xml:id="aracalaus" sex="UNKNOWN">
+            <persName>Aracalaus</persName>
+          </person>
+          <person xml:id="l_ombre_d_ardan_canile" sex="UNKNOWN">
+            <persName>L'ombre d'Ardan Canile</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie nouvelle de l'Opéra, mêlée d'ariettes</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1759">
+        <desc>Représentée pour la première fois sur le théâtre des comédiens italiens le 31 décembre 1759</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#amadis">Amadis</role>
+          <roleDesc>fils de Perion, roi des Gaules, amant d'Oriane</roleDesc>
+          <actor>Monsieur Rochard</actor>
+        </castItem>
+        <castItem>
+          <role ana="#oriane">Oriane</role>
+          <roleDesc>fille de Lisuart, roi de la Grande Bretagne</roleDesc>
+          <actor>Madame Favart</actor>
+        </castItem>
+        <castItem>
+          <role ana="#florestan">Florestan</role>
+          <roleDesc>fils naturel de Perion, amant de Corisande</roleDesc>
+          <actor>Madame Bognoli</actor>
+        </castItem>
+        <castItem>
+          <role ana="#corisande">Corisande</role>
+          <roleDesc>amie d'Oriane</roleDesc>
+          <actor>Mademoiselle Desglands</actor>
+        </castItem>
+        <castItem>
+          <role ana="#arcabonne">Arcabonne</role>
+          <roleDesc>magicienne, sœur d'Arcalaus et d'Ardan Canile</roleDesc>
+          <actor>Monsieur Chanville</actor>
+        </castItem>
+        <castItem>
+          <role ana="#aracalaus">Aracalaus</role>
+          <roleDesc>magicien</roleDesc>
+          <actor>Monsieur Desbrosses</actor>
+        </castItem>
+        <castItem>
+          <role ana="#l_ombre_d_ardan_canile">L'ombre d'Ardan Canile</role>
+          <actor>Monsieur Leclerc</actor>
+        </castItem>
+        <castItem>
+          <role ana="#urgande">Urgande</role>
+          <roleDesc>célèbre magicienne</roleDesc>
+          <actor>Mademoiselle Suzette</actor>
+        </castItem>
+      </castList>
+      <pb n="5"/>
+    </front>
+    <body>
+      <div type="act">
+        <head>ACTE 1</head>
+        <stage type="location">Le théâtre représente un palais.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Amadis, Florestan</stage>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+          </sp>
+          <spGrp who="#florestan">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#capucin">De tous les capucins du monde</title>
+              </desc>
+            </head>
+            <sp who="#florestan">
+              <speaker>Florestan</speaker>
+              <l met="8">C'est pour Corisande que j'aime,</l>
+              <l met="8">Mais c'est encor plus pour vous-même,</l>
+              <l met="8">Que je reviens dans ce pays.</l>
+              <l met="8">Pour vous l'amitié me débauche,</l>
+              <l met="8">Je vous dois cela car je suis</l>
+              <l met="8">Votre frère du côté gauche.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#florestan">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#robin_a_des_manchettes">Robin a des manchettes</title>
+              </desc>
+            </head>
+            <sp who="#florestan">
+              <speaker>Florestan</speaker>
+              <l met="6">Mais quel chagrin vous presse?</l>
+              <l met="6">D'où vient cette tristesse?</l>
+              <l met="6">Ne pourrait-on savoir...</l>
+            </sp>
+          </spGrp>
+          <pb n="6"/>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="6">Je suis au désespoir.</l>
+          </sp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+          </sp>
+          <spGrp who="#florestan">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#qu_un_mari_soit_pulmonique">Qu'un mari soit poulmonique</title>
+              </desc>
+            </head>
+            <sp who="#florestan">
+              <speaker>Florestan</speaker>
+              <l met="7">Un héros insurmontable,</l>
+              <l met="9">Estimable, admirable, indomptable,</l>
+              <l met="9">Devrait-il avoir cet air là, là,</l>
+              <l met="7">Tire lire liron fa.</l>
+            </sp>
+          </spGrp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="6">Je suis un misérable</l>
+            <l met="7">Qu'un funeste amour accable</l>
+            <l met="10">Depuis deux mois à l'Opéra, là, là.</l>
+          </sp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+          </sp>
+          <spGrp who="#florestan">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#pas_si_diable">Je ne suis pas si diable</title>
+              </desc>
+            </head>
+            <sp who="#florestan">
+              <speaker>Florestan</speaker>
+              <l met="6">Consolez-vous, mon frère,</l>
+              <l met="6">Par vos exploits guerriers,</l>
+              <l met="6">Dans tout notre hémisphère,</l>
+              <l met="6">On vante vos lauriers,</l>
+              <l met="6">Vous vivrez dans l'histoire...</l>
+            </sp>
+          </spGrp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="6">Peste soit du balourd,</l>
+            <l met="6">Qu'a de commun la gloire</l>
+            <l met="4">Avec l'amour?</l>
+          </sp>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#chez_sa_voisine">Chez sa voisine</title>
+              </desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="8">Alcide, ce héros parfait,</l>
+              <l met="6">Fut toujours ma marotte,</l>
+              <l met="8">Je voulais être son portrait;</l>
+              <l met="6">Mais mon ardeur falote</l>
+              <l met="8">Me fait ressembler trait pour trait</l>
+              <l met="4">À Don Quichotte.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">La paisible indifférence,tiré d' <title ref="#hypolite_et_aricie">Hypolite et Aricie</title> ()</desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="7">La gloire aisément s'oublie</l>
+              <l met="7">Quand l'amour nous a vaincu,</l>
+              <l met="7">À quoi sert que je copie</l>
+              <l met="7">Cet Alcide si connu?</l>
+              <l met="7">J'en ai toute la folie</l>
+              <l met="7">Sans en avoir la vertu.</l>
+            </sp>
+          </spGrp>
+          <pb n="7"/>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#allez_en_france">Allez en France</title>
+              </desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="8">J'aime Oriane sans espoir,</l>
+              <l met="8">Elle me quitte,</l>
+            </sp>
+          </spGrp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+            <l met="8">Il faut savoir</l>
+            <l met="8">Si la chose est douteuse.</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">J'ai quatre fois été la voir,</l>
+            <l met="8">L'ingrate m'a fait recevoir</l>
+            <l met="4">Par la doubleuse.</l>
+          </sp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+          </sp>
+          <spGrp who="#florestan">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ah_que_le_faubourg_saint_jacques">Ah! que le Faubourg Saint Jacques</title>
+              </desc>
+            </head>
+            <sp who="#florestan">
+              <speaker>Florestan</speaker>
+              <l met="7">C'est faute de vous entendre</l>
+              <l met="7">Que vous vous plaignez, je croi,</l>
+            </sp>
+          </spGrp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="7">Est-il un amant plus tendre</l>
+            <l met="7">Et plus mal mené que moi?</l>
+            <l met="7">Je ne vois qu'au dernier acte</l>
+            <l met="7">Celle qui fait mes malheurs,</l>
+            <l met="7">Il faut que ce soit un pacte</l>
+            <l met="7">De ces malins enchanteurs.</l>
+          </sp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+          </sp>
+          <spGrp who="#florestan">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#changement_pique">Changement pique l'appétit</title>
+              </desc>
+            </head>
+            <sp who="#florestan">
+              <speaker>Florestan</speaker>
+              <l met="8">Eh bien, laissez cette infidèle,</l>
+              <l met="8">Soyez aussi volage qu'elle,</l>
+              <l met="8">Trop de persévérance nuit,</l>
+              <l met="8">Changement pique l'appétit.</l>
+            </sp>
+          </spGrp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+          </sp>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="ariette">
+              <desc type="prefix">Ariette</desc>
+              <desc type="title">
+                <desc type="info">n.1</desc>
+              </desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="5">Quand pour une belle</l>
+              <l met="6">Notre cœur est blessé,</l>
+              <l met="6">Devient-elle infidèle,</l>
+              <l met="7">L'amour propre est offensé.</l>
+              <l met="6">Le Dieu qui nous engage</l>
+              <l met="8">De son bandeau couvre nos yeux,</l>
+              <l met="8">Et c'est souvent la plus volage</l>
+              <l met="6">Que l'on aime le mieux.</l>
+            </sp>
+          </spGrp>
+          <pb n="8"/>
+          <stage>Apercevant Corisande.</stage>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_ut_si_la_fa_mi_re_ut_si_ut_la">La, ut, si, la, fa, mi, ré, ut, si, ut, la</title>
+              </desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="10">Heureux amant, le bonheur vous rassemble.</l>
+            </sp>
+          </spGrp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+            <l met="10">Mon frère, adieu, partez comme un éclair,</l>
+            <l met="10">Vous ferez bien d'aller prendre un peu l'air,</l>
+            <l met="10">Pour nous laissez le plaisir d'être ensemble.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Florestan, Corisande</stage>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+          </sp>
+          <spGrp who="#corisande">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#et_bon_bon">Et bon bon</title>
+              </desc>
+            </head>
+            <sp who="#corisande">
+              <speaker>Corisande</speaker>
+              <l met="5">Mon beau Florestan!</l>
+            </sp>
+          </spGrp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+            <l met="7">Mon aimable Corisande!</l>
+          </sp>
+          <spGrp>
+            <caption>Ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="5">Trop heureux moment!</l>
+            </sp>
+          </spGrp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+            <l met="7">M'aimez-vous?</l>
+          </sp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="7">Belle demande!</l>
+          </sp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+            <l met="8">Épousons-nous sans compliment,</l>
+          </sp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="7">C'est ce que j'allais vous dire,</l>
+          </sp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+            <l met="8">Bon, bon, bon, quel aveu charmant!</l>
+            <l met="7">Nous allons tous deux bien rire!</l>
+          </sp>
+          <spGrp>
+            <caption>Ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="8">Bon, bon, bon, un arrangement</l>
+              <l met="7">Chez nous se fait promptement.</l>
+            </sp>
+          </spGrp>
+          <pb n="9"/>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+          </sp>
+          <spGrp who="#corisande">
+            <head type="melody" subtype="ariette">
+              <desc type="prefix">Ariette</desc>
+              <desc type="title">
+                <desc type="info">n.2</desc>
+              </desc>
+            </head>
+            <sp who="#corisande">
+              <speaker>Corisande</speaker>
+              <l met="5">D'un amant fidèle</l>
+              <l met="5">L'absence est cruelle,</l>
+              <l met="8">Mais il semble que son amour</l>
+              <l met="4">Se renouvelle</l>
+              <l met="4">Par son retour.</l>
+              <l met="7">Le printemps avec ses grâces</l>
+              <l met="10">Paraîtrait-il causer tant de plaisirs</l>
+              <l met="6">Si l'hiver par ses glaces</l>
+              <l met="10">N'interrompait le règne des zéphires?</l>
+            </sp>
+          </spGrp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+          </sp>
+          <spGrp who="#florestan">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mere_obligeante">Ma mère était bien obligeante</title>
+              </desc>
+            </head>
+            <sp who="#florestan">
+              <speaker>Florestan</speaker>
+              <l met="8">Pour toi mon ardeur est constante.</l>
+            </sp>
+          </spGrp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="8">Pour toi mon amour est constant.</l>
+          </sp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+            <l met="8">Corisande est toujours charmante.</l>
+          </sp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="8">Florestan est toujours charmant.</l>
+          </sp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+            <l met="8">Que Corisande est obligeante!</l>
+          </sp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="8">Que Florestan est obligeant!</l>
+          </sp>
+          <spGrp>
+            <caption>Florestan et corisande</caption>
+          </spGrp>
+          <stage type="musical_indication">Duo</stage>
+          <spGrp who="#ensemble">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#dupont_mon_ami">Dupont, mon ami</title>
+              </desc>
+            </head>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="5">Comme au bon vieux temps</l>
+              <l met="5">Chacun nous contemple,</l>
+              <l met="5">Des parfaits amants</l>
+              <l met="5">Nous sommes l'exemple,</l>
+              <l met="7">Aimons-nous parfaitement</l>
+              <l met="7">Jusqu'à la fin du roman.</l>
+            </sp>
+          </spGrp>
+          <pb n="10"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Oriane, Corisande, Florestan</stage>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+          </sp>
+          <spGrp who="#corisande">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#peril_agreable">Quand le péril est agréable</title>
+              </desc>
+            </head>
+            <sp who="#corisande">
+              <speaker>Corisande</speaker>
+              <l met="8">Je revois mon amant fidèle,</l>
+              <l met="8">Venez m'en faire compliment.</l>
+            </sp>
+          </spGrp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="8">Rien n'est plus rare assurément</l>
+            <l met="6">Qu'une ardeur éternelle.</l>
+          </sp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+          </sp>
+          <spGrp who="#florestan">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#o_l_heureux_temps">Ô, l'heureux temps</title>
+              </desc>
+            </head>
+            <sp who="#florestan">
+              <speaker>Florestan</speaker>
+              <l met="4">Votre rigueur</l>
+              <l met="5">Qui nous désespère</l>
+              <l met="6">Va de mon pauvre frère</l>
+              <l met="5">Causer le malheur.</l>
+            </sp>
+          </spGrp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="6">Il bannit de son cœur</l>
+            <l met="6">Une première ardeur.</l>
+            <l met="4">Elle est finie,</l>
+            <l met="5">Ce n'est qu'un trompeur:</l>
+            <l met="4">Briolanie</l>
+            <l met="6">Avec son nom badin</l>
+            <l met="8">Plait à ce petit libertin.</l>
+          </sp>
+          <spGrp who="#oriane">
+            <head type="melody" subtype="ariette">
+              <desc type="prefix">Ariette</desc>
+              <desc type="title">
+                <desc type="info">n.3</desc>
+              </desc>
+            </head>
+            <sp who="#oriane">
+              <speaker>Oriane</speaker>
+              <l met="4">Un inconstant</l>
+              <l met="4">Qui se dégage,</l>
+              <l met="6">Nous laisse l'avantage</l>
+              <l met="4">D'en faire autant.</l>
+              <l met="7">N'est-on plus sûre de plaire,</l>
+              <l met="6">Que ne doit-on pas faire</l>
+              <l met="6">Pour goûter la première</l>
+              <l met="4">Tout l'agrément</l>
+              <l met="4">Du changement?</l>
+            </sp>
+          </spGrp>
+          <pb n="11"/>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+          </sp>
+          <spGrp who="#florestan">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#non_tu_ne_m_aimes_pas">Non, tu ne m'aimes pas</title>
+              </desc>
+            </head>
+            <sp who="#florestan">
+              <speaker>Florestan</speaker>
+              <l met="6">Il n'est point infidèle,</l>
+              <l met="6">Je puis vous l'assurer.</l>
+            </sp>
+          </spGrp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="6">Une beauté nouvelle</l>
+            <l met="6">Vient de s'en emparer.</l>
+          </sp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+            <l met="6">Son cœur soumis est tendre.</l>
+          </sp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="6">C'est pour d'autres appas.</l>
+          </sp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+            <l met="6">Voulez-vous bien m'entendre?</l>
+          </sp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="6">Non, il ne m'aime pas.</l>
+          </sp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+          </sp>
+          <spGrp who="#corisande">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#pour_passer_doucement_la_vie">Pour passer doucement la vie</title>
+              </desc>
+            </head>
+            <sp who="#corisande">
+              <speaker>Corisande</speaker>
+              <l met="8">Des ingrats il purge la terre.</l>
+            </sp>
+          </spGrp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="8">Bon, ce héros ambitieux</l>
+            <l met="8">Par vanité leur fait la guerre</l>
+            <l met="8">Et pour son plaisir, fait comme eux.</l>
+          </sp>
+          <spGrp>
+            <caption>Florestan, corisande<stage>ensemble.</stage>
+            </caption>
+          </spGrp>
+          <spGrp who="#ensemble">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ah_ah_ah_venez_y_toutes">Ah! ah! ah! venez y toutes</title>
+              </desc>
+            </head>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Ah! ah! ah! quel bien suprême</l>
+              <l met="8">D'être aimé de ce que l'on aime!</l>
+              <l met="5">Quel plaisir charmant!</l>
+            </sp>
+          </spGrp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="6">Plaignez tous ma faiblesse</l>
+            <l met="6">Pour un perfide amant,</l>
+            <l met="6">J'aurais trop d'allégresse</l>
+            <l met="6">S'il m'aimait constamment.</l>
+          </sp>
+          <spGrp>
+            <caption>Florestan et corisande</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Ah! ah! ah! quel bien suprême ...</l>
+            </sp>
+          </spGrp>
+          <pb n="12"/>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="6">Que ne puis-je sans peine</l>
+            <l met="6">Aimer le changement?</l>
+            <l met="6">Je chéris trop ma chaîne</l>
+            <l met="6">Pour la rompre aisément.</l>
+          </sp>
+          <spGrp>
+            <caption>Florestan et corisande</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Ah! ah! ah! quel bien suprême ...</l>
+            </sp>
+          </spGrp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="6">Si de mon infidèle</l>
+            <l met="6">Mon cœur était content,</l>
+            <l met="6">Comme vous et comme elle</l>
+            <l met="6">Je chanterais gaiement.</l>
+            <l met="7">Ah! ah! ah! quel bien suprême ...</l>
+          </sp>
+          <stage type="musical_indication">Tous trois</stage>
+          <stage>On entend un bruit de guerre.</stage>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+          </sp>
+          <spGrp who="#oriane">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mi_la_si_ut_mi_ut_re_mi">Mi, la, si, ut, mi, ut, ré, mi</title>
+              </desc>
+            </head>
+            <sp who="#oriane">
+              <speaker>Oriane</speaker>
+              <l met="8">J'entends, je crois, des instruments?</l>
+            </sp>
+          </spGrp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="8">Vous ne vous êtes pas trompée,</l>
+            <l met="8">Ce sont des divertissements</l>
+            <l met="8">Pour votre âme préoccupée.</l>
+          </sp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="4">De quelle part?</l>
+          </sp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="6">Ils viennent par hasard</l>
+            <l met="7">C'est une danse d'épée.</l>
+          </sp>
+          <stage>Une troupe de suisses vient faire la danse du jeudi gras.</stage>
+          <pb n="13"/>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <stage type="location">Le théâtre représente un bois dont les arbres sont chargés de trophées. On y voit un pont et un pavillon au bout.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Arcabonne<stage>seule</stage>
+          </stage>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#arcabonne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mahomet_defendit">Mahomet défendit</title>
+              </desc>
+            </head>
+            <sp who="#arcabonne">
+              <speaker>Arcabonne</speaker>
+              <l met="12">Eh pourquoi, dieu d'amour, accabler Arcabonne?</l>
+              <l met="5">Ton pouvoir m'étonne</l>
+              <l met="6">Que voudrais-tu de moi?</l>
+              <l met="6">Sans doute sous ta loi</l>
+              <l met="6">Lorsque l'on a le cœur</l>
+              <l met="4">Plein de douceur?</l>
+              <l met="4">Mais par malheur</l>
+              <l met="4">Dans mon ardeur</l>
+              <l met="4">Je n'ai qu'un cœur</l>
+              <l met="4">Un cœur de diable.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#arcabonne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#l_amour_est_a_craindre">L'amour est à craindre</title>
+              </desc>
+            </head>
+            <sp who="#arcabonne">
+              <speaker>Arcabonne</speaker>
+              <l met="5">L'amour que je brave</l>
+              <l met="5">M'a fait son esclave,</l>
+              <l met="3">Dans l'entrave</l>
+              <l met="3">Me voilà.</l>
+              <l met="6">Comment sortir de là?</l>
+              <l met="5">Pour rompre la chaîne</l>
+              <l met="5">Qui cause ma peine,</l>
+              <l met="3">À la haine</l>
+              <l met="3">J'ai recours,</l>
+              <l met="6">C'est un mauvais secours.</l>
+            </sp>
+          </spGrp>
+          <pb n="14"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Arcalaus, Arcabonne</stage>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+          </sp>
+          <spGrp who="#arcalaus">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">Entrée des quatre nations,tiré des <title ref="#indes_galantes">Indes galantes</title> ()</desc>
+            </head>
+            <sp who="#arcalaus">
+              <speaker>Arcalaus</speaker>
+              <l met="5">Quelle sombre humeur,</l>
+              <l met="2">Ma sœur?</l>
+              <l met="4">Quelle douleur</l>
+              <l met="8">Vous trouble et vous met en fureur?</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+          </sp>
+          <spGrp who="#arcabonne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#capucin">De tous les capucins du monde</title>
+              </desc>
+            </head>
+            <sp who="#arcabonne">
+              <speaker>Arcabonne</speaker>
+              <l met="8">Je vais vous compter mon histoire,</l>
+              <l met="8">Et vous aurez peine à la croire.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#arcabonne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#et_frou_frou_frou">Et frou frou</title>
+              </desc>
+            </head>
+            <sp who="#arcabonne">
+              <speaker>Arcabonne</speaker>
+              <l met="7">Un monstre affreux l'autre jour,<stage type="bis">bis</stage>
+              </l>
+              <l met="7">M'allait faire un vilain tour:<stage type="bis">bis</stage>
+              </l>
+              <l met="8">Il était prêt à m'étrangler.</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="4">Pauvre petite!</l>
+            <l met="7">Il fallait l'ensorceler</l>
+            <l met="6">Et vous en étiez quitte.</l>
+          </sp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+          </sp>
+          <spGrp who="#arcabonne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#taritati">Taritati</title>
+              </desc>
+            </head>
+            <sp who="#arcabonne">
+              <speaker>Arcabonne</speaker>
+              <l met="6">Un héros débonnaire</l>
+              <l met="7">De je ne sais où sorti,</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="4">Taritati,</l>
+          </sp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="6">D'un coup de cimeterre</l>
+            <l met="7">Tout du long le pourfendit.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="4">Taritati.</l>
+          </sp>
+          <pb n="15"/>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="7">Hélas! j'eus bien peur, mon frère,</l>
+            <l met="6">Sans lui tout était dit,</l>
+            <l met="8">Taritati.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="8">Taritati.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="6">Taritati.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="6">Tati.</l>
+          </sp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+          </sp>
+          <spGrp who="#arcabonne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#le_masque_tombe">Le masque tombe</title>
+              </desc>
+            </head>
+            <sp who="#arcabonne">
+              <speaker>Arcabonne</speaker>
+              <l met="10">En rendant grâce au vaillant personnage,</l>
+              <l met="10">Je m'informai de son nom vainement,</l>
+              <l met="10">Mais remarquez ce bel événement,</l>
+              <l met="10">Son casque tombe et je vois son visage.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#arcabonne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#chapeau_borde_habit_de_pinchinat">Chapeau bordé, habit de pinchinat</title>
+              </desc>
+            </head>
+            <sp who="#arcabonne">
+              <speaker>Arcabonne</speaker>
+              <l met="5">À cet aspect là</l>
+              <l met="8">Là là là là là là là là</l>
+              <l met="5">Mon sang se troubla.</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="4">Oui-dà, oui-dà.</l>
+          </sp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="5">Depuis ce temps-là</l>
+            <l met="4">Là là là là.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="4">Oui-dà, oui-dà.</l>
+          </sp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="5">Ah le cœur me bat!</l>
+            <l met="5">Ma vertu combat.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+          </sp>
+          <spGrp who="#arcalaus">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#il_n_a_pas_pu">Il n'a pas pu</title>
+              </desc>
+            </head>
+            <sp who="#arcalaus">
+              <speaker>Arcalaus</speaker>
+              <l met="4">Ici, jadis</l>
+              <l met="4">Par Amadis</l>
+              <l met="6">Fut occis notre frère</l>
+              <l met="8">Pour le consoler d'être mort,</l>
+              <l met="8">Que son vainqueur ait même sort.</l>
+            </sp>
+          </spGrp>
+          <pb n="16"/>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="4">Animons-nous.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="4">Noble courroux,</l>
+            <l met="6">Cherchons le téméraire.</l>
+          </sp>
+          <spGrp who="#arcalaus">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#noel_suisse">Noël suisse</title>
+              </desc>
+            </head>
+            <sp who="#arcalaus">
+              <speaker>Arcalaus</speaker>
+              <l met="5">Suivons notre rage</l>
+              <l met="5">Pour le mettre en cage</l>
+              <l met="5">Charmons ces forêts,</l>
+              <l met="6">Préparons nos filets.</l>
+              <l met="5">Nous allons avoir</l>
+              <l met="6">Le plaisir de le voir</l>
+              <l met="5">Pris au traquenard,</l>
+              <l met="6">Ainsi qu'un vieux renard.</l>
+              <l met="5">Par la diablerie</l>
+              <l met="5">Avec barbarie</l>
+              <l met="5">Otons-lui la vie,</l>
+              <l met="5">Qu'il aille à l'instant</l>
+              <l met="5">Tenir compagnie</l>
+              <l met="5">A défunt Ardan.</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+          </sp>
+          <spGrp who="#arcalaus">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#quand_la_bergere_vient_des_champs">Quand la bergère vient des champs</title>
+              </desc>
+            </head>
+            <sp who="#arcalaus">
+              <speaker>Arcalaus</speaker>
+              <l met="8">Démons qui servez mon courroux,</l>
+              <l met="4">Préparez-vous.</l>
+              <l met="8">Au moindre mot accourez tous,</l>
+              <l met="4">Mais par prudence</l>
+              <l met="4">Avant la chance</l>
+              <l met="4">Montons chez nous.</l>
+            </sp>
+          </spGrp>
+          <stage>Il monte sur le pont et se retire dans le pavillon qui est au bout.</stage>
+          <pb n="17"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Amadis<stage>seul</stage>
+          </stage>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#dans_un_bois_solitaire">Dans un bois solitaire</title>
+              </desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="8">Bois épais, redouble ton ombre,</l>
+              <l met="8">Car je ne veux plus voir le jour,</l>
+              <l met="8">Et sois aussi triste, aussi sombre</l>
+              <l met="8">Que l'est mon ennuyeux amour.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="ariette">
+              <desc type="prefix">Ariette</desc>
+              <desc type="title">
+                <desc type="info">n.4</desc>
+              </desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="8">Amours, sois toujours mon vainqueur.</l>
+              <l met="6">Mars vainement m'ordonne</l>
+              <l met="6">D'éteindre mon ardeur,</l>
+              <l met="8">Ce dieu que la valeur couronne,</l>
+              <l met="12">À Vénus dans Paphos n'a-t-il pas fait sa cour</l>
+              <l met="10">Non, non, tous deux me charment tour à tour,</l>
+              <l met="8">On peut aux lauriers de Bellone</l>
+              <l met="8">Unir les myrtes de l'Amour.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Amadis, Corisande</stage>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+          </sp>
+          <spGrp who="#corisande">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#detour">Sous un ormeau</title>
+              </desc>
+            </head>
+            <sp who="#corisande">
+              <speaker>Corisande</speaker>
+              <l met="4">Par quel hasard</l>
+              <l met="3">Et si tard</l>
+              <l met="4">Suis-je à l'écart?</l>
+            </sp>
+          </spGrp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="5">Ah!</l>
+          </sp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="5">Quelqu'un je croi?</l>
+            <l met="3">Comme moi</l>
+            <l met="3">Est ici?</l>
+          </sp>
+          <pb n="18"/>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="1">Oui.</l>
+          </sp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="6">Du sort je sens les coups,</l>
+            <l met="3">Comme vous</l>
+            <l met="3">Je soupire;</l>
+            <l met="6">J'ai perdu dans l'instant</l>
+            <l met="3">Florestan,</l>
+            <l met="3">Quel martyre!</l>
+          </sp>
+          <spGrp>
+            <caption>Ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="4">Joignons nos pleurs,</l>
+              <l met="3">Nos douleurs,</l>
+              <l met="4">Et nos clameurs.</l>
+              <l met="5">Nous voyons tous deux</l>
+              <l met="3">À nos feux</l>
+              <l met="3">Les amours</l>
+              <l met="1">Sourds.</l>
+            </sp>
+          </spGrp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+          </sp>
+          <spGrp who="#corisande">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#matelots">Matelots</title>
+              </desc>
+            </head>
+            <sp who="#corisande">
+              <speaker>Corisande</speaker>
+              <l met="6">Florestan votre frère</l>
+              <l met="6">Gémit dans un cachot,</l>
+              <l met="6">Hélas! Le pauvre Haire!</l>
+              <l met="6">Il est pris comme un sot.</l>
+            </sp>
+          </spGrp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="4">Quoi! Ce grand cœur?</l>
+          </sp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="6">Il a de la valeur,</l>
+            <l met="4">Mais par malheur</l>
+            <l met="6">C'est qu'il a toujours peur.</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+          </sp>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#quand_moise_fit_defense">Quand Moïse fit défense</title>
+              </desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="7">Mais comment dans ces retraites</l>
+              <l met="7">A-t-il pu s'embarrasser?</l>
+            </sp>
+          </spGrp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="7">Ce bois est plein de fillettes</l>
+            <l met="7">Qui viennent vous agacer.</l>
+            <l met="7">Vous entendez des chanteuses,</l>
+            <l met="7">Vous y voyez des danseuses,</l>
+            <l met="7">Et tout cela vous conduit</l>
+            <l met="7">Dans un périlleux réduit.</l>
+          </sp>
+          <pb n="19"/>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+          </sp>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#pour_ma_pistole">Pour ma pistole</title>
+              </desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="5">Courons le défendre,</l>
+              <l met="6">Quel chemin dois-je prendre?</l>
+            </sp>
+          </spGrp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="5">Il faut vous attendre</l>
+            <l met="6">À de périls affreux.</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="4">Crois-tu ma chère</l>
+            <l met="4">Qu'en une affaire</l>
+            <l met="4">Comme mon frère</l>
+            <l met="4">Je suis peureux?</l>
+            <l met="2">Allons.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Arcalaus, Amadis, Corisande</stage>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <stage>achevant l'air</stage>
+            <l met="6">Arrête, malheureux.</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+          </sp>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_suis_un_croustilleux_chasseur">Je suis un croustilleux chasseur</title>
+              </desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="8">En vain, tu voudrais m'effrayer.</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="8">Ce passage est en ma puissance,</l>
+            <l met="8">Je dépouille ici tout guerrier.</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="6">Voyez, quelle insolence!</l>
+            <l met="8">J'ai toujours passé sans payer</l>
+            <l met="6">Sur tous les ponts de France.</l>
+          </sp>
+          <pb n="20"/>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+          </sp>
+          <spGrp who="#arcalaus">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#que_faites_vous_marguerite">Que faites-vous, Marguerite</title>
+              </desc>
+            </head>
+            <sp who="#arcalaus">
+              <speaker>Arcalaus</speaker>
+              <l met="7">Vois ces preuves de victoire.</l>
+            </sp>
+          </spGrp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="7">Convient-il d'être si vain,</l>
+            <l met="7">Lorsque l'on n'a que la gloire</l>
+            <l met="7">D'un voleur de grand chemin?</l>
+          </sp>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#de_ma_bergerie">De ma bergerie</title>
+              </desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="5">Ça, rends-moi mon frère!</l>
+            </sp>
+          </spGrp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="5">Rends-moi mon amant!</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="5">J'en fais mon affaire.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="5">Fais moins le méchant.</l>
+            <l met="6">Vous l'allez voir, ma chère,</l>
+            <l met="5">Ne craignez pas tant.</l>
+          </sp>
+          <spGrp who="#arcalaus">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#jean_releve_ta_culotte">Jean relève ta culotte</title>
+              </desc>
+            </head>
+            <sp who="#arcalaus">
+              <speaker>Arcalaus</speaker>
+              <l met="8">Je veux qu'à ta barbe, à ton nez,</l>
+              <l met="6">On prenne Corisande.</l>
+            </sp>
+          </spGrp>
+          <stage>Les suivants d'Arcalaus emmènent Corisande.</stage>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="8">Comment, comment, vous m'emmenez,</l>
+            <l met="6">Et sans qu'il me défende?</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="12">Allez, allez, assurez-vous, ne craignez rien,</l>
+            <l met="6">Mon petit cœur, ma mie,</l>
+            <l met="12">Allez, allez, car je vous défendrai très bien</l>
+            <l met="6">Quand vous serez partie.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+          </sp>
+          <spGrp who="#arcalaus">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#carillon_dunkerque">Carillon de Dunkerque</title>
+              </desc>
+            </head>
+            <sp who="#arcalaus">
+              <speaker>Arcalaus</speaker>
+              <l met="6">Livrons-lui donc bataille.</l>
+            </sp>
+          </spGrp>
+          <stage>Les démons paraissent.</stage>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <stage>aux démons</stage>
+            <l met="6">Retirez-vous canaille.</l>
+            <l met="6">Monsieur le Général,</l>
+            <l met="7">Je vais vous donner le bal.</l>
+          </sp>
+          <pb n="21"/>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="6">Démons, pour le combattre,</l>
+            <l met="6">Faites le diable à quatre.</l>
+          </sp>
+          <stage>Les démons fuient.</stage>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="5">Tes monstres ont, ma foi,</l>
+            <l met="6">Autant de peur que toi.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="6">Vous, nymphes, qu'on me serve,</l>
+            <l met="6">Désarmez ce guerrier.</l>
+          </sp>
+          <stage>Les nymphes viennent.</stage>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="6">Que votre art me préserve.</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="6">Ce beau corps de réserve</l>
+            <l met="6">Au plus fameux guerrier</l>
+            <l met="7">Ferait demander quartier.</l>
+          </sp>
+          <stage>Arcalaus sort et l'on danse autour d'Amadis.</stage>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+          </sp>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#c_est_chez_vous">C'est chez vous</title>
+              </desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="3">Que d'attraits!</l>
+              <l met="4">Tous ces objets</l>
+              <l met="6">Me paraissent parfaits.</l>
+              <l met="3">Que d'attraits!</l>
+              <l met="7">Tout en ressent les effets.</l>
+              <l met="7">Ô, pouvoir de leurs beaux yeux!</l>
+              <l met="8">En les voyant en ces lieux,</l>
+              <l met="6">Le diable même fuit</l>
+              <l met="8">Et certain charme me séduit.</l>
+              <l met="3">Que d'attraits!</l>
+              <l met="4">Tous ces objets</l>
+              <l met="6">Me paraissent parfaits.</l>
+              <l met="3">Que d'attraits!</l>
+              <l met="7">Mon cœur en sent les effets.</l>
+            </sp>
+          </spGrp>
+          <stage>Une niaise danse autour de lui.</stage>
+          <pb n="22"/>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+          </sp>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#il_faut_que_l_amour_nous_presse">Il faut que l'Amour nous presse</title>
+              </desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="7">Cette danse est langoureuse</l>
+              <l met="7">Et ne se fait plus goûter.</l>
+              <l met="8">Il la faudrait, pour nous flatter,</l>
+              <l met="4">Plus merveilleuse.</l>
+              <l met="8">Faites venir pour m'enchanter</l>
+              <l met="4">Une sauteuse.</l>
+            </sp>
+          </spGrp>
+          <stage>Une nymphe danse gaiement et l'enchante. Il la prend pour Oriane.</stage>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+          </sp>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_sagesse_est_de_bien_aimer">La sagesse est de bien aimer</title>
+              </desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="8">Est-ce un songe? Est-ce un art trompeur</l>
+              <l met="8">Qui m'offre en ces lieux ma maîtresse?</l>
+              <l met="8">Sans chercher si c'est une erreur</l>
+              <l met="8">Mon cœur s'abandonne à l'ivresse.</l>
+              <l met="8">Vous, Oriane! Ah! Quel bonheur!</l>
+              <l met="8">Quoi? Vous partagez ma tendresse?<stage type="bis">bis</stage>
+              </l>
+              <l met="8">Est-ce un songe ...</l>
+            </sp>
+          </spGrp>
+          <stage>On danse.</stage>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <stage>donnant son épée</stage>
+          </sp>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#le_grand_seigneur_a_raison">Le Grand Seigneur a raison</title>
+              </desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="7">Recevez, objet charmant,</l>
+              <l met="5">Un bijou si tendre,</l>
+              <l met="7">L'épée est un instrument</l>
+              <l met="7">Qu'un guerrier ne doit pas rendre.</l>
+              <l met="7">On pourra me critiquer,</l>
+              <l met="7">Mais si l'on vient m'attaquer,</l>
+              <l met="6">Vous saurez me défendre.</l>
+            </sp>
+          </spGrp>
+          <stage>Les nymphes emmènent Amadis.</stage>
+          <pb n="23"/>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 3</head>
+        <stage type="location">Le théâtre représente un bois, une prison et un tombeau.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Arcabonne, Florestan, Corisande, troupe de captifs</stage>
+          <stage>Arcabonne descend sur un hippogriffe qui tient dans sa gueule un falot, sur lequel on lit n.2.</stage>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+          </sp>
+          <spGrp who="#arcabonne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#monsieur_jason_courage">Monsieur Jason, courage</title>
+              </desc>
+            </head>
+            <sp who="#arcabonne">
+              <speaker>Arcabonne</speaker>
+              <l met="6">Traînez ici vos chaînes,</l>
+              <l met="6">Il faut vous dégourdir</l>
+              <l met="6">Mais de vos plaintes vaines</l>
+              <l met="6">N'allez pas m'étourdir.</l>
+              <l met="3">Flon, flon, flon</l>
+              <l met="5">Larira dondaine,</l>
+              <l met="3">Gai, gai, gai,</l>
+              <l met="5">Larira dondé.</l>
+            </sp>
+          </spGrp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+          </sp>
+          <spGrp who="#corisande">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_suis_madelon_friquet">Je suis Madelon Friquet</title>
+              </desc>
+            </head>
+            <sp who="#corisande">
+              <speaker>Corisande</speaker>
+              <l met="7">Cesserons-nous de languir?</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="8">Votre plainte enfin m'importune,</l>
+            <l met="7">Il est temps de la finir,</l>
+            <l met="8">De vos maux vous allez guérir.</l>
+          </sp>
+          <pb n="24"/>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+            <l met="8">Nous allons voir avec plaisir</l>
+            <l met="8">Mettre fin à notre infortune.</l>
+          </sp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="8">Vous pourriez vous attendrir!</l>
+          </sp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+            <l met="7">Qu'il me tarde de sortir</l>
+            <l met="8">Avec mon adorable brune!</l>
+          </sp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="7">Vous cesserez de souffrir,</l>
+            <l met="8">Mes enfants, vous allez mourir.</l>
+          </sp>
+          <spGrp>
+            <caption>Florestan et corisande</caption>
+          </spGrp>
+          <spGrp who="#ensemble">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ah_madame_anroux">Ah! Madame Anroux</title>
+              </desc>
+            </head>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="5">Ah! que j'ai d'effroi!</l>
+              <l met="5">Ce n'est pas pour moi,</l>
+              <l met="5">Mais pour toi je tremble.</l>
+              <l met="5">Ah! que j'ai d'effroi!</l>
+              <l met="5">Oui, pour toi je tremble,</l>
+              <l met="5">Ce n'est pas pour moi.</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="6">Terminez vos malheurs<stage type="bis">bis</stage>
+            </l>
+            <l met="6">Lorsque l'on meurt ensemble</l>
+            <l met="6">La mort a des douceurs.</l>
+          </sp>
+          <spGrp>
+            <caption>Corisande et florestan</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="5">Ah! que j'ai d'effroi! ...</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <stage>va au tombeau d'Ardan</stage>
+          </sp>
+          <spGrp who="#arcabonne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#diable_zot">Diablezot</title>
+              </desc>
+            </head>
+            <sp who="#arcabonne">
+              <speaker>Arcabonne</speaker>
+              <l met="8">Toi, qui fut jadis la terreur</l>
+              <l met="8">De toute la chevalerie,</l>
+              <l met="8">Et qu'un chevalier par malheur</l>
+              <l met="8">A pourtant privé de la vie,</l>
+              <l met="8">Sois le témoin de ma fureur.</l>
+              <l met="8">On va remettre en ma puissance</l>
+              <l met="8">Le guerrier qui te fit capot</l>
+              <l met="8">Pour l'immoler à ta vengeance.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lombre">
+            <speaker>L'ombre</speaker>
+            <stage>dans le tombeau</stage>
+            <l met="3">Diablézot!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">L'ombre et les précédents</stage>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+          </sp>
+          <spGrp who="#arcabonne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_ne_sais_pas_ecrire">Je ne sais pas écrire</title>
+              </desc>
+            </head>
+            <sp who="#arcabonne">
+              <speaker>Arcabonne</speaker>
+              <l met="8">Ah! ce bruit me fait frissonner,</l>
+              <l met="8">L'ombre, je crois, veut raisonner:</l>
+              <l met="6">L'aventure est tragique.</l>
+              <l met="8">Mais rassurons-nous cependant,</l>
+              <l met="8">Peut-être que l'âme d'Ardan</l>
+              <l met="6">N'aime pas la musique.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lombre">
+            <speaker>L'ombre</speaker>
+          </sp>
+          <spGrp who="#lombre">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_reverence_anglaise">La révérence anglaise</title>
+              </desc>
+            </head>
+            <sp who="#lombre">
+              <speaker>L'ombre</speaker>
+              <l met="4">Des sombres lieux</l>
+              <l met="8">Je viens te voir à la sourdine,</l>
+              <l met="6">Mais la clarté des cieux</l>
+              <l met="6">Me fait grand mal aux yeux.</l>
+              <l met="6">Ton désir curieux</l>
+              <l met="6">Altère ma poitrine,</l>
+              <l met="6">Je sens, quoique bien mort,</l>
+              <l met="6">Que je chante trop fort.</l>
+            </sp>
+            <sp who="#lombre">
+              <speaker>L'ombre</speaker>
+              <l met="5">Ta faible raison</l>
+              <l met="9">De l'amour a gouté le poison,</l>
+              <l met="5">Tu vas sottement</l>
+              <l met="5">Trahir ton serment:</l>
+              <l met="5">Tout cela m'agite</l>
+              <l met="5">Dans mon triste gîte</l>
+              <l met="4">Je redescends:</l>
+              <l met="8">C'est au diable que je t'attends.</l>
+            </sp>
+          </spGrp>
+          <stage>En dansant dans son tombeau.</stage>
+          <spGrp who="#lombre">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#sol_sol_sol_mi">Sol, sol, sol, mi</title>
+              </desc>
+            </head>
+            <sp who="#lombre">
+              <speaker>L'ombre</speaker>
+              <l met="4">Je redescends,<stage type="bis">bis</stage>
+              </l>
+              <l met="8">C'est au diable que je t'attends.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Arcabonne, Amadis et les précédents</stage>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+          </sp>
+          <spGrp who="#arcabonne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air du</desc>
+              <desc type="title">
+                <title ref="#confiteor">Confiteor</title>
+              </desc>
+            </head>
+            <sp who="#arcabonne">
+              <speaker>Arcabonne</speaker>
+              <l met="8">Vous radotez, préparons-nous,</l>
+              <l met="8">Je vois arriver ma victime.</l>
+              <l met="8">Meurs!... Amadis, est-ce bien vous?</l>
+              <l met="8">Vous tuer! Ce serait un crime,</l>
+              <l met="8">À votre bras je dois mes jours.</l>
+            </sp>
+          </spGrp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">N'importe, tuez-moi toujours.</l>
+          </sp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+          </sp>
+          <spGrp who="#arcabonne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mais_helas_je_m_apercois_bien">Mais hélas! je m'aperçois bien</title>
+              </desc>
+            </head>
+            <sp who="#arcabonne">
+              <speaker>Arcabonne</speaker>
+              <l met="7">Quoi! de mon libérateur</l>
+              <l met="8">Je pourrais être ennemie?</l>
+              <l met="7">J'ai juré sur mon honneur</l>
+              <l met="7">De te priver de la vie,</l>
+              <l met="8">Mais en te voyant, je sens bien</l>
+              <l met="7">Que j'ai fait une folie;</l>
+              <l met="8">Mais en te voyant, je sens bien</l>
+              <l met="7">Qu'il ne faut jurer de rien.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#arcabonne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ces_filles_sont_si_sottes">Ces filles sont si sottes</title>
+              </desc>
+            </head>
+            <sp who="#arcabonne">
+              <speaker>Arcabonne</speaker>
+              <l met="8">Pour m'acquitter honnêtement,</l>
+              <l met="8">Demandez-moi tout hardiment,</l>
+              <l met="8">Amadis, je vous fais serment</l>
+              <l met="8">Que mon pouvoir en ce moment</l>
+              <l met="6">Est à votre service.</l>
+            </sp>
+          </spGrp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">Délivrez ces innocents-là,</l>
+            <l met="6">Et soyez-nous propice.</l>
+          </sp>
+          <pb n="27"/>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="2">Oui-dà,</l>
+            <l met="6">Tout à votre service.</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+          </sp>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#gai_gai_gai_mon_officier">Gai, gai, gai, mon officier</title>
+              </desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="6">Je vous en remercie</l>
+              <l met="6">Et poursuis mon chemin.</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="6">Remettez, je vous prie,</l>
+            <l met="6">Le départ à demain.</l>
+            <l met="6">Vous prendrez bien, je pense,</l>
+            <l met="6">Le vin de l'étrier?</l>
+            <l met="9">Et gai, gai, gai, mon chevalier,</l>
+            <l met="6">Un peu de complaisance,</l>
+            <l met="9">Et gai, gai, gai, mon chevalier.</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="6">Pour vous remercier.</l>
+          </sp>
+          <stage>Arcabonne emmène Amadis.</stage>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+          </sp>
+          <spGrp who="#corisande">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#un_bel_oiseau">Un bel oiseau</title>
+              </desc>
+            </head>
+            <sp who="#corisande">
+              <speaker>Corisande</speaker>
+              <l met="8">Sortons d'un affreux esclavage.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <caption>Le chœur des captifs</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="8">Sortons d'un affreux esclavage.</l>
+            </sp>
+          </spGrp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="8">Et profitons de l'avantage</l>
+            <l met="7">Qu'Amadis par son courage</l>
+            <l met="7">Sur l'enfer a remporté,</l>
+            <l met="8">Chantons que notre liberté</l>
+            <l met="6">Est son heureux ouvrage.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="8">Chantons que notre liberté</l>
+            <l met="6">Est son heureux ouvrage.</l>
+          </sp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+          </sp>
+          <spGrp>
+            <head type="melody" subtype="same_melody">Même air</head>
+            <sp who="#florestan">
+              <speaker>Florestan</speaker>
+              <l met="8">Puisque lui-même était en cage.</l>
+            </sp>
+          </spGrp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="8">Puisque lui-même était en cage.</l>
+          </sp>
+          <pb n="28"/>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+            <l met="8">Ce n'est donc point par son courage</l>
+            <l met="7">Qu'il nous tire d'esclavage,</l>
+            <l met="7">C'est par d'autres qualités</l>
+            <l met="8">Et vous êtes des hébétés</l>
+            <l met="6">De tenir ce langage.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="8">Et nous sommes des hébétés</l>
+            <l met="6">De tenir ce langage.</l>
+          </sp>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 4</head>
+        <stage type="location">Le théâtre représente la mer et une île.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Arcalaus, Arcabonne</stage>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+          </sp>
+          <spGrp who="#arcalaus">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#d_une_main_je_tiens_mon_pot">De mon pot, je vous en réponds</title>
+              </desc>
+            </head>
+            <sp who="#arcalaus">
+              <speaker>Arcalaus</speaker>
+              <l met="7">Je viens entre chien et loup</l>
+              <l met="6">De faire un joli coup,</l>
+              <l met="7">Oriane est en ma puissance,</l>
+              <l met="8">Que la magie a d'agrément!</l>
+              <l met="8">On vous tient quitte du bon sens</l>
+              <l met="6">Dans ses événements.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#arcalaus">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#t_a_t_il_leve_ta_gorgerette">T'a-t-il levé ta gorgerette</title>
+              </desc>
+            </head>
+            <sp who="#arcalaus">
+              <speaker>Arcalaus</speaker>
+              <l met="8">Notre ennemi brûlait pour elle</l>
+              <l met="8">Il combattait pour l'obtenir.</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="8">Vous ne sauriez trop la punir,</l>
+            <l met="8">Je viens de la voir, qu'elle est belle!</l>
+            <l met="8">Ce crime ne peut se souffrir,</l>
+            <l met="8">Vous ne sauriez trop la punir.</l>
+          </sp>
+          <pb n="29"/>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+          </sp>
+          <spGrp who="#arcalaus">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#confiteor">Mon père, je viens devant vous</title>
+              </desc>
+            </head>
+            <sp who="#arcalaus">
+              <speaker>Arcalaus</speaker>
+              <l met="8">Nous n'aurons plus de démêlé,</l>
+              <l met="8">Dans le courroux qui vous anime.</l>
+              <l met="8">Vous avez sans doute immolé</l>
+              <l met="8">Cet Amadis, votre victime?</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="8">Vous imaginez qu'il est mort.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="8">Oui.</l>
+          </sp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="8">Mon frère, vous avez tort.</l>
+          </sp>
+          <spGrp who="#arcabonne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_n_aimais_pas_le_tabac_beaucoup">Je n'aimais pas le tabac beaucoup</title>
+              </desc>
+            </head>
+            <sp who="#arcabonne">
+              <speaker>Arcabonne</speaker>
+              <l met="9">Amadis est l'aimable inconnu</l>
+              <l met="9">Dont le bras m'a si bien secouru,</l>
+              <l met="9">Mon cœur reconnaissant aujourd'hui</l>
+              <l met="6">Est ici son appui.</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="6">Vous prenez son parti?</l>
+          </sp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="1">Oui.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="6">Vous m'avez donc trahi?</l>
+          </sp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="1">Oui.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="6">Vous faites tout pour lui?</l>
+          </sp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="1">Oui.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="6">Il est donc votre ami?</l>
+          </sp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="1">Oui.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+          </sp>
+          <spGrp who="#arcalaus">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_suis_le_precepteur_d_amour">Nous sommes précepteurs d'amour</title>
+              </desc>
+            </head>
+            <sp who="#arcalaus">
+              <speaker>Arcalaus</speaker>
+              <l met="8">Ton amour me met en fureur,</l>
+              <l met="8">Mais à ton tour, toi-même, tremble,</l>
+              <l met="8">Oui, tu vas voir, perfide sœur,</l>
+              <l met="8">Ces deux amants unis ensemble.</l>
+            </sp>
+          </spGrp>
+          <pb n="30"/>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+          </sp>
+          <spGrp who="#arcabonne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#moi_qui_fus_toujours_si_sage">Moi, qui fus toujours si sage</title>
+              </desc>
+            </head>
+            <sp who="#arcabonne">
+              <speaker>Arcabonne</speaker>
+              <l met="7">Ah! La rage me transporte!</l>
+              <l met="7">Ces amants seraient heureux?</l>
+              <l met="7">Que le diable les emporte,</l>
+              <l met="7">Et qu'il nous délivre d'eux.<stage type="bis">bis</stage>
+              </l>
+            </sp>
+            <sp>
+              <l met="7">J'imagine un artifice</l>
+              <l met="7">Pour servir notre courroux,</l>
+              <l met="7">Toujours en fait de malice</l>
+              <l met="7">Nous en savons plus que vous.<stage type="bis">bis</stage>
+              </l>
+            </sp>
+          </spGrp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+          </sp>
+          <spGrp who="#arcalaus">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mi_sol_re_mi_fa_mi_re_ut_sol">Mi, sol, ré, mi, fa, mi, ré, ut, sol</title>
+              </desc>
+            </head>
+            <sp who="#arcalaus">
+              <speaker>Arcalaus</speaker>
+              <l met="9">C'est bien dit, mais nous y fierons-nous?</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="7">Fiez-vous à l'amour jaloux.</l>
+          </sp>
+          <stage>Ils sortent.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Oriane<stage>seule</stage>
+          </stage>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#oriane">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#il_est_temps_philis_que_l_on_s_engage">Il est temps, Philis, que l'on s'engage</title>
+              </desc>
+            </head>
+            <sp who="#oriane">
+              <speaker>Oriane</speaker>
+              <l met="9">Je suis loin de la cour de mon père</l>
+              <l met="9">Sans savoir ni pourquoi, ni comment.</l>
+              <l met="9">Je me trouve en cette île étrangère,</l>
+              <l met="8">À présent que va dire maman?</l>
+              <l met="9">Moi, qu'en fille d'honneur on élève,</l>
+              <l met="9">Un sorcier me tient à sa merci!</l>
+              <l met="3">On m'enlève,</l>
+              <l met="3">Que j'endève</l>
+              <l met="5">De me voir ici!</l>
+              <l met="6">On m'enlève, e, e, eve,</l>
+              <l met="9">De moi, que veut-on faire aujourd'hui?</l>
+            </sp>
+            <sp>
+              <l met="9">Me voilà dans un bois sans personne,</l>
+              <l met="9">Maman ne m'entendra pas crier,</l>
+              <l met="9">Et monsieur mon amant m'abandonne,</l>
+              <l met="9">Est-ce le fait d'un preux chevalier?</l>
+              <l met="9">On m'emporte sur un hippogriffe,</l>
+              <l met="9">Je me vois au pouvoir d'un sorcier.</l>
+              <l met="3">L'escogriffe</l>
+              <l met="3">Sous sa griffe</l>
+              <l met="5">Me tient sans quartier,</l>
+              <l met="7">Sous sa gri, i, i, i, iffe,</l>
+              <l met="3">Sous sa griffe</l>
+              <l met="5">Me tient sans quartier.</l>
+            </sp>
+            <sp>
+              <l met="9">Il ne tardera pas à paraître,</l>
+              <l met="9">Mais malgré sa magie et ses sorts,</l>
+              <l met="9">Ma vertu va se faire connaître</l>
+              <l met="9">Je saurai réprimer ses efforts</l>
+              <l met="9">Quand on a la volonté maligne</l>
+              <l met="9">Et qu'on fuit un peu trop les transports,</l>
+              <l met="3">D'un air digne</l>
+              <l met="3">J'égratigne</l>
+              <l met="5">Je pince et je mords,</l>
+              <l met="7">J'égratigne, i, i, i, igne,</l>
+              <l met="3">J'égratigne,</l>
+              <l met="5">Je pince et je mords.</l>
+            </sp>
+          </spGrp>
+          <pb n="31"/>
+          <spGrp who="#oriane">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#fanfare_de_choisy">Fanfare de Choisy</title>
+              </desc>
+            </head>
+            <sp who="#oriane">
+              <speaker>Oriane</speaker>
+              <l met="7">Autrefois à ma défense</l>
+              <l met="7">Amadis aurait volé,</l>
+              <l met="7">Pour punir son inconstance,</l>
+              <l met="7">Je l'ai moi-même exilé;</l>
+              <l met="7">Quoiqu'un amant puisse faire,</l>
+              <l met="7">Il faut ménager ses soins,</l>
+              <l met="7">On peut en avoir affaire</l>
+              <l met="7">Quand on y pense le moins.</l>
+            </sp>
+          </spGrp>
+          <pb n="32"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Arcalaus, Oriane</stage>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+          </sp>
+          <spGrp who="#arcalaus">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_vous_preterai_mon_manchon">Je vous prêterai mon manchon</title>
+              </desc>
+            </head>
+            <sp who="#arcalaus">
+              <speaker>Arcalaus</speaker>
+              <l met="8">Croyez-moi, brisez votre chaîne.</l>
+            </sp>
+          </spGrp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="8">Oui, je hais un amant trompeur.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="8">J'ai très bien servi votre haine,</l>
+            <l met="8">Mon bras a vaincu ce vainqueur.</l>
+          </sp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="10">Amadis! Non, non, il n'est pas possible</l>
+            <l met="8">Qu'il ait cessé d'être invincible.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="4">C'est tout de bon.</l>
+          </sp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="4">Quel fanfaron!</l>
+            <l met="4">Vous si poltron.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="4">Je dis que si.</l>
+          </sp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="4">Je dis que non.</l>
+            <l met="6">À qui comptez-vous ça,</l>
+            <l met="4">Eh! mais oui dà?</l>
+            <l met="6">À qui comptez-vous ça?</l>
+          </sp>
+          <spGrp who="#oriane">
+            <head type="melody" subtype="ariette">
+              <desc type="prefix">Ariette</desc>
+              <desc type="title">
+                <desc type="info">n.5</desc>
+              </desc>
+            </head>
+            <sp who="#oriane">
+              <speaker>Oriane</speaker>
+              <l met="10">À ce héros, objet de mes alarmes,</l>
+              <l met="4">Tout est soumis</l>
+              <l met="6">Il ne craint point les armes</l>
+              <l met="7">De ses plus fiers ennemis.</l>
+              <l met="6">Chéri de la victoire,</l>
+              <l met="8">Il enchaîne tout l'univers,</l>
+              <l met="8">L'amour seul peut avoir la gloire</l>
+              <l met="6">De lui donner des fers.</l>
+            </sp>
+          </spGrp>
+          <pb n="33"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Arcalaus, Oriane, Amadis<stage>qui parait comme mort</stage>
+          </stage>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <stage>montrant Amadis à Oriane</stage>
+          </sp>
+          <spGrp who="#arcalaus">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#non_non_ce_n_est_pas_pour_rire">Non, non, ce n'est pas pour rire</title>
+              </desc>
+            </head>
+            <sp who="#arcalaus">
+              <speaker>Arcalaus</speaker>
+              <l met="8">Voyez, dois-je le craindre encore?</l>
+            </sp>
+          </spGrp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="8">Est-ce tout de bon qu'il est mort,</l>
+            <l met="6">Ce héros que j'admire?</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="7">Non, non, ce n'est pas pour rire.<stage type="musical_resumption">trois fois</stage>
+            </l>
+          </sp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+          </sp>
+          <spGrp who="#oriane">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#me_promenant_pres_du_logis">Me promenant près du logis</title>
+              </desc>
+            </head>
+            <sp who="#oriane">
+              <speaker>Oriane</speaker>
+              <l met="8">Quel objet vois-je en ce moment!</l>
+              <l met="8">Ah! quel affreux événement!<stage type="bis">bis</stage>
+              </l>
+              <l met="4">Mon pauvre amant</l>
+              <l met="8">Qui m'adorait si sagement,</l>
+              <l met="4">Que j'aimais tant,</l>
+              <l met="4">N'est plus vivant.<stage type="bis">bis</stage>
+              </l>
+              <l met="4">Vaillant et leste,</l>
+              <l met="3">Vif et preste,</l>
+              <l met="5">Plus de mille fois,</l>
+              <l met="7">Aux géants son bras funeste</l>
+              <l met="8">Ota l'usage de la voix.</l>
+              <l met="4">Mon pauvre amant!<stage type="bis">bis</stage>
+              </l>
+              <l met="8">Est-ce donc là ce cher amant</l>
+              <l met="4">Que j'aimais tant?<stage type="bis">bis</stage>
+              </l>
+              <l met="6">Au sort d'une bataille</l>
+              <l met="5">D'estoc et de taille,</l>
+              <l met="5">Sans cesse il frappait</l>
+              <l met="5">Tout ce qu'il trouvait,</l>
+              <l met="5">Il en triomphait;</l>
+              <l met="8">Mais en amour plus circonspect,</l>
+              <l met="8">Il ne manquait point de respect:</l>
+              <l met="8">Je crois qu'il est mort en effet.</l>
+              <l met="6">Ah! ah! qu'il est défait!</l>
+              <l met="4">Mon pauvre amant!<stage type="bis">bis</stage>
+              </l>
+              <l met="8">Est-ce donc là ce cher amant</l>
+              <l met="4">Que j'aimais tant?</l>
+            </sp>
+          </spGrp>
+          <pb n="34"/>
+          <spGrp who="#oriane">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#beaux_yeux_qui_paraissez_si_doux">Beaux yeux, qui paraissez si doux</title>
+              </desc>
+            </head>
+            <sp who="#oriane">
+              <speaker>Oriane</speaker>
+              <l met="8">Montrons dans un moment si beau</l>
+              <l met="6">La douleur la plus vive,</l>
+              <l met="8">Puisqu'Amadis est au tombeau</l>
+              <l met="6">Il faut que je le suive,</l>
+              <l met="8">Ou bien si je ne puis mourir</l>
+              <l met="8">Je vais tâcher de m'endormir.</l>
+            </sp>
+          </spGrp>
+          <stage>Elle se jette sur un gazon.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Arcalaus, Arcabonne, Amadis et Oriane<stage>sur un gazon</stage>
+          </stage>
+          <stage type="musical_indication">Duo</stage>
+          <spGrp>
+            <caption>Arcabonne et arcalaus</caption>
+          </spGrp>
+          <spGrp who="#ensemble">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#amour_plait">Quel plaisir de voir Claudine</title>
+              </desc>
+            </head>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Quel plaisir de voir la belle</l>
+              <l met="7">De douleur prête à mourir,</l>
+              <l met="7">Et son amant auprès d'elle</l>
+              <l met="7">Qui ne peut la secourir!</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+          </sp>
+          <spGrp who="#arcabonne">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#pour_un_bon_debauche">Pour un bon débauché</title>
+              </desc>
+            </head>
+            <sp who="#arcabonne">
+              <speaker>Arcabonne</speaker>
+              <l met="6">Écoutez le dessein</l>
+              <l met="6">Que mon amour propose,</l>
+              <l met="6">Écoutez le dessein</l>
+              <l met="6">De mon esprit badin:</l>
+              <l met="7">Tandis que l'un se repose,</l>
+              <l met="7">Que l'autre le croye mort.</l>
+            </sp>
+          </spGrp>
+          <pb n="34"/>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="7">Ah, ma sœur, la belle chose!</l>
+            <l met="7">Je l'avais pensé d'abord</l>
+            <l met="6">Guin guin guin relin guin.</l>
+          </sp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="7">À nos projets on s'oppose.</l>
+          </sp>
+          <spGrp>
+            <caption>Ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="6">Guin guin guin relin guin.</l>
+            </sp>
+          </spGrp>
+          <stage>On entend un bruit de symphonie.</stage>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="7">Qui peut troubler ce refrain?</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+          </sp>
+          <spGrp who="#arcalaus">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_ne_suis_pas_beau_oh_oh">Je ne suis pas beau, oh, oh</title>
+              </desc>
+            </head>
+            <sp who="#arcalaus">
+              <speaker>Arcalaus</speaker>
+              <l met="7">Un rocher flotte sur l'eau,</l>
+              <l met="2">Oh, oh,</l>
+              <l met="7">J'en vois sortir de la flamme.</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="7">Un rocher! C'est un serpent!</l>
+            <l met="2">Vraiment</l>
+            <l met="7">De crainte il glace mon âme.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="3">Un serpent?</l>
+            <l met="8">C'est bien un vaisseau de la Chine.</l>
+          </sp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="8">Bon, c'est bien une autre machine.</l>
+          </sp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="7">Qu'est-ce donc que tout cela?</l>
+          </sp>
+          <spGrp>
+            <caption>Ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="4">Ah! ah! ah! ah!</l>
+            </sp>
+          </spGrp>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="7">Marchandise d'Opéra.</l>
+          </sp>
+          <stage>Urgande descend du vaisseau avec ses suivantes.</stage>
+          <pb n="36"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">Arcalaus, Arcabonne, Urgande, Amadis et Oriane<stage>sur un gazon</stage>
+          </stage>
+          <sp who="#urgande">
+            <speaker>Urgande</speaker>
+          </sp>
+          <spGrp who="#urgande">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#voyez_ah_ah_ah">Voyez ah, ah, ah</title>
+              </desc>
+            </head>
+            <sp who="#urgande">
+              <speaker>Urgande</speaker>
+              <l met="7">Vous voyez la grande Urgande</l>
+              <l met="2">Ah! ah!</l>
+              <l met="7">Je viens sans qu'on me demande</l>
+              <l met="2">Ah! ah!</l>
+              <l met="7">Et de plus sans qu'on m'attende</l>
+              <l met="2">Ah! ah!</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <caption>Arcalaus, arcabonne</caption>
+          </spGrp>
+          <spGrp>
+            <head type="melody" subtype="same_melody">Même air</head>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Nos efforts sont inutiles,</l>
+              <l met="2">Ah! ah!</l>
+            </sp>
+          </spGrp>
+          <sp who="#urgande">
+            <speaker>Urgande</speaker>
+            <l met="7">Laissez ces amants tranquilles</l>
+            <l met="2">Ah! ah!</l>
+            <l met="7">Je vais vous rendre immobiles.</l>
+          </sp>
+          <stage>Elle touche de sa baguette Arcabonne.</stage>
+          <sp who="#arcabonne">
+            <speaker>Arcabonne</speaker>
+            <l met="2">Ah!</l>
+          </sp>
+          <stage>Elle en fait autant à Arcalaus.</stage>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="2">Ah!</l>
+          </sp>
+          <sp who="#urgande">
+            <speaker>Urgande</speaker>
+          </sp>
+          <spGrp who="#urgande">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#il_faut_suivre_la_mode">Il faut suivre la mode</title>
+              </desc>
+            </head>
+            <sp who="#urgande">
+              <speaker>Urgande</speaker>
+              <l met="8">Cela fait deux plaisants tableaux,</l>
+              <l met="8">Laissons-les dans cette posture,</l>
+              <l met="8">Je veux de ces originaux</l>
+              <l met="8">Conserver au moins la figure.</l>
+              <l met="8">Qu'on me dessine leurs portraits</l>
+              <l met="8">Selon la nouvelle méthode,</l>
+              <l met="4">Mais qu'ils soient faits</l>
+              <l met="4">À peu de frais</l>
+              <l met="6">Il faut suivre la mode.</l>
+            </sp>
+          </spGrp>
+          <stage>Deux suivants d'Urgande d'un coup de brosse dessinent leurs portraits en noir.</stage>
+          <spGrp who="#urgande">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#pierre_bagnolet">Allez-vous-en, gens de la noce</title>
+              </desc>
+            </head>
+            <sp who="#urgande">
+              <speaker>Urgande</speaker>
+              <l met="8">Dans mon cabinet qu'on les mette</l>
+              <l met="8">Pour être du goût d'à présent,</l>
+            </sp>
+            <sp who="#urgande">
+              <speaker>Urgande</speaker>
+              <l met="8">C'est assez, faites place nette,</l>
+              <l met="8">Vous embarrassez maintenant,</l>
+              <l met="4">Allez-vous-en,</l>
+              <l met="8">Faites tous deux la pirouette,</l>
+              <l met="8">N'allongez pas notre roman.</l>
+            </sp>
+          </spGrp>
+          <stage>Elle les désenchante.</stage>
+          <spGrp who="#urgande">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+              </desc>
+            </head>
+            <sp who="#urgande">
+              <speaker>Urgande</speaker>
+              <l met="8">Réveillez-vous, belle endormie</l>
+            </sp>
+            <sp who="#urgande">
+              <speaker>Urgande</speaker>
+              <l met="8">Réveillez-vous, amant constant,</l>
+              <l met="8">De vous voir dormir je m'ennuie,</l>
+              <l met="8">Et le public en fait autant.</l>
+            </sp>
+          </spGrp>
+          <stage>À Oriane.</stage>
+          <stage>à Amadis</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">Urgande, Amadis, Oriane</stage>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+          </sp>
+          <spGrp who="#oriane">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#suivez_les_lois">Suivez les lois</title>
+              </desc>
+            </head>
+            <sp who="#oriane">
+              <speaker>Oriane</speaker>
+              <l met="4">Je vois le jour:</l>
+              <l met="8">Quel charme me rend à la vie?</l>
+              <l met="4">Je vois le jour</l>
+              <l met="8">Sans voir l'objet de mon amour.</l>
+            </sp>
+          </spGrp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="4">Je vois le jour ...</l>
+          </sp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="5">Quelle tyrannie!</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="6">Mon amante m'oublie,</l>
+            <l met="5">Quelle tyrannie!</l>
+            <l met="7">Et je respire en ce séjour.</l>
+          </sp>
+          <pb n="38"/>
+          <spGrp>
+            <caption>Ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="4">Je vois le jour,</l>
+              <l met="8">Quel charme me rend à la vie?</l>
+              <l met="4">Je vois le jour</l>
+              <l met="8">Et l'objet de mon tendre amour.</l>
+            </sp>
+          </spGrp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+          </sp>
+          <spGrp who="#oriane">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#quand_la_mer_rouge">Quand la mer rouge</title>
+              </desc>
+            </head>
+            <sp who="#oriane">
+              <speaker>Oriane</speaker>
+              <l met="7">Malgré votre changement</l>
+              <l met="5">Pour une autre belle,</l>
+              <l met="7">Je vous aime constamment,</l>
+              <l met="5">Petit infidèle.</l>
+            </sp>
+          </spGrp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="7">Vous m'accusez faussement.</l>
+          </sp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="7">Non, vous vivez sûrement</l>
+            <l met="3">Pour Bri, Bri,</l>
+            <l met="5">Pour Brio, la, la</l>
+            <l met="3">Pour Bri, Bri,</l>
+            <l met="3">Pour Brio,</l>
+            <l met="5">Pour Briolanie.</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="5">Quelle calomnie!</l>
+          </sp>
+          <spGrp who="#amadis">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#il_faut_pour_le_coup_que_ma_muse_s_amuse">Il faut, pour le coup, que ma muse s'amuse</title>
+              </desc>
+            </head>
+            <sp who="#amadis">
+              <speaker>Amadis</speaker>
+              <l met="8">Ce bel objet de scène en scène</l>
+              <l met="2">Vous mène</l>
+              <l met="6">Sur un léger soupçon.</l>
+              <l met="8">À peine, hélas! Sais-je son nom</l>
+              <l met="8">Ce n'est qu'une chimère vaine.</l>
+              <l met="8">Ce bel objet de scène en scène,</l>
+              <l met="2">Vous mène</l>
+              <l met="6">Sans la moindre raison.</l>
+            </sp>
+          </spGrp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+          </sp>
+          <spGrp who="#oriane">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#monsieur_desbrosses">Monsieur Desbrosses</title>
+              </desc>
+            </head>
+            <sp who="#oriane">
+              <speaker>Oriane</speaker>
+              <l met="8">Je t'adorais quoique volage,</l>
+              <l met="8">Ah! Juge à présent, cher amant,</l>
+              <l met="8">Combien je t'aime davantage</l>
+              <l met="8">Quand je te retrouve constant.<stage type="musical_resumption">fin</stage>
+              </l>
+              <l met="5">Mon cœur est le tien,</l>
+              <l met="5">Ton cœur est le mien,</l>
+              <l met="6">Ne désirons plus rien;</l>
+              <l met="5">Ah! puissent toujours</l>
+              <l met="5">Durer nos amours,</l>
+              <l met="4">Toujours, toujours.</l>
+              <l met="8">Je t'adorais ...<stage type="musical_resumption">jusqu'au mot fin</stage>
+              </l>
+            </sp>
+          </spGrp>
+          <pb n="39"/>
+          <sp who="#urgande">
+            <speaker>Urgande</speaker>
+          </sp>
+          <spGrp who="#urgande">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#tout_est_charmant_a_cette_table">Tout est charmant, à cette table</title>
+              </desc>
+            </head>
+            <sp who="#urgande">
+              <speaker>Urgande</speaker>
+              <l met="8">Votre bonheur est mon ouvrage,</l>
+              <l met="8">Et je fais votre mariage.</l>
+              <l met="8">Mes enfants, il n'est pas besoin</l>
+              <l met="4">D'aller plus loin.</l>
+            </sp>
+          </spGrp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">Il faut en parler à mon père.</l>
+          </sp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="8">Le mien pourrait être en colère.</l>
+          </sp>
+          <sp who="#urgande">
+            <speaker>Urgande</speaker>
+            <l met="8">Bon! J'ai leur procuration.</l>
+          </sp>
+          <spGrp>
+            <caption>Amadis et oriane</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="4">Rien n'est si bon.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <caption>Ensemble</caption>
+          </spGrp>
+          <spGrp who="#ensemble">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#allons_danser_sous_ces_ormeaux">Allons danser, sous ces ormeaux</title>
+              </desc>
+            </head>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="8">L'amour finit notre tourment,</l>
+              <l met="8">Mais jurons-nous d'être fidèle,</l>
+              <l met="8">Souvent le bonheur d'un amant</l>
+              <l met="8">Passe comme un enchantement.</l>
+            </sp>
+          </spGrp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="8">À mes regards toujours plus belle,</l>
+            <l met="8">Je ne verrai que tes attraits.</l>
+          </sp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="8">Pour des rivaux, n'en crains jamais,</l>
+            <l met="1">Mais</l>
+            <l met="7">Point de maîtresse nouvelle.</l>
+          </sp>
+          <pb n="40"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">Les acteurs de la scène précédente, Florestan et Corisande</stage>
+          <spGrp>
+            <head type="melody" subtype="same_melody">Même air</head>
+            <caption>Ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="8">L'amour finit notre tourment</l>
+              <l met="8">Mais jurons-nous d'être fidèle,</l>
+              <l met="8">Souvent le bonheur d'un amant</l>
+              <l met="8">Passe comme un enchantement.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <caption>Amadis et florestan</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="10">Jamais le temps n'éteindra nos désirs.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <caption>Oriane et corisande</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="10">Que l'amour seul fasse tous nos plaisirs.</l>
+            </sp>
+          </spGrp>
+          <sp who="#florestan">
+            <speaker>Florestan</speaker>
+            <l met="4">Je suis à toi.</l>
+          </sp>
+          <sp who="#corisande">
+            <speaker>Corisande</speaker>
+            <l met="4">Voilà ma foi.</l>
+          </sp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="4">Compte sur moi.</l>
+          </sp>
+          <sp who="#oriane">
+            <speaker>Oriane</speaker>
+            <l met="4">Je suis ta loi,</l>
+          </sp>
+          <spGrp>
+            <caption>Tous</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="10">Des vrais amants devenons le modèle</l>
+              <l met="8">Notre amour toujours durera,</l>
+              <l met="8">Promettre une flamme éternelle</l>
+              <l met="8">Est la fin de tout Opéra:</l>
+              <l met="8">Finissons donc aussi par là.</l>
+              <l met="8">Content d'être aimable et charmant,</l>
+              <l met="8">Le beau sexe était ignorant,</l>
+              <l met="6">Jadis c'était l'usage;</l>
+              <l met="8">Mais l'esprit comme l'agrément</l>
+              <l met="7">Est devenu son partage,</l>
+              <l met="7">C'est l'usage<stage type="bis">bis</stage>d'à présent.</l>
+            </sp>
+            <sp>
+              <l met="8">Pour attendrir un fier objet</l>
+              <l met="8">On employait rose et muguet,</l>
+              <l met="6">Jadis c'était l'usage;</l>
+              <l met="8">Débuter par un gros présent,</l>
+              <l met="7">Pour fléchir un cœur sauvage,</l>
+              <l met="7">C'est l'usage<stage type="bis">bis</stage>d'à présent.</l>
+            </sp>
+            <sp>
+              <l met="8">Rester fidèle à son amant</l>
+              <l met="8">En dépit de l'éloignement,</l>
+              <l met="6">Jadis c'était l'usage;</l>
+              <l met="8">Ne pouvoir quand il est présent</l>
+              <l met="7">S'empêcher d'être volage,</l>
+              <l met="7">C'est l'usage<stage type="bis">bis</stage>d'à présent.</l>
+            </sp>
+            <sp>
+              <l met="8">Les chevaliers preux et courtois</l>
+              <l met="8">Sauvaient l'innocence aux abois,</l>
+              <l met="6">Jadis c'était l'usage;</l>
+              <l met="8">Est-elle en un péril pressant?</l>
+              <l met="7">On l'aide à faire nauffrage,</l>
+              <l met="7">C'est l'usage<stage type="bis">bis</stage>d'à présent.</l>
+            </sp>
+            <sp>
+              <l met="8">On ne pouvait souffrir le chant</l>
+              <l met="8">Que naturel, noble et touchant,</l>
+              <l met="6">Jadis c'était l'usage;</l>
+              <l met="8">À l'Opéra, quel changement?</l>
+              <l met="7">On n'applaudit qu'au tapage,</l>
+              <l met="7">C'est l'usage<stage type="bis">bis</stage>d'à présent.</l>
+            </sp>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="8">Fréquenter les italiens,</l>
+              <l met="8">Applaudir à leurs petits riens,</l>
+              <l met="6">Jadis c'était l'usage;</l>
+              <l met="8">Mais ne sourire qu'en passant</l>
+              <l met="7">Au zéle qui les engage,</l>
+              <l met="7">C'est l'usage<stage type="bis">bis</stage>d'à présent.</l>
+            </sp>
+            <sp>
+              <l met="8">Ramenez-nous cet heureux temps,</l>
+              <l met="8">Où vous étiez toujours contents,</l>
+              <l met="6">Jadis c'était l'usage;</l>
+              <l met="8">Que le public, plus indulgent,</l>
+              <l met="7">Dise en donnant son suffrage:</l>
+              <p>Allons, Messieurs, ils font tout ce qu'ils peuvent pour nous plaire, applaudissons-les.</p>
+              <l met="7">C'est l'usage<stage type="bis">bis</stage>d'à présent.</l>
+            </sp>
+          </spGrp>
+          <stage>Fin</stage>
+          <stage>Au parterre.</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,917 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="fetes_parisiennes_1712">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Les Fêtes parisiennes</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Louis Fuzelier</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Rousseau</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Édition, s.l., s.d. [1712]. Le ms. BnF fr.~25476 contient une copie de cette édition.</bibl>
+        <bibl type="intermediarySource">P. Beaucé et L. Chahine</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="arlequin" sex="UNKNOWN">
+            <persName>Arlequin</persName>
+          </person>
+          <person xml:id="unboucher" sex="UNKNOWN">
+            <persName>Un boucher</persName>
+          </person>
+          <person xml:id="lecarnaval" sex="UNKNOWN">
+            <persName>La carnaval</persName>
+          </person>
+          <person xml:id="lafolie" sex="UNKNOWN">
+            <persName>La folie</persName>
+          </person>
+          <person xml:id="laraison" sex="UNKNOWN">
+            <persName>La raison</persName>
+          </person>
+          <person xml:id="loperateur" sex="UNKNOWN">
+            <persName>L'opérateur</persName>
+          </person>
+          <person xml:id="legoutteux" sex="UNKNOWN">
+            <persName>Le goutteux</persName>
+          </person>
+          <person xml:id="lamour" sex="UNKNOWN">
+            <persName>L'amour</persName>
+          </person>
+          <person xml:id="isabeau" sex="UNKNOWN">
+            <persName>Isabeau</persName>
+          </person>
+          <person xml:id="lisette" sex="UNKNOWN">
+            <persName>Lisette</persName>
+          </person>
+          <person xml:id="leprovencal" sex="UNKNOWN">
+            <persName>Le provençal</persName>
+          </person>
+          <person xml:id="lecuisinier" sex="UNKNOWN">
+            <persName>Le cuisinier</persName>
+          </person>
+          <person xml:id="laboulangere" sex="UNKNOWN">
+            <persName>La boulangère</persName>
+          </person>
+          <person xml:id="labouchere" sex="UNKNOWN">
+            <persName>La bouchère</persName>
+          </person>
+          <person xml:id="lesrivales" sex="UNKNOWN">
+            <persName>Les rivales</persName>
+          </person>
+          <person xml:id="unebourgeoise" sex="UNKNOWN">
+            <persName>Une bourgeoise</persName>
+          </person>
+          <person xml:id="ladupe" sex="UNKNOWN">
+            <persName>La dupe</persName>
+          </person>
+          <person xml:id="unjoueur" sex="UNKNOWN">
+            <persName>Un joueur</persName>
+          </person>
+          <person xml:id="crispin" sex="UNKNOWN">
+            <persName>Crispin</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">[Parodie des<emph>Fêtes vénitiennes</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1712">
+        <desc>Données au public par la troupe des danseurs de corde du jeu de paume d'Orléans, à la foire Saint-Germain au mois de février 1712</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <prologue>
+        <div type="avertissement">
+          <head>[Avertissement]</head>
+          <stage>Le public est averti de ne pas s'arrêter à l'ordre des Fêtes parisiennes rassemblées dans ce livre, que l'on change quelque fois dans l'exécution, pour y mettre plus de goût et de variété.</stage>
+        </div>
+        <stage>Le théâtre représente les dehors de la porte Saint-Antoine. Arlequin et Scaramouche impatients de goûter les plaisirs du Carnaval l'appellent par un écriteau.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#branle_de_metz">Branle de Metz</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Carnaval, viens à nos belles</l>
+            <l met="7">Donner leur temps favori.</l>
+          </sp>
+          <sp>
+            <l met="7">Bacchus fait charivari</l>
+            <l met="7">Chez les jalouses cervelles.</l>
+            <l met="7">Tu sais aux yeux d'un mari,</l>
+            <l met="7">Quand tu doubles les chandelles,</l>
+            <l met="7">Tu sais aux yeux d'un mari</l>
+            <l met="7">Soustraire un galant chéri.</l>
+          </sp>
+        </spGrp>
+        <stage>Le Carnaval paraît descendre des nues dans une grande casserole: deux marmitons l'accompagnent. L'un s'est assis sur un réchaud et tient un plat a la main; l'autre est à cheval sur une marmite. Le Carnaval porte un bassin de beignets qu'il laisse tomber en sortant de sa casserole. Arlequin et Scaramouche se battent à qui les mangera et il les réconcilie en les faisant boire ensemble. Ensuite, il appelle les Amours par un écriteau.</stage>
+        <sp who="#lecarnaval">
+          <speaker>La carnaval</speaker>
+        </sp>
+        <spGrp who="#lecarnaval">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cedez_tambours_a_ma_musette">Cédez, tambours, à ma musette</title>
+            </desc>
+          </head>
+          <sp who="#lecarnaval">
+            <speaker>La carnaval</speaker>
+            <l met="8">Amours, quittez tous votre mère,</l>
+            <l met="8">Volez, abandonnez Cythère,</l>
+            <l met="8">Accourez sur des bords plus doux!</l>
+          </sp>
+          <sp>
+            <l met="8">Mille amants, suivis de leurs belles,</l>
+            <l met="7">Vous attendent à Saint-Cloud,</l>
+            <l met="8">Ainsi qu'au moulin de Javelles.</l>
+          </sp>
+        </spGrp>
+        <stage>Les Amours et les Plaisirs descendent avec Bacchus et se joignent au carnaval.</stage>
+        <stage>Le bœuf gras arrive avec son cortège au son des tambours et des trompettes. Il est conduit par deux romains. Arlequin les apercevant présente un écriteau.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sois_complaisant">Sois complaisant, affable, débonnaire</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="10">Y pensez-vous, superbe Melpomène?</l>
+            <l met="10">Quoi, vos héros ont déserté la scène!</l>
+            <l met="1">Ah!</l>
+            <l met="7">Je vois la troupe romaine</l>
+            <l met="7">À la suite du bœuf gras.</l>
+          </sp>
+        </spGrp>
+        <stage>Le bœuf gras continue sa marche. Un boucher de sa suite présente un écriteau.</stage>
+        <sp who="#unboucher">
+          <speaker>Un boucher</speaker>
+        </sp>
+        <spGrp who="#unboucher">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_qui_vous_moquez">Vous, qui vous moquez par vos ris</title>
+            </desc>
+          </head>
+          <sp who="#unboucher">
+            <speaker>Un boucher</speaker>
+            <l met="8">Bourgeois, accourez à nos cris,</l>
+            <l met="6">Venez voir notre fête.</l>
+          </sp>
+          <sp>
+            <l met="8">Du plus beau bœuf gras de Paris</l>
+            <l met="6">Chez nous la mort s'apprête.</l>
+            <l met="8">Mais quoi! Déjà bien des maris</l>
+            <l met="6">En ont volé la crête.</l>
+          </sp>
+        </spGrp>
+        <stage>Dès que le bœuf gras et sa suite sont partis, la Folie arrive conduisant une troupe de masque. Après leur entrée la Folie présente un écriteau.</stage>
+        <sp who="#lafolie">
+          <speaker>La folie</speaker>
+        </sp>
+        <spGrp who="#lafolie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais [en aimant] Colette</title>
+            </desc>
+          </head>
+          <sp who="#lafolie">
+            <speaker>La folie</speaker>
+            <l met="8">De mes sujets voyez l'élite</l>
+            <l met="8">Sur mes pas ici s'empresser.</l>
+          </sp>
+          <sp>
+            <l met="8">S'ils voulaient tous être à ma suite,</l>
+            <l met="8">Je ne saurais où les placer.</l>
+          </sp>
+        </spGrp>
+        <stage>Un Français et une Amazone dansent un menuet qui est suivi d'un rigaudon dansé par un petit berger et une jeune bergère. La Folie montre un écriteau.</stage>
+        <sp who="#lafolie">
+          <speaker>La folie</speaker>
+        </sp>
+        <spGrp who="#lafolie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_m_entendez_vous_pas">Ne m'entendez-vous pas</title>
+            </desc>
+          </head>
+          <sp who="#lafolie">
+            <speaker>La folie</speaker>
+            <l met="6">Au temps du carnaval</l>
+            <l met="6">Que d'époux on maltraite!</l>
+            <l met="6">L'amour fait sa recette</l>
+            <l met="6">Tout en courant le bal,</l>
+            <l met="6">Au temps du carnaval.</l>
+          </sp>
+        </spGrp>
+        <stage>Pierrot et Dame Gigogne dansent un menuet.</stage>
+        <stage>Les danses de la suite de la Folie sont interrompues par la Raison qui marche gravement accompagnée du pleureur Héraclite, et du rieur Démocrite. Elle montre un écriteau.</stage>
+        <sp who="#laraison">
+          <speaker>La raison</speaker>
+        </sp>
+        <spGrp who="#laraison">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#laraison">
+            <speaker>La raison</speaker>
+            <l met="8">Vous me méconnaissez, sans doute</l>
+            <l met="8">Vous n'êtes pas faits à ma voix.</l>
+            <l met="8">Je suis la Raison, qu'on m'écoute!</l>
+            <l met="8">Ce sera la première fois.</l>
+          </sp>
+        </spGrp>
+        <stage>La Folie turlupine la raison et les philosophes par un écriteau.</stage>
+        <sp who="#lafolie">
+          <speaker>La folie</speaker>
+        </sp>
+        <spGrp who="#lafolie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#beaux_yeux_nicole">[J'ai fait à ma maîtresse]</title>
+            </desc>
+          </head>
+          <sp who="#lafolie">
+            <speaker>La folie</speaker>
+            <l met="6">Voyez quel est un sage!</l>
+            <l met="6">Quel air grave et serré!</l>
+            <l met="6">En public il m'outrage,</l>
+            <l met="6">Il m'adore en secret.</l>
+            <l met="6">Sous vos habits fantasques</l>
+            <l met="6">Vous trompez mal les yeux</l>
+            <l met="6">Les Catons sont des masques</l>
+            <l met="6">Qui se déguisent mieux.</l>
+          </sp>
+        </spGrp>
+        <stage>Arlequin et Scaramouche surviennent qui donnent des rats à la Raison et ses suivants. Les deux philosophes donnent leurs râbles à Arlequin et Scaramouche et se joignent aux masques pour chasser la Raison. La Folie arme Arlequin pour aller combattre la Raison et montre un écriteau.</stage>
+        <sp who="#lafolie">
+          <speaker>La folie</speaker>
+        </sp>
+        <spGrp who="#lafolie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#joconde">Joconde</title>
+            </desc>
+          </head>
+          <sp who="#lafolie">
+            <speaker>La folie</speaker>
+            <l met="8">À la raison, cher Arlequin</l>
+            <l met="6">Cours, va livrer la guerre!</l>
+            <l met="8">Ah, que nous ferons de chemin</l>
+            <l met="6">Pour la trouver sur terre.</l>
+            <l met="8">Pour vous, ne suivez point nos pas:</l>
+            <l met="6">Pour lui livrer bataille,</l>
+            <l met="8">J'aurai toujours trop de soldats</l>
+            <l met="6">En quelque lieu que j'aille.</l>
+          </sp>
+        </spGrp>
+        <stage>Le Carnaval invite les sauteurs à célébrer un si beau jour, et finir la fête en présentant cet écriteau:</stage>
+        <sp who="#lecarnaval">
+          <speaker>La carnaval</speaker>
+        </sp>
+        <spGrp who="#lecarnaval">
+          <head type="melody" subtype="restored_melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_bon_branle">Le bon branle</title>
+            </desc>
+          </head>
+          <sp who="#lecarnaval">
+            <speaker>La carnaval</speaker>
+            <l met="8">Dans les beaux jours du carnaval</l>
+            <l met="6">Bacchus mène le branle.</l>
+            <l met="8">L'amour augmente le régal.</l>
+            <l met="8">Chacun danse tant bien que mal</l>
+            <l met="6">Et cotillon et branle;</l>
+            <l met="8">Mais ce n'est qu'en sortant du bal</l>
+            <l met="6">Qu'on danse le bon branle.</l>
+          </sp>
+        </spGrp>
+        <stage>Le théâtre représente la vue du Pont Neuf et du cheval de Bronze.</stage>
+        <stage>Isabeau paraît, conduisant sa petite Lisette qu'elle querelle par un écriteau sur l'air:<emph>Réveillez-vous, belle endormie</emph>.</stage>
+        <sp who="#lisette">
+          <speaker>Lisette</speaker>
+          <stage>répond:</stage>
+        </sp>
+        <spGrp who="#lisette">
+          <head type="melody" subtype="restored_melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#lisette">
+            <speaker>Lisette</speaker>
+            <l met="8">Je brave l'amour et ses armes.</l>
+            <l met="8">J'aime peu les soins des amants;</l>
+            <l met="8">Mais je conçois qu'il est des charmes</l>
+            <l met="8">À tromper les yeux des mamans.</l>
+          </sp>
+        </spGrp>
+        <stage>Isabeau veut emmener Lisette qu'elle tiraille d'un air grondeur.</stage>
+        <stage>Un opérateur arrive dans son carrosse qui fait le tour du théâtre et s'arrête. En s'ouvrant on y voit l'Opérateur et l'Amour saltimbanque. Ce carrosse est caractérisé par les symboles de la galanterie moderne.</stage>
+        <stage>Un paysan vient se faire arracher une dent. L'opérateur après ses lazzi montre un écriteau.</stage>
+        <sp who="#loperateur">
+          <speaker>L'opérateur</speaker>
+        </sp>
+        <spGrp who="#loperateur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_vois_bien_jeune_bergere">Je vois bien, jeune bergère</title>
+            </desc>
+          </head>
+          <sp who="#loperateur">
+            <speaker>L'opérateur</speaker>
+            <l met="7">Qui croit n'aimer de sa vie</l>
+            <l met="7">Des cœurs qu'un tendre nœud lie</l>
+            <l met="7">Connaît peu le doux tyran:</l>
+            <l met="5">L'amour charlatan</l>
+            <l met="5">Arrache une dent</l>
+            <l met="8">À qui souvent ne s'en méfie.</l>
+          </sp>
+        </spGrp>
+        <stage>Scaramouche, goutteux, vient demander un remède à l'opérateur, par un écriteau.</stage>
+        <sp who="#legoutteux">
+          <speaker>Le goutteux</speaker>
+        </sp>
+        <spGrp who="#legoutteux">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#legoutteux">
+            <speaker>Le goutteux</speaker>
+            <l met="8">La goutte qui me désespère</l>
+            <l met="8">A besoin de votre talent:</l>
+            <l met="8">S'il guérissait la consulaire</l>
+            <l met="8">Vous gagneriez bien de l'argent.</l>
+          </sp>
+        </spGrp>
+        <stage>Après le lazzi de l'opérateur, un petit Arlequin et un petit Polichinelle dansent une chaconne. L'Amour saltimbanque  descend de son char et étale ses secrets par une cantate en écriteaux.</stage>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#premier_air_surtu_croyais_maintenant">Premier air, sur<emph>Tu croyais, maintenant<note>
+                    <emph>Sic</emph>dans l'édition et le manuscrit.L. Chahine</note>, Colette</emph>
+              </title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="8">Venez tous, venez faire emplette,</l>
+            <l met="8">Je vends l'art de charmer les cœurs.</l>
+            <l met="8">Je fais dispenser ma recette</l>
+            <l met="8">Par les banquiers et les traiteurs.</l>
+          </sp>
+        </spGrp>
+        <stage>Une jeune Bacchante de la suite de l'Amour saltimbanque danse un rigaudon.</stage>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#recit_sur_lesfolies_d_espagne">Récit sur les<emph>Folies d'Espagne</emph>
+              </title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="10">Je rends piquante une belle insipide</l>
+            <l met="10">Je rends léger un épais financier</l>
+            <l met="10">J'ouvre l'esprit d'un écolier timide</l>
+            <l met="10">Et le comptoir d'un avare caissier.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ariette_sur_l_airo_gue_lanla">Ariette sur l'air<emph>O gué lanla</emph>
+              </title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="5">Ô l'effet admirable</l>
+            <l met="4">Et surprenant!</l>
+            <l met="6">Je sais tout rendre aimable,</l>
+            <l met="4">C'est mon talent;</l>
+            <l met="8">Mon pinceau sans rouge ni blanc</l>
+            <l met="10">Décore un minois comme un opéra:</l>
+            <l met="10">O gué lan la, bergère, o gué lan la.</l>
+          </sp>
+        </spGrp>
+        <stage>Danse d'un petit Satyre et d'une jeune Bacchante.</stage>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#recit_sur_lesfolies_d_espagne_">Récit [sur les<emph>Folies d'Espagne</emph>]</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="10">Monstres jadis on avait à combattre,</l>
+            <l met="10">Preux chevalier ne parvennait qu'ainsi;</l>
+            <l met="10">Un fiacre au plus à présent s'offre à battre,</l>
+            <l met="10">Quand vous menez votre infante à Passy</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ariette_surla_verte_jeunesse">Ariette sur<emph>La verte jeunesse</emph>
+              </title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="5">Ce n'est plus la mode</l>
+            <l met="5">Des belles ardeurs;</l>
+            <l met="5">L'amour s'accommode</l>
+            <l met="5">Au défaut des cœurs:</l>
+            <l met="5">Souvent par tendresse,</l>
+            <l met="5">Dans ce temps brutal,</l>
+            <l met="5">On bat sa maîtresse</l>
+            <l met="5">Et non son rival.</l>
+          </sp>
+        </spGrp>
+        <stage>Isabeau, enchantée par les discours de l'Amour, oublie les leçons qu'elle a données à Lisette, et demande à l'Amour un secret pour attirer des galants. Elle montre un écriteau.</stage>
+        <sp who="#isabeau">
+          <speaker>Isabeau</speaker>
+        </sp>
+        <spGrp who="#isabeau">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#faire_l_amour">La nuit et le jour</title>
+            </desc>
+          </head>
+          <sp who="#isabeau">
+            <speaker>Isabeau</speaker>
+            <l met="6">Tu réchauffes mes ans</l>
+            <l met="6">Amour ton feu m'éclaire</l>
+            <l met="6">Ah! fais que les galants</l>
+            <l met="6">Viennent encore me faire</l>
+            <l met="2">L'amour</l>
+            <l met="5">La nuit et le jour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="6">Le fard fait les appas</l>
+            <l met="6">D'une sexagénaire;</l>
+            <l met="6">Mais, ma foi, sans ducats</l>
+            <l met="6">On ne vient pas lui faire</l>
+            <l met="2">L'amour</l>
+            <l met="5">La nuit et le jour.</l>
+          </sp>
+        </spGrp>
+        <stage>Arlequin fait le lazzi d'embellir Isabeau.</stage>
+        <stage>L'Amour saltimbanque, qui est l'aimable Tourneuse<note>Il s'agit de Gertrude Boon, surnommée la Belle Tourneuse. Campardon rapporte à son propos le témoignage de Bonnet dans l'<emph>Histoire de la danse</emph>(Paris, d'Houry, 1723, p.~170--172), qui donne une idée de ce pouvaient être les« exercices »dont il est ici question:« La danseuse qu'on appelait la Belle Tourneuse a fait trop de bruit sur le théâtre des danseurs de corde pour n'en pas faire mention; je crois même qu'à moins de l'avoir vue on aura peine à croire ce que je vais rapporter. Elle paraissait d'abord sur le théâtre d'un air imposant et y dansait seule une sarabande avec tant de grâce qu'elle charmait tous les spectateurs. Ensuite elle demandait des épées de longueur aux cavaliers qui voulaient bien lui en présenter pour faire sa seconde représentation. Ce qu'il y a de surprenant, c'est qu'elle s'en piquait trois dans chaque coin de l'œil qui se tenaient aussi droites que si elles avaient été piquées dans un poteau. Elle prenait son mouvement de la cadence des violons, qui jouaient un air qui semblait exciter les vents, et tournait d'une vitesse si surprenante pendant un quart d'heure que tous ceux qui la regardaient attentivement en demeuraient étourdis, ainsi qu'il m'est arrivé. Ensuite elle s'arrêtait tout court et retirait ses épées nues l'une après l'autre du coin de ses yeux avec autant de tranquillité que si elle les eût retirées du fourreau. Néanmoins, quand elle me rendit la mienne, dont la garde était fort pesante, je remarquai que la pointe était un peu ensanglantée. Cela n'empêcha pas qu'elle dansât encore d'autres danses, tenant deux épées nues dans ses mains, dont elle mettait les pointes tantôt sur sa gorge et tantôt sur ses narines sans se blesser. »Campardon ajoute:« Dans une note adressée à propos de ce passage aux auteurs du Dictionnaire des Théâtres, Gueullette prétend que Bonnet exagère et que la Belle Tourneuse ne fichait pas les épées dans ses yeux, mais qu'elle les appuyait seulement au coin de l'œil et les soutenait avec ses mains en dansant, comme font toutes les autres tourneuses »(Campardon,<emph>Les Spectacles de la Foire</emph>, p.~164--165).L. Chahine</note>, fait ici ses exercices.</stage>
+        <stage>Le théâtre représente au fond la boutique d'un Provençal.</stage>
+        <stage>Le Provençal paraît, battant la poudre sur l'appui de sa boutique. Il en sort d'un air inquiet et montre ces écriteaux.</stage>
+        <sp who="#leprovencal">
+          <speaker>Le provençal</speaker>
+        </sp>
+        <spGrp who="#leprovencal">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#leprovencal">
+            <speaker>Le provençal</speaker>
+            <l met="8">La femme, dit la Comédie,</l>
+            <l met="8">Est le potage du mari.</l>
+            <l met="8">Mon voisin sans que je l'en prie</l>
+            <l met="8">Viens partager ma soupe ici.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#leprovencal">
+            <speaker>Le provençal</speaker>
+            <l met="8">Pour toucher sa moitié chérie,</l>
+            <l met="8">L'époux a beau philosopher:</l>
+            <l met="8">Quand cette soupe est refroidie</l>
+            <l met="8">L'amant seul peut la réchauffer.</l>
+          </sp>
+        </spGrp>
+        <stage>Le Provençal voyant approcher la nuit ferme sa boutique.</stage>
+        <stage>Une boulangère amoureuse d'un cuisinier son voisin, amant de la femme du Provençal, vient l'épier dans la rue de sa maîtresse. Elle aperçoit une bouchère aussi amoureuse du cuisinier et présente cet écriteau:</stage>
+        <sp who="#laboulangere">
+          <speaker>La boulangère</speaker>
+        </sp>
+        <spGrp who="#laboulangere">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#folia">Folies d'Espagne</title>
+            </desc>
+          </head>
+          <sp who="#laboulangere">
+            <speaker>La boulangère</speaker>
+            <l met="10">Ici de nuit je fais le pied de grue,</l>
+            <l met="10">Je vois aussi notre bouchère au guet.</l>
+            <l met="10">Nous nous allons enrhumer dans la rue</l>
+            <l met="10">En épiant un cuisinier coquet.</l>
+          </sp>
+        </spGrp>
+        <stage>La bouchère approche, aborde la boulangère et lui présente un écriteau.</stage>
+        <sp who="#labouchere">
+          <speaker>La bouchère</speaker>
+        </sp>
+        <spGrp who="#labouchere">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le plaisir est agréable</title>
+            </desc>
+          </head>
+          <sp who="#labouchere">
+            <speaker>La bouchère</speaker>
+            <l met="8">Vous veillez lorsque tout sommeille,</l>
+            <l met="8">Sans travaillez à votre pain.</l>
+            <l met="8">Ah! Vous ferez croire à la fin</l>
+            <l met="6">Que l'amour vous éveille.</l>
+          </sp>
+        </spGrp>
+        <stage>Les deux rivales, animées par l'Amour jaloux, se battent, se décoiffent et se raccommodent par cet écriteau:</stage>
+        <sp who="#lesrivales">
+          <speaker>Les rivales</speaker>
+        </sp>
+        <spGrp who="#lesrivales">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#lesrivales">
+            <speaker>Les rivales</speaker>
+            <l met="8">Pour un faquin qui nous offense</l>
+            <l met="8">Faut-il gâter nos affiquets?</l>
+            <l met="8">C'est trop honorer l'inconstance</l>
+            <l met="8">Que de déchirer nos bonnets.</l>
+          </sp>
+        </spGrp>
+        <stage>Elles aperçoivent le cuisinier qui vient donner une sérénade à sa maîtresse, accompagné de deux de ses garçons et se cachent pour l'observer.</stage>
+        <stage>Le cuisinier, après les lazzi nocturnes, présente un écriteau.</stage>
+        <sp who="#lecuisinier">
+          <speaker>Le cuisinier</speaker>
+        </sp>
+        <spGrp who="#lecuisinier">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#lecuisinier">
+            <speaker>Le cuisinier</speaker>
+            <l met="8">Vous qui des parfums de Provence</l>
+            <l met="8">Débitez ici les odeurs,</l>
+            <l met="8">Ne versez que sur mes ardeurs</l>
+            <l met="8">Votre amoureuse essence.</l>
+          </sp>
+        </spGrp>
+        <stage>Le cuisinier fait danser ses garçons tandis qu'il observe la maison de sa maîtresse.</stage>
+        <stage>La boulangère et la bouchère sortent l'une après l'autre et le cuisinier les prend alternativement pour la Provençale. Il fait le lazzi de les caresser; elles lui donnent chacune un soufflet, qui le masque plaisamment; et ensuite prenant un bâton lui font la révérence et présente,t cet écriteau.</stage>
+        <sp who="#lesrivales">
+          <speaker>Les rivales</speaker>
+        </sp>
+        <spGrp who="#lesrivales">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#lesrivales">
+            <speaker>Les rivales</speaker>
+            <l met="8">C'est avec un chagrin extrême</l>
+            <l met="8">Que de bois je vas<note>
+                <emph>Sic</emph>dans l'édition et le manuscrit.L. Chahine</note>te charger:</l>
+            <l met="8">Quand il faut rosser ce qu'on aime,</l>
+            <l met="8">Qu'il en coûte pour se venger.</l>
+          </sp>
+        </spGrp>
+        <stage>Elles lui donnent la bastonnade et s'en vont.</stage>
+        <stage>La Provençale paraît déshabillée, ce qui console le cuisinier des coups qu'il a reçus; ils montrent chacun un écriteau.</stage>
+        <stage>Le Provençal, qui est caché, surprend sa femme et le cuisinier. La Provençale se sauve. Arlequin vient séparer le mari et le galant et montre un écriteau.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#joconde">Joconde</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Fi donc, l'on ne se fâche plus</l>
+            <l met="6">Dans ce temps débonnaire,</l>
+            <l met="8">Et les maris qu'on fait cocus</l>
+            <l met="6">Prennent fort bien l'affaire.</l>
+            <l met="8">Il n'est plus de chagrin mortel</l>
+            <l met="6">Dans l'époux qu'on diffame,</l>
+            <l met="8">Il devient le maître d'hôtel</l>
+            <l met="6">Du galant de sa femme.</l>
+          </sp>
+        </spGrp>
+        <stage>Le théâtre représente un hôtel avec cette inscription:<emph>Hôtel des Trois Dés</emph>.</stage>
+        <stage>Des joueurs de toutes sortes entrent précipitamment dans l'Hôtel des Trois Dés. On ouvre la ferme et on les voit à différentes tables remuant le gousset et les dés.</stage>
+        <stage>Une femme dont le mari se ruine au jeu vient le retirer du jeu et présente cet écriteau:</stage>
+        <sp who="#unebourgeoise">
+          <speaker>Une bourgeoise</speaker>
+        </sp>
+        <spGrp who="#unebourgeoise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#absent_de_climene">Absent de Climène</title>
+            </desc>
+          </head>
+          <sp who="#unebourgeoise">
+            <speaker>Une bourgeoise</speaker>
+            <l met="5">Quel mari peu sage!</l>
+            <l met="5">Quel dissipateur!</l>
+            <l met="5">Le fou dans sa rage</l>
+            <l met="5">Jouerait jusqu'à mon</l>
+            <l met="12">Taleri leri lera la la la lire</l>
+            <l met="6">Jouerait jusqu'à mon cœur.</l>
+          </sp>
+        </spGrp>
+        <stage>Un financier prie un filou de le mettre de moitié par cet écriteau:</stage>
+        <sp who="#ladupe">
+          <speaker>La dupe</speaker>
+        </sp>
+        <spGrp who="#ladupe">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#laire_la">Lère la, lère lan lère</title>
+            </desc>
+          </head>
+          <sp who="#ladupe">
+            <speaker>La dupe</speaker>
+            <l met="8">Monsieur, faites moi l'amitié</l>
+            <l met="8">De me recevoir pour moitié</l>
+            <l met="8">Dans le gain que vous allez faire,</l>
+            <l met="3">Lère la</l>
+            <l met="4">Lère lan lere,</l>
+            <l met="3">[Lère la</l>
+            <l met="4">Lère lan la.]</l>
+          </sp>
+        </spGrp>
+        <stage>Le filou accepte le parti, joue et gagne, met l'argent blanc sur la table, et avale les louis d'or. Un joueur qui s'en aperçoit montre cet écriteau:</stage>
+        <sp who="#unjoueur">
+          <speaker>Un joueur</speaker>
+        </sp>
+        <spGrp who="#unjoueur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Amis, sans regretter Paris</title>
+            </desc>
+          </head>
+          <sp who="#unjoueur">
+            <speaker>Un joueur</speaker>
+            <l met="8">Ce filou sait plus d'un métier,</l>
+            <l met="6">Quel chimiste admirable!</l>
+            <l met="8">Un louis d'or dans son gosier</l>
+            <l met="6">Devient de l'or potable.</l>
+          </sp>
+          <note>Cette indication de personnage est suivie de deux lignes de pointillés dans l'édition et le manuscrit.</note>
+        </spGrp>
+        <stage>On fait venir un opérateur pour donner un remède au filou, qui lui fait vomir les louis d'or, et [ils] font leurs lazzis, et l'opérateur présente un écriteau.</stage>
+        <stage>Un oublieux joue et perd. Arlequin déguisé en oublieux fait avec lui des jeux de théâtres amusants. Enfin les joueurs se querellent et sont séparés par Crispin qui leur donne un divertissement.</stage>
+        <stage>Danse d'une bohémienne, on présente deux écriteaux.</stage>
+        <sp who="#unjoueur">
+          <speaker>Un joueur</speaker>
+        </sp>
+        <spGrp who="#unjoueur">
+          <head type="melody" subtype="restored_melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+            </desc>
+          </head>
+          <sp who="#unjoueur">
+            <speaker>Un joueur</speaker>
+            <l met="8">De Plutus et du dieu des cœurs</l>
+            <l met="8">Il faut dérober les faveurs:</l>
+            <l met="6">Amants, on vous ballotte</l>
+            <l met="2">Hé bien,</l>
+            <l met="6">Si votre art n'escamote...</l>
+            <l met="5">Vous m'entendez bien.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#unjoueur">
+            <speaker>Un joueur</speaker>
+            <l met="8">Tandis qu'aux Trois Dés un époux</l>
+            <l met="8">Perd son argent et ses bijoux,</l>
+            <l met="6">Sa femme mieux lotie</l>
+            <l met="2">Hé bien</l>
+            <l met="6">Tient une autre partie,</l>
+            <l met="5">Vous m'entendez bien.</l>
+          </sp>
+        </spGrp>
+        <stage>La loure des joueurs; un des joueurs présente un écriteau.</stage>
+        <sp who="#unjoueur">
+          <speaker>Un joueur</speaker>
+        </sp>
+        <spGrp who="#unjoueur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#unjoueur">
+            <speaker>Un joueur</speaker>
+            <l met="8">Lorsqu'un bourgeois au jeu s'engage,</l>
+            <l met="8">Il y perd son bien le plus net,</l>
+            <l met="8">Mais la corne le dédommage</l>
+            <l met="8">De ce qu'il perd par le cornet.</l>
+          </sp>
+        </spGrp>
+        <stage>Les joueurs se retirent, et Crispin remercie la compagnie par cet écriteau:</stage>
+        <sp who="#crispin">
+          <speaker>Crispin</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#crispin">
+            <speaker>Crispin</speaker>
+            <l met="8">Qu'à se rassembler dans ce lieu</l>
+            <l met="6">Chacun de vous s'empresse.</l>
+            <l met="8">Vous aurez bon gîte et bon feu,</l>
+            <l met="8">Mais daignez vous serrer un peu:</l>
+            <l met="6">Nous aimons fort la presse.</l>
+            <l met="8">Messieurs on vous jouera beau jeu,</l>
+            <l met="6">Apportez de l'espèce.</l>
+          </sp>
+        </spGrp>
+      </prologue>
+    </front>
+    <body>
+      <div type="act">
+        <head>ACTE 1</head>
+        <stage type="location">Première fête. Le carnaval.</stage>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <stage type="location">Deuxième fête.</stage>
+      </div>
+      <div type="act">
+        <head>ACTE 3</head>
+        <stage type="location">Troisième fête</stage>
+      </div>
+      <div type="act">
+        <head>ACTE 4</head>
+        <stage type="location">Quatrième fête</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

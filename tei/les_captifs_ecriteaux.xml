@@ -1,0 +1,1429 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="les_captifs_ecriteaux">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Les Captifs d'Alger</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Le Sage et d'Orneval</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Bnf. fr. 25471</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="bourgeoisun" sex="UNKNOWN">
+            <persName>Bourgeois Un</persName>
+          </person>
+          <person xml:id="captifun" sex="UNKNOWN">
+            <persName>Captif Un</persName>
+          </person>
+          <person xml:id="bourgeoisdeux" sex="UNKNOWN">
+            <persName>Bourgeois Deux</persName>
+          </person>
+          <person xml:id="captifdeux" sex="UNKNOWN">
+            <persName>Captif Un</persName>
+          </person>
+          <person xml:id="docteur" sex="UNKNOWN">
+            <persName>Docteur</persName>
+          </person>
+          <person xml:id="operario" sex="UNKNOWN">
+            <persName>Operario</persName>
+          </person>
+          <person xml:id="coulouf" sex="UNKNOWN">
+            <persName>Coulouf</persName>
+          </person>
+          <person xml:id="rustan" sex="UNKNOWN">
+            <persName>Rustan</persName>
+          </person>
+          <person xml:id="deux_captifs" sex="UNKNOWN">
+            <persName>Deux captifs</persName>
+          </person>
+          <person xml:id="arlequin" sex="UNKNOWN">
+            <persName>Arlequin</persName>
+          </person>
+          <person xml:id="le_docteur" sex="UNKNOWN">
+            <persName>Le Docteur</persName>
+          </person>
+          <person xml:id="gille" sex="UNKNOWN">
+            <persName>Gille</persName>
+          </person>
+          <person xml:id="sauteurs" sex="UNKNOWN">
+            <persName>Sauteurs</persName>
+          </person>
+          <person xml:id="la_foire" sex="UNKNOWN">
+            <persName>La Foire</persName>
+          </person>
+          <person xml:id="deux_bourgeois_de_paris" sex="UNKNOWN">
+            <persName>Deux bourgeois de Paris</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere">
+        <desc>1724 </desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#operario">Operario</role>
+          <roleDesc>corsaire d'Alger</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#coulouf">Coulouf</role>
+          <roleDesc>esclave d'Operario</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#rustan">Rustan</role>
+          <roleDesc>Algérien</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#deux_captifs">Deux captifs</role>
+        </castItem>
+        <castItem>
+          <role ana="#arlequin">Arlequin</role>
+          <roleDesc>acteur forain</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#scaramouche">Scaramouche</role>
+          <roleDesc>acteur forain</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#le_docteur">Le Docteur</role>
+          <roleDesc>acteur forain</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#gille">Gille</role>
+          <roleDesc>acteur forain</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#sauteurs">Sauteurs</role>
+          <roleDesc>acteur forain</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#la_foire">La Foire</role>
+          <roleDesc>captive à Alger</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#deux_bourgeois_de_paris">Deux bourgeois de Paris</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <spGrp rend="center">
+          <pb/>
+          <sp who="#captifun">
+            <speaker>Captif Un</speaker>
+          </sp>
+        </spGrp>
+        <stage type="location">Le théâtre représente le port d'Alger dans le fond et dans les ailes plusieurs captifs à qui l'on fait souffrir divers supplices.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Deux captifs<stage>enchaînés</stage>
+        </stage>
+        <spGrp who="#captifun">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#petits_grands">Or écoutez petits et grands</title>
+            </desc>
+          </head>
+          <sp who="#captifun">
+            <speaker>Captif Un</speaker>
+            <l met="8">Depuis qu'on nous a pris sus mer</l>
+            <l met="8">Et que nous sommes dans Alger</l>
+            <l met="8">À la merci des infidèles,</l>
+            <l met="8">Nous souffrons des peines cruelles.</l>
+            <l met="8">Hélas, viens, secourable mort!</l>
+            <l met="8">Finir notre malheureux sort.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Les captifs, Rustan</stage>
+        <sp who="#rustan">
+          <speaker>Rustan</speaker>
+          <stage>les frappant</stage>
+        </sp>
+        <spGrp who="#rustan">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#diogene_fameux">Le fameux Diogène</title>
+            </desc>
+          </head>
+          <sp who="#rustan">
+            <speaker>Rustan</speaker>
+            <l met="6">Allons, chiens, à l'ouvrage!</l>
+          </sp>
+        </spGrp>
+        <sp who="#captifdeux">
+          <speaker>Captif Un</speaker>
+          <l met="6">Ô, le rude esclavage!</l>
+          <l met="6">Des châtiments partout!</l>
+        </sp>
+        <sp who="#captifun">
+          <speaker>Captif Un</speaker>
+          <l met="6">Toujours, de nos supplices,</l>
+          <l met="6">Ferez-vous vos délices?</l>
+        </sp>
+        <sp who="#rustan">
+          <speaker>Rustan</speaker>
+          <l met="6">Vous n'êtes pas au bout.</l>
+        </sp>
+        <stage>Les captifs se retirent.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Rustan, Arlequin, Scaramouche, Gille, le Docteur, deux sauteurs</stage>
+        <sp who="#docteur">
+          <speaker>Docteur</speaker>
+          <stage>à Rustan</stage>
+        </sp>
+        <spGrp who="#docteur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#apercus_en_songe">L'autre nuit j'aperçus en songe</title>
+            </desc>
+          </head>
+          <sp who="#docteur">
+            <speaker>Docteur</speaker>
+            <l met="8">Enseignez-nous, je vous en prie,</l>
+            <l met="8">La maison d'Operario.</l>
+          </sp>
+        </spGrp>
+        <sp who="#rustan">
+          <speaker>Rustan</speaker>
+          <l met="8">La voilà.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="8">
+            <emph>La ringratio</emph>
+            <note>Nous traduisons: « Je vous remercie ».</note>.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Salut à votre Seigneurie.</l>
+        </sp>
+        <stage>Rustan se retire.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Le Docteur, Arlequin, Scaramouche, Gille, sauteurs, Operario, Coulouf<stage>esclave d'Operario</stage>
+        </stage>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+          <stage>achevant l'air précédent et frappant à la porte d'Operario</stage>
+          <l met="8">Holà ! Le maître est-il ici?</l>
+        </sp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <stage>en dedans</stage>
+          <l met="8">On y va.<stage>Paraissant.</stage>Qu'est-ce ? Le voici.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <stage>à part</stage>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="8">Ventrebleu, quelle mine noire!</l>
+          </sp>
+        </spGrp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <l met="8">Quelle affaire ici vous conduit ?</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Monsieur le Turc, on nous a dit</l>
+          <l met="6">Que vous aviez la Foire.</l>
+        </sp>
+        <sp who="#docteur">
+          <speaker>Docteur</speaker>
+        </sp>
+        <spGrp who="#docteur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Voulez-vous savoir qui des deux</title>
+            </desc>
+          </head>
+          <sp who="#docteur">
+            <speaker>Docteur</speaker>
+            <l met="8">Un pirate d'Alger a pris</l>
+            <l met="8">Certaine dame de Paris</l>
+            <l met="8">Que les jaloux en ont bannie;</l>
+            <l met="8">L'espérance d'un sort plus doux</l>
+            <l met="8">La conduisait en Italie.</l>
+            <l met="8">Seigneur, n'est-elle point chez vous?</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#confiteor">Confiteor</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Vous la connaîtrez à ses traits.</l>
+            <l met="8">C'est une badine sirène</l>
+            <l met="8">Qui ne parle que par couplets...</l>
+          </sp>
+        </spGrp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <l met="8">J'y suis, c'est Lariradondaine.</l>
+          <l met="8">Vous y prenez, apparemment,</l>
+          <l met="8">Grand intérêt.</l>
+        </sp>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+          <l met="8">Assurément.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#barbari">À la façon de Barbari</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Vous voyez ses propres enfants</l>
+            <l met="6">Qui, pour sa délivrance,</l>
+            <l met="8">Ont osé des flots et des vents</l>
+            <l met="6">Braver la violence.</l>
+            <l met="8">Nous venons vous prier, patron,</l>
+            <l met="11">La faridondaine, la faridondon,</l>
+            <l met="8">De nous la remettre aujourd'hui,</l>
+            <l met="3">Biribi,</l>
+            <l met="8">À la façon de Barbari,</l>
+            <l met="3">Mon ami.</l>
+          </sp>
+        </spGrp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <stage>à Coulouf</stage>
+        </sp>
+        <spGrp who="#operario">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, [belle endormie]</title>
+            </desc>
+          </head>
+          <sp who="#operario">
+            <speaker>Operario</speaker>
+            <l met="8">Amenez-nous cette mignonne.</l>
+          </sp>
+          <sp who="#operario">
+            <speaker>Operario</speaker>
+            <l met="8">Vous l'allez voir dans un moment,</l>
+            <l met="8">Mais elle vous coûtera bonne<note type="definition">Coûter bonne: Coûter extrêmement cher (Acad.1792)</note>.</l>
+          </sp>
+        </spGrp>
+        <stage>Aux forains.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Oh, nous n'en doutons nullement!</l>
+        </sp>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+        </sp>
+        <spGrp who="#gille">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jus_octobre">Quand je tiens de ce jus d'octobre</title>
+            </desc>
+          </head>
+          <sp who="#gille">
+            <speaker>Gille</speaker>
+            <l met="8">Nous sommes fort mal en finance.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Il faut vivre avec les vivants.</l>
+        </sp>
+        <sp who="#docteur">
+          <speaker>Docteur</speaker>
+          <l met="8">Çà, parlez-nous en conscience.</l>
+        </sp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <l met="8">J'en veux avoir huit mille francs.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#morguenne">Morguienne de vous</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="5">Vous en rabattrez.</l>
+          </sp>
+        </spGrp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <l met="5">Pas une pistole.</l>
+        </sp>
+        <sp who="#docteur">
+          <speaker>Docteur</speaker>
+          <l met="5">Dans nos maux, entrez.</l>
+        </sp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <l met="5">Pas même une obole.</l>
+        </sp>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+          <l met="5">Morguiène de vous !</l>
+          <l met="5">Quel homme, quel homme!</l>
+          <l met="5">Morguiène de vous!</l>
+          <l met="5">Quel homme êtes-vous!</l>
+        </sp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+        </sp>
+        <spGrp who="#operario">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#qui_veut_se_mettre_en_menage">Qui veut se mettre en ménage</title>
+            </desc>
+          </head>
+          <sp who="#operario">
+            <speaker>Operario</speaker>
+            <l met="7">Nous ne ferons point affaire.</l>
+            <l met="7">Vous voulez trop marchander.</l>
+          </sp>
+        </spGrp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="7">Chers amis, que faut-il faire?</l>
+        </sp>
+        <sp who="#docteur">
+          <speaker>Docteur</speaker>
+          <l met="7">Il faut lui tout accorder.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="7">Comptons vite la finance,</l>
+          <l met="7">De peur de quelque dédit.</l>
+        </sp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <l met="7">Vous me faites une offense,</l>
+          <l met="7">Ma parole vous suffit.</l>
+        </sp>
+        <stage>Il prend la main d'Arlequin et frappe dedans.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Les acteurs de la scène précédente, la Foire</stage>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <stage>dans la coulisse</stage>
+          <l met="2">Flon, flon,</l>
+          <l met="5">Larira dondaine,</l>
+          <l met="2">Flon, flon,</l>
+          <l met="5">Larira dondon.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#allons_gai_d_un_air_gai">Allons gai</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="6">C'est la Foire elle-même;</l>
+            <l met="6">Entendez-vous sa voix?</l>
+          </sp>
+        </spGrp>
+        <sp who="#docteur">
+          <speaker>Docteur</speaker>
+          <l met="6">Oui, ma joie est extrême!</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="6">Quel bonheur!</l>
+        </sp>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+          <l met="6">Je la vois!</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="3">Allons gai,</l>
+          <l met="3">D'un air gai, etc.</l>
+        </sp>
+        <sp who="#docteur">
+          <speaker>Docteur</speaker>
+        </sp>
+        <spGrp who="#docteur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#un_soir_apres_roquille_ou_martin_moine_de_venise_petit_pere_noir_etc_">Un soir après roquille, ou Martin moine de Venise, petit père noir, etc.<note>
+                  <emph>Sic</emph>. Les deux titres sont proposés sur le manuscrit.</note>
+              </title>
+            </desc>
+          </head>
+          <sp who="#docteur">
+            <speaker>Docteur</speaker>
+            <l met="6">Ô fortune prospère!</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="5">Nos cœurs étaient pleins</l>
+          <l met="6">D'une douleur amère.</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="5">Mes pauvres forains!</l>
+          <l met="8">Dans les bras d'une tendre mère,</l>
+          <l met="5">Perdez vos chagrins.</l>
+        </sp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vraiment_ma_commere_oui">Oui dà, ma commère, oui</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="7">M'allez-vous tirer d'ici?</l>
+          </sp>
+        </spGrp>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+          <l met="7">Oui dà, ma commère, oui.</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="7">Vous voulez ravoir la Foire!</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="7">Vraiment, ma commère, voire,</l>
+          <l met="7">Vraiment, ma commère, oui.</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+        </sp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#pouvoir">Pouvoir</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="8">Avez-vous réglé ma rançon</l>
+            <l met="6">Avec ce gros garçon?<stage>bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <stage>Elle montre Operario.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Oui maman, il ne reste plus</l>
+          <l met="6">Qu'à compter les écus.<stage>bis</stage>
+          </l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Les acteurs de la scène précédente, deux bourgeois de Paris</stage>
+        <sp who="#bourgeoisun">
+          <speaker>Bourgeois Un</speaker>
+        </sp>
+        <spGrp who="#bourgeoisun">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#bourgeoisun">
+            <speaker>Bourgeois Un</speaker>
+            <l met="8">Pour racheter une captive</l>
+            <l met="8">Des faubourgs de Paris native,</l>
+            <l met="8">Nous vous apportons des ducats.</l>
+          </sp>
+        </spGrp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <l met="8">Son nom?</l>
+        </sp>
+        <sp who="#bourgeoisdeux">
+          <speaker>Bourgeois Deux</speaker>
+          <l met="8">Mais la voici, je pense.</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="8">Messieurs, je ne vous connais pas.</l>
+        </sp>
+        <sp who="#bourgeoisdeux">
+          <speaker>Bourgeois Deux</speaker>
+          <l met="8">Nous ferons bientôt connaissance.</l>
+        </sp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <stage>aux bourgeois</stage>
+          <l met="8">Dites-moi quelles gens vous êtes.</l>
+        </sp>
+        <sp who="#bourgeoisun">
+          <speaker>Bourgeois Un</speaker>
+          <l met="8">Deux braves bourgeois de Paris.</l>
+        </sp>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+          <l met="8">Nous sommes convenus de prix,</l>
+          <l met="9">Adieu paniers, vendanges sont faites!</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Ils voulaient nous couper les vivres.</l>
+          </sp>
+        </spGrp>
+        <sp who="#docteur">
+          <speaker>Docteur</speaker>
+          <l met="8">Point ne l'aurez, je vous le dis.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="8">Nous en donnons huit mille livres.</l>
+        </sp>
+        <sp who="#bourgeoisdeux">
+          <speaker>Bourgeois Deux</speaker>
+          <l met="8">Et nous, nous en donnerons dix.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#robin_ture_lure_lure">Robin turelure</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Le patron n'est pas normand<note>Les Normands sont souvent les cibles de la satire théâtrale, vus comme procéduriers et calculateurs.</note>,</l>
+            <l met="7">Messieurs, c'est lui faire injure.</l>
+            <l met="7">Il en refuserait cent.</l>
+          </sp>
+        </spGrp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <l met="3">Turelure!</l>
+        </sp>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+          <l met="7">Sa parole est chose sûre.</l>
+        </sp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <l met="7">Robin turelure lure.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <stage>à Operario</stage>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_reguingue">Ô reguingué</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="8">Quoi donc, n'avez-vous pas promis?</l>
+          </sp>
+        </spGrp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <l met="8">D'accord, mais tenez, mes amis:</l>
+          <l met="8">Ô reguingué, ô lon lan la,</l>
+          <l met="8">Comme j'ai de la conscience,</l>
+          <l met="8">Je vous donne la préférence.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lonlanla_derirette">Lon lan la derirette</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Seigneur, nous avons pour tout bien</l>
+            <l met="8">Huit mille francs.</l>
+          </sp>
+        </spGrp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <l met="8">Vous n'aurez rien.</l>
+          <l met="6">Lon lan la derirette!</l>
+        </sp>
+        <sp who="#bourgeoisun">
+          <speaker>Bourgeois Un</speaker>
+          <l met="8">Notre gousset est mieux garni,</l>
+          <l met="6">Lon lan la deriri!</l>
+        </sp>
+        <sp who="#bourgeoisdeux">
+          <speaker>Bourgeois Deux</speaker>
+        </sp>
+        <spGrp who="#bourgeoisdeux">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+            </desc>
+          </head>
+          <sp who="#bourgeoisdeux">
+            <speaker>Bourgeois Deux</speaker>
+            <l met="8">Nous vous comptons dix mille francs,</l>
+            <l met="8">En beaux louis bien trébuchants.</l>
+            <l met="6">De plus, en deux paroles...</l>
+          </sp>
+        </spGrp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <l met="2">Hé bien?</l>
+        </sp>
+        <sp who="#bourgeoisdeux">
+          <speaker>Bourgeois Deux</speaker>
+          <l met="6">Trois cents bonnes pistoles,</l>
+          <l met="5">Vous m'entendez bien.</l>
+        </sp>
+        <sp who="#bourgeoisun">
+          <speaker>Bourgeois Un</speaker>
+          <stage>au second</stage>
+        </sp>
+        <spGrp who="#bourgeoisun">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nanon_dormait">Nanon dormait</title>
+            </desc>
+          </head>
+          <sp who="#bourgeoisun">
+            <speaker>Bourgeois Un</speaker>
+            <l met="4">Sur quel trésor</l>
+            <l met="6">Assignez-vous, mon frère,</l>
+            <l met="4">Un tel Castor?</l>
+          </sp>
+        </spGrp>
+        <sp who="#bourgeoisdeux">
+          <speaker>Bourgeois Deux</speaker>
+          <l met="6">Ami, c'est une affaire,</l>
+          <l met="6">Une affaire<note>Note sur le manuscrit: « Façon de parler d'un des deux bourgeois qui entreprirent l'Opéra-Comique ».</note>tout d'or,</l>
+          <l met="2">Tout d'or,</l>
+          <l met="2">Tout d'or.</l>
+          <l met="8">Oui, c'est une affaire tout d'or.</l>
+        </sp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+        </sp>
+        <spGrp who="#operario">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#or_voila_la_vie">Or voilà la vie</title>
+            </desc>
+          </head>
+          <sp who="#operario">
+            <speaker>Operario</speaker>
+            <l met="5">Oh, voilà les drôles,</l>
+            <l met="5">Les drôles, les drôles,</l>
+            <l met="5">Oh, voilà les drôles,</l>
+            <l met="5">Que nous demandons!</l>
+          </sp>
+        </spGrp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <stage>à Operario</stage>
+        </sp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#talaleri">Talalerire</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="8">Ces inconnus, âme barbare,</l>
+            <l met="8">Vont s'en retourner triomphants.</l>
+            <l met="8">Et ton avide main sépare</l>
+            <l met="8">La Foire de ses chers enfants.</l>
+            <l met="8">Que le public te va maudire!</l>
+          </sp>
+        </spGrp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <stage>riant</stage>
+          <l met="12">Talaleri, talaleri, talalerire.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>à Operario</stage>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#une_nonne_a_saint_denis">Une nonne à Saint-Denis</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Rendez-vous à nos douleurs.</l>
+          </sp>
+        </spGrp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <l met="7">Je suis à qui plus me donne.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="7">Vous causerez nos malheurs.</l>
+        </sp>
+        <sp who="#docteur">
+          <speaker>Docteur</speaker>
+          <l met="7">Soyez touché de nos pleurs!</l>
+        </sp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+          <l met="8">Lon, lan, la, les pleurs n'y font rien,</l>
+          <l met="7">Si l'argent ne sonne, sonne,</l>
+          <l met="8">Lon, lan, la, les pleurs n'y font rien,</l>
+          <l met="7">Si l'argent ne sonne bien.</l>
+        </sp>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+          <stage>aux deux bourgeois</stage>
+        </sp>
+        <spGrp who="#gille">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_vous_avez_bon_air">Ah, vous avez bon air</title>
+            </desc>
+          </head>
+          <sp who="#gille">
+            <speaker>Gille</speaker>
+            <l met="6">Quel dessein téméraire!</l>
+            <l met="6">Bourgeois, vous voulez faire</l>
+            <l met="6">Notre métier que guère</l>
+            <l met="5">Ou point, ne savez</l>
+            <l met="6">Ah, vous avez bon aire,</l>
+            <l met="6">Ah, vous avez bon aire,</l>
+            <l met="6">Ah, vous avez bon aire,</l>
+            <l met="5">Bon air vous avez!</l>
+          </sp>
+        </spGrp>
+        <sp who="#bourgeoisun">
+          <speaker>Bourgeois Un</speaker>
+        </sp>
+        <spGrp who="#bourgeoisun">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tourelouribo">Ho, ho, tourelouribo</title>
+            </desc>
+          </head>
+          <sp who="#bourgeoisun">
+            <speaker>Bourgeois Un</speaker>
+            <l met="9">Messieurs les forains sont en colère,</l>
+            <l met="2">Ho, ho,</l>
+            <l met="5">Tourelouribo!</l>
+          </sp>
+        </spGrp>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+          <l met="7">Vous allez dans cette affaire,</l>
+          <l met="2">Ho, ho,</l>
+          <l met="5">Tourelouribo,</l>
+          <l met="7">Faire de l'eau toute claire.</l>
+          <l met="3">Ho, ho, ho,</l>
+          <l met="5">Tourelouribo!</l>
+        </sp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+        </sp>
+        <spGrp who="#operario">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_seigneur_turc_a_raison">Le seigneur turc a raison</title>
+            </desc>
+          </head>
+          <sp who="#operario">
+            <speaker>Operario</speaker>
+            <l met="7">Hé, que diable, finissez</l>
+            <l met="5">Ce débat frivole!</l>
+            <l met="7">Morbleu, vous m'étourdissez!</l>
+            <l met="7">Emmenez-moi cette folle,</l>
+            <l met="7">Payez sans perdre de temps.</l>
+          </sp>
+        </spGrp>
+        <sp who="#bourgeoisun">
+          <speaker>Bourgeois Un</speaker>
+          <l met="7">Voilà vos dix mille francs.</l>
+        </sp>
+        <sp who="#bourgeoisdeux">
+          <speaker>Bourgeois Deux</speaker>
+          <l met="6">Voici la rocambole<note type="definition">Rocambole: Ce qu'il y a de meilleur, de plus piquant dans quelque chose (Acad.1762)</note>.</l>
+        </sp>
+        <sp who="#operario">
+          <speaker>Operario</speaker>
+        </sp>
+        <spGrp who="#operario">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ciel_benisse_besogne">Que Dieu bénisse la besogne</title>
+            </desc>
+          </head>
+          <sp who="#operario">
+            <speaker>Operario</speaker>
+            <l met="8">Çà vite, terminons cela.</l>
+          </sp>
+          <sp who="#operario">
+            <speaker>Operario</speaker>
+            <l met="8">Mais qu'est-ce qui vous tombe là?</l>
+          </sp>
+        </spGrp>
+        <stage>Au deuxième bourgeois, qui en tirant de sa poche de l'argent a laissé tomber une chandelle<emph>
+            <note>Note sur le manuscrit : « un des deux entrepreneurs fournissait la chandelle pour les lanternes de Paris ».</note>
+          </emph>qu'il y avait.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Mon beau Monsieur, de l'entreprise</l>
+          <l met="8">Ramassez votre marchandise.</l>
+        </sp>
+        <stage>Les deux bourgeois vont avec Operario compter leur argent sur une table qui est au fond du théâtre. Pendant ce temps-là, la Foire fait ses adieux à ses enfants.</stage>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+        </sp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#malheureux_oui">Quand on a prononcé [ce malheureux oui]</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="12">Chers forains, je vous perds! Ô Ciel, quelle tristesse!</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="12">C'est en vain que pour nous votre cœur s'intéresse.</l>
+          <l met="12">On est prêt à livrer la Foire à nos jaloux.</l>
+          <l met="12">Ils n'en connaîtront pas le prix si bien que nous.</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+        </sp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pont_avignon_belle">Sur les ponts d'Avignon</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="6">Pour m'accabler, hélas!</l>
+            <l met="6">C'est assez de connaître</l>
+            <l met="6">Qui<note>Ms: « que ».</note>je ne serai pas</l>
+            <l met="6">Et qui je voudrais être.</l>
+          </sp>
+        </spGrp>
+        <sp who="#bourgeoisun">
+          <speaker>Bourgeois Un</speaker>
+          <stage>à la Foire</stage>
+        </sp>
+        <spGrp who="#bourgeoisun">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_cabaret_est_mon_reduit">Le cabaret est mon réduit</title>
+            </desc>
+          </head>
+          <sp who="#bourgeoisun">
+            <speaker>Bourgeois Un</speaker>
+            <l met="8">Oh, finissons tout ce caquet!</l>
+            <l met="8">Suivez-nous, quittez la canaille.</l>
+          </sp>
+        </spGrp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="7">Je ne vous suis qu'à regret,</l>
+          <l met="7">Je ne ferai rien qui vaille.</l>
+          <l met="5">Je ne ferai rien,</l>
+          <l met="5">Je ne ferai rien,</l>
+          <l met="7">Je ne ferai rien qui vaille.</l>
+        </sp>
+        <sp who="#bourgeoisdeux">
+          <speaker>Bourgeois Deux</speaker>
+        </sp>
+        <spGrp who="#bourgeoisdeux">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#flon_flon">Flon, flon</title>
+            </desc>
+          </head>
+          <sp who="#bourgeoisdeux">
+            <speaker>Bourgeois Deux</speaker>
+            <l met="6">Marchons, Dame Foraine.</l>
+          </sp>
+        </spGrp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="6">J'en mourrai de souci.</l>
+        </sp>
+        <sp who="#bourgeoisun">
+          <speaker>Bourgeois Un</speaker>
+          <l met="6">Allons, prenez la peine<note>Marque d'autocorrection: le scripteur avait oublié d'aller à la ligne.</note>
+          </l>
+          <l met="6">De décamper d'ici.</l>
+        </sp>
+        <stage>Il la frappe en disant</stage>
+        <sp who="#bourgeoisun">
+          <speaker>Bourgeois Un</speaker>
+          <l met="2">Flon, flon,</l>
+          <l met="5">Lariradondaine,</l>
+          <l met="2">Flon, flon,</l>
+          <l met="5">Lariradondon.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#pouvoir">Pouvoir</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Commencer par la maltraiter,</l>
+            <l met="6">C'est fort mal débuter<note>Note dans le manuscrit : « L'Opéra-Comique venait de débuter fort mal ».</note>.<stage>bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="8">Sauteurs, suivons-la jusqu'au port,</l>
+          <l met="6">En déplorant son sort.<stage>bis</stage>
+          </l>
+        </sp>
+        <stage>Les bourgeois emmènent la Foire. Scaramouche et les sauteurs la suivent. Operario s'est retiré un peu devant.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Arlequin, le Docteur, Gille</stage>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+        </sp>
+        <spGrp who="#gille">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#confiteor">Confiteor</title>
+            </desc>
+          </head>
+          <sp who="#gille">
+            <speaker>Gille</speaker>
+            <l met="8">Voilà le comble de nos maux.</l>
+            <l met="8">Nous n'avons qu'à fermer boutique.</l>
+          </sp>
+        </spGrp>
+        <sp who="#docteur">
+          <speaker>Docteur</speaker>
+          <l met="8">Pourquoi? Jouons par écriteaux</l>
+          <l met="8">Faute de l'Opéra-Comique.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Oui, chacun aime à fredonner</l>
+          <l met="8">Et se plaît même à détonner<note type="definition">Détonner: Changer de ton (Acad.1694)</note>.</l>
+        </sp>
+        <sp who="#docteur">
+          <speaker>Docteur</speaker>
+        </sp>
+        <spGrp who="#docteur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jus_octobre">Quand je tiens de ce jus d'octobre</title>
+            </desc>
+          </head>
+          <sp who="#docteur">
+            <speaker>Docteur</speaker>
+            <l met="8">Amis, ayons bonne espérance.</l>
+            <l met="8">Paris pour nous a des bontés.</l>
+            <l met="8">Il eut toujours de l'indulgence</l>
+            <l met="8">Pour les acteurs persécutés.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_reguingue">Ô reguingué</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Parbleu, le docteur a raison!</l>
+            <l met="8">Donnons les Exploits de Jason,</l>
+            <l met="8">L'Oracle muet, la Toison.</l>
+            <l met="8">Le Français vif aime à la rage</l>
+            <l met="8">Toutes les pièces de tapage<note>Peut-être « qui font grand bruit », où l'on voit des combats, etc.</note>.</l>
+          </sp>
+        </spGrp>
+        <sp who="#docteur">
+          <speaker>Docteur</speaker>
+        </sp>
+        <spGrp who="#docteur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#beaux_yeux_nicole">Tes beaux yeux ma Nicole</title>
+            </desc>
+          </head>
+          <sp who="#docteur">
+            <speaker>Docteur</speaker>
+            <l met="6">Il veut que notre scène</l>
+            <l met="6">En style tout badin</l>
+            <l met="6">Évite Melpomène</l>
+            <l met="6">Et le plat baladin<note type="definition">Baladin: Danseur de théâtre (Acad.1762)</note>.</l>
+          </sp>
+        </spGrp>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+          <l met="6">Un indiscret poète</l>
+          <l met="6">Qui prend un autre ton,</l>
+          <l met="6">Le plus souvent n'y jette</l>
+          <l met="6">Qu'un très vilain coton<note type="definition">Jeter un vilain coton: Signifie faire mauvaise figure (<emph>Dictionnaire comique, satirique, critique et burlesque</emph>,<emph>op. cit.</emph>)</note>.</l>
+        </sp>
+        <stage>On entend crier derrière le théâtre.</stage>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+          <l met="6">Au bachot, au bachot<note>Un bachot est un petit bateau. Il s'agit probablement d'une expression pour dire « à l'aide » lors d'un naufrage.</note>!</l>
+          <l met="6">À l'aide, à l'aide!</l>
+        </sp>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+        </sp>
+        <spGrp who="#gille">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ciel_benisse_besogne">La besogne</title>
+            </desc>
+          </head>
+          <sp who="#gille">
+            <speaker>Gille</speaker>
+            <l met="8">Que veulent donc dire ces cris?</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Ce bruit alarme mes esprits.</l>
+          <l met="8">Il fait retentir le rivage.</l>
+        </sp>
+        <sp who="#docteur">
+          <speaker>Docteur</speaker>
+          <l met="8">Sans doute, c'est quelque naufrage.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Arlequin, le Docteur, Gille, Scaramouche</stage>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <stage>essoufflé</stage>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lapalisse">Lapalisse</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="7">Je succombe à ma douleur.</l>
+            <l met="7">Ô, la pitoyable histoire!</l>
+          </sp>
+        </spGrp>
+        <sp who="#docteur">
+          <speaker>Docteur</speaker>
+          <l met="7">Qu'avez-vous donc?</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="7">Quel malheur!</l>
+          <l met="7">Amis, pleurons tous la Foire.</l>
+        </sp>
+        <stage>Le Docteur, Arlequin et Gille lui demandent par signes ce qui est arrivé.</stage>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sans_dessus_dessous">Sans dessus dessous</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="8">Les deux bourgeois sortaient du port<stage>bis</stage>
+            </l>
+            <l met="8">Avec la Foire sur leur bord,<stage>bis</stage>
+            </l>
+            <l met="8">Ils se sont conduits de manière</l>
+            <l met="5">Sans dessus dessous<note>Note sur le manuscrit: « L'Opéra-Comique alla fort mal à cette Foire et les entrepreneurs s'y ruinèrent ».</note>,</l>
+            <l met="5">Sans devant derrière,</l>
+            <l met="8">Que dans l'onde ils sont tombés tous</l>
+            <l met="11">Sans devant derrière, sans dessus dessous.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="8">D'abord nos sauteurs, à la nage,</l>
+            <l met="8">Ont pris la Foire entre leurs bras.</l>
+            <l met="8">Mais ils l'ont amenée, hélas!</l>
+            <l met="6">Morte sur le rivage.</l>
+          </sp>
+        </spGrp>
+        <stage>Ils se mettent tous à pleurer.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#hesione">Menuet d'Hésione</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Et des bourgeois, quelle est la chance?</l>
+            <l met="8">La mer est-elle leur tombeau?</l>
+          </sp>
+        </spGrp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="8">Non, chacun leur prête assistance.</l>
+          <l met="8">Ils pourront revenir sur l'eau.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Arlequin, le Docteur, Scaramouche, Gille, la Foire<stage>apportée sur une civière par deux sauteurs</stage>
+        </stage>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, [ni prince]</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="8">La voilà, la pauvre diablesse.</l>
+          </sp>
+        </spGrp>
+        <sp who="#docteur">
+          <speaker>Docteur</speaker>
+          <l met="8">Elle avait tant de gentillesse.</l>
+        </sp>
+        <sp who="#gille">
+          <speaker>Gille</speaker>
+          <l met="8">Elle sautait comme un ballon.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="8">Et chantait comme un tuyau d'orgue.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="8">Vous la voyez tout de son long:</l>
+          <l met="8">On va la porter à la morgue.</l>
+        </sp>
+        <stage>Fin du prologue</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

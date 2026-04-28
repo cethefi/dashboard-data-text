@@ -1,0 +1,535 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="le_voyage_manque_1736">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Le Voyage manqué</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Louis Fuzelier</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Rousseau</name>
+        </respStmt>
+        <respStmt>
+          <resp>Relecture</resp>
+          <name>P. Beaucé</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BnF ms. fr. 9333</bibl>
+        <bibl type="intermediarySource">S. Rousseau</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="lamour" sex="UNKNOWN">
+            <persName>L'amour</persName>
+          </person>
+          <person xml:id="zephire" sex="UNKNOWN">
+            <persName>Zéphire</persName>
+          </person>
+          <person xml:id="aquilon" sex="UNKNOWN">
+            <persName>Aquilon</persName>
+          </person>
+          <person xml:id="lesvents" sex="UNKNOWN">
+            <persName>Les vents</persName>
+          </person>
+          <person xml:id="lesaquilons" sex="UNKNOWN">
+            <persName>Les aquilons</persName>
+          </person>
+          <person xml:id="leszephires" sex="UNKNOWN">
+            <persName>Les zéphires</persName>
+          </person>
+          <person xml:id="touslesvents" sex="UNKNOWN">
+            <persName>Tous les vents</persName>
+          </person>
+          <person xml:id="choeursdesvents" sex="UNKNOWN">
+            <persName>Chœurs des vents</persName>
+          </person>
+          <person xml:id="leszephirs" sex="UNKNOWN">
+            <persName>Les zéphirs</persName>
+          </person>
+          <person xml:id="choeurdesvents" sex="UNKNOWN">
+            <persName>Chœur des vents</persName>
+          </person>
+          <person xml:id="tous" sex="UNKNOWN">
+            <persName>Tous</persName>
+          </person>
+          <person xml:id="l_amour" sex="UNKNOWN">
+            <persName>L'Amour</persName>
+          </person>
+          <person xml:id="les_vents" sex="UNKNOWN">
+            <persName>Les Vents</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Acte relatif au prologue du ballet des<emph>Voyages de l'amour</emph>
+          </term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1736">
+        <desc> 1736</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#l_amour">L'Amour</role>
+        </castItem>
+        <castItem>
+          <role ana="#zephire">Zéphire</role>
+        </castItem>
+        <castItem>
+          <role ana="#aquilon">Aquilon</role>
+        </castItem>
+        <castItem>
+          <role ana="#les_vents">Les Vents</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène est dans l'île d'Éole.</stage>
+        <sp who="#choeursdesvents">
+          <speaker>Chœurs des vents</speaker>
+          <stage>avec accompagnement sur le cotillon Ma commère quand je danse</stage>
+          <l met="7">Soufflons sur la terre et l'onde,</l>
+          <l met="7">Pour souffler nous sommes faits,</l>
+          <l met="8">Soufflons du chaud, soufflons du froid,</l>
+          <l met="10">Persécutons les chignons, les toupets,</l>
+          <l met="7">Défrisons et brune et blonde,</l>
+          <l met="7">Défrisons abbés coquets.</l>
+        </sp>
+        <stage>L'orchestre reprend la tempête d'<emph>Alcyone</emph>.</stage>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <stage>arrive sur l'air<emph>L'Amour devient ivrogne et Bacchus amoureux</emph>
+          </stage>
+          <l met="6">Éole, votre maître,</l>
+          <l met="6">Ainsi vous laisse aller;</l>
+          <l met="6">Vents, ne sauriez-vous être</l>
+          <l met="6">Un moment sans souffler?</l>
+        </sp>
+        <sp who="#aquilon">
+          <speaker>Aquilon</speaker>
+        </sp>
+        <spGrp who="#aquilon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_nos_forets">On n'aime point dans nos forêts</title>
+            </desc>
+          </head>
+          <sp who="#aquilon">
+            <speaker>Aquilon</speaker>
+            <l met="8">Depuis quand donc, fils de Vénus,</l>
+            <l met="8">Est-ce la paix qui vous inspire?</l>
+            <l met="8">Les vents vous sont-ils inconnus?</l>
+            <l met="8">Que cherchez-vous dans notre empire?</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="8">Un confident discret et doux.</l>
+        </sp>
+        <sp who="#aquilon">
+          <speaker>Aquilon</speaker>
+          <stage>ironiquement</stage>
+          <l met="8">Vous vous adressez bien chez nous.</l>
+        </sp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <stage>à l'Amour</stage>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">Allez-vous encore à Zéphire</l>
+            <l met="8">Donner un emploi si charmant?</l>
+          </sp>
+        </spGrp>
+        <sp who="#aquilon">
+          <speaker>Aquilon</speaker>
+          <stage>à l'Amour</stage>
+          <l met="8">Le volage aime trop à rire</l>
+          <l met="8">Pour écouter bien un amant.</l>
+        </sp>
+        <spGrp who="#aquilon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais, en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#aquilon">
+            <speaker>Aquilon</speaker>
+            <l met="8">Mais, Amour, dans tes douces chaînes</l>
+            <l met="8">L'amant doit cacher ses soupirs:</l>
+            <l met="8">Qui se plaît à conter ses peines,</l>
+            <l met="8">Conte volontiers ses plaisirs.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="8">Tendre Amour, dans tes douces peines</l>
+          <l met="8">[L'amant doit cacher ses soupirs:</l>
+          <l met="8">Qui se plaît à conter ses peines,</l>
+          <l met="8">Conte volontiers ses plaisirs.]</l>
+        </sp>
+        <sp who="#aquilon">
+          <speaker>Aquilon</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#aquilon">
+            <speaker>Aquilon</speaker>
+            <l met="8">Chacun dans le temps qu'il soupire</l>
+            <l met="8">Ne ressent pas le même attrait.</l>
+            <l met="8">L'un en fait plus qu'il n'en sait dire</l>
+            <l met="8">Et l'autre en dit plus qu'il n'en fait.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="8">Chacun dans le temps [qu'il soupire</l>
+          <l met="8">Ne ressent pas le même attrait.</l>
+          <l met="8">L'un en fait plus qu'il n'en sait dire</l>
+          <l met="8">Et l'autre en dit plus qu'il n'en fait.]</l>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <stage>à Zéphire</stage>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sainte_radegonde">Sainte Radegonde</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="4">J'ai dans la tête</l>
+            <l met="6">Certain projet nouveau,</l>
+            <l met="4">Et je m'apprête</l>
+            <l met="6">À le rendre très beau.</l>
+            <l met="12">Je vais vous dire tout, je vous connais prudent,</l>
+            <l met="6">Je peux me mettre au large,</l>
+            <l met="6">Allons, mon confident,</l>
+            <l met="4">Entrez en charge.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeursdesvents">
+          <speaker>Chœurs des vents</speaker>
+          <stage>parodie sur celui du prologue des<emph>Éléments</emph>
+          </stage>
+          <l met="12">Trompettes, éclatez, frappez, percez les airs,</l>
+          <l met="12">Dans le séjour des vents, placez bien vos concerts.</l>
+          <l met="8">De l'Amour célébrez les armes,</l>
+          <l met="12">Aux dieux même l'enfant ravit la liberté,</l>
+          <l met="12">Encensez dans Naxos, sur le Pinde fêté,</l>
+          <l met="6">L'Olympe adore ses charmes.</l>
+          <l met="12">Trompettes, éclatez, frappez, percez les airs,</l>
+          <l met="12">Dans le séjour des vents placez bien vos concerts.</l>
+        </sp>
+        <sp who="#leszephirs">
+          <speaker>Les zéphirs</speaker>
+          <l met="12">L'Amour tient à présent des routes peu communes.</l>
+        </sp>
+        <sp who="#lesaquilons">
+          <speaker>Les aquilons</speaker>
+          <l met="12">L'Amour depuis six mois est pauvre<note>Allusion au ballet des<emph>Voyages de l'Amour</emph>.v</note>oyageur.</l>
+        </sp>
+        <sp who="#tous">
+          <speaker>Tous</speaker>
+          <l met="8">Pour les noires quittant les brunes</l>
+          <l met="12">Chez un peuple<note>Allusion au ballet des<emph>Indes galantes</emph>et à la tragédie d'<emph>Alzire</emph>.s</note>auvage il porte son ardeur;</l>
+          <l met="8">De l'Amérique, il fend les ondes,</l>
+          <l met="12">Apollon en rimant lui soumet les deux mondes.</l>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <stage>riant</stage>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#turlurette_turluron">Ma tantourlourette</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="6">Quand j'allais dire deux mots</l>
+            <l met="7">Ce chœur vient fort à propos;</l>
+            <l met="7">Et voilà comme on les jette</l>
+            <l met="7">Tourlourette tourlourette,</l>
+            <l met="5">Ma tantourlourette.</l>
+          </sp>
+        </spGrp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">tiré du <title ref="#ballet_des_sens">Ballet des Sens</title> (L'Acte des Sirènes)</desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">
+              <emph>De l'amour tout subit les lois</emph>,</l>
+            <l met="8">Mais l'enfant, peu<emph>jaloux du choix</emph>,</l>
+            <l met="8">Très souvent donne l'<emph>art de plaire</emph>
+            </l>
+            <l met="8">Sans daigner trier les minois;</l>
+            <l met="8">Et pourtant<emph>il a la rigueur</emph>
+            </l>
+            <l met="8">D'en taxer bien haut la faveur,</l>
+            <l met="8">
+              <emph>Heureux ceux que sa main légère</emph>
+            </l>
+            <l met="6">Traite<emph>en amis du cœur.</emph>
+            </l>
+            <l met="8">Quelques<emph>jours sont pour les amants</emph>
+            </l>
+            <l met="8">
+              <emph>Des jours purs, sereins et charmants,</emph>
+            </l>
+            <l met="8">Mais après ces jours pleins d'attraits</l>
+            <l met="8">Vient le quart d'heure de Rabelais.</l>
+            <l met="8">De l'amour<emph>tout subit les [lois,]</emph>
+            </l>
+            <l met="8">Que d'humains se trouvent<emph>punis</emph>
+            </l>
+            <l met="8">De rendre au petit dieu<emph>les armes</emph>!</l>
+            <l met="8">Tient-il ce qu'<emph>il a promis</emph>?</l>
+            <l met="8">
+              <emph>Il faut, pour juger de ses charmes</emph>,</l>
+            <l met="5">
+              <emph>Les avoir sentis,</emph>
+            </l>
+            <l met="9">Bien des gens<emph>ont regret</emph>à leur prix.</l>
+            <l met="8">De l'amour tout subit les [lois].</l>
+          </sp>
+          <note>On a souligné toutes les paroles prises de l'opéra.</note>
+        </spGrp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#confiteor">Dirai-je mon confiteor</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="8">Courage, Zéphirs, fort bien</l>
+            <l met="8">La même quinte vous anime,</l>
+            <l met="8">Vous lâchez à propos de rien</l>
+            <l met="8">Le petit air fait en maxime</l>
+            <l met="8">Sans regarder s'il conviendra</l>
+            <l met="8">Sommes-nous donc à l'Opéra?</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">De tous les capucins du monde</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="8">Je veux faire encor un voyage.</l>
+          </sp>
+        </spGrp>
+        <sp who="#aquilon">
+          <speaker>Aquilon</speaker>
+          <l met="8">La cour, la ville et le village</l>
+          <l met="8">Vous verront-ils encor trotter</l>
+          <l met="8">De l'irrésolu, digne image</l>
+          <l met="8">Sans savoir où vous arrêter?</l>
+        </sp>
+        <note>Division du ballet des<emph>Voyages de l'amour</emph>.</note>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="8">Non, je suis devenu plus sage.</l>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="8">Je sais bien qu'avec le notaire</l>
+            <l met="8">On examine, on délibère</l>
+            <l met="8">Pour choisir une épouse; mais</l>
+            <l met="8">Une amante est une autre affaire</l>
+            <l met="8">Et c'est sans calculer les frais</l>
+            <l met="8">Que ce choix se fait d'ordinaire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <stage>à L'Amour</stage>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_je_ne_ferai_pas">Non, je ne ferai pas ce qu'on veut que je fasse</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="12">Une seconde fois ne courez pas le monde,</l>
+            <l met="12">Le rôle sûrement vous sied moins qu'à Joconde</l>
+            <l met="12">Croyez-moi, nous avons tous deux assez bronché:</l>
+            <l met="12">Restons, moi près de Flore et vous près de Psyché.</l>
+          </sp>
+          <note>Joconde conte de la Fontaine.</note>
+        </spGrp>
+        <sp who="#choeurdesvents">
+          <speaker>Chœur des vents</speaker>
+          <stage>parodie sur le premier du premier acte des<emph>Éléments</emph>
+          </stage>
+          <l met="12">Triomphez, triomphez vainqueur de l'univers</l>
+          <l met="12">Tout est prêt d'obéir à vos ordres divers.</l>
+        </sp>
+        <sp who="#leszephires">
+          <speaker>Les zéphires</speaker>
+          <l met="12">Recevez des Zéphirs les paisibles fleurettes.</l>
+        </sp>
+        <sp who="#lesaquilons">
+          <speaker>Les aquilons</speaker>
+          <l met="12">Pour nous, fiers Aquilons, courons troubler les mers.</l>
+        </sp>
+        <sp who="#leszephirs">
+          <speaker>Les zéphirs</speaker>
+          <l met="10">Faisons régner le calme dans les airs.</l>
+        </sp>
+        <sp who="#lesaquilons">
+          <speaker>Les aquilons</speaker>
+          <l met="12">Faisons voler chapeaux, perruques et cornettes.</l>
+        </sp>
+        <sp who="#leszephirs">
+          <speaker>Les zéphirs</speaker>
+          <l met="10">Suivons l'Amour dans de sombres retraites.</l>
+        </sp>
+        <sp who="#lesaquilons">
+          <speaker>Les aquilons</speaker>
+          <l met="10">Faisons régner le rhume et les hivers.</l>
+        </sp>
+        <sp who="#touslesvents">
+          <speaker>Tous les vents</speaker>
+          <l met="12">Triomphez, triomphez vainqueur de l'univers</l>
+          <l met="12">Tout est prêt d'obéir à vos ordres divers.</l>
+        </sp>
+        <stage>Fin</stage>
+      </prologue>
+    </front>
+    <body>
+    </body>
+  </text>
+</TEI>

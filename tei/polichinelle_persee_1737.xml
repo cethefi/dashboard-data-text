@@ -1,0 +1,1457 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="polichinelle_persee_1737">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Polichinelle Persée</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Denis Carolet</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>B. Ourcel</name>
+        </respStmt>
+        <respStmt>
+          <resp>Relecture</resp>
+          <name>G. Marot puis FR</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Ms BnF fr. 9313</bibl>
+        <bibl type="intermediarySource">A. Bonneville</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Chœur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="persee" sex="UNKNOWN">
+            <persName>Persée</persName>
+          </person>
+          <person xml:id="cephee" sex="UNKNOWN">
+            <persName>Céphée</persName>
+          </person>
+          <person xml:id="phinee" sex="UNKNOWN">
+            <persName>Phinée</persName>
+          </person>
+          <person xml:id="cassiope" sex="UNKNOWN">
+            <persName>Cassiope</persName>
+          </person>
+          <person xml:id="merope" sex="UNKNOWN">
+            <persName>Mérope</persName>
+          </person>
+          <person xml:id="andromede" sex="UNKNOWN">
+            <persName>Andromède</persName>
+          </person>
+          <person xml:id="mercure" sex="UNKNOWN">
+            <persName>Mercure</persName>
+          </person>
+          <person xml:id="meduse" sex="UNKNOWN">
+            <persName>Méduse</persName>
+          </person>
+          <person xml:id="idas" sex="UNKNOWN">
+            <persName>Idas</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1737">
+        <desc>Pour les marionnettes du Sieur Bienfait 1737</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#persee">Persée</role>
+          <actor>Polichinelle</actor>
+        </castItem>
+        <castItem>
+          <role ana="#cephee">Céphée</role>
+          <actor>Pierrot</actor>
+        </castItem>
+        <castItem>
+          <role ana="#phinee">Phinée</role>
+          <actor>Scaramouche</actor>
+        </castItem>
+        <castItem>
+          <role ana="#cassiope">Cassiope</role>
+          <actor>Dame Gigogne</actor>
+        </castItem>
+        <castItem>
+          <role ana="#merope">Mérope</role>
+          <roleDesc>sœur de Cassiope</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#andromede">Andromède</role>
+          <roleDesc>fille de Céphée</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#mercure">Mercure</role>
+        </castItem>
+        <castItem>
+          <role ana="#meduse">Méduse</role>
+        </castItem>
+        <castItem>
+          <role ana="#idas">Idas</role>
+        </castItem>
+      </castList>
+    </front>
+    <body>
+      <div type="act">
+        <head>ACTE 1</head>
+        <stage type="location">La scène est chez Céphée.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Cassiope, Céphée</stage>
+          <sp who="#cephee">
+            <speaker>Céphée</speaker>
+          </sp>
+          <spGrp who="#cephee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#belle_brune">Belle brune</title>
+              </desc>
+            </head>
+            <sp who="#cephee">
+              <speaker>Céphée</speaker>
+              <l met="3">Ah! ma femme<stage type="bis">bis</stage>
+              </l>
+              <l met="7">Il est à propos ici</l>
+              <l met="7">Que je vous chante la gamme,</l>
+              <l met="3">Ah! ma femme<stage type="bis">bis</stage>
+              </l>
+              <p>Que je suis malheureux! Méduse pétrifie tout mon peuple. Les trois quarts de mes sujets ne seront plus bons à mettre que dans l'atelier d'un sculpteur et moi, peut-être, dans un bosquet de mon jardin.</p>
+            </sp>
+          </spGrp>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+          </sp>
+          <spGrp who="#cassiope">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air du</desc>
+              <desc type="title">
+                <title ref="#tout_cela_est_indifferent">Prévôt [des marchands]</title>
+              </desc>
+            </head>
+            <sp who="#cassiope">
+              <speaker>Cassiope</speaker>
+              <l met="8">Apaise-toi, mon cher époux.</l>
+            </sp>
+          </spGrp>
+          <sp who="#cephee">
+            <speaker>Céphée</speaker>
+            <l met="8">Vous n'avez des yeux que pour vous;</l>
+            <l met="8">Vous avez avec impudence,</l>
+            <l met="8">Méprisé la reine des cieux.</l>
+            <l met="8">Je paye votre extravagance.</l>
+          </sp>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+            <l met="8">C'est un rien.</l>
+          </sp>
+          <sp who="#cephee">
+            <speaker>Céphée</speaker>
+            <l met="8">Qui choque les dieux.</l>
+          </sp>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+            <p>Vous avez beau dire, mon cher mari, je vous aime tant que je ne vous crois pas où je vous vois.</p>
+          </sp>
+          <sp who="#cephee">
+            <speaker>Céphée</speaker>
+            <p>Peste soit des femmes! La mienne, je crois, ne m'aime que parce qu'elle sait que son amour me porte guignon.</p>
+          </sp>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+          </sp>
+          <spGrp who="#cassiope">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ramonez_ci">Ramonez ci</title>
+              </desc>
+            </head>
+            <sp who="#cassiope">
+              <speaker>Cassiope</speaker>
+              <l met="7">Il faut par un sacrifice</l>
+              <l met="7">Nous rendre Junon propice.</l>
+              <l met="7">Son courroux se calmera</l>
+              <l met="8">Je vais par ci, je vais par là,</l>
+              <l met="3">La la la</l>
+              <l met="8">Donner mes ordres pour cela.</l>
+            </sp>
+          </spGrp>
+          <sp who="#cephee">
+            <speaker>Céphée</speaker>
+            <p>Allez, ma femme, allez, mais j'ai bien peur que votre repentir ne soit de la moutarde après dîner; pour moi, je vais rendre visite à Jupiter avec Persée.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Cassiope, Mérope</stage>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+          </sp>
+          <spGrp who="#cassiope">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#faire_l_amour">La nuit et le jour</title>
+              </desc>
+            </head>
+            <sp who="#cassiope">
+              <speaker>Cassiope</speaker>
+              <l met="6">Tu soupires ma sœur</l>
+              <l met="6">Et c'est d'amour je gage.</l>
+            </sp>
+          </spGrp>
+          <sp who="#merope">
+            <speaker>Mérope</speaker>
+            <l met="6">Voyez le grand malheur:</l>
+            <l met="6">On peut faire à mon âge,</l>
+            <l met="2">L'amour</l>
+            <l met="5">La nuit et le jour.</l>
+          </sp>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+            <p>Si c'est toujours Persée que tu aimes, je te plains fort car on prend ici des arrangements qui ne te sont pas fort favorables. Ta nièce Andromède te coupe l'herbe sous le pied.</p>
+          </sp>
+          <sp who="#merope">
+            <speaker>Mérope</speaker>
+            <p>Ma foi, mon amour ne me déshonore pas tant que votre orgueil mal placé.</p>
+          </sp>
+          <spGrp who="#merope">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#jean_gille">Jean Gille</title>
+              </desc>
+            </head>
+            <sp who="#merope">
+              <speaker>Mérope</speaker>
+              <l met="7">Céphée est un imbécile,</l>
+              <l met="6">Jean Gille [Gille] joli Jean.</l>
+              <l met="7">Pour vous il est trop facile,</l>
+              <l met="2">Jean Gille, ...</l>
+              <l met="5">C'est un innocent.<stage type="bis">bis</stage>
+              </l>
+            </sp>
+          </spGrp>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+            <p>Courage, ma sœur, courage, c'est la honte que je vous fais qui m'attire toutes ces sottises-là.</p>
+          </sp>
+          <sp who="#merope">
+            <speaker>Mérope</speaker>
+          </sp>
+          <spGrp who="#merope">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air du</desc>
+              <desc type="title">
+                <title ref="#capucin">Capucin</title>
+              </desc>
+            </head>
+            <sp who="#merope">
+              <speaker>Mérope</speaker>
+              <l met="8">Votre Andromède vous rend folle</l>
+              <l met="8">Chacun le sait, c'est votre idole.</l>
+              <l met="8">Près d'elle, Vénus et Junon</l>
+              <l met="8">Ne sont que des minces grisettes.</l>
+              <l met="8">Ma sœur, voilà votre jargon</l>
+              <l met="8">Et les merveilles que vous faites.</l>
+            </sp>
+          </spGrp>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+          </sp>
+          <spGrp who="#cassiope">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#non_je_ne_ferai_pas">Non, je ne ferai pas [ce qu'on veut que je fasse]</title>
+              </desc>
+            </head>
+            <sp who="#cassiope">
+              <speaker>Cassiope</speaker>
+              <l met="12">Votre cerveau, ma sœur, a besoin d'ellébore.</l>
+            </sp>
+          </spGrp>
+          <sp who="#merope">
+            <speaker>Mérope</speaker>
+            <l met="12">Et le vôtre de plomb pour qu'il ne s'évapore.</l>
+          </sp>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+            <l met="12">Adieu, ma sœur, adieu, le temps vous guérira.</l>
+          </sp>
+          <sp who="#merope">
+            <speaker>Mérope</speaker>
+            <l met="12">Sur votre ambition son pouvoir blanchira.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Mérope<stage>seule</stage>
+          </stage>
+          <sp who="#merope">
+            <speaker>Mérope</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#merope">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#naiades">Bouchez, Naïades, [vos fontaines]</title>
+              </desc>
+            </head>
+            <sp who="#merope">
+              <speaker>Mérope</speaker>
+              <l met="8">Ah! si mon cœur sort de tes griffes,</l>
+              <l met="8">Amour je veux que tu me biffes</l>
+              <l met="8">Du livre des cœurs amoureux;</l>
+              <l met="8">Vois les peines que tu m'as faites</l>
+              <l met="8">Et conviens qu'il serait honteux</l>
+              <l met="8">Que mon nom fût sur tes tablettes.</l>
+              <p>Mais j'aperçois ma nièce avec Phinée; sortons, leur conversation n'a rien qui m'intéresse.</p>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Phinée, Andromède</stage>
+          <sp who="#phinee">
+            <speaker>Phinée</speaker>
+          </sp>
+          <spGrp who="#phinee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_ne_m_aimez_pas_dame_francoise">Dame Françoise</title>
+              </desc>
+            </head>
+            <sp who="#phinee">
+              <speaker>Phinée</speaker>
+              <l met="9">Vous ne m'aimez plus<stage type="bis">bis</stage>belle Andromède.</l>
+            </sp>
+          </spGrp>
+          <sp who="#andromede">
+            <speaker>Andromède</speaker>
+            <l met="4">Pardonnez-moi,<stage type="bis">bis</stage>
+            </l>
+            <p>Je vous aime comme mon oncle, est-ce que vous m'aimez autrement que comme votre nièce, vous?</p>
+          </sp>
+          <sp who="#phinee">
+            <speaker>Phinée</speaker>
+          </sp>
+          <spGrp who="#phinee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#belle_brune">Belle brune</title>
+              </desc>
+            </head>
+            <sp who="#phinee">
+              <speaker>Phinée</speaker>
+              <l met="3">Belle brune,<stage type="bis">bis</stage>
+              </l>
+              <l met="7">Mon bonheur dépend de vous</l>
+              <l met="7">Et ma flamme est peu commune,</l>
+              <l met="3">Belle brune.<stage type="bis">bis</stage>
+              </l>
+            </sp>
+          </spGrp>
+          <sp who="#andromede">
+            <speaker>Andromède</speaker>
+          </sp>
+          <spGrp who="#andromede">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#voudrais_marier">Je voudrais bien me marier</title>
+              </desc>
+            </head>
+            <sp who="#andromede">
+              <speaker>Andromède</speaker>
+              <l met="8">Si l'on prétend me marier,</l>
+              <l met="6">On fera de l'eau claire.</l>
+              <l met="8">Vous aurez beau pester, crier,</l>
+              <l met="6">Je vous laisserai faire.</l>
+              <l met="8">Pour moi, je ne veux me lier</l>
+              <l met="6">Qu'avec qui sait me plaire.</l>
+            </sp>
+          </spGrp>
+          <sp who="#phinee">
+            <speaker>Phinée</speaker>
+            <p>Petite ingrate.</p>
+          </sp>
+          <sp who="#andromede">
+            <speaker>Andromède</speaker>
+            <p>Je suis plus raisonnable que vous ne pensez, mon oncle.</p>
+          </sp>
+          <spGrp who="#andromede">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#le_plaisir_passe_la_peine">La peine passe le plaisir</title>
+              </desc>
+            </head>
+            <sp who="#andromede">
+              <speaker>Andromède</speaker>
+              <l met="8">L'hymen est un dieu qui se venge;</l>
+              <l met="8">Quand sa loi vous paraît étrange,</l>
+              <l met="8">La peine passe le plaisir.</l>
+              <l met="8">Quand on aime à porter sa chaîne</l>
+              <l met="8">Et qu'elle sait nous assortir,</l>
+              <l met="7">Le plaisir passe la peine.</l>
+            </sp>
+          </spGrp>
+          <sp who="#phinee">
+            <speaker>Phinée</speaker>
+          </sp>
+          <spGrp who="#phinee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air du</desc>
+              <desc type="title">
+                <title ref="#branle_de_metz">Branle de Metz</title>
+              </desc>
+            </head>
+            <sp who="#phinee">
+              <speaker>Phinée</speaker>
+              <l met="7">Que n'est-il en ta présence</l>
+              <l met="7">Ce bâtard de Jupiter?</l>
+              <l met="7">Tu verrais avec quel air</l>
+              <l met="7">J'exalterais sa naissance.</l>
+              <l met="7">Morbleu, si je le tenais,</l>
+              <l met="7">Comme je l'étrille, étrille,</l>
+              <l met="7">Morbleu, si je le tenais,</l>
+              <l met="7">Comme je l'étrillerais.</l>
+            </sp>
+          </spGrp>
+          <sp who="#andromede">
+            <speaker>Andromède</speaker>
+          </sp>
+          <spGrp who="#andromede">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#joconde">Joconde</title>
+              </desc>
+            </head>
+            <sp who="#andromede">
+              <speaker>Andromède</speaker>
+              <l met="8">Ma famille est folle, je crois.</l>
+              <l met="6">Ma tante est ma rivale,</l>
+              <l met="8">Mon oncle est amoureux de moi</l>
+              <l met="6">Et ma mère s'égale</l>
+              <l met="8">À la souveraine des dieux</l>
+              <l met="6">Qui pleine de vengeance,</l>
+              <l met="8">Afflige mon père en ces lieux</l>
+              <l met="6">Malgré son innocence.</l>
+            </sp>
+          </spGrp>
+          <sp who="#phinee">
+            <speaker>Phinée</speaker>
+            <p>Vos réflexions ne décident rien. Eh bien, m'épouserez-vous?</p>
+          </sp>
+          <sp who="#andromede">
+            <speaker>Andromède</speaker>
+            <p>Non, je vous en réponds.</p>
+          </sp>
+          <spGrp>
+            <caption>Ensemble</caption>
+          </spGrp>
+          <spGrp who="#ensemble">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#amour_plait">Quel plaisir [de voir Claudine]</title>
+              </desc>
+            </head>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Ah! que l'amour a de charmes</l>
+              <l met="7">Quand on aime à l'unisson!</l>
+              <l met="7">Les maux, les soupirs, les larmes,</l>
+              <l met="7">En sont le revenant bon.</l>
+              <l met="7">Ah! que l'amour, ...</l>
+            </sp>
+          </spGrp>
+          <sp who="#andromede">
+            <speaker>Andromède</speaker>
+            <p>J'aperçois ma mère, elle a l'air bien humble contre son ordinaire.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Cassiope, les précédents</stage>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+            <p>Allons, mes enfants, il faut prier Junon avec moi.</p>
+          </sp>
+          <spGrp who="#cassiope">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#au_printemps_je_vous_remets">Au printemps, je vous remets</title>
+              </desc>
+            </head>
+            <sp who="#cassiope">
+              <speaker>Cassiope</speaker>
+              <l met="7">Chacun est ici pour soi,</l>
+              <l met="10">Belle Junon, calmez votre colère,</l>
+              <l met="7">Chacun est ici pour soi.</l>
+              <l met="10">Nous vous prions et c'est de bonne foi,</l>
+              <l met="7">C'est un grand effort pour moi</l>
+              <l met="10">Et vous devez écouter ma prière.</l>
+            </sp>
+          </spGrp>
+          <sp who="#choeur">
+            <speaker>Chœur</speaker>
+            <l met="7">Chacun est ici, ...</l>
+          </sp>
+          <sp who="#phinee">
+            <speaker>Phinée</speaker>
+            <p>Sauvons-nous, j'entends le tonnerre, Junon ne veut pas nous pardonner.</p>
+          </sp>
+          <stage>Fin de l'acte</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Céphée, Cassiope, Phinée</stage>
+          <sp who="#cephee">
+            <speaker>Céphée</speaker>
+          </sp>
+          <spGrp who="#cephee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#non_je_ne_veux_pas_rire">Non, je ne veux pas rire</title>
+              </desc>
+            </head>
+            <sp who="#cephee">
+              <speaker>Céphée</speaker>
+              <l met="8">Junon va calmer son courroux,</l>
+              <l met="8">Mon frère, réjouissons-nous.</l>
+            </sp>
+          </spGrp>
+          <sp who="#phinee">
+            <speaker>Phinée</speaker>
+            <l met="6">Cela vous plaît à dire,</l>
+            <l met="8">Non je ne veux pas rire, moi.</l>
+            <l met="6">Non je ne veux pas rire.</l>
+          </sp>
+          <spGrp who="#phinee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mere_mariez_moi">Ma mère, mariez-moi</title>
+              </desc>
+            </head>
+            <sp who="#phinee">
+              <speaker>Phinée</speaker>
+              <l met="7">Andromède était pour moi,</l>
+              <l met="7">Vous m'aviez promis sa foi.</l>
+              <l met="7">D'accord avec sa maman,</l>
+              <l met="5">Souvenez-vous en,<stage type="bis">bis</stage>
+              </l>
+              <l met="7">Vous deviez tous deux ce soir,</l>
+              <l met="7">La remettre en mon pouvoir.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#phinee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#cher_voisin">Que j'estime [mon cher voisin]</title>
+              </desc>
+            </head>
+            <sp who="#phinee">
+              <speaker>Phinée</speaker>
+              <l met="8">Un sot vient me la disputer,</l>
+              <l met="6">Et quel est donc son titre?</l>
+            </sp>
+          </spGrp>
+          <sp who="#cephee">
+            <speaker>Céphée</speaker>
+            <l met="8">C'est le bâtard de Jupiter.</l>
+          </sp>
+          <sp who="#phinee">
+            <speaker>Phinée</speaker>
+            <l met="6">C'est un fat, un bélître.</l>
+          </sp>
+          <sp who="#cephee">
+            <speaker>Céphée</speaker>
+            <p>Si vous saviez ce qu'il veut faire pour nous, vous ne parleriez pas ainsi.</p>
+          </sp>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+            <p>Il veut couper le col de Méduse, monsieur mon beau-frère.</p>
+          </sp>
+          <sp who="#phinee">
+            <speaker>Phinée</speaker>
+            <stage>riant</stage>
+            <p>Ah, ah, ah, ah, ah!</p>
+          </sp>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+            <p>Il ne faut pas rire, il nous a donné sa parole d'honneur.</p>
+          </sp>
+          <sp who="#phinee">
+            <speaker>Phinée</speaker>
+            <p>Il faut que vous ayez perdu le bon sens pour vouloir opposer à Junon le bâtard de son  mari.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Céphée, Mérope, les précédents</stage>
+          <sp who="#cephee">
+            <speaker>Céphée</speaker>
+          </sp>
+          <spGrp who="#cephee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#c_est_fanchon">C'est Fanchon</title>
+              </desc>
+            </head>
+            <sp who="#cephee">
+              <speaker>Céphée</speaker>
+              <l met="7">Chantons, réjouissons-nous,</l>
+              <l met="8">Jupiter pour nous s'intéresse.</l>
+              <l met="7">Chantons, réjouissons-nous,</l>
+              <l met="8">Son fils seul nous défendra tous.</l>
+            </sp>
+          </spGrp>
+          <sp who="#choeur">
+            <speaker>Chœur</speaker>
+            <l met="7">Chantons, ...</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Andromède, Mérope</stage>
+          <sp who="#andromede">
+            <speaker>Andromède</speaker>
+          </sp>
+          <spGrp who="#andromede">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#gds_dieux">Grands dieux</title>
+              </desc>
+            </head>
+            <sp who="#andromede">
+              <speaker>Andromède</speaker>
+              <l met="6">Grands dieux, qu'ils sont heureux</l>
+              <l met="1">Ceux</l>
+              <l met="10">Que l'œil de Méduse a changé en pierre,</l>
+              <l met="6">Grands dieux, qu'ils sont heureux</l>
+              <l met="1">Ceux</l>
+              <l met="10">Qui n'aiment personne ou qui n'aiment qu'eux.</l>
+            </sp>
+          </spGrp>
+          <sp who="#merope">
+            <speaker>Mérope</speaker>
+            <p>Je vous y prends ma nièce, vous soupirez pour Persée.</p>
+          </sp>
+          <spGrp who="#merope">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#nanette_dormez_vous">Nanette, dormez-vous</title>
+              </desc>
+            </head>
+            <sp who="#merope">
+              <speaker>Mérope</speaker>
+              <l met="6">Ma nièce vous l'aimez.</l>
+            </sp>
+          </spGrp>
+          <sp who="#andromede">
+            <speaker>Andromède</speaker>
+            <l met="6">Ma tante vous l'aimez.</l>
+          </sp>
+          <sp who="#merope">
+            <speaker>Mérope</speaker>
+            <l met="12">Ma nièce, vous l'aimez, vous me le confirmez.</l>
+          </sp>
+          <sp who="#andromede">
+            <speaker>Andromède</speaker>
+            <l met="12">Ma tante, vous l'aimez, vos yeux sont enflammés.</l>
+          </sp>
+          <sp who="#merope">
+            <speaker>Mérope</speaker>
+          </sp>
+          <spGrp who="#merope">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#nya_pas_dmal">N'y a pas d'mal à ça</title>
+              </desc>
+            </head>
+            <sp who="#merope">
+              <speaker>Mérope</speaker>
+              <l met="5">Je conviens, ma chère,</l>
+              <l met="5">De cet amour-là.</l>
+            </sp>
+          </spGrp>
+          <sp who="#andromede">
+            <speaker>Andromède</speaker>
+            <l met="5">Il a su me plaire.</l>
+          </sp>
+          <sp who="#merope">
+            <speaker>Mérope</speaker>
+            <l met="5">J'éprouve cela.</l>
+          </sp>
+          <spGrp>
+            <caption>Ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="5">N'y a pas d'mal à ça.</l>
+              <l met="5">N'y a pas d'mal à ça.</l>
+            </sp>
+          </spGrp>
+          <sp who="#merope">
+            <speaker>Mérope</speaker>
+          </sp>
+          <spGrp who="#merope">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air du</desc>
+              <desc type="title">
+                <title ref="#capucin">Capucin</title>
+              </desc>
+            </head>
+            <sp who="#merope">
+              <speaker>Mérope</speaker>
+              <l met="8">Pour l'amant qui nous intéresse,</l>
+              <l met="8">Nous pourrions nous brouiller, ma nièce,</l>
+              <l met="8">Mais nous agissons noblement.</l>
+              <l met="8">Ce héros va perdre la vie,</l>
+              <l met="8">Embrassons-nous sincèrement,</l>
+              <l met="8">Son péril nous réconcilie.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Persée, Andromède</stage>
+          <sp who="#persee">
+            <speaker>Persée</speaker>
+          </sp>
+          <spGrp who="#persee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#hesione">Menuet d'Hésione</title>
+              </desc>
+            </head>
+            <sp who="#persee">
+              <speaker>Persée</speaker>
+              <l met="8">Puisque enfin vous souffrez, brunette,</l>
+              <l met="8">Qu'ici je vous dise deux mots,</l>
+              <l met="8">Permettez aussi, ma poulette,</l>
+              <l met="8">Que mon cœur vous conte ses maux.</l>
+            </sp>
+          </spGrp>
+          <sp who="#andromede">
+            <speaker>Andromède</speaker>
+          </sp>
+          <spGrp who="#andromede">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_baronne">La baronne</title>
+              </desc>
+            </head>
+            <sp who="#andromede">
+              <speaker>Andromède</speaker>
+              <l met="4">On me l'ordonne,</l>
+              <l met="8">Parlez-moi tant qu'il vous plaira.</l>
+            </sp>
+          </spGrp>
+          <sp who="#persee">
+            <speaker>Persée</speaker>
+            <l met="8">Lorsque l'on aime bien, mignonne,</l>
+            <l met="8">Doit-on dire sur ce ton-là</l>
+            <l met="4">On me l'ordonne?</l>
+            <p>Tout coup vaille, je vous aime tant, moi, que je vais apporter tout à l'heure la tête de Méduse.</p>
+          </sp>
+          <sp who="#andromede">
+            <speaker>Andromède</speaker>
+            <p>Ne vous en avisez pas, je crains trop ses serpents et je sais ce qu'en vaut l'aune. D'ailleurs, mon cher Persée, tout cela sera inutile car j'épouse ce soir Phinée.</p>
+          </sp>
+          <sp who="#persee">
+            <speaker>Persée</speaker>
+          </sp>
+          <spGrp who="#persee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#dans_nos_forets">On n'aime point [dans nos forêts]</title>
+              </desc>
+            </head>
+            <sp who="#persee">
+              <speaker>Persée</speaker>
+              <l met="8">Phinée vous épouse ce soir!</l>
+              <l met="8">Qu'entends-je? oh ciel! êtes-vous sage?</l>
+              <l met="8">Ah! je vais plein du désespoir</l>
+              <l met="8">Que me cause ce mariage</l>
+              <l met="8">Me faire changer en cailloux.</l>
+            </sp>
+          </spGrp>
+          <sp who="#andromede">
+            <speaker>Andromède</speaker>
+            <l met="8">Mon cher Persée, où courez-vous?</l>
+          </sp>
+          <sp who="#persee">
+            <speaker>Persée</speaker>
+          </sp>
+          <spGrp who="#persee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air du</desc>
+              <desc type="title">
+                <title ref="#peril_agreable">Péril</title>
+              </desc>
+            </head>
+            <sp who="#persee">
+              <speaker>Persée</speaker>
+              <l met="8">Je vais trouver dame Méduse</l>
+              <l met="8">Et sans être étourdi ni fou,</l>
+              <l met="8">Je lui couperai net le cou</l>
+              <l met="6">Qu'elle sera camuse.</l>
+            </sp>
+          </spGrp>
+          <sp who="#andromede">
+            <speaker>Andromède</speaker>
+            <p>Eh bien, allez-y donc, mais je vous avertis que vous travaillerez pour vous, car je ne puis vous cacher que je vous aime.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Mercure, Persée</stage>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+          </sp>
+          <spGrp who="#mercure">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#jean_tu_t_en_vas">Jean, tu t'en vas</title>
+              </desc>
+            </head>
+            <sp who="#mercure">
+              <speaker>Mercure</speaker>
+              <l met="10">Tout beau, Persée! Où portez-vous vos pas?</l>
+            </sp>
+          </spGrp>
+          <sp who="#persee">
+            <speaker>Persée</speaker>
+            <l met="12">Je vais d'un air gaillard mettre une tête à bas.</l>
+          </sp>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <l met="4">Non non.</l>
+          </sp>
+          <sp who="#persee">
+            <speaker>Persée</speaker>
+            <l met="4">Si si.</l>
+          </sp>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <l met="8">J'ai deux mots à vous dire ici.</l>
+            <p>Je suis Mercure et je viens vous dire de la part de Jupiter qu'il vous reconnaît pour son fils, qu'il va vous envoyer des armes magiques pour couper la tête de Méduse quand elle dormira.</p>
+          </sp>
+          <spGrp who="#mercure">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mere_mariez_moi">Ma mère, mariez-moi</title>
+              </desc>
+            </head>
+            <sp who="#mercure">
+              <speaker>Mercure</speaker>
+              <l met="7">Vous n'avez rien à risquer.</l>
+            </sp>
+          </spGrp>
+          <sp who="#persee">
+            <speaker>Persée</speaker>
+            <l met="7">Allons vite l'attaquer,</l>
+            <l met="7">Je brûle de faire un coup</l>
+            <l met="10">Dont tout l'univers s'étonne beaucoup.</l>
+          </sp>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <l met="7">Oh! vous ferez ce coup-là</l>
+            <l met="8">Sans qu'il vous en coûte cela.</l>
+            <p>Suivez-moi seulement, je vais vous faire le détail des victoires que vous remporterez aujourd'hui.</p>
+          </sp>
+          <stage>Fin de l'acte</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 3</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Méduse</stage>
+          <sp who="#meduse">
+            <speaker>Méduse</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#meduse">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#petits_grands">Or écoutez, [petits et grands]</title>
+              </desc>
+            </head>
+            <sp who="#meduse">
+              <speaker>Méduse</speaker>
+              <l met="8">Je n'ai plus ces cheveux si beaux</l>
+              <l met="8">Dont autrefois le dieu des eaux</l>
+              <l met="8">Se lia comme d'une chaîne.</l>
+              <l met="8">Pallas, cette prude inhumaine,</l>
+              <l met="8">Jalouse de mes agréments,</l>
+              <l met="8">Les a tous changés en serpents.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#meduse">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#blaise_revenant_des_champs">Blaise revenant des champs</title>
+              </desc>
+            </head>
+            <sp who="#meduse">
+              <speaker>Méduse</speaker>
+              <l met="7">Qu'entends-je? quels sons divers</l>
+              <l met="4">Frappent les airs?<stage type="bis">bis</stage>
+              </l>
+              <l met="7">Pourquoi ces tendres concerts?</l>
+              <l met="5">Mais que veut Mercure</l>
+              <l met="5">Dans cette masure?</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Mercure, Méduse</stage>
+          <sp who="#meduse">
+            <speaker>Méduse</speaker>
+          </sp>
+          <spGrp who="#meduse">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#capucin">Capucins</title>
+              </desc>
+            </head>
+            <sp who="#meduse">
+              <speaker>Méduse</speaker>
+              <l met="8">Que demandez-vous, beau Mercure?</l>
+            </sp>
+          </spGrp>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <l met="8">Par le calme que je procure,</l>
+            <l met="8">Je prétends adoucir vos maux,</l>
+            <l met="8">À fermer l'œil je vous convie,</l>
+            <l met="8">Il faut prendre un peu de repos.</l>
+          </sp>
+          <sp who="#meduse">
+            <speaker>Méduse</speaker>
+            <l met="8">Je me plais dans mon insomnie.</l>
+          </sp>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <p>Oh, parbleu! je trouverai bien le secret de vous endormir.</p>
+          </sp>
+          <stage>Il la touche de son caducée et sort.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Persée, Méduse<stage>endormie</stage>
+          </stage>
+          <sp who="#persee">
+            <speaker>Persée</speaker>
+            <stage>lui coupant la tête</stage>
+          </sp>
+          <spGrp who="#persee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ciel_benisse_besogne">La Besogne</title>
+              </desc>
+            </head>
+            <sp who="#persee">
+              <speaker>Persée</speaker>
+              <l met="8">Vivat! mon triomphe est complet!</l>
+              <l met="8">Méduse a perdu son caquet.</l>
+              <l met="8">Chantons victoire! Cette lame</l>
+              <l met="8">Vient de faire une bonne femme.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Phinée, Céphée</stage>
+          <sp who="#cephee">
+            <speaker>Céphée</speaker>
+          </sp>
+          <spGrp who="#cephee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#pierre_bagnolet">Pierre Bagnolet</title>
+              </desc>
+            </head>
+            <sp who="#cephee">
+              <speaker>Céphée</speaker>
+              <l met="8">Chantons le vainqueur de Méduse,</l>
+              <l met="8">Il n'en a pas fait à deux fois.</l>
+            </sp>
+          </spGrp>
+          <sp who="#choeur">
+            <speaker>Chœur</speaker>
+            <l met="8">Chantons, ...</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Idas, Phinée, Mérope</stage>
+          <sp who="#idas">
+            <speaker>Idas</speaker>
+          </sp>
+          <spGrp who="#idas">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#pleurez_peuple_francais">Pleurez, peuple français</title>
+              </desc>
+            </head>
+            <sp who="#idas">
+              <speaker>Idas</speaker>
+              <l met="6">Pleurez, pleurez, pleurez,</l>
+              <l met="7">Dans un instant vous verrez</l>
+              <l met="6">Très piteuse aventure:</l>
+              <l met="6">D'un monstre furieux,</l>
+              <l met="6">Andromède en ces lieux,</l>
+              <l met="6">Doit être la pâture.</l>
+              <p>Permettez que je me retire, la douleur me suffoque et je ne puis vous faire un plus long récit.</p>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">Cassiope, Céphée</stage>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+          </sp>
+          <spGrp who="#cassiope">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#lapalisse">La Palisse</title>
+              </desc>
+            </head>
+            <sp who="#cassiope">
+              <speaker>Cassiope</speaker>
+              <l met="7">Nous allons donc voir ici</l>
+              <l met="7">Périr notre fille unique.</l>
+            </sp>
+          </spGrp>
+          <sp who="#cephee">
+            <speaker>Céphée</speaker>
+            <l met="7">Les dieux le veulent ainsi.</l>
+          </sp>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+            <l met="7">Ciel! quelle histoire tragique!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">Les précédents, Andromède<stage>attachée au rocher</stage>
+          </stage>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+          </sp>
+          <spGrp who="#cassiope">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#moment_plus_tard">J'étais perdue</title>
+              </desc>
+            </head>
+            <sp who="#cassiope">
+              <speaker>Cassiope</speaker>
+              <l met="8">Tu mourras donc, ma chère enfant.</l>
+            </sp>
+          </spGrp>
+          <sp who="#andromede">
+            <speaker>Andromède</speaker>
+            <l met="5">Hélas oui, ma mère,</l>
+            <l met="8">De grâce, emmenez promptement</l>
+            <l met="5">Le roi, mon cher père;</l>
+            <l met="7">Si Persée était ici,</l>
+            <l met="6">Je serais secourue.</l>
+            <l met="7">Le monstre vient, le voici,</l>
+            <l met="6">Je suis, je suis perdue.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">Persée, les précédents</stage>
+          <sp who="#persee">
+            <speaker>Persée</speaker>
+            <stage>en l'air</stage>
+            <p>Me voilà, ne craignez rien.</p>
+          </sp>
+          <sp who="#cephee">
+            <speaker>Céphée</speaker>
+            <p>Dépêchez-vous donc, seigneur Persée, le monstre paraît avoir les dents longues.</p>
+          </sp>
+          <sp who="#persee">
+            <speaker>Persée</speaker>
+          </sp>
+          <spGrp who="#persee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#robin_ture_lure_lure">Turelure</title>
+              </desc>
+            </head>
+            <sp who="#persee">
+              <speaker>Persée</speaker>
+              <l met="7">Monstre, tu crois m'échapper</l>
+              <l met="7">Mais tu te trompes, j'en jure,</l>
+              <l met="7">Ce soir pour notre souper,</l>
+              <l met="3">Turelure</l>
+              <l met="7">Tu seras mis en friture,</l>
+              <l met="7">Robin turelure [lure].</l>
+            </sp>
+          </spGrp>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+            <p>Allez, beau Persée, détachez notre fille, elle est à vous.</p>
+          </sp>
+          <sp who="#persee">
+            <speaker>Persée</speaker>
+            <p>Et je vais la prendre, aussi.</p>
+          </sp>
+          <sp who="#cephee">
+            <speaker>Céphée</speaker>
+          </sp>
+          <spGrp who="#cephee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#allons_gai_d_un_air_gai">D'un air gai</title>
+              </desc>
+            </head>
+            <sp who="#cephee">
+              <speaker>Céphée</speaker>
+              <l met="6">Vous avez su nous plaire,</l>
+              <l met="6">Touchez-là, mes enfants,</l>
+              <l met="6">Nous voilà hors d'affaire.</l>
+              <l met="6">Peuples, vivez contents</l>
+              <l met="3">D'un air gai, ...</l>
+            </sp>
+          </spGrp>
+          <stage>Deux petits Basques dansent.</stage>
+          <sp who="#cephee">
+            <speaker>Céphée</speaker>
+            <p>Attendez donc, du moins, que le mariage soit fait pour danser.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 9</head>
+          <stage type="characters">Phinée, les précédents</stage>
+          <sp who="#phinee">
+            <speaker>Phinée</speaker>
+            <p>Allons Persée, cède-moi la mariée ou prépare-toi à en découdre.</p>
+          </sp>
+          <spGrp who="#phinee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#bon_soldat">[Je suis un bon soldat,] titata</title>
+              </desc>
+            </head>
+            <sp who="#phinee">
+              <speaker>Phinée</speaker>
+              <l met="6">J'ai plus d'un bon soldat,</l>
+              <l met="3">Titata</l>
+              <l met="6">Qui me prête main forte.</l>
+              <l met="6">Qu'on fasse carillon,</l>
+              <l met="3">Patapon.</l>
+            </sp>
+          </spGrp>
+          <sp who="#cephee">
+            <speaker>Céphée</speaker>
+            <l met="6">Agissons de la sorte.</l>
+          </sp>
+          <stage>Ils sortent.</stage>
+          <sp who="#choeur">
+            <speaker>Chœur</speaker>
+            <stage>derrière le théâtre</stage>
+            <l met="4">Point de quartier!</l>
+            <l met="8">Que de sang la terre s'abreuve,</l>
+            <l met="4">Point de quartier!</l>
+          </sp>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+            <l met="8">Notre malheur est bien entier,</l>
+            <l met="8">Ma fille quelle rude épreuve.</l>
+          </sp>
+          <sp who="#andromede">
+            <speaker>Andromède</speaker>
+            <l met="8">Dans un pareil jour rester veuve!</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Chœur</speaker>
+            <l met="4">Point de quartier.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 10</head>
+          <stage type="characters">Cassiope, Céphée, Andromède</stage>
+          <sp who="#cephee">
+            <speaker>Céphée</speaker>
+          </sp>
+          <spGrp who="#cephee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air du</desc>
+              <desc type="title">
+                <title ref="#cap_de_bonne_esperance">Cap de Bonne-Espérance</title>
+              </desc>
+            </head>
+            <sp who="#cephee">
+              <speaker>Céphée</speaker>
+              <l met="7">Il faut nous sauver, ma chère,</l>
+              <l met="7">Mon frère est un franc coquin,</l>
+              <l met="7">Un scélérat, un corsaire,</l>
+              <l met="7">Un pendard, un assassin.</l>
+              <l met="7">Il voulait tuer Persée,</l>
+              <l met="7">Ta sœur qui s'est rencontrée</l>
+              <l met="7">Est morte sur le carreau.</l>
+            </sp>
+          </spGrp>
+          <sp who="#cassiope">
+            <speaker>Cassiope</speaker>
+            <l met="7">Mon fils, c'est un quiproquo.</l>
+            <p>Le voici. Sauvez notre fille, c'est à elle qu'il en veut!</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 11</head>
+          <stage type="characters">Phinée, Persée, les précédents</stage>
+          <sp who="#phinee">
+            <speaker>Phinée</speaker>
+            <p>Tu crois m'échapper mais je te tiens.</p>
+          </sp>
+          <sp who="#persee">
+            <speaker>Persée</speaker>
+          </sp>
+          <spGrp who="#persee">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air du</desc>
+              <desc type="title">
+                <title ref="#pouvoir">Pouvoir</title>
+              </desc>
+            </head>
+            <sp who="#persee">
+              <speaker>Persée</speaker>
+              <l met="8">Et moi je te tiens encor mieux.</l>
+              <l met="6">Amis, fermez les yeux<stage type="bis">bis</stage>
+              </l>
+            </sp>
+            <sp who="#persee">
+              <speaker>Persée</speaker>
+              <l met="8">Ouvrez-les, voyez ce jaloux</l>
+              <l met="6">Il n'est plus qu'un caillou.</l>
+              <p>Nous pouvons maintenant danser tout à notre aise à sa barbe et à son nez.</p>
+            </sp>
+          </spGrp>
+          <stage>Il lui présente la tête de Méduse.</stage>
+          <spGrp>
+            <head type="vaudeville-chorus">1</head>
+            <sp who="#persee">
+              <speaker>Persée</speaker>
+              <l met="7">Avec un objet aimable</l>
+              <l met="7">Associer un barbon:</l>
+              <l met="7">La chose n'est pas faisable,</l>
+              <l met="3">Eh fi donc!</l>
+              <l met="7">Chacun aime son semblable.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <head type="vaudeville-chorus">2</head>
+            <sp who="#persee">
+              <speaker>Persée</speaker>
+              <l met="7">Dans un repas agréable</l>
+              <l met="7">Où chacun dit sa chanson,</l>
+              <l met="7">Voir un caustique intraitable,</l>
+              <l met="3">Eh fi donc!</l>
+              <l met="7">Chacun aime son semblable.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <head type="vaudeville-chorus">3</head>
+            <sp who="#persee">
+              <speaker>Persée</speaker>
+              <l met="7">Tout bretteur est formidable</l>
+              <l met="7">Quand il rencontre un poltron,</l>
+              <l met="7">Trouve-t-il homme capable,</l>
+              <l met="3">Eh fi donc,</l>
+              <l met="7">Chacun aime son semblable.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <head type="vaudeville-chorus">4</head>
+            <sp who="#persee">
+              <speaker>Persée</speaker>
+              <l met="7">Pour une femelle affable</l>
+              <l met="7">Un mari commode est bon,</l>
+              <l met="7">Tout autre est insupportable,</l>
+              <l met="3">Eh fi donc!</l>
+              <l met="7">Chacun aime son semblable.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <head type="vaudeville-chorus">5</head>
+            <sp who="#persee">
+              <speaker>Persée</speaker>
+              <l met="7">Tel que la fortune accable,</l>
+              <l met="7">N'a ni parents ni patrons</l>
+              <l met="7">Veut-on voir un misérable?</l>
+              <l met="3">Eh fi donc!</l>
+              <l met="7">Chacun aime son semblable.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <head type="vaudeville-chorus">6</head>
+            <sp who="#persee">
+              <speaker>Persée</speaker>
+              <l met="7">Un laquais est serviable</l>
+              <l met="7">Chez un traitant bien en fonds,</l>
+              <l met="7">Chez le bourgeois est-il stable?</l>
+              <l met="3">Eh fi donc!</l>
+              <l met="7">Chacun aime son semblable.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <head type="vaudeville-chorus">7</head>
+            <sp who="#persee">
+              <speaker>Persée</speaker>
+              <l met="7">Pour un auteur méprisable</l>
+              <l met="7">Le public n'est jamais bon,</l>
+              <l met="7">Pour nous il est favorable</l>
+              <l met="3">Pourquoi donc?</l>
+              <l met="7">Chacun aime son semblable.</l>
+            </sp>
+          </spGrp>
+          <stage>Fin</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

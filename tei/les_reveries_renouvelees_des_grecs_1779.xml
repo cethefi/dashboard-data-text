@@ -1,0 +1,3031 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="les_reveries_renouvelees_des_grecs_1779">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Les Rêveries renouvelées des Grecs</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Anonyme</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>B. Ourcel</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Paris, Delormel, 1779</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="iphigenie" sex="UNKNOWN">
+            <persName>Iphigenie</persName>
+          </person>
+          <person xml:id="premierepretresse" sex="UNKNOWN">
+            <persName>Première prêtresse</persName>
+          </person>
+          <person xml:id="thoas" sex="UNKNOWN">
+            <persName>Thoas</persName>
+          </person>
+          <person xml:id="oreste" sex="UNKNOWN">
+            <persName>Oreste</persName>
+          </person>
+          <person xml:id="pylade" sex="UNKNOWN">
+            <persName>Pylade</persName>
+          </person>
+          <person xml:id="leministre" sex="UNKNOWN">
+            <persName>Le Ministre</persName>
+          </person>
+          <person xml:id="lapretresse" sex="UNKNOWN">
+            <persName>La Prêtresse</persName>
+          </person>
+          <person xml:id="lescythe" sex="UNKNOWN">
+            <persName>Le Scythe</persName>
+          </person>
+          <person xml:id="secondepretresse" sex="UNKNOWN">
+            <persName>Seconde Prêtresse</persName>
+          </person>
+          <person xml:id="choeurdespretresses" sex="UNKNOWN">
+            <persName>Chœur des Prêtresses</persName>
+          </person>
+          <person xml:id="deuxpretresses" sex="UNKNOWN">
+            <persName>Les deux prêtresses</persName>
+          </person>
+          <person xml:id="deuxautrespretresses" sex="UNKNOWN">
+            <persName>Deux autres prêtresses</persName>
+          </person>
+          <person xml:id="touteslespretresses" sex="UNKNOWN">
+            <persName>Toutes les prêtresses</persName>
+          </person>
+          <person xml:id="unepretresse" sex="UNKNOWN">
+            <persName>Une prêtresse</persName>
+          </person>
+          <person xml:id="lespretresses" sex="UNKNOWN">
+            <persName>Les prêtresses</persName>
+          </person>
+          <person xml:id="touteslesautrespretresses" sex="UNKNOWN">
+            <persName>Toutes les autres prêtresses</persName>
+          </person>
+          <person xml:id="unefurie" sex="UNKNOWN">
+            <persName>Une furie</persName>
+          </person>
+          <person xml:id="unscythe" sex="UNKNOWN">
+            <persName>Un scythe</persName>
+          </person>
+          <person xml:id="un_ministre_du_temple" sex="UNKNOWN">
+            <persName>Un ministre du Temple</persName>
+          </person>
+          <person xml:id="premiere_pretresse" sex="UNKNOWN">
+            <persName>Première prêtresse</persName>
+          </person>
+          <person xml:id="seconde_pretresse" sex="UNKNOWN">
+            <persName>Seconde prêtresse</persName>
+          </person>
+          <person xml:id="un_scythe" sex="UNKNOWN">
+            <persName>Un scythe</persName>
+          </person>
+          <person xml:id="une_furie" sex="UNKNOWN">
+            <persName>Une furie</persName>
+          </person>
+          <person xml:id="pretresses" sex="UNKNOWN">
+            <persName>Prêtresses</persName>
+          </person>
+          <person xml:id="eumenides_et_demons" sex="UNKNOWN">
+            <persName>Euménides et démons</persName>
+          </person>
+          <person xml:id="scythes" sex="UNKNOWN">
+            <persName>Scythes</persName>
+          </person>
+          <person xml:id="gardes_et_soldats_de_thoas" sex="UNKNOWN">
+            <persName>Gardes et soldats de Thoas</persName>
+          </person>
+          <person xml:id="grecs_de_la_suite_de_pylade" sex="UNKNOWN">
+            <persName>Grecs de la suite de Pylade</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">parodie d'<emph>Iphigénie en Tauride</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1779">
+        <desc>Représentée, pour la première fois, sur le théâtre des Comédiens Italiens ordinaires du roi le samedi 26 juin 1779</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#iphigenie">Iphigénie</role>
+          <roleDesc>grande prêtresse de Diane</roleDesc>
+          <actor>Madame Dugazon</actor>
+        </castItem>
+        <castItem>
+          <role ana="#oreste">Oreste</role>
+          <roleDesc>frère d'Iphigénie</roleDesc>
+          <actor>Monsieur Rozières</actor>
+        </castItem>
+        <castItem>
+          <role ana="#pylade">Pylade</role>
+          <roleDesc>ami d'Oreste</roleDesc>
+          <actor>Monsieur Trial</actor>
+        </castItem>
+        <castItem>
+          <role ana="#thoas">Thoas</role>
+          <roleDesc>roi de la Tauride</roleDesc>
+          <actor>Monsieur Ménier</actor>
+        </castItem>
+        <castItem>
+          <role ana="#un_ministre_du_temple">Un ministre du Temple</role>
+          <actor>Monsieur Coraly</actor>
+        </castItem>
+        <castItem>
+          <role ana="#premiere_pretresse">Première prêtresse</role>
+          <actor>Madame Gonthier</actor>
+        </castItem>
+        <castItem>
+          <role ana="#seconde_pretresse">Seconde prêtresse</role>
+          <actor>Mademoiselle Desbrosses</actor>
+        </castItem>
+        <castItem>
+          <role ana="#un_scythe">Un scythe</role>
+          <actor>Monsieur Leclerc</actor>
+        </castItem>
+        <castItem>
+          <role ana="#une_furie">Une furie</role>
+          <actor>Monsieur Thomassin</actor>
+        </castItem>
+        <castItem>
+          <role ana="#pretresses">Prêtresses</role>
+        </castItem>
+        <castItem>
+          <role ana="#eumenides_et_demons">Euménides et démons</role>
+        </castItem>
+        <castItem>
+          <role ana="#scythes">Scythes</role>
+        </castItem>
+        <castItem>
+          <role ana="#gardes_et_soldats_de_thoas">Gardes et soldats de Thoas</role>
+        </castItem>
+        <castItem>
+          <role ana="#grecs_de_la_suite_de_pylade">Grecs de la suite de Pylade</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène est en Tauride.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="act">
+        <head>ACTE 1</head>
+        <stage type="location">Le théâtre représente un péristyle ouverts de toutes parts; on voit la mer et le ciel à travers la colonnade du fond. La scène commence par une tempête. On voit, dans l'éloignement, un vaisseau battu des flots; et plus près, une petite chaloupe dans laquelle sont Oreste et Pylade. Ces deux objets ne font que traverser le théâtre.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Iphigénie et les prêtresses</stage>
+          <stage>Les prêtresses entrent successivement pour se sauver de l'orage.</stage>
+          <sp who="#choeurdespretresses">
+            <speaker>Chœur des Prêtresses</speaker>
+            <stage>tant celles qui arrivent, que celles qu'on ne voit pas encore</stage>
+          </sp>
+          <spGrp who="#choeurdespretresses">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#bossus">Bossus</title>
+              </desc>
+            </head>
+            <sp who="#choeurdespretresses">
+              <speaker>Chœur des Prêtresses</speaker>
+              <l met="10">Il pleut, il grêle: ah, grands dieux, quels éclairs!</l>
+              <l met="10">La foudre éclate; elle embrase les airs.</l>
+            </sp>
+          </spGrp>
+          <sp who="#deuxpretresses">
+            <speaker>Les deux prêtresses</speaker>
+            <l met="4">Ah! De frayeur</l>
+            <l met="3">J'ai le cœur</l>
+            <l met="3">Tout transi.</l>
+          </sp>
+          <sp who="#deuxautrespretresses">
+            <speaker>Deux autres prêtresses</speaker>
+            <l met="10">Fuyons, fuyons, mettons-nous à l'abri.</l>
+          </sp>
+          <sp who="#touteslespretresses">
+            <speaker>Toutes les prêtresses</speaker>
+            <l met="10">Entrons au Temple, on fera mieux qu'ici</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Non, non, j'ai mes raisons pour rester en ces lieux.</l>
+            <l met="12">Laissez-moi contempler ce funeste rivage:</l>
+            <l met="12">Cette mer agitée et ces vents furieux,</l>
+            <l met="12">Du trouble de mes sens représentent l'image.</l>
+            <l met="12">Pendant que l'on verra ce tableau curieux,</l>
+            <l met="12">Implorez avec moi l'assistance des dieux.</l>
+          </sp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#jusques_dans_la_moindre_chose">Jusques dans la moindre chose</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="7">Juste ciel, que ta clémence</l>
+              <l met="7">Adoucisse nos destins:</l>
+              <l met="7">Des coupables prends vengeance;</l>
+              <l met="7">Mais rends nos jours plus sereins.</l>
+            </sp>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="7">Juste ciel, [que ta clémence]</l>
+              <l met="7">[Adoucisse nos destins:]</l>
+              <l met="7">[Des coupables prends vengeance;]</l>
+              <l met="7">[Mais rends nos jours plus sereins.]</l>
+            </sp>
+          </spGrp>
+          <stage>Le Chœur répète avec elle ces quatre vers:</stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="7">Vers les dieux, en assurance,</l>
+            <l met="7">Levons nos sanglantes mains:</l>
+            <l met="7">Nous vivons dans l'innocence,</l>
+            <l met="7">En égorgeant les humains.</l>
+          </sp>
+          <stage>Le Chœur répète encore avec elle ces derniers vers.</stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Ah, dieux! Pourquoi faut-il, barbares que nous sommes,</l>
+            <l met="12">Contre nos intérêts, sacrifier les hommes?</l>
+            <l met="12">Devais-je me prêter à cette cruauté,</l>
+            <l met="12">Moi, qui de si bon cœur chéris l'humanité.</l>
+          </sp>
+          <sp who="#premierepretresse">
+            <speaker>Première prêtresse</speaker>
+            <l met="12">Il fallait supporter, dans l'emploi qu'on vous donne,</l>
+            <l met="12">Que vous n'aviez encor sacrifié personne.</l>
+            <l met="12">Peut-on être touché du sort d'une beauté</l>
+            <l met="12">Qui plonge dans les cœurs son bras ensanglanté?</l>
+            <l met="12">On aurait pu sauver cette image effrayante;</l>
+            <l met="12">Vous en auriez été bien lus intéressante.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Diane, devais-tu me transporter ainsi,</l>
+            <l met="12">Pour me faire jouer un pareil rôle ici?</l>
+            <l met="12">Je n'ai pas le cœur fait pour dépeupler le monde.</l>
+            <l met="12">Un songe met le comble à ma douleur profonde.</l>
+          </sp>
+          <sp who="#premierepretresse">
+            <speaker>Première prêtresse</speaker>
+            <l met="12">Qu'avez-vous donc rêvé? Cela doit être beau.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Ce que je vous dirais ne serait pas nouveau.</l>
+          </sp>
+          <sp who="#secondepretresse">
+            <speaker>Seconde Prêtresse</speaker>
+            <l met="12">Je crois aux rêves, moi, tous ne sont pas mensonges.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Vous trouverez le mien dans l'Almanach des Songes.</l>
+            <l met="12">Eclairs, mugissements, spectres, pâles flambeaux,</l>
+            <l met="12">Gémissements, terreurs, lieux funèbres, tombeaux,</l>
+            <l met="12">Horreur, bruit souterrain, la terre qui s'entrouvre,</l>
+            <l met="12">Un fantôme sortant de l'Enfer qu'on découvre;</l>
+            <l met="12">Abyme, accents plaintifs, poignards, lambeaux sanglants,</l>
+            <l met="12">Ombre, crime, remords, effroi, genoux tremblants,</l>
+            <l met="12">Autel, temple, cyprès, coupable encens, Idole,</l>
+            <l met="12">Ou père, ou mère, ou sœur, ou frère qu'on immole,</l>
+            <l met="12">Voilà quel est mon songe. Et l'on reconnaît là</l>
+            <l met="12">L'histoire de tous ceux que l'on a faits déjà.</l>
+          </sp>
+          <sp who="#premierepretresse">
+            <speaker>Première prêtresse</speaker>
+            <l met="12">Racontez-nous le vôtre, auguste Iphigénie;</l>
+            <l met="12">Il nous amusera.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Je cède à votre envie.</l>
+          </sp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#nous_avons_une_terrasse">Nous avons une terrasse</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="7">J'étais dans mon lit tranquille,</l>
+              <l met="5">Goûtant le repos,</l>
+              <l met="6">Dans l'oubli de mes maux:</l>
+              <l met="7">Le doux souvenir d'Achille</l>
+              <l met="8">M'offrait d'agréables tableaux.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#oh_oh_oh">Oh, oh, oh</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="7">J'entends marcher à grands pas.</l>
+            </sp>
+          </spGrp>
+          <sp who="#choeurdespretresses">
+            <speaker>Chœur des Prêtresses</speaker>
+            <stage>en levant ensemble les bras au ciel</stage>
+            <l met="2">Ah! Ah!</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="7">La frayeur me rend muette;</l>
+            <l met="7">Je m'enfonce dans mes draps.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <stage>comme ci-dessus</stage>
+            <l met="2">Ah! Ah!</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="7">Je sens trembler ma couchette;</l>
+            <l met="3">Mes rideaux</l>
+            <l met="7">Du haut en bas se déchirent;</l>
+            <l met="7">Par les pieds deux mains me tirent,</l>
+            <l met="7">Plus froides que des carreaux.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <stage>encore plus effrayé</stage>
+            <l met="4">Oh, oh, oh, oh!...</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+          </sp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#j_etais_dans_mon_lit">J'étais dans mon lit</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="8">J'entends une voix sépulcrale,</l>
+              <l met="8">Qui perce la voûte infernale;</l>
+              <l met="8">J'entends qu'on m'appelle tout bas.</l>
+            </sp>
+          </spGrp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="4">Ah, dieux! Hélas!</l>
+          </sp>
+          <stage type="musical_indication">Fragment d'un autre air</stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+          </sp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#j_etais_dans_mon_lit_majeur_de_l_air">J'étais dans mon lit,<emph>majeur de l'air</emph>
+                </title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="10">Au même instant, quel horrible fracas!</l>
+              <l met="10">La foudre éclate, elle ébranle la terre,</l>
+              <l met="10">Le noir abîme est ouvert sous mes pas,</l>
+              <l met="10">Je crois entendre les cris de Cerbère.</l>
+              <l met="4">De ces lieux sombres</l>
+              <l met="4">Sortent des Ombres.</l>
+            </sp>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="8">Mais, mais, ne me serrez donc pas.</l>
+            </sp>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="4">Je vois mon père,</l>
+              <l met="4">Je vois ma mère,</l>
+              <l met="4">Je vois Mégère</l>
+              <l met="5">Poursuivre mon frère.</l>
+            </sp>
+          </spGrp>
+          <stage>Aux prêtresses, qui l'approchent de trop près.</stage>
+          <stage>Elle continue.</stage>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#il_etait_une_fille">Il était une fille</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="6">Je vois un beau jeune homme,</l>
+              <l met="6">Plaintif, chargé de fers;</l>
+              <l met="8">Je cours à lui les bras ouverts.</l>
+              <l met="6">Hélas! Savez-vous comme</l>
+              <l met="6">Je sers ce pauvre humain?</l>
+              <l met="6">Le poignard à la main:</l>
+              <l met="1">Heim?</l>
+            </sp>
+          </spGrp>
+          <stage>Après le songe, les prêtresses épouvantées se disent l'une à l'autre:</stage>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">Hélas, ma sœur! Je tremble,tiré fin des <title ref="#noces_de_diane">Noces de Diane</title> ()</desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="3">Ah, ma sœur!</l>
+              <l met="3">Ah, ma sœur!</l>
+              <l met="6">Quel songe plein d'horreur!</l>
+              <l met="4">Je meurs de peur.<stage type="bis">bis</stage>
+              </l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+          </sp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#trembleurs">Trembleurs</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="7">Quel présage redoutable!</l>
+            </sp>
+          </spGrp>
+          <sp who="#unepretresse">
+            <speaker>Une prêtresse</speaker>
+            <l met="7">Rien n'est plus épouvantable:</l>
+            <l met="7">Tuer un jeune homme aimable.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="7">Ah! Ce n'était qu'en dormant.</l>
+          </sp>
+          <sp who="#premierepretresse">
+            <speaker>Première prêtresse</speaker>
+            <l met="7">Des sens un songe est l'ivresse.</l>
+            <l met="7">En veillant, sage Prêtresse,</l>
+            <l met="7">Votre cœur plein de tendresse</l>
+            <l met="7">Eût agi différemment.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+          </sp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#on_me_disait_souvent">On me disait souvent</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="6">Pressentiment funeste!</l>
+              <l met="6">Mon pauvre frère est mort!<stage type="bis">bis</stage>
+              </l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="6">Ce songe me l'atteste:</l>
+            <l met="6">Un songe n'a pas tort.</l>
+            <l met="4">Oreste est mort,<stage type="bis">bis</stage>
+            </l>
+            <l met="4">Pleurez son sort.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+          <sp who="#lespretresses">
+            <speaker>Les prêtresses</speaker>
+            <stage>excepté la première</stage>
+            <l met="4">Oreste est mort,<stage type="bis">bis</stage>
+            </l>
+            <l met="4">Pleurons son sort.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+          <spGrp>
+            <caption>Iphigénie et la première prêtresse</caption>
+            <cols n="2"/>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="6">Ce songe me l'atteste;</l>
+              <l met="6">Mon pauvre frère est mort:</l>
+              <l met="6">Un songe n'a pas tort.</l>
+            </sp>
+            <cb/>
+          </spGrp>
+          <sp who="#premierepretresse">
+            <speaker>Première prêtresse</speaker>
+            <l met="6">Non, la bonté céleste</l>
+            <l met="6">Prendra soin de son sort.</l>
+            <l met="6">Souvent un songe a tort.</l>
+          </sp>
+          <cols n="1"/>
+          <sp who="#touteslesautrespretresses">
+            <speaker>Toutes les autres prêtresses</speaker>
+            <stage>pendant qu'Iphigénie chante les deux derniers vers</stage>
+            <l met="6">Le pauvre Oreste est mort;</l>
+            <l met="6">Pleurons, pleurons son sort.</l>
+          </sp>
+          <sp who="#unepretresse">
+            <speaker>Une prêtresse</speaker>
+            <p>Le Roi vient.</p>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="9">Que nous veut le farouche Thoas?</l>
+            <l met="12">Dans ses yeux effarés, je vois de l'embarras.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Les Précédents, Thoas, plusieurs Scythes</stage>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Partout j'entends gémir: la frayeur nous rassemble.</l>
+            <l met="12">Si je viens vous trouver, c'est parce que je tremble,</l>
+            <l met="12">Prêtresse.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">À ce mal là vous êtes fort sujet.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Oui. Du courroux du ciel pourquoi suis-je l'objet?</l>
+            <l met="12">Je le sers avec zèle. Au gré de ses demandes,</l>
+            <l met="12">Lorsque des étrangers osent nous approcher,</l>
+            <l met="12">Je lui fait de leur sang d'agréables offrandes.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <stage>à part</stage>
+            <l met="12">Barbare!</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Ainsi les dieux ont tort de se fâcher?</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Mais pourquoi vous livrer à des terreurs si grandes?</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Mes jours sont menacés. Un devin m'a prédit</l>
+            <l met="12">Que si, des étrangers jetés sur nos rivages,</l>
+            <l met="12">J'en épargnais un seul, j'étais mort.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <stage>à part</stage>
+            <l met="12">Pauvre esprit!</l>
+          </sp>
+          <stage>Haut.</stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Il se moquait de vous.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Non, j'en crois ces présages;</l>
+            <l met="12">Et tout, avec raison, m'inspire de l'effroi.</l>
+            <l met="6">Dans le fond de mon cœur...</l>
+            <l met="6">Certaines voix secrètes</l>
+            <l met="5">Répètent, répètent,</l>
+            <l met="6">Thoas, prends garde à toi,</l>
+            <l met="3">Songe à toi.</l>
+          </sp>
+          <stage type="musical_indication">Fragment d'un air,tiré de la <title ref="#servante_maitresse">Servante Maîtresse</title> ()</stage>
+          <spGrp who="#thoas">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mes_chers_amis_pourriez_vous_m_enseigner">Mes chers amis, pourriez-vous m'enseigner</title>
+              </desc>
+            </head>
+            <sp who="#thoas">
+              <speaker>Thoas</speaker>
+              <l met="4">Au moindre bruit,</l>
+              <l met="6">Et le jour et la nuit,</l>
+              <l met="8">Mon âme éprouve des secousses.</l>
+              <l met="4">Oh, je m'y perds...</l>
+              <l met="6">Je dors les yeux ouverts;</l>
+              <l met="8">Je crois voir l'enfer à mes trousses.</l>
+              <l met="6">Ah, c'est est trop, ma foi,</l>
+              <l met="6">À tout moment, je crois</l>
+              <l met="8">Toucher à mon heure dernière.</l>
+              <l met="6">Ceci passe le jeu,</l>
+              <l met="2">Morbleu:</l>
+              <l met="6">A-t-on bientôt fini,</l>
+              <l met="2">Jarni,</l>
+              <l met="10">De me tourmenter de la manière?</l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <stage>ironiquement</stage>
+            <l met="12">Ah! Les dieux ont grand tort.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Apaisez leur courroux,</l>
+            <l met="12">Conservez-moi la vie, ou je m'en prends à vous.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Les Précédents, un Scythe, le peuple</stage>
+          <spGrp>
+            <caption>Le scythe et le peuple<stage>au roi.</stage>
+            </caption>
+          </spGrp>
+          <spGrp who="#ensemble">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#allons_gai_rejouissons_nous">Allons gai, réjouissons-nous</title>
+              </desc>
+            </head>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Allons, gai, réjouissez-vous;</l>
+              <l met="6">Tout va bien pour nous.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lescythe">
+            <speaker>Le Scythe</speaker>
+            <l met="8">Deux étrangers, par la tempête,</l>
+            <l met="5">Sont jetés au Port;</l>
+            <l met="5">Rendez grâce au sort.</l>
+            <l met="8">On les surprend, on les arrête.</l>
+            <l met="7">Allons gai, réjouissons-nous;</l>
+            <l met="6">Ah! Pour nous quelle fête!</l>
+            <l met="7">Allons [gai, réjouissons-nous]</l>
+            <l met="5">Et faisons les fous.</l>
+          </sp>
+          <spGrp>
+            <caption>Tout le chœur</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="12">Allons, gai, ...</l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Quels sont ces malheureux?</l>
+          </sp>
+          <sp who="#lescythe">
+            <speaker>Le Scythe</speaker>
+            <l met="12">Deux mauvais garnements:</l>
+            <l met="12">L'un d'eux a l'air sournois, l'autre n'aime qu'à mordre.</l>
+            <l met="12">On voit dans ses discours un esprit en désordre,</l>
+            <l met="12">Je le crois querelleur; il fait à tous moments</l>
+            <l met="12">Aux hommes, comme aux dieux, de vilains compliments;</l>
+            <l met="12">J'ai remarqué surtout qu'au fort de sa colère,</l>
+            <l met="12">Il s'écrie: «hélas! Ma chère Mère!»</l>
+            <l met="12">On dit que les démons sans cesse autour de lui,</l>
+            <l met="12">le frappent de serpents pour le rendre poli.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Sont-ils jeunes?</l>
+          </sp>
+          <sp who="#lescythe">
+            <speaker>Le Scythe</speaker>
+            <l met="12">Beaucoup.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Leur mort me désespère.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Allons, prêtresse, allons, il faut nous en défaire.</l>
+            <l met="12">C'est le plus sûr moyen d'éviter le danger.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">D'un si cruel emploi daignez me dégager.</l>
+            <l met="12">Deux malheureux captifs, sels, sans secours, sans armes,</l>
+            <l met="12">Peuvent-ils à ce point vous causer des alarmes.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Je suis né défiant; cependant vous verrez,</l>
+            <l met="12">Si j'empêcherai rien de ce que vous ferez.</l>
+            <l met="12">Vous pourrez me tromper sans avoir de l'adresse.</l>
+            <l met="12">Je ne reparaîtrai que pour finir la Pièce;</l>
+            <l met="12">Retirez vous.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Pourquoi?</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">C'est qu'à vous parler net,</l>
+            <l met="12">J'ai besoin de ces lieux pour donner un Ballet.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Thoas, le Peuple</stage>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Peuple, amusez les dieux par de joyeux hommages;</l>
+            <l met="12">Exécutez ici la danse des Sauvages;</l>
+            <l met="12">Pour éviter l'ennui de l'uniformité,</l>
+            <l met="10">Cette fois seule appelons la gaieté,</l>
+            <l met="12">Et que le<emph>Calinda</emph>, joint aux<emph>Branbransonettes</emph>,</l>
+            <l met="12">Témoigne les transports de la joie où vous êtes.</l>
+          </sp>
+          <sp who="#lescythe">
+            <speaker>Le Scythe</speaker>
+            <stage>à Thoas</stage>
+          </sp>
+          <spGrp who="#lescythe">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ah_il_n_est_pas_de_fete">Ah! Il n'est pas de fête</title>
+              </desc>
+            </head>
+            <sp who="#lescythe">
+              <speaker>Le Scythe</speaker>
+              <l met="7">Faudra-t-il danser sans femme?</l>
+            </sp>
+          </spGrp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="7">Eh bien, faites-en venir.</l>
+          </sp>
+          <sp who="#lescythe">
+            <speaker>Le Scythe</speaker>
+            <l met="7">Venez donc, venez, mesdames,</l>
+            <l met="7">Augmenter notre plaisir.</l>
+            <l met="7">Il serait trop malhonnête</l>
+            <l met="7">De dédaigner vos appas:</l>
+            <l met="1">Ah!</l>
+            <l met="5">Il n'est point de fête,</l>
+            <l met="5">Si vous n'en êtes pas.</l>
+          </sp>
+          <stage>Les femmes arrivent et l'on danse.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Les précédents, Oreste, Pylade</stage>
+          <sp who="#lescythe">
+            <speaker>Le Scythe</speaker>
+            <stage>à Thoas</stage>
+            <l met="12">Voici ces étrangers, Seigneur, qu'on vous amène.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Je crois m'apercevoir qu'ils ont l'humeur hautaine.</l>
+          </sp>
+          <spGrp who="#thoas">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">Allemande,tiré de <title ref="#nicolas">Nicolas</title> ()</desc>
+            </head>
+            <sp who="#thoas">
+              <speaker>Thoas</speaker>
+              <l met="6">Quel air audacieux!...</l>
+              <l met="3">À leurs yeux,</l>
+              <l met="6">Je les crois furieux.</l>
+              <l met="6">Que veniez-vous tous deux</l>
+              <l met="6">Chercher dans les états</l>
+              <l met="3">De Thoas?</l>
+            </sp>
+          </spGrp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="6">C'est le secret des dieux;</l>
+            <l met="6">Tu ne le sauras pas.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <stage>à Pylade</stage>
+            <l met="6">Quel discours arrogant,</l>
+            <l met="3">Insolent!</l>
+            <l met="6">Parlez plus poliment.</l>
+            <l met="6">Je donne ici la loi,</l>
+            <l met="3">Je suis roi.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="6">Eh bien, tant pis pour toi.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="6">Ah! Tremblez, malheureux.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="6">Nous bravons le trépas.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="3">En ce cas,</l>
+            <l met="6">Dès aujourd'hui, tous deux,</l>
+            <l met="6">Vous sauterez le pas.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <stage>bas à Pylade</stage>
+            <l met="12">C'est fort mal t'annoncer; à ces mots téméraires,</l>
+            <l met="12">On te prendrait pour moi, gardons nos caractères.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Leurs regards me font peur, mes sens épouvantés;</l>
+            <l met="12">Holà, gardes?... Voyez s'ils sont bien garrottés.</l>
+          </sp>
+          <sp who="#lescythe">
+            <speaker>Le Scythe</speaker>
+            <l met="12">Oh! Je vous en réponds.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+          </sp>
+          <spGrp>
+            <head type="vaudeville-chorus">1</head>
+            <sp who="#thoas">
+              <speaker>Thoas</speaker>
+              <l met="12">Leur présence me gêne,</l>
+              <l met="12">Pour m'en débarrasser, qu'au temple on les entraîne.</l>
+            </sp>
+            <sp who="#thoas">
+              <speaker>Thoas</speaker>
+              <l met="7">On va leur percer le flanc,</l>
+              <l met="11">En flin, flan, r'lan tanplan tirelire en plan,</l>
+              <l met="7">On va leur percer le flanc;</l>
+              <l met="6">Ah! Que nous allons rire!</l>
+            </sp>
+          </spGrp>
+          <stage>Le divertissement continue et finit par des couplets, sur l'air<emph>R'lan tan plan tirelire</emph>.</stage>
+          <spGrp>
+            <head type="vaudeville-chorus">2</head>
+            <sp who="#thoas">
+              <speaker>Thoas</speaker>
+              <l met="6">Ah! Que nous allons rire!</l>
+              <l met="6">R'lan tanplan tirelire.</l>
+              <l met="7">Que le ciel sera content!</l>
+              <l met="11">En plein, plan, r'lan tanplan tirelire en plan,</l>
+              <l met="7">Que le ciel sera content!</l>
+              <l met="6">On fait ce qu'il désire.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <head type="vaudeville-chorus">3</head>
+            <sp who="#thoas">
+              <speaker>Thoas</speaker>
+              <l met="6">On fait ce qu'il désire;</l>
+              <l met="6">R'lan tanplan tirelire.</l>
+              <l met="7">Pour lui plaire il faut du sang,</l>
+              <l met="11">En plein, plan, r'lan tanplan tirelire en plan,</l>
+              <l met="7">Pour lui plaire il faut du sang;</l>
+              <l met="6">C'est l'encens qu'il respire.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <head type="vaudeville-chorus">4</head>
+            <sp who="#thoas">
+              <speaker>Thoas</speaker>
+              <l met="6">C'est l'encens qu'il respire,</l>
+              <l met="6">R'lan tanplan tirelire.</l>
+              <l met="7">Et c'est de là que dépend,</l>
+              <l met="11">En plein, plan, r'lan tanplan tirelire en plan,</l>
+              <l met="7">Et c'est de là que dépend</l>
+              <l met="6">Le salut de l'Empire.</l>
+            </sp>
+          </spGrp>
+          <stage>Fin de l'acte</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <stage type="location">Le théâtre représente un temple souterrain, qui a l'air d'une prison. Au milieu est un autel rustique, devant lequel est un lit de repos.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Oreste, Pylade</stage>
+          <stage>Oreste s'avance tristement. Pylade le suit à une certaine distance, en l'observant avec pitié.</stage>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <stage>à part</stage>
+            <l met="12">Je deviens furieux, Destin! Quand je te nomme.</l>
+            <l met="12">Tu ne fais qu'un coquin souvent d'un gentilhomme;</l>
+            <l met="12">Mon exemple en fournit une affreuse leçon:</l>
+            <l met="12">Je suis un misérable, et je suis né bon garçon;</l>
+            <l met="12">Je suis doux, et souvent je me mets en colère;</l>
+            <l met="12">J'adore mes parents, et j'ai battu ma mère.</l>
+            <l met="12">Je cours les champs, portant dans mon cœur le remord,</l>
+            <l met="12">Et je rencontre un chien enragé qui me mord;</l>
+            <l met="12">Je le deviens moi-même, et répands l'épouvante.</l>
+            <l met="12">Pylade, d'une humeur sensible et complaisante,</l>
+            <l met="12">Veut bien m'aimer malgré ce petit défaut-là;</l>
+            <l met="12">Mais les Destins maudits n'approuvent pas cela:</l>
+            <l met="12">Par l'ordre d'Apollon je viens sur ce rivage,</l>
+            <l met="12">Je traverse les mers pour avoir une image;</l>
+            <l met="12">Mon ami, sans prévoir l'état où nous nous voilà,</l>
+            <l met="12">Par intérêt pour moi veut être du voyage,</l>
+            <l met="12">Il me suit, nous trouvons la mort en arrivant:</l>
+            <l met="12">Mon infortune, oh Ciel! T'amuse trop souvent.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Toujours triste et pensif, tu parles sans rien dire.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">C'est peu que sous mes coups ma chère mère expire,</l>
+            <l met="12">Je t'ai donné la mort.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Mais je me porte bien.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Mais nous allons mourir.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Tant mieux, ce n'est qu'un rien;</l>
+            <l met="12">Les dieux apaiseront alors leur barbarie.</l>
+          </sp>
+          <spGrp who="#pylade">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#lapalisse">Monsieur de la Palisse</title>
+              </desc>
+            </head>
+            <sp who="#pylade">
+              <speaker>Pylade</speaker>
+              <l met="7">Tu n'auras plus de remords,</l>
+              <l met="7">Ta peine sera finie:</l>
+              <l met="7">Sitôt que nous serons morts,</l>
+              <l met="7">Nous ne serons plus en vie.</l>
+              <l met="12">Je mourrai près de toi.</l>
+            </sp>
+          </spGrp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Tu me consoles bien.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+          </sp>
+          <spGrp who="#pylade">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_le_compare_avec_louis">Je le compare avec Louis</title>
+              </desc>
+            </head>
+            <sp who="#pylade">
+              <speaker>Pylade</speaker>
+              <l met="8">Sur les meilleurs de tes amis</l>
+              <l met="8">J'avais toujours la préférence;</l>
+              <l met="8">Dans tous les jeux de ton enfance</l>
+              <l met="8">Pylade était toujours admis.</l>
+              <l met="8">Quand par les goûts on se ressemble,<stage type="bis">bis</stage>
+              </l>
+              <l met="3">Qu'il est doux,</l>
+              <l met="3">Qu'il est doux,</l>
+              <l met="5">De jouer ensemble,</l>
+              <l met="5">De jouer ensemble!</l>
+              <l met="8">Depuis ce temps, tu veux courir;</l>
+              <l met="8">Je n'ai point cessé de te suivre.</l>
+              <l met="8">Ah! Lorsqu'ensemble on aime à vivre,</l>
+              <l met="8">Il ne faut point se désunir.</l>
+              <l met="8">Mon cher Oreste, que t'en semble?<stage type="bis">bis</stage>
+              </l>
+              <l met="3">C'est bien doux,</l>
+              <l met="3">C'est bien doux,</l>
+              <l met="5">De mourir ensemble,</l>
+              <l met="5">De mourir ensemble!</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Les précédents, un ministre du Temple</stage>
+          <sp who="#leministre">
+            <speaker>Le Ministre</speaker>
+            <l met="12">Il faut vous séparer</l>
+          </sp>
+          <stage>À Pylade.</stage>
+          <sp who="#leministre">
+            <speaker>Le Ministre</speaker>
+            <l met="12">Allons, vous, suivez-moi.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Quel est donc ce faquin pour nous faire la loi?</l>
+          </sp>
+          <sp who="#leministre">
+            <speaker>Le Ministre</speaker>
+            <l met="12">Respectez-moi, je suis le ministre du Temple.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Tes prêtresses, Diane, ont donc un Desservant.</l>
+          </sp>
+          <sp who="#leministre">
+            <speaker>Le Ministre</speaker>
+            <l met="12">J'ai ce suprême honneur, mon district est fort ample;</l>
+            <l met="12">Mais point tant de propos, allons, marche devant.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Cher ami, je te perds, qu'ensemble on nous assomme.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">C'est ce que je désire.</l>
+          </sp>
+          <sp who="#leministre">
+            <speaker>Le Ministre</speaker>
+            <stage>tirant Pylade à part</stage>
+            <l met="12">Écoute-moi, jeune homme,</l>
+            <l met="12">Ton camarade est fou.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Vraiment, je le sais bien.</l>
+          </sp>
+          <sp who="#leministre">
+            <speaker>Le Ministre</speaker>
+            <l met="12">Avant de le tuer, laissons-lui faire un somme;</l>
+            <l met="12">Oh! Nous avons des cœurs pitoyables.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Fort bien.</l>
+          </sp>
+          <sp who="#leministre">
+            <speaker>Le Ministre</speaker>
+            <l met="12">Il doit dormir ici, ce siège te l'annonce.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <stage>toujours plongé dans sa rêverie</stage>
+            <l met="12">Ciel!</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">À cette raison, je n'ai pas de réponse.</l>
+          </sp>
+          <sp who="#leministre">
+            <speaker>Le Ministre</speaker>
+            <l met="12">Vous allez vous revoir; après, selon vos vœux,</l>
+            <l met="12">Vous aurez le plaisir de mourir tous les deux.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+          </sp>
+          <stage>Au Ministre.</stage>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Vous êtes obligeant.</l>
+          </sp>
+          <stage>À Oreste.</stage>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Adieu.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Monstres sauvages!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Oreste<stage>seul</stage>
+          </stage>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <stage>i</stage>
+            <l met="12">Il va mourir pour moi! Cruels anthropophages,</l>
+            <l met="12">Dans le même tombeau, puissiez-vous m'engloutir!</l>
+            <l met="12">Mais quel calme imprévu!... Je me sens assoupir;</l>
+            <l met="12">Je ne suis pas le seul... qui dans son infortune</l>
+            <l met="12">S'abandonne au sommeil sans espérance aucune.</l>
+          </sp>
+          <spGrp who="#oreste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#aimons_aimons_tous">Dodo, l'enfant do</title>
+              </desc>
+            </head>
+            <sp who="#oreste">
+              <speaker>Oreste</speaker>
+              <l met="8">Après m'avoir fait endurer</l>
+              <l met="8">Tout ce qu'il est de plus funeste,</l>
+              <l met="8">Les dieux laissent donc respirer</l>
+              <l met="8">Le triste et malheureux Oreste.</l>
+            </sp>
+            <sp who="#oreste">
+              <speaker>Oreste</speaker>
+              <l met="8">Ah! Je vois là, fort à propos,</l>
+              <l met="8">Pour dormir un lit de repos.</l>
+              <l met="5">Dormons un moment;</l>
+              <l met="8">C'est un petit soulagement.</l>
+            </sp>
+          </spGrp>
+          <stage>Il baille.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Oreste, les Furies</stage>
+          <sp who="#unefurie">
+            <speaker>Une furie</speaker>
+            <l met="12">Il est temps d'approcher, il dort profondément,</l>
+            <l met="12">Venez, songes d'Atys, venez troupe funeste,</l>
+            <l met="12">Pour mieux le tourmenter dansez autour d'Oreste;</l>
+            <l met="12">Obscurcissez les airs par de noires vapeurs,</l>
+            <l met="12">Mêlez à son sommeil les horreurs d'un beau rêve.</l>
+            <l met="12">Tisiphone, Alecto, venez mes chers sœurs,</l>
+            <l met="12">Qu'en veillant, ou dormant, il n'ait ni paix ni trêve.</l>
+          </sp>
+          <spGrp who="#unefurie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#enfin_mechant_te_voila_pris">Enfin, méchant, te voilà pris</title>
+              </desc>
+            </head>
+            <sp who="#unefurie">
+              <speaker>Une furie</speaker>
+              <l met="6">Il a battu sa mère.</l>
+            </sp>
+          </spGrp>
+          <stage>Air ajusté à la scène.</stage>
+          <spGrp rend="braced">
+            <spGrp rend="braced">
+              <spGrp rend="braced">
+                <sp who="#choeur">
+                  <speaker>Le choeur</speaker>
+                  <l met="6">Il a battu sa mère:</l>
+                  <l met="5">Frappez-lui les flancs</l>
+                  <l met="4">De vos serpents;</l>
+                  <l met="7">Devant lui, grincez les dents.</l>
+                  <l met="6">Secouez vos flambeaux.</l>
+                  <l met="6">Secouons nos flambeaux.</l>
+                  <l met="6">Par des bonds et des sauts,</l>
+                  <l met="9">Des enfers exprimez la colère.</l>
+                  <l met="9">Des enfers exprimons la colère.</l>
+                  <l met="6">Donnez-lui vingt soufflets.</l>
+                  <l met="6">Donnons-lui vingt soufflets.</l>
+                  <l met="6">Autant de camouflets.</l>
+                </sp>
+              </spGrp>
+            </spGrp>
+          </spGrp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="2">Aïe, aïe.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <stage>sourdement</stage>
+            <l met="6">Il a battu sa mère,</l>
+            <l met="6">Il a battu sa mère.</l>
+          </sp>
+          <stage>L'Ombre de Clytemnestre paraît, la tête entortillée de chiffons et le bras en écharpe.</stage>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="6">Un spectre!... Ah! C'en est trop.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="6">Il a battu sa mère.</l>
+          </sp>
+          <stage>Le spectre s'abîme; Iphigénie en prend la place. Les démons et les furies disparaissent. Le théâtre s'éclaire.</stage>
+          <spGrp rend="braced(right)">
+            <sp who="#choeur">
+              <speaker>Le choeur</speaker>
+              <l met="6">Secouez vos flambeaux.</l>
+              <l met="6">Secouons nos flambeaux.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Oreste, Iphigénie, prêtresses</stage>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Ma mère!</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Vous tremblez en voyant la Prêtresse;</l>
+            <l met="12">Je vais vous immoler, mais avec politesse.</l>
+            <l met="12">Ici les étrangers dans mes mains sont remis.</l>
+            <l met="12">Et c'est moi qui leur fais les honneurs du pays.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Quels traits, et quel rapport!</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Que l'on ôte sa chaîne;</l>
+            <l met="12">Je dois agir ainsi pour que rien ne le gêne.</l>
+          </sp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#charlot">Monsieur Charlot</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="10">Du pauvre Oreste il retrace l'image;</l>
+              <l met="6">Il serait de son âge,</l>
+              <l met="6">Il serait mon appui.</l>
+              <l met="8">Son air est fier, son œil hardi:</l>
+              <l met="12">Il ressemble à mon frère; on dirait que c'est lui.</l>
+              <l met="12">Approchez, qui êtes-vous? Parlez.</l>
+            </sp>
+          </spGrp>
+          <stage>À part.</stage>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Que vous importe,</l>
+            <l met="12">En me faisant mourir, de savoir qui je suis?</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">J'ai pour le demander une raison très forte:</l>
+            <l met="12">Parlez; vous êtes Grec, si j'en crois vos habits.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Oui, je suis de Mycènes.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Ô Ciel! C'est mon pays;</l>
+            <l met="12">Qu'y dit-on de nouveau? Contez-moi des histoires:</l>
+            <l met="12">Agamemnon jouit du fruit de ses victoires?</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+          </sp>
+          <spGrp who="#oreste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#detour">Dans un détour</title>
+              </desc>
+            </head>
+            <sp who="#oreste">
+              <speaker>Oreste</speaker>
+              <l met="12">Agamemnon...</l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Vous vous taisez, achevez donc.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Ciel! Agamemnon!</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Vous frémissez à ce nom.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Un perfide assassin...</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">L'horreur glace mes sens!</l>
+            <l met="12">Quel monstre a fait ce coup?</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Hélas! Sa chère femme.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Clytemnestre!</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Elle-même.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Ah! Vous me percez l'âme.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">On peut, quand on est belle, avoir quelques galants;</l>
+            <l met="12">Mais, tuer les maris? Ils sont si bonnes gens!</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Electre?...</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Est à Mycènes à pleurer sa misère.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Oreste?...</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Oreste!... Ô Ciel!... Quel horrible destin.</l>
+            <l met="12">Madame... il s'est conduit fort mal avec sa mère.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Qu'a-t-il donc fait?</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Madame... Il a vengé son père.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Ce garçon-là doit faire une mauvaise fin:</l>
+            <l met="12">Que cherche-t-il?</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">La mort... qu'il a trouvée enfin.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+          </sp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#trop_de_petulance_gate_tout">Trop de pétulance gâte tout</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="8">Oreste est mort! C'est bien dommage.</l>
+              <l met="6">De cet affreux trépas,</l>
+              <l met="2">Hélas!</l>
+              <l met="8">Mon rêve était le sûr présage.</l>
+            </sp>
+          </spGrp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="8">Vous saurez...</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="8">Non, je ne veux pas.</l>
+            <l met="8">Ne me dites rien davantage,</l>
+            <l met="8">Ce n'est pas encore le moment</l>
+            <l met="10">Je veux réserver l'éclaircissement</l>
+            <l met="5">Pour le dénouement.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+          <stage>Les prêtresses emmènent Oreste.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">Iphigénie et une prêtresse</stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="10">Oreste est mort, faisons ses funérailles.</l>
+            <l met="12">Dépêchons.</l>
+          </sp>
+          <sp who="#lapretresse">
+            <speaker>La Prêtresse</speaker>
+            <l met="12">Calmez vous, c'est prendre mal son temps:</l>
+            <l met="12">Ne précipitons rien.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Quand on a des entrailles...</l>
+            <l met="12">Ah...</l>
+          </sp>
+          <sp who="#lapretresse">
+            <speaker>La Prêtresse</speaker>
+            <l met="12">Est-ce une raison pour perdre le bon sens?</l>
+            <l met="12">Quoi! Sur un simple mot qui peut être équivoque,</l>
+            <l met="12">Sur le rapport d'un fou, la douleur vous suffoque.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Attends, je vais sauver un de ces malheureux.</l>
+          </sp>
+          <sp who="#lapretresse">
+            <speaker>La Prêtresse</speaker>
+            <l met="12">Qui peut en sauver un peut bien en sauver deux.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Je le voudrais en vain, le peuple y met obstacle,</l>
+            <l met="12">Il a, comme chez nous, la fureur du spectacle,</l>
+            <l met="12">Voir immoler un homme, est un plaisir pour lui,</l>
+            <l met="12">C'est un amusement qu'il attend aujourd'hui.</l>
+          </sp>
+          <sp who="#lapretresse">
+            <speaker>La Prêtresse</speaker>
+            <l met="12">Mais...</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Ne chicane point sur mes inconséquences,</l>
+            <l met="12">Elles réussiront mieux que tu ne le penses;</l>
+            <l met="12">Avec ces deux captifs je veux m'entretenir:</l>
+            <l met="12">Qu'ils viennent.</l>
+          </sp>
+          <sp who="#lapretresse">
+            <speaker>La Prêtresse</speaker>
+            <l met="12">Les voici.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Je me sens attendrir;</l>
+          </sp>
+          <stage>Aux Prêtresses.</stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">À présent laissez nous, Prêtresses immortelles;</l>
+          </sp>
+          <stage>À part.</stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Ne puis-je faire un pas ni dire un mot sans elles?</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">Iphigénie, Oreste, Pylade</stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Je m'intéresse à vous.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Hélas que de bontés.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Ce n'est pas sans raison.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Ah, Prêtresse!</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Écoutez:</l>
+            <l met="12">Nous sommes tous trois de la même patrie.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Quoi! Des mains d'une grecque, il faut perdre la vie!</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+          </sp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#contre_engagement">Contre un engagement</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="6">On m'en fait une loi.</l>
+            </sp>
+          </spGrp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="6">Ah! Quelle barbarie!</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="6">Mais c'est bien malgré moi,</l>
+            <l met="6">Je vous le certifie.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="6">À votre âge, ma chère,</l>
+            <l met="6">Quand on sait bien agir,</l>
+            <l met="6">On ne doit jamais faire</l>
+            <l met="6">Mourir que de plaisir.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Je voudrais vous sauver tous les deux; mais hélas!</l>
+            <l met="12">Thoas aime le sang: cependant, par adresse,</l>
+            <l met="12">Je pourrai garantir l'un de vous du trépas,</l>
+            <l met="12">En le faisant partir dès ce jour pour la Grèce.</l>
+          </sp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#chantonslaetamini">Chantons<emph>lætamini</emph>
+                </title>
+              </desc>
+            </head>
+            <sp who="#oreste">
+              <speaker>Oreste</speaker>
+              <l met="6">C'est toi qui partiras.</l>
+            </sp>
+          </spGrp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="6">Non, c'est toi qui vivras.</l>
+          </sp>
+          <spGrp>
+            <caption>Ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="6">C'est toi qui partiras.</l>
+              <l met="6">Non, c'est toi qui vivras.</l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="6">Ne m'interrompez pas.</l>
+          </sp>
+          <spGrp>
+            <head type="melody" subtype="empty_melody">Air vide</head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="6">Pour un si bon office...</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <caption>Oreste et pylade</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="6">Qu'exigez-vous?</l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="6">Je veux</l>
+            <l met="6">Qu'il me rende un service.</l>
+          </sp>
+          <spGrp>
+            <caption>Oreste et pylade</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="6">Il sera trop heureux.</l>
+            </sp>
+          </spGrp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="7">Pour lui, j'en fais le serment.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="7">Pour lui, j'en fais le serment.</l>
+          </sp>
+          <spGrp>
+            <caption>Ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="6">Tous deux également</l>
+              <l met="6">Nous en faisons serment.</l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Je veux à mes parents donner de mes nouvelles,</l>
+          </sp>
+          <stage>À Oreste.</stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Qu'une lettre remise entre vos mains fidèles...</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <stage>avec étonnement</stage>
+            <l met="12">Qui?... Moi!</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">N'en doutez pas, c'est vous que je choisis.</l>
+          </sp>
+          <stage>Pylade fait un saut de joie.</stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Vous partirez ce soir pour aller au pays,</l>
+            <l met="12">Je vais tout préparer; mais il faut me permettre</l>
+            <l met="12">D'aller écrire avant, un petit mot de lettre.</l>
+            <l met="12">Vous serez bien exact à la donner, au moins.</l>
+          </sp>
+          <stage>À Pylade.</stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Ensuite, mon enfant, vous aurez tous mes soins.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">Oreste, Pylade</stage>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Ainsi nous voilà donc aux petits soins ensemble.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <stage>d'un ton courroucé</stage>
+            <l met="12">M'aimes-tu?</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Quand tu dis que tu m'aimes, je tremble;</l>
+            <l met="12">La prêtresse au contraire, au lieu de menacer,</l>
+            <l met="12">En m'annonçant la mort, semble me caresser.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Parle donc: je te trouve un plaisant personnage</l>
+            <l met="12">De prétendre mourir.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Ce n'est pas mon usage.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Je t'ai toujours connu pour un ambitieux.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Je veux rendre en mourant mon nom plus glorieux;</l>
+            <l met="12">Mais je t'aime, et voudrais, s'il était bien possible,</l>
+            <l met="12">Tout à l'heure, te voir à l'autel attaché,</l>
+            <l met="12">Va, je te céderais ma place à bon marché.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Tu m'aimes? Ah! J'en prends tous les dieux pour arbitres;</l>
+            <l met="12">Tu veux être immolé, parle, quels sont tes titres?</l>
+            <l met="12">As-tu dix fois par jour le transport au cerveau?</l>
+            <l met="12">Tout l'Univers pour toi devient-il un tombeau?</l>
+            <l met="12">As-tu jamais rossé personne dans ta vie?</l>
+            <l met="12">Des Spectres viennent-ils te tenir compagnie?</l>
+            <l met="12">Es-tu donc comme Oreste, insensé, forcené?</l>
+            <l met="12">Et vois-tu sur tes pas tout l'Enfer déchaîné?</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">On ne saurait avoir tous les biens en ce monde.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Et dis-moi donc sur quoi ta vanité se fonde,</l>
+          </sp>
+          <stage>Avec fureur.</stage>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="10">Ne sais-tu pas qu'Oreste est furieux?</l>
+            <l met="10">Ne sais-tu pas jusqu'où va sa misère?</l>
+            <l met="10">Ne sais-tu pas qu'il insulte les dieux?</l>
+            <l met="10">Ne sais-tu pas qu'il a battu sa mère?</l>
+          </sp>
+          <stage>Avec sentiment.</stage>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Est-ce à toi de mourir?</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Mot sublime et charmant!</l>
+            <l met="12">On ne me fera pas changer de sentiment.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+          </sp>
+          <stage type="musical_indication">Duo</stage>
+          <spGrp who="#oreste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#marlborough">Marlborough</title>
+              </desc>
+            </head>
+            <spGrp rend="braced(right)">
+              <stage>
+                <stage type="bis">bis</stage>
+              </stage>
+              <spGrp rend="braced(right)">
+                <stage>
+                  <stage type="bis">bis</stage>
+                </stage>
+                <spGrp rend="braced(right)">
+                  <sp who="#oreste">
+                    <speaker>Oreste</speaker>
+                    <l met="6">La mort qu'on te prépare,</l>
+                    <l met="8">Mironton ton ton, mirontaine,</l>
+                    <l met="6">La mort [qu'on te prépare,]</l>
+                    <l met="6">C'est à moi qu'on la doit;</l>
+                    <l met="6">C'est à moi qu'on la doit.</l>
+                    <l met="6">C'est à toi qu'on la doit.</l>
+                    <l met="6">Et tu voudrais, barbare,</l>
+                    <l met="8">Mironton ton ton, mirontaine,</l>
+                    <l met="6">Et tu [voudrais, barbare,]</l>
+                    <l met="6">Me faire un passe-droit?</l>
+                    <l met="6">Me faire un passe droit?</l>
+                    <l met="6">Te faire un passe droit?</l>
+                    <l met="6">Le jour, le jour m'ennuie,</l>
+                    <l met="8">Mironton ton ton, mirontaine,</l>
+                    <l met="6">Le jour, [le jour m'ennuie]</l>
+                    <l met="6">Et tu cours au trépas,</l>
+                    <l met="6">Et tu cours au trépas.</l>
+                    <l met="6">Oui, je cours au trépas.</l>
+                  </sp>
+                  <stage>
+                    <stage type="bis">bis</stage>
+                  </stage>
+                  <cols n="2"/>
+                  <sp who="#oreste">
+                    <speaker>Oreste</speaker>
+                    <l met="6">Pour me sauver la vie,</l>
+                  </sp>
+                  <cb/>
+                  <sp who="#oreste">
+                    <speaker>Oreste</speaker>
+                    <l met="6">Pour te sauver la vie,</l>
+                    <l met="8">Mironton ton ton, mirontaine,</l>
+                    <l met="6">Pour ...</l>
+                    <l met="6">Ah! Tu ne m'aimes pas.</l>
+                  </sp>
+                  <cols n="1"/>
+                </spGrp>
+              </spGrp>
+            </spGrp>
+          </spGrp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+          </sp>
+          <spGrp who="#pylade">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#nous_nous_marierons_dimanche">Nous nous marierons dimanche</title>
+              </desc>
+            </head>
+            <sp who="#pylade">
+              <speaker>Pylade</speaker>
+              <l met="8">Laisse-moi jouir d'un bonheur si doux.</l>
+            </sp>
+          </spGrp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="7">Ah! Quelle rigueur extrême!</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="8">Je t'en conjure à deux genoux.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="2">Moi, d' même.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="4">Je veux mourir,</l>
+            <l met="4">C'est mon plaisir.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="2">Moi, d' même.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="4">Cède à mes soupirs.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="4">Cède à mes soupirs.</l>
+          </sp>
+          <spGrp>
+            <caption>Ensemble<stage>en s'embrassant</stage>
+            </caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Ah, mon cher ami! Que j' t'aime.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <caption>Oreste et pylade</caption>
+          </spGrp>
+          <spGrp who="#ensemble">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#au_doux_nom_de_l_amitie">Au doux nom de l'amitié</title>
+              </desc>
+            </head>
+            <spGrp rend="braced(right)">
+              <sp who="#ensemble">
+                <speaker>ensemble</speaker>
+                <l met="7">Au doux nom de l'amitié,</l>
+                <l met="6">Oreste t'en supplie,</l>
+                <l met="6">Pylade t'en supplie,</l>
+                <l met="7">Au doux nom de l'amitié.</l>
+                <l met="6">Par le nœud qui nous lie,</l>
+                <l met="6">J'implore ta pitié,</l>
+                <l met="3">Au doux nom</l>
+                <l met="3">Au doux nom</l>
+                <l met="7">Au doux nom de l'amitié.</l>
+              </sp>
+              <stage>
+                <stage type="bis">bis</stage>
+              </stage>
+            </spGrp>
+          </spGrp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <stage>tenant Pylade embrassé</stage>
+            <l met="12">Tableau touchant et rare!... En ce moment si tendre</l>
+            <l met="12">Je sens...</l>
+          </sp>
+          <stage>Il se lève furieux.</stage>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Que mon accès de rage va me prendre.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Sauve qui peut.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Je vois tout l'Enfer sous mes pas!</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">La belle vue.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Ô Ciel! Je sens entre mes bras</l>
+            <l met="12">Un serpent venimeux, qui me pique et me glace.</l>
+            <l met="12">Quelle femme, grands dieux, me fait donc la grimace.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Tu lui rends bien...</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Un spectre est là pour l'appuyer;</l>
+            <l met="12">C'est Égiste, c'est lui qui lui sert d'écuyer!</l>
+            <l met="12">Mais... Quel objet hideux m'embarrasse et m'arrête!</l>
+            <l met="12">Il gémit... Ah, qu'il a de cornes à la tête!</l>
+            <l met="12">Que vois-je? C'est mon père!</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Il n'est donc pas changé.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Dans quel nouveau malheur me trouvai-je plongé?</l>
+            <l met="12">Ô désespoir! Je suis accablé par Pylade!</l>
+            <l met="12">Il me fuit!</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Point du tout, me voici, camarade.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Je n'avais qu'un ami, qu'un seul... Je l'ai perdu.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Je suis ici.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Viens donc.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <stage>s'approchant peu à peu</stage>
+            <l met="12">Je crains d'être mordu.</l>
+          </sp>
+          <spGrp who="#pylade">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#je_suis_lindor">Je suis Lindor</title>
+              </desc>
+            </head>
+            <sp who="#pylade">
+              <speaker>Pylade</speaker>
+              <l met="12">Reviens, mon cher, de ce délire extrême,</l>
+              <l met="12">Reprends tes sens, viens tomber dans mes bras.</l>
+              <l met="12">Quoi, mon ami! Tu ne me connais pas!</l>
+              <l met="12">Je suis pour toi toujours, toujours le même.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 9</head>
+          <stage type="characters">Les précédents, Iphigénie</stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Peut-on savoir pourquoi vous avez tant crié.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Madame, ce n'était qu'un débat d'amitié.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Je parlais doucement avec mon camarade.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Ce commerce du moins ne me paraît pas fade.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <stage>à Pylade</stage>
+            <l met="12">Si tu ne cèdes pas, je vais tout déclarer,</l>
+            <l met="12">Et dire que je suis... Ecoutez-moi, Prêtresse!</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <stage>à Iphigénie</stage>
+            <l met="12">Excusez un esprit trop prompt à s'égarer.</l>
+          </sp>
+          <stage>À Oreste.</stage>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Arrête, mon ami, c'est une maladresse.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <stage>À Iphigénie.</stage>
+            <l met="12">Abrégeons les discours, tout net expliquons-nous;</l>
+            <l met="12">Je ne me charge pas de porter votre lettre,</l>
+            <l met="12">Madame, à mon ami vous pouvez la remettre;</l>
+            <l met="12">Qu'il vive, ou je m'étrangle à l'instant devant vous.</l>
+            <l met="12">Décidez, je ne puis supporter la lumière.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Cruel!</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Je veux mourir d'une ou d'autre manière.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Allons, il serait mal de disputer des goûts;</l>
+          </sp>
+          <stage>À Oreste, avec sentiments.</stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Mais pourquoi préférer une mort rigoureuse,</l>
+            <l met="12">Au soin de me servir et de me rendre heureuse?</l>
+            <l met="12">Vous n'êtes point galant, et c'est me faire tort.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Je ne le fus jamais.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <stage>d'un ton décidé.</stage>
+            <l met="12">Il mérite la mort!</l>
+          </sp>
+          <stage>Avec attendrissement.</stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Je ne puis y penser sans être saisie.</l>
+          </sp>
+          <stage>À Pylade.</stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Vous... Ne sentez-vous pas un peu de jalousie?</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <stage>d'un ton résigné</stage>
+            <l met="12">Non.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <stage>à Oreste</stage>
+            <l met="12">Pour payer l'honneur qu'il vous daigne céder,</l>
+            <l met="12">Dites-lui, s'il se peut, adieu sans le gronder.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <stage>à Pylade</stage>
+            <l met="12">Adieu, mon cher ami, pardonne mes reproches,</l>
+            <l met="12">Fais bien mes compliments à ma petite sœur;</l>
+            <l met="12">Et pour la consoler, apprends-lui mon bonheur.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <stage>bas, à Oreste</stage>
+            <l met="12">Je n'aurai pas toujours mes deux mains dans mes poches;</l>
+            <l met="12">Laisse-moi faire... Va... Je te délivrerai:</l>
+          </sp>
+          <stage>À part.</stage>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Je ne sais pas pourtant comment je m'y prendrai.</l>
+            <l met="12">Pour sortir de ces lieux, il ne faut pas attendre,</l>
+            <l met="12">Electre est la personne à qui vous devez rendre</l>
+            <l met="12">Ce billet important.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 10</head>
+          <stage type="characters">Iphigénie, Pylade</stage>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Par quel hasard heureux,</l>
+            <l met="12">La connaissez-vous donc?</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Vous êtes curieux.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Je ne sais pas pourquoi vous faites ce mystère.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Je n'en sais rien non plus. Il faut me satisfaire;</l>
+            <l met="12">Un galant homme doit tenir ce qu'il promet;</l>
+            <l met="12">Partez.</l>
+          </sp>
+          <stage>En donnant le billet.</stage>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">J'obéirai si le Ciel le permet.</l>
+          </sp>
+          <spGrp who="#pylade">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#pour_voir_un_peu_comment_ca_f_ra">Pour voir un peu comment ça f'ra</title>
+              </desc>
+            </head>
+            <sp who="#pylade">
+              <speaker>Pylade</speaker>
+              <l met="8">Tirons Oreste d'embarras:</l>
+              <l met="8">Mais le pourrai-je sans miracle?</l>
+              <l met="8">Je ne sais où porter mes pas,</l>
+              <l met="8">Je vois obstacle sur obstacle.</l>
+              <l met="8">Mais le hasard y pourvoira:</l>
+              <l met="8">Voyons toujours comment ça f'ra.</l>
+            </sp>
+          </spGrp>
+          <stage>Fin de l'acte</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 3</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Iphigénie<stage>seule</stage>
+          </stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#moine_blanc">Il était un moine blanc</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="7">Je passe en ces tristes lieux</l>
+              <l met="7">Les jours les plus ennuyeux,</l>
+              <l met="7">Et j'y fais tout le contraire</l>
+              <l met="7">De ce que je voudrais faire.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Iphigénie, les prêtresses<stage>qui amènent Oreste</stage>
+          </stage>
+          <sp who="#choeurdespretresses">
+            <speaker>Chœur des Prêtresses</speaker>
+          </sp>
+          <spGrp who="#choeurdespretresses">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">Nous vivons dans l'innocence,tiré de <title ref="#jephte">Jephté</title> ()</desc>
+            </head>
+            <sp who="#choeurdespretresses">
+              <speaker>Chœur des Prêtresses</speaker>
+              <l met="7">Ô Diane, sois propice;</l>
+              <l met="7">Mets un terme à tes rigueurs:</l>
+              <l met="7">Nous t'offrons en sacrifice</l>
+              <l met="7">Ce jeune homme avec nos pleurs.</l>
+              <l met="7">Mais, si tu veux qu'il périsse,</l>
+              <l met="7">Le supplice est pour nos cœurs.</l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+          </sp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_mort_de_mon_cher_pere">La mort de mon cher père</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="6">Mon petit ministère</l>
+              <l met="6">Vous fera du chagrin;</l>
+              <l met="6">Je crains de vous déplaire;</l>
+              <l met="6">En vous perçant le sein.</l>
+              <l met="6">Ah! Si j'étais maîtresse</l>
+              <l met="6">Des climats où je suis,</l>
+              <l met="6">Les gens de votre espèce</l>
+              <l met="6">N'y seraient pas détruits.</l>
+            </sp>
+          </spGrp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#un_mouvement_de_curiosite">Un mouvement de curiosité</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="10">De vous sauver j'aurais beaucoup d'envie,</l>
+              <l met="10">Si ce bienfait pouvait se pardonner.</l>
+              <l met="10">Tuer un homme, ah! Quelle barbarie!</l>
+              <l met="10">À cet emploi pourquoi me destiner?</l>
+              <l met="10">C'est mon devoir d'ôter ici la vie;</l>
+              <l met="10">Il me serait plus doux de la donner.</l>
+            </sp>
+          </spGrp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+          </sp>
+          <spGrp who="#oreste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ne_sais_quoi">Je sens un certain je ne sais quoi</title>
+              </desc>
+            </head>
+            <sp who="#oreste">
+              <speaker>Oreste</speaker>
+              <l met="8">Eh! Tuez-moi sans compliments.</l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="6">Votre sort m'intéresse.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="8">Mais d'où vous vient ce sentiment?</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="6">Je plains votre jeunesse.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="8">À ce discours plein de tendresse</l>
+            <l met="8">Mon cœur se trouble malgré moi.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="8">Je sens un certain je ne sais qu'est-ce.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="8">J'éprouve un certain je ne sais quoi.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+          </sp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_colombe_qui_succombe">La colombe qui succombe</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="7">Oui, votre sort me désole.</l>
+            </sp>
+          </spGrp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="7">Vous soulagez mon tourment;</l>
+            <l met="7">Votre pitié me console,</l>
+            <l met="7">Et j'en mourrai plus gaiement.</l>
+          </sp>
+          <sp who="#lapretresse">
+            <speaker>La Prêtresse</speaker>
+            <l met="12">Madame, il faut songer à la cérémonie.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Nous attendons ici le peuple avec Thoas.</l>
+          </sp>
+          <sp who="#lapretresse">
+            <speaker>La Prêtresse</speaker>
+            <l met="12">Thoas est paresseux, il ne se presse pas.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Vous me faites languir.</l>
+          </sp>
+          <sp who="#lapretresse">
+            <speaker>La Prêtresse</speaker>
+            <l met="12">Ce jeune homme s'ennuie.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Eh bien, puisqu'il le faut, qu'on le mène à l'autel.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Ah! Je respire enfin.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Ah! Quel moment cruel!</l>
+          </sp>
+          <sp who="#choeurdespretresses">
+            <speaker>Chœur des Prêtresses</speaker>
+          </sp>
+          <spGrp who="#choeurdespretresses">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#reviendrai_demain">Je ferai mon devoir</title>
+              </desc>
+            </head>
+            <sp who="#choeurdespretresses">
+              <speaker>Chœur des Prêtresses</speaker>
+              <l met="8">Remplissez votre auguste emploi.</l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="6">Quelle barbare loi!</l>
+            <l met="6">Quelle barbare loi!</l>
+            <l met="8">Ô dieux! Donnez m'en le pouvoir.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="6">Faites votre devoir.</l>
+            <l met="6">Faites votre devoir.</l>
+          </sp>
+          <stage>Une prêtresse présente à Iphigénie le couteau sacré.</stage>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+          </sp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#un_matin_brusquement">Un matin brusquement</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="6">Avançons... Je ne puis.</l>
+            </sp>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="8">Viens, que sur toi je m'appuie.</l>
+              <l met="6">Je ne sais où j'en suis:</l>
+              <l met="8">Soutient mon bras et me conduis.</l>
+            </sp>
+          </spGrp>
+          <stage>À la Prêtresse.</stage>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="8">Hâtez vous de m'ôter la vie.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="8">Tu le veux... Eh bien, tu mourras.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="7">En Aulide, en même cas,</l>
+            <l met="8">Périt ma sœur Iphigénie.</l>
+            <l met="7">À ma sœur je vais, hélas!</l>
+            <l met="8">Me réunir par le trépas.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+          </sp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#petits_grands">Pendus</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="8">Ah, juste ciel! Qu'ai-je entendu?</l>
+            </sp>
+          </spGrp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="8">Quoi! Votre bras est suspendu?</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="8">Par hasard, seriez-vous Oreste?</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="8">Eh, morbleu! Je le suis de reste.</l>
+            <l met="8">Frappez.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="8">En aurais-je le cœur?</l>
+            <l met="8">Mon frère, reconnais ta sœur.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Ma sœur!</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Eh oui, ta sœur, elle te tend les bras.</l>
+            <l met="12">Je suis Iphigénie.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Un peu de patience;</l>
+            <l met="12">Il ne faut pas brusquer une reconnaissance.</l>
+            <l met="12">Vous, Iphigénie?</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Oui.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Cela ne se peut.</l>
+          </sp>
+          <spGrp who="#oreste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#un_jour_sur_la_fougere">Un jour, sur la fougère</title>
+              </desc>
+            </head>
+            <sp who="#oreste">
+              <speaker>Oreste</speaker>
+              <l met="6">On sait qu'un sacrifice</l>
+              <l met="6">A terminé ses jours.</l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="6">Diane fut propice,</l>
+            <l met="6">Et vint à son secours.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="6">Mon âme désolée</l>
+            <l met="6">Gémit de son trépas.</l>
+            <l met="8">La pauvre enfant fut immolée.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="8">La pauvre enfant n'en mourut pas.</l>
+          </sp>
+          <spGrp who="#iphigenie">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#allons_la_voir_a_saint_cloud">Allons la voir à Saint-Cloud</title>
+              </desc>
+            </head>
+            <sp who="#iphigenie">
+              <speaker>Iphigenie</speaker>
+              <l met="7">Mais je dois douter aussi</l>
+              <l met="7">Que vous soyez bien mon frère.</l>
+              <l met="7">Que ce fait soit éclairci.</l>
+            </sp>
+          </spGrp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="7">Oh, c'est ce que je vais faire.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="8">Vous m'avez dit qu'il était mort.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="8">Madame, je n'avais pas tort:</l>
+            <l met="6">Ce n'était qu'une adresse</l>
+            <l met="7">Pour faire durer la pièce.</l>
+          </sp>
+          <spGrp>
+            <caption>Oreste et iphigénie</caption>
+          </spGrp>
+          <spGrp who="#ensemble">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air du</desc>
+              <desc type="title">Quatuor,tiré des <title ref="#troqueurs">Troqueurs</title> ()</desc>
+            </head>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="4">Ah! C'est donc toi</l>
+              <l met="4">Que je revois!</l>
+              <l met="2">Pour nous</l>
+              <l met="6">Ce moment est bien doux:</l>
+              <l met="8">Ma chère sœur, embrassons-nous.</l>
+              <l met="8">Mon cher Oreste, embrassons-nous.</l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="4">Eh quoi! C'est toi!</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="2">Moi, moi.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <stage>aux prêtresses</stage>
+            <l met="4">C'est votre Roi.</l>
+          </sp>
+          <sp who="#lespretresses">
+            <speaker>Les prêtresses</speaker>
+            <l met="4">C'est notre Roi.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="2">Moi! Moi!</l>
+          </sp>
+          <sp who="#lespretresses">
+            <speaker>Les prêtresses</speaker>
+            <l met="2">Lui, oui.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="2">Moi! Moi!</l>
+          </sp>
+          <spGrp>
+            <caption>Tous ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="4">C'est notre appui.</l>
+              <l met="4">C'est votre appui.</l>
+              <l met="4">C'est notre Roi.</l>
+              <l met="4">C'est votre Roi.</l>
+              <l met="5">Ce moment pour nous</l>
+              <l met="3">Est bien doux</l>
+              <l met="8">Mon cher Oreste, embrassons-nous.</l>
+              <l met="8">Ma chère sœur, embrassons-nous.</l>
+              <l met="8">Mes chères sœurs, embrassons-nous.</l>
+            </sp>
+          </spGrp>
+          <stage>À la fin de ce quatuor, toutes les prêtresses s'embrassent, à l'imitation d'Oreste et d'Iphigénie.</stage>
+          <sp who="#secondepretresse">
+            <speaker>Seconde Prêtresse</speaker>
+            <l met="12">Ah, Madame! Tremblez, la mèche est découverte,</l>
+            <l met="12">Thoas des deux captifs avait juré la perte,</l>
+            <l met="12">Il sait que par vos soins l'un d'eux s'est échappé;</l>
+            <l met="12">Il écume, de rage et de terreur frappé,</l>
+            <l met="12">Il vient pour vous punir de la supercherie.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Je l'attends de pied ferme.</l>
+          </sp>
+          <sp who="#lapretresse">
+            <speaker>La Prêtresse</speaker>
+            <l met="12">Évitez sa furie.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <stage>chante</stage>
+            <l met="12">Ô Ciel! Grands dieux, hélas!</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <stage>l'interrompant</stage>
+            <l met="12">Eh! Cessez vos hélas.</l>
+            <l met="12">De vos tristes accents, j'admire l'harmonie;</l>
+            <l met="12">Mais on lasse à la fin par la Monotonie.</l>
+            <l met="12">Qu'on dérobe mon frère aux regards de Thoas;</l>
+            <l met="12">Caché derrière vous, qu'il ne se montre pas.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Les précédents, Thoas, plusieurs Scythes</stage>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Ah, ah! Vous voilà donc, prêtresse dégourdie!</l>
+            <l met="12">Vraiment, votre conduite est tout à fait jolie!</l>
+          </sp>
+          <spGrp who="#thoas">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#pont_avignon_belle">Sur le pont d'Avignon</title>
+              </desc>
+            </head>
+            <sp who="#thoas">
+              <speaker>Thoas</speaker>
+              <l met="12">Au lieu de les tuer, vous conservez les hommes.</l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Hélas! Dans mon pays voici comme nous sommes.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">De tout votre manège, on m'a fort bien instruit;</l>
+            <l met="12">Je sais qu'un des Captifs s'est échappé sans bruit.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Tu pouvais l'empêcher; mais chez toi tu demeures,</l>
+            <l met="12">Pourquoi faire, dis-moi?</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">J'ai dormi vingt-quatre heures.</l>
+            <l met="12">Mais que l'autre étranger périsse sans tarder,</l>
+            <l met="12">Où moi-même à l'instant je vais te poignarder.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <stage>perçant la foule des prêtresses</stage>
+            <l met="12">Poignarder! Qui? Ma sœur!</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Apprends qu'il est mon frère.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Et quand cela serait, il ne m'impute guère;</l>
+            <l met="12">Frappe, ou je vais...</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Ô Ciel! Qu'oses-tu commander?</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Tu n'es qu'un plat tyran dont la fureur oisive</l>
+            <l met="12">Joint à l'emportement une action tardive:</l>
+            <l met="12">Tu menaces toujours, sans rien effectuer.</l>
+            <l met="12">Dis, pourquoi reviens-tu?</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Pour se faire tuer.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Madame, doucement, cela vous plaît à dire;</l>
+            <l met="12">Je crois qu'à mes dépends tous deux vous voulez rire;</l>
+            <l met="12">Gardes, délivrez-moi de ces audacieux.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Au premier qui viendra j'arracherai les yeux.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Lâches! Vous avez peur!</l>
+          </sp>
+          <sp who="#unscythe">
+            <speaker>Un scythe</speaker>
+            <l met="12">Nous respectons les dames,</l>
+            <l met="12">Et ce n'est pas ainsi qu'on attaque des femmes.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Les précédents, un Scythe</stage>
+          <sp who="#lescythe">
+            <speaker>Le Scythe</speaker>
+            <l met="12">Le Temple se remplit de farouches soldats;</l>
+            <l met="12">Sauvez vous, s'il se peut, Seigneur, de la bagarre.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">D'où diable viennent-ils?</l>
+          </sp>
+          <sp who="#lescythe">
+            <speaker>Le Scythe</speaker>
+            <l met="12">On ne le conçoit pas.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Vous n'en mourrez pas moins tous les deux.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Les précédents, Pylade, Suite</stage>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <stage>perçant la foule des prêtresses</stage>
+            <l met="12">Gare, gare!</l>
+            <l met="12">C'est à toi de mourir.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">À moi, mes gens, à moi!</l>
+            <l met="12">À l'aide! Mes amis, défendez votre roi.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Ne crois pas échapper, ton espérance est vaine.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Ah, ne le tuez point il n'en vaut pas la peine.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Messieurs, entendons nous, on peut être d'accord;</l>
+            <l met="12">Ensanglanter la Scène... Ah, c'est un peu trop fort.</l>
+            <l met="12">Que veut-on?</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">De Diane emporter la statue.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Eh bien, soit; pour cela faut-il que l'on me tue?</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Nous voulons enlever les prêtresses d'ici.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Ah! parbleu, j'en suis las, emportez les aussi.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Et qu'on n'ait plus chez toi, d'assez vilaines âmes,</l>
+            <l met="12">Pour y faire périr les hommes par les femmes.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="12">Mais je n'ose abolir un culte si sacré;</l>
+            <l met="12">Les dieux se fâcheraient, et je crains leur rancune.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="12">Pour te faire savoir que c'est contre leur gré,</l>
+            <l met="12">Diane, tout exprès, va tomber de la Lune.</l>
+          </sp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+          </sp>
+          <spGrp who="#thoas">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#pierre_bagnolet">Allez-vous-en, gens de la noce</title>
+              </desc>
+            </head>
+            <sp who="#thoas">
+              <speaker>Thoas</speaker>
+              <l met="8">Épargnons les frais du voyage</l>
+              <l met="8">À cette auguste déité;</l>
+              <l met="8">Ne voulez-vous rien davantage?</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <caption>Oreste, pylade et iphigénie</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="8">Non.</l>
+            </sp>
+          </spGrp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="8">Je consens donc au traité.</l>
+            <l met="8">Après cette belle équipée,</l>
+            <l met="8">Serons-nous tranquilles chez nous?</l>
+          </sp>
+          <spGrp>
+            <caption>Oreste, pylade et iphigénie</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="8">Oui.</l>
+            </sp>
+          </spGrp>
+          <sp who="#thoas">
+            <speaker>Thoas</speaker>
+            <l met="8">Partez donc, embarquez-vous</l>
+            <l met="8">Avec votre digne Poupée;</l>
+            <l met="8">Allez-vous-en chacun chez vous.</l>
+          </sp>
+          <stage>Il sort.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">Iphigénie, Oreste, Pylade, Grecs</stage>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Ici, fort à propos, je me suis présenté;</l>
+            <l met="12">À présent, mon ami, comment va ta santé?</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Je me trouve moins fou, ma tête se nettoie;</l>
+            <l met="12">Nous n'exciterons plus que des larmes de joie.</l>
+            <l met="12">Je vais cesser enfin d'être un objet d'effroi,</l>
+            <l met="12">Et les diables, je pense, ont pris congé de moi.</l>
+            <l met="12">Prends part à mon bonheur, embrasse Iphigénie.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="12">Comment, c'est là ta Sœur? Elle est encore jolie,</l>
+            <l met="12">Et faite pour l'amour.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <l met="12">Ce mot est déplacé;</l>
+            <l met="12">Ici personne encor ne l'avait prononcé.</l>
+          </sp>
+          <spGrp who="#oreste">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#sans_un_petit_brin_d_amour">Sans un petit brin d'amour</title>
+              </desc>
+            </head>
+            <sp who="#oreste">
+              <speaker>Oreste</speaker>
+              <l met="7">Sans un petit brin d'amour,</l>
+              <l met="6">Finit la Tragédie.</l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="7">Ah, quant à moi, je suis pour</l>
+            <l met="6">Un petit brin d'amour.</l>
+          </sp>
+          <sp who="#oreste">
+            <speaker>Oreste</speaker>
+            <stage>à Pylade</stage>
+            <l met="10">Eh bien, mon cher, épouse Iphigénie.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="4">J'en suis d'accord.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="4">Je le veux bien.</l>
+            <l met="10">L'amour convient dans une parodie.</l>
+          </sp>
+          <sp who="#pylade">
+            <speaker>Pylade</speaker>
+            <l met="4">Reçois mon cœur.</l>
+          </sp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="4">Reçois le mien.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Sans un petit brin d'amour,</l>
+            <l met="6">Finit la Tragédie.</l>
+          </sp>
+          <spGrp>
+            <caption>Iphigénie et pylade</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Mais quant à moi, je suis pour</l>
+              <l met="6">Un petit brin d'amour.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <caption>Tous trois ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Sans un petit brin d'amour,</l>
+              <l met="6">Finit la tragédie;</l>
+              <l met="7">Mais ici nous sommes pour</l>
+              <l met="6">Un petit brin d'amour.</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <caption>Oreste et pylade</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Rien n'est moins rare en ce jour,</l>
+              <l met="6">Qu'une amitié fidèle.</l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="7">Rien n'est moins rare en ce jour,</l>
+            <l met="6">Qu'un petit brin d'amour.</l>
+          </sp>
+          <spGrp>
+            <caption>Oreste et pylade</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="10">Des vrais amis, nous sommes le modèle.</l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="8">Aux vrais amis on ne croit plus;</l>
+            <l met="10">L'amour, l'amour est chose plus réelle,</l>
+            <l met="8">Partout ses droits sont reconnus.</l>
+          </sp>
+          <spGrp>
+            <caption>Ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Rien n'est plus rare, etc.</l>
+            </sp>
+          </spGrp>
+          <sp who="#iphigenie">
+            <speaker>Iphigenie</speaker>
+            <l met="7">Pour vous, Messieurs, en ce jour,</l>
+            <l met="6">Nous redoublons de zèle:</l>
+            <l met="7">Marquez nous à votre tour,</l>
+            <l met="6">Un petit brin d'amour;</l>
+            <l met="10">Daignez sourire à notre bagatelle,</l>
+            <l met="8">Sans prendre garde à ses défauts:</l>
+            <l met="10">Souvent un rien prouve une ardeur nouvelle,</l>
+            <l met="8">Et des désirs toujours égaux.</l>
+          </sp>
+          <spGrp>
+            <caption>Ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Pour vous, Messieurs, etc.</l>
+            </sp>
+          </spGrp>
+          <stage>Fin</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

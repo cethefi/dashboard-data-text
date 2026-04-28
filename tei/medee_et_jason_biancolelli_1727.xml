@@ -1,0 +1,2179 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="medee_et_jason_biancolelli_1727">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Médée et Jason</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Pierre-François Biancolelli, Antoine-François Riccoboni, Jean-Antoine Romagnesi</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>Bertrand Ourcel</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Les Parodies du nouveau Théâtre-Italien, Briasson, 1738</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="medee" sex="UNKNOWN">
+            <persName>Médée</persName>
+          </person>
+          <person xml:id="jason" sex="UNKNOWN">
+            <persName>Jason</persName>
+          </person>
+          <person xml:id="creon" sex="UNKNOWN">
+            <persName>Créon</persName>
+          </person>
+          <person xml:id="creuse" sex="UNKNOWN">
+            <persName>Créuse</persName>
+          </person>
+          <person xml:id="cleone" sex="UNKNOWN">
+            <persName>Cléone</persName>
+          </person>
+          <person xml:id="arcas" sex="UNKNOWN">
+            <persName>Arcas</persName>
+          </person>
+          <person xml:id="choeursorciers" sex="UNKNOWN">
+            <persName>Chœur de Sorciers</persName>
+          </person>
+          <person xml:id="choeursorciersdemons" sex="UNKNOWN">
+            <persName>Chœur de Sorciers et de Démons</persName>
+          </person>
+          <person xml:id="choeurmagiciens" sex="UNKNOWN">
+            <persName>Chœur de Magiciens</persName>
+          </person>
+          <person xml:id="lexempt" sex="UNKNOWN">
+            <persName>L'Exempt</persName>
+          </person>
+          <person xml:id="unmatelot" sex="UNKNOWN">
+            <persName>Un Matelot</persName>
+          </person>
+          <person xml:id="unematelote" sex="UNKNOWN">
+            <persName>Une Matelote</persName>
+          </person>
+          <person xml:id="choeurmatelots" sex="UNKNOWN">
+            <persName>Chœur de Matelots</persName>
+          </person>
+          <person xml:id="troupe_de_magiciens" sex="UNKNOWN">
+            <persName>Troupe de Magiciens</persName>
+          </person>
+          <person xml:id="demons" sex="UNKNOWN">
+            <persName>Démons</persName>
+          </person>
+          <person xml:id="matelots" sex="UNKNOWN">
+            <persName>Matelots</persName>
+          </person>
+          <person xml:id="matelottes" sex="UNKNOWN">
+            <persName>Matelottes</persName>
+          </person>
+          <person xml:id="monstres" sex="UNKNOWN">
+            <persName>Monstres</persName>
+          </person>
+          <person xml:id="gardes" sex="UNKNOWN">
+            <persName>Gardes</persName>
+          </person>
+          <person xml:id="un_exempt" sex="UNKNOWN">
+            <persName>Un Exempt</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1727">
+        <desc>Représenté pour la première fois par les Comédiens Italiens ordinaires du Roi le 28 mai 1727</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#medee">Médée</role>
+        </castItem>
+        <castItem>
+          <role ana="#jason">Jason</role>
+        </castItem>
+        <castItem>
+          <role ana="#creon">Créon</role>
+        </castItem>
+        <castItem>
+          <role ana="#creuse">Créuse</role>
+        </castItem>
+        <castItem>
+          <role ana="#cleone">Cléone</role>
+        </castItem>
+        <castItem>
+          <role ana="#arcas">Arcas</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_magiciens">Troupe de Magiciens</role>
+          <roleDesc>chantants et dansants</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#demons">Démons</role>
+        </castItem>
+        <castItem>
+          <role ana="#matelots">Matelots</role>
+        </castItem>
+        <castItem>
+          <role ana="#matelottes">Matelottes</role>
+        </castItem>
+        <castItem>
+          <role ana="#monstres">Monstres</role>
+        </castItem>
+        <castItem>
+          <role ana="#gardes">Gardes</role>
+        </castItem>
+        <castItem>
+          <role ana="#un_exempt">Un Exempt</role>
+        </castItem>
+      </castList>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Jason, Arcas</stage>
+        <stage>Le théâtre représente une place publique.</stage>
+        <sp who="#arcas">
+          <speaker>Arcas</speaker>
+          <p>Eh! Quoi, Seigneur Jason, ne m'apprendrez-vous point le sujet de votre tristesse? Dans un temps où vous devez être plus content que jamais, vous êtes rêveur et taciturne: en vérité, je ne vous comprends pas, la gloire, l'amour, tout vous est favorable; que vous manque-t-il donc?</p>
+        </sp>
+        <spGrp who="#arcas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Tout cela m'est indifférent</title>
+            </desc>
+          </head>
+          <sp who="#arcas">
+            <speaker>Arcas</speaker>
+            <l met="8">Pour prix de vos derniers exploits,</l>
+            <l met="8">L'amour pour vous a fait le choix</l>
+            <l met="8">D'une Princesse qui vous aime,</l>
+            <l met="8">Quel sort peut être plus charmant!</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="8">Hélas, c'est dans cet hymen même</l>
+          <l met="8">Que je trouve un nouveau tourment.</l>
+        </sp>
+        <sp who="#arcas">
+          <speaker>Arcas</speaker>
+          <p>Que me dites-vous là? Créuse ne vous aimerait-elle plus?</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Bon, c'est tout le contraire; elle est folle de moi, elle ne peut rester un moment sans me voir: il ne tient qu'à moi de l'épouser; mais je me sens déchirer par mille remords, et c'est avec raison; car entre nous, je ne fais pas l'action d'un honnête homme.</p>
+        </sp>
+        <spGrp who="#jason">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_nos_forets">On n'aime point dans nos Forêts</title>
+            </desc>
+          </head>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <l met="8">Tout prêt à devenir heureux,</l>
+            <l met="8">Je sens une secrète peine,</l>
+            <l met="8">Tu sais que pour former ces nœuds</l>
+            <l met="8">J'ai rompu ma première chaîne.</l>
+            <l met="8">Puis-je ailleurs engager ma foi?</l>
+            <l met="8">Médée a des enfants de moi.</l>
+            <p>Que deviendront ces pauvres innocents?</p>
+            <p>Ils seront déclarés bâtards, et cela me fend le cœur: Médée que j'ai trahie m'accablera de reproches.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#jason">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#troubler_ignorance">Ne craignez rien, l'hymen est votre asile</title>
+            </desc>
+          </head>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <l met="10">À l'oublier vainement je m'efforce,</l>
+            <l met="10">Père cruel, et trop injuste époux!</l>
+          </sp>
+        </spGrp>
+        <sp who="#arcas">
+          <speaker>Arcas</speaker>
+          <l met="10">Vous pouvez vous reprochez un divorce,</l>
+          <l met="10">Que l'honneur seul su exiger de vous?</l>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Tout ceci ne laisse pas que d'être embarrassant; Médée d'un côté, Créuse de l'autre... L'amour... Le devoir... Je ne sais auquel entendre.</p>
+        </sp>
+        <spGrp who="#jason">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reviendrai_demain">Je reviendrai demain au soir</title>
+            </desc>
+          </head>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <l met="8">Le devoir et le tendre amour</l>
+            <l met="6">Me parlent tour à tour;<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Mais sur moi, trop faible devoir,</l>
+            <l met="6">Tu n'as pas le pouvoir.<stage type="bis">bis</stage>
+            </l>
+            <p>Mais Créuse s'avance: Amour, c'est à toi seul que la victoire est réservée.</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Créuse, Cléone, Jason</stage>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+        </sp>
+        <spGrp who="#jason">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#belle_brune">Belle brune</title>
+            </desc>
+          </head>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <l met="7">Ah! Princesse, ah! Princesse,</l>
+            <l met="7">L'hymen va combler mes vœux,</l>
+            <l met="7">Pour Jason, quelle allégresse!</l>
+            <l met="7">Ah! Princesse, ah! Princesse.</l>
+            <p>Le Roi se déclare en ma faveur, c'est la meilleure pâte d'homme que je connaisse: allons, de la joie; mais quoi, vous ne répondez rien!</p>
+          </sp>
+        </spGrp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Seigneur, je suis soumise à ses ordres.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Qu'est-ce à dire? Vous êtes soumise à ses ordres; comme vous dites cela? Expliquez-vous le belle, parlez sans façon: si vous avez la moindre répugnance, ne vous gênez pas, je n'abuserai point des bontés de Monsieur votre père; je ne veux rien par force: pour faire un bon mariage, il faut toujours que les parties soient d'accord.</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+        </sp>
+        <spGrp who="#creuse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#si_ta_femme_gronde">Si ta femme gronde</title>
+            </desc>
+          </head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <l met="5">Que notre tendresse</l>
+            <l met="8">Fasse à jamais notre bonheur:</l>
+            <l met="5">Livrons-nous sans cesse</l>
+            <l met="4">À notre ardeur.</l>
+            <l met="5">Qu'amour nous engage,</l>
+            <l met="8">Il n'a pour nous que des appas;</l>
+            <l met="5">Mais du mariage,</l>
+            <l met="4">N'en parlons pas.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Qu'entends-je, ô Ciel!</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Non, Jason, je ne puis vous rendre heureux.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Quel galimatias faites-vous là? Comment, morbleu, il ne dépend que de vous de devenir l'épouse d'un joli homme, bien fait, rempli de mérite, et vous avez de la peine à vous déterminer? La pauvre petite, qu'elle est à plaindre! Il y en a bien qui s'estimeraient heureuses de me posséder.</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Il est vrai, mais...</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+        </sp>
+        <spGrp who="#jason">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <l met="8">Non, je ne puis plus vous entendre,</l>
+            <l met="8">Mon désespoir me force à prendre</l>
+            <l met="8">Un parti qui n'est pas trop bon:</l>
+            <l met="2">Adieu.</l>
+          </sp>
+        </spGrp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <l met="6">Qu'allez-vous entreprendre;</l>
+          <l met="8">Où courez-vous, mon cher Jason?</l>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="8">Inhumaine, je vais me pendre.</l>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Je frémis... Demeurer.</p>
+        </sp>
+        <spGrp who="#creuse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <l met="8">Apprenez un fatal mystère,</l>
+            <l met="8">Je dois enfin le découvrir,</l>
+            <l met="8">La mort, où je vous vois courir</l>
+            <l met="6">M'empêche de me taire.</l>
+            <p>Quand je vous refuse ma main, soyez bien persuadé que l'Amour lui-même m'en inspire le dessein: je crains la fureur de Médée; cette Magicienne me fait trembler pour vous; elle va faire éclater la plus terrible des vengeances, et franchement elle n'aura pas tort.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#creuse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#laire_la">Lere la, lere lan lere</title>
+            </desc>
+          </head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <l met="8">Un mari doit-il s'engager,</l>
+            <l met="8">Et d'une femme se charger</l>
+            <l met="7">Du vivant de la première?</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="7">Lère la, lere lan lere,</l>
+          <l met="3">Lère la,</l>
+          <l met="4">Lère lan la.</l>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+        </sp>
+        <spGrp who="#creuse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nya_pas_dmal">N'y a pas d'mal à ça</title>
+            </desc>
+          </head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <l met="5">Jason Polygame!</l>
+            <l met="5">Qu'est-ce qu'on dira?</l>
+            <l met="5">Las de votre femme</l>
+            <l met="5">Vous la plantez là.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="5">N'y a pas d'mal à ça.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+        </sp>
+        <spGrp who="#creuse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_joli_jeu_d_amour_tflo">Le joli jeu d'amour</title>
+            </desc>
+          </head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <l met="6">Au joli jeu d'Amour</l>
+            <l met="6">Livrons-nous tour à tour,</l>
+            <l met="6">Il réserve pour nous</l>
+            <l met="3">Tous ses charmes.</l>
+            <l met="5">L'Hymen est moins doux,</l>
+            <l met="7">Bientôt il cause aux époux</l>
+            <l met="5">Des soins, des dégoûts,</l>
+            <l met="3">Des alarmes:</l>
+            <l met="6">Au joli jeu d'Amour, ...</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Que diable, voulez-vous que j'attende que ma femme soit morte pour me marier avec vous? Elle a l'âme cramponnée dans le corps; et quand ce ne serait que pour me faire enrager, elle vivra cent ans, et plus; elle a des secrets pour cela.</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Rien ne peut me rassurer, et je crois déjà la voir prête à vous immoler à sa fureur.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Quoi, vous tremblez pour mes jours? Le bon petit cœur! Allez, ma mie, ne vous inquiétez de rien.</p>
+        </sp>
+        <spGrp who="#jason">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierre_bagnolet">Pierre Bagnolet</title>
+            </desc>
+          </head>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <l met="8">Aux plaisirs cédons sans contrainte,</l>
+            <l met="8">On ne les goûte pas toujours:</l>
+            <l met="8">Étouffez une injuste plainte,</l>
+            <l met="8">Et profitons de nos beaux jours,</l>
+            <l met="4">Ils sont si courts,</l>
+          </sp>
+        </spGrp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <l met="4">Ils sont si courts.</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Ah! Pourquoi faut-il que la crainte</l>
+            <l met="8">Trouble les plus tendres Amours.</l>
+          </sp>
+        </spGrp>
+        <stage>Jason s'en va.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Créuse, Cléone</stage>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <p>En vérité, Madame, votre crainte est mal fondée.</p>
+        </sp>
+        <spGrp who="#cleone">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#verte_jeunesse">La verte Jeunesse</title>
+            </desc>
+          </head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="5">Chassez les alarmes,</l>
+            <l met="5">Et rassurez-vous,</l>
+            <l met="5">L'Hymen a des charmes;</l>
+            <l met="5">Non, rien n'est si doux;</l>
+            <l met="5">Fille de votre âge</l>
+            <l met="5">En fait son bonheur,</l>
+            <l met="5">Et du mariage</l>
+            <l met="4">N'a jamais peur.</l>
+            <p>Quelle raison pouvez-vous donc avoir; et qui peut tant vous inquiéter.</p>
+          </sp>
+        </spGrp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Un songe affreux: je l'aurais raconté à Jason; mais j'ai craint qu'il ne se moquât de moi.</p>
+        </sp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <p>Ce songe est donc bien extravagant?</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>À tel point, que j'en suis encore toute épouvantée.</p>
+        </sp>
+        <spGrp who="#creuse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_mariez_moi">Ma mère, mariez-moi</title>
+            </desc>
+          </head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <l met="7">J'ai rêvé toute la nuit,</l>
+            <l met="7">Qu'on faisait trembler mon lit;</l>
+            <l met="7">J'ai vu luire des flambeaux,</l>
+            <l met="10">Médée en fureur tirer mes rideaux,</l>
+            <l met="7">Tenant en main un poignard.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <l met="7">Bon, c'était le cauchemar.</l>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+        </sp>
+        <spGrp who="#creuse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#passant_sur_le_pont_neuf">Passant sur le Pont-neuf</title>
+            </desc>
+          </head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <l met="6">Le feu prend à mes draps,</l>
+            <l met="6">Quelle effrayante image!</l>
+            <l met="6">Jason avec fracas</l>
+            <l met="6">Veut s'ouvrir un passage;</l>
+            <l met="4">J'ai beau me plaindre,</l>
+            <l met="8">À mon lit il ne peut atteindre;</l>
+            <l met="12">Le feu gagne toujours, il ne saurait l'éteindre.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <p>Vous êtes bien bonne de vous effrayer pour si peu de chose; vous avez rêvé de feu, c'est joie.</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Oui, mais j'ai rêve de femme, c'est trahison.</p>
+        </sp>
+        <stage>On entend une symphonie effrayante, pendant laquelle le tonnerre gronde, et les éclairs brillent.</stage>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Qu'entends-je! Quel bruit épouvantable!</p>
+        </sp>
+        <stage>Elle chante.</stage>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <p>Quelle grêle, quelle tempête.</p>
+          </sp>
+        </spGrp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <p>Cela ne durera pas, Madame, ce ne sont que des giboulées de mars.</p>
+        </sp>
+        <stage>Médée descend sur un manche à balai, entouré de Sorciers et de Démons.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Médée, Créuse, Cléone</stage>
+        <spGrp who="#cleone">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fraises">Des fraises</title>
+            </desc>
+          </head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="7">Quel objet s'offre à mes yeux,</l>
+          </sp>
+        </spGrp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <l met="6">C'est Médée, ou je meure,</l>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <l met="7">Son aspect m'est odieux,</l>
+          <l met="7">Viens, suis-moi, quittons ces lieux,</l>
+        </sp>
+        <stage>Médée touche Créuse de sa baguette</stage>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <l met="8">Demeure, demeure, demeure.</l>
+        </sp>
+        <stage>Cléone fuit.</stage>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Ah! Juste ciel! Je ne puis ni reculer, ni avancer.</p>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <p>Connais ta rivale, tu vas voir beau jeu; comment, petite effrontée, tu sais que Jason est mon Epoux, et tu souffres qu'il t'en conte?</p>
+        </sp>
+        <stage>Médée, au son de la Symphonie, fait des cercles avec sa baguette.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Médée, Sorciers, Démons, Créuse, ...</stage>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+        </sp>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_prince_belzebuth">Le Prince Belzébuth</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="6">Suivants de Belzébuth,</l>
+            <l met="6">Habitants du Cocyte,</l>
+            <l met="6">Suivants de Belzébuth</l>
+            <l met="6">À tous, honneur, salut.</l>
+            <l met="7">Amenez ici l'élite</l>
+            <l met="7">Des bons enfants du Sabbat,</l>
+            <l met="7">Venez tous accourez vite,</l>
+            <l met="7">Faites valoir mon contrat.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeursorciers">
+          <speaker>Chœur de Sorciers</speaker>
+          <stage>qui sortent de dessous le théâtre</stage>
+          <l met="5">Guin, guin, guerlin, guin,</l>
+          <l met="7">Guerlinguette, guerlinguette,</l>
+          <l met="4">Guin, guin, guin, guin,</l>
+          <l met="7">Guerlinguette, guerlinguin.</l>
+        </sp>
+        <stage>Le théâtre change, et représente un lieu effroyable. Troupe de Démons et de Magiciens.</stage>
+        <stage>Des sorciers conduisent un bouc avec cérémonie; Danses de Magiciens et de Démons.</stage>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <stage>à Créuse</stage>
+          <p>Comment, tu n'as pas encore peur? Mes amis, faites-lui un petit détail des maux qui lui sont préparés.</p>
+        </sp>
+        <sp who="#choeursorciersdemons">
+          <speaker>Chœur de Sorciers et de Démons</speaker>
+        </sp>
+        <spGrp who="#choeursorciersdemons">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_vous_avez_bon_air">Ah! Vous avez bon air</title>
+            </desc>
+          </head>
+          <sp who="#choeursorciersdemons">
+            <speaker>Chœur de Sorciers et de Démons</speaker>
+            <l met="6">Tremble, Créuse, tremble,</l>
+            <l met="6">Crains tous les maux ensemble,</l>
+            <l met="6">Tremble, Créuse, tremble,</l>
+            <l met="5">Et frémis d'effroi.</l>
+            <l met="6">Tremble, Créuse, tremble.</l>
+            <l met="6">Crains tous les maux ensemble,</l>
+            <l met="6">Tremble, Créuse, tremble,</l>
+            <l met="5">Et frémis d'effroi.</l>
+          </sp>
+        </spGrp>
+        <stage>Danse de Démons pour épouvanter Créuse.</stage>
+        <sp who="#choeurmagiciens">
+          <speaker>Chœur de Magiciens</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#choeurmagiciens">
+            <speaker>Chœur de Magiciens</speaker>
+            <l met="5">Que le mal de dent,</l>
+            <l met="5">L'asthme, la migraine,</l>
+            <l met="5">La fièvre quartaine,</l>
+            <l met="5">Le redoublement</l>
+            <l met="5">La serre, l'entraîne,</l>
+            <l met="5">L'étrangle à l'instant:</l>
+            <l met="5">La fièvre quartaine,</l>
+            <l met="5">La serre, l'entraîne</l>
+            <l met="5">Dans le monument.</l>
+          </sp>
+        </spGrp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <p>Mais en vérité cela est étonnant; voilà la première personne à qui je n'ai pas fait peur; voyez-vous comme elle est tranquille?</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+        </sp>
+        <spGrp who="#creuse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <l met="8">Je serais toujours tendre amante,</l>
+            <l met="8">Et j'ose ici vous défier:</l>
+          </sp>
+        </spGrp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <l met="8">Comment donc, rien ne t'épouvante!</l>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <l met="8">Vous ne faites que m'ennuyer,</l>
+        </sp>
+        <spGrp who="#creuse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#hesione">Menuet d'Hésione</title>
+            </desc>
+          </head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <l met="8">Satisfais ta barbare envie,</l>
+            <l met="8">Que l'Enfer s'unisse avec toi:</l>
+            <l met="8">Tu ne menaces que ma vie,</l>
+            <l met="8">Tu ne m'inspires point d'effroi.</l>
+          </sp>
+        </spGrp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <p>Patience, vous ne serez pas toujours si intrépide, ma petite mignonne; et je sais le moyen de me venger de vous, et de l'infidèle Jason.</p>
+        </sp>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reviendrai_demain">Je reviendrai demain au soir</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="8">Sur lui je vais jeter un sort</l>
+            <l met="6">Plus cruel que la mort.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <l met="8">Quoi, vous pourriez l'ensorceler?</l>
+          <l met="6">Je commence à trembler.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <stage>la touchant de sa baguette</stage>
+          <p>Va, je ne te retiens plus, tu peux aller trouver ton amant.</p>
+        </sp>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pont_avignon_belle">Tiens-moi bien</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="9">Tiens le bien tandis que tu le tiens,</l>
+            <l met="7">Tu ne le tiendras plus guère.</l>
+          </sp>
+        </spGrp>
+        <stage>Créuse s'en va.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Médée, Sorciers, et Démons</stage>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+        </sp>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_jeune_abbesse_de_ce_lieu">La jeune Abbesse de ce lieu</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="8">Rentrez dans l'infernal séjour,</l>
+            <l met="8">Armez pour moi la jalousie;</l>
+            <l met="8">Que Créuse éprouve à son tour</l>
+            <l met="8">L'horreur dont Médée est saisie;</l>
+            <l met="9">Agitez et tourmentez son cœur,</l>
+            <l met="8">Comme l'âme d'un procureur.</l>
+          </sp>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <p>Ah! Que je crains pour ma chère Princesse! Il n'en faut point douter, cette diablesse de Médée va se venger sur elle de ma perfidie; un mari est bien malheureux</p>
+            <p>quand il a une femme qui commande à baguette, et qui peut perdre sa rivale.</p>
+          </sp>
+        </spGrp>
+        <stage>Tous disparaît.</stage>
+        <stage>Le théâtre change, et représente un bois.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Jason<stage>seul en pleurant</stage>
+        </stage>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ces_filles_sont_si_jolies">Ces filles sont si jolies</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="8">Doit-elle la punir, hélas!</l>
+            <l met="8">D'avoir de si charmants appas;</l>
+            <l met="6">Quoi donc, est-ce sa faute</l>
+            <l met="8">S'ils me mettent en belle humeur?</l>
+            <l met="9">Ah! Que ma femme est sotte, lon la,</l>
+            <l met="6">Ah! Que ma femme est sotte.</l>
+            <p>Que ne suit-elle mon exemple; c'est à mon avis, la seule manière dont une femme devrait se venger d'un époux fidèle... Mais, que vois-je, c'est Créuse?</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Créuse, Jason</stage>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>À quoi diable vous exposez-vous? Allez-vous en, ma mie, allez-vous en, vous cherchez noise.</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Que je m'en aille! Tu me donnes là un</p>
+          <p>beau conseil; ah! Perfide, sans doute, tu me trahis.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Non, ou le diable m'emporte.</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Médée lui aura jeté le sort; que je suis malheureuse!</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Et non, de par tous les diables, non, je vous jure que je vous adore.</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <l met="7">Hé bien, si tu m'aimes encore,</l>
+            <l met="6">Fais-le-moi donc connaître.</l>
+            <p>Suis mes pas, et quitte des lieux où te retient ma rivale.</p>
+          </sp>
+        </spGrp>
+        <stage>Elle lui fait signe de le suivre.</stage>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Allons-donc, vous faites de moi tout ce que vous voulez.</p>
+        </sp>
+        <stage>Il va pour la suivre, Médée l'arrête.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Médée, Jason</stage>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <p>Arrête.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+        </sp>
+        <spGrp who="#jason">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#catherine">Ton humeur est Catherine</title>
+            </desc>
+          </head>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <l met="7">Non, je ne veux rien entendre;</l>
+          </sp>
+        </spGrp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <l met="7">Quoi, perfide, tu me suis?</l>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="7">Je ne saurais m'en défendre.</l>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <l met="7">Elle meurt, si tu la suis;</l>
+          <l met="7">Crains ma puissance extrême.</l>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="7">Bon! Quand on est amoureux,</l>
+          <l met="7">Un clin d'œil de ce qu'on aime</l>
+          <l met="7">Tire plus que quatre bœufs.</l>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <p>Infidèle! Oses-tu, sans rougir, avouer une pareille faiblesse?</p>
+        </sp>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#changement_pique">Changement pique l'appétit</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="8">Pour moi, sans craindre qu'on me fronde,</l>
+            <l met="8">Je cours de la brune à la blonde,</l>
+            <l met="8">Et de tout je fais mon profit;</l>
+            <l met="8">Changement pique l'appétit.</l>
+            <p>En conscience, je ne puis vivre avec vous: vous savez tout ce que vous avez fait.</p>
+          </sp>
+        </spGrp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <p>Ingrat, tu me reproches des crimes que je n'ai commis que pour toi.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Oui, vous verrez que c'est moi qui lui ai dit de tuer son père: ceci n'est pas mauvais; accuser l'Amant, des fautes que l'Amour fait commettre.</p>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <p>Apparemment.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+        </sp>
+        <spGrp who="#jason">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <l met="8">Quoi, le poison, le parricide...</l>
+          </sp>
+        </spGrp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <l met="8">C'est pour t'avoir aimé, perfide,</l>
+          <l met="8">Que j'en fis éclater l'horreur.</l>
+          <l met="8">Amour, jusqu'où va ta puissance!</l>
+          <l met="8">Avec le repos de mon cœur,</l>
+          <l met="8">Il m'en coûte mon innocence.</l>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Voilà une belle bagatelle, cela est arrivé à bien d'autres.</p>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <p>Ce qui me console, c'est que ma rivale ne portera pas plus loin l'outrage qu'elle me fait.</p>
+        </sp>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_faites_vous_marguerite">Que faites-vous, Marguerite</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="7">Tu vois ma fureur extrême,</l>
+            <l met="7">Gardes-toi de m'outrager:</l>
+            <l met="7">Un cœur qui perd ce qu'il aime,</l>
+            <l met="7">N'a plus rien à ménager.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <l met="7">Craignez ma fureur extrême.</l>
+          </sp>
+        </spGrp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <l met="7">Tu vois ma fureur extrême.</l>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="7">Gardez-vous de vous venger,</l>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <l met="7">Garde-toi de m'outrager.</l>
+        </sp>
+        <spGrp>
+          <caption>Tous deux</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Un cœur qui, ...</l>
+          </sp>
+        </spGrp>
+        <stage>Jason s'en va.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Médée et Jason</stage>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <p>Voyez-vous comme il me quitte? C'en est trop, vengeons-nous.</p>
+        </sp>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_le_bout_du_bras">C'est le bout du bras</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="8">Démons, venez faire dans ces lieux</l>
+            <l met="5">Tapage, tapage,</l>
+            <l met="6">Ceci devient sérieux,</l>
+            <l met="4">Servez ma rage.<stage type="bis">bis</stage>
+            </l>
+            <l met="6">Vite, transformez-vous</l>
+            <l met="8">En chats-huants, en loups-garous.</l>
+          </sp>
+        </spGrp>
+        <stage>Les Démons transformés en monstres, traversent le théâtre.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="characters">Créuse<stage>seule</stage>
+        </stage>
+        <stage>Le théâtre représente la mer.</stage>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#contre_engagement">Contre un engagement</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="6">J'ai perdu mon amant,</l>
+            <l met="6">L'ingrat éteint sa flamme,</l>
+            <l met="6">À quel affreux tourment</l>
+            <l met="6">Va-t-il livrer mon âme?</l>
+            <l met="6">Quoi, sans craindre le blâme,</l>
+            <l met="6">Le perfide Jason</l>
+            <l met="6">Me quitte pour sa femme,</l>
+            <l met="6">Dieux, quelle trahison!</l>
+            <p>Mais le voici lui-même; voyons un peu comme il s'en tirera.</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="characters">Jason<stage>en fuyant</stage>, Créuse</stage>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Ah! Ventrebleu, quel ravage! Médée fait ici le diable à quatre, l'Enfer est déchaîné contre nous, et les Dieux sont sourds à nos vœux.</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+        </sp>
+        <spGrp who="#creuse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_serrure">La Serrure</title>
+            </desc>
+          </head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <l met="8">Leurs bontés vous sont favorables,</l>
+            <l met="8">Lorsqu'ils suspendent leurs courroux;</l>
+            <l met="8">S'ils punissaient tous les coupables,</l>
+            <l met="8">Vous auriez à trembler pour vous.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Il est vrai, c'est moi qui suis cause de tout</p>
+          <p>cela; et pour prévenir la punition que je mérite, ma prudence me conseille de déguerpir.</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Traître, tu veux me quitter, et je serais encore assez folle pour t'aimer! Non.</p>
+        </sp>
+        <spGrp who="#creuse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierre_bagnolet">Pierre Bagnolet</title>
+            </desc>
+          </head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <l met="8">Avec toi plutôt que de vivre,</l>
+            <l met="8">Je préférerais le trépas;</l>
+            <l met="7">Tu n'as pas voulu me suivre,</l>
+            <l met="8">Lorsque je t'appelais tout bas.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="10">Je le voulais bien, je ne pouvais pas,</l>
+          <l met="8">Mamour, je voulais bien vous suivre,</l>
+          <l met="8">Mais ma foi je ne pouvais pas.</l>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Le joli garçon!</p>
+        </sp>
+        <spGrp who="#creuse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ciel_benisse_besogne">Réjouissez-vous, bons Français</title>
+            </desc>
+          </head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <l met="8">Et pourquoi ne pouvais-tu pas?</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="8">J'étais dans un grand embarras,</l>
+          <l met="8">Et si je l'avais fait, Médée</l>
+          <l met="8">Vous aurait bien accommodée.</l>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Non, tu prétends en vain t'excuser:</p>
+          <p>l'exemple de Médée suffit pour m'instruire.</p>
+        </sp>
+        <pb n="245"/>
+        <stage type="musical_indication">Menuet</stage>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <l met="4">Un infidèle</l>
+            <l met="7">Doit toujours nous alarmer,</l>
+            <l met="4">Malheur à celle</l>
+            <l met="4">Qu'il sait charmer.</l>
+            <l met="4">Quand d'un parjure</l>
+            <l met="7">Nous écoutons le serment,</l>
+            <l met="4">Son feu ne dure</l>
+            <l met="3">Qu'un moment.</l>
+            <l met="4">Si le volage</l>
+            <l met="4">Qui nous engage</l>
+            <l met="4">Devient heureux,</l>
+            <l met="4">Il rompt ses nœuds.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Il est vrai que je suis un peu coquin, mais ce n'est pas ma faute: pourquoi êtes-vous si belle?</p>
+        </sp>
+        <spGrp who="#jason">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lapalisse">Monsieur la Palisse</title>
+            </desc>
+          </head>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <l met="7">C'est une fatalité,</l>
+            <l met="7">Tout doit vous rendre les armes;</l>
+            <l met="7">Est-il de fidélité</l>
+            <l met="7">À l'épreuve de vos charmes?</l>
+          </sp>
+        </spGrp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Volage!</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Cruelle!</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>C'est trop m'abuser.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>C'est trop m'accuser.</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>C'est trop m'abuser.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>C'est trop m'accuser... Voilà ce qui s'appelle un duo en prose.</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Le Roi vient, je parts.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Attendez donc que je me justifie, et que je profite d'un temps si favorable.</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Non, non, car je n'aurais plus rien à dire au cinquième Acte.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 13</head>
+        <stage type="characters">Créon, Gardes, Jason</stage>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+        </sp>
+        <spGrp who="#creon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#joconde">Joconde</title>
+            </desc>
+          </head>
+          <sp who="#creon">
+            <speaker>Créon</speaker>
+            <l met="8">Quoi, je vois périr dans ces lieux</l>
+            <l met="6">Mon peuple misérable!</l>
+            <l met="8">Faites tomber sur moi, Grands Dieux,</l>
+            <l met="6">Le malheur qui l'accable:</l>
+            <l met="8">Mais vous m'immolez dans chacun</l>
+            <l met="6">De ces sujets que j'aime.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="8">À la vérité, c'est tout un,</l>
+          <l met="6">Mais ce n'est pas de même.</l>
+          <p>N'accusez que moi seul dans tous les maux qui désolent ces lieux. Médée est venue me chercher, permettez, Seigneur, que je parte avec elle; j'épouserai votre fille une autre fois.</p>
+        </sp>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+        </sp>
+        <spGrp who="#creon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jus_octobre">Quand je tiens de ce jus d'Octobre</title>
+            </desc>
+          </head>
+          <sp who="#creon">
+            <speaker>Créon</speaker>
+            <l met="8">Non, cette fatale ennemie</l>
+            <l met="8">Ferait d'inutiles efforts;</l>
+            <l met="8">Je veux qu'elle perde la vie.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="8">Songez qu'elle a le diable au corps.</l>
+        </sp>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+          <p>Quand elle aurait cent fois plus de puissance, je ne m'en embarrasse point.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 14</head>
+        <stage type="characters">Un Exempt, Créon, Jason</stage>
+        <sp who="#lexempt">
+          <speaker>L'Exempt</speaker>
+          <stage>à Créon</stage>
+          <p>Bonne nouvelle, Seigneur, je viens d'arrêter Médée, et vous l'allez voir.</p>
+        </sp>
+        <spGrp>
+          <caption>Créon et jason<stage>en tremblant</stage>
+          </caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <p>Miséricorde!</p>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Sauve qui peut.</p>
+        </sp>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+          <p>Laisse-moi faire, je me charge du soin de la punir.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <stage>en pleurant</stage>
+          <p>La pauvre diablesse, elle me fait pitié.<stage>Il se jette à genoux devant le Roi.</stage>Ah! Seigneur, je vous demande sa grâce.</p>
+        </sp>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+          <p>Vous me demandez sa grâce! En vérité, vous êtes bien bon, et voilà ce qui s'appelle un effort des plus généreux.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Ce n'est pas que je n'aie grande envie d'être veuf, mais je voudrais que ce fût par les bonnes voies.</p>
+        </sp>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+          <p>Quelle sorte donc de mes Etats, si elle veut éviter la mort; mais la voici, la scélérate.</p>
+        </sp>
+        <stage>Jason voyant Médée, se sauve.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 15</head>
+        <stage type="characters">Médée, Créon</stage>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+          <p>C'est donc vous, Madame la Sorcière? Je devrais vous traiter comme vous le méritez, mais je suis bon Prince, et je borne ma vengeance à votre exil.</p>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <p>Vous me faites-là une belle grâce!</p>
+        </sp>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#menuet_de_granval">Menuet de Grandval</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="8">Vous me choisissez pour victime,</l>
+            <l met="8">Et vous couronnez mon époux:</l>
+            <l met="8">Pourquoi protégez-vous le crime?</l>
+            <l met="8">Ou pourquoi le punissez-vous?</l>
+          </sp>
+        </spGrp>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+          <p>Il s'agit bien de me parler raison, ai-je quelque compte à rendre?</p>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+        </sp>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#oh_oh_se_dit_il_c_est_la_raison">Ho ho, ce dit-il, c'est la raison</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="6">À ce fatal voyage</l>
+            <l met="6">Je ne puis consentir:</l>
+            <l met="6">Quel sujet vous engage</l>
+            <l met="6">À me faire partir?</l>
+          </sp>
+        </spGrp>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+          <l met="9">Ho ho! Je le veux, c'est la raison</l>
+          <l met="8">Qu'un Roi soit maître en sa maison.</l>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <p>Hé bien, je partirai, puisque vous le voulez bien, mais que Jason me suive.</p>
+        </sp>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+          <p>Non, je prétends qu'il reste ici.</p>
+        </sp>
+        <spGrp who="#creon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#embarquez_vous_mesdames">Embarquez vous, Mesdames</title>
+            </desc>
+          </head>
+          <sp who="#creon">
+            <speaker>Créon</speaker>
+            <l met="6">Embarquez-vous, Madame,</l>
+            <l met="6">Sans perdre un seul moment.</l>
+          </sp>
+        </spGrp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <l met="6">Vous accablez mon âme</l>
+          <l met="6">Du plus cruel tourment,</l>
+          <l met="4">De mon époux</l>
+          <l met="6">Pourquoi me privez-vous?</l>
+          <l met="4">C'est m'offenser,</l>
+          <l met="6">Je ne puis m'en passer.</l>
+        </sp>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+          <p>Ah! Que de discours: écoute le serment que je vais faire, il est terrible.</p>
+        </sp>
+        <spGrp who="#creon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_les_ombres_se_rejouissent">Que les Ombres se réjouissent</title>
+            </desc>
+          </head>
+          <sp who="#creon">
+            <speaker>Créon</speaker>
+            <l met="8">Si demain, de cette sorcière</l>
+            <l met="8">L'aspect trouble encore ces lieux,</l>
+            <l met="8">Lancez sur moi, lancez, Grands Dieux,</l>
+            <l met="8">Tous les traits de votre colère:</l>
+            <l met="8">Que je sois réduit en poussière,</l>
+            <l met="8">Que Corinthe soit sans raisin,</l>
+            <l met="8">Que je puisse plus enfin,</l>
+            <l met="8">Jusqu'à mon heure dernière,</l>
+            <l met="8">Boire de son excellent vin.</l>
+          </sp>
+          <sp who="#creon">
+            <speaker>Créon</speaker>
+            <p>Va, va, je me ris de ton serment: mais voici sans doute les Matelots qui doivent me conduire; s'imaginent-ils que j'aie besoin d'eux pour partir? Je suis venue par les airs, et je puis m'en retourner par la même voiture; laissons les parler de la pluie et du beau temps. Comme je ne veux point sortir de Corinthe sans être vengée, servons-leur un petit plat de mon métier.</p>
+          </sp>
+        </spGrp>
+        <stage>Il s'en va.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 16</head>
+        <stage type="characters">Médée</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 17</head>
+        <stage type="characters">Une Matelote</stage>
+        <stage>Les Matelots entrent au son de la Symphonie.</stage>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#creon">
+            <speaker>Créon</speaker>
+            <l met="8">Le temps est calme, et le vent doux,</l>
+            <l met="4">Embarquons nous;<stage type="bis">bis</stage>
+            </l>
+            <l met="7">Menons avec nous l'Amour,</l>
+            <l met="8">C'est lui qui répond du beau jour:</l>
+            <l met="5">Heureux Matelots</l>
+            <l met="6">Ne craignez point les flots,</l>
+            <l met="9">Son bandeau deviendra notre voile,</l>
+            <l met="5">Ses traits pleins d'appas</l>
+            <l met="6">Nous servirons de mâts;</l>
+            <l met="7">Et quand l'astre qui nous suit</l>
+            <l met="6">Fera place à la nuit,</l>
+            <l met="8">Son flambeau sera notre étoile.</l>
+          </sp>
+        </spGrp>
+        <stage>Les Matelots dansent.</stage>
+        <sp who="#unmatelot">
+          <speaker>Un Matelot</speaker>
+          <stage>chantant</stage>
+          <l met="3">Noirs orages</l>
+          <l met="7">Qui grondez sur les ouvrages,</l>
+          <l met="4">C'est trop siffler,</l>
+          <l met="5">Cessez d'accabler</l>
+          <l met="8">Par vos haleines indiscrètes</l>
+          <l met="6">D'infortunés poètes.</l>
+          <l met="3">Une lyre</l>
+          <l met="6">Que tout le monde admire,</l>
+          <l met="5">Malgré son orgueil</l>
+          <l met="6">Doit craindre encore l'écueil:</l>
+          <l met="4">Tel dans le port</l>
+          <l met="4">Brave le fort,</l>
+          <l met="6">Qu'un méchant envieux</l>
+          <l met="6">Peut rendre malheureux.</l>
+        </sp>
+        <stage>On danse.</stage>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#unmatelot">
+            <speaker>Un Matelot</speaker>
+            <l met="7">Des vents le cruel ravage</l>
+            <l met="7">Nous éloigne du rivage,</l>
+            <l met="8">Et trompe souvent nos désirs;</l>
+            <l met="8">Mais qu'il est doux, après l'orage</l>
+            <l met="8">D'arriver au port des plaisirs.</l>
+          </sp>
+        </spGrp>
+        <sp who="#unematelote">
+          <speaker>Une Matelote</speaker>
+          <l met="7">Barbon qui veut encor faire</l>
+          <l met="7">Le voyage de Cythère</l>
+          <l met="8">Se flatte en vain d'un heureux sort:</l>
+          <l met="8">Il a toujours le vent contraire,</l>
+          <l met="8">Quand il croit arriver au port.</l>
+        </sp>
+        <sp who="#unematelote">
+          <speaker>Une Matelote</speaker>
+          <l met="7">Matelots dans le bel âge</l>
+          <l met="7">Voguez sans craindre l'orage,</l>
+          <l met="8">Et n'attendez que de beaux jours:</l>
+          <l met="8">Il n'est qu'un temps où l'on s'engage</l>
+          <l met="8">Dans les voyages de long cours.</l>
+        </sp>
+        <stage>Il s'élève une tempête sur les flots.</stage>
+        <sp who="#choeurmatelots">
+          <speaker>Chœur de Matelots</speaker>
+        </sp>
+        <spGrp who="#choeurmatelots">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tourelouribo">Ho, ho, tourelouribo</title>
+            </desc>
+          </head>
+          <sp who="#choeurmatelots">
+            <speaker>Chœur de Matelots</speaker>
+            <l met="9">Quel bruit! Quel épouvantable orage!</l>
+            <l met="7">Ho, ho, tourelouribo,</l>
+            <l met="7">Les flots couvrent le rivage</l>
+            <l met="7">Ho, ho, tourelouribo,</l>
+            <l met="7">Sauvons-nous tous à la nage</l>
+            <l met="7">Ho, ho, tourelouribo.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 18</head>
+        <stage type="characters">Médée<stage>seule</stage>
+        </stage>
+        <stage>Le théâtre change, et représente le palais de Créon.</stage>
+        <spGrp who="#choeurmatelots">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ce_n_est_point_par_effort">Ce n'est point par effort qu'on aime</title>
+            </desc>
+          </head>
+          <sp who="#choeurmatelots">
+            <speaker>Chœur de Matelots</speaker>
+            <l met="8">Malgré ma fureur implacable</l>
+            <l met="8">D'effroi tous mes sens sont glacés!</l>
+            <l met="8">En vain sur un époux coupable,</l>
+            <l met="8">Tous mes traits vont être lancés,</l>
+            <l met="8">Je suis plus méchante qu'un diable,</l>
+            <l met="8">Et je ne crois pas l'être assez.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#choeurmatelots">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#trot">Il allait le trot, le trot</title>
+            </desc>
+          </head>
+          <sp who="#choeurmatelots">
+            <speaker>Chœur de Matelots</speaker>
+            <l met="6">Brillant flambeau des cieux</l>
+            <l met="6">Qui rends nos champs fertiles!</l>
+            <l met="6">Ô toi sans qui les yeux</l>
+            <l met="6">Nous seraient inutiles!</l>
+            <l met="10">Soleil, permets, que de ton chariot,</l>
+            <l met="6">Que de ton chariot,</l>
+            <l met="10">Pour un moment je me fasse un brûlot;</l>
+            <l met="10">Que me voyant venir sur lui le trot, le trot, le trot,</l>
+            <l met="10">Corinthe en feu brûle comme un fagot.</l>
+            <p>Mais pour m'exciter encore plus à la vengeance, ne ferais-je pas bien d'appeler les furies? Non, elles me sont inutiles, et je ferai bien moi seule autant de bruit que quatre: faisons comme si elles y étaient.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#choeurmatelots">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra</desc>
+          </head>
+          <sp who="#choeurmatelots">
+            <speaker>Chœur de Matelots</speaker>
+            <l met="4">Portons nos coups</l>
+            <l met="4">D'intelligence,</l>
+            <l met="4">Rien n'est si doux</l>
+            <l met="4">Que la vengeance.</l>
+            <p>Mais j'aperçois mon coquin de mari: contraignons nous un moment, et faisons bien la doucette, pour obtenir de lui le moyen d'exécuter mon projet.</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 19</head>
+        <stage type="characters">Jason, Médée</stage>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+        </sp>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#apercus_en_songe">L'autre nuit j'aperçus en songe</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="8">Enfin voici l'instant funeste</l>
+            <l met="8">Qui doit me séparer de vous,</l>
+            <l met="8">Le souvenir de mon époux</l>
+            <l met="8">Est l'unique bien qui me reste,</l>
+            <l met="8">Du moins en me manquant de foi,</l>
+            <l met="8">Souvenez-vous un peu de moi.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+        </sp>
+        <spGrp who="#jason">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#car_mon_coeur_n_est_point_partage">Car mon cœur n'est point partagé</title>
+            </desc>
+          </head>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <l met="7">Ma femme, consolez-vous,</l>
+            <l met="7">Vous aurez de mes nouvelles,</l>
+            <l met="7">Quand vous serez loin d'ici,</l>
+            <l met="8">Je vous écrirai une lettre.</l>
+            <p>À propos, je ne sais pas écrire.</p>
+          </sp>
+        </spGrp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+        </sp>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#filles_montpellier">Les Filles de Montpellier</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="7">Ah! Que cet éloignement</l>
+            <l met="7">Sera cruel pour ma flamme;</l>
+            <l met="7">Que dans cet embrassement</l>
+            <l met="7">Je soulage au moins, mon âme!</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="3">Aïe aïe aïe</l>
+          <l met="4">Aïe aïe, ma femme,</l>
+          <l met="5">Ma femme, aïe aïe aïe.</l>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <p>J'espère que vous ne me refuserez pas la grâce que je vais vous demander.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Oh! N'en douter point! un mari peut-il rien refuser à sa femme quand elle s'en va? Parlez, ma mignonne, de quoi s'agit-il?</p>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <p>Permettez, mon fils, que ma petite famille me suive.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Mes enfants? Oh pour cela non, ils sont trop bien ici; Créuse les aime, comme s'ils étaient à elle, et ils appellent déjà Créon leur grand-père.</p>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <p>Hé bien, soit.</p>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="6">Tout comme il vous plaira</l>
+            <l met="3">Larira</l>
+            <l met="6">Tout tout comme il vous plaira.</l>
+          </sp>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <p>Puisque vous ne voulez pas qu'ils m'accompagnent,</p>
+          </sp>
+        </spGrp>
+        <stage>Elle s'en va, et revient sur le champ.</stage>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_filles_de_nanterre">Les Filles de Nanterre</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="6">Ah! Pour dernière grâce</l>
+            <l met="6">Conduisez-moi près d'eux,</l>
+            <l met="6">Qu'au moins je les embrasse,</l>
+            <l met="6">C'est tout ce que je veux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Ce que vous demandez est raisonnable, j'y consens; mais allez-y toute seule, car j'ai le cœur si tendre, que je ne pourrais m'empêcher de pleurer.</p>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+        </sp>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jean_tu_t_en_vas">Jean, tu t'en vas</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="10">Adieu, Jason, vous ne m'aimez donc plus,</l>
+            <l met="12">J'ai fait pour vous toucher des efforts superflus.</l>
+            <l met="12">Adieu.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="12">Bonsoir.</l>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <l met="12">Adieu, mon cher... Jusqu'au revoir.</l>
+        </sp>
+        <pb n="260"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 20</head>
+        <stage type="characters">Créuse, Jason</stage>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+        </sp>
+        <spGrp who="#jason">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sont_les_garcons_du_port_au_bled">Sont les garçons du Port-au-Blé</title>
+            </desc>
+          </head>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <l met="8">Médée abandonne ces lieux<stage type="bis">bis</stage>
+            </l>
+            <l met="8">J'ai reçu ses derniers adieux.<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Aurez-vous encore l'injustice</l>
+            <l met="8">D'accuser mon cœur d'artifice?</l>
+          </sp>
+        </spGrp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+        </sp>
+        <spGrp who="#creuse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+            </desc>
+          </head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <l met="8">Seigneur j'ai tout appris du Roi,</l>
+            <l met="8">Enfin vous allez être à moi.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="6">Notre amour dans Corinthe,</l>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <l met="2">Hé bien</l>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="6">Va s'expliquer sans crainte,</l>
+          <l met="5">Vous m'entendez bien.</l>
+          <p>Que je suis heureux! Me voilà délivré de ma femme.</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Elle est encore ici, et je ne suis pas tranquille.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="4">Ne craignez rien;</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#hanneton">Anneton vole, vole</title>
+            </desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="6">Tendre amour vole, vole.</l>
+          </sp>
+        </spGrp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>À propos, pendant que nous nous amusons à chanter, je ne songe pas que mon père est fort embarrassé: il s'est avisé de faire un serment qui n'était pas fort nécessaire, puisque Médée est encore ici, malgré la règle des vingt-quatre heures.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>C'est une licence qu'elle a prise... Mais j'aperçois Créon: qu'a-t'il donc? Il me paraît fâché.</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <l met="9">Ciel! Comme il a les yeux égarés!</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 21</head>
+        <stage type="characters">Créon, Gardes, Créuse, Jason</stage>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+        </sp>
+        <spGrp who="#creon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ouverture_de_bellerophon">Ouverture de Bellérophon</title>
+            </desc>
+          </head>
+          <sp who="#creon">
+            <speaker>Créon</speaker>
+            <l met="8">Démons qui causez mon effroi,</l>
+            <l met="4">Sachons pourquoi</l>
+            <l met="8">Vous venez m'insulter chez moi.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#creon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_autre_jour_a_sa_table">L'autre jour à sa table</title>
+            </desc>
+          </head>
+          <sp who="#creon">
+            <speaker>Créon</speaker>
+            <l met="6">Où suis-je? Le Ténare,</l>
+            <l met="6">Le Styx, le Phlegeton,</l>
+            <l met="3">L'Achéron,</l>
+            <l met="6">L'Hérèbe, le Tartare,</l>
+            <l met="6">Cerbère, et cætera</l>
+            <l met="10">Ah! que vois-je ici! Ah! que vois-je là!</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="1">Ah!</l>
+          <l met="6">Le bonhomme en tient là.</l>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <stage>allant au-devant de son père</stage>
+        </sp>
+        <spGrp who="#creuse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#belle_brune">Belle brune</title>
+            </desc>
+          </head>
+          <sp who="#creuse">
+            <speaker>Créuse</speaker>
+            <l met="3">Ah! Mon père,</l>
+            <l met="3">Ah! Mon père,</l>
+          </sp>
+        </spGrp>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+          <stage>la prenant pour Médée</stage>
+          <l met="6">Quoi Médée en ces lieux!</l>
+          <l met="7">Je te revois donc, sorcière?</l>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <l met="3">Ah! Mon père,</l>
+          <l met="3">Ah! Mon père,</l>
+        </sp>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+        </sp>
+        <spGrp who="#creon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_hotesse_de_ceans">L'hôtesse de céans.</title>
+            </desc>
+          </head>
+          <sp who="#creon">
+            <speaker>Créon</speaker>
+            <l met="10">Tu parais ici malgré mon serment!</l>
+            <l met="12">Je ne passerai plus que pour un bas Normand.</l>
+            <l met="6">Que dira-t'on de moi?</l>
+            <l met="6">Je suis un plaisant Roi!</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="6">Cela vous apprend bien</l>
+          <l met="6">À ne jurer de rien.</l>
+        </sp>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+        </sp>
+        <spGrp who="#creon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#songes_funestes_d_atys">Songes funestes d'Atys</title>
+            </desc>
+          </head>
+          <sp who="#creon">
+            <speaker>Créon</speaker>
+            <l met="10">Ne pense pas te soustraire à mes coups,</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="6">Ô Ciel! Que faites-vous.</l>
+        </sp>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+          <l met="7">Je veux lui donner la mort,</l>
+          <l met="7">Tiens, voilà ton passeport.</l>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <l met="7">Ceci devient un peu fort.</l>
+        </sp>
+        <sp who="#creon">
+          <speaker>Créon</speaker>
+          <l met="7">Qui s'oppose à mon transport?</l>
+          <l met="7">Et quoi des lutins encore!</l>
+          <l met="6">Astaroth, Couplegor,</l>
+          <l met="3">Belphégor</l>
+          <l met="10">Pour m'arrêter tout l'Enfer prend l'essor.</l>
+          <l met="4">Je meurs d'effroi,</l>
+          <l met="4">Sauvons le Roi,</l>
+          <l met="10">Je traîne tous les diables après moi.</l>
+        </sp>
+        <stage>Il s'en va.</stage>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Gardes, conduisez Créon aux petites maisons.</p>
+        </sp>
+        <sp who="#creuse">
+          <speaker>Créuse</speaker>
+          <p>Quel ordre donnez-vous! Ah! Mon cher Jason courons plutôt à son secours.</p>
+        </sp>
+        <stage>Créuse entre dans le Palais, Jason y veut entrer, les portes se ferment.</stage>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Attendez, ma bouchonne: je vous suis, mais que veut dire ceci? On me ferme la porte au nez. Créuse, Créuse.</p>
+        </sp>
+        <spGrp who="#jason">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ouvrez_moi_la_porte_petite_nanon">Ouvrez-moi la porte, petite Nanon</title>
+            </desc>
+          </head>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <l met="5">Ouvrez donc la porte</l>
+            <l met="5">À votre Jason.</l>
+            <p>Créuse, Créuse! elle ne répond rien.</p>
+          </sp>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <p>Que vois-je? Le feu est à la maison: ma foi je suis bienheureux de n'y être pas entré... Au feu, au feu.</p>
+          </sp>
+        </spGrp>
+        <stage>Le palais de Créon paraît tout en feu.</stage>
+        <pb n="265"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 22</head>
+        <stage type="characters">Jason, Médée</stage>
+        <stage>Médée paraît dans les airs dans un petit phaéton tiré par deux chiens; un petit diable lui sert de cocher.</stage>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+        </sp>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#flon_flon">Flon, flon</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="6">Jason prenez courage,</l>
+            <l met="6">Quoi vous n'osez entrer,</l>
+            <l met="6">Pour votre mariage</l>
+            <l met="6">J'ai fait tout préparer</l>
+            <l met="2">Flon, flon</l>
+            <l met="6">Larira don daine:</l>
+            <l met="2">Guai guai</l>
+            <l met="5">Larira don dé.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Ah! la chienne, elle se moque encore de moi, ma chère Créuse, qu'êtes-vous devenue.</p>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+        </sp>
+        <spGrp who="#medee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#robin_ture_lure_lure">Robin turelure</title>
+            </desc>
+          </head>
+          <sp who="#medee">
+            <speaker>Médée</speaker>
+            <l met="7">Elle brûle en ce moment</l>
+            <l met="7">De la flamme la plus pure,</l>
+            <l met="7">Va lui porter mon enfant</l>
+            <l met="3">Turelure</l>
+            <l met="7">De l'onguent pour la brûlure</l>
+            <l met="7">Robin turelure.</l>
+          </sp>
+        </spGrp>
+        <pb n="266"/>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Et mes enfants, qu'en as-tu fait?</p>
+        </sp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <p>Va, va, ne t'en embarrasse pas; ils n'étaient point à toi.</p>
+        </sp>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Ah! Ventrebleu, je suis au désespoir, tu ne mourras que de ma main.</p>
+        </sp>
+        <spGrp who="#jason">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#on_vous_en_ratisse">On vous en ratisse</title>
+            </desc>
+          </head>
+          <sp who="#jason">
+            <speaker>Jason</speaker>
+            <l met="7">C'en est trop veille guenon,</l>
+            <l met="7">De ta noire trahison,</l>
+            <l met="7">Il faut que je te punisse.</l>
+          </sp>
+        </spGrp>
+        <sp who="#medee">
+          <speaker>Médée</speaker>
+          <l met="7">Voyez comme il m'atteindra,</l>
+          <l met="5">On vous en ratisse,</l>
+          <l met="7">On vous en ratissera.</l>
+        </sp>
+        <stage>Le char de Médée se perd dans les nues.</stage>
+        <sp who="#jason">
+          <speaker>Jason</speaker>
+          <p>Ma carabine, que je la tire au vol.</p>
+        </sp>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

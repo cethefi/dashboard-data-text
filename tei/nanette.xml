@@ -1,0 +1,995 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="nanette">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Nanette</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Thomas Laffichard</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Rousseau</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BnF ms. fr. 9321</bibl>
+        <bibl type="intermediarySource">P. Beaucé</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="nanette" sex="UNKNOWN">
+            <persName>Nanette</persName>
+          </person>
+          <person xml:id="charlot" sex="UNKNOWN">
+            <persName>Charlot</persName>
+          </person>
+          <person xml:id="tourangeau" sex="UNKNOWN">
+            <persName>Tourangeau</persName>
+          </person>
+          <person xml:id="poitevin" sex="UNKNOWN">
+            <persName>Poitevin</persName>
+          </person>
+          <person xml:id="barnabas" sex="UNKNOWN">
+            <persName>Barnabas</persName>
+          </person>
+          <person xml:id="choeurdepoissardes" sex="UNKNOWN">
+            <persName>Chœur de poissardes</persName>
+          </person>
+          <person xml:id="barnaba" sex="UNKNOWN">
+            <persName>Barnaba</persName>
+          </person>
+          <person xml:id="troupe_de_bachoteurs" sex="UNKNOWN">
+            <persName>Troupe de bachoteurs</persName>
+          </person>
+          <person xml:id="troupe_de_poissardes" sex="UNKNOWN">
+            <persName>Troupe de poissardes</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie de<emph>Naïs</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#nanette">Nanette</role>
+          <roleDesc>blanchisseuse</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#polichinelle">Polichinelle</role>
+          <roleDesc>fils d'un fameux marchand de marée déguisé en porteur d'eau</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#charlot">Charlot</role>
+          <roleDesc>ami de Polichinelle</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#tourangeau">Tourangeau</role>
+          <roleDesc>laquais, amant de Nanette</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#poitevin">Poitevin</role>
+          <roleDesc>autre laquais et amant de Nanette</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#barnaba">Barnaba</role>
+          <roleDesc>vieux pêcheur, père de Nanette</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_bachoteurs">Troupe de bachoteurs</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_poissardes">Troupe de poissardes</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">Le théâtre représente les rives de la Seine.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Polichinelle, Charlot</stage>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#au_bord_d_un_clair_ruisseau">Au bord d'un clair ruisseau</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="6">Au bord de ce ruisseau</l>
+            <l met="6">Je cherche ma bergère,</l>
+            <l met="6">Dans sa course légère</l>
+            <l met="6">Regardons couler l'eau.</l>
+            <l met="6">Ainsi passent les jours</l>
+            <l met="6">Du printemps de mon âge,</l>
+            <l met="6">Mais, pour en faire usage,</l>
+            <l met="6">Je les donne aux amours.</l>
+            <p>Il faut avouer que Nanette, quoique simple blanchisseuse, est une beauté parfaite: ce sont des traits, des yeux, une bouche... ah! Quelle bouche! L'as-tu vue?</p>
+          </sp>
+        </spGrp>
+        <sp who="#charlot">
+          <speaker>Charlot</speaker>
+          <p>Pas encore, mais vous m'en avez souvent parlé. Je suis surpris, entre nous, que le fils unique d'un gros marchand de marée, bon</p>
+          <p>bourgeois de Paris, et quasiment marguillion, se soit affolé d'une pauvre blanchisseuse.</p>
+        </sp>
+        <spGrp>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <p>Tais-toi, la  beauté surpasse tous les rangs.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#jus_octobre">Jus d'octobre</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Je ne suis plus ce cœur volage,</l>
+            <l met="8">Aussi léger que les Zéphyrs:</l>
+            <l met="8">Je trouve dans mon esclavage</l>
+            <l met="8">Ma gloire ensemble et mes plaisirs.</l>
+          </sp>
+        </spGrp>
+        <sp who="#charlot">
+          <speaker>Charlot</speaker>
+        </sp>
+        <spGrp who="#charlot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">De tous les capucins du monde</title>
+            </desc>
+          </head>
+          <sp who="#charlot">
+            <speaker>Charlot</speaker>
+            <l met="8">Autrefois, empressé de plaire,</l>
+            <l met="8">Vous fuyiez l'ombre et le mystère,</l>
+            <l met="8">Sans égards vous étiez amant,</l>
+            <l met="8">Et vous en faisiez votre affaire;</l>
+            <l met="8">Pourquoi, sous ce déguisement,</l>
+            <l met="8">Cacher une flamme sincère?</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>J'en rougis; mais, que veux-tu? Je crains,</p>
+          <p>en me faisant connaître, de déplaire à la souveraine de mon cœur; et ce n'est encore qu'en tremblant que j'emploie une ruse usée pour découvrir si je suis aimé. Sous cet habit de porteur d'eau, je me flatte que ma bonne mine décidera Nanette en ma faveur... Je l'entends qui vient ici laver son linge; tu vas être enchanté.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Nanette, Polichinelle, Charlot</stage>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <stage>sans paraître</stage>
+        </sp>
+        <spGrp who="#nanette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ils_sont_chus_dans_la_riviere">Ils sont chus dans la rivière</title>
+            </desc>
+          </head>
+          <sp who="#nanette">
+            <speaker>Nanette</speaker>
+            <l met="5">La chaleur m'excède.</l>
+            <l met="5">Pour me rafraîchir</l>
+            <l met="5">Je sais un remède</l>
+            <l met="5">Sûr pour me guérir:</l>
+            <l met="7">Je m'en vais à la rivière,</l>
+            <l met="5">Laire, lon lan la,</l>
+            <l met="7">Je m'en vais à la rivière,</l>
+            <l met="5">Ah! qu'il fait frais là.</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Ah! Quel gosier! Qu'elle chante légèrement! Il faut qu'elle ait appris la musique.</p>
+        </sp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <stage>paraissant</stage>
+        </sp>
+        <spGrp who="#nanette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_ne_sais_point_le_rire">Je ne sais point le rire</title>
+            </desc>
+          </head>
+          <sp who="#nanette">
+            <speaker>Nanette</speaker>
+            <l met="8">Des Cieux j'admire les couleurs,</l>
+            <l met="8">Ce sont eux qui forment les fleurs,</l>
+            <l met="6">Quand ils sont sans nuage:</l>
+            <l met="8">Plaisirs, ris et jeux enchanteurs</l>
+            <l met="8">Et vous Zéphyrs doux et flatteurs,</l>
+            <l met="6">Volez sur ce rivage.</l>
+          </sp>
+        </spGrp>
+        <stage>Elle se retire.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Polichinelle, Charlot</stage>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Tu l'as vue, tu viens de l'entendre, qu'en penses-tu?</p>
+        </sp>
+        <sp who="#charlot">
+          <speaker>Charlot</speaker>
+          <p>Ma foi, c'est une jolie fille, qui doit savoir savonner bien proprement.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>La première fois que je la vis, elle chantait dans ces beaux lieux: je me présentai, le trouble que ma vue lui causa accru encore l'éclat de sa beauté.</p>
+        </sp>
+        <sp who="#charlot">
+          <speaker>Charlot</speaker>
+          <p>Cela va sans dire; une belle qui rougit tient son fard de la nature.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Elle me fuit, sans me connaître;</l>
+            <l met="8">Mais un regard victorieux,</l>
+            <l met="8">Dans mon cœur aussitôt fait naître</l>
+            <l met="8">De l'amour les plus tendres feux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#charlot">
+          <speaker>Charlot</speaker>
+          <p>Mais têtebleu, je me rappelle que je la connais! Elle est la fille d'un vieux pêcheur nommé Barnabas, qui en sait plus d'une nichée et qui dit la bonne aventure tout aussi bien que feu Calchas.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Paix, paix, je la vois qui revient ici, retirons-nous pour faire durer l'acte un peu plus longtemps.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Nanette<stage>seule</stage>
+        </stage>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#nanette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pour_voir_un_peu_comment_ca_f_ra">Pour voir un peu comment ça f'ra</title>
+            </desc>
+          </head>
+          <sp who="#nanette">
+            <speaker>Nanette</speaker>
+            <l met="8">Tendres oiseaux, éveillez vous,</l>
+            <l met="8">Chantez au lever de l'aurore;</l>
+            <l met="8">D'amour si les transports sont doux,</l>
+            <l met="8">Votre repos l'est plus encore:</l>
+            <l met="8">Tendres oiseaux, éveillez vous</l>
+            <l met="8">Les peines ne sont que pour nous.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Tourangeau, Nanette</stage>
+        <sp who="#tourangeau">
+          <speaker>Tourangeau</speaker>
+          <p>Belle blanchisseuse de mon cœur, je vole sur vos talons, et c'est l'amour qui me met le feu sous le ventre.</p>
+        </sp>
+        <spGrp who="#tourangeau">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">tiré du <title ref="#precepteur_d_amour">Précepteur d'amour</title> ()</desc>
+          </head>
+          <sp who="#tourangeau">
+            <speaker>Tourangeau</speaker>
+            <l met="8">Oui, je préviens tous mes rivaux,</l>
+            <l met="8">Je pense à vous, quand tout sommeille</l>
+            <l met="8">Et c'est pour des tourments nouveaux,</l>
+            <l met="8">Que l'amour jaloux me réveille.</l>
+          </sp>
+        </spGrp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+        </sp>
+        <spGrp who="#nanette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais, en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#nanette">
+            <speaker>Nanette</speaker>
+            <l met="8">D'amour je connais trop les chaînes</l>
+            <l met="8">Par vos ennuis, par vos soupirs;</l>
+            <l met="8">Vous me faites craindre des peines,</l>
+            <l met="8">Offrez moi plutôt ses plaisirs.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tourangeau">
+          <speaker>Tourangeau</speaker>
+          <p>Je vois bien que vous me méprisez, et c'est Poitevin qui en est cause: je m'en vais; je ne suis point curieux de chanter avec lui.</p>
+        </sp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <p>Vous avez raison. Quand vous chanterez les charmes de votre maîtresse, ne les chantez</p>
+          <p>jamais en chœur avec votre rival, mais tête à tête avec elle.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Polichinelle, Poitevin, Charlot, Nanette</stage>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+        </sp>
+        <spGrp who="#nanette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#toujours_va_qui_danse">Toujours va qui danse</title>
+            </desc>
+          </head>
+          <sp who="#nanette">
+            <speaker>Nanette</speaker>
+            <l met="8">D'un très beau ballet figuré,</l>
+            <l met="8">Je veux éviter la dépense;</l>
+            <l met="8">Car, ma foi, tout considéré,</l>
+            <l met="8">Et tout mis dans une balance,</l>
+            <l met="8">Cela n'est beau qu'à l'opéra,</l>
+            <l met="6">Où sainement on pense</l>
+            <l met="8">La, la, la, la, la, la, la, la,</l>
+            <l met="6">Ce n'est que là qu'on danse.</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Qu'on se retire: j'ai quelque chose à communiquer à la belle Nanette. Obéissez, et ne me forcez pas à vous faire voir de quel bois je me chauffe... Partez... Si je prends mon cordon...</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Polichinelle, Nanette</stage>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <p>Ah! Ne me suivez point.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Laissez-moi donc marcher devant.</p>
+        </sp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <p>Le Divin Barnabas, ou plutôt mon bonhomme de père, demeure dans ce riant séjour, où il jouit, malgré le poids énorme de ses années, des doux loisirs, d'une paisible vie.</p>
+        </sp>
+        <spGrp>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <p>Je sais que c'est un vivant qui en sait long. Du sombre avenir le voile ténébreux devant lui tombe ou se déchire, c'est tout un. La nature et le sort s'amusent en badinant à l'instruire des prodiges secrets qu'il cache même aux dieux qui savent tout.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_ceinture">La ceinture</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Des dehors les plus séducteurs,</l>
+            <l met="8">On peut se parer sans rien craindre:</l>
+            <l met="8">Ah! si l'on lisait dans les cœurs,</l>
+            <l met="8">Les mortels seraient trop à plaindre.</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Qu'aurais-je à craindre de votre cœur et de vos yeux? L'un et l'autre ne sont pas méchants.</p>
+        </sp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <stage>bas</stage>
+          <p>Ciel! Qu'entends-je!</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#coucou">Comme un coucou</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">L'amour, dont je bravais l'empire,</l>
+            <l met="8">Enflamme mon cœur pour jamais:</l>
+            <l met="8">Ah! Je m'expose à des regrets</l>
+            <l met="8">Que ma bouche n'ose vous dire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+        </sp>
+        <spGrp who="#nanette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bruit_armes">Entendez-vous le bruit de armes</title>
+            </desc>
+          </head>
+          <sp who="#nanette">
+            <speaker>Nanette</speaker>
+            <l met="8">Un hommage ou feint, ou sincère</l>
+            <l met="8">Est un tribut pour nos appas:</l>
+            <l met="8">D'un éclat qui ne dure guère,</l>
+            <l met="8">Les fleurs se sément sur nos pas;</l>
+            <l met="8">Tous vos vœux se bornent à plaire</l>
+            <l met="8">Vos cœurs volages n'aiment pas.</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Ah! Ma flamme...</p>
+        </sp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <p>Croyez-moi, quittez ces lieux...</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Quoi! Sans savoir...</p>
+        </sp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <p>Allez vous-en. Que dirait-on d'une honnête blanchisseuse, si on la voyait jaser familièrement avec un porteur d'eau, dont la bonne mine... adieu.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Nanette<stage>seule</stage>
+        </stage>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#nanette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_je_ne_ferai_pas">Non, je ne ferai pas</title>
+            </desc>
+          </head>
+          <sp who="#nanette">
+            <speaker>Nanette</speaker>
+            <l met="12">Dois-je le croire ah! Dieux... Fuyez tristes alarmes!</l>
+            <l met="12">D'un poison trop flatteur je veux goûter les charmes.</l>
+            <l met="12">Je ne le reverrai peut-être de longtemps</l>
+            <l met="12">Ah! Mon cœur, ouvrez-vous aux transports que je sens.</l>
+          </sp>
+          <sp>
+            <p>Les rapides traits de flamme qui triomphent malgré nous, Amour, sont de fort belles choses.</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Tourangeau, Nanette</stage>
+        <sp who="#tourangeau">
+          <speaker>Tourangeau</speaker>
+          <p>Je suis jaloux c'est un fait, et ma jalousie doit vous inquiéter.</p>
+        </sp>
+        <spGrp who="#tourangeau">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#hesione">Menuet d'Hésione</title>
+            </desc>
+          </head>
+          <sp who="#tourangeau">
+            <speaker>Tourangeau</speaker>
+            <l met="8">Voyez moi d'un œil favorable</l>
+            <l met="8">Des soins plus doux vont m'animer;</l>
+            <l met="8">Il faut savoir se rendre aimable</l>
+            <l met="8">Lorsque l'on veut se faire aimer.</l>
+          </sp>
+        </spGrp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+        </sp>
+        <spGrp who="#nanette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#menuet_de_granval">Menuet de Grandval</title>
+            </desc>
+          </head>
+          <sp who="#nanette">
+            <speaker>Nanette</speaker>
+            <l met="8">La jalousie a des fureurs,</l>
+            <l met="8">Qui peuvent nous paraître à craindre,</l>
+            <l met="8">Mais ses tourments et ses erreurs</l>
+            <l met="8">Sont des maux qu'on ne saurait plaindre.</l>
+          </sp>
+          <sp>
+            <p>Croyez-moi, cessez d'être jaloux, vous ferez bien, car je m'aperçois que cela vous enrhume et consultez Barnabas, avec Poitevin et Tourangeau; l'heureuse le sera.</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="location">Le théâtre représente un vieux four à chaux d'où sort Barnabas.</stage>
+        <stage type="characters">Barnabas, Nanettes, Tourangeau, Poitevin</stage>
+        <spGrp>
+          <sp who="#barnabas">
+            <speaker>Barnabas</speaker>
+            <stage>s'appuyant sur Nanette</stage>
+            <p>Soutenez ma vieillesse ma fille.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#barnabas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_faites_vous_marguerite">Que faites-vous, Marguerite</title>
+            </desc>
+          </head>
+          <sp who="#barnabas">
+            <speaker>Barnabas</speaker>
+            <l met="7">La voix des plaisirs m'appelle,</l>
+            <l met="7">Cessez donc de m'arrêter;</l>
+            <l met="7">On ne doit écouter qu'elle,</l>
+            <l met="7">Eh! Pourquoi lui résister?</l>
+          </sp>
+          <sp>
+            <p>Je sais expliquer le chant des moineaux; c'est un beau talent que celui-là. Messieurs vous aimez ma fille Nanette, vous faites bien, elle est faite pour cela, mais, par malheur</p>
+            <p>pour vous, elle est aimée d'un fort gros monsieur, puisqu'il a plus de moyen qu'il ne lui en faut pour avoir carrosse.</p>
+          </sp>
+        </spGrp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <stage>joyeuse</stage>
+          <p>Ah! Que dites-vous là, mon père?</p>
+        </sp>
+        <sp who="#barnabas">
+          <speaker>Barnabas</speaker>
+          <p>De grandes vérités. Petits oiseaux, qui dormez sous ce vert feuillage, éveillez-vous, chantez mélodieusement...<stage>Chant d'oiseaux.</stage>Dites-nous en langage inintelligible que Nanette est aimée de Polichinelle. Bonsoir.</p>
+        </sp>
+        <stage>Il rentre dans le four à chaux.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="characters">Nanette, Tourangeau, Poitevin</stage>
+        <stage type="musical_indication">Trio</stage>
+        <spGrp who="#barnabas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#naiades">Bouchez, Naïades, vos fontaines</title>
+            </desc>
+          </head>
+          <sp who="#barnabas">
+            <speaker>Barnabas</speaker>
+            <l met="8">Ici que l'on fasse tapage</l>
+            <l met="8">Aux armes; qu'une grande rage</l>
+            <l met="8">Fasse éclater notre couroux;</l>
+            <l met="8">Chantons tous à perte d'haleine,</l>
+            <l met="8">Et disons: Vengeons, vengeons nous.</l>
+            <l met="8">Cela fait une belle scène.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="location">Le théâtre représente une île.</stage>
+        <stage type="characters">Polichinelle<stage>seul</stage>
+        </stage>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais, en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">La Blanchisseuse que j'adore,</l>
+            <l met="8">Ici se rend au point du jour,</l>
+            <l met="8">Elle semble embellir l'aurore</l>
+            <l met="8">Dont elle chante le retour.</l>
+          </sp>
+          <sp>
+            <p>Doux moments, hâtez vous de venir, je suis impatient de lui découvrir l'amour que je sens pour elle. Si ma voix était plus brillante, je ferais un plus beau monologue. Mais, parbleu, que je suis aise, sans savoir pourquoi! Je n'entends point encore sa belle voix. Ah! Mon cœur me l'annonce; elle vient, je la vois.</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 13</head>
+        <stage type="characters">Nanette, Polichinelle</stage>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>D'où vient, avez-vous le teint si blême?</p>
+        </sp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+        </sp>
+        <spGrp who="#nanette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_suis_le_precepteur_d_amour">Je suis un précepteur d'amour</title>
+            </desc>
+          </head>
+          <sp who="#nanette">
+            <speaker>Nanette</speaker>
+            <l met="8">Fuyez, jeune homme malheureux,</l>
+            <l met="8">Croyez en mes vives alarmes;</l>
+            <l met="8">Vos chants ont prophané des jeux;</l>
+            <l met="8">On vous menace, on vole aux armes.</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Que tous les polissons me déclarent la guerre, je ne crains que votre tiédeur. Vainement le grand turc viendrait ici, armé de son redoutable cimeterre, pour me disputer votre cœur.</p>
+        </sp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <p>Belle gasconade! Que pourrez-vous contre des ennemis plus traîtres que courageux? Partez... éloignez vous, jeune homme, hélas! Quel fiacre dans ce voisinage, a pu guider vos pas?</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_je_ne_ferai_pas">Non, je ne ferai pas [ce qu'on veut que je fasse]</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="12">Le tendre amour me guide, et la flamme m'éclaire,</l>
+            <l met="12">Mon cœur attend le prix du retour qu'il espère.</l>
+            <l met="12">J'aspire au seul bonheur, digne de me charmer,</l>
+            <l met="12">Nanette, je ne veux enfin que vous aimer.</l>
+          </sp>
+        </spGrp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <p>Hélas! Monsieur, les plus douces chaînes coûtent des pleurs et des soupirs; l'amour n'offre à nos cœurs que de doux moments, mais il est toujours accompagné de chagrins.</p>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <stage>derrière le théâtre</stage>
+          <p>Ah! Le voilà, le voilà, là!</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Que diable signifient ces cris enroués?</p>
+        </sp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <p>Eh! C'est le signal du carnage.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 14</head>
+        <stage type="location">On découvre sur la rivière de bachots remplis de bachoteurs pour combattre le parti de Polichinelle.</stage>
+        <stage type="characters">Polichinelle, Nanette, Tourangeau, Poitevin, Charlot</stage>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+        </sp>
+        <spGrp who="#choeur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reguingue">Ô reguingué, ô lon lan la</title>
+            </desc>
+          </head>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="8">Alarmez-vous, rapides feux,</l>
+            <l met="8">Que dans les flots impétueux,</l>
+            <l met="8">Périssent ces audacieux:</l>
+            <l met="8">Volez, secondez notre rage</l>
+            <l met="8">Quelle vengeance! quel outrage!</l>
+          </sp>
+        </spGrp>
+        <stage>Ils veulent brûler le bateau de Polichinelle avec des chandelles allumées, alors la rivière s'enfle, et les bachots coulent à fond.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 15</head>
+        <stage type="characters">Polichinelle, Nanette</stage>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Avouez que j'ai bien du bonheur de ce que le machiniste a bien fait.</p>
+        </sp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <p>La rivière en fureur vient de m'annoncer tous les malheurs ensemble.</p>
+        </sp>
+        <spGrp>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <p>Tout cela n'est qu'un jeu.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Des pleurs que je vous vois répandre</l>
+            <l met="8">Que mon amour est alarmé!</l>
+            <l met="8">Donnez-vous cette pitié tendre</l>
+            <l met="8">Au malheur d'un rival aimé?</l>
+          </sp>
+        </spGrp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <p>Allez vous-en, séparons nous pour ne nous voir jamais.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Armez-vous de rigueur, ôtez moi jusqu'au moindre espoir, mais laissez moi la douceur de vous voir.</p>
+        </sp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+        </sp>
+        <spGrp who="#nanette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_un_bois_solitaire_et_sombre">Dans un bois solitaire et sombre</title>
+            </desc>
+          </head>
+          <sp who="#nanette">
+            <speaker>Nanette</speaker>
+            <l met="8">Chaque instant accroît mes alarmes;</l>
+            <l met="8">Oubliez mes chétifs attraits:</l>
+            <l met="8">Que le ciel touché de me larmes</l>
+            <l met="8">Fasse couler vos jours en paix.</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Dieux! Quel mélange de tendresse, de vigueur et d'effroi!</p>
+        </sp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <p>Je ne dois plus vous le cacher, craignez Polichinelle, c'est le redoutable fils d'un marchand de marée, un des plus cossus qui soit à Paris.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Vous craignez Polichinelle et c'est lui qui vous aime: pouvez-vous trembler encore?</p>
+        </sp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <p>Quoi! Monsieur, à mon cœur vous pourriez aspirer?</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Brouetteur, avancez et conduisez nous en triomphe dans la maison de mon papa.</p>
+        </sp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+          <stage>entrant dans la brouette</stage>
+          <p>Ah! Quel honneur pour moi!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 16</head>
+        <stage type="location">Le théâtre change et représente la halle au poisson.</stage>
+        <stage type="characters">Toutes les Poisardes, Polichinelle et Nanette dans le fonds.</stage>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+        </sp>
+        <spGrp who="#choeur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#mirliton">Mirliton</title>
+            </desc>
+          </head>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Qu'ici le plaisir enchante</l>
+            <l met="7">Que l'on braille à qui mieux, mieux;</l>
+            <l met="7">Lorsque l'amour nous tourmente</l>
+            <l met="7">Nous cédons à ses doux feux;</l>
+            <l met="8">L'âme dans cet endroit joyeux</l>
+            <l met="3">Est contente</l>
+            <l met="7">Et nous égalons les dieux.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <caption>Nanette, polichinelle</caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#a_la_baronne">À la baronne</title>
+            </desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="4">Que je vous aime!</l>
+            <l met="8">De l'amour vous avez la voix,</l>
+            <l met="8">Quels transports, et quel bien suprême</l>
+            <l met="8">Redisons mille et mille fois</l>
+            <l met="4">Que je vous aime!</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra</desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="7">Une harengère nouvelle</l>
+            <l met="6">Embellit ce séjour</l>
+            <l met="12">Sous mille traits riants, que les jeux et l'amour</l>
+            <l met="8">Sans cesse volent autour d'elle.</l>
+          </sp>
+        </spGrp>
+        <sp who="#nanette">
+          <speaker>Nanette</speaker>
+        </sp>
+        <spGrp who="#nanette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_nos_forets">On n'aime point dans nos forêts</title>
+            </desc>
+          </head>
+          <sp who="#nanette">
+            <speaker>Nanette</speaker>
+            <l met="8">Amours, plaisirs, lancez vos traits</l>
+            <l met="8">Triomphez des plus dures peines;</l>
+            <l met="8">On jouit des plus doux attraits</l>
+            <l met="8">Dans leur empire et dans leurs chaînes</l>
+            <l met="8">Vivons toujours amours parfaits,</l>
+            <l met="8">Que nos nœuds durent à jamais.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeurdepoissardes">
+          <speaker>Chœur de poissardes</speaker>
+          <l met="8">Dansons le nouveau cotillon ...</l>
+        </sp>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

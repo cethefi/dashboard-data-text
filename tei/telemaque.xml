@@ -1,0 +1,1776 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="telemaque">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Télémaque</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Alain-René Le Sage</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>B. Ourcel</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Le Sage et d'Orneval,<emph>Théâtre de la Foire ou l'Opéra-Comique</emph>, Paris, Ganeau, 1721</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="calypso" sex="UNKNOWN">
+            <persName>Calypso</persName>
+          </person>
+          <person xml:id="eucharis" sex="UNKNOWN">
+            <persName>Eucharis</persName>
+          </person>
+          <person xml:id="cleone" sex="UNKNOWN">
+            <persName>Cléone</persName>
+          </person>
+          <person xml:id="telemaque" sex="UNKNOWN">
+            <persName>Télémaque</persName>
+          </person>
+          <person xml:id="idas" sex="UNKNOWN">
+            <persName>Idas</persName>
+          </person>
+          <person xml:id="minerve" sex="UNKNOWN">
+            <persName>Minerve</persName>
+          </person>
+          <person xml:id="undemon" sex="UNKNOWN">
+            <persName>Un démon</persName>
+          </person>
+          <person xml:id="ledemon" sex="UNKNOWN">
+            <persName>Le démon</persName>
+          </person>
+          <person xml:id="unsacrificateur" sex="UNKNOWN">
+            <persName>Un sacrificateur</persName>
+          </person>
+          <person xml:id="unautresacrificateur" sex="UNKNOWN">
+            <persName>Un autre sacrificateur</persName>
+          </person>
+          <person xml:id="lesacrificateur" sex="UNKNOWN">
+            <persName>Le sacrificateur</persName>
+          </person>
+          <person xml:id="troupe_de_sacrificateurs" sex="UNKNOWN">
+            <persName>Troupe de Sacrificateurs</persName>
+          </person>
+          <person xml:id="troupe_de_demons" sex="UNKNOWN">
+            <persName>Troupe de Démons</persName>
+          </person>
+          <person xml:id="capitaine_grec" sex="UNKNOWN">
+            <persName>Capitaine Grec</persName>
+          </person>
+          <person xml:id="soldats_grecs" sex="UNKNOWN">
+            <persName>Soldats Grecs</persName>
+          </person>
+          <person xml:id="deux_gilles" sex="UNKNOWN">
+            <persName>Deux Gilles</persName>
+          </person>
+          <person xml:id="gardes" sex="UNKNOWN">
+            <persName>Gardes</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie de<emph>Télémaque</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1715">
+        <desc>Représentée à la Foire de Saint-Germain 1715 avec<emph>La Ceinture de Vénus</emph> 1715</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#calypso">Calypso</role>
+          <roleDesc>reine de l'Ile d'Ogygie</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#eucharis">Eucharis</role>
+          <roleDesc>princesse de Crète</roleDesc>
+          <actor>Arlequin</actor>
+        </castItem>
+        <castItem>
+          <role ana="#cleone">Cléone</role>
+          <roleDesc>confidente d'Eucharis</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#telemaque">Télémaque</role>
+          <roleDesc>prince d'Ithaque</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#idas">Idas</role>
+          <roleDesc>son Gouverneur</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#minerve">Minerve</role>
+          <actor>Pierrot</actor>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_sacrificateurs">Troupe de Sacrificateurs</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_demons">Troupe de Démons</role>
+        </castItem>
+        <castItem>
+          <role ana="#capitaine_grec">Capitaine Grec</role>
+          <actor>Scaramouche</actor>
+        </castItem>
+        <castItem>
+          <role ana="#soldats_grecs">Soldats Grecs</role>
+        </castItem>
+        <castItem>
+          <role ana="#deux_gilles">Deux Gilles</role>
+          <roleDesc>en Zéphyrs</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#gardes">Gardes</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène est dans l'Île d'Ogygie.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Eucharis<stage>seule, après avoir regardé de tous côtés les vaisseaux agités de la tempête</stage>
+        </stage>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#eucharis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#folia">Folies d'Espagne</title>
+            </desc>
+          </head>
+          <sp who="#eucharis">
+            <speaker>Eucharis</speaker>
+            <l met="10">Ô malheureux! vous, qu'un orage horrible</l>
+            <l met="10">Livre aux fureurs de la mer en courroux,</l>
+            <l met="10">Sachez, hélas! Qu'un tendron trop sensible</l>
+            <l met="10">Se trouve encore plus en danger que vous.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Eucharis, Cléone</stage>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+        </sp>
+        <spGrp who="#cleone">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jus_octobre">Quand je tiens de ce jus d'Octobre</title>
+            </desc>
+          </head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="8">Tandis que sur notre infortune</l>
+            <l met="8">La reine avec tous ses sujets</l>
+            <l met="8">Au temple interroge Neptune,</l>
+            <l met="8">Vous cherchez, vous, des lieux secrets.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="8">Eucharis évite Cléone!</l>
+            <l met="8">Elle vient ici soupirer.</l>
+          </sp>
+        </spGrp>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+          <l met="8">Il est un autre dieu, ma bonne,</l>
+          <l met="8">Qu'en ces lieux je viens implorer.</l>
+        </sp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+        </sp>
+        <spGrp who="#cleone">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#coucou">Comme un coucou que l'amour presse</title>
+            </desc>
+          </head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="8">Un autre dieu! Ciel! Quel langage!</l>
+          </sp>
+        </spGrp>
+        <pb n="321"/>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+          <l met="8">Il est temps de t'ouvrir mon cœur.</l>
+          <l met="8">Tu sauras que j'aime à la rage...</l>
+        </sp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <l met="8">Qui? Nommez-moi votre vainqueur.</l>
+        </sp>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+        </sp>
+        <spGrp who="#eucharis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#branle_de_metz">Branle de Metz</title>
+            </desc>
+          </head>
+          <sp who="#eucharis">
+            <speaker>Eucharis</speaker>
+            <l met="7">Vainement mon âme fière</l>
+            <l met="7">Contre lui veut tenir bon.</l>
+            <l met="7">C'est un petit Cupidon,</l>
+            <l met="5">Une fac printanière.</l>
+            <l met="7">Je n'en dirai pas le nom.</l>
+            <l met="7">Une figure écolière.</l>
+            <l met="7">Je n'en dirai pas le nom.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <l met="7">Je devine ce mignon.</l>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="7">C'est cet étranger, je gage,</l>
+            <l met="7">Que nous voyons à la Cour,</l>
+            <l met="7">Qui sur ces bords l'autre jour</l>
+            <l met="7">Avec ses gens fit naufrage.</l>
+          </sp>
+        </spGrp>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+          <l met="7">C'est lui-même justement.</l>
+        </sp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <l met="7">Fi, Princesse! Êtes-vous sage,</l>
+          <l met="7">D'avoir pris si brusquement,</l>
+          <l met="7">Peut-être un indigne amant!</l>
+        </sp>
+        <spGrp who="#cleone">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="8">Fille du grand Idoménée,</l>
+            <l met="8">Songez-vous que vous êtes née.</l>
+            <l met="8">Princesse, pour un autre époux?</l>
+            <l met="8">Un Inconnu! Dieux! Quelle honte!</l>
+          </sp>
+        </spGrp>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+          <l met="8">Oh! J'en rougis; mais, entre nous,</l>
+          <l met="8">Je l'aime toujours à bon compte.</l>
+        </sp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+        </sp>
+        <spGrp who="#cleone">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais, en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="8">Taisez-vous. J'aperçois la Reine.</l>
+            <l met="8">Elle s'avance vers ces lieux.</l>
+            <l met="8">Sous le nom d'Eucharis, sans peine,</l>
+            <l met="8">Vous tromperez toujours ses yeux.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Eucharis, Cléone, Calypso</stage>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tourelouribo">Ho, ho! Tourelouribo</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="9">Le grand dieu Neptune est en colère;</l>
+            <l met="2">Ho, ho!</l>
+            <l met="5">Tourelouribo.</l>
+            <l met="7">Rien ne peut le satisfaire:</l>
+            <l met="2">Ho, ho!</l>
+            <l met="5">Tourelouribo:</l>
+            <l met="7">C'est un terrible compère:</l>
+            <l met="3">Ho, ho, ho!</l>
+            <l met="5">Tourelouribo.</l>
+          </sp>
+        </spGrp>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+        </sp>
+        <spGrp who="#eucharis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_m_entendez_vous_pas">Ne m'entendez-vous pas</title>
+            </desc>
+          </head>
+          <sp who="#eucharis">
+            <speaker>Eucharis</speaker>
+            <l met="6">Quoi, dans son fier courroux</l>
+            <l met="6">Neptune persévère!</l>
+          </sp>
+        </spGrp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <l met="6">Que prétend-il donc faire?</l>
+          <l met="6">Quoi, dans son fier courroux<note>Vers de l'Opéra.</note>
+          </l>
+          <l met="6">Veut-il nous noyer tous?</l>
+        </sp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="8">Il m'a fait entendre mon crime;</l>
+            <l met="8">Lui-même il vient de me parler:</l>
+            <l met="8">Mais il demande une victime</l>
+            <l met="8">Que je ne puis plus immoler.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#menuet_de_granval">Menuet de Monsieur de Grandval</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="8">Vers, a-t-il dit le sang d'Ulysse.</l>
+            <l met="8">De ce sang coupable à ses yeux</l>
+            <l met="8">Comment lui faire un sacrifice?</l>
+            <l met="8">Ulysse n'est plus dans ces lieux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+        </sp>
+        <spGrp who="#eucharis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#naiades">Bouchez, Naïades, vos fontaines</title>
+            </desc>
+          </head>
+          <sp who="#eucharis">
+            <speaker>Eucharis</speaker>
+            <l met="8">Ulysse a donc vu ce rivage?</l>
+          </sp>
+        </spGrp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <l met="8">Quelques jours avant ton naufrage</l>
+          <l met="8">Il venait d'en partir, hélas!</l>
+          <l met="8">Dès ce temps-là, faisant le diable,</l>
+          <l met="8">Neptune voulait son trépas;</l>
+          <l met="8">Mais j'eus pitié du misérable.</l>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="8">Je fis équiper un navire,</l>
+            <l met="8">Où je l'embarquai, sans rien dire:</l>
+            <l met="8">Ainsi s'en alla ce Héros.</l>
+            <l met="8">N'étais-ce pas bien de le défendre</l>
+            <l met="8">De la fureur du dieu des flots?</l>
+          </sp>
+        </spGrp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <l met="8">Vous ne pouviez mieux vous y prendre.</l>
+        </sp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#cap_de_bonne_esperance">Cap de Bonne-Espérance</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="7">Voilà ce qui nous attire</l>
+            <l met="7">Un si cruel châtiment;</l>
+            <l met="7">Le dieu de l'humide Empire</l>
+            <l met="7">Se venge présentement.</l>
+            <l met="7">Il a rempli d'eau mon île:</l>
+            <l met="7">Nous allons tous faire gille;</l>
+            <l met="7">Car même dans mon palais</l>
+            <l met="8">On en a eu jusqu'aux jarrets.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+        </sp>
+        <spGrp who="#cleone">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_commere_quand">Ma Commère, quand je danse</title>
+            </desc>
+          </head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="7">Franchement, le dieu Neptune</l>
+            <l met="7">Me paraît un peu brutal.</l>
+          </sp>
+        </spGrp>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+          <l met="7">Il a bien de la rancune.</l>
+        </sp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <l met="7">Au diable soit l'animal.</l>
+          <l met="4">Il a gâté</l>
+          <l met="4">Nos potagers.</l>
+        </sp>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+          <l met="4">Tout culbuté</l>
+          <l met="4">Dans nos vergers.</l>
+        </sp>
+        <spGrp>
+          <caption>Eucharis et cléone<stage>ensemble.</stage>
+          </caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Franchement, le dieu Neptune</l>
+            <l met="7">Me paraît un peu brutal.</l>
+          </sp>
+        </spGrp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bruit_armes">J'entends déjà le bruit des armes</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="8">Pour l'apaiser que dois-je faire?</l>
+            <l met="8">L'Enfer peut me le révéler.</l>
+            <l met="7">Mon art est si nécessaire:</l>
+            <l met="8">À mes démons je vais parler.</l>
+            <l met="8">Allez. Respectez un mystère,</l>
+            <l met="8">Qu'aucun mortel ne doit troubler.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Calypso<stage>seule</stage>
+        </stage>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_jeune_abbesse_de_ce_lieu">La jeune abbesse de ce lieu</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="8">Démons à mon pouvoir soumis,</l>
+            <l met="8">Sortez de la nuit éternelle,</l>
+            <l met="8">Venez à ma voix, mes amis:</l>
+            <l met="8">C'est Calypso qui vous appelle.</l>
+            <l met="9">Suspendez les horribles tourments</l>
+            <l met="8">Des procureurs et des exempts.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Calypso, quatre Démons</stage>
+        <sp who="#undemon">
+          <speaker>Un démon</speaker>
+        </sp>
+        <spGrp who="#undemon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Voulez-vous savoir qui des deux</title>
+            </desc>
+          </head>
+          <sp who="#undemon">
+            <speaker>Un démon</speaker>
+            <l met="7">Qu'attends-tu notre secours?</l>
+            <l met="8">Parle. Nous te servons toujours.</l>
+          </sp>
+        </spGrp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <l met="8">Neptune ordonne un sacrifice.</l>
+        </sp>
+        <sp who="#ledemon">
+          <speaker>Le démon</speaker>
+          <l met="8">Dresse l'autel, fais ton devoir.</l>
+        </sp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <l met="8">Mais ce dieu veut le sang d'Ulysse:</l>
+          <l met="8">Ce sang n'est plus en mon pouvoir.</l>
+        </sp>
+        <sp who="#ledemon">
+          <speaker>Le démon</speaker>
+        </sp>
+        <spGrp who="#ledemon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jus_octobre">Quand je tiens de ce jus d'Octobre</title>
+            </desc>
+          </head>
+          <sp who="#ledemon">
+            <speaker>Le démon</speaker>
+            <l met="8">Le soin de trouver la victime</l>
+            <l met="8">Ne te doit point embarrasser;</l>
+            <l met="8">Neptune y va pourvoir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <l met="8">Sans crime</l>
+          <l met="8">Je ne puis donc plus balancer.</l>
+        </sp>
+        <stage>Calypso se retire, et les démons disparaissent.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Télémaque, Idas<note>Comme dans l'Opéra<emph>Télémaque</emph>paraît trop légèrement vouloir mourir pour son père, l'auteur de la parodie a donné à ce jeune Prince le caractère d'un innocent.</note>
+        </stage>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#hesione">Menuet d'Hésione</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="8">La verte et bouillante jeunesse</l>
+            <l met="8">N'écoute guère les leçons;</l>
+            <l met="8">D'un précepteur plein de sagesse</l>
+            <l met="9">Les discours ne sont que des chansons.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="8">Je vois le désir qui vous presse;</l>
+            <l met="8">Vous cherchez des yeux Eucharis.</l>
+            <l met="8">Triomphez de votre faiblesse.</l>
+          </sp>
+        </spGrp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <l met="8">Je le voudrais; mais je ne puis.</l>
+        </sp>
+        <sp who="#idas">
+          <speaker>Idas</speaker>
+        </sp>
+        <spGrp who="#idas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#confiteor">Mon père, je viens devant vous</title>
+            </desc>
+          </head>
+          <sp who="#idas">
+            <speaker>Idas</speaker>
+            <l met="8">Minerve pour vous a fait choix</l>
+            <l met="8">D'une jeune et belle Princesse</l>
+            <l met="8">Fille du grand Roi des Crétois,</l>
+            <l met="8">Antiope est votre maîtresse.</l>
+            <l met="8">Je vous l'ai déjà dit, mon fils.</l>
+            <l met="8">Cessez donc d'aimer Eucharis.</l>
+          </sp>
+        </spGrp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+        </sp>
+        <spGrp who="#telemaque">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lampons">Lampons, lampons</title>
+            </desc>
+          </head>
+          <sp who="#telemaque">
+            <speaker>Télémaque</speaker>
+            <l met="7">De quoi se mêle Pallas?<stage type="bis">bis</stage>
+            </l>
+            <l met="7">Oh! son choix ne me plaît pas!<stage type="bis">bis</stage>
+            </l>
+            <l met="7">Que sais-je, son Antiope</l>
+            <l met="7">Est peut-être une salope.</l>
+          </sp>
+        </spGrp>
+        <sp who="#idas">
+          <speaker>Idas</speaker>
+          <l met="4">Non, non, non, non,</l>
+          <l met="6">Télémaque, non, non.</l>
+        </sp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <stage>riant</stage>
+        </sp>
+        <spGrp who="#telemaque">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reviendrai_demain">Je reviendrai, demain au soir</title>
+            </desc>
+          </head>
+          <sp who="#telemaque">
+            <speaker>Télémaque</speaker>
+            <l met="8">J'aime beaucoup mieux Eucharis.</l>
+          </sp>
+        </spGrp>
+        <sp who="#idas">
+          <speaker>Idas</speaker>
+          <l met="6">Tant pis, morbleu, tant pis<stage type="bis">bis</stage>
+          </l>
+          <l met="8">Je la vois qui vient dans ces lieux.</l>
+        </sp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <l met="6">Tant mieux, morbleu, tant mieux.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Télémaque, Idas, Eucharis, Cléone</stage>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+          <stage>à Télémaque</stage>
+        </sp>
+        <spGrp who="#eucharis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais, en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#eucharis">
+            <speaker>Eucharis</speaker>
+            <l met="8">Enfin, le Ciel vous est propice,</l>
+            <l met="8">Jeune étranger, consolez-vous.</l>
+            <l met="8">Neptune ordonne un sacrifice,</l>
+            <l met="8">Qui va désarmer son courroux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+        </sp>
+        <spGrp who="#cleone">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#petit_reduit">La bonne aventure, ô gué</title>
+            </desc>
+          </head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="7">Vous partirez de ces lieux</l>
+            <l met="5">Bientôt, je vous jure.</l>
+          </sp>
+        </spGrp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <stage>sautant de joie</stage>
+          <l met="7">Ah, vraiment, j'en suis joyeux.</l>
+          <l met="7">Vous me suivez toutes deux.</l>
+          <l met="7">La bonne aventure, ô gué,</l>
+          <l met="5">La bonne aventure!</l>
+        </sp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="7">Ce parti, nous l'avouerons,</l>
+            <l met="5">Nous flatte, et nous pique;</l>
+            <l met="7">Mais sachons où nous irons.</l>
+          </sp>
+        </spGrp>
+        <sp who="#idas">
+          <speaker>Idas</speaker>
+          <l met="7">Allez, nous vous conduirons</l>
+          <l met="7">Droit à l'Amérique, ô gué,</l>
+          <l met="5">Droit à l'Amérique.</l>
+        </sp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <stage>à Idas</stage>
+        </sp>
+        <spGrp who="#cleone">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#feuillantines">Les Feuillantines</title>
+            </desc>
+          </head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="7">Taisez-vous vieux précepteur,</l>
+            <l met="3">Radoteur.</l>
+            <l met="7">Voyez un peu ce docteur.</l>
+            <l met="7">Oh! Vous n'êtes, mon aimable,</l>
+            <l met="7">Qu'un pédant<stage type="bis">bis</stage>indécrottable.</l>
+          </sp>
+        </spGrp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+        </sp>
+        <spGrp who="#telemaque">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle Endormie</title>
+            </desc>
+          </head>
+          <sp who="#telemaque">
+            <speaker>Télémaque</speaker>
+            <l met="8">Nous irons à l'île d'Ithaque;</l>
+            <l met="8">Mon père en est le souverain:</l>
+            <l met="8">Je suis le Prince Télémaque;</l>
+            <l met="8">Et je vous offre ici ma main.</l>
+          </sp>
+        </spGrp>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+          <stage>troublée</stage>
+        </sp>
+        <spGrp who="#eucharis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lapalisse">Monsieur La Palisse est mort</title>
+            </desc>
+          </head>
+          <sp who="#eucharis">
+            <speaker>Eucharis</speaker>
+            <l met="7">Ô Ciel!</l>
+          </sp>
+        </spGrp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <stage>troublée aussi</stage>
+          <l met="7">Ô dieux!</l>
+        </sp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <stage>étonné</stage>
+          <l met="7">Qu'avez-vous?</l>
+        </sp>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+          <l met="7">Fuyez cette Cour barbare;</l>
+          <l met="7">Fuyez Neptune en courroux,</l>
+          <l met="7">Et le coup qu'on vous prépare.</l>
+        </sp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <p>Comment donc?</p>
+        </sp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="7">Le dieu des Mers furieux</l>
+            <l met="7">Aujourd'hui veut qu'on répande</l>
+            <l met="7">Le sang d'Ulysse: Grands dieux!</l>
+            <l met="7">C'est le vôtre qu'il demande!</l>
+          </sp>
+        </spGrp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+        </sp>
+        <spGrp who="#telemaque">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#petits_grands">Or, écoutez, petits et grands</title>
+            </desc>
+          </head>
+          <sp who="#telemaque">
+            <speaker>Télémaque</speaker>
+            <l met="8">Oh! je le donne de bon cœur!</l>
+            <l met="8">Le trépas ne me fait point peur:</l>
+            <l met="8">Je vais apaiser la colère</l>
+            <l met="8">Du dieu contre mon pauvre père.</l>
+          </sp>
+        </spGrp>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+          <l met="8">Vous ferez plutôt beaucoup mieux</l>
+          <l met="8">De vous éloigner de ces lieux.</l>
+        </sp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <stage>d'un air brusque</stage>
+          <p>Non. Je veux mourir pour mon père.</p>
+        </sp>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+        </sp>
+        <spGrp who="#eucharis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierre_bagnolet">Pierr' Bagnolet</title>
+            </desc>
+          </head>
+          <sp who="#eucharis">
+            <speaker>Eucharis</speaker>
+            <l met="8">À vous immoler pour un père</l>
+            <l met="8">Qui vous oblige, s'il vous plaît?</l>
+          </sp>
+        </spGrp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <l met="7">Quoi, sans qu'il soit nécessaire,</l>
+          <l met="8">À mourir vous voilà tout prêt,</l>
+          <l met="4">Petit benêt,</l>
+          <l met="4">Petit benêt.</l>
+        </sp>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+          <l met="8">À vous immoler pour un père</l>
+          <l met="8">Qui vous oblige, s'il vous plaît?</l>
+        </sp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+        </sp>
+        <spGrp who="#telemaque">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_veux_boire_a_ma_lisette">Je veux boire à ma Lisette</title>
+            </desc>
+          </head>
+          <sp who="#telemaque">
+            <speaker>Télémaque</speaker>
+            <l met="7">Hélas! Voyez-vous, Ulysse</l>
+            <l met="7">Peut-être est prêt à périr!</l>
+          </sp>
+        </spGrp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <l met="7">Oui, peut-être... le Jocrisse!</l>
+          <l met="7">Dans ce doute il veut mourir.</l>
+        </sp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <l met="7">Hélas! Voyez-vous, Ulysse</l>
+          <l met="7">Peut-être est prêt à périr!</l>
+        </sp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+        </sp>
+        <spGrp who="#cleone">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_gue_lon_la_lan_laire">Ô gué, lon la, lan laire</title>
+            </desc>
+          </head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="6">De quelle vaine crainte,</l>
+            <l met="4">Prince charmant,</l>
+            <l met="6">Votre âme est-elle atteinte</l>
+            <l met="4">Dans ce moment?</l>
+            <l met="8">Minerve toujours défendra,</l>
+            <l met="5">Votre bon Papa,</l>
+            <l met="5">Et vous le rendra.</l>
+            <l met="6">Ô gué lon la, lan laire,</l>
+            <l met="4">Ô gué lon la.</l>
+          </sp>
+        </spGrp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+        </sp>
+        <spGrp who="#telemaque">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#laire_la">Laire la, laire lan-aire</title>
+            </desc>
+          </head>
+          <sp who="#telemaque">
+            <speaker>Télémaque</speaker>
+            <l met="8">Vous direz ce qu'il vous plaira;</l>
+            <l met="8">Ho bien, tenez, malgré tout ça,</l>
+            <l met="8">Moi, je veux mourir pour mon père.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <l met="7">Laire la,</l>
+          <l met="5">Laire lan laire,</l>
+          <l met="3">Laire la,</l>
+          <l met="4">Laire lan la.</l>
+        </sp>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+        </sp>
+        <spGrp who="#eucharis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_mariez_moi">Ma mère, mariez moi</title>
+            </desc>
+          </head>
+          <sp who="#eucharis">
+            <speaker>Eucharis</speaker>
+            <l met="7">Mes pleurs ne t'arrêtent pas!</l>
+            <l met="7">Hé bien, cours donc au trépas:</l>
+            <l met="7">Mais, avant que de périr,</l>
+            <l met="10">Puisque rien, cruel, ne peut t'attendrir,</l>
+            <l met="7">Mais, avant que de périr</l>
+            <l met="7">Viens voir Eucharis mourir.</l>
+          </sp>
+        </spGrp>
+        <stage>Elle s'en va.</stage>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <stage>à Idas, sur le ton du pénultième vers</stage>
+          <l met="7">Courons après elle, Idas.</l>
+        </sp>
+        <sp who="#idas">
+          <speaker>Idas</speaker>
+          <stage>l'arrêtant</stage>
+          <l met="7">Elle ne se tuera pas.</l>
+        </sp>
+        <stage>Télémaque lutte avec Idas qui veut le retenir. Il le culbute et court après la Princesse. Idas tout éclopé suit les traces de Télémaque.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Calypso, Troupe de Sacrificateurs, Gardes</stage>
+        <stage>Il sort de dessous le théâtre un autel.</stage>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="8">Grand dieu, vois mon obéissance;</l>
+            <l met="8">J'ai fait élever cet autel:</l>
+            <l met="8">Mais j'ignore, hélas! quel mortel</l>
+            <l met="6">Doit remplir ta vengeance.</l>
+          </sp>
+        </spGrp>
+        <sp who="#unsacrificateur">
+          <speaker>Un sacrificateur</speaker>
+        </sp>
+        <spGrp who="#unsacrificateur">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra (Parodié)</desc>
+          </head>
+          <sp who="#unsacrificateur">
+            <speaker>Un sacrificateur</speaker>
+            <l met="7">Ô, puissant dieu des écailles,</l>
+            <l met="7">Grand Neptune, exauce-nous!</l>
+            <l met="7">Laisse amollir tes entrailles;</l>
+            <l met="7">Cesse d'inonder nos choux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#unautresacrificateur">
+          <speaker>Un autre sacrificateur</speaker>
+        </sp>
+        <spGrp who="#unautresacrificateur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ermite">Dedans nos bois, il y a un hermite</title>
+            </desc>
+          </head>
+          <sp who="#unautresacrificateur">
+            <speaker>Un autre sacrificateur</speaker>
+            <l met="10">Nous sommes prêts d'expier notre crime;</l>
+            <l met="6">Amenez-nous ici</l>
+            <l met="10">Dans ce moment la coupable victime,</l>
+            <l met="6">Dieu puissant...</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Les acteurs de la scène précédente</stage>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <stage>arrivant brusquement, et mettant la main sur l'autel, continue l'air commencé</stage>
+          <l met="6">La voici:</l>
+          <l met="10">Que de mon sang votre couteau rougisse:</l>
+          <l met="8">Je suis le fils d'Ulysse, moi</l>
+          <l met="6">Je suis le fils d'Ulysse.</l>
+        </sp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <stage>étonnée</stage>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#charlot">Monsieur Charlot</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="4">Que vois-je, ô dieux!</l>
+            <l met="6">La brillante figure!</l>
+            <l met="6">Ah! Cette neuve allure</l>
+            <l met="4">Charme mes yeux!</l>
+            <l met="4">Qu'il est joli!</l>
+            <l met="4">Qu'il est gentil!</l>
+            <l met="12">Il ressemble à son père, on dirait que c'est lui.</l>
+            <l met="4">Qu'il est joli!</l>
+            <l met="4">Qu'il est gentil!</l>
+            <l met="12">Il ressemble à son père, on dirait que c'est lui.</l>
+          </sp>
+        </spGrp>
+        <sp who="#unsacrificateur">
+          <speaker>Un sacrificateur</speaker>
+          <stage>levant le bras pour frapper la victime</stage>
+        </sp>
+        <spGrp who="#unsacrificateur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#hesione">Menuet d'Hésione</title>
+            </desc>
+          </head>
+          <sp who="#unsacrificateur">
+            <speaker>Un sacrificateur</speaker>
+            <l met="8">Frappons. Il est temps qu'il périsse.</l>
+          </sp>
+        </spGrp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <stage>arrêtant le bras du sacrificateur</stage>
+          <l met="8">Oh! tout beau. Suspendez vos coups.</l>
+        </sp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <stage>à Calypso</stage>
+          <l met="8">Pourquoi différer mon supplice?</l>
+          <l met="8">Je veux mourir, entendez-vous.</l>
+        </sp>
+        <stage>Le sacrificateur lève encore son couteau sur Télémaque.</stage>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <stage>arrêtant encore le bras du sacrificateur</stage>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#turlututu_rengaine">Turlututu, rengaine</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="12">Turlututu, rengaine, rengaine, rengaine,</l>
+            <l met="13">Turlututu, rengaine, rengaine ton couteau.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reviendrai_demain">Je reviendrai demain au soir</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="8">Augmente, si tu veux nos maux,</l>
+            <l met="6">Barbare dieu des eaux;<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Pour moi, je ne souffrirai pas</l>
+            <l met="6">Cet injuste trépas.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#lesacrificateur">
+          <speaker>Le sacrificateur</speaker>
+        </sp>
+        <spGrp who="#lesacrificateur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jus_octobre">Quand je tiens de ce jus d'Octobre</title>
+            </desc>
+          </head>
+          <sp who="#lesacrificateur">
+            <speaker>Le sacrificateur</speaker>
+            <l met="8">Ah! Quel effort illégitime!</l>
+            <l met="8">Craignez un courroux trop puissant.</l>
+          </sp>
+        </spGrp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <l met="8">Par là, j'épargne aux dieux un crime;</l>
+          <l met="8">Et sauve ce pauvre innocent.</l>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#menuet_de_granval">Menuet de Monsieur de Grandval</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="8">Retirez-vous, troupe inhumaine.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lesacrificateur">
+          <speaker>Le sacrificateur</speaker>
+          <l met="8">Vous bravez donc un immortel?</l>
+        </sp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <l met="8">Obéissez à votre Reine,</l>
+          <l met="8">Et que l'on m'ôte cet autel.</l>
+        </sp>
+        <stage>Les sacrificateurs et les gardes se retirent.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Calypso, Télémaque</stage>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <stage>d'un air mortifié</stage>
+        </sp>
+        <spGrp who="#telemaque">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#faire_l_amour">Faire l'amour, la nuit et le jour</title>
+            </desc>
+          </head>
+          <sp who="#telemaque">
+            <speaker>Télémaque</speaker>
+            <l met="6">Vous m'avez empêché</l>
+            <l met="6">De mourir pour mon père.</l>
+          </sp>
+        </spGrp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <stage>lui passant la main sous le menton</stage>
+          <l met="6">N'en soyez point fâché;</l>
+          <l met="6">Prince, il vaut bien mieux faire</l>
+          <l met="2">L'amour</l>
+          <l met="5">La nuit et le jour.</l>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#amour_plait">Quel plaisir de voir Claudine</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="7">Un beau destin vous appelle,</l>
+            <l met="7">Si vous voulez être heureux.</l>
+            <l met="7">Ne suis-je pas assez belle</l>
+            <l met="7">Pour former d'aimables nœuds?</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="characters">Calypso, Télémaque, Cléone</stage>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+        </sp>
+        <spGrp who="#cleone">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="8">Ce jour finit notre infortune.</l>
+            <l met="8">Qu'ici règnent les jeux, les ris.</l>
+            <l met="8">Le Prince d'Ithaque soumis,</l>
+            <l met="6">A désarmé Neptune.</l>
+          </sp>
+        </spGrp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lonlanla_derirette">Lon lan la, derirette</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="8">Ô l'agréable changement!</l>
+            <l met="8">Je ne crains plus présentement,</l>
+            <l met="6">Lon lan la, derirette.</l>
+            <l met="9">Pour tous les jours de mon cher ami,</l>
+            <l met="6">Lon lan la, deriri.</l>
+          </sp>
+        </spGrp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+        </sp>
+        <spGrp who="#telemaque">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#telemaque">
+            <speaker>Télémaque</speaker>
+            <l met="8">Neptune a calmé sa colère;</l>
+            <l met="8">Il a reçu mes tendres vœux:</l>
+            <l met="8">À mes soins s'il rendait mon père,</l>
+            <l met="8">Je serais encor plus heureux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_veux_boire_a_ma_lisette">Je veux boire à ma Lisette</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="7">Prince, vous songez sans cesse</l>
+            <l met="7">Au cher auteur de vos jours.</l>
+          </sp>
+        </spGrp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <l met="7">Hélas, oui! je le confesse.</l>
+          <l met="7">Tenez. J'y pense toujours.</l>
+        </sp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <l met="7">Prince, vous songez sans cesse</l>
+          <l met="7">Au cher auteur de vos jours.</l>
+        </sp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <stage>pleurant</stage>
+          <p>Hé! Mon père!</p>
+        </sp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <stage>le contrefaisant</stage>
+          <p>Hé! Ma mère!</p>
+        </sp>
+        <stage>Elle le flatte et chante</stage>
+        <spGrp who="#cleone">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#j_endors_le_petit">J'endors le petit</title>
+            </desc>
+          </head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="7">J'endors le petit, mon fils,</l>
+            <l met="5">J'endors le petit.</l>
+          </sp>
+        </spGrp>
+        <stage>À Calypso.</stage>
+        <spGrp who="#cleone">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Amis, sans regretter Paris</title>
+            </desc>
+          </head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="8">Déesse, à ce petit Infant</l>
+            <l met="6">Rendons ces lieux aimables.</l>
+            <l met="8">Il faut, pour divertir l'enfant,</l>
+            <l met="6">Faire danser vos diables.</l>
+          </sp>
+        </spGrp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <p>Oh! Non, non. Cela me ferait peur!</p>
+        </sp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#din_dan_don">Din, dan, don</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="8">Non, Prince, non, ne craignez pas;</l>
+            <l met="8">Ils auront des traits plein d'appas.</l>
+            <l met="3">Dans ces lieux</l>
+            <l met="7">Ils vont en nymphes aimables</l>
+            <l met="5">Paraître à vos yeux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <l met="5">En nymphes, des diables!</l>
+          <l met="9">Ces ballets, sont trop usés, trop vieux.</l>
+        </sp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <stage>à Cléone</stage>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="8">Hé bien, je veux te satisfaire.</l>
+            <l met="8">Esprits empressez à me plaire,</l>
+            <l met="8">Accourez dans ces lieux charmants;</l>
+            <l met="8">Et pour me montrer votre zèle,</l>
+            <l met="8">Démons, changez vous en Flamands.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <l met="8">La fête en sera plus nouvelle.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="characters">Calypso, Télémaque, Cléone, Troupe de Démons<stage>sous la figure de Flamands et de Flamandes</stage>
+        </stage>
+        <stage>Les démons forment une danse qui est interrompue par un bruit confus de timbales et de trompettes, et l'on voit entrer Scaramouche en Capitaine de vaisseau, suivi de quelques soldats. Les démons disparaissent.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 13</head>
+        <stage type="characters">Calypso, Télémaque, Cléone, Eucharis, Scaramouche, Soldats Grecs</stage>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <stage>à Télémaque</stage>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#qu_on_apporte_bouteille">Qu'on apporte bouteille</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="6">Après un long orage,</l>
+            <l met="6">Nous arrivons, Seigneur.</l>
+            <l met="8">Vos guerriers sont sur ce rivage.</l>
+          </sp>
+        </spGrp>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <stage>embrassant Scaramouche</stage>
+          <l met="8">Ah! je vous revois! Quel bonheur!</l>
+        </sp>
+        <stage>À Eucharis.</stage>
+        <spGrp who="#telemaque">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#flon_flon">Flon, flon</title>
+            </desc>
+          </head>
+          <sp who="#telemaque">
+            <speaker>Télémaque</speaker>
+            <l met="6">Bel objet de ma flamme,</l>
+            <l met="6">Partons dès cet instant;</l>
+            <l met="6">Embarquons-nous, Madame;</l>
+            <l met="6">Et mettons voile au vent.</l>
+            <l met="2">Flon, flon,</l>
+            <l met="5">Larira dondaine.</l>
+            <l met="2">Flon, flon,</l>
+            <l met="5">Larira dondon.</l>
+          </sp>
+        </spGrp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <stage>en fureur</stage>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#naiades">Bouchez, Naïades, vos fontaines</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="8">Quoi, j'ai pour rivale une esclave!</l>
+            <l met="8">Et ce Prince insolent me brave!</l>
+            <l met="8">Je suis maîtresse de leur sort:</l>
+            <l met="8">Nous allons voir un beau tapage!</l>
+            <l met="8">Démons, embrasez dans le port</l>
+            <l met="8">Les vaisseaux du Grec qui m'outrage.</l>
+          </sp>
+        </spGrp>
+        <stage>Quatre Démons avec des flambeaux à la main fondent des airs sur les vaisseaux, et les brûlent. Pendant ce temps-là, Télémaque et Eucharis se mettent à pleurer.</stage>
+        <sp who="#cleone">
+          <speaker>Cléone</speaker>
+          <stage>invoque Minerve</stage>
+        </sp>
+        <spGrp who="#cleone">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#choeur_de_l_opera">Chœur de l'Opéra</title>
+            </desc>
+          </head>
+          <sp who="#cleone">
+            <speaker>Cléone</speaker>
+            <l met="8">Ô Minerve! Protégez-nous</l>
+            <l met="8">Contre un implacable courroux!</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+        </sp>
+        <spGrp who="#choeur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_madame_anroux">Ah! Madame Anroux<note>Comme il y a quelque ressemblance entre les tons et la mesure du Chœur de l'Opéra et l'Air de Madame Anroux, on a saisi cela dans la parodie.</note>
+              </title>
+            </desc>
+          </head>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="5">Ah! Madame Anroux,</l>
+            <l met="5">Nous deviendrons fous!</l>
+            <l met="5">Venez nous défendre.</l>
+            <l met="5">Ah! Madame Anroux,</l>
+            <l met="5">Daignez donc descendre!</l>
+            <l met="5">Nous devenons fous.</l>
+          </sp>
+        </spGrp>
+        <stage>L'orchestre joue la descente de Minerve comme à l'Opéra. Cette déesse représentée par Pierrot, paraît sur son char.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 14</head>
+        <stage type="characters">Calypso, Télémaque, Eucharis, Cléone, Soldats Grecs, Minerve, deux Gilles<stage>en zéphyrs</stage>
+        </stage>
+        <sp who="#telemaque">
+          <speaker>Télémaque</speaker>
+          <stage>apercevant Minerve, et sautant de joie</stage>
+        </sp>
+        <spGrp who="#telemaque">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reviendrai_demain">Je reviendrai, demain au soir</title>
+            </desc>
+          </head>
+          <sp who="#telemaque">
+            <speaker>Télémaque</speaker>
+            <l met="8">Minerve descend, je la vois.</l>
+          </sp>
+        </spGrp>
+        <sp who="#eucharis">
+          <speaker>Eucharis</speaker>
+          <l met="6">Fort à propos, ma foi;</l>
+          <l met="8">Quand tous nos vaisseaux sont brulés;</l>
+          <l met="6">Rissolés, grésillés.</l>
+        </sp>
+        <sp who="#minerve">
+          <speaker>Minerve</speaker>
+          <stage>à Calypso</stage>
+        </sp>
+        <spGrp who="#minerve">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Voulez-vous savoir qui des deux</title>
+            </desc>
+          </head>
+          <sp who="#minerve">
+            <speaker>Minerve</speaker>
+            <l met="8">Calypso, calme ta fureur</l>
+            <l met="8">Pour ton repos, et sors d'erreur.</l>
+            <l met="8">Le cœur du fils de Pénélope</l>
+            <l met="8">A par mes soins été promis</l>
+            <l met="8">À la moricaude Antiope</l>
+            <l met="8">Reconnais-la dans Eucharis.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#minerve">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vraiment_ma_commere_oui">Oui-dà, ma Commère, oui</title>
+            </desc>
+          </head>
+          <sp who="#minerve">
+            <speaker>Minerve</speaker>
+            <l met="7">Vous leur prêtez votre appui!</l>
+          </sp>
+        </spGrp>
+        <sp who="#minerve">
+          <speaker>Minerve</speaker>
+          <l met="7">Oui-dà, ma commère, oui.</l>
+        </sp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <l met="7">Vous me donnez ce déboire!</l>
+        </sp>
+        <sp who="#minerve">
+          <speaker>Minerve</speaker>
+          <l met="7">Vraiment, ma commère, voire,</l>
+          <l met="7">Vraiment, ma commère, oui.</l>
+        </sp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="7">Je veux les tenir ici.</l>
+          </sp>
+        </spGrp>
+        <sp who="#minerve">
+          <speaker>Minerve</speaker>
+          <stage>d'un air moqueur</stage>
+          <l met="7">Oui-dà, ma commère, oui.</l>
+        </sp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <l met="7">Dans une prison bien noire.</l>
+        </sp>
+        <sp who="#minerve">
+          <speaker>Minerve</speaker>
+          <l met="7">Vraiment, ma commère, voire,</l>
+          <l met="7">Vraiment, ma commère, oui.</l>
+        </sp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+        </sp>
+        <spGrp who="#calypso">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#confiteor">Mon père, je viens devant vous</title>
+            </desc>
+          </head>
+          <sp who="#calypso">
+            <speaker>Calypso</speaker>
+            <l met="8">J'ai fermé le chemin des Mers.</l>
+          </sp>
+        </spGrp>
+        <sp who="#minerve">
+          <speaker>Minerve</speaker>
+          <l met="8">Pour Antiope et Télémaque</l>
+          <l met="8">D'autres chemins me sont ouverts.</l>
+          <l met="8">Zéphyrs, sur les rives d'Ithaque</l>
+          <l met="8">Transportez-les dans ce moment.</l>
+        </sp>
+        <sp who="#calypso">
+          <speaker>Calypso</speaker>
+          <l met="8">Quoi, c'est donc là le dénouement.</l>
+        </sp>
+        <spGrp>
+          <caption>Télémaque et eucharis<stage>à calypso.</stage>
+          </caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Vraiment, ma commère, voire,</l>
+            <l met="7">Vraiment, ma commère, oui.</l>
+          </sp>
+        </spGrp>
+        <stage>Deux Gilles en Zéphyrs, avec de grandes ailes attachées aux épaules, viennent enlever Eucharis et Télémaque.</stage>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

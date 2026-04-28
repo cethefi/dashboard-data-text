@@ -1,0 +1,2303 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="turelure_ou_le_chaos_perpetuel">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Turelure</title>
+        <title type="sub">Le Chaos perpétuel</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Jean-Nicolas Braban et François-Marie Mayeur de Saint-Paul</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Serre</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BnF ms. naf. 3006</bibl>
+        <bibl type="intermediarySource">P. Beaucé</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="madamedelimaginative" sex="UNKNOWN">
+            <persName>Madame de l'Imaginative</persName>
+          </person>
+          <person xml:id="mtoutfeu" sex="UNKNOWN">
+            <persName>Monsieur Tout Feu</persName>
+          </person>
+          <person xml:id="delimaginative" sex="UNKNOWN">
+            <persName>De l'Imaginative</persName>
+          </person>
+          <person xml:id="toutfeu" sex="UNKNOWN">
+            <persName>Tout Feu</persName>
+          </person>
+          <person xml:id="unenfant" sex="UNKNOWN">
+            <persName>Un enfant</persName>
+          </person>
+          <person xml:id="lesenfants" sex="UNKNOWN">
+            <persName>Les enfants</persName>
+          </person>
+          <person xml:id="lenfant" sex="UNKNOWN">
+            <persName>L'enfant</persName>
+          </person>
+          <person xml:id="picard" sex="UNKNOWN">
+            <persName>Picard</persName>
+          </person>
+          <person xml:id="fifi" sex="UNKNOWN">
+            <persName>Fifi</persName>
+          </person>
+          <person xml:id="pz" sex="UNKNOWN">
+            <persName>P.</persName>
+          </person>
+          <person xml:id="fz" sex="UNKNOWN">
+            <persName>F.</persName>
+          </person>
+          <person xml:id="ourson" sex="UNKNOWN">
+            <persName>Ourson</persName>
+          </person>
+          <person xml:id="margot" sex="UNKNOWN">
+            <persName>Margot</persName>
+          </person>
+          <person xml:id="margotmamie" sex="UNKNOWN">
+            <persName>Margot mamie</persName>
+          </person>
+          <person xml:id="unpaysan" sex="UNKNOWN">
+            <persName>Un paysan</persName>
+          </person>
+          <person xml:id="turelure" sex="UNKNOWN">
+            <persName>Turelure</persName>
+          </person>
+          <person xml:id="hebete" sex="UNKNOWN">
+            <persName>L'hébété</persName>
+          </person>
+          <person xml:id="toutamort" sex="UNKNOWN">
+            <persName>Tout Àmort</persName>
+          </person>
+          <person xml:id="friponnette" sex="UNKNOWN">
+            <persName>Friponnette</persName>
+          </person>
+          <person xml:id="lessoldats" sex="UNKNOWN">
+            <persName>Les soldats</persName>
+          </person>
+          <person xml:id="unvalet" sex="UNKNOWN">
+            <persName>Un valet</persName>
+          </person>
+          <person xml:id="unerecrue" sex="UNKNOWN">
+            <persName>Une recrue</persName>
+          </person>
+          <person xml:id="unlaquais" sex="UNKNOWN">
+            <persName>Un laquais</persName>
+          </person>
+          <person xml:id="tous" sex="UNKNOWN">
+            <persName>Tous</persName>
+          </person>
+          <person xml:id="l_imaginative" sex="UNKNOWN">
+            <persName>L'imaginative</persName>
+          </person>
+          <person xml:id="monsieur_tout_feu" sex="UNKNOWN">
+            <persName>Monsieur Tout feu</persName>
+          </person>
+          <person xml:id="tout_amort" sex="UNKNOWN">
+            <persName>Tout Àmort</persName>
+          </person>
+          <person xml:id="l_hebete" sex="UNKNOWN">
+            <persName>L'Hébété</persName>
+          </person>
+          <person xml:id="margot_mamie" sex="UNKNOWN">
+            <persName>Margot mamie</persName>
+          </person>
+          <person xml:id="un_enfant" sex="UNKNOWN">
+            <persName>un enfant</persName>
+          </person>
+          <person xml:id="paysans" sex="UNKNOWN">
+            <persName>Paysans</persName>
+          </person>
+          <person xml:id="suite" sex="UNKNOWN">
+            <persName>Suite</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parade avec un prologue. Parodie de l'opéra de<emph>Tarare</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#l_imaginative">L'imaginative</role>
+          <actor>Branchu</actor>
+        </castItem>
+        <castItem>
+          <role ana="#monsieur_tout_feu">Monsieur Tout feu</role>
+          <actor>Branchu</actor>
+        </castItem>
+        <castItem>
+          <role ana="#picard">Picard</role>
+          <roleDesc>capitaine des housards</roleDesc>
+          <actor>Destival</actor>
+        </castItem>
+        <castItem>
+          <role ana="#turelure">Turelure</role>
+          <roleDesc>brandevinier de la compagnie</roleDesc>
+          <actor>Durmoy</actor>
+        </castItem>
+        <castItem>
+          <role ana="#tout_amort">Tout Àmort</role>
+          <roleDesc>fils du bailli L'Hébété</roleDesc>
+          <actor>François</actor>
+        </castItem>
+        <castItem>
+          <role ana="#l_hebete">L'Hébété</role>
+          <roleDesc>bailli et magister du lieu</roleDesc>
+          <actor>Guiraumont</actor>
+        </castItem>
+        <castItem>
+          <role ana="#margot_mamie">Margot mamie</role>
+          <roleDesc>femme de Turelure</roleDesc>
+          <actor>Lacroix</actor>
+        </castItem>
+        <castItem>
+          <role ana="#friponnette">Friponnette</role>
+          <roleDesc>femme de Fifi</roleDesc>
+          <actor>Forêt l'aînée</actor>
+        </castItem>
+        <castItem>
+          <role ana="#fifi">Fifi</role>
+          <roleDesc>confident de Picard</roleDesc>
+          <actor>Mayeur</actor>
+        </castItem>
+        <castItem>
+          <role ana="#ourson">Ourson</role>
+          <roleDesc>jocquet de Picard</roleDesc>
+          <actor>Maignon</actor>
+        </castItem>
+        <castItem>
+          <role ana="#un_enfant">un enfant</role>
+          <roleDesc>pour les suffrages</roleDesc>
+          <actor>Thorigny</actor>
+        </castItem>
+        <castItem>
+          <role ana="#paysans">Paysans</role>
+        </castItem>
+        <castItem>
+          <role ana="#suite">Suite</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage>Le théâtre représente une place dans le fond de la maison de monsieur Tout Feu. En demande de L'imaginative, des enfants paraissent aux fenêtres et y sont occupés à faire des bulles de savon, que d'autres en face qui sont dans la rue, font voltiger avec le vent de soufflets qu'ils tiennent [.. ...] continuellement; on joue l'air<emph>Hanneton, vole, vole</emph>.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">madame de l'imaginative, des enfants</stage>
+        <sp who="#madamedelimaginative">
+          <speaker>Madame de l'Imaginative</speaker>
+          <stage>une verge à la main</stage>
+          <p>À quoi donc s'amusent ces petits morveux-là? Voulez-vous bien aller jouer plus loin et nous laisser en repos.</p>
+        </sp>
+        <sp who="#unenfant">
+          <speaker>Un enfant</speaker>
+          <p>Où voulez-vous donc que nous allions?</p>
+        </sp>
+        <sp who="#madamedelimaginative">
+          <speaker>Madame de l'Imaginative</speaker>
+          <p>Où vous voudrez pourvu que ce soit loin d'ici. Toi, Zéphyr, monte au grenier et restes-y, vous autres, décampez et vite ou ces verges vous serviront!</p>
+        </sp>
+        <stage>Elle chasse les enfants qui se sauvent.</stage>
+        <sp who="#lesenfants">
+          <speaker>Les enfants</speaker>
+          <p>Allons-nous-en chacun chez nous.</p>
+        </sp>
+        <stage>Ils sortent.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">madame de l'imaginative, monsieur tout feu<stage>à une fenêtre</stage>
+        </stage>
+        <sp who="#mtoutfeu">
+          <speaker>Monsieur Tout Feu</speaker>
+          <p>Hé! Que faites-vous donc là-bas, Madame de L'imaginative?</p>
+        </sp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>Ah! C'est vous monsieur Tout Feu?</p>
+        </sp>
+        <sp who="#mtoutfeu">
+          <speaker>Monsieur Tout Feu</speaker>
+          <p>Moi-même, ma commère.</p>
+        </sp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>Descendez un moment, voisin, nous causerons ensemble, j'ai beaucoup de choses à vous communiquer.</p>
+        </sp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>Volontiers, je suis d'ailleurs trop éloigné pour bien entendre ce que vous me dites, plus près de vous je pourrai comprendre plus à mon aise.</p>
+        </sp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>Je suis contente de l'avoir vu, il pourra m'être très utile dans le projet que j'ai médité.</p>
+        </sp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>Me voici qu'exigez-vous?</p>
+        </sp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>L'idée m'est venue de composer plusieurs dessins d'imagination. Vous savez que je sais m'en escrimer. Bientôt animée par mon génie créateur, j'ai vu naître sous mon crayon un nombre infini de figures de toute espèce ; mais ces figures, formées d'un simple trait, sont encore sans expression et sans couleur, comme qui dirait des ombres.</p>
+        </sp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>J'entends, vous avez besoin du charme puissant de mon pinceau pour donner à ces simples dessins cette enlumineure  dont je possède si bien l'art par excellence?</p>
+        </sp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>Justement.</p>
+        </sp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>Faites-moi voir vos dessins et en deux fortes touches appliquées là à ma manière, vous leur verrez prendre une certaine tournure.</p>
+        </sp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>Vous allez être satisfait. Je les ai faits découper pour leur donner plus de grâce. Sujets soumis à mes ordres, apprentifs de mes talents, accourez chacun muni d'une de mes froides découpures.</p>
+        </sp>
+        <stage>On les apporte.</stage>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>Ces dessins là sont fort bien faits, Madame, mais il faut comme vous le disiez que mon talent y mette la dernière main. Leur donne la vie.</p>
+        </sp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>Voyons, qu'allez-vous faire de tous ces cartons blancs?</p>
+        </sp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>Celui-ci me semble représenter une femme, il la faut faire jolie ; une femme sans attraits est bijou qui a peu de cours dans la société.</p>
+        </sp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>Et celle là?</p>
+        </sp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>Son air dégagé me plait ; sa taille élégante et svelte me prévient en sa faveur ; elle me parait faite pour réussir dans le monde. J'en veux faire une intrigante.</p>
+        </sp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>Une intrigante, soit. Elle s'appellera «Friponnette».</p>
+        </sp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>J'adhère.</p>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#toutfeu">
+            <speaker>Tout Feu</speaker>
+            <p>Nous la reconnaitrons, la voilà étiquetée.</p>
+          </sp>
+        </spGrp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>Et cette femme dont l'air est si langoureux et qui tient un mouchoir à la main?</p>
+        </sp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>Nous en ferons une Héraclite femelle.</p>
+        </sp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>À la bonne heure : elle se nommera «Margot mamie».</p>
+        </sp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>Bon pour Margot mamie.</p>
+        </sp>
+        <spGrp who="#toutfeu">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dites_la_pleureuse">Dites la pleureuse</title>
+            </desc>
+          </head>
+          <sp who="#delimaginative">
+            <speaker>De l'Imaginative</speaker>
+            <p>Et ces deux découpures dont les contours doivent vous paraître mâles?</p>
+          </sp>
+        </spGrp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>À vous le dé, Madame, ce genre est parfaitement placé dans vos mains.</p>
+        </sp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>Faites de celui-ci un housard à longues moustaches, un brutal, un sot, un lâche, un imbécile, un méchant sans savoir pourquoi, amoureux sans savoir comment, voulant le mal pour le plaisir d'en faire, le faisant toujours à contre sens ; sans caractère, sans mœurs, sans idées, en un mot un tyran couronné et s'appellera «Picard».</p>
+        </sp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>Vous me donnez une idée!</p>
+        </sp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>Quelle est-elle?</p>
+        </sp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>Il faut toujours l'ombre au tableau, pour contraster avec votre Picard, je ferai de cet autre carton un pauvre diable de brandevinier, bon, humain, valeureux et brave et qui se nommera «Turelure».</p>
+        </sp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>Maître votre idée est excellente!</p>
+        </sp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>Elle n'est pas neuve, toujours le nom du personnage n'est guère noble, mais on y prend pas garde d'espérer aujourd'hui que le français s'amuse de tout, soit donc «Picard», l'effroi de toute la terre, et toi soit mon ami «Turelure».</p>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#delimaginative">
+            <speaker>De l'Imaginative</speaker>
+            <p>Et celui-ci qui tient un guitare!</p>
+          </sp>
+        </spGrp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>Il en faut faire un Figaro nous lui donnerons seulement une autre dénomination pour avoir l'air d'offrir au public un personnage neuf mais bas, flatteur par intérêt, bon ami par tempérament, intriguant par nécessité, spirituel par caractère : ce sera toujours «Figaro» sous le nom de Fifi! Et en offrant sur la scène le langage de ce personnage trivial mêlé au tragique larmoyant, nous dirons hardiment au public que nous voulons lui donner une idée du théâtre grec.</p>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#delimaginative">
+            <speaker>De l'Imaginative</speaker>
+            <p>L'intrigante Friponette sera sa femme, [ce] sera d'autant mieux que j'ai le projet d'une pièce monstrueuse d'une parade, du grand [...] dans laquelle tous les personnages bizarres joueront un rôle.</p>
+          </sp>
+        </spGrp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>Ah! vous faites des pièces? vous êtes donc au poil et à la plume.</p>
+        </sp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>Oui compère, j'attendais votre secours pour nommer mes acteurs. Mon plan est inconcevable, ma conduite extraordinaire et mes rimes seront extravagantes, cela fera un bel effet. «Laissons en un clin d'œil  écouler quarante ans et voyons-les agir sur la scène du monde».</p>
+        </sp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>Si vous prenez une durée de quarante ans, tous vos acteurs seront du même âge, plus de vraisemblance pour les caractères, ils seront presque tous à contre sens ; vous conviendrez qu'une jeune fille de quarante ans est une rose furieusement épanouie.</p>
+        </sp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>Je n'y avais pas pensé, vous m'ouvrez les yeux, mais il est trop tard! Il faut tout vous avouer, ma pièce va être jouée publiquement dans deux minutes, vous concevez bien qu'on ne peut pas dire au public : «Messieurs reprenez votre argent au bureau», ça ne ferait pas le compte du directeur.</p>
+        </sp>
+        <sp who="#toutfeu">
+          <speaker>Tout Feu</speaker>
+          <p>Non, mais ça sauverait la bévue de l'auteur!</p>
+        </sp>
+        <sp who="#delimaginative">
+          <speaker>De l'Imaginative</speaker>
+          <p>Au bonheur! Peut-être ne s'en apercevra-t-on pas, non pas que je doute des connaissances des spectateurs mais du bruit, du fracas, des allées, des venues, toute la rocambole théâtrale cela étourdit, et l'éclat de la broderie cache les défauts de l'étoffe. Allons, suivez-moi, si ma pièce réussie, je m'en attribuerai tout l'honneur ; si elle tombe je la ferai imprimer avec une préface et je rejetterai tout le blâme sur les comédiens. Il n'y a que moyen de s'arranger pour avoir toujours de la célébrité en dépits des événements.</p>
+        </sp>
+        <stage>Ils sortent.</stage>
+        <stage>Fin du prologue</stage>
+      </div>
+      <div type="act">
+        <head>ACTE 1</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">picard, fifi</stage>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Non, laisse-moi Fifi.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Oh, mon maître! oh, capitaine des housards! oh, seigneur d'un village allemand! faites grâce à Turelure.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Turelure, toujours Turelure! Ce nom me chagrine les oreilles, m'irrite le genre nerveux. Il faut être bien bizarre pour faire un nom de famille d'une interjection.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Je chantais à l'entrée du village, ce héros (je ne l'appellerai plus que comme ça) m'écoutait attentivement ; une bande de paysans tombe sur moi, casse mon violon, déchire mes nouvelles ariettes de vieux opéra, veut enlever ma femme Friponnette ; mon héros joue du bâton à deux bouts, fend le gros crâne rustique, me délivre et me place auprès de vous!  Je n'oublierai jamais un pareil service et je serai reconnaissant comme un [...]atien.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Un jour... une nuit... une fois, je venais de faire un grand repas, je tombai dans un fossé rempli d'un pied d'eau, j'allais me noyer, cet original-là me sauva, me mit à califourchon sur son âne. Pour l'en récompenser, je l'ai fait brandevinier de ma compagnie, mais depuis je m'en suis repenti. Tu verras aujourd'hui par ma façon d'agir que j'aurai encore plus d'une fois occasion de m'en repentir.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>C'est arrivé à de plus grands personnages que vous.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Tu connais Margot Mamie?</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>La femme de Turelure.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Hem?</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>La femme de mon héros?</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Je l'adore, je l'ai fait enlever.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>
+              <emph>Il en mourra.</emph>
+            </p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>
+              <emph>Tant mieux.</emph>
+            </p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>La réponse n'est pas noble.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Je parle pourtant comme un roi asiatique.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Mais quel est le crime de chose.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>D'être fort content quand son capitaine ne l'est pas!</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Tant pis pour vous, le soleil luit pour tout le monde.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Tu verras bien du grabuge!</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Eh! pourquoi? Mon héros est une bonne pâte d'homme, on pourrait faire un proverbe sur son nom. Un bas breton parle-t-il de sa politesse, un gascon de sa valeur, un marchand de sa bonne foi? Turelure s'écrie tout aussitôt, comme un si voulait dire à [...] laisse donc! laissez donc! laissez donc!</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Quoi monstre! tu viens de prononcer son nom en toutes lettres? Il faut que ta mort...</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>La mort! La mort! vous parlez toujours de tuer. Eh! bien tuez-moi, on ne meurt qu'une fois, mais quand vous m'aurez occis, vous chercherez qui vous amusera. Les bouffons sont aussi rares que le bon sens.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Je punirai cet excès d'arrogance. [...] ici.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Pas sitôt.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Non je ne te ferai rien, j'ai encore besoin de toi.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">les précédents, ourson</stage>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Seigneur, l'affaire est dans le sac.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Margot mamie.</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Nous la tenons, Tout Àmort, le fils de votre bailli L'Hébété nous a bravement secondé, Margot était seule, nous l'avons enlevée sans trembler.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Vive les gens de cœur pour réussir en tout. Amenez ma maîtresse avec beaucoup de pompe, ça fera un beau coup d'œil.</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>La voilà.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">les précédents, margot mamie</stage>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>
+              <emph>Que tout s'abaisse devant elle</emph>, moi seul je veux rester droit.</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Où suis-je? Je frémis! La nuit, la clarté, l'horreur... ah! tout mon corps chancelle.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Vous êtes chez l'illustre Picard.</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Ah! Quelle indignité! M'enlever, me traîner, me porter, me séparer! Est-ce ainsi que vous payez la foi d'un brandevinier qui conserve vos jours? Juste ciel, Soleil, toi qui vois tout, ne souffre pas, tiens monstre pour ne plus te voir je me trouve mal.</p>
+          </sp>
+          <stage>Elle tombe évanouie.</stage>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Hola! hé! volez à son secours. Quelqu'un a-t-il un flacon?</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Non, je croyais qu'il n'y avait qu'en France que les dames eussent des vapeurs.</p>
+          </sp>
+          <sp who="#unpaysan">
+            <speaker>Un paysan</speaker>
+            <p>
+              <emph>Le voile de la mort a couvert sa paupière.</emph>
+            </p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <stage>l'étranglant</stage>
+            <p>Meurs toi-même pour voir comme on fait. Mes vassaux, mes vassaux, répondez-moi de Margot mamie ou je vous fais tous pendre au grand cime sous lequel vous dansez le dimanche!</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Grand dieu! que fait ce paysan à mes pieds?</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>C'est un gueux que j'ai tué pour faire voir combien je vous aime.</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Bien obligé seigneur.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Il m'a dit que vous étiez morte, zeste. Je l'ai étranglé par ce que je n'aime pas qu'on me fasse peur.</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Oh! Turelure! ah! Dieu, adieu, je vais m'évanouir.</p>
+          </sp>
+          <stage>Elle tombe évanouie.</stage>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Elle a là une drôle de manie, ça ne rendra [pas] son rôle bien intéressant. Comme j'aurai besoin d'un quiproquo de nom, je veux dorénavant qu'on l'appelle Rosette; portez la quelque part, nous la retrouverons dans un autre acte.</p>
+          </sp>
+          <stage>On l'emporte.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">picard, fifi, ourson</stage>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Seigneur, ce brandevinier dont les vertus...</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Si je ne t'arrêtais pas, tu dirais son nom. Après?</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Il gémit, il soupire, il pleure!</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Il pleure fort bien... c'est signe qu'il n'est pas gai.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Il faut convenir, Seigneur, que vous avez une grande pénétration.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Ne sait-il rien?</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Je ne crois pas.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Cachons-nous toujours.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">les précédents, turelure</stage>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Où donc est le noble Picard?</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Pourquoi faire?</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>On m'a pris ma femme, je viens me plaindre à lui.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <stage>à part</stage>
+            <p>Il ne sait rien, paraissons.</p>
+          </sp>
+          <stage>[À Turelure.]</stage>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Eh bien qu'est-ce qu'il y a mon ami? Qu'est-ce que c'est?</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Ô mon capitaine, des lâches, des brigands, des je ne sais qui ont enlevé ma femme, ont défoncé mes barils, ont égorgé ma volaille et m'ont pris dix écus, dont j'avais besoin pour aller au marché.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>C'est épouvantable, mais il y a bonne justice et la justice est une bonne chose. Viens loger dans mon château, je te donnerai une jolie chambre au grenier garnie d'indienne à grande fleur rouge. [...] Tu seras chéri alors respecté ; mon portier te saluera quand tu passeras et tu auras tous les jours la soupe, la bouillie, des entrées, des entremets, le rôti, la salade.</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <stage>à part</stage>
+            <p>Mais vous n'y pensez pas seigneur.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Tais-toi donc. Je veux le faire mourir d'indigestion.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Non seigneur, tous ces dons superbes ne touchent pour mon cœur, je veux courir les champs et fendre la cervelle au ravisseur de Margot mamie.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <stage>avec un signe d'intelligence</stage>
+            <p>Quelle est cette femme Ourson?</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Quelque jolie suivante surement.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Une servante! une servante! non c'était ma femme, elle m'avait couté mes quinze francs, elle est d'un sang illustre : sa mère n'avait jamais fréquenté que des seigneurs et Margot s'en ressent dans toute sa personne.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Mon ami, tu pleures la perte de ta femme, on voit bien que nous sommes dans un pays étranger.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>C'est fait, voulez-vous me donner quelque paysan pour courir après ces infâmes ravisseurs?</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Bien volontiers, choisis-les purs et si tu te fais tuer, ça te corrigera.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Je jure sur ce bâton sanglant de punir... Je dis c'est égal, je frapperai toujours, après cela nous verrons qu'est-ce qui aura tort ou raison, adieu.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">picard, ourson, fifi</stage>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Ourson, allez dans l'antichambre afin d'être prêt à annoncer ceux [qui] ont à me parler.</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Je reviendrai bientôt.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Vous êtes payé pour ça. Allez.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">picard, fifi</stage>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Avec ça, monsieur ton héros est un peu fait.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Parbleu, c'est bien étonnant les bons sont toujours la dupe des méchants. Avant qu'ils se doutent de la trame qu'on ourdit contre eux les honnêtes gens sont entortillés dedans.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Comme tu dis.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Le secret d'un oiseleur est de cacher sa glue, et la glue du pouvoir est la plus tenace de toutes ; on ne s'en débarrasse plus (ou du moins bien rarement) quand une fois on y est empêtré.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Tu parles comme un livre, comment donc, tu aurais quasiment assez d'esprit pour mettre des épigrammes dans une tragédie lyrique?</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">les précédents, ourson, l'hébété</stage>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Jean Gilles L'Hébété, magister et bailly de monseigneur.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Entrez mon cher L'Hébété, plus on est de fous et plus on rit.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Il n'est plus temps de plaisanter, j'ai fermé mon école et je viens vous donner une leçon.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>De français? Il en aurait besoin.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Ce n'est pas ça. Il y a un grand malheur qui nous menace. Ma tête se trouble.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>À cause de quoi?</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>On dit qu'une troupe de bohémiens doivent venir vous attaquer, cette nuit, dans l'ombre, quand le soleil sera couché, quel désastre! Ah monseigneur, ma cervelle en bouillonne!</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Allez dormir mon cher bailli, vous avez trop de fatigue.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>La croix de Pardieu, ba bé bi bo bu. Les travaux de baillage, la politique, l'avenir, c'est trop pour moi, j'en mourrai, j'en mourrai.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Grand bien vous fasse.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>
+              <emph>Juste ciel, crains Picard.</emph>
+            </p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>
+              <emph>Quoi! Craindre? Mes remords?</emph>
+            </p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Non les bohémiens.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Assemblons la milice.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Elle demande un chef.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Je nomme ton fils.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>L'usage est d'assembler le village et puis on s'en rapporte à l'enfant des augures.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Il faut gagner le rapporteur.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Il ne faut pas m'apprendre ça, un homme de justice!</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Retirons-nous.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Pourquoi?</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Je ne sais rien mais Fifi me fait signe.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Le drôle machine quelque dessous de carte.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>C'est pour faire aller l'action. Donnez-moi la main, la science et la valeur doivent marcher ensemble.</p>
+          </sp>
+          <stage>Ils sortent.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 9</head>
+          <stage type="characters">[fifi]</stage>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <stage>seul</stage>
+            <p>Ce pauvre Turelure, il est dans la bonne foi, il faut le détromper avant l'assemblée, ça fera qu'il trouillera Tout Amort comme un faquin. Bien vu! Bravo caro Fifi.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 10</head>
+          <stage type="characters">fifi, turelure</stage>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Turlure, à moi!</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Ah! mon cher Fifi.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Écoute-moi, tais-toi et songe à ta superbe Margot mamie que tu vas chercher au hasard : elle est ici sous le nom de Rosette, Picard l'a fait ravir, elle est dans son château et s'est trouvée mal pour être fidèle.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Qui l'a ravie?</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 11</head>
+          <stage type="characters">[fifi, turelure]</stage>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Tout Amort.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Je le tuerai.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>J'y compte. Il y a un vieux chêne en face de la petite porte du parc, monte dessus et viens me trouver cette nuit. Nous nous amuserons comme de petits rois, viendras-tu?</p>
+          </sp>
+          <stage>Il le gare.</stage>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Tout le monde vient, ayez l'air de ne rien savoir, il faut se faire aux usages du lieu qu'on habite: dissimuler est la vertu des grands.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 12</head>
+          <stage type="characters">les précédents, l'hébété, l'enfant, paysans, suite</stage>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Mes enfants, nous allons nommer un chef, nous nous servirons pour cela<emph>d'un cœur plein de simplicité.</emph>Venez petit.</p>
+          </sp>
+          <sp who="#lenfant">
+            <speaker>L'enfant</speaker>
+            <stage>accourant</stage>
+            <p>Papa.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Bonjour mon petit ami, bonjour, vous souvenez-vous bien de votre leçon?</p>
+          </sp>
+          <sp who="#lenfant">
+            <speaker>L'enfant</speaker>
+            <p>Oh! oui, a e i o u.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Ce n'est pas ça mon petit ami.</p>
+          </sp>
+          <sp who="#lenfant">
+            <speaker>L'enfant</speaker>
+            <stage>il se met à pleurer</stage>
+            <p>Ahi! ahi!</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Ne pleurez pas. Tenez, voilà du bonbon.</p>
+          </sp>
+          <sp who="#lenfant">
+            <speaker>L'enfant</speaker>
+            <stage>très gaiement</stage>
+            <p>Merci papa.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Le ciel va vous inspirer de nommer un chef... S'il vous disait Tout Amort, entendez-vous, mon fils Tout Amort, il faudrait le dire tout de suite.</p>
+          </sp>
+          <sp who="#lenfant">
+            <speaker>L'enfant</speaker>
+            <p>Oui papa. Avez-vous encore nanan?</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Vous en aurez si je suis content de vous.<stage>Tout bas.</stage>Tout Amort.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 13</head>
+          <stage type="characters">les précédents, tout amort, picard<stage>monté sur un cheval de bois</stage>
+          </stage>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Housard, paysans, peuple, des bohémiens nous menacent, si nous ne nous opposons point à leurs ravages, ils viendront manger nos poules et nos jambons. Il nous faut un défenseur, un noble chef de milice, écoutez l'enfant va parler. Excusez, je m'excuse, cette harangue m'a mis tout en eau.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Bailli, je suis content de vous. Que l'enfant parle.</p>
+          </sp>
+          <sp who="#lenfant">
+            <speaker>L'enfant</speaker>
+            <stage>d'une voix très glapissante</stage>
+            <p>Messieurs quand je vois, quand je regarde, je regarde, je vois Turelure.</p>
+          </sp>
+          <sp who="#toutamort">
+            <speaker>Tout Àmort</speaker>
+            <p>Turelure!</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Peuple, c'est un[e] erreur.<stage>Bas, le pinçant.</stage>Petit gueux, est-ce là ce que je t'ai dit?</p>
+          </sp>
+          <sp who="#lenfant">
+            <speaker>L'enfant</speaker>
+            <stage>pleurant</stage>
+            <p>Je voulais dire Tout Amort.</p>
+          </sp>
+          <sp who="#tous">
+            <speaker>Tous</speaker>
+            <p>Turelure, Turelure!</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Ah! le vilain enfant!</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Qu'on lui donne le fouet.</p>
+          </sp>
+          <sp who="#tous">
+            <speaker>Tous</speaker>
+            <p>Turelure, Turelure!</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Taisez-vous faquins, je vous fends en deux. Soit, vous aurez Turelure.<stage>À part</stage>Le plat bailli n'avait pas l'esprit de séduire un enfant.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Mon fils, défendez vos droits.</p>
+          </sp>
+          <sp who="#toutamort">
+            <speaker>Tout Àmort</speaker>
+            <p>Ah! ah!</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Prétends-tu me ravir le commandement?</p>
+          </sp>
+          <sp who="#toutamort">
+            <speaker>Tout Àmort</speaker>
+            <p>Ah! ah!</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Apprends imprudent jeune homme que je suis un savant contre pointeur, un héros, un tueur, que Tout Amort enfant ne savait que jouer aux barres, au cheval fendu et à la marelle.</p>
+          </sp>
+          <sp who="#toutamort">
+            <speaker>Tout Àmort</speaker>
+            <stage>très furieux, tirant son sabre</stage>
+            <p>Ah! ah!</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Calme ta fureur ; un savant nous l'a dit :<emph>un guerrier en colère est mort</emph>.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <stage>descendant de son cheval</stage>
+            <p>On me prend ici pour un roi de carreau, je ferai mieux à m'en aller.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <stage>à Tout Amort</stage>
+            <p>Trouve-toi ce soir sur le petit pont, je te tuerai et je te jetterai à l'eau.<stage>À Fifi.</stage>À tantôt.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Ah monsieur de chose, tenez voilà ce sabre de commandant de milice.<stage>À part</stage>Ah, si j'étais brave...</p>
+          </sp>
+          <stage>Ils s'en vont.</stage>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Va te faire tuer mon fils, va.</p>
+          </sp>
+          <sp who="#toutamort">
+            <speaker>Tout Àmort</speaker>
+            <p>Ah! Ah!</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Allons, Messieurs, gagnons chacun notre logis, vous avez vu bien des choses, vous en verrez encore davantage. La féérie est un beau pays, on y marche d'extravagances en extravagances et la réputation vous attend au bout de vos sottises.</p>
+          </sp>
+          <stage>Fin de l'acte</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">fifi, picard, des valets<stage>qui allument</stage>
+          </stage>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Qu'est-ce que vous faites là marauds? Qu'est-ce qui vous a dit d'allumer ce jardin?</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Moi.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>C'est différent, Seigneur : charbonnier est maître chez lui! Peut-on vous demander quel est votre dessein?</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>De m'amuser, de donner à Margot mamie une petite fête européenne.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Comme vous ne l'avez pas appelée votre sultane, la reine ne vous gène point, parlez comme tout le monde, dites caro [...]</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Tu as raison. Mon précepteur n'était pas le moins ignorant de mes maîtres.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Mais cette fête est bien brusquée!</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Qu'importe, du bruit, des panaches et des beaux bras, c'est assez!</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Ferais-je une épigramme sur l'opéra?</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Non, si tu étais à l'endroit même ça sera plus décent. Va voir si les danseuses sont coiffées et si les danseurs ont des bas blancs.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Pourquoi?</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>C'est que mon jocquet qui vient va me faire un petit récit de mort pour me réjouir.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <stage>à part</stage>
+            <p>Ce préliminaire est en effet très favorable pour la gaieté.</p>
+          </sp>
+          <stage>Il sort.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">picard, ourson</stage>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Allons, fais-moi vite le récit de la mort d'un homme que j'ai beaucoup aimé, quand tu l'auras fait je n'y penserai plus.</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Turelure seul arrive au rendez-vous pour quelques coups d'espadon tire contre un arbre, il se mit en haleine...<emph>un long nuage de poussière s'avance du côté du nord</emph>. Vous entendez bien.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Que font là les points cardinaux? Parlez tout uniment, je ne te demande pas la carte du lieu.</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>C'était Tout Amort, suivi de tous les polissons du village, son aspect était farouche<emph>comme le spectre de la nuit.</emph>
+            </p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Tu as de drôles d'expressions. Va continue.</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Ils se regardent entre deux yeux comme des bretteurs qui jouent un lève à la première botte, d'abord,« faisons nos conventions »dit Tout Amort, ne tirant qu'au bras.« point de ça », répond Turelure, il y a du sang partout... aussitôt le combat est engagé pif, paf, tierce, quarte, tout est paré. Les lames raisonnent clic, clac, clic, clac comme dans un combat de pantomime. Zeste, un dégagement, un coulé sur l'âme, Tout Amort reçoit un coup de manchette,<emph>alors un noir sang ruisselle.</emph>Noir, voyez-vous, le sang du méchant a toujours une couleur particulière. Le vaincu qui ne perd pas la tramontaine dit:<emph>je suis blessé.</emph>Il veut tirer un grand coup de tête non dévolée, mais [...],<emph>le bras tendu Turelure pare et tient le trépas suspendu</emph>comme par un fil.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Je vois que Tout Amort est mort.</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>À peu près. Turelure serre d'une demi-mesure, lâche la main et donne le coup de [...] patatra, voilà Tout Amort qui roule, qui se débat. Turelure lui dit noblement :<emph>Je te laisse la vie, pleure longtemps ta perfidie</emph>.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>La perfidie? Il sait tout.</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>C'est clair mais c'était de la moutarde après dîner, votre ami était déjà mort tandis que cet autre lui pardonnait à contre-sens.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Ce drôle-là a l'avantage partout; tiens n'en parle plus, ça me mettrait en colère... Retire-toi, on va danser.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">picard, fifi, margot mamie, friponnette</stage>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Belle Margot mamie, je vais vous donner une petite fête bien gentille, asseyez-vous là, pleurez, gémissez et parlez peu.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <stage>à part</stage>
+            <p>Turelure n'est point prévenu, s'il arrivait quelque rabat joie!</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Qu'est-ce que c'est que ton ballet?</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Un petit salmi de jeunes gens, de vieillards, de paysans, de gens de cour qui produiront à la rigueur une  antithèse dansante.</p>
+          </sp>
+          <stage type="musical_indication">Ballet</stage>
+          <sp who="#margotmamie">
+            <speaker>Margot mamie</speaker>
+            <stage>à part</stage>
+            <p>Ah Turelure mon époux! Le voilà.<stage>Elle [...] son mouchoir sur ses yeux.</stage>Assez pour cette fois.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Apporte de quoi boire un coup. Madame veut-elle se rafraîchir?</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Bien obligé, je n'ai pas soif.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Comment trouvez-vous ma fête?</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Pas trop bonne.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Écoutez donc, c'est mon coup d'essai, une autre fois je ferai mieux.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Je le souhaite. Tu devrais me raconter ton histoire. Depuis que tu es à moi cette curiosité ne m'a point encore pris parce qu'il fallait qu'elle me prit aujourd'hui. D'ailleurs, l'occurrence est favorable, ça égaiera Margot mamie : commence ton récit.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>J'y veux mêler un nom qui nous rendra la nuit.</p>
+          </sp>
+          <spGrp who="#fifi">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#histoire_de_fifi">Histoire de Fifi</title>
+              </desc>
+            </head>
+            <sp who="#fifi">
+              <speaker>Fifi</speaker>
+              <p>Je suis né natif de Saint-Flour.</p>
+            </sp>
+          </spGrp>
+          <stage>Les couplets se parlent et l'orchestre joue l'air des<emph>pendus</emph>.</stage>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Ah! tu es auvergnat. C'est à mon tour à présent, tu m'as repris tantôt, j'ai ma revanche!<emph>Je suis né natif!</emph>tu fais là un pléonasme assez plat.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Ce n'est pas ma faute, mon parrain parlait comme ça.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>C'est différent j'ai tort [...].</p>
+          </sp>
+          <spGrp>
+            <sp who="#fifi">
+              <speaker>Fifi</speaker>
+              <l met="8">Je suis né natif de Saint-Flour</l>
+              <l met="8">Car c'est là que je vis le jour</l>
+              <l met="8">A peine étais-je à la jaquette</l>
+              <l met="8">Que je chantais la chansonnette,</l>
+              <l met="8">Et j'étais orgueilleux déjà</l>
+              <l met="8">Comme un chanteur de l'Opéra.</l>
+              <l met="8">Un jour poussé par le démon</l>
+              <l met="8">J'abandonnai notre maison</l>
+              <l met="8">Et me trouvait sans une obole.</l>
+              <l met="8">Je chantai mainte faribole,</l>
+              <l met="8">Je pris femme et je m'aperçu</l>
+              <l met="8">Chaque jour que j'étais... perdu.</l>
+            </sp>
+            <sp>
+              <l met="8">Un jour que dans les environs</l>
+              <l met="8">Je débitais de mes chansons</l>
+              <l met="8">D'une très mauvaise aventure</l>
+              <l met="8">Je fus sauvé par... Turelure...</l>
+            </sp>
+          </spGrp>
+          <spGrp>
+            <caption>Tous</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <p>Turelure!</p>
+            </sp>
+          </spGrp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Que le diable emporte celui qu'il l'a prononcé. Rentrez, Madame, que je vous suive.</p>
+          </sp>
+          <stage>Tout le monde sort.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">fifi, turelure</stage>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Si nous avions un bon machiniste, il ferait sombre sans savoir pourquoi, je ne te reconnaitrais pas et je voudrais te poignarder, mais sauvons cette invraisemblance, nous en faisons assez.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Oh mon héros, tes vêtements sont mouillés.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Oui, c'est que je me suis battu avec le passeur d'eau de vie, il y a eu quelques barils de brisés et je m'en suis ressenti.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Voilà une bonne occasion pour changer d'habits.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Qu'est-ce que c'est que ce paquet?</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>C'est la siguenille, le chapeau et les sabots de Pierre, notre garçon d'écurie.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Après?</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Déguisé de la sorte, je t'introduirai dans la chambre de Margot mamie : au milieu de tous ces obstacles, ta femme acquerra à tes yeux un mérite nouveau et l'hymen, cette fois envahissant le domaine de l'amour, couvrira vos plaisirs des actes d'[...].</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>C'est penser à ravir.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Pierre est fort basané, il faut mettre aussi ce masque de pain d'épice.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Tu songes à tout.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Souviens-toi que Pierre eut la langue coupée par accident, qu'il est muet et qu'un muet ne parle pas.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Je ne dirai pas un mot.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Allons chez la belle. Ô Malheur! Picard est chez elle, voilà son manteau.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <stage>criant</stage>
+            <p>Chez elle! Ô malheureux Turelure!</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Tais-toi donc bourreau, tu nous feras découvrir.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Je veux mourir moi.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Mais non pas moi.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Ah! Dieu, ah! Dieu.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Ah, je m'en doutais. Voilà l'autre.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">les précédents, picard</stage>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Quel est ce drôle qui crie?</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>C'est votre valet d'écurie. Il a une colique affreuse, voyez comme il se roule à terre.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Qu'il crève s'il veut, c'est un roturier. Je suis dans une fureur! Je ne me connais plus! J'ai voulu lui parler de mon amour, de ma fidélité, de ma naissance, de mon bien, la cruelle! elle m'a repoussé avec dédain! Elle m'a parlé de sa vertu, de son honneur, que sais-je moi de tous ces lieux communs auxquels on ne croit plus, ce dont les femmes ont toujours la fureur de vouloir se servir.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Oubliez-la.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Sot. Est-elle ma femme pour l'oublier? Raccommode ma boucle.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Vous êtes trop grand.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Me voilà à la portée. La rage m'étouffe, Fifi.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Seigneur.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Il me prend une envie: coupe la tête de Pierre, défigure-la, porte-la à Margot mamie et dis-lui... dis-lui que c'est la tête de son époux.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Elle ne me croira pas, la peau est d'une teinte différente.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>C'est juste, je déraisonne! Je n'en reviens point moi : dédaigner un capitaine de housard, un gentil homme allemand, un seigneur suzerain, corsembleu!</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Seigneur.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Introduis Pierre dans la chambre de Margot mamie ; qu'on les surprenne ensemble, qu'il ait l'air d'être en bonne fortune, je serai vengé.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Comment?</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Le ridicule de son prétendu choix la couvrira de honte. On la montrera du doigt. Surtout amène des jeunes filles pour la chose soit plus tôt sue. Tu sais comme les femmes aiment à se déchirer entr'elles!</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Vous serez obéi.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Je ris d'avance de mon projet de vengeance! Ah, ce sera délicieux! Je vais me coucher là-dessus, je dormirai d'un bon sommeil.</p>
+          </sp>
+          <stage>Il fait quelques pas.</stage>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <stage>bas à Turelure</stage>
+            <p>Il prend bien la chose!</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>J'ai fumé une fière pipe.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Non, je ne puis me rassasier de l'idée qui m'est venue. Attache-moi mon manteau, je vais entendre toutes ces cailettes, toutes ces bavardes de profession qui diront: Bonjour madame Pierre, bonjour la belle déjoutée, bonjour la belle palefrenière. C'est charmant! c'est divin! oh! oh! oh! j'en rirai plus d'un jour.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">fifi, turelure</stage>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Il faut convenir que votre ami Picard est bien pris dans ses propres filets.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Tous ces tyrans sont si bêtes! Allons ne perdons pas de temps.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Tout va bien. Figure s'il nous arrivera encore quelque anicroche, au reste, il faut espérer que nous nous en tirerons par des farces extraordinaires, tant de gens nous prouvent qu'il y a un dieu pour les intrigants.</p>
+          </sp>
+          <stage>Fin de l'acte</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 3</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">margot mamie, friponnette</stage>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Toutes tes représentations sont inutiles, il faut absolument que je me désespère. Friponnette, j'ai perdu mon cher Turelure.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Une femme doit-elle se lamenter pour la perte d'un mari? Ça serait nouveau.</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Ah! ma chère, c'est que celui-la avait de certaines bonnes qualités qu'on n'est pas sûr de rencontrer dans tous les autres.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Il est vrai que cela attache. Pour moi, je ne connais votre Turelure que de réputation.</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Tu plaisantes! Ne l'as-tu pas vu quand il nous a amenés à Picard?</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Vous avez raison, il est pourtant dit que je n'avais pu le reconnaître: c'est une invraisemblance de plus.</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Si je pouvais faire savoir à Turelure que je suis ici.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Ça pourra s'arranger, vous connaissez l'adresse de Friponnette... Mais voici le benjamin du tyran, faites semblant d'être fort affligée et essuyez-vos yeux.</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Je n'ai point de mouchoir.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Vous avez bien peu de manières! Comment, vous ne vous rappelez pas qu'étant obligée de nous enfermer très souvent vous l'avez, par précaution, attaché à votre ceinture?</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Tu as raison... Il peut entrer, me voici en posture.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">fifi, friponnette, margot mamie</stage>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Madame, réjouissez-vous, je vous apporte une bonne nouvelle: mon maître monsieur Picard vous accorde un second mari.</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Un second mari?</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Qu'il me déplait ce Fifi, ce n'est pas étonnant, il est mon époux.</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Et quel est-il, grands dieux, ce mari qu'on me veut donner quand celui que j'aime le plus au monde est encore vivant?</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>C'est Pierre, ce valet d'écurie, ce muet que vous avez en gros sabots dans la basse cour.</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Un valet d'écurie! Un muet!</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Ne vous alarmez pas, le mari qui ne dit rien n'agit souvent pas le plus mal!</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>L'ordre est que madame reste seule ici.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Sans moi?</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Sans vous.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Voilà qui est singulier.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Et assez désagréable pour une curieuse.</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Demeurer seule avec ce marsouin?</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Eh! Que craignez-vous? Un homme est-il donc si redoutable?</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Madame ne parait pas encore formée au ton de la bonne société, mais que madame mette toute vergogne de côté et suive les honnêtes conseils de Friponnette, elle sera bientôt au courant.</p>
+          </sp>
+          <stage>Il sort.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">friponnette, margot mamie</stage>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Voici l'instant où jamais de vous servir de votre mouchoir.</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Si tu voulais je n'en aurais pas besoin.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Comment cela?</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Au lieu de me désespérer en pur perte, je me sauverais et tu prendrais ma place.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Moi?</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Ne me refuse point. Tiens, voilà ma coiffure de dentelles, mon collier et mes bracelets de grenat ; je t'offrirais bien de l'argent mais je suis sans le sou.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Allons, soit, madame, il n'y a rien que je ne fasse pour vous être utile.</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Enveloppe-toi dans cette vieille pelisse, surtout nomme à tout moment Turelure et ne crains rien; moi, je me sauve, cette scène ne doit pas être plus longue, on viendra me trouver lorsqu'on aura besoin de moi.</p>
+          </sp>
+          <stage>Elle sort.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">[friponnette]</stage>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <stage>seule</stage>
+            <p>Plaçons-nous dans ce fauteuil. Il va venir, nous verrons ce qu'il a dans l'âme... Il est dangereux, j'en conviens, de se trouver un homme... oui, le pas est un peu glissant! mais que ne fait-on pas pour plaire à sa maîtresse? Je crains seulement qu'on donne une m[auvaise] interprétation à cette action généreuse. Il y a tant de mauvaises langues. J'entends quelqu'un, plaçons-nous avantageusement. La femme a beau ne pas aimer, un petit mouvement de coquetterie la porte toujours au défi de plaire... Couvrons-nous d'abord le visage de cet éventail.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">friponnette, turelure, fifi</stage>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Tiens la voilà, pousse ta pointe.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">turelure, friponnette</stage>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Son maintien est gauche mais il ne m'apparaît pas mal bâti! on peut essayer d'en faire quelque chose.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Il me paraît bien timide pour un jeune homme de son âge... comment il en reste là? C'est bien respectueux!... Un homme qui ne parle pas devrait agir davantage.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Ce n'est pas Margot mamie.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Que dit-il donc tout bas. Chaque amant a son langage.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Non.</p>
+          </sp>
+          <stage>Ils font un long jeu de théâtre en regardant de droite et de gauche.</stage>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Ôtons notre éventail et montrons-lui l'élégance de ma taille, ça l'encouragera peut être. Debout, tenez, admirez-moi, mais d'un peu loin, voilà tout ce que je peux faire pour vous, car je vous averti que j'aime Turelure.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Turelure...<stage>Bas.</stage>Vous riez.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Comment coquin tu parles?</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>C'est vrai, mais ne le dites pas, c'est un petit proverbe que je joue à l'insu de Picard.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Hé! pourquoi et comment es-tu venu ici?</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Dispensez-moi de vous broder une histoire qui ne servirait qu'à vous faire voir que je mens sans savoir pourquoi, car rien ne m'autorise à vous cacher que je suis Turelure, puisque vous m'avez témoigné être portée pour moi. Mais la chose doit être comme ça.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Elle n'en est pas mieux. Mais qui que vous soyez, vous ne me paraissez pas mal, je m'y connais.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Vous êtes bien honnête.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Je vais vous dire à présent (quoique je ne vous reconnaisse pas et que je devrais vous reconnaître) que puisque Turelure ne s'expose pas à me venir trouver, je vous choisis à sa place. Asseyez-vous à côté de moi, nous serons plus à notre aise... bon! baisez ma main... mais n'en demandez pas davantage<stage>Il lui baise la main.</stage>Fort bien, je sens que je pourrai m'accoutumer à ses manières. Baisez-vous aussi ma joue... mais n'en demandez pas davantage<stage>Il la lui baise.</stage>, allons, il se formera.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Pour un mari, le rôle que je joue ici n'est pas sans agrément.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Je vous devine. Ces hommes ne sont jamais contents, tenez, mais la pudeur me retient... Allons baisez-la... mais n'en demandez pas davantage.<stage>Des soldats entrent.</stage>Hé bien! nigaud, que faites-vous donc? Avez-vous oublié que votre entrée n'est qu'à la fin de notre scène?</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Où diable est mon masque de pain d'épice?</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">les mêmes, ourson, miliciens armés de bâton, fifi, domestiques entrant de l'autre côté.</stage>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>N'entrez pas.</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Entrez.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>N'entrez pas.</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Entrez, vous dis-je!</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Non.</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Si.</p>
+          </sp>
+          <sp who="#unvalet">
+            <speaker>Un valet</speaker>
+            <p>Mes amis, en attendant que ces messieurs soient d'accord, reposons-nous.</p>
+          </sp>
+          <sp who="#tous">
+            <speaker>Tous</speaker>
+            <p>Bien dit.</p>
+          </sp>
+          <sp who="#unerecrue">
+            <speaker>Une recrue</speaker>
+            <p>Et nous, n'en faisons-nous pas autant?</p>
+          </sp>
+          <sp who="#tous">
+            <speaker>Tous</speaker>
+            <p>Si [...].</p>
+          </sp>
+          <stage>Ils s'assoient et posent leurs armes à terre.</stage>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Maintenant que ces messieurs sont a leur aise, voyons, expliquez-moi pourquoi vous venez ici quand le grand Picard a défendu qu'on y entrât?</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Je viens de sa part mais avant tout il faut que Friponnette sorte, elle ne doit plus être là et ne doit pas entendre ce que je vais dire.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Allons ma seule et respectueuse épouse, sortez.</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>C'est juste, je l'avais oublié.</p>
+          </sp>
+          <stage>Elle sort.</stage>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Je vous dirai donc que le seigneur Picard a changé de résolution, il voulait tout à l'heure que ce valet d'écurie fit la cour à sa maîtresse, il veut à présent qu'il soit assommé et jeté dans la puisard de sa basse-cour et je suis chargé de cette exécution.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Elle est jolie et récréative! Je m'en charge moi.</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Pas si niais que de me fier à toi : mon maître a prévu le coup aussi m'a-t-il recommandé d'être témoin de la chose, allons qu'on l'assomme.</p>
+          </sp>
+          <stage>Les soldats se lèvent.</stage>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Ne vous dérangez pas de votre place... Ce n'est pas le palefrenier.</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Ce n'est pas Pierre?</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Oh! non. Est-ce que vous ne reconnaissez pas Turelure?</p>
+          </sp>
+          <stage>Tous se lèvent et crient Turelure.</stage>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Turelure!</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <stage>à part</stage>
+            <p>Pourquoi ai-je perdu mon masque de croquet.</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Allons, Messieurs, nous savons que c'est Turelure, nous devons nous chagriner et cependant le conduire au tyran. Pleurons donc puisqu'il le faut, je vous donne l'exemple, imitez-moi.</p>
+          </sp>
+          <stage>Il tire un petit mouchoir de sa poche et le porte à ses yeux. Les soldats en font autant.</stage>
+          <sp who="#lessoldats">
+            <speaker>Les soldats</speaker>
+            <p>Allons.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Un instant, Messieurs, je ne puis vous suivre avant d'avoir fait cette belle réflexion :<emph>ne plaignez point mon sort, respectez votre maître, puissiez-vous un jour l'estimer</emph>.</p>
+          </sp>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>C'est très beau.</p>
+          </sp>
+          <spGrp>
+            <caption>Tous</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <p>C'est très beau! allons.</p>
+            </sp>
+          </spGrp>
+          <stage>Ils défilent chacun devant lui en lui faisant signe de la tête de le suivre.</stage>
+          <sp who="#ourson">
+            <speaker>Ourson</speaker>
+            <p>Songe à toi mon Fifi. La foudre est sur deux têtes.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">fifi, picard et sa suite</stage>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <stage>seul</stage>
+            <p>L'affaire est sur deux têtes. Elle est parbleu bien [...]. Nous sommes ici trois bonnes têtes dans un bonnet. Picard, prends garde à toi. Je prévois ce qui va arriver, j'ai de la judiciaire, retrouve-nous maintenant et disons en sortant pour fuir par un jeu de mots:<emph>Le méchant qui fait tout trembler est bien prêt de trembler lui-même.</emph>
+            </p>
+          </sp>
+          <stage>Il sort.</stage>
+          <stage>Le théâtre change et représente une des cours du château. Au milieu est un puits, à côté un grès; plusieurs cordages, ...</stage>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <stage>suite</stage>
+            <p>Ah, c'est donc enfin ici où je vais me défaire de ce trop redoutable Turelure. Bon, le puits est préparé à merveille, nous verrons s'il en reviendra après avoir fait le saut jusqu'au fond. A-t-on trouvé Fifi?</p>
+          </sp>
+          <sp who="#unlaquais">
+            <speaker>Un laquais</speaker>
+            <p>On court après.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>À qui l'arrêtera, je donnerai sa place.</p>
+          </sp>
+          <stage>Les laquais s'empressent à sortir d'une manière ridicule.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 9</head>
+          <stage type="characters">picard, l'hébété</stage>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <stage>pleurant</stage>
+            <p>Que vous plaît-il seigneur?</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Livre-toi au plaisir de la vengeance que je vais te procurer et sèche des larmes superflues.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Je ne pleure pas, mon prétendu chagrin n'est qu'une douleur simulée que je couvre adroitement du voile d'une hypocrisie bien entendue.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Je m'en doutais, mais Turelure a tué ton fils, je puis en ce moment le faire périr, prononce sur son genre de mort : l'étranglerais-je ou le ferais-je jeter dans ce puits?</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Je suis ennemi du mal, [Turelure] m'a privé de mon petit Tout Amort ; malgré cela, si vous voulez m'en croire, afin de le moins faire souffrir, je suis d'avis qu'on l'étrangle avant de la jeter dans ce puits.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>La modération m'enchante.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 10</head>
+          <stage type="characters">les mêmes, turelure<stage>enchaîné</stage>, suite</stage>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Ah, tu vas donc mourir.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Comme tu prononces ce mot avec joie!</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>C'est que j'en ressens beaucoup.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Oh bien pour la troubler, apprends que ta Rosette n'est point Margot mamie.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Que dis-tu?</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Imbroglio à la Figaro, ne voyez-vous pas seigneur qu'il dit cela pour revoir encore sa Margot, c'est un petit finot.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Et toi une grosse buse.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Ce doute sera bientôt éclairci... qu'on amène Rosette. Si tu [dis] vrai, je la tue.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <stage>à part</stage>
+            <p>Et de deux.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Que m'importe.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Et toi ensuite.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Et de trois.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>
+              <emph>Je ne peux mourir qu'une fois.</emph>
+            </p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Ah! que voilà une belle pensée neuve et bien rendue!</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Puisqu'il fait des phrases, qu'on l'emmène au puits.</p>
+          </sp>
+          <stage>On l'emmène.</stage>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Et un d'expédié... Amenez l'autre maintenant.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 11</head>
+          <stage type="characters">margot mamie, picard, l'hébété, friponnette, soldats</stage>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Ah, ah, mademoiselle la péronnelle, c'est donc vous qui prétendiez m'en donner à garder en passant pour Margot mamie?</p>
+          </sp>
+          <sp who="#friponnette">
+            <speaker>Friponnette</speaker>
+            <p>Une femme adroite mise à sa place a causé la méprise et fait naître votre erreur.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Encore un accident à l'espagnol.</p>
+            <p>Allons Seigneur, il n'y a pas [à] réfléchir, il les faut punir. Vous êtes joué, cette friponne n'est pas Margot mamie.</p>
+          </sp>
+          <stage type="musical_indication">Marche des Blancs et des Noirs</stage>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Ordonnez de leur sort.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Au puits.</p>
+          </sp>
+          <stage>Pantomime.</stage>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Oh çà, allons au fait s'il vous plait, votre cérémonie commence à me lasser et vous, mon compagnon d'eau, courage, nous serons deux.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <stage>la reconnaissant</stage>
+            <p>Margot mamie!</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <stage>tombant dans ses bras</stage>
+            <p>Turelure!</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Encore une reconnaissance renouvelée des grecs.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Qu'on les tue d'un seul coup... non... si... non, ils seraient peut-être contents de mourir.<emph>Ah je me sens altéré de leurs peines et j'ai faim... Non, j'ai soif de les voir souffrir.</emph>
+            </p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>L'un n'est pas meilleur que l'autre, il valait mieux vous taire.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Je veux la frapper.</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Je ne crains rien. Je te dirais que je suis jolie et tu n'oseras pas pour te faire encore souffrir davantage, je vais devant toi embrasser mon Turelure, si ce n'est pas assez pour te désespérer, je vais devant toi...</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Arrêtez-vous madame,  le désir de le faire enrager pourrait vous porter trop loin.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>J'imagine un autre moyen: jetez-le dans ce puits devant sa Margot.</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Si quelqu'un avance je me frappe de ces [...].</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Et pourquoi ne vous êtes-vous pas tuée tantôt?</p>
+          </sp>
+          <sp who="#margot">
+            <speaker>Margot</speaker>
+            <p>Je me réservais pour le dénouement.</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <stage>aux soldats</stage>
+            <p>Arrêtez donc encore un petit moment que j'aie le temps de réfléchir à ce que je veux faire.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 12</head>
+          <stage type="characters">[une troupe, fifi, turelure, picard, hébété, madame de l'imaginative]</stage>
+          <stage>Une troupe, venant au secours de Turelure, s'écrie :</stage>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Turelure, Turelure!</p>
+          </sp>
+          <stage>Fifi est à leur tête.</stage>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Pour ajouter à l'intérêt de mon rôle, faisons ici une action gigantesque...</p>
+            <p>Arrêtez soldats! En me voulant sauver, vous flétrissez les lauriers qui couvrent mon front,<emph>est-ce à vous de juger votre maître  est- ce un tyran ou un sot? Armes bas, furieux, votre empereur vous casse</emph>.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Comme un verre.</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Mettez-vous à genoux que je demande votre grâce... bon... voilà du sublime, j'espère?</p>
+          </sp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>J'enrage! comment ce Turelure l'emportera toujours sur moi? Suis-je donc un zéro? çà!</p>
+          </sp>
+          <spGrp>
+            <caption>Les deux partis</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <p>Oui, non, oui, non.</p>
+            </sp>
+          </spGrp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Voilà notre roi!</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Non pas...</p>
+          </sp>
+          <spGrp>
+            <caption>Tous</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <p>Si fait.</p>
+            </sp>
+          </spGrp>
+          <sp who="#picard">
+            <speaker>Picard</speaker>
+            <p>Allons, il faut finir par un coup d'éclat, voici le moment... Tiens-mois bien le sabre que je me le passe à travers de mon corps.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Non pas s'il vous plait! vous finirez comme un opéra... Qu'on apporte la prison... Donnez-vous la peine d'entrer là dedans et restez-là maintenant. Il est grand, nous le ferons voir à la Foire. Vla tyran, vla le tyran!</p>
+          </sp>
+          <sp who="#turelure">
+            <speaker>Turelure</speaker>
+            <p>Je vous vois venir, Messieurs, vous allez maintenant me proclamer votre roi, j'accepterai, je vous l'avoue ; mais je vous préviens qu'avant je ferai furieusement de façon ; je veux me parer de cette dépouille de tournebroche.<emph>Je veux qu'elle serve à m'enchaîner au bonheur</emph>. Peste soit de l'exemple, j'allais encore dire une platitude.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Allons nouveau barde, le voilà en place pour lui [...].</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>C'est mon dessein, je sais trop bien [...] pour agir autrement et pour commencer, oh mon maître recevez les ballets de Picard.</p>
+          </sp>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>Ah, l'homme vil.</p>
+          </sp>
+          <sp who="#hebete">
+            <speaker>L'hébété</speaker>
+            <p>Je suis courtisan, l'homme en [...] est toujours mon héros.</p>
+          </sp>
+          <sp who="#delimaginative">
+            <speaker>De l'Imaginative</speaker>
+            <p>Un moment, Messieurs, que je parle à mon compère qui est dans cette loge. Eh bien monsieur Tout Feu que dites-vous de ça?</p>
+          </sp>
+          <sp who="#toutfeu">
+            <speaker>Tout Feu</speaker>
+            <p>Mais ma commère, c'est un chaos que votre pièce.</p>
+          </sp>
+          <sp who="#delimaginative">
+            <speaker>De l'Imaginative</speaker>
+            <p>Oui, vraiment, c'était mon dessein. Le titre est<emph>Le Chaos perpétuel</emph>: chaos par ci, chaos par là, tout est chaos, et l'on sort de là la tête toute cahotée.</p>
+          </sp>
+          <sp who="#toutfeu">
+            <speaker>Tout Feu</speaker>
+            <p>Vous n'avez pas manqué votre coup et quelle induction voulez-vous en tirer?</p>
+          </sp>
+          <sp who="#delimaginative">
+            <speaker>De l'Imaginative</speaker>
+            <p>Que la grandeur de l'homme n'est que dans son caractère.</p>
+          </sp>
+          <sp who="#toutfeu">
+            <speaker>Tout Feu</speaker>
+            <p>Il y a mille ans qu'on sait ça.</p>
+          </sp>
+          <sp who="#delimaginative">
+            <speaker>De l'Imaginative</speaker>
+            <p>Oui, mais ma façon de l'apprendre sera toute neuve. Ces messieurs vont surprendre [...], de mon côté un transparent non, sur lequel on lira en lettre d'or: «Homme, ta grandeur».</p>
+          </sp>
+          <sp who="#toutfeu">
+            <speaker>Tout Feu</speaker>
+            <p>Fi donc, cela ressemble aux anciens écriteaux de la Foire, [... ...] notre on se [...] dans l'enfance de l'opéra-comique.</p>
+          </sp>
+          <sp who="#delimaginative">
+            <speaker>De l'Imaginative</speaker>
+            <stage>très en colère</stage>
+            <p>Ah! vous êtes un vieux fou, rien ne vous plait, allez-vous promener.</p>
+            <p>Messieurs, tirez-vous de là comme vous voudrez, j'abandonne tout, bonsoir.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 13</head>
+          <stage type="characters">tous les acteurs<emph>hors tout feu et l'imaginative</emph>
+          </stage>
+          <sp who="#fifi">
+            <speaker>Fifi</speaker>
+            <p>C'était bien la peine de nous interrompre pour cela! Ce que nous avons de mieux à faire est d'aller souper. Heureusement pour nous que notre spectacle n'a pas duré trois heures et demie comme chez notre frère aîné.</p>
+            <l met="2">Messieurs,</l>
+            <l met="12">Le public éclairé de sifflets est avare,</l>
+            <l met="12">À la charge toujours il pardonne en riant;</l>
+            <l met="10">Un trait malin ne nuit point au talent,</l>
+            <l met="8">Un acteur quelque fois s'égare</l>
+            <l met="8">Mais le spectateur indulgent</l>
+            <l met="8">Dans la gaieté souvent s'empare</l>
+            <l met="10">Sait tout le sort d'un canevas plaisant</l>
+            <l met="8">Lorsqu'il ne nous dit point Tarare</l>
+            <l met="12">C'est l'ouvrage léger d'un instant de loisir</l>
+            <l met="12">Ce grotesque tableau des scènes de la vie</l>
+            <l met="8">Qu'à vos yeux nous venons d'offrir,</l>
+            <l met="8">Quoiqu'ébauché par la folie</l>
+            <l met="12">Si vous applaudissez, c'est fait pour réussir.</l>
+          </sp>
+          <stage>Fin</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

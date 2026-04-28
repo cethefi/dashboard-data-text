@@ -1,0 +1,1277 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="maison_nette">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">La Maison nette, Opéra-comique</title>
+        <title type="sub">Parodie de l'opéra des Indes galantes</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Anonyme</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Serre</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Ms</bibl>
+        <bibl type="intermediarySource">P. Beaucé</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="latroupe" sex="UNKNOWN">
+            <persName>La troupe</persName>
+          </person>
+          <person xml:id="emilie" sex="UNKNOWN">
+            <persName>émilie</persName>
+          </person>
+          <person xml:id="lamarche" sex="UNKNOWN">
+            <persName>La marche</persName>
+          </person>
+          <person xml:id="premierjeunehomme" sex="UNKNOWN">
+            <persName>Premier jeune homme</persName>
+          </person>
+          <person xml:id="deuxiemejeunehomme" sex="UNKNOWN">
+            <persName>Deuxième jeune homme</persName>
+          </person>
+          <person xml:id="troisiemejeunehomme" sex="UNKNOWN">
+            <persName>Troisième jeune homme</persName>
+          </person>
+          <person xml:id="quatriemejeunehomme" sex="UNKNOWN">
+            <persName>Quatrième jeune homme</persName>
+          </person>
+          <person xml:id="cinquiemejeunehomme" sex="UNKNOWN">
+            <persName>Cinquième jeune homme</persName>
+          </person>
+          <person xml:id="sixiemejeunehomme" sex="UNKNOWN">
+            <persName>Sixième jeune homme</persName>
+          </person>
+          <person xml:id="septiemejeunehomme" sex="UNKNOWN">
+            <persName>Septième jeune homme</persName>
+          </person>
+          <person xml:id="huitiemejeunehomme" sex="UNKNOWN">
+            <persName>Huitième jeune homme</persName>
+          </person>
+          <person xml:id="neuviemejeunehomme" sex="UNKNOWN">
+            <persName>Neuvième jeune homme</persName>
+          </person>
+          <person xml:id="lesgrenadiers" sex="UNKNOWN">
+            <persName>Les grenadiers</persName>
+          </person>
+          <person xml:id="lesjeunesgensdemauvaisevolonte" sex="UNKNOWN">
+            <persName>Les jeunes gens de mauvaise volonté</persName>
+          </person>
+          <person xml:id="lesjeunesgensdebonnevolonte" sex="UNKNOWN">
+            <persName>Les jeunes gens de bonne volonté</persName>
+          </person>
+          <person xml:id="touslesgarcons" sex="UNKNOWN">
+            <persName>Tous les garçons</persName>
+          </person>
+          <person xml:id="lesfilles" sex="UNKNOWN">
+            <persName>Les filles</persName>
+          </person>
+          <person xml:id="toutelajeunesse" sex="UNKNOWN">
+            <persName>Toute la jeunesse</persName>
+          </person>
+          <person xml:id="lamarcheetsesgrenadiers" sex="UNKNOWN">
+            <persName>La marche et ses grenadiers</persName>
+          </person>
+          <person xml:id="lasoldatesque" sex="UNKNOWN">
+            <persName>La soldatesque</persName>
+          </person>
+          <person xml:id="lecommissaire" sex="UNKNOWN">
+            <persName>Le commissaire</persName>
+          </person>
+          <person xml:id="marotte" sex="UNKNOWN">
+            <persName>Marotte</persName>
+          </person>
+          <person xml:id="leclerc" sex="UNKNOWN">
+            <persName>Le clerc</persName>
+          </person>
+          <person xml:id="nicolastuyau" sex="UNKNOWN">
+            <persName>Nicolas tuyau</persName>
+          </person>
+          <person xml:id="lesgarcons" sex="UNKNOWN">
+            <persName>Les garçons</persName>
+          </person>
+          <person xml:id="la_marche" sex="UNKNOWN">
+            <persName>La marche</persName>
+          </person>
+          <person xml:id="le_commissaire_du_quartier" sex="UNKNOWN">
+            <persName>Le commissaire du quartier</persName>
+          </person>
+          <person xml:id="son_clerc" sex="UNKNOWN">
+            <persName>Son clerc</persName>
+          </person>
+          <person xml:id="nicolas_tuyau" sex="UNKNOWN">
+            <persName>Nicolas Tuyau</persName>
+          </person>
+          <person xml:id="troupe_de_jeunes_garcons" sex="UNKNOWN">
+            <persName>Troupe de jeunes garçons</persName>
+          </person>
+          <person xml:id="troupe_de_jeunes_filles" sex="UNKNOWN">
+            <persName>Troupe de jeunes filles</persName>
+          </person>
+          <person xml:id="quatre_grenadiers_du_regiment_de_champagne" sex="UNKNOWN">
+            <persName>Quatre grenadiers du régiment de Champagne</persName>
+          </person>
+          <person xml:id="un_tambour" sex="UNKNOWN">
+            <persName>Un tambour</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#emilie">Émilie</role>
+          <roleDesc>cabaretière à chou</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#marotte">Marotte</role>
+          <roleDesc>nièce d'Émilie</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#la_marche">La marche</role>
+          <roleDesc>sergent au régiment de Champagne</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#le_commissaire_du_quartier">Le commissaire du quartier</role>
+        </castItem>
+        <castItem>
+          <role ana="#son_clerc">Son clerc</role>
+        </castItem>
+        <castItem>
+          <role ana="#nicolas_tuyau">Nicolas Tuyau</role>
+          <roleDesc>compère d'Émilie</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_jeunes_garcons">Troupe de jeunes garçons</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_jeunes_filles">Troupe de jeunes filles</role>
+        </castItem>
+        <castItem>
+          <role ana="#quatre_grenadiers_du_regiment_de_champagne">Quatre grenadiers du régiment de Champagne</role>
+        </castItem>
+        <castItem>
+          <role ana="#un_tambour">Un tambour</role>
+        </castItem>
+      </castList>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">[émilie, jeunes gens]</stage>
+        <stage>Émilie, cabaretière à chou, ouvre la scène avec une troupe de jeunes gens de l'un et l'autre sexe, chantant et dansant autour d'une table dérangée, garnie d'une nappe sale et mouillée de vin, chargée de quelques assiettes et de pots et bouteilles, les uns pleins, les autres renversés, avec des débris de verres et de flacons cassés et des restes d'une collation. Elle chante d'un air échauffé et en désordre:</stage>
+        <sp who="#None">
+          <speaker/>
+          <l met="6">Où sont-ils? Les voici!</l>
+        </sp>
+        <sp who="#latroupe">
+          <speaker>La troupe</speaker>
+          <l met="3">Nous voici!</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <spGrp rend="braced">
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="6">Les Enfants-sans-Souci</l>
+              <l met="7">Que le plaisir règne ici</l>
+              <l met="6">Qu'Amour y règne aussi.</l>
+              <l met="7">Que fine chère et bon vin</l>
+              <l met="6">Fassent notre destin!</l>
+              <l met="7">Prend un verre d'une main,</l>
+            </sp>
+          </spGrp>
+        </spGrp>
+        <sp who="#lesgarcons">
+          <speaker>Les garçons</speaker>
+          <l met="6">Donne l'autre à Catin!</l>
+        </sp>
+        <spGrp rend="braced">
+          <sp who="#lesfilles">
+            <speaker>Les filles</speaker>
+            <l met="6">Donne l'autre à Colin!</l>
+            <l met="7">Que ce nectar précieux</l>
+            <l met="6">Inonde ces beaux lieux,</l>
+            <l met="7">Que l'Amour de nouveaux feux</l>
+          </sp>
+        </spGrp>
+        <sp who="#lesgarcons">
+          <speaker>Les garçons</speaker>
+          <l met="6">Brille dans vos beaux yeux.</l>
+        </sp>
+        <spGrp>
+          <sp who="#lesfilles">
+            <speaker>Les filles</speaker>
+            <l met="6">Brille dans tous les yeux.</l>
+            <l met="7">Eh, où sont-ils? Les voici.</l>
+            <l met="6">Les Enfants-sans-Souci.</l>
+          </sp>
+        </spGrp>
+        <stage>Cette bacchanale est interrompue par le bruit d'un tambour. La marche, sergent du Régiment de Champagne, accompagné de quatre grenadiers fait battre la caisse pour enrôler les soldats, tandis que ses happe-chair entourent et se mêlent avec les jeunes garçons, leur mettent de l'argent dans leurs poches et font divers lazzis pour faire entendre qu'ils les engagent. Plusieurs s'en défendent et témoignent le chagrin qu'ils ont d'être interrompus par une compagnie si désagréable dont ils cherchent à s'échapper, mais inutilement, un des grenadiers s'étant emparé de la porte, d'où il les repousse.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">émilie, marotte, toute la troupe des jeunes gens, la marche et ses grenadiers</stage>
+        <spGrp>
+          <sp who="#lamarche">
+            <speaker>La marche</speaker>
+            <stage>ôtant son chapeau</stage>
+            <l met="4">De par le Roi,</l>
+            <l met="6">Mon capitaine et moi,</l>
+            <l met="8">Surnommé le sergent La Marche,</l>
+            <l met="8">Né par hasard au pont de l'Arche</l>
+            <l met="8">À son de tambour, nous faisons</l>
+            <l met="8">Savoir à tous les bons garçons</l>
+            <l met="8">Que, qui voudra faire campagne</l>
+            <l met="8">Dans le régiment de Champagne</l>
+            <l met="8">Aura tout bon consentement</l>
+            <l met="8">Suivant les vs du Régiment.</l>
+            <l met="8">On les prendra de toute taille</l>
+            <l met="8">Demi-géant, trapu, ragot,</l>
+            <l met="8">Efflanqué, poupin ou magot.</l>
+            <l met="8">Tout passera vaille que vaille:</l>
+            <l met="8">Fût-il bâti comme un fagot</l>
+            <l met="8">Et monté comme un escargot.</l>
+            <l met="8">On prendra jusqu'à la racaille,</l>
+            <l met="8">Pourvu qu'à l'approche d'un brot</l>
+            <l met="8">Il ne soit honteux ni manchot.</l>
+          </sp>
+          <sp>
+            <l met="8">De plus, on donnera la maille</l>
+            <l met="8">À tous les honnêtes courtiers,</l>
+            <l met="8">Embaucheurs et cabaretiers,</l>
+            <l met="8">Que nous feront faire trouvaille</l>
+            <l met="8">De tous états, de tous métiers,</l>
+            <l met="8">Rustes, courtauds, clercs, maltôtiers</l>
+            <l met="8">Gens de taverne et de ripaille</l>
+            <l met="8">Tout fils bien ou mal élevé,</l>
+            <l met="8">Vagabond, coureur de pavé</l>
+            <l met="8">Qui ne cherche que la gogaille.</l>
+          </sp>
+          <sp>
+            <l met="8">Par ainsi, tout enfant gâté</l>
+            <l met="8">Fumeur, amateur de godaille</l>
+            <l met="8">Dont la bonté, sobriété,</l>
+            <l met="8">Bonne ou mauvaise volonté</l>
+            <l met="8">Ne vaut pas une huitre à l'écaille.</l>
+            <l met="8">Tout fol à cerveau démonté,</l>
+            <l met="8">Tout fainéant qui se débraille,</l>
+            <l met="8">Brelande, boit, jure et chamaille</l>
+            <l met="8">Sera chez nous en sureté</l>
+            <l met="8">Et jusques à la valetaille</l>
+            <l met="8">Aucun ne sera rebuté.</l>
+          </sp>
+          <sp>
+            <l met="8">Quant à l'égard de la médaille</l>
+            <l met="8">Qu'on promet pour l'engagement,</l>
+            <l met="8">On la montrera seulement</l>
+            <l met="8">De loin, à toute la canaille;</l>
+            <l met="8">Mais chacun aura pour sa part</l>
+            <l met="8">De l'eau, du pain et de la paille</l>
+            <l met="8">Quelque fois de la soupe au lard</l>
+            <l met="8">Et la prison jusqu'au départ.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamarche">
+          <speaker>La marche</speaker>
+          <stage>ayant retapé son feutre sur ses yeux, chante</stage>
+        </sp>
+        <spGrp who="#lamarche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#gueux">Gueux</title>
+            </desc>
+          </head>
+          <sp who="#lamarche">
+            <speaker>La marche</speaker>
+            <l met="7">Au régiment de Champagne</l>
+            <l met="8">Prenez parti, prenez parti,</l>
+            <l met="7">Et pour faire la campagne</l>
+            <l met="8">Soyez nanti, soyez nanti,</l>
+            <l met="7">D'une grivoise avec vous</l>
+            <l met="4">Vive les fous!</l>
+          </sp>
+        </spGrp>
+        <stage>Il se met en devoir d'amener les jeunes hommes de force ou de bonne volonté.</stage>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+          <stage>en l'arrêtant</stage>
+          <l met="12">On ne sort point d'ici comme de l'Opéra.</l>
+          <l met="12">Il faut savoir avant...</l>
+        </sp>
+        <sp who="#lamarche">
+          <speaker>La marche</speaker>
+          <l met="12">Quoi?</l>
+        </sp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+          <l met="12">Qui me payera!</l>
+        </sp>
+        <sp who="#lamarche">
+          <speaker>La marche</speaker>
+          <l met="8">Je ne sais point masquer ma marche.</l>
+          <l met="12">Vous me connaissez bien?</l>
+        </sp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+          <l met="12">Oui, monsieur de La Marche.</l>
+          <l met="12">Vous êtes, je le sais, un honnête garçon.</l>
+        </sp>
+        <sp who="#lamarche">
+          <speaker>La marche</speaker>
+          <l met="8">Et vous une bonne diablesse</l>
+          <l met="8">À qui je veux rendre raison</l>
+          <l met="8">De mes petits tours de souplesse.</l>
+          <l met="8">Je ne veux qu'amour et simplesse,</l>
+          <l met="12">Moi. Mais mon capitaine a besoin de soldats.</l>
+          <l met="12">Or, pour en raccrocher, j'ai quelques vieux ducats...</l>
+          <l met="8">Vous m'entendez, la belle hôtesse</l>
+          <l met="12">Et je vais commencer par payer le fracas</l>
+          <l met="10">Qu'a fait chez vous toute cette jeunesse.</l>
+        </sp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+          <l met="8">Qu'on me paie, il m'importe peu</l>
+          <l met="12">Quand je peux retirer mon épingle du jeu.</l>
+        </sp>
+        <sp who="#lamarche">
+          <speaker>La marche</speaker>
+          <stage>lui donnant de l'argent</stage>
+          <l met="10">Tenez, la belle, êtes-vous satisfaite?</l>
+        </sp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+          <stage>en le remerciant</stage>
+          <l met="4">Très satisfaite.</l>
+        </sp>
+        <sp who="#lamarche">
+          <speaker>La marche</speaker>
+          <stage>d'un air brusque à ses soldats</stage>
+          <l met="8">Allons, songeons à la retraite!</l>
+        </sp>
+        <sp who="#premierjeunehomme">
+          <speaker>Premier jeune homme</speaker>
+        </sp>
+        <spGrp who="#premierjeunehomme">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_ne_saurais">Je ne saurais</title>
+            </desc>
+          </head>
+          <sp who="#premierjeunehomme">
+            <speaker>Premier jeune homme</speaker>
+            <l met="5">Eh! Je ne saurais</l>
+            <l met="7">Je suis encor trop débile</l>
+            <l met="3">J'en mourrais.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lesgrenadiers">
+          <speaker>Les grenadiers</speaker>
+          <stage>d'un air niais et moqueur</stage>
+        </sp>
+        <spGrp who="#lesgrenadiers">
+          <head type="melody" subtype="restored_melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jean_gille">Jean Gille</title>
+            </desc>
+          </head>
+          <sp who="#lesgrenadiers">
+            <speaker>Les grenadiers</speaker>
+            <l met="11">Jean Gille, Jean Gille, Jean Gille, Jean Jean,</l>
+            <l met="10">Gille, joli Jean, joli Jean, Jean Gille</l>
+            <l met="10">Gille, joli Jean, joli Jean, Jean Jean.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamarche">
+          <speaker>La marche</speaker>
+          <stage>sur l'air de la reprise</stage>
+          <l met="10">Ce joli Jean-là m'échauffe la bile,</l>
+          <l met="10">Ce Jean Gille-là m'échauffe le sang.</l>
+          <p>Marche!</p>
+        </sp>
+        <sp who="#premierjeunehomme">
+          <speaker>Premier jeune homme</speaker>
+          <stage>en pleurant</stage>
+          <p>Vous me tuerez plutôt dessus la place.</p>
+        </sp>
+        <sp who="#lamarche">
+          <speaker>La marche</speaker>
+          <p>Marche, te dis-je, ou le cachot!</p>
+        </sp>
+        <sp who="#premierjeunehomme">
+          <speaker>Premier jeune homme</speaker>
+          <stage>chante tristement</stage>
+        </sp>
+        <spGrp who="#premierjeunehomme">
+          <head type="melody" subtype="restored_melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_je_ne_ferai_pas">Non, je ne ferai pas ce qu'on veut que je fasse</title>
+            </desc>
+          </head>
+          <sp who="#premierjeunehomme">
+            <speaker>Premier jeune homme</speaker>
+            <l met="12">Non, je ne ferai pas ce qu'on veut que je fasse</l>
+            <l met="12">Dussè-je souffrir ce dont on me menace.</l>
+          </sp>
+        </spGrp>
+        <sp who="#deuxiemejeunehomme">
+          <speaker>Deuxième jeune homme</speaker>
+          <stage>achève l'air</stage>
+          <l met="12">Tout est payé. Voilà, Dieu me damne, un bon drille.</l>
+        </sp>
+        <sp who="#troisiemejeunehomme">
+          <speaker>Troisième jeune homme</speaker>
+          <stage>sottement</stage>
+          <l met="8">Oh, pour moi, j'ai de quoi payer!</l>
+        </sp>
+        <sp who="#quatriemejeunehomme">
+          <speaker>Quatrième jeune homme</speaker>
+          <stage>sottement</stage>
+          <l met="8">Moi, je suis enfant de famille.</l>
+        </sp>
+        <sp who="#lamarche">
+          <speaker>La marche</speaker>
+          <stage>à tous deux brusquement</stage>
+          <l met="12">Et moi je n'en ai point.</l>
+        </sp>
+        <sp who="#cinquiemejeunehomme">
+          <speaker>Cinquième jeune homme</speaker>
+          <stage>d'un air à demi rassuré</stage>
+          <l met="12">Mon père est marguillier.</l>
+        </sp>
+        <sp who="#sixiemejeunehomme">
+          <speaker>Sixième jeune homme</speaker>
+          <stage>d'un air de confiance</stage>
+          <l met="12">Je suis clerc de notaire et bientôt bachelier.</l>
+        </sp>
+        <sp who="#lamarche">
+          <speaker>La marche</speaker>
+          <stage>à tous deux impatiemment</stage>
+          <l met="12">Bon, vous n'en porterez que mieux la souquenille.</l>
+        </sp>
+        <sp who="#septiemejeunehomme">
+          <speaker>Septième jeune homme</speaker>
+          <stage>d'un air fat</stage>
+        </sp>
+        <stage>Il chante en parodiant la musique de l'opéra «Seigneur, je sors du sang d'un roi», scène VII, entrée III.</stage>
+        <sp who="#septiemejeunehomme">
+          <speaker>Septième jeune homme</speaker>
+          <l met="8">Monsieur, je suis arquebusier.</l>
+        </sp>
+        <sp who="#lamarche">
+          <speaker>La marche</speaker>
+          <stage>d'un ton moqueur et dédaigneux</stage>
+          <l met="8">Et doncques, tu connais la poudre</l>
+          <l met="6">Maître galefretier.</l>
+        </sp>
+        <sp who="#huitiemejeunehomme">
+          <speaker>Huitième jeune homme</speaker>
+          <stage>prenant un verre de vin</stage>
+          <l met="10">À s'enrôler puisqu'il faut se résoudre</l>
+          <l met="10">Buvons au moins le vin de l'étrier.</l>
+        </sp>
+        <stage>Il chante.</stage>
+        <spGrp who="#huitiemejeunehomme">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#buvons_chers_amis_buvons_le_temps_qui_suit_nous_y_convie">Buvons, chers amis, buvons, le temps qui suit nous y convie</title>
+            </desc>
+          </head>
+          <sp who="#huitiemejeunehomme">
+            <speaker>Huitième jeune homme</speaker>
+            <l met="8">Quand il faut aller à la gloire</l>
+            <l met="8">Adieu le bon vin, les amours.</l>
+            <l met="10">Dépêchons-nous, dépêchons-nous de boire.</l>
+            <l met="10">Dépêchons-nous, dépêchons-nous de boire.</l>
+            <l met="6">On ne boit pas toujours.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lesjeunesgensdebonnevolonte">
+          <speaker>Les jeunes gens de bonne volonté</speaker>
+          <stage>répètent</stage>
+          <l met="8">Quand il faut aller à la gloire,</l>
+          <l met="8">Adieu le bon vin, nos amours</l>
+          <l met="10">Dépêchons-nous, dépêchons-nous de boire.</l>
+          <l met="10">Dépêchons-nous, dépêchons-nous de boire.</l>
+          <l met="6">On ne boit pas toujours.</l>
+        </sp>
+        <sp who="#lamarche">
+          <speaker>La marche</speaker>
+          <stage>chante sur le même air et est soutenu par les grenadiers qui font chorus avec lui pendant que les jeunes gens de bonne volonté boivent et trinquent ensemble</stage>
+          <l met="8">Quand il faut aller à la guerre</l>
+          <l met="8">Adieu le bon vin, les amours</l>
+          <l met="10">Dépêchons-nous, dépêchez-vous de faire,</l>
+          <l met="10">Dépêchez-vous, dépêchons-nous de faire</l>
+          <l met="7">Notre route de huit jours.</l>
+        </sp>
+        <sp who="#lesjeunesgensdemauvaisevolonte">
+          <speaker>Les jeunes gens de mauvaise volonté</speaker>
+          <stage>chantent en partie sur la reprise de l'air de<emph>Charmante Gabrielle</emph>
+          </stage>
+          <l met="6">Cruelle départie</l>
+          <l met="4">Malheureux jour,</l>
+          <l met="6">Que ne suis-je sans vie</l>
+          <l met="4">Ou sans amour!</l>
+        </sp>
+        <sp who="#touslesgarcons">
+          <speaker>Tous les garçons</speaker>
+        </sp>
+        <spGrp who="#touslesgarcons">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#charmante_gabrielle">Charmante Gabrielle</title>
+            </desc>
+          </head>
+          <sp who="#touslesgarcons">
+            <speaker>Tous les garçons</speaker>
+            <l met="6">Je pars pour l'Italie!</l>
+            <l met="4">Le mauvais tour</l>
+            <l met="6">Qu'on fait à ma Sylvie,</l>
+            <l met="4">À mon amour.</l>
+          </sp>
+        </spGrp>
+        <stage>Ils continuent tous ensemble en s'adressant à La Marche.</stage>
+        <spGrp who="#touslesgarcons">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_madame_anroux">Madame Hanrou</title>
+            </desc>
+          </head>
+          <sp who="#touslesgarcons">
+            <speaker>Tous les garçons</speaker>
+            <l met="5">Où nous menez-vous?</l>
+            <l met="5">Nous deviendrons fous</l>
+            <l met="5">Monsieur de La Marche.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamarche">
+          <speaker>La marche</speaker>
+          <stage>en continuant le même air</stage>
+          <l met="5">Je vous mène aux coups.</l>
+          <l met="10">Si vous n'en mourez, vous en reviendrez tous.</l>
+        </sp>
+        <sp who="#lesfilles">
+          <speaker>Les filles</speaker>
+          <stage>recommencent l'air</stage>
+          <l met="5">Où les menez-vous?</l>
+          <l met="5">Que deviendrons-nous</l>
+          <l met="5">Monsieur de La Marche?</l>
+        </sp>
+        <spGrp rend="braced">
+          <sp who="#toutelajeunesse">
+            <speaker>Toute la jeunesse</speaker>
+          </sp>
+        </spGrp>
+        <sp who="#lesgarcons">
+          <speaker>Les garçons</speaker>
+          <l met="5">Où nous menez-vous?</l>
+        </sp>
+        <spGrp rend="braced">
+          <sp who="#lesfilles">
+            <speaker>Les filles</speaker>
+            <l met="5">Où les menez-vous?</l>
+          </sp>
+        </spGrp>
+        <sp who="#lesgarcons">
+          <speaker>Les garçons</speaker>
+          <l met="5">Nous deviendrons fous</l>
+        </sp>
+        <sp who="#lesfilles">
+          <speaker>Les filles</speaker>
+          <l met="5">Que deviendrons-nous</l>
+          <l met="8">Monsieur de La Marche?</l>
+        </sp>
+        <spGrp rend="braced">
+          <sp who="#lamarcheetsesgrenadiers">
+            <speaker>La marche et ses grenadiers</speaker>
+          </sp>
+        </spGrp>
+        <sp who="#lamarche">
+          <speaker>La marche</speaker>
+          <l met="5">Je vous mène aux coups</l>
+        </sp>
+        <sp who="#lesgrenadiers">
+          <speaker>Les grenadiers</speaker>
+          <l met="5">Il les mène aux coups</l>
+          <l met="11">S'ils n'en meurent pas, vous les reverrez tous.</l>
+        </sp>
+        <spGrp rend="braced">
+          <sp who="#toutelajeunesse">
+            <speaker>Toute la jeunesse</speaker>
+            <l met="5">Nous craignons les coups</l>
+          </sp>
+        </spGrp>
+        <sp who="#lesgarcons">
+          <speaker>Les garçons</speaker>
+          <l met="11">Qui vont nous priver des plaisirs les plus doux.</l>
+        </sp>
+        <sp who="#lesfilles">
+          <speaker>Les filles</speaker>
+          <l met="11">Qui vont enlever nos amants, nos époux.</l>
+        </sp>
+        <sp who="#lasoldatesque">
+          <speaker>La soldatesque</speaker>
+        </sp>
+        <stage>Aux garçons.</stage>
+        <sp who="#lasoldatesque">
+          <speaker>La soldatesque</speaker>
+          <l met="11">Si vous n'en mourez vous en reviendrez tous.</l>
+        </sp>
+        <stage>Aux filles.</stage>
+        <sp who="#lasoldatesque">
+          <speaker>La soldatesque</speaker>
+          <l met="11">S'ils n'en meurent pas vous les reverrez tous.</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#lamarche">
+            <speaker>La marche</speaker>
+            <l met="5">Trêve de chansons</l>
+            <l met="5">Point tant de façons</l>
+            <l met="5">Marche, marche, marche.</l>
+          </sp>
+        </spGrp>
+        <stage>Tous forment un concert lamentable, chacun répétant respectivement les vers qui leur conviennent, soit garçons, soit filles, soit soldats, les uns envers les autres comme ci-dessus mais ils sont interrompus par La Marche sur le même air.</stage>
+        <stage>Les grenadiers, commençant à appuyer la chanson de leur sergent, allaient ainsi recommencer le tintamarre, mais ils sont interrompus encore une fois par l'arrivée du Commissaire qui est en robe, accompagné de son Clerc qui a un écritoire pendu à sa boutonnière, un registre sous son bras, une grande feuille de papier marqué à la main et une longue plume fichée dans ses cheveux.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">le commissaire et son clerc<stage>qui entrent brusquement et sont échauffés</stage>, émilie, marotte et tous les jeunes gens des deux sexes, la marche et ses grenadiers, le tambour<stage>qui augmente le bruit en roulant sa caisse pendant le concert</stage>
+        </stage>
+        <sp who="#lecommissaire">
+          <speaker>Le commissaire</speaker>
+          <stage>en chantant avec de grandes agitations et (...)</stage>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="alternative_melody">
+            <desc>Quel effroyable bruit! quels feux chancelants</desc>
+            <desc>Jupiter aux mortels déclare-t-il la guerre</desc>
+          </head>
+          <sp who="#lecommissaire">
+            <speaker>Le commissaire</speaker>
+            <l met="12">Quel effroyable bruit! quels cris! quels hurlements!</l>
+            <l met="12">A l'amende... en prison... à la Salpêtrière...</l>
+            <l met="8">Ah! malheureuse tavernière,</l>
+            <l met="8">Vous retirez des garnements</l>
+            <l met="12">Brouille... avide greffier et griffonne bien visé</l>
+            <l met="8">Charge fort le procès verbal.</l>
+            <l met="11">Dans deux heures d'ici, que chacun ait son gîte,</l>
+            <l met="11">Ces schnapans dans nos fours, le reste à l'hôpital.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#marotte">
+          <speaker>Marotte</speaker>
+          <stage>chante</stage>
+        </sp>
+        <spGrp who="#marotte">
+          <head type="melody" subtype="restored_melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#de_necessite_necessitante">De nécessité nécessitante</title>
+            </desc>
+          </head>
+          <sp who="#marotte">
+            <speaker>Marotte</speaker>
+            <l met="9">De nécessité nécessitante</l>
+            <l met="9">Il faut nous sauver, ma bonne tante.</l>
+            <l met="9">À l'air renfrogné du commissaire</l>
+            <l met="9">On voit assez qu'il est en colère.</l>
+          </sp>
+        </spGrp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+        </sp>
+        <spGrp who="#emilie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#gendarmes">Gendarmes</title>
+            </desc>
+          </head>
+          <sp who="#emilie">
+            <speaker>émilie</speaker>
+            <l met="7">Pourquoi vous en prendre à moi?</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamarche">
+          <speaker>La marche</speaker>
+          <stage>reprend le même air</stage>
+          <l met="7">Ne vous en prenez qu'à moi</l>
+          <l met="5">Mon drôle, mon drôle,</l>
+          <l met="7">Ne vous en prenez qu'à moi,</l>
+          <l met="7">Ce sont des gens que j'enrôle</l>
+          <l met="7">Ils ont bu l'argent du Roi</l>
+          <l met="7">Ne vous en prenez qu'à moi,</l>
+          <l met="5">Mon drôle, mon drôle</l>
+          <l met="7">Ne vous en prenez qu'à moi.</l>
+        </sp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+          <stage>en même temps et sur le même air</stage>
+          <l met="7">Pourquoi vous en prendre à moi?</l>
+        </sp>
+        <sp who="#lamarche">
+          <speaker>La marche</speaker>
+          <l met="10">Remettez-vous, notre ami commissaire,</l>
+          <l met="8">Reprenez un air plus serein.</l>
+          <l met="12">Vous n'en faites que mieux votre petite affaire</l>
+          <l met="8">Quand la nôtre va bien son train.</l>
+          <l met="8">Adieu, monsieur le commissaire,</l>
+          <l met="8">Votre serviteur et compère.</l>
+        </sp>
+        <stage>Il sort avec ses grenadiers, son tambour et emmène les jeunes hommes.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">le commissaire, son clerc, émilie, marotte et ses compagnes</stage>
+        <sp who="#lecommissaire">
+          <speaker>Le commissaire</speaker>
+          <stage>aux filles, chante</stage>
+        </sp>
+        <spGrp who="#lecommissaire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#voulez_vous_savoir_qui_des_deux_tourne_de_la_terre_ou_des_cieux">Voulez-vous savoir qui des deux tourne, de la terre ou des cieux</title>
+            </desc>
+          </head>
+          <sp who="#lecommissaire">
+            <speaker>Le commissaire</speaker>
+            <l met="8">De vous, l'on ne fait pas grand cas</l>
+            <l met="8">Dans le prologue des Incas.</l>
+            <l met="8">On vous laisse-là pour les gages</l>
+            <l met="8">Lorsque vos amants vont courir</l>
+            <l met="8">Sur les plus éloignés rivages</l>
+            <l met="8">Mais, moi je viens vous secourir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lesfilles">
+          <speaker>Les filles</speaker>
+        </sp>
+        <spGrp who="#lesfilles">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#comme_vla_qu_est_fait">Comme vla qu'est fait</title>
+            </desc>
+          </head>
+          <sp who="#lesfilles">
+            <speaker>Les filles</speaker>
+            <l met="5">Qu'est cela nous fait?</l>
+            <l met="6">Qu'est-ce que cela nous fait?</l>
+          </sp>
+        </spGrp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+        </sp>
+        <spGrp who="#emilie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mon_cousin_mon_cousin">Mon cousin, mon cousin</title>
+            </desc>
+          </head>
+          <sp who="#emilie">
+            <speaker>émilie</speaker>
+            <l met="6">Mon voisin, que de soin!</l>
+            <l met="7">Vous prenez bien de la peine</l>
+            <l met="6">Mon voisin, point de soin</l>
+            <l met="7">De vous l'on n'a pas besoin.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lecommissaire">
+          <speaker>Le commissaire</speaker>
+        </sp>
+        <spGrp who="#lecommissaire">
+          <head type="melody" subtype="restored_melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_m_entendez_vous_pas">Ne m'entendez-vous pas</title>
+            </desc>
+          </head>
+          <sp who="#lecommissaire">
+            <speaker>Le commissaire</speaker>
+            <l met="6">Ne m'entendez-vous pas</l>
+            <l met="6">Belle cabaretière?</l>
+            <l met="6">Ne faites point la fière</l>
+            <l met="6">Quand je parle tout bas</l>
+            <l met="6">Quand je vous tends les bras</l>
+            <l met="6">Ne m'entendez-vous pas?</l>
+          </sp>
+        </spGrp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#emilie">
+            <speaker>émilie</speaker>
+            <l met="6">Je ne vous entends pas</l>
+            <l met="6">Monsieur le Commissaire,</l>
+            <l met="6">Les jeux n'amusent guère</l>
+            <l met="6">Mettez la robe à bas</l>
+            <l met="6">Ne m'entendez-vous pas?</l>
+          </sp>
+        </spGrp>
+        <sp who="#lecommissaire">
+          <speaker>Le commissaire</speaker>
+        </sp>
+        <spGrp who="#lecommissaire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#ramoneurs">Ramoneurs</title>
+            </desc>
+          </head>
+          <sp who="#lecommissaire">
+            <speaker>Le commissaire</speaker>
+            <l met="7">Nous avons des mines grises</l>
+            <l met="7">Pour les vieilles faces bises</l>
+            <l met="7">Mais nous nous apprivoisons,</l>
+            <l met="4">Nous raccrochons</l>
+            <l met="4">Et nous lorgnons,</l>
+            <l met="6">Les belles et les tendrons.</l>
+          </sp>
+        </spGrp>
+        <sp who="#leclerc">
+          <speaker>Le clerc</speaker>
+          <stage>s'adresse à Marotte</stage>
+        </sp>
+        <spGrp who="#leclerc">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#d_un_oeil_content_je_verrai_la_parque">D'un œil content, je verrai la Parque</title>
+            </desc>
+          </head>
+          <sp who="#leclerc">
+            <speaker>Le clerc</speaker>
+            <l met="9">Plaise à ton cœur, aimable Marotte,</l>
+            <l met="9">Répondre la requête du mien.</l>
+            <l met="9">Tout ce que je ressens te dénote</l>
+            <l met="9">Que, sans tes beaux yeux, je n'aime rien.</l>
+            <l met="9">Plaise à ton cœur, aimable Marotte</l>
+            <l met="9">M'aimer de même et tu feras bien.</l>
+          </sp>
+        </spGrp>
+        <sp who="#marotte">
+          <speaker>Marotte</speaker>
+          <stage>lui tirant sa plume et son écritoire</stage>
+        </sp>
+        <spGrp who="#marotte">
+          <head type="melody" subtype="restored_melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#turlututu_rengaine">Turlututu rengaine</title>
+            </desc>
+          </head>
+          <sp who="#marotte">
+            <speaker>Marotte</speaker>
+            <l met="5">Quelle ardeur soudaine</l>
+            <l met="5">Te serre au collet?</l>
+            <l met="5">La plaisante aubaine!</l>
+            <l met="5">Le joli plumet</l>
+            <l met="7">Turelututu rengaine,</l>
+            <l met="5">Renguaine, rengaine.</l>
+            <l met="6">Turelututu rengaine,</l>
+            <l met="6">Rengaine ton cornet.</l>
+          </sp>
+        </spGrp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="alternative_melody">
+            <desc>Un berger dont je suis les lois</desc>
+            <desc>Se dérobe enfin à ma chaîne,<emph>parodie au cinquième et sixième vers ceux de l'opéra scène 1, entrée I</emph>
+            </desc>
+          </head>
+          <sp who="#emilie">
+            <speaker>émilie</speaker>
+            <l met="8">L'hôtelier dont je suis les lois</l>
+            <l met="8">Va me faire changer d'enseigne.</l>
+            <l met="8">Ce n'est pas un homme qui craigne</l>
+            <l met="8">Les ongles du bout de vos doigts.</l>
+            <l met="8">Il faut que votre amour s'envole</l>
+            <l met="8">En croupe derrière l'espoir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lecommissaire">
+          <speaker>Le commissaire</speaker>
+          <stage>achève l'air d'Émilie et parodie le quatrain de l'opéra au même endroit, scène 1, entrée I</stage>
+          <l met="8">À l'ennui la constance immole</l>
+          <l met="8">Le cœur qui la croit un devoir.</l>
+        </sp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+          <stage>parodie de l'opéra scène II, entrée I</stage>
+          <l met="12">Je souffre à vous ouïr les tourments du langage.</l>
+        </sp>
+        <sp who="#lecommissaire">
+          <speaker>Le commissaire</speaker>
+          <stage>parodie l'opéra scène 3, entrée I</stage>
+          <l met="8">C'est là mon plus affreux malheur.</l>
+        </sp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+          <stage>parodie et chante sur le ton de l'opéra au même endroit, scène 3, entrée I</stage>
+          <l met="8">Loin de vous une âme volage</l>
+          <l met="8">Partage les vœux de mon cœur.</l>
+        </sp>
+        <sp who="#lecommissaire">
+          <speaker>Le commissaire</speaker>
+          <stage>chante sur la note de l'opéra, scène 4, entrée I. Le Barbare</stage>
+          <l met="3">Ah! la chienne!</l>
+        </sp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+        </sp>
+        <spGrp who="#emilie">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra (Tenez, voyez, scène 4, entrée III)</desc>
+          </head>
+          <sp who="#emilie">
+            <speaker>émilie</speaker>
+            <l met="12">Eh! Le bourreau! voyez, tenez, cet estafier</l>
+            <l met="12">Qu'il parle bien! Va, la peste te tienne</l>
+            <l met="12">Toi, ton bonnet, ta robe...</l>
+          </sp>
+        </spGrp>
+        <sp who="#marotte">
+          <speaker>Marotte</speaker>
+          <l met="12">Et ton maudit greffier.</l>
+        </sp>
+        <sp who="#lecommissaire">
+          <speaker>Le commissaire</speaker>
+          <l met="10">Eh! Depuis quand la fameuse Émilie</l>
+          <l met="8">Parle-t-elle si fièrement?</l>
+          <l met="12">Ne lui souvient-il plus que certain parlement</l>
+          <l met="10">Dans le préau de la conciergerie</l>
+          <l met="8">Fit marquer son appartement.</l>
+        </sp>
+        <stage>Il chante sur le ton de l'opéra qu'il parodie, scène IV entrée II des Incas.</stage>
+        <sp who="#lecommissaire">
+          <speaker>Le commissaire</speaker>
+          <l met="12">Je vois ta peine affreuse ici bientôt suivie</l>
+          <l met="8">D'un effroyable emportement.</l>
+        </sp>
+        <stage>Il change de ton et reprend celui de la scène VI, entrée III qu'il parodie.</stage>
+        <sp who="#lecommissaire">
+          <speaker>Le commissaire</speaker>
+          <l met="8">Et pour fixer ton châtiment</l>
+          <l met="10">Je vais en bref informer de ta vie.</l>
+        </sp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+          <stage>chante le second vers qui est le même que celui de l'opéra scène 6, entrée I</stage>
+          <l met="8">Allez, monsieur le bas Normand,</l>
+          <l met="8">Ne craignez pas que je l'oublie.</l>
+        </sp>
+        <stage>Le Commissaire et son clerc s'en vont en roulant des yeux et faisant des menaces.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">émilie, marotte et ses compagnes</stage>
+        <sp who="#marotte">
+          <speaker>Marotte</speaker>
+          <l met="8">Quoi! vous querellez tout de bon?</l>
+          <l met="8">Mais, à quel propos, je vous prie</l>
+          <l met="8">Le prendre tous deux sur ce ton?</l>
+        </sp>
+        <stage>Elle chante l'air et parodie les paroles de l'opéra scène 4, entrée III, des Fleurs.</stage>
+        <sp who="#marotte">
+          <speaker>Marotte</speaker>
+          <l met="12">Le sujet du débat reste encore à surprendre,</l>
+          <l met="8">Aux trois quarts de votre jargon</l>
+          <l met="12">Mes compagnes ni moi n'avons pu rien comprendre.</l>
+        </sp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+          <l met="12">C'est que les grands esprits ne se font point entendre.</l>
+        </sp>
+        <stage>D'un air rêveur.</stage>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+          <l met="12">Ce visage a pourtant quelque malin vouloir...</l>
+          <l met="8">Il faut songer à nous pourvoir...</l>
+          <l met="8">Il faut nous tirer de la presse.</l>
+        </sp>
+        <stage>Elle chante.</stage>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+          <l met="8">Il faut partir quand l'heure nous presse</l>
+          <l met="8">Hélas! J'en suis au désespoir.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">[marotte, émilie, nicolas tuyau]</stage>
+        <stage>Marotte entendant venir quelqu'un veut s'enfuir avec Émilie et ses compagnes mais leur frayeur et leur précipitation qui les f[ont] courir toutes ensemble, fait que l'une pour l'autre, en sorte qu'elles ne peuvent passer la porte à laquelle en même temps se présente Nicolas Tuyau, qui entre et les fait fuir de l'autre côté du théâtre avec encore plus de confusion et de désordre qu'auparavant.</stage>
+        <sp who="#marotte">
+          <speaker>Marotte</speaker>
+        </sp>
+        <spGrp who="#marotte">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#voici_dragons">Voici les dragons qui viennent</title>
+            </desc>
+          </head>
+          <sp who="#marotte">
+            <speaker>Marotte</speaker>
+            <l met="7">Voici les archers qui viennent</l>
+            <l met="5">Maman, sauvons-nous!</l>
+            <l met="7">Gare qu'ils ne nous préviennent</l>
+            <l met="7">Je crois déjà qu'ils vous tiennent</l>
+            <l met="8">Et moi itou, et moi itou.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lesfilles">
+          <speaker>Les filles</speaker>
+          <stage>répètent dans un désordre extrême et en fuyant et en criant tout éperdues</stage>
+          <l met="8">Et moi itou, et moi itou.</l>
+        </sp>
+        <stage>Émilie et toute sa troupe ne se rassure qu'à la voix de Nicolas Tuyau, son compère.</stage>
+        <sp who="#nicolastuyau">
+          <speaker>Nicolas tuyau</speaker>
+        </sp>
+        <spGrp who="#nicolastuyau">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_m_entendez_bien">Où allez-vous, monsieur l'abbé</title>
+            </desc>
+          </head>
+          <sp who="#nicolastuyau">
+            <speaker>Nicolas tuyau</speaker>
+            <l met="4">Où allez-vous</l>
+            <l met="4">La femme au chou?</l>
+            <l met="8">Vous allez vous cassez le cou.</l>
+          </sp>
+        </spGrp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+          <stage>achève l'air</stage>
+          <l met="6">Au moulin de Javelle</l>
+          <l met="2">Eh bien</l>
+          <l met="6">Mener cette donzelle</l>
+          <l met="5">Vous m'entendez bien.</l>
+        </sp>
+        <sp who="#nicolastuyau">
+          <speaker>Nicolas tuyau</speaker>
+          <l met="7">Ah! Quel diable allez-vous faire</l>
+          <l met="5">Dans cette galère?</l>
+        </sp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+        </sp>
+        <spGrp who="#emilie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nicolas_tuyau_est_chu_a_vau_l_yau">Nicolas Tuyau est chu à vau l'yau</title>
+            </desc>
+          </head>
+          <sp who="#emilie">
+            <speaker>émilie</speaker>
+            <l met="5">Nicolas Tuyau,</l>
+            <l met="5">Je suis à vau l'yau</l>
+            <l met="10">J'ai bon besoin d'un avis salutaire</l>
+            <l met="10">Je suis brouillée avec le Commissaire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#nicolastuyau">
+          <speaker>Nicolas tuyau</speaker>
+          <l met="10">Tant pis pour vous, je crains pour votre peau.</l>
+        </sp>
+        <stage>Il chante.</stage>
+        <spGrp who="#nicolastuyau">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#derouillez_derouillez_ma_commere_derouillez_derouillez_vos_outils">Dérouillez, dérouillez ma commère, dérouillez, dérouillez vos outils</title>
+            </desc>
+          </head>
+          <sp who="#nicolastuyau">
+            <speaker>Nicolas tuyau</speaker>
+            <l met="9">Dérouillez, dérouillez ma commère</l>
+            <l met="9">Démêlez, démêlez le fuseau.</l>
+            <l met="8">Vous ne manquez pas de cerveau,</l>
+            <l met="9">Débrouillez, débrouillez votre affaire,</l>
+            <l met="8">Cela ne vous est pas nouveau</l>
+            <l met="9">Démêlez, démêlez, le fuseau.</l>
+          </sp>
+        </spGrp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+          <l met="8">C'est vous qui portez le chapeau:</l>
+          <l met="9">Débrouillez, débrouillez mon affaire!</l>
+          <l met="8">J'ignore le train du Barreau,</l>
+          <l met="9">Démêlez, démêlez le fuseau.</l>
+        </sp>
+        <sp who="#nicolastuyau">
+          <speaker>Nicolas tuyau</speaker>
+          <l met="8">Le Commissaire est un Manceau</l>
+          <l met="9">Qui veut brouiller, brouiller votre affaire!</l>
+          <l met="8">Il prendra lettres du grand sceau</l>
+          <l met="9">Pour emmêler, mêler le fuseau.</l>
+        </sp>
+        <sp who="#emilie">
+          <speaker>émilie</speaker>
+          <l met="10">Eh! Écoutez, écoutez mon compère</l>
+          <l met="9">Déroutez, déroutez le Manceau.</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <cols n="2"/>
+          <sp who="#emilie">
+            <speaker>émilie</speaker>
+            <l met="10">Eh, dérouillons, débrouillons mon affaire</l>
+            <l met="9">Déroutons, déroutons le Manceau.</l>
+            <l met="10">Eh, dérouillons, dérouillons mon compère</l>
+            <l met="9">Démêlons, démêlons le fuseau.</l>
+            <l met="10">Eh, dérouillons, débrouillons mon affaire</l>
+            <l met="9">Déroutons, déroutons le Manceau.</l>
+          </sp>
+          <cb/>
+        </spGrp>
+        <sp who="#nicolastuyau">
+          <speaker>Nicolas tuyau</speaker>
+          <l met="10">Eh, dérouillons, débrouillons votre affaire</l>
+          <l met="9">Déroutons, déroutons le Manceau.</l>
+          <l met="10">Eh, dérouillons, dérouillons ma commère</l>
+          <l met="9">Démêlons, démêlons le fuseau.</l>
+          <l met="10">Eh, dérouillons, débrouillons mon affaire</l>
+          <l met="9">Déroutons, déroutons le Manceau.</l>
+        </sp>
+        <cols n="1"/>
+        <sp who="#nicolastuyau">
+          <speaker>Nicolas tuyau</speaker>
+          <l met="12">Ma foi, si j'en suis cru, le parti le plus sage</l>
+          <l met="12">Est de quitter la ville et d'aller au village.</l>
+        </sp>
+        <spGrp>
+          <caption>Tous ensemble<stage>en chantant</stage>
+          </caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="restored_melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nanon_dormait">Allons à la guinguette, allons</title>
+            </desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="4">Allons, allons,</l>
+            <l met="8">Allons à la guinguette, allons.</l>
+          </sp>
+        </spGrp>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

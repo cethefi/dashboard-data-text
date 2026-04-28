@@ -1,0 +1,913 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="sancho_piece">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">La Bagatelle ou Sancho Pança</title>
+        <title type="sub">Vaudeville</title>
+        <title type="sub">Divertissement</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">FIXME - missing source</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="sancho" sex="UNKNOWN">
+            <persName>Sancho Pança</persName>
+          </person>
+          <person xml:id="therese" sex="UNKNOWN">
+            <persName>Thérèse Pança</persName>
+          </person>
+          <person xml:id="intendant" sex="UNKNOWN">
+            <persName>L'intendant</persName>
+          </person>
+          <person xml:id="maitre" sex="UNKNOWN">
+            <persName>Le Maître d'hôtel</persName>
+          </person>
+          <person xml:id="paysan" sex="UNKNOWN">
+            <persName>Un paysan</persName>
+          </person>
+          <person xml:id="gargot" sex="UNKNOWN">
+            <persName>Madame Gargot</persName>
+          </person>
+          <person xml:id="chevalier" sex="UNKNOWN">
+            <persName>Le Chevalier de Criquerac</persName>
+          </person>
+          <person xml:id="vomitif" sex="UNKNOWN">
+            <persName>Monsieur Vomitif</persName>
+          </person>
+          <person xml:id="courrier" sex="UNKNOWN">
+            <persName>Un courrier</persName>
+          </person>
+          <person xml:id="doris" sex="UNKNOWN">
+            <persName>Doris</persName>
+          </person>
+          <person xml:id="silvandre" sex="UNKNOWN">
+            <persName>Silvandre</persName>
+          </person>
+          <person xml:id="amant" sex="UNKNOWN">
+            <persName>L'amant</persName>
+          </person>
+          <person xml:id="merlin" sex="UNKNOWN">
+            <persName>Merlin</persName>
+          </person>
+          <person xml:id="lutins" sex="UNKNOWN">
+            <persName>Lutins</persName>
+          </person>
+          <person xml:id="pages" sex="UNKNOWN">
+            <persName>Pages</persName>
+          </person>
+          <person xml:id="soldats" sex="UNKNOWN">
+            <persName>Soldats</persName>
+          </person>
+          <person xml:id="laquais" sex="UNKNOWN">
+            <persName>Laquais</persName>
+          </person>
+          <person xml:id="femme" sex="UNKNOWN">
+            <persName>Une femme</persName>
+          </person>
+          <person xml:id="medecin" sex="UNKNOWN">
+            <persName>Le médecin</persName>
+          </person>
+          <person xml:id="poete" sex="UNKNOWN">
+            <persName>Le poète</persName>
+          </person>
+          <person xml:id="sancho_panca" sex="UNKNOWN">
+            <persName>Sancho Pança</persName>
+          </person>
+          <person xml:id="therese_panca" sex="UNKNOWN">
+            <persName>Thérèse Pança</persName>
+          </person>
+          <person xml:id="l_intendant" sex="UNKNOWN">
+            <persName>L'intendant</persName>
+          </person>
+          <person xml:id="le_maitre_d_hotel" sex="UNKNOWN">
+            <persName>Le maître d'hôtel</persName>
+          </person>
+          <person xml:id="pierrot" sex="UNKNOWN">
+            <persName>Pierrot</persName>
+          </person>
+          <person xml:id="un_paysan" sex="UNKNOWN">
+            <persName>Un paysan</persName>
+          </person>
+          <person xml:id="madame_gargot" sex="UNKNOWN">
+            <persName>Madame Gargot</persName>
+          </person>
+          <person xml:id="le_chevalier_de_criquerac" sex="UNKNOWN">
+            <persName>Le Chevalier de Criquerac</persName>
+          </person>
+          <person xml:id="monsieur_vomitif" sex="UNKNOWN">
+            <persName>Monsieur Vomitif</persName>
+          </person>
+          <person xml:id="un_courrier" sex="UNKNOWN">
+            <persName>Un courrier</persName>
+          </person>
+          <person xml:id="un_poete" sex="UNKNOWN">
+            <persName>Un poète</persName>
+          </person>
+          <person xml:id="un_amant_castillan" sex="UNKNOWN">
+            <persName>Un amant castillan</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#sancho_panca">Sancho Pança</role>
+          <roleDesc>gouverneur de l' île Barataria<note>Dans<emph>Don Quichotte</emph>, c'est le nom de l'île offerte, en effet, à Sancho Pança par des nobles.</note>
+          </roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#therese_panca">Thérèse Pança</role>
+          <roleDesc>femme de Sancho</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#l_intendant">L'intendant</role>
+          <roleDesc>du duc de Médoc</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#le_maitre_d_hotel">Le maître d'hôtel</role>
+          <roleDesc>du duc de Médoc</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#pierrot">Pierrot</role>
+          <roleDesc>paysanne<note>Pierrot est déguisé en femme dans le second acte.</note>
+          </roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#un_paysan">Un paysan</role>
+        </castItem>
+        <castItem>
+          <role ana="#madame_gargot">Madame Gargot</role>
+        </castItem>
+        <castItem>
+          <role ana="#le_chevalier_de_criquerac">Le Chevalier de Criquerac</role>
+        </castItem>
+        <castItem>
+          <role ana="#monsieur_vomitif">Monsieur Vomitif</role>
+          <roleDesc>médecin des gouverneurs</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#un_courrier">Un courrier</role>
+        </castItem>
+        <castItem>
+          <role ana="#un_poete">Un poète</role>
+        </castItem>
+        <castItem>
+          <role ana="#doris">Doris</role>
+        </castItem>
+        <castItem>
+          <role ana="#silvandre">Silvandre</role>
+        </castItem>
+        <castItem>
+          <role ana="#un_amant_castillan">Un amant castillan</role>
+        </castItem>
+        <castItem>
+          <role ana="#merlin">Merlin</role>
+        </castItem>
+        <castItem>
+          <role ana="#lutins">Lutins</role>
+        </castItem>
+        <castItem>
+          <role ana="#pages">Pages</role>
+        </castItem>
+        <castItem>
+          <role ana="#soldats">Soldats</role>
+        </castItem>
+        <castItem>
+          <role ana="#laquais">Laquais</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène est dans l' Île de Barataria.</stage>
+        <pb/>
+        <stage>L'intendant et le maître d'hôtel du duc s'apprêtent à faire réussir les desseins de leur maître au sujet du gouvernement qu'il a donné à Sancho, à rire du personnage et à lui faire perdre l'envie d'être gouverneur d'une île en terre ferme. Sancho, qui est Arlequin, arrive appuyé sur deux écuyers et vêtu en magistrat. Il joue de la batte. Ceux qui reçoivent les coups l'en remercient en riant.<lb/>On chante en l'honneur de Sancho et on lui apporte les clefs de l'île<emph>
+            <note>Barré sur le manuscrit : « De la ville »</note>
+          </emph>. On avertit le gouverneur qu'il est jour d'audience et qu'il doit la rendre. Il s'y prépare en débitant des proverbes<emph>
+            <note>Dans la marge: « Copiés dans<emph>Don Quichotte</emph>». Dans<emph>Les Mécontents</emph>, du même auteur, on trouve également des références à<emph>Gil Blas</emph>. Il semble que Thierry ait un goût pour les romans picaresques.</note>
+          </emph>. Je m'imagine bien, dit-il,</stage>
+        <spGrp who="#None">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Le cher voisin</title>
+            </desc>
+          </head>
+          <sp who="#None">
+            <speaker/>
+            <l met="8">Que chaque juge peut ici,</l>
+            <l met="6">Tout de même qu'en France,</l>
+            <l met="8">Afin de prévenir l'ennui,</l>
+            <l met="6">Dormir à l'audience.</l>
+          </sp>
+        </spGrp>
+        <stage>Pierrot en femme se plaint qu'un paysan qu'elle tient en a voulu faire à sa fantaisie n'ayant pu l'éviter par la fuite.</stage>
+        <spGrp who="#None">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ainsi_qu_on_prend_les_belles">Ainsi qu'on prend les belles</title>
+            </desc>
+          </head>
+          <sp who="#None">
+            <speaker/>
+            <l met="7">L'Amour lui prêtant ses ailes,</l>
+            <l met="7">Bientôt il me rattrapa.</l>
+            <l met="7">Me trouvant des plus cruelles,</l>
+            <l met="7">Sur l'herbette il me jeta.</l>
+            <l met="7">C'est ainsi qu'on prend les belles, etc.</l>
+          </sp>
+        </spGrp>
+        <stage>Elle prie Sancho de le faire pendre pour le punir de la violence qu'il lui a faite. Sancho lui<note>Un terme illisible est biffé sur le manuscrit.</note>demande qui elle est. Donna Pruda, répond-elle, femme de chambre d'un commandeur de Malte. Le paysan convient de tout mais qu'il l'a payée avec une partie de l'argent qu'il a tiré de la vente de ses cochons. Sancho lui ordonne de donner à la femme le reste de son argent qu'il lui commande aussitôt de lui reprendre. La femme se défend vigoureusement et le paysan est contraint d'avouer qu'elle est plus forte que lui. Sancho reprend la bourse qu'il rend au manant en disant à la femme:</stage>
+        <spGrp who="#None">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Le capucin</title>
+            </desc>
+          </head>
+          <sp who="#None">
+            <speaker/>
+            <l met="8">Il fallait, Madame la prude,</l>
+            <l met="8">Avoir le poignet aussi rude</l>
+            <l met="8">En voyant hier le galant.</l>
+          </sp>
+        </spGrp>
+        <sp who="#femme">
+          <speaker>Une femme</speaker>
+          <l met="8">Vraiment, la remontrance est bonne,</l>
+          <l met="8">J'ai de la force en querellant.</l>
+          <l met="8">Quand je ris, elle m'abandonne.</l>
+        </sp>
+        <stage>Sancho la chasse et recommande au paysan d'être plus sage à l'avenir. Les assistants sont émerveillés.<lb/>Le Chevalier de Criquerac trouve mauvais que Madame Gargot lui demande ce qu'il lui doit. Elle dit à Sancho:</stage>
+        <spGrp who="#femme">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, [ni prince]</title>
+            </desc>
+          </head>
+          <sp who="#femme">
+            <speaker>Une femme</speaker>
+            <l met="8">Seigneur, je suis une aubergiste</l>
+            <l met="8">Chez qui depuis longtemps subsiste</l>
+            <l met="8">Le chevalier de Criquerac.</l>
+            <l met="8">Je n'en puis tenir une obole<note type="definition">Obole: C'était autrefois une petite monnaie de cuivre valant la moitié d'un denier tournois. On s'en sert encore pour marquer un très petit prix (Acad.1762)</note>.</l>
+            <l met="8">Quand je lui parle d'argent, crac!</l>
+            <l met="8">Il me fait une cabriole<note type="definition">Cabriole: Le saut d'un danseur qui s'élève agilement (Acad.1762)</note>.</l>
+          </sp>
+        </spGrp>
+        <sp who="#chevalier">
+          <speaker>Le Chevalier de Criquerac</speaker>
+          <stage>à Sancho</stage>
+          <p>Je lui ai fait trop de grâce de lui donner la préférence.</p>
+        </sp>
+        <spGrp who="#chevalier">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#joconde">Joconde</title>
+            </desc>
+          </head>
+          <sp who="#chevalier">
+            <speaker>Le Chevalier de Criquerac</speaker>
+            <l met="8">Partout, Monsieur le gouverneur,</l>
+            <l met="6">Mon mérite l'on prône.</l>
+            <l met="8">Chacun y tient pour un honneur</l>
+            <l met="6">D'héberger ma personne.</l>
+            <l met="8">Et quand l'hôtesse a des appas,</l>
+            <l met="6">Quelle réjouissance!</l>
+            <l met="8">Je ne suis point dans l'embarras</l>
+            <l met="6">De payer ma dépense.</l>
+            <p>La jalousie vous anime, Madame Gargot, mais tout Gascon que je suis, je ne puis suffire à tout.</p>
+          </sp>
+        </spGrp>
+        <sp who="#gargot">
+          <speaker>Madame Gargot</speaker>
+        </sp>
+        <spGrp who="#gargot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#coucou">Le coucou</title>
+            </desc>
+          </head>
+          <sp who="#gargot">
+            <speaker>Madame Gargot</speaker>
+            <l met="8">Pour le coup, son effronterie</l>
+            <l met="8">Me paraît poussée à l'excès,</l>
+            <l met="8">Seigneur...</l>
+          </sp>
+        </spGrp>
+        <sp who="#sancho">
+          <speaker>Sancho Pança</speaker>
+          <l met="8">Elle est, ma foi, jolie...</l>
+        </sp>
+        <sp who="#gargot">
+          <speaker>Madame Gargot</speaker>
+          <l met="8">Tiens, je vais gagner mon procès.</l>
+        </sp>
+        <sp who="#sancho">
+          <speaker>Sancho Pança</speaker>
+          <p>Les chevaliers<note>Manuscrit: « Chers».</note>errants ne payent nulle part et je vois bien que les Gascons naissent chevaliers errants. Ainsi, tout considéré,</p>
+        </sp>
+        <spGrp who="#sancho">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_ceinture">La ceinture</title>
+            </desc>
+          </head>
+          <sp who="#sancho">
+            <speaker>Sancho Pança</speaker>
+            <l met="8">Hors de cours tous deux je vous mets</l>
+            <l met="8">Et sans dépends [<emph>Sic</emph>], et sans épices<note type="definition">Épices: Épices des juges, ainsi dites parce qu'anciennement celui qui avait gagné son procès faisait présent au juge ou au rapporteur de quelques dragées ou confitures qui ensuite furent converties en argent ; d'abord volontaires, elles étaient devenues une taxe due (Littré)</note>.</l>
+          </sp>
+        </spGrp>
+        <sp who="#chevalier">
+          <speaker>Le Chevalier de Criquerac</speaker>
+          <l met="8">Vous lui faites grâce des frais.</l>
+        </sp>
+        <sp who="#gargot">
+          <speaker>Madame Gargot</speaker>
+          <l met="8">Est-ce là me rendre justice?</l>
+        </sp>
+        <stage>Elle sort.</stage>
+        <stage>Le Chevalier promet à Sancho de le régaler en chevalier errant quand il passera par ses terres.<lb/>Sancho demande à manger<emph>
+            <note>Dans la marge: « Pour lui et le grison ».</note>
+          </emph>. On fait servir.</stage>
+        <sp who="#maitre">
+          <speaker>Le Maître d'hôtel</speaker>
+          <p>Monseigneur, pendant votre repas,</p>
+        </sp>
+        <spGrp who="#maitre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_ceinture">La ceinture</title>
+            </desc>
+          </head>
+          <sp who="#maitre">
+            <speaker>Le Maître d'hôtel</speaker>
+            <l met="8">Dites-moi, qu'aimeriez-vous mieux,</l>
+            <l met="9">De la sonate<note type="definition">Sonate: Terme de musique. Pièce de violon, de flûte ou de clavecin composée ordinairement de quatre morceaux de musique dont les mouvements sont alternativement lents et vîtes (Acad.1762)</note>ou de la cantate<note type="definition">Cantate: Petit poème fait pour être mis en musique, composé de récitatifs et d'airs chantants (Acad.1798)</note>?</l>
+          </sp>
+        </spGrp>
+        <sp who="#sancho">
+          <speaker>Sancho Pança</speaker>
+          <l met="8">Ma foi, faites servir des deux.</l>
+          <l met="8">Je sens une faim de pirate.</l>
+        </sp>
+        <stage>Vomitif, soudain, l'empêche de manger de tout jusqu'à du pain.<emph>« Saturatio panis pessima »<emph>
+              <note>Nous traduisons le latin: « L'excès de pain est une très mauvaise chose ».</note>
+            </emph>
+          </emph>. Sancho demande à boire, on lui donne de l'eau qu'on veut lui faire passer pour du vin.</stage>
+        <sp who="#sancho">
+          <speaker>Sancho Pança</speaker>
+        </sp>
+        <spGrp who="#sancho">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#confiteor">Confiteor</title>
+            </desc>
+          </head>
+          <sp who="#sancho">
+            <speaker>Sancho Pança</speaker>
+            <l met="8">Quoi, sans avoir pitié de moi,</l>
+            <l met="8">Tu me réduis à l'agonie?</l>
+          </sp>
+        </spGrp>
+        <sp who="#medecin">
+          <speaker>Le médecin</speaker>
+          <l met="8">Je m'acquitte de mon emploi.</l>
+          <l met="8">Ces mets sentent l'hydropisie<note>Dans<emph>Les Mécontents</emph>, Thierry fait allusion au Docteur Sangrado, dans<emph>Gil Blas</emph>de Le Sage. Il semble s'en inspirer également ici.</note>.</l>
+        </sp>
+        <sp who="#sancho">
+          <speaker>Sancho Pança</speaker>
+          <l met="8">Sors d'ici, maudit assassin!</l>
+          <l met="8">Va-t-en contrôler un bassin.</l>
+        </sp>
+        <stage>Il le chasse.</stage>
+        <stage>Sancho tremble à la vue d'un sabre suspendu sur sa tête. On lui dit que c'est pour le faire souvenir des périls qu'entraîne avec soi la grandeur.<lb/>Un courrier apporte une lettre par laquelle le duc fait<emph>
+            <note>« Lui » barré sur le manuscrit.</note>
+          </emph>savoir à Sancho qu'on veut l'assassiner, susprendre<emph>
+            <note>
+              <emph>Sic</emph>sur le manuscrit. Probablement pour « reprendre ».</note>
+          </emph>son île, et l'empoisonner. Qu'il se garde bien de manger de quoi que ce soit, jusqu'à ce qu'il lui envoie du secours.</stage>
+        <sp who="#sancho">
+          <speaker>Sancho Pança</speaker>
+        </sp>
+        <spGrp who="#sancho">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_cap_de_bonne_esperance">Le cap de Bonne Espérance</title>
+            </desc>
+          </head>
+          <sp who="#sancho">
+            <speaker>Sancho Pança</speaker>
+            <l met="8">Dans une prison bien noire,</l>
+            <l met="8">Conduisez le médecin.</l>
+            <l met="8">Car si je voulais le croire</l>
+            <l met="8">Il serait mon assassin.</l>
+          </sp>
+        </spGrp>
+        <sp who="#intendant">
+          <speaker>L'intendant</speaker>
+          <p>Soit. Mais le poison?</p>
+        </sp>
+        <sp who="#sancho">
+          <speaker>Sancho Pança</speaker>
+          <l met="7">Oh, ma fois, c'est là le diable!</l>
+        </sp>
+        <sp who="#intendant">
+          <speaker>L'intendant</speaker>
+          <l met="7">Faites ôter cette table!</l>
+        </sp>
+        <sp who="#sancho">
+          <speaker>Sancho Pança</speaker>
+          <l met="7">C'est bien dit, en vérité.</l>
+          <l met="7">Veillons à ma sûreté.</l>
+        </sp>
+        <stage>Un laquais annonce un homme fort pressé.</stage>
+        <spGrp who="#sancho">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Le péril</title>
+            </desc>
+          </head>
+          <sp who="#sancho">
+            <speaker>Sancho Pança</speaker>
+            <l met="8">Contre nous il jure, il tempête,</l>
+            <l met="8">Il n'a ni rime ni raison.</l>
+          </sp>
+        </spGrp>
+        <sp who="#sancho">
+          <speaker>Sancho Pança</speaker>
+          <l met="8">Ah, c'est pour être un espion!</l>
+        </sp>
+        <sp who="#laquais">
+          <speaker>Laquais</speaker>
+          <l met="6">C'est, je crois, un poète.</l>
+        </sp>
+        <sp who="#poete">
+          <speaker>Le poète</speaker>
+        </sp>
+        <spGrp who="#poete">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#joconde">Joconde</title>
+            </desc>
+          </head>
+          <sp who="#poete">
+            <speaker>Le poète</speaker>
+            <l met="8">Je viens vous présenter, Seigneur,</l>
+            <l met="6">L'hommage de ma lyre.</l>
+            <l met="8">En moi vous voyez un auteur</l>
+            <l met="6">Que le public admire.</l>
+            <l met="8">Je veux apprendre à l'univers</l>
+            <l met="6">L'éclat de votre gloire,</l>
+            <l met="8">Nul mieux que moi ne fait des vers.</l>
+          </sp>
+        </spGrp>
+        <sp who="#sancho">
+          <speaker>Sancho Pança</speaker>
+          <l met="6">Rincez-les, je veux boire.</l>
+        </sp>
+        <stage>Le poète s'explique.</stage>
+        <spGrp who="#sancho">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, [belle endormie]</title>
+            </desc>
+          </head>
+          <sp who="#sancho">
+            <speaker>Sancho Pança</speaker>
+            <l met="8">Je travaille beaucoup de tête</l>
+            <l met="8">Et je sais fort bien mon métier.</l>
+            <l met="8">Pour tout dire, je suis poète.</l>
+          </sp>
+        </spGrp>
+        <sp who="#sancho">
+          <speaker>Sancho Pança</speaker>
+          <l met="8">Je t'aimerais mieux cuisinier.</l>
+          <p>Voilà un poète bien mal relié.</p>
+        </sp>
+        <sp who="#poete">
+          <speaker>Le poète</speaker>
+          <p>Le travail est infructueux.</p>
+        </sp>
+        <spGrp who="#poete">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_ma_jeunesse">Cahin, caha</title>
+            </desc>
+          </head>
+          <sp who="#poete">
+            <speaker>Le poète</speaker>
+            <l met="4">Dans ma jeunesse</l>
+            <l met="6">On voyait un savant</l>
+            <l met="6">Devenir opulent.</l>
+            <l met="6">Il vivait noblement.</l>
+            <l met="6">Avec empressement,</l>
+            <l met="6">On lui faisait caresse.</l>
+            <l met="8">Aujourd'hui ce n'est plus cela.</l>
+            <l met="5">Avec insolence,</l>
+            <l met="5">La sotte ignorance</l>
+            <l met="5">Foule la science</l>
+            <l met="5">Et dame finance</l>
+            <l met="4">Chez l'auteur va,</l>
+            <l met="4">Cahin, caha, etc.</l>
+            <p>Je me nomme perroquet.</p>
+          </sp>
+        </spGrp>
+        <sp who="#sancho">
+          <speaker>Sancho Pança</speaker>
+        </sp>
+        <spGrp who="#sancho">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#perroquet_mignon">Perroquet mignon</title>
+            </desc>
+          </head>
+          <sp who="#sancho">
+            <speaker>Sancho Pança</speaker>
+            <l met="5">Perroquet mignon,</l>
+            <l met="5">Dis-moi sans façon</l>
+            <l met="8">Quelle affaire en cette maison</l>
+            <l met="5">Près de moi t'amène.</l>
+          </sp>
+        </spGrp>
+        <sp who="#poete">
+          <speaker>Le poète</speaker>
+          <l met="4">Je suis savant,</l>
+          <l met="3">Éloquent,</l>
+          <l met="6">Fécond, vif et brillant.</l>
+          <l met="6">On vante de ma veine</l>
+          <l met="5">Le feu tout divin</l>
+          <l met="5">Et je meurs de faim.</l>
+        </sp>
+        <stage>Il demande un acompte sur la portion de gloire qu'il doit lui distribuer. Sancho le bâtonne en lui disant que ses vers sont impayables.</stage>
+        <stage>Fin de l'acte</stage>
+        <stage>Sancho se trouverait fort bien logé s'il y avait une cuisine dans son palais. Mais il n'en trouve point. On l'empêche de la chercher par le respect qu'on a pour lui. On lui promet un bon repas quand il aura fait la ronde. Il s'y dispose. On part. Doris fuyant les poursuites amoureuses de Sylvandre, se plaint que son amour la glace.</stage>
+        <spGrp who="#poete">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_de_la_douleur_mortelle">C'est de la douleur mortelle</title>
+            </desc>
+          </head>
+          <sp who="#poete">
+            <speaker>Le poète</speaker>
+            <l met="7">Je ne demande qu'à rire</l>
+            <l met="7">Avant que mon cœur soupire.</l>
+            <l met="7">Dans Paris l'herbe croîtra,</l>
+            <l met="7">La brûlante canicule</l>
+            <l met="7">En hiver commencera</l>
+            <l met="7">Et l'on verra le scrupule</l>
+            <l met="7">Se loger à l'Opéra.</l>
+          </sp>
+        </spGrp>
+        <stage>Sancho s'étonne de sa froideur. Elle l'assure que rien n'est plus vrai.</stage>
+        <spGrp who="#poete">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Le capucin</title>
+            </desc>
+          </head>
+          <sp who="#poete">
+            <speaker>Le poète</speaker>
+            <l met="8">J'ai vu des gens de toute espèce,</l>
+            <l met="8">Pour moi pénétrés de tendresse,</l>
+            <l met="8">Me marquer leur empressement.</l>
+            <l met="8">J'ai toujours méprisé leurs flammes.</l>
+          </sp>
+        </spGrp>
+        <sp who="#sancho">
+          <speaker>Sancho Pança</speaker>
+          <l met="8">Vous êtes faite, assurément,</l>
+          <l met="8">Tout au rebours des autres femmes.</l>
+        </sp>
+        <spGrp who="#sancho">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fraises">Des fraises</title>
+            </desc>
+          </head>
+          <sp who="#sancho">
+            <speaker>Sancho Pança</speaker>
+            <l met="7">Qu'il est de filles ici,</l>
+            <l met="6">La chose est véritable,</l>
+            <l met="7">Qui faute d'un bon ami</l>
+            <l met="7">Épouseraient aujourd'hui</l>
+            <l met="2">Le diable, etc.</l>
+          </sp>
+        </spGrp>
+        <stage>Doris assure Sylvandre qu'en pareille occasion elle lui donnerait la préférence. Elle fuit. Sylvandre veut la suivre. Sancho l'en empêche et lui conseille de s'adresser à quelque autre pour se dépiquer<emph>
+            <note type="definition">Dépiquer: Ôter à quelqu'un le chagrin qu'il a de quelque chose, faire qu'il n'en soit plus piqué (Acad.1762)</note>
+          </emph>. Il va suivre son conseil.<lb/>Deux soldats amènent à Sancho un Castillan qu'ils ont surpris escaladant une fenêtre. Sancho le prend pour un espion dont la tête doit répondre des malheurs de l'empire. L'intendant le reconnait pour un de ses amis. Le gouverneur veut le faire broncher<emph>
+            <note type="definition">Broncher: Faillir (Acad.1762)</note>
+          </emph>. Le Castillan y consent plutôt que de découvrir son rendez-vous amoureux et dit:</stage>
+        <spGrp who="#sancho">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#rossignols_du_bois">Rossignols du bois</title>
+            </desc>
+          </head>
+          <sp who="#sancho">
+            <speaker>Sancho Pança</speaker>
+            <l met="6">Il faut être discret:</l>
+            <l met="6">À sa jeune bergère</l>
+            <l met="6">L'amour veut du mystère.</l>
+          </sp>
+        </spGrp>
+        <sp who="#intendant">
+          <speaker>L'intendant</speaker>
+          <l met="6">Sot est l'amant parfait</l>
+          <l met="6">Pour se tirer d'affaire</l>
+          <l met="6">Qui risque le gibet.</l>
+        </sp>
+        <stage>Sancho le laisse aller sous la caution de l'intendant. On éteint les lumières et Sancho reste seul dans l'obscurité, non sans frayeur. Apparaît Merlin qui condamne Sancho à se donner quatre cent coups d'étrivières s'il ne veut voir périr son île. Périssent plutôt, dit Sancho, toutes les îles du monde.</stage>
+        <spGrp who="#intendant">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#on_vous_en_ratisse">On vous en ratisse</title>
+            </desc>
+          </head>
+          <sp who="#intendant">
+            <speaker>L'intendant</speaker>
+            <l met="7">Qui, moi, j'irais de sang froid</l>
+            <l met="7">M'écorcher à coups de fouet?</l>
+            <l met="7">Me prend-on pour un novice?</l>
+          </sp>
+        </spGrp>
+        <sp who="#merlin">
+          <speaker>Merlin</speaker>
+          <l met="7">Il faut en passer par là.</l>
+        </sp>
+        <sp who="#sancho">
+          <speaker>Sancho Pança</speaker>
+          <l met="5">On vous en ratisse, etc.</l>
+        </sp>
+        <stage>En vain, Merlin le pique de gloire. Sancho n'entend rien aux coups d'étrivières. L'enchanteur ordonne à sa suite de les lui appliquer. Pança consent à faire lui-même l'opération avant la fin du jour. Merlin se retire. Un chœur de soldats crie aux armes. L'ennemi vient de faire une descente qu'il est question de repousser. Sancho propose de mettre le feu dans la ville pour les en chasser, de leur faire dire qu'il est malade, que la peste est dans l'île. Mauvaises raisons, dit l'intendant, il faut se battre. On arme Sancho malgré ses frayeurs. On feint de se battre, le gouverneur est porté à terre, on le relève et on crie victoire. Sancho, après avoir été relevé et désarmé veut aller bâter le grison<emph>
+            <note>
+              <emph>Grison</emph>: « On appelle populairement un âne, un grison » (Acad. 1762). L'expression est tirée du roman de Cervantes, vol. I, chapitre XLVI « De la notable aventure des archers de la Sainte-Hermandad et de la grande férocité de notre bon ami Don Quichotte ».</note>
+          </emph>
+        </stage>
+        <sp who="#sancho">
+          <speaker>Sancho Pança</speaker>
+          <p>Arrive sa femme<emph>
+              <note>En marge: « Thérèse Pança ».</note>
+            </emph>qui débute par demander des nouvelles du grison. Ensuite elle félicite son mari sur son gouvernement dont elle vient partager les revenants-bons<emph>
+              <note type="definition">Revenant-bon: C'est ainsi qu'on appelle les deniers qui restent entre les mains d'un comptable. Il s'emploie substantivement et signifie profit, émolument (Acad.1762)</note>
+            </emph>.</p>
+        </sp>
+        <spGrp who="#sancho">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nous_villageois">Nous autres bons villageois</title>
+            </desc>
+          </head>
+          <sp who="#sancho">
+            <speaker>Sancho Pança</speaker>
+            <l met="7">En dépit des gros bourgeois</l>
+            <l met="8">Qui priment dans notre village,</l>
+            <l met="7">Nous voici, de villageois,</l>
+            <l met="7">Devant gens de haut parage<note type="definition">Parage: Vieux mot qui signifiait extraction, qualité, et qui n'a eu d'usage qu'en parlant Des personnes de grande naissance, de haut rang. C'est dans cette acception qu'autrefois en parlant d'une grande dame, on a dit, c'est une dame de haut parage (Acad.1762)</note>.</l>
+            <l met="8">Je m'assoirai sur des carreaux,</l>
+            <l met="8">J'aurai carrosses et chevaux,</l>
+            <l met="8">Une foule d'adorateurs</l>
+            <l met="8">Comme les femmes des seigneurs.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#sancho">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#maman_m_a_defendu_d_aimer">Maman m'a défendu d'aimer</title>
+            </desc>
+          </head>
+          <sp who="#sancho">
+            <speaker>Sancho Pança</speaker>
+            <l met="3">Que Thérèse</l>
+            <l met="4">Sera bien aise</l>
+            <l met="7">Et que tu seras heureux!</l>
+            <l met="8">À quelques seigneurs gracieux,</l>
+            <l met="8">S'il se peut que ma beauté plaise.</l>
+            <l met="3">Que Thérèse</l>
+            <l met="4">Sera bien aise</l>
+            <l met="7">Et que tu seras heureux!</l>
+          </sp>
+        </spGrp>
+        <stage>Elle presse ensuite Sancho de marier la petite Sanchette qui s'en meure d'envie. Elle disait encore ce matin:</stage>
+        <spGrp who="#sancho">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_pierre">Ô Pierre, j'étais morte sans vous</title>
+            </desc>
+          </head>
+          <sp who="#sancho">
+            <speaker>Sancho Pança</speaker>
+            <l met="6">Dans ma quinzième année</l>
+            <l met="6">Il me faut un époux.</l>
+            <l met="6">Je sens que je suis née</l>
+            <l met="6">Pour vivre comme vous.</l>
+            <l met="8">Ma mère,<stage>bis</stage>vite, dépêchons-nous!</l>
+            <p>Vous le savez aussi bien que moi, mon mari.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#sancho">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title"/>
+          </head>
+          <sp who="#sancho">
+            <speaker>Sancho Pança</speaker>
+            <l met="8">Une fille est comme un beau fruit</l>
+            <l met="8">Que nature en nos champs produit.</l>
+            <l met="8">Elle se plait à la nourrir,</l>
+            <l met="8">Mais dès qu'il commence à mûrir</l>
+            <l met="6">Sur sa charge il succombe.</l>
+            <l met="8">Si l'on diffère à la cueillir</l>
+            <l met="6">Ne sais-tu pas qu'il tombe?</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#sancho">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#menuet_de_pirame">Menuet de Pirame</title>
+            </desc>
+          </head>
+          <sp who="#sancho">
+            <speaker>Sancho Pança</speaker>
+            <l met="8">Pour les filles dans le bel âge,</l>
+            <l met="5">Que du mariage</l>
+            <l met="5">La chaîne a d'attraits!</l>
+            <l met="3">Femme habile,</l>
+            <l met="4">Mari docile,</l>
+            <l met="5">Sont toujours en paix.</l>
+            <l met="7">Pour eux les beaux jours sont faits.</l>
+          </sp>
+        </spGrp>
+        <stage>Sancho, résolu d'abandonner son île, le dit à sa femme<emph>
+            <note>« Qui » barré sur le manuscrit.</note>
+          </emph>en lui représentant l'inconvénient des grandes fortunes. Thérèse veut être gouverneuse, ils querellent, Pança s'emporte contre sa femme. L'intendant lui dit, pour l'apaiser:</stage>
+        <spGrp who="#sancho">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_ceinture">La ceinture</title>
+            </desc>
+          </head>
+          <sp who="#sancho">
+            <speaker>Sancho Pança</speaker>
+            <l met="8">Calmez, Seigneur, ce grand courroux.</l>
+            <l met="8">De vos enfants, elle est la mère.</l>
+          </sp>
+        </spGrp>
+        <sp who="#sancho">
+          <speaker>Sancho Pança</speaker>
+          <l met="8">Pardi, vous vous gaussez de nous!</l>
+          <l met="8">Sancho n'en est-il pas le père?</l>
+          <p>Finissons. Adieu jusqu'au revoir, comme un aveugle dit à l'autre.</p>
+        </sp>
+        <stage>Voyant que Sancho n'en veut pas démordre, l'intendant le convie à voir du moins la fête que l'on va célébrer en l'honneur de la victoire qu'il a remportée sur ses ennemis. Il y consent à condition qu'on lui donnera un peu d'orge pour son grison, un morceau de pain pour lui et que sa femme ira à tous les diables.</stage>
+        <spGrp who="#sancho">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title"/>
+          </head>
+          <sp who="#sancho">
+            <speaker>Sancho Pança</speaker>
+            <l met="12">De tous les vains honneurs, que faut-il que l'on pense?</l>
+            <l met="12">Faut-il par leur éclat nous laisser abuser</l>
+            <l met="8">Quand chaque jour leur inconstance</l>
+            <l met="8">Nous apprend à les mépriser?</l>
+            <l met="12">Non, non, de trop de soins la grandeur est suivie.</l>
+            <l met="12">Dans mon petit réduit, je suis bien plus heureux.</l>
+            <l met="12">Et quand je bois mon vin, quand je vois ma Sylvie,</l>
+            <l met="12">Ai-je moins de plaisirs que les rois et les dieux?</l>
+            <l met="8">En amour ainsi qu'à la guerre,</l>
+            <l met="8">Il faut ruser pour être heureux</l>
+            <l met="8">Auprès de l'objet de ses feux.</l>
+            <l met="8">Qui veut se tirer bien d'affaire,</l>
+            <l met="9">Tique, tique, tac et tin, tin, tin,</l>
+            <l met="7">Doit savoir jouer au fin.</l>
+          </sp>
+        </spGrp>
+        <stage>Fin</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="act">
+        <head>ACTE 1</head>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+      </div>
+    </body>
+  </text>
+</TEI>

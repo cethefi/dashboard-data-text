@@ -1,0 +1,1818 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="la_petite_maison_1757">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">La Petite Maison</title>
+        <title type="sub"/>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Monsieur de Marcouville</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>J. Coignard</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Paris, Duchesne, 1757</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="mondoron" sex="UNKNOWN">
+            <persName>Mondoron</persName>
+          </person>
+          <person xml:id="arlequin" sex="UNKNOWN">
+            <persName>Arlequin</persName>
+          </person>
+          <person xml:id="landor" sex="UNKNOWN">
+            <persName>Landor</persName>
+          </person>
+          <person xml:id="philaris" sex="UNKNOWN">
+            <persName>Philaris</persName>
+          </person>
+          <person xml:id="rebarbade" sex="UNKNOWN">
+            <persName>Rébarbade</persName>
+          </person>
+          <person xml:id="crispin" sex="UNKNOWN">
+            <persName>Crispin</persName>
+          </person>
+          <person xml:id="convives" sex="UNKNOWN">
+            <persName>Convives</persName>
+          </person>
+          <person xml:id="voisines_de_madame_rebarbade" sex="UNKNOWN">
+            <persName>Voisines de Madame Rébarbade</persName>
+          </person>
+          <person xml:id="domestiques_de_mondoron" sex="UNKNOWN">
+            <persName>Domestiques de Mondoron</persName>
+          </person>
+          <person xml:id="autres_domestiques" sex="UNKNOWN">
+            <persName>Autres domestiques</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie d'<emph>Anacréon</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1757">
+        <desc>Représentée pour la première fois par les Comédiens Italiens ordinaires du Roi le jeudi 30 juin 1757</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#mondoron">Mondoron</role>
+          <actor>Monsieur Rochard</actor>
+        </castItem>
+        <castItem>
+          <role ana="#arlequin">Arlequin</role>
+          <roleDesc>poète</roleDesc>
+          <actor>Monsieur Carlin</actor>
+        </castItem>
+        <castItem>
+          <role ana="#landor">Landor</role>
+          <roleDesc>musicien</roleDesc>
+          <actor>Monsieur Desbrosses</actor>
+        </castItem>
+        <castItem>
+          <role ana="#crispin">Crispin</role>
+          <roleDesc>jeune frère de Philaris</roleDesc>
+          <actor>Monsieur Vicentini</actor>
+        </castItem>
+        <castItem>
+          <role ana="#philaris">Philaris</role>
+          <roleDesc>jeune maîtresse de Mondoron</roleDesc>
+          <actor>Mademoiselle Victoire</actor>
+        </castItem>
+        <castItem>
+          <role ana="#rebarbade">Rébarbade</role>
+          <roleDesc>ancienne maîtresse de Mondoron</roleDesc>
+          <actor>Monsieur Chanville</actor>
+        </castItem>
+        <castItem>
+          <role ana="#convives">Convives</role>
+        </castItem>
+        <castItem>
+          <role ana="#voisines_de_madame_rebarbade">Voisines de Madame Rébarbade</role>
+        </castItem>
+        <castItem>
+          <role ana="#domestiques_de_mondoron">Domestiques de Mondoron</role>
+          <roleDesc>habillés en danseurs</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#autres_domestiques">Autres domestiques</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène se passe aux environs de Nanterre, à la petite maison de Mondoron.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Mondoron, Philaris, Arlequin, Landor, convives, domestiques<stage>en danseurs</stage>, autres domestiques<stage>en livrée</stage>
+        </stage>
+        <stage>Le théâtre représente le jardin de la petite maison de Mondoron. Il paraît à table avec sa jeune maîtresse et plusieurs convives.</stage>
+        <spGrp>
+          <caption>Mondoron, philaris</caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bacchus_c_est_toi_que_je_chante">Bacchus, c'est toi que je chante</title>
+            </desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Bacchus que de ton ivresse</l>
+            <l met="7">Nous éprouvions les accès.</l>
+            <l met="8">Trinquons tous et buvons sans cesse</l>
+            <l met="8">De ce jus pétillant et frais.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="7">Bacchus, ...</l>
+        </sp>
+        <pb n="4"/>
+        <spGrp>
+          <caption>Mondoron, philaris</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Le temps fuit, l'instant nous presse.</l>
+            <l met="9">Hâtons-nous de goûter tes bienfaits.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="7">Bacchus, ...</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_voila_la_vie">Ah, voilà la vie</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="5">Dans cette partie,</l>
+            <l met="5">tout nous rend joyeux,</l>
+            <l met="5">Maîtresse jolie,</l>
+            <l met="5">Vin délicieux.</l>
+            <l met="9">Ah! voilà la vie, la vie, la vie,</l>
+            <l met="5">Ah! voilà la vie</l>
+            <l met="5">Qui nous rend heureux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="5">Ah! voilà la vie, ...</l>
+        </sp>
+        <sp who="#philaris">
+          <speaker>Philaris</speaker>
+          <l met="5">Badine saillie,</l>
+          <l met="5">Agréables jeux,</l>
+          <l met="5">Un peu de folie,</l>
+          <l met="5">Point de sérieux.</l>
+          <l met="5">Ah! voilà la vie, ...</l>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="5">Ah! voilà la vie, ...</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="5">Sans mélancolie,</l>
+          <l met="5">Sans soucis fâcheux,</l>
+          <l met="5">Le plaisir nous lie,</l>
+          <l met="5">Pour nous rendre heureux,</l>
+          <l met="5">Ah! voilà la vie, ...</l>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="5">Ah! voilà la vie, ...</l>
+        </sp>
+        <pb n="5"/>
+        <sp who="#landor">
+          <speaker>Landor</speaker>
+          <l met="5">À sa fantaisie</l>
+          <l met="5">On suit tous ses vœux.</l>
+          <l met="5">Liberté chérie,</l>
+          <l met="5">Tu nous fais des Dieux.</l>
+          <l met="5">Ah! voilà la vie, ...</l>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="5">Ah! voilà la vie, ...</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <stage>présente son verre à Philaris, qui le remplit</stage>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quand_hebe_servait">Quand Hébé servait</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="9">Quand Hébé servait les dieux à table</l>
+            <l met="9">Elle avait moins de grâce que vous...</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>l'interrompant</stage>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bel_oiseau_maman">Ah! le bel oiseau, maman</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Pourquoi nous donner du vieux?</l>
+            <l met="7">Cette chanson est usée.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="7">Monsieur l'auteur faites mieux.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="7">La chose serait aisée.</l>
+        </sp>
+        <sp who="#landor">
+          <speaker>Landor</speaker>
+          <l met="7">Moi, j'approuve ce morceau,</l>
+          <l met="7">Et j'en aime la pensée.</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="7">Vraiment! Cet air est fort beau,</l>
+          <l met="7">Il vaut mieux que le nouveau.</l>
+        </sp>
+        <pb n="6"/>
+        <sp who="#landor">
+          <speaker>Landor</speaker>
+          <stage>à Philaris</stage>
+        </sp>
+        <spGrp who="#landor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#bucherons_majeur">Bucherons,<emph>majeur</emph>
+              </title>
+            </desc>
+          </head>
+          <sp who="#landor">
+            <speaker>Landor</speaker>
+            <l met="9">Puisque nous sommes en belle humeur,</l>
+            <l met="6">Chantez mon petit cœur,</l>
+            <l met="3">C'est l'usage.</l>
+            <l met="4">Mais point de chant</l>
+            <l met="5">Plaintif ou touchant.</l>
+            <l met="6">Donnez du sémillant,</l>
+            <l met="3">Du brillant.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="6">Elle a la voix parfaite,</l>
+          <l met="6">Et vous enchantera</l>
+          <l met="6">Quand elle chantera.</l>
+          <l met="6">Elle n'est pas muette,</l>
+          <l met="10">Comme dans son rôle à notre Opéra.</l>
+        </sp>
+        <stage type="musical_indication">Mineur</stage>
+        <sp who="#philaris">
+          <speaker>Philaris</speaker>
+          <stage>chante</stage>
+        </sp>
+        <spGrp who="#philaris">
+          <head type="melody" subtype="ariette">
+            <desc type="prefix">Ariette</desc>
+            <desc type="title">
+              <title>del Signor Hasse</title>del Signor Hasse</desc>
+          </head>
+          <sp who="#philaris">
+            <speaker>Philaris</speaker>
+            <l met="6">De ce jus délectable</l>
+            <l met="6">Versez-moi tour à tour.</l>
+            <l met="5">Dans ce beau séjour,</l>
+            <l met="5">Bacchus est à table</l>
+            <l met="4">Avec l'Amour.</l>
+            <l met="4">Régnez sans cesse,</l>
+            <l met="4">Ô double ivresse.</l>
+            <l met="4">Pour nos plaisirs,</l>
+            <l met="6">Enchantez nos loisirs.</l>
+            <l met="5">À ces deux vainqueurs</l>
+            <l met="5">Consacrons nos cœurs.</l>
+            <l met="4">Doux esclavage!</l>
+            <l met="5">L'un sait nous charmer,</l>
+            <l met="5">L'autre sait aimer.</l>
+            <l met="5">Servons-les tous deux.</l>
+            <l met="4">C'est ce partage</l>
+            <l met="5">Qui nous rend heureux.</l>
+          </sp>
+        </spGrp>
+        <pb n="7"/>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nanon_dormait">Nanon dormait</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="4">C'est au parfait!</l>
+          </sp>
+        </spGrp>
+        <sp who="#philaris">
+          <speaker>Philaris</speaker>
+          <l met="6">Ah! c'est trop d'indulgence.</l>
+        </sp>
+        <sp who="#landor">
+          <speaker>Landor</speaker>
+          <l met="4">L'heureux sujet!</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="6">Voyez un peu sa danse.</l>
+        </sp>
+        <sp who="#landor">
+          <speaker>Landor</speaker>
+          <l met="6">Encore un agrément!</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="4">Comment! Vraiment!</l>
+          <l met="8">Messieurs, elle a plus d'un talent.</l>
+        </sp>
+        <stage>À ses gens.</stage>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#toujours_va_qui_danse">Toujours va qui danse</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="8">Vous aussi mes gentils laquais,</l>
+            <l met="7">Allez sauter autour d'elle.</l>
+            <l met="8">Avec vos habits faits exprès,</l>
+            <l met="6">La fête sera belle.</l>
+            <l met="8">Mais si je vous passe cela,</l>
+            <l met="6">Honni qui mal y pense!</l>
+            <l met="8">Ce n'est que pour cette fois-là,</l>
+            <l met="6">Que je permets la danse.</l>
+          </sp>
+        </spGrp>
+        <pb n="8"/>
+        <stage>Les domestiques dansent et Philaris est au milieu. Pendant ce ballet, Mondoron chante:</stage>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_je_n_aimerai_jamais_que_vous">Non, je n'aimerai jamais que vous</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="9">Que j'aime ta charmante gaité,</l>
+            <l met="11">Ton air séduisant et ta vivacité!</l>
+            <l met="9">Que j'aime ta charmante gaité,</l>
+            <l met="11">On voit près de toi voler la volupté.</l>
+            <l met="10">Heureux talent! Pour charmer et pour plaire,</l>
+            <l met="7">Il ne te faut à présent</l>
+            <l met="3">Qu'un instant.</l>
+            <l met="10">Un pied brillant nous amène à Cythère,</l>
+            <l met="4">Plus promptement</l>
+            <l met="6">Que le seul sentiment.</l>
+            <l met="9">Que j'aime, ...</l>
+            <l met="4">Que de plaisirs,</l>
+            <l met="4">Que de désirs</l>
+            <l met="8">Excite ta danse légère!</l>
+            <l met="4">Ces jolis pas,</l>
+            <l met="4">Et ces beaux bras</l>
+            <l met="8">Pour mon cœur font autant de lacs.<stage type="musical_resumption">Fin</stage>
+            </l>
+            <l met="3">Enchanté,</l>
+            <l met="3">Transporté,</l>
+            <l met="4">Tout me saisit,</l>
+            <l met="4">Tout me ravit.</l>
+            <l met="10">Le dieu d'amour sur tes pas me conduit.</l>
+            <l met="4">Que de plaisirs, ...</l>
+          </sp>
+        </spGrp>
+        <stage type="musical_indication">Mineur</stage>
+        <pb n="9"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Madame Rébarbade, voisines, domestiques, Mondoron, Philaris, Arlequin, Landor, convives</stage>
+        <stage>Symphonie bruyante. Madame Rébarbade entre rapidement, suivie de plusieurs voisines portant des lanternes... Elles font le tour du jardin, et restent en attitude, pendant le commencement du morceau suivant.</stage>
+        <sp who="#rebarbade">
+          <speaker>Rébarbade</speaker>
+        </sp>
+        <spGrp who="#rebarbade">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_voila_donc_cet_objet_radieux">Ah! voilà donc cet objet radieux</title>
+            </desc>
+          </head>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="4">Ah! le voilà!</l>
+            <l met="6">Monsieur est-il bien là?</l>
+            <l met="10">Croit-il donc qu'impunément on m'offense?</l>
+          </sp>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="4">Ah! le voilà!</l>
+            <l met="6">Perfide es-tu bien là?</l>
+            <l met="10">oses-tu me traiter comme cela?</l>
+            <l met="4">Quelle impudence!</l>
+            <l met="4">Quelle indécence!</l>
+            <l met="4">Quoi? sans rougir,</l>
+            <l met="6">Peut-on la soutenir?</l>
+            <l met="4">De cette injure,</l>
+            <l met="4">Oui, je le jure,</l>
+            <l met="4">Je crèverai,</l>
+            <l met="6">Ou je me vengerai.</l>
+          </sp>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="4">Le bel objet!</l>
+            <l met="6">Ah! le joli sujet!</l>
+            <l met="4">Qu'il est charmant!</l>
+          </sp>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="6">La sotte créature!</l>
+            <l met="4">Le bel objet!</l>
+            <l met="6">Ah! le joli sujet!</l>
+          </sp>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="10">En vérité, votre choix est parfait.</l>
+            <l met="4">Plus de scandale,</l>
+            <l met="4">Que l'on détale.</l>
+            <l met="4">Il vous sied bien</l>
+            <l met="6">De me voler mon bien!</l>
+            <l met="4">Elle est habile!</l>
+            <l met="4">Petite fille,</l>
+            <l met="4">En d'autres lieux,</l>
+            <l met="6">Allez porter vos feux.</l>
+            <l met="4">D'un cœur jaloux</l>
+            <l met="6">Redoutez le courroux.</l>
+            <l met="10">Ah! gardez-vous de m'échauffer la bile.</l>
+            <l met="4">D'un cœur jaloux</l>
+            <l met="6">Redoutez le courroux.</l>
+            <l met="10">Je ne veux rien partager avec vous.</l>
+          </sp>
+        </spGrp>
+        <stage>À Mondoron.</stage>
+        <pb n="10"/>
+        <stage>Elle regarde Philaris.</stage>
+        <stage>À part.</stage>
+        <stage>À Mondoron.</stage>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#belle_brune">Belle brune</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="3">Ah! Madame!<stage type="bis">bis</stage>
+            </l>
+            <l met="3">Pardonnez,</l>
+            <l met="4">Et retenez</l>
+            <l met="7">Le transport qui vous enflamme.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="3">Ah! Madame!<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <stage>Elle lui donne un soufflet.</stage>
+        <pb n="11"/>
+        <sp who="#landor">
+          <speaker>Landor</speaker>
+        </sp>
+        <spGrp who="#landor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mon_petit_doigt_me_l_a_dit">Mon petit doigt me l'a dit</title>
+            </desc>
+          </head>
+          <sp who="#landor">
+            <speaker>Landor</speaker>
+            <l met="7">Au tapage que vous faites,</l>
+            <l met="7">On n'ose vous approcher.</l>
+          </sp>
+        </spGrp>
+        <sp who="#rebarbade">
+          <speaker>Rébarbade</speaker>
+          <l met="7">Taisez-vous, sot que vous êtes,</l>
+          <l met="7">Morbleu! je veux me fâcher.</l>
+          <l met="7">Souffrirai-je qu'à son âge,</l>
+          <l met="7">Une morveuse l'engage?</l>
+        </sp>
+        <stage>Tendrement.</stage>
+        <sp who="#rebarbade">
+          <speaker>Rébarbade</speaker>
+          <l met="7">Il m'aimait tant autrefois!</l>
+          <l met="7">Je viens réclamer mes droits.</l>
+        </sp>
+        <stage>À Mondoron.</stage>
+        <spGrp who="#rebarbade">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_suis_je_romance">Que suis-je,<emph>romance</emph>
+              </title>
+            </desc>
+          </head>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="7">C'est ici que sous la treille,</l>
+            <l met="7">Nous passions d'heureux moments.</l>
+            <l met="7">En vidant mainte bouteille,</l>
+            <l met="7">Je recevais tes serments.</l>
+            <l met="7">Tu me contais ton martyre,</l>
+            <l met="7">Tes vœux étaient écoutés.</l>
+            <l met="7">Dans cet aimable délire,</l>
+            <l met="7">Nos cœur étaient transportés.</l>
+          </sp>
+        </spGrp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#diogene_fameux">Le fameux Diogène</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="6">Madame Rébarbade,</l>
+            <l met="6">Quittez cette boutade,</l>
+            <l met="6">À quoi sert ce courroux?</l>
+            <l met="6">Trêve de l'incartade,</l>
+            <l met="6">Buvez une rasade,</l>
+            <l met="6">Et restez avec nous.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pourquoi_herbette">Eh pourquoi, donc dessus l'herbette</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="8">Hé! pourquoi donc pour une fille,</l>
+            <l met="8">Hé! pourquoi donc nous séparer?</l>
+          </sp>
+        </spGrp>
+        <pb n="12"/>
+        <sp who="#rebarbade">
+          <speaker>Rébarbade</speaker>
+          <l met="8">Cela me ferait soupirer,</l>
+          <l met="6">La friponne est gentille.</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <stage>avec dédain</stage>
+          <p>Quoi? Faudrait-il encor vous adorer?</p>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <stage>la regardant sous le nez</stage>
+          <p>Cela n'est pas facile.</p>
+        </sp>
+        <sp who="#rebarbade">
+          <speaker>Rébarbade</speaker>
+          <stage>en fureur</stage>
+        </sp>
+        <spGrp who="#rebarbade">
+          <head type="melody" subtype="ariette">
+            <desc type="prefix">Ariette</desc>
+            <desc type="title">
+              <title>Dottor mio caro</title>Dottor mio caro</desc>
+          </head>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="4">Quoi! l'on m'outrage,</l>
+            <l met="5">Je cède à la rage.</l>
+            <l met="5">Que dans son ménage</l>
+            <l met="6">Tout ressente mes coups.</l>
+            <l met="4">Faisons tapage,</l>
+            <l met="5">Que chez ce volage</l>
+            <l met="5">Un affreux ravage</l>
+            <l met="6">Soit l'effet du courroux.</l>
+            <l met="7">Oui, pour te faire enrager,</l>
+            <l met="7">Je m'en vais tout saccager,</l>
+            <l met="7">Tout briser, tout ravager.</l>
+          </sp>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="5">Ah! De quel plaisir</l>
+            <l met="4">Je vais jouir!<stage type="bis">bis</stage>
+            </l>
+            <l met="4">Plus de faiblesse,</l>
+            <l met="4">De ta tendresse</l>
+            <l met="8">Va, je te ferai repentir.</l>
+          </sp>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="7">Que l'on brise cette image,</l>
+            <l met="7">Fol objet de son hommage,<stage type="bis">bis</stage>
+            </l>
+            <l met="4">Plus de faiblesse,</l>
+            <l met="4">De ta tendresse</l>
+            <l met="8">Va, je te ferai repentir.<stage type="ter">ter</stage>
+            </l>
+            <l met="4">Pleure, soupire,</l>
+            <l met="4">De ton martyre,</l>
+            <l met="4">Moi, je vais rire.</l>
+            <l met="5">Ah! De quel plaisir</l>
+            <l met="4">Je vais jouir!<stage type="bis">bis</stage>
+            </l>
+            <l met="4">Plus de faiblesse,</l>
+            <l met="4">De ta tendresse</l>
+            <l met="8">Va, je te ferai repentir.<stage type="ter">ter</stage>
+            </l>
+          </sp>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="7">Avancez, Mademoiselle.</l>
+          </sp>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="7">Qu'on la remmène chez elle.<stage type="bis">bis</stage>
+            </l>
+            <l met="4">Plus de tendresse,</l>
+            <l met="4">Que ta maîtresse,</l>
+            <l met="8">À l'instant s'apprête à partir.</l>
+            <l met="8">Voisines, faites-la sortir.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <stage>Elle le menace.</stage>
+        <stage>À sa suite, elle montre le buste de Philaris.</stage>
+        <pb n="13"/>
+        <stage>À Philaris.</stage>
+        <stage>À sa suite.</stage>
+        <spGrp who="#rebarbade">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#adieu_dame">Adieu donc, Dame Françoise</title>
+            </desc>
+          </head>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="7">Allez donc, Dame Françoise,</l>
+            <l met="7">Ne vous faites pas prier.</l>
+            <l met="7">Ici, vous vouliez briller!</l>
+            <l met="8">Avec cette mine sournoise,</l>
+            <l met="7">Dirait-on qu'elle oserait?</l>
+            <l met="6">Croit-on qu'elle aimerait?</l>
+            <l met="7">Allez donc, Dame Françoise,</l>
+            <l met="7">Ou je vais faire beau train.</l>
+            <l met="7">Allez donc, Dame Françoise,</l>
+            <l met="7">Nous nous reverrons demain.</l>
+          </sp>
+        </spGrp>
+        <stage>Les voisines et les domestiques de Rébarbade poursuivent Philaris en dansant; Pendant ce ballet, Mondoron s'oppose à leurs efforts. Enfin, Philaris disparait.</stage>
+        <pb n="14"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Rébarbade, voisines, domestiques, Mondoron, Philaris, Arlequin, Landor, convives</stage>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quoi_partez">Quoi? vous partez</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="10">Quoi! je la perds!</l>
+          </sp>
+        </spGrp>
+        <sp who="#rebarbade">
+          <speaker>Rébarbade</speaker>
+          <l met="10">Console-toi, je reste.</l>
+          <l met="10">Rends-moi ton cœur, et tout est pardonné,<stage type="bis">bis</stage>
+          </l>
+          <l met="10">Cher Mondoron.</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="10">Tais-toi, je te déteste.</l>
+        </sp>
+        <sp who="#rebarbade">
+          <speaker>Rébarbade</speaker>
+          <stage>en pleurant</stage>
+          <l met="10">Ô coup affreux! ô jour infortuné!</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_mort_de_mon_cher_pere">La mort de mon cher père</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="6">Peste soit de la folle</l>
+            <l met="6">Et de son triste chant!</l>
+          </sp>
+        </spGrp>
+        <sp who="#rebarbade">
+          <speaker>Rébarbade</speaker>
+          <l met="6">Cruel! Je me désole</l>
+          <l met="6">Du ton le plus touchant,</l>
+          <l met="6">Mais ta rigueur barbare</l>
+          <l met="6">Tient bon contre ma voix.</l>
+          <l met="6">Hé bien, je me sépare...</l>
+          <l met="6">Tu t'en mordras les doigts.</l>
+        </sp>
+        <pb n="15"/>
+        <spGrp who="#rebarbade">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#halte_la">Halte-là</title>
+            </desc>
+          </head>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="8">J'ai décidé pour ma vengeance,</l>
+            <l met="8">De m'en consoler dès ce jour.</l>
+            <l met="6">Certain abbé de cour</l>
+            <l met="6">Aura la préférence.</l>
+            <l met="8">Enfin, si tu me laisses-là,</l>
+            <l met="5">On s'en passera</l>
+            <l met="4">De tout cela,</l>
+            <l met="1">Va,</l>
+            <l met="9">Rira bien, qui le dernier rira.</l>
+            <l met="6">la perte n'est pas grande,</l>
+            <l met="6">Faut-il que je m'en pende?</l>
+            <l met="3">Nenni dà.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#rebarbade">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">tiré du <title ref="#fleuve_d_oubli">Fleuve d'oubli</title> ()</desc>
+          </head>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="6">La donzelle est sortie,</l>
+            <l met="6">Cessons notre sabbat,</l>
+            <l met="3">Ah! ah! ah!</l>
+            <l met="6">mais dans cette partie,</l>
+            <l met="6">Jouissons du dégât.</l>
+            <l met="3">Ah! ah! ah!</l>
+          </sp>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="7">En l'honneur de ma victoire,</l>
+            <l met="6">Mon cher, à ta santé,</l>
+            <l met="3">Hé! hé! hé!</l>
+            <l met="3">Je vais boire.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <stage>Elle s'approche de la table.</stage>
+        <stage>Elle boit, jette son verre et renverse le surtout du dessert; elle revient à Mondoron.</stage>
+        <spGrp who="#rebarbade">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ces_filles_sont_si_sottes">Ces filles sont si sottes</title>
+            </desc>
+          </head>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="8">Tu le vois, j'agis sans façon,</l>
+            <l met="8">J'ai trouvé ton vin assez bon.</l>
+            <l met="5">Je sors de ce lieu.</l>
+          </sp>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="5">Touche, sans adieu,</l>
+            <l met="6">Car tu n'en es pas quitte.</l>
+            <l met="8">Et quelquefois sur ce ton-là,</l>
+            <l met="9">Je te rendrai visite, lon la,</l>
+            <l met="6">Je te rendrai visite.</l>
+          </sp>
+        </spGrp>
+        <pb n="16"/>
+        <stage>Elle lui prend la main.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Mondoron, Arlequin, Landor, domestiques</stage>
+        <stage>Ils restent tous trois un instant en attitude surprise.</stage>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_je_ne_ferai_pas">Non, je ne ferai pas [ce qu'on veut que je fasse]</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="12">Je n'y saurais tenir, c'est un crime effroyable</l>
+            <l met="12">De venir déranger un financier à table...</l>
+            <l met="12">C'est ma faute, après tout. Dans ce réduit secret,</l>
+            <l met="12">Je devais enfermer Philaris au loquet.</l>
+          </sp>
+        </spGrp>
+        <sp who="#landor">
+          <speaker>Landor</speaker>
+        </sp>
+        <spGrp who="#landor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Que j'estime mon cher voisin</title>
+            </desc>
+          </head>
+          <sp who="#landor">
+            <speaker>Landor</speaker>
+            <l met="8">L'amour nous cause trop de soins,</l>
+            <l met="6">Perdons-en la mémoire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <stage>d'un ton railleur</stage>
+          <l met="8">On devait la laisser du moins,</l>
+          <l met="6">Pour me verser à boire.</l>
+        </sp>
+        <pb n="17"/>
+        <sp who="#landor">
+          <speaker>Landor</speaker>
+        </sp>
+        <spGrp who="#landor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_une_excuse">C'est une excuse</title>
+            </desc>
+          </head>
+          <sp who="#landor">
+            <speaker>Landor</speaker>
+            <l met="8">Ma foi, vous manquez de bon sens.</l>
+            <l met="8">Pourquoi ces propos indécents?</l>
+          </sp>
+        </spGrp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="6">Parbleu! cela m'amuse.</l>
+          <l met="8">En lui donnant cet emploi-là,</l>
+          <l met="8">Je me conforme à l'Opéra.</l>
+        </sp>
+        <sp who="#landor">
+          <speaker>Landor</speaker>
+          <l met="4">C'est une excuse.</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#barbari">À la façon de Barbari, mon ami</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="8">Sachez que je veux imiter</l>
+            <l met="6">L'usage de la Grèce.</l>
+          </sp>
+        </spGrp>
+        <sp who="#landor">
+          <speaker>Landor</speaker>
+          <l met="8">Mon cher, vous pourriez révolter.</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="6">J'aime la politesse,</l>
+          <l met="8">Et je sais mon Anacréon.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="11">La faridondaine, la faridondon.</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="8">Au point que l'on me prend pour lui.</l>
+        </sp>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+          <l met="3">Biribi!</l>
+          <l met="8">À la façon de Barbari,</l>
+          <l met="3">Mon ami.</l>
+        </sp>
+        <stage>S'apercevant que les domestiques se sont retirés, et ont enlevé les bouteilles.</stage>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_michel">Malgré la bataille [qu'on donne demain]</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="12">Oh! dès que le vin manque, et qu'il vous faut dormir,</l>
+            <l met="12">Je vais dans le moment, vous donner ce plaisir.</l>
+            <l met="12">Vous savez que je suis poète et bel esprit,</l>
+            <l met="12">En vous lisant mes vers, je vous conduis au lit.</l>
+          </sp>
+        </spGrp>
+        <pb n="18"/>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_coeurs_se_donnent_troc_pour_troc">Les cœurs se donnent troc pour troc</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="8">Allez, il n'en est pas besoin,</l>
+            <l met="8">Ici, je vais prendre ma place.</l>
+            <l met="8">Messieurs, allez dormir plus loin,</l>
+            <l met="8">De cet ennui l'on nous fait grâce.</l>
+          </sp>
+        </spGrp>
+        <stage>Arlequin et Landor se retirent. Mondoron se jette sur un lit de gazon. Symphonie douce.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Mondoron<stage>endormi</stage>, Crispin<stage>qui survient</stage>
+        </stage>
+        <stage>Symphonie bruyante, le tonnerre gronde, etc.</stage>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <stage>s'éveillant</stage>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#du_haut_en_bas">Du haut en bas</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="4">Quel carillon!</l>
+            <l met="8">Qui peut faire tant de tapage?</l>
+            <l met="4">Quel carillon!</l>
+            <l met="8">Tout est en feu sur l'horizon.</l>
+            <l met="8">Le ciel était clair, sans nuage,</l>
+            <l met="8">À propos de quoi cet orage?</l>
+            <l met="4">Quel carillon!</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="12">Ô toi, divin Bacchus, qu'on fête sous la treille,</l>
+            <l met="12">Que ne me restait-il encore une bouteille?</l>
+            <l met="12">Du moins je serais ivre, et dans ce doux état,</l>
+            <l met="12">J'aurais dormi, malgré cet horrible sabbat.</l>
+          </sp>
+        </spGrp>
+        <pb n="19"/>
+        <stage>On frappe, Crispin entre.</stage>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Monsieur le prévôt des marchands</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="8">Que voulez-vous?</l>
+          </sp>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="8">C'est un enfant!</l>
+          </sp>
+        </spGrp>
+        <stage>À part.</stage>
+        <sp who="#crispin">
+          <speaker>Crispin</speaker>
+          <l met="8">Monsieur, soyez compatissant,</l>
+          <l met="8">Je suis effrayé du tonnerre.</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="8">Venez, petit, rassurez-vous.</l>
+          <l met="8">D'où venez-vous donc?</l>
+        </sp>
+        <sp who="#crispin">
+          <speaker>Crispin</speaker>
+          <l met="8">De Nanterre.</l>
+          <l met="8">Et je m'en retournais chez nous.</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pont_avignon_belle">Sur le pont d'Avignon</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="12">Que faisiez-vous?</l>
+          </sp>
+        </spGrp>
+        <sp who="#crispin">
+          <speaker>Crispin</speaker>
+          <l met="12">Qui moi? J'étais dans la milice.</l>
+          <l met="12">On m'a, pour ma grandeur, retiré du service.</l>
+        </sp>
+        <spGrp who="#crispin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_dedaigne_de_lui_repondre">Je dédaigne de lui répondre</title>
+            </desc>
+          </head>
+          <sp who="#crispin">
+            <speaker>Crispin</speaker>
+            <l met="8">Je me suis mis chez une belle,</l>
+            <l met="8">Pour jouir d'un sort plus heureux.</l>
+            <l met="8">Elle a perdu son amoureux,</l>
+            <l met="8">L'amour a troublé sa cervelle.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#crispin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#confiteor">Dirai-je mon confiteor</title>
+            </desc>
+          </head>
+          <sp who="#crispin">
+            <speaker>Crispin</speaker>
+            <l met="8">Philaris est son nom.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="8">Ah! Dieux!</l>
+        </sp>
+        <pb n="20"/>
+        <sp who="#crispin">
+          <speaker>Crispin</speaker>
+          <l met="8">Cette fille était vraiment sage.</l>
+          <l met="8">Mais depuis ce moment fâcheux,</l>
+          <l met="8">Le désordre est dans le ménage.</l>
+          <l met="8">Tout est brisé dans son courroux,</l>
+          <l met="8">Et j'ai fuis de crainte des coups.</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="8">Quel est ce mortel si coupable?</l>
+          </sp>
+        </spGrp>
+        <sp who="#crispin">
+          <speaker>Crispin</speaker>
+          <l met="8">Ah! Monsieur, il est bien changé.</l>
+          <l met="8">Le cabaret l'a dérangé.</l>
+          <l met="6">Il était fort aimable.</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_occasion_fait_le_larron">L'occasion fait le larron</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="10">Mais cet amant dont vous blessez la gloire,</l>
+            <l met="10">Peut-être est vieux. Le moyen de charmer!</l>
+            <l met="10">À soixante ans, il est aisé de boire,</l>
+            <l met="8">Et fort difficile d'aimer.</l>
+          </sp>
+        </spGrp>
+        <sp who="#crispin">
+          <speaker>Crispin</speaker>
+        </sp>
+        <spGrp who="#crispin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+            </desc>
+          </head>
+          <sp who="#crispin">
+            <speaker>Crispin</speaker>
+            <l met="7">Non, malgré ses cheveux gris,</l>
+            <l met="8">Il est aimé.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="8">J'en suis surpris.</l>
+        </sp>
+        <sp who="#crispin">
+          <speaker>Crispin</speaker>
+          <l met="6">D'où vient cette surprise,</l>
+          <l met="2">Hé bien!</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="6">J'avais fait la sottise.</l>
+        </sp>
+        <sp who="#crispin">
+          <speaker>Crispin</speaker>
+          <l met="5">Je le savais bien.</l>
+        </sp>
+        <pb n="11"/>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_n_en_dirai_pas_davantage">Je n'en dirai pas davantage</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="8">Mais vous, dont je vois de plus près</l>
+            <l met="8">Les yeux fripons et le teint frais,</l>
+            <l met="8">Avec cette mine gentille,</l>
+            <l met="8">N'êtes-vous pas de la famille?</l>
+          </sp>
+        </spGrp>
+        <sp who="#crispin">
+          <speaker>Crispin</speaker>
+        </sp>
+        <spGrp who="#crispin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#voudrais_marier">Je voudrais bien me marier</title>
+            </desc>
+          </head>
+          <sp who="#crispin">
+            <speaker>Crispin</speaker>
+            <l met="8">Je suis frère de Philaris,</l>
+            <l met="6">Puisqu'il faut tout vous dire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="8">Hé bien! Mon cher, à son logis</l>
+          <l met="6">Vous allez me conduire.</l>
+        </sp>
+        <sp who="#crispin">
+          <speaker>Crispin</speaker>
+          <l met="8">Non, elle est ici vis-à-vis,</l>
+          <l met="6">Je m'en vais l'introduire.</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#olire_olire">Olire, olire</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="6">Elle est en ce séjour!</l>
+            <l met="6">Vous me jouez ce tour!</l>
+          </sp>
+        </spGrp>
+        <sp who="#crispin">
+          <speaker>Crispin</speaker>
+          <l met="6">Pour causer la surprise,</l>
+          <l met="3">Je déguise.</l>
+        </sp>
+        <stage>Il va dans la coulisse prendre Philaris.</stage>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="6">Vraiment! C'est la surprise</l>
+          <l met="3">De l'Amour.</l>
+        </sp>
+        <pb n="22"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Philaris, Mondoron, Crispin<stage>qui se retire ensuite au fond du théâtre</stage>
+        </stage>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_chez_vous">C'est chez vous</title>
+            </desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="3">Quoi! c'est vous?</l>
+          </sp>
+        </spGrp>
+        <sp who="#philaris">
+          <speaker>Philaris</speaker>
+          <l met="10">Je vous revois en dépit des jaloux.</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="3">Quoi! c'est vous?</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Ah! que cet instant m'est doux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#philaris">
+          <speaker>Philaris</speaker>
+          <l met="7">J'avais perdu mes plaisirs.</l>
+        </sp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <l met="7">Je partageais vos soupirs.</l>
+          <l met="1">Cesse</l>
+          <l met="2">Tristesse,</l>
+          <l met="7">L'amour comble nos désirs.</l>
+          <l met="3">Quoi! c'est vous, ...</l>
+        </sp>
+        <sp who="#philaris">
+          <speaker>Philaris</speaker>
+        </sp>
+        <spGrp who="#philaris">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#gavote_de_davene">Gavote de Davène</title>
+            </desc>
+          </head>
+          <sp who="#philaris">
+            <speaker>Philaris</speaker>
+            <l met="8">Loin de l'objet qui l'a charmé,</l>
+            <l met="9">Le cœur languit, est inanimé.</l>
+            <l met="8">Le souvenir de son bonheur,</l>
+            <l met="9">Vient augmenter sa tendre douceur.</l>
+            <l met="4">Mais quand l'aurore</l>
+            <l met="4">A fait éclore</l>
+            <l met="8">Le jour qui le rend à ses vœux,</l>
+            <l met="5">Il se sent renaître,</l>
+            <l met="5">Et son nouvel être</l>
+            <l met="8">Semble encor redoubler ses feux.</l>
+          </sp>
+        </spGrp>
+        <pb n="23"/>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <stage>vivement</stage>
+        </sp>
+        <spGrp who="#mondoron">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">tiré des <title ref="#petits_villageois">Petits Villageois</title> ()</desc>
+          </head>
+          <sp who="#mondoron">
+            <speaker>Mondoron</speaker>
+            <l met="10">En vain, Bacchus, tu fais briller tes charmes,</l>
+            <l met="5">Tu n'es plus vainqueur.</l>
+            <l met="10">Le dieu d'Amour, par de plus douces armes,</l>
+            <l met="5">Malgré ta liqueur,</l>
+            <l met="6">Sait soumettre mon cœur.<stage type="musical_resumption">Fin</stage>
+            </l>
+            <l met="10">Si quelquefois la tendresse sommeille,</l>
+            <l met="2">La treille</l>
+            <l met="2">Réveille,</l>
+            <l met="5">Et dans un détour</l>
+            <l met="7">Ramène aux pieds de l'Amour.</l>
+            <l met="10">En vain, Bacchus, ...</l>
+            <l met="6">Lorsque de ton breuvage</l>
+            <l met="6">Je vais goûter le jour,</l>
+            <l met="7">L'Amour n'en prend point d'ombrage,</l>
+            <l met="7">La nuit il aura son tour.</l>
+            <l met="10">En vain, Bacchus, ...</l>
+          </sp>
+        </spGrp>
+        <sp who="#philaris">
+          <speaker>Philaris</speaker>
+        </sp>
+        <spGrp who="#philaris">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra</desc>
+          </head>
+          <sp who="#philaris">
+            <speaker>Philaris</speaker>
+            <l met="8">Un buveur se défend d'aimer</l>
+            <l met="8">Mais il cède enfin la victoire.</l>
+            <l met="8">La beauté, pour mieux l'enflammer,</l>
+            <l met="8">Lui permet souvent d'aller boire.</l>
+            <l met="8">Si nous craignons de l'alarmer,</l>
+            <l met="8">C'est pour ménager notre gloire.<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Un buveur n'oserait aimer,</l>
+            <l met="8">Et Bacchus aurait la victoire.</l>
+            <l met="8">La beauté, pour mieux l'enflammer,</l>
+            <l met="8">Lui permet souvent d'aller boire.</l>
+          </sp>
+        </spGrp>
+        <pb n="24"/>
+        <stage>Les convives, etc., témoignent par leurs danses la joie que leur cause le retour de Philaris. Cette fête est interrompue par l'arrivée de Rébarbade.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Madame Rébarbade, suite et les acteurs précédents</stage>
+        <sp who="#rebarbade">
+          <speaker>Rébarbade</speaker>
+        </sp>
+        <spGrp who="#rebarbade">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#birene">Trois enfants gueux</title>
+            </desc>
+          </head>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="10">Je viens encor pour te faire trembler,</l>
+            <l met="10">Et la fureur près de toi me rappelle.</l>
+            <l met="10">Quoi! Philaris! Ah! je veux l'étrangler.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mondoron">
+          <speaker>Mondoron</speaker>
+          <stage>l'arrêtant</stage>
+          <l met="10">Tout beau, tout beau, son frère est avec elle.</l>
+        </sp>
+        <sp who="#rebarbade">
+          <speaker>Rébarbade</speaker>
+          <stage>considérant Crispin</stage>
+        </sp>
+        <spGrp who="#rebarbade">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#devin_de_village">C'est un enfant</title>
+            </desc>
+          </head>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="8">Tu crois donc par cette figure,</l>
+            <l met="8">pauvre ami, désarmer mon bras?</l>
+            <l met="8">Vraiment! c'est une miniature,</l>
+            <l met="8">Mais moi, je ne les aime pas.</l>
+            <l met="5">Que je me contente.</l>
+          </sp>
+        </spGrp>
+        <pb n="25"/>
+        <stage>Elle veut se jeter sur Philaris.</stage>
+        <sp who="#philaris">
+          <speaker>Philaris</speaker>
+          <stage>s'éloignant</stage>
+          <l met="5">Ah! quelle est méchante!</l>
+        </sp>
+        <sp who="#crispin">
+          <speaker>Crispin</speaker>
+          <stage>lui prenant la main</stage>
+          <l met="8">Je saurais l'arrêter.</l>
+        </sp>
+        <sp who="#rebarbade">
+          <speaker>Rébarbade</speaker>
+          <l met="8">Comment!</l>
+          <l met="4">C'est un enfant,</l>
+          <l met="4">C'est un enfant.</l>
+        </sp>
+        <sp who="#crispin">
+          <speaker>Crispin</speaker>
+        </sp>
+        <spGrp who="#crispin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_coeurs_se_donnent_troc_pour_troc">Les cœurs se donnent troc pour troc</title>
+            </desc>
+          </head>
+          <sp who="#crispin">
+            <speaker>Crispin</speaker>
+            <l met="8">Vouloir traiter ceci de jeu,</l>
+            <l met="8">Vous me croyez donc bien novice?</l>
+          </sp>
+          <sp who="#crispin">
+            <speaker>Crispin</speaker>
+            <l met="8">Apprenez que j'ai vu le feu,</l>
+            <l met="8">J'ai déserté dans la milice.</l>
+          </sp>
+        </spGrp>
+        <stage>Fièrement.</stage>
+        <sp who="#rebarbade">
+          <speaker>Rébarbade</speaker>
+        </sp>
+        <spGrp who="#rebarbade">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">De tous les capucins</title>
+            </desc>
+          </head>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="8">En ce cas c'est une autre affaire.</l>
+            <l met="8">Puisque vous êtes militaire,</l>
+            <l met="8">Je renonce à mon noir projet,</l>
+            <l met="8">Et vous enchaînez ma colère.</l>
+            <l met="8">J'ai toujours chéri le plumet,</l>
+            <l met="8">Je ne lui fut jamais sévère.</l>
+          </sp>
+        </spGrp>
+        <sp who="#crispin">
+          <speaker>Crispin</speaker>
+          <stage>en riant</stage>
+        </sp>
+        <spGrp who="#crispin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nouveau_monde">Entre l'amour et la raison</title>
+            </desc>
+          </head>
+          <sp who="#crispin">
+            <speaker>Crispin</speaker>
+            <l met="8">Par ce mot, nous voilà d'accord.</l>
+          </sp>
+        </spGrp>
+        <pb n="26"/>
+        <sp who="#rebarbade">
+          <speaker>Rébarbade</speaker>
+          <stage>à Philaris</stage>
+          <l met="8">Ma mie, embrassons-nous bien fort,</l>
+          <l met="8">Et que notre paix soit durable.</l>
+          <l met="8">Pour nous, plus de rivalité,</l>
+          <l met="8">Je vous cède la primauté.</l>
+          <l met="8">mais je me réserve la table.</l>
+        </sp>
+        <spGrp who="#rebarbade">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nya_pas_dmal">N'y a pas d'mal à ça</title>
+            </desc>
+          </head>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="5">Femme de mon âge</l>
+            <l met="5">Prend ce parti-là.</l>
+            <l met="5">Bacchus dédommage</l>
+            <l met="5">Quand l'Amour s'en va,</l>
+            <l met="5">N'y a pas d'mal à ça.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <spGrp who="#rebarbade">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">tiré de <title ref="#l_impromptu_du_pont_neuf">L'Impromptu du Pont-Neuf</title> ()</desc>
+          </head>
+          <sp who="#rebarbade">
+            <speaker>Rébarbade</speaker>
+            <l met="6">Tandis que l'on apprête</l>
+            <l met="6">Le plus charmant repas,</l>
+            <l met="6">Qu'une brillante fête</l>
+            <l met="6">Termine nos débats.</l>
+            <l met="6">Rions, chantons, ma chère,</l>
+            <l met="6">Et vive la gaité.</l>
+            <l met="3">Opégué!</l>
+            <l met="3">Ma commère,</l>
+            <l met="6">Gai, gai, gai, opégué!</l>
+            <l met="6">J'ai connu l'art de plaire,</l>
+            <l met="6">Je vous l'enseignerai.</l>
+            <l met="6">Des secrets de Cythère,</l>
+            <l met="6">Je vous informerai.</l>
+            <l met="6">Une leçon, ma chère,</l>
+            <l met="6">Vous met sur le bon pied.</l>
+            <l met="3">Opégué!</l>
+            <l met="3">Ma commère,</l>
+            <l met="6">Gai, gai, gai, opégué!</l>
+          </sp>
+        </spGrp>
+        <pb n="27"/>
+        <stage>On danse. Rébarbade donne la main comiquement à Crispin, qui la conduit sous le berceau.</stage>
+        <sp who="#philaris">
+          <speaker>Philaris</speaker>
+        </sp>
+        <spGrp who="#philaris">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">tiré du <title ref="#diable_a_quatre">Diable à quatre</title> (Ouverture)</desc>
+          </head>
+          <sp who="#philaris">
+            <speaker>Philaris</speaker>
+            <l met="7">Pour goûter des biens parfaits,</l>
+            <l met="7">Que rien ne trouble jamais,</l>
+            <l met="4">Que la tendresse</l>
+            <l met="2">Renaisse</l>
+            <l met="2">Sans cesse</l>
+            <l met="6">Par de nouveaux désirs.</l>
+            <l met="2">Aimons,</l>
+            <l met="2">Buvons,</l>
+            <l met="3">Folâtrons,</l>
+            <l met="8">L'amour prend soin de nos plaisirs.</l>
+            <l met="7">Dans ce séjour enchanté,</l>
+            <l met="7">Sous les lois de la gaité,</l>
+            <l met="4">Qu'aucune peine,</l>
+            <l met="2">Ne gène,</l>
+            <l met="2">N'enchaîne,</l>
+            <l met="6">La douce volupté.</l>
+            <l met="6">Liberté! liberté!</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <caption>Mondoron et philaris</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Chantons Bacchus, chantons l'Amour,</l>
+            <l met="10">Pour nos plaisirs, suivons-les tour à tour.</l>
+            <l met="8">L'Amour tempère notre ivresse,</l>
+            <l met="8">Bacchus ranime la tendresse,</l>
+            <l met="8">Qu'ils règnent la nuit et le jour.</l>
+            <l met="8">Chantons, ...</l>
+          </sp>
+        </spGrp>
+        <pb n="28"/>
+        <spGrp>
+          <head type="vaudeville-chorus">1</head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Dans l'âge brillant et frivole,</l>
+            <l met="8">L'aimable et pétillant Damon</l>
+            <l met="8">De l'Amour faisait son idole.</l>
+            <l met="8">Par malheur il devint barbon,</l>
+            <l met="6">En cet état que faire?</l>
+            <l met="8">Boire et renoncer à Cythère:</l>
+            <l met="6">C'est ainsi que Bacchus</l>
+            <l met="6">Doit remplacer Vénus.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">2</head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Un caissier, amoureux d'Hortense,</l>
+            <l met="8">L'enlève à grands frais à Lindor.</l>
+            <l met="8">Son train, ses chevaux, sa dépense</l>
+            <l met="8">Vident dans peu son coffre fort.</l>
+            <l met="6">En cet état que faire?</l>
+            <l met="8">Boire et renoncer à Cythère:</l>
+            <l met="6">C'est ainsi [que Bacchus</l>
+            <l met="6">Doit remplacer Vénus].</l>
+          </sp>
+        </spGrp>
+        <pb n="29"/>
+        <spGrp>
+          <head type="vaudeville-chorus">3</head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Autrefois l'amusante Œnone,</l>
+            <l met="8">Voyait à ses pieds mille amants.</l>
+            <l met="8">Mais hélas! chacun l'abandonne,</l>
+            <l met="8">Depuis qu'elle a des cheveux blancs.</l>
+            <l met="6">En cet état [que faire?</l>
+            <l met="8">Boire et renoncer à Cythère:</l>
+            <l met="6">C'est ainsi que Bacchus</l>
+            <l met="6">Doit remplacer Vénus].</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">4</head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Cléon, de l'ardeur la plus pure,</l>
+            <l met="8">Aime une actrice d'Opéra.</l>
+            <l met="8">Mais elle veut une voiture,</l>
+            <l met="8">Et Cléon n'a pas de cela.</l>
+          </sp>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="6">En cet état [que faire?</l>
+            <l met="8">Boire et renoncer à Cythère:</l>
+            <l met="6">C'est ainsi que Bacchus</l>
+            <l met="6">Doit remplacer Vénus].</l>
+          </sp>
+        </spGrp>
+        <stage>On fait de la main le geste de l'argent.</stage>
+        <spGrp>
+          <head type="vaudeville-chorus">5</head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Près d'un tendron fort peu sévère,</l>
+            <l met="8">Un abbé faisait le galant.</l>
+            <l met="8">Arrive un jeune mousquetaire,</l>
+            <l met="8">Pour l'abbé le pas est glissant.</l>
+            <l met="6">En cet état [que faire?</l>
+            <l met="8">Boire et renoncer à Cythère:</l>
+            <l met="6">C'est ainsi que Bacchus</l>
+            <l met="6">Doit remplacer Vénus].</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">6</head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Messieurs, en tremblant je m'explique,</l>
+            <l met="8">Nous touchons le moment fâcheux</l>
+            <l met="8">Qui nous soumet à la critique.</l>
+            <l met="8">Hélas! que nous serions heureux</l>
+            <l met="6">Si le désir de plaire,</l>
+            <l met="8">Pouvais seul nous tirer d'affaire!</l>
+            <l met="6">En faveur de l'objet,</l>
+            <l met="6">Approuvez le projet.</l>
+          </sp>
+        </spGrp>
+        <stage>Au parterre.</stage>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,583 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="apollon_polichinelle_1734">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Apollon Polichinelle</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Anonyme</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>J. Coignard ; nombreuses fautes corrigées par F.R avril 2014.</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BnF ms. fr. 9313, fos 7-11</bibl>
+        <bibl type="intermediarySource">C. Segrest</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="pan" sex="UNKNOWN">
+            <persName>Pan</persName>
+          </person>
+          <person xml:id="oracle" sex="UNKNOWN">
+            <persName>L'Oracle</persName>
+          </person>
+          <person xml:id="isse" sex="UNKNOWN">
+            <persName>Issé</persName>
+          </person>
+          <person xml:id="hylas" sex="UNKNOWN">
+            <persName>Hylas</persName>
+          </person>
+          <person xml:id="doris" sex="UNKNOWN">
+            <persName>Doris</persName>
+          </person>
+          <person xml:id="le_compere" sex="UNKNOWN">
+            <persName>Le Compère</persName>
+          </person>
+          <person xml:id="pierrot" sex="UNKNOWN">
+            <persName>Pierrot</persName>
+          </person>
+          <person xml:id="dame_gigogne" sex="UNKNOWN">
+            <persName>Dame Gigogne</persName>
+          </person>
+          <person xml:id="le_grand_pretre" sex="UNKNOWN">
+            <persName>Le Grand Prêtre</persName>
+          </person>
+          <person xml:id="deux_pretres_d_apollon" sex="UNKNOWN">
+            <persName>Deux prêtres d'Apollon</persName>
+          </person>
+          <person xml:id="une_paysanne" sex="UNKNOWN">
+            <persName>Une paysanne</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie d'<emph>Issé</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1734">
+        <desc>Représentée aux Marionnettes de la foire de Saint-Germain le 4 février 1734</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#polichinelle">Polichinelle</role>
+        </castItem>
+        <castItem>
+          <role ana="#le_compere">Le Compère</role>
+          <roleDesc>sous le nom de Pan</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#pierrot">Pierrot</role>
+          <roleDesc>sous le nom d'Hylas</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#isse">Issé</role>
+        </castItem>
+        <castItem>
+          <role ana="#dame_gigogne">Dame Gigogne</role>
+          <roleDesc>sous le nom de Doris</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#le_grand_pretre">Le Grand Prêtre</role>
+        </castItem>
+        <castItem>
+          <role ana="#deux_pretres_d_apollon">Deux prêtres d'Apollon</role>
+        </castItem>
+        <castItem>
+          <role ana="#une_paysanne">Une paysanne</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène se passe dans un bois.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="act">
+        <head>ACTE 1</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Polichinelle<stage>sous le nom de Philémon</stage>
+          </stage>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#polichinelle">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#cela_ne_me_surprend_pas">Les étonnements</title>
+              </desc>
+            </head>
+            <sp who="#polichinelle">
+              <speaker>Polichinelle</speaker>
+              <l met="10">Qu'un cœur novice adore les appas</l>
+              <l met="8">D'une beauté jeune et fringante</l>
+              <l met="8">Et que son beau minois le tente</l>
+              <l met="7">Cela ne me surprend pas.</l>
+              <l met="10">Mais que sans fin notre cœur s'abandonne</l>
+              <l met="8">À courir d'Iris en Iris</l>
+              <l met="8">Au risque d'avoir des mépris</l>
+              <l met="8">Et de voir son amour sans prix</l>
+              <l met="6">C'est là ce qui m'étonne.</l>
+            </sp>
+          </spGrp>
+          <stage>Il se plaint du tourment que son amour pour Issé lui cause.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Polichinelle, Pan</stage>
+          <stage>Pan lui conseille de se faire voir sous sa figure naturelle. «Non, dit Polichinelle, je ne veux devoir son amour qu'à moi-même.»</stage>
+          <sp who="#pan">
+            <speaker>Pan</speaker>
+          </sp>
+          <spGrp who="#pan">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#raretes">Va t'en voir s'ils viennent, [Jean]</title>
+              </desc>
+            </head>
+            <sp who="#pan">
+              <speaker>Pan</speaker>
+              <l met="7">Bon, les belles d'à présent</l>
+              <l met="5">Aiment ce qui brille</l>
+              <l met="7">Avec un air indigent</l>
+              <l met="5">On rate une fille</l>
+              <l met="7">Va t'en voir [s'ils viennent Jean</l>
+              <l met="5">Va t'en voir s'ils viennent].</l>
+            </sp>
+          </spGrp>
+          <stage>Polichinelle s'obstine à vouloir plaire sous la forme qu'il a prise. Ils sortent.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Issé</stage>
+          <sp who="#isse">
+            <speaker>Issé</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#isse">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#capucin">Le capucin</title>
+              </desc>
+            </head>
+            <sp who="#isse">
+              <speaker>Issé</speaker>
+              <l met="8">J'ai perdu mon indifférence</l>
+              <l met="8">Ciel! en moi, quelle différence.</l>
+              <l met="8">Partout je fuyais les garçons</l>
+              <l met="8">À présent il n'est plus de même</l>
+              <l met="8">J'écoute leurs tendres chansons</l>
+              <l met="8">Je crois, ma foi, que je les aime.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Issé, Doris</stage>
+          <stage>Issé avoue à Doris qu'elle aime et ajoute qu'on ne peut vivre sans la tendresse.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="location">Noce de Village.</stage>
+          <stage type="characters">Les précédentes</stage>
+          <sp who="#isse">
+            <speaker>Issé</speaker>
+          </sp>
+          <spGrp who="#isse">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#aimant_colette">Colette</title>
+              </desc>
+            </head>
+            <sp who="#isse">
+              <speaker>Issé</speaker>
+              <l met="8">C'est le lendemain de Colette</l>
+              <l met="8">Écoutons les parler d'amour.</l>
+            </sp>
+          </spGrp>
+          <sp who="#doris">
+            <speaker>Doris</speaker>
+            <l met="8">La mariée est guillerette</l>
+            <l met="8">Le lendemain plus que le jour.</l>
+          </sp>
+          <sp who="#hylas">
+            <speaker>Hylas</speaker>
+          </sp>
+          <spGrp who="#hylas">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#pres_du_bal_un_fiacre">Près du bal, un fiacre</title>
+              </desc>
+            </head>
+            <sp who="#hylas">
+              <speaker>Hylas</speaker>
+              <l met="7">Partout l'amour fait ravage</l>
+              <l met="7">Il blesse grand et petit</l>
+              <l met="7">Quand il trouve un cœur sauvage</l>
+              <l met="7">Il y fait bientôt son nid</l>
+              <l met="4">Oh! Soyez tendre</l>
+              <l met="7">Et si le coeur vous en dit</l>
+              <l met="4">Daignez me prendre.</l>
+            </sp>
+          </spGrp>
+          <stage>Il est rebuté.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">Issé, Polichinelle, Doris</stage>
+          <stage>Polichinelle presse Issé de se déclarer en sa faveur.</stage>
+          <sp who="#isse">
+            <speaker>Issé</speaker>
+          </sp>
+          <spGrp who="#isse">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#en_verite_severe_margoton">En vérité, sévère Margoton</title>
+              </desc>
+            </head>
+            <sp who="#isse">
+              <speaker>Issé</speaker>
+              <l met="10">Vous me parlez comme un vrai polisson</l>
+              <l met="10">Vous m'abordez sur un drôle de ton</l>
+            </sp>
+          </spGrp>
+          <sp who="#doris">
+            <speaker>Doris</speaker>
+            <l met="10">Oh! Quel balourd.</l>
+          </sp>
+          <sp who="#isse">
+            <speaker>Issé</speaker>
+            <l met="10">Allez prendre leçon</l>
+            <l met="10">Avant que l'on puisse vous entendre.</l>
+          </sp>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="3">Comment donc!</l>
+          </sp>
+          <sp who="#doris">
+            <speaker>Doris</speaker>
+            <l met="3">Quel cochon!</l>
+          </sp>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="3">Comment donc!</l>
+            <l met="3">C'est le ton[etc].</l>
+          </sp>
+          <stage>Il sort après avoir été encore rebuté.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">Doris, Pan</stage>
+          <stage>Pan propose à Doris de l'aimer, elle y consent à condition qu'elle changera quand il lui en prendra envie. Il y tope.</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="location">Un bois.</stage>
+          <stage type="characters">Polichinelle, Pan</stage>
+          <stage>Polichinelle dit à Pan qu'il va écouter ce que diront à Issé les arbres de Dodone qu'elle va venir consulter.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Hylas</stage>
+          <stage>Hylas vient à même intention.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Hylas, Issé, Doris</stage>
+          <stage>Hylas dit à Issé qu'il crève dans sa peau, elle ne l'écoute pas. Ils sortent.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Doris, Pan</stage>
+          <stage>Pan presse Doris de ne le pas faire languir.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Issé, les Prêtres</stage>
+          <stage>Le grand prêtre exhorte les chênes à se trémousser.</stage>
+          <sp who="#oracle">
+            <speaker>L'Oracle</speaker>
+          </sp>
+          <spGrp who="#oracle">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#lapalisse">La Palice</title>
+              </desc>
+            </head>
+            <sp who="#oracle">
+              <speaker>L'Oracle</speaker>
+              <l met="7">Votre ardeur, charmante Issé</l>
+              <l met="7">Ne sera point roturière</l>
+              <l met="7">Votre cœur sera blessé</l>
+              <l met="7">Par le dieu de la lumière.</l>
+            </sp>
+          </spGrp>
+          <stage>La prêtraille danse.</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 3</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Issé</stage>
+          <sp who="#isse">
+            <speaker>Issé</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#isse">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#non_je_ne_ferai_pas">Non je ne ferai pas [ce qu'on veut que je fasse]</title>
+              </desc>
+            </head>
+            <sp who="#isse">
+              <speaker>Issé</speaker>
+              <l met="12">Non, je ne ferai pas ce qu'on veut que je fasse</l>
+              <l met="12">Le blond Phébus dût-il me faire la grimace</l>
+              <l met="12">Vainement la grandeur du dieu de l'Hélicon</l>
+              <l met="12">Disputera mon cœur à mon berger mignon.</l>
+              <p>Endormons-nous comme une marmotte.</p>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Hylas, Issé<stage>dormante</stage>
+          </stage>
+          <stage>Hylas qui lui chante aux oreilles prie les ruisseaux et les oiseaux de ne pas réveiller Issé. Elle se réveille.</stage>
+          <sp who="#isse">
+            <speaker>Issé</speaker>
+          </sp>
+          <spGrp who="#isse">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#iris_pommes">Belle Iris, vous avez [deux pommes]</title>
+              </desc>
+            </head>
+            <sp who="#isse">
+              <speaker>Issé</speaker>
+              <l met="8">Je viens d'apercevoir en songe</l>
+              <l met="8">Apollon qui brûlait pour moi,</l>
+              <l met="8">Et moi, je lui donnais ma foi.</l>
+              <l met="8">Mais hélas! ce n'est qu'un mensonge</l>
+              <l met="8">Polichinelle mon mignon</l>
+              <l met="8">Je t'aime en dépit d'Apollon.</l>
+            </sp>
+          </spGrp>
+          <stage>Hylas sort, outré de désespoir.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Pan, Issé</stage>
+          <stage>Pan apprend à Issé que Polichinelle est désespéré de l'oracle qui lui donne Apollon pour amant.</stage>
+          <sp who="#isse">
+            <speaker>Issé</speaker>
+          </sp>
+          <spGrp who="#isse">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ma_commere_quand">Ma commère quand je danse</title>
+              </desc>
+            </head>
+            <sp who="#isse">
+              <speaker>Issé</speaker>
+              <l met="7">Il faut que je le remette</l>
+              <l met="7">De son appréhension.</l>
+            </sp>
+          </spGrp>
+          <sp who="#pan">
+            <speaker>Pan</speaker>
+            <l met="7">Il est dans cette retraite,</l>
+            <l met="7">Il m'a fait compassion.</l>
+            <l met="4">C'est par ici.</l>
+          </sp>
+          <sp who="#isse">
+            <speaker>Issé</speaker>
+            <l met="4">J'allais par là!</l>
+          </sp>
+          <sp who="#pan">
+            <speaker>Pan</speaker>
+            <l met="4">Non, c'est ici.</l>
+          </sp>
+          <sp who="#isse">
+            <speaker>Issé</speaker>
+            <l met="8">Moi je croyais que c'était là.</l>
+            <l met="7">Il faut que ...</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Doris</stage>
+          <sp who="#doris">
+            <speaker>Doris</speaker>
+            <stage>i</stage>
+          </sp>
+          <spGrp who="#doris">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#chantez_petit_colin">Chantez, petit Colin</title>
+              </desc>
+            </head>
+            <sp who="#doris">
+              <speaker>Doris</speaker>
+              <l met="6">Chantez, petits oiseaux,</l>
+              <l met="6">Vous passez bien la vie,</l>
+              <l met="6">Chantez petits oiseaux,</l>
+              <l met="8">D'amour vous ignorez les maux.</l>
+              <l met="6">Avez-vous quelque envie?</l>
+              <l met="6">Votre affaire est finie,</l>
+              <l met="5">Un joli serin,</l>
+              <l met="5">Frais, jeune et serein,</l>
+              <l met="5">Fait votre destin.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Pan, Doris</stage>
+          <stage>Ils se proposent l'inconstance quand ils seront las l'un de l'autre.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">Polichinelle, Issé</stage>
+          <stage>Polichinelle reproche à Issé qu'elle ne l'aime pas, elle l'assure du contraire. Elle veut fuir Apollon, dont elle entend les violons. Polichinelle se découvre pour Apollon.</stage>
+          <spGrp who="#doris">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#diogene_fameux">Diogène</title>
+              </desc>
+            </head>
+            <sp who="#doris">
+              <speaker>Doris</speaker>
+              <l met="6">Mes suivants vont paraître</l>
+              <l met="6">Et vont vous reconnaître</l>
+              <l met="6">Pour reine de ces lieux.</l>
+              <l met="6">La femme d'un poète</l>
+              <l met="6">Peut aller, ma poulette,</l>
+              <l met="6">De pair avec les dieux.</l>
+            </sp>
+          </spGrp>
+          <stage>Danse des poètes.</stage>
+          <stage>Fin</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

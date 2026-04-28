@@ -1,0 +1,2523 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="arlequin_tancrede_1729">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Arlequin Tancrède</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Pierre-François Biancolelli, Jean-Antoine Romagnesi</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>Tiphaine Boulanger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Relecture</resp>
+          <name>J. Coignard</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Les Parodies du nouveau Théâtre-Italien, Briasson, 1738</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="tancrede" sex="UNKNOWN">
+            <persName>Tancrède</persName>
+          </person>
+          <person xml:id="clorinde" sex="UNKNOWN">
+            <persName>Clorinde</persName>
+          </person>
+          <person xml:id="argan" sex="UNKNOWN">
+            <persName>Argan</persName>
+          </person>
+          <person xml:id="herminie" sex="UNKNOWN">
+            <persName>Herminie</persName>
+          </person>
+          <person xml:id="ismenor" sex="UNKNOWN">
+            <persName>Isménor</persName>
+          </person>
+          <person xml:id="soldat" sex="UNKNOWN">
+            <persName>Le soldat</persName>
+          </person>
+          <person xml:id="choeurmagiciens" sex="UNKNOWN">
+            <persName>Choeur de magiciens</persName>
+          </person>
+          <person xml:id="magiciennes" sex="UNKNOWN">
+            <persName>Les Magiciennes</persName>
+          </person>
+          <person xml:id="guerriere" sex="UNKNOWN">
+            <persName>Une Guerrière</persName>
+          </person>
+          <person xml:id="garcon" sex="UNKNOWN">
+            <persName>Un Garçon</persName>
+          </person>
+          <person xml:id="servante" sex="UNKNOWN">
+            <persName>Une Servante</persName>
+          </person>
+          <person xml:id="suite_d_argan" sex="UNKNOWN">
+            <persName>Suite d'Argan</persName>
+          </person>
+          <person xml:id="dragons_et_soldats" sex="UNKNOWN">
+            <persName>Dragons et soldats</persName>
+          </person>
+          <person xml:id="un_soldat" sex="UNKNOWN">
+            <persName>Un soldat</persName>
+          </person>
+          <person xml:id="magiciens_et_magiciennes" sex="UNKNOWN">
+            <persName>Magiciens et magiciennes</persName>
+          </person>
+          <person xml:id="guerriers_et_guerrieres" sex="UNKNOWN">
+            <persName>Guerriers et guerrières</persName>
+          </person>
+          <person xml:id="danseurs_et_danseuses" sex="UNKNOWN">
+            <persName>Danseurs et danseuses</persName>
+          </person>
+          <person xml:id="diables_et_sorciers" sex="UNKNOWN">
+            <persName>Diables et sorciers</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie en un acte</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1729">
+        <desc>Représenté pour la première fois par les Comédiens Italiens ordinaires du Roi le 19 mars 1729</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#tancrede">Tancrède</role>
+          <roleDesc>amant de Clorinde</roleDesc>
+          <actor>Arlequin</actor>
+        </castItem>
+        <castItem>
+          <role ana="#clorinde">Clorinde</role>
+          <roleDesc>amante de Tancrède</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#argan">Argan</role>
+          <roleDesc>géant amoureux de Clorinde</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#herminie">Herminie</role>
+          <roleDesc>cousine d'Argan</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#ismenor">Isménor</role>
+          <roleDesc>sorcier</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#suite_d_argan">Suite d'Argan</role>
+        </castItem>
+        <castItem>
+          <role ana="#dragons_et_soldats">Dragons et soldats</role>
+        </castItem>
+        <castItem>
+          <role ana="#un_soldat">Un soldat</role>
+        </castItem>
+        <castItem>
+          <role ana="#magiciens_et_magiciennes">Magiciens et magiciennes</role>
+        </castItem>
+        <castItem>
+          <role ana="#guerriers_et_guerrieres">Guerriers et guerrières</role>
+          <roleDesc>captifs</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#danseurs_et_danseuses">Danseurs et danseuses</role>
+        </castItem>
+        <castItem>
+          <role ana="#diables_et_sorciers">Diables et sorciers</role>
+        </castItem>
+      </castList>
+      <pb n="75"/>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Argan, Herminie, Suite d'Argan</stage>
+        <stage>Le théâtre représente un lieu où sont les tombeaux des Rois Sarrazins.</stage>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+        </sp>
+        <spGrp who="#argan">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ramplon">Ramplon</title>
+            </desc>
+          </head>
+          <sp who="#argan">
+            <speaker>Argan</speaker>
+            <l met="6">Rassemblez nos dragons</l>
+            <l met="2">Ramplon,</l>
+            <l met="6">Rassemblez nos dragons,</l>
+            <l met="6">Qu'on les rappelle vite</l>
+            <l met="5">Ramplon pataplon.</l>
+            <l met="5">Ramplon pataplon</l>
+            <l met="6">Car à prendre la fuite</l>
+            <l met="6">Ils ont été trop prompts;</l>
+            <l met="2">Ramplon.</l>
+          </sp>
+        </spGrp>
+        <pb n="76"/>
+        <spGrp who="#argan">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#confiteor">Mon père je viens devant vous</title>
+            </desc>
+          </head>
+          <sp who="#argan">
+            <speaker>Argan</speaker>
+            <l met="8">Le funeste sort des combats</l>
+            <l met="8">Donne à Tancrède l'avantage;</l>
+            <l met="8">Et ma maîtresse, et nos états</l>
+            <l met="8">En ce moment sont au pillage;</l>
+            <l met="8">Mais quoiqu'il nous ait bien rossés,</l>
+            <l met="8">Je n'en ai point encore assez.</l>
+            <p>C'en est fait, je vais arracher Clorinde à Tancrède.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#argan">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_est_pourtant_temps">Il est pourtant temps</title>
+            </desc>
+          </head>
+          <sp who="#argan">
+            <speaker>Argan</speaker>
+            <l met="8">Je cède à ma juste fureur.</l>
+          </sp>
+        </spGrp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <l met="8">Que vous me causez de frayeur!</l>
+          <l met="5">Vous allez périr.</l>
+        </sp>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <l met="5">C'est trop discourir.</l>
+        </sp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <l met="5">Où va-t'il courir?</l>
+        </sp>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <l met="5">Il est pourtant temps,<stage type="bis">bis</stage>
+          </l>
+          <l met="2">Princesse,</l>
+          <l met="10">Il est pourtant temps de la secourir.</l>
+        </sp>
+        <pb n="77"/>
+        <spGrp who="#argan">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#colin_va_t_en_dire">Colin, va-t'en dire à Nanon.</title>
+            </desc>
+          </head>
+          <sp who="#argan">
+            <speaker>Argan</speaker>
+            <l met="8">Au pied de ce vieux monument,</l>
+            <l met="8">Nous allons jurer gravement</l>
+            <l met="8">D'exterminer ce téméraire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <l met="8">De quoi servira ce serment</l>
+          <l met="8">S'il ne veut point se laisser faire?</l>
+        </sp>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <p>Comment donc? vous prenez le parti de ce chevalier errant? Oh! il mourra, je vous en réponds.</p>
+        </sp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <p>Oh! Ciel!</p>
+        </sp>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <p>Qu'est-ce que cela signifie? ne me cachez rien, vous savez que nous sommes parents.</p>
+        </sp>
+        <spGrp who="#argan">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_nos_forets">On n'aime plus [dans nos forêts]</title>
+            </desc>
+          </head>
+          <sp who="#argan">
+            <speaker>Argan</speaker>
+            <l met="8">Parlez en toute liberté,</l>
+            <l met="8">Expliquez-vous, belle cousine,</l>
+            <l met="8">Avouez-moi la vérité,</l>
+            <l met="8">Tancrède en secret vous lutine,</l>
+            <l met="8">Vous aimez ce déterminé.</l>
+          </sp>
+        </spGrp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <l met="8">Cousin, vous l'avez deviné.</l>
+        </sp>
+        <pb n="78"/>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+        </sp>
+        <spGrp who="#argan">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierre_bagnolet">Pierre Bagnolet</title>
+            </desc>
+          </head>
+          <sp who="#argan">
+            <speaker>Argan</speaker>
+            <l met="8">Vous l'aimez?... Ciel! est-il possible?</l>
+            <l met="8">Ne vous souvient-il plus, hélas!</l>
+            <l met="7">Que sous son bras invincible</l>
+            <l met="8">Vos parents ont passé le pas</l>
+            <l met="4">Et vos états?<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <l met="8">C'est là ce qui me rend sensible.</l>
+        </sp>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <l met="8">Oh! parbleu! vous n'y pensez pas.</l>
+          <p>Vous aimez Tancrède?</p>
+        </sp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+        </sp>
+        <spGrp who="#herminie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#depuis_que_j_ai_vu_nanette">Depuis que j'ai vu Nanette</title>
+            </desc>
+          </head>
+          <sp who="#herminie">
+            <speaker>Herminie</speaker>
+            <l met="7">De la mort l'affreuse image</l>
+            <l met="7">Triomphait de toutes parts;</l>
+            <l met="7">Dans mon funeste esclavage</l>
+            <l met="7">Il s'offrit à mes regards.</l>
+            <l met="7">Contre lui toute ma haine</l>
+            <l met="7">Me fut d'un faible secours,</l>
+            <l met="7">Je sentis trop que ma chaîne</l>
+            <l met="7">Était celle des amours.</l>
+          </sp>
+        </spGrp>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <p>Qu'est donc devenue votre raison et que dira-t'on de vous?</p>
+        </sp>
+        <pb n="79"/>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+        </sp>
+        <spGrp who="#herminie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#en_certain_detour">En certain détour</title>
+            </desc>
+          </head>
+          <sp who="#herminie">
+            <speaker>Herminie</speaker>
+            <l met="4">Quand une fois</l>
+            <l met="5">D'amoureuses lois</l>
+            <l met="7">Déterminent notre choix,</l>
+            <l met="7">De la raison aux abois</l>
+            <l met="5">Entend-t'on la voix?</l>
+            <l met="5">Cette pie-grièche</l>
+            <l met="8">Voudrait endurcir notre cœur,</l>
+            <l met="7">Mais l'amour ce doux vainqueur,</l>
+            <l met="6">L'ouvre d'un coup de flèche,</l>
+            <l met="7">Et la raison par la brèche</l>
+            <l met="2">S'enfuit,</l>
+            <l met="9">La peur du qu'en dira-t'on la suit.</l>
+            <p>On vient, ne parlez point de cela, je vous prie.</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Isménor, Argan</stage>
+        <sp who="#ismenor">
+          <speaker>Isménor</speaker>
+        </sp>
+        <spGrp who="#ismenor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#landeriri">Landerirette</title>
+            </desc>
+          </head>
+          <sp who="#ismenor">
+            <speaker>Isménor</speaker>
+            <l met="8">Je viens seconder ta valeur:</l>
+            <l met="8">Herminie a touché mon cœur,</l>
+            <l met="4">Landerirette.</l>
+            <l met="8">Je voudrais la toucher aussi</l>
+            <l met="4">Landeriri.</l>
+          </sp>
+        </spGrp>
+        <pb n="80"/>
+        <spGrp who="#ismenor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ami_croire">Ami, qui l'aurait pu croire.</title>
+            </desc>
+          </head>
+          <sp who="#ismenor">
+            <speaker>Isménor</speaker>
+            <l met="7">Je puis des Royaumes sombres</l>
+            <l met="4">Forcer les ombres</l>
+            <l met="3">Par ma voix.</l>
+            <l met="7">Je puis des Royaumes sombres</l>
+            <l met="4">Forcer les ombres</l>
+            <l met="5">À suivre mes lois.</l>
+          </sp>
+        </spGrp>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <l met="8">Non, non, je prétends que Tancrède</l>
+          <l met="10">Tombe aujourd'hui sous l'effort de mes coups.</l>
+        </sp>
+        <sp who="#ismenor">
+          <speaker>Isménor</speaker>
+          <l met="6">Que j'aime ce courroux!<stage type="bis">bis</stage>
+          </l>
+          <l met="10">Venez Démons que la rage possède,</l>
+          <l met="4">Tous à mon aide;</l>
+          <l met="10">Suivez nos feux et nos transports jaloux,</l>
+          <l met="12">Si les dieux sont pour lui, les diables sont pour nous.</l>
+          <l met="6">Les diables sont pour nous.</l>
+        </sp>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <p>Nous avons là une belle ressource.</p>
+        </sp>
+        <spGrp>
+          <caption>Tous deux</caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra</desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Suivons la fureur et la rage,</l>
+            <l met="12">Cher ami, vengeons-nous et hâtons son trépas,</l>
+            <l met="8">Ne différons pas davantage,</l>
+            <l met="12">Tant que nous chanterons, il ne périra pas.</l>
+          </sp>
+        </spGrp>
+        <pb n="81"/>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <p>Je cours délivrer ma princesse.</p>
+        </sp>
+        <stage>L'orchestre joue la marche des dragons.</stage>
+        <spGrp who="#argan">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ciel_benisse_besogne">Réjouissez-vous bons Français.</title>
+            </desc>
+          </head>
+          <sp who="#argan">
+            <speaker>Argan</speaker>
+            <l met="8">Nos dragons viennent à propos,</l>
+            <l met="8">Je vais leur dire quatre mots.</l>
+          </sp>
+        </spGrp>
+        <sp who="#ismenor">
+          <speaker>Isménor</speaker>
+          <l met="8">Et moi faire le diable à quatre,</l>
+          <l met="8">Pour les engager à se battre.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Argan, Chœur de Dragons.</stage>
+        <spGrp who="#ismenor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#marche_des_dragons">Marche des dragons</title>
+            </desc>
+          </head>
+          <sp who="#ismenor">
+            <speaker>Isménor</speaker>
+            <l met="9">Que dans le péril, braves dragons,</l>
+            <l met="8">Aucun de vous ne m'abandonne;</l>
+            <l met="9">Vous avez fui comme des poltrons,</l>
+            <l met="6">Mais je vous le pardonne.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#ismenor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jus_octobre">Quand je tiens ce jus d'octobre</title>
+            </desc>
+          </head>
+          <sp who="#ismenor">
+            <speaker>Isménor</speaker>
+            <l met="8">De la même ardeur qui m'inspire,</l>
+            <l met="8">Soldats, laissez-vous animer;</l>
+            <l met="8">Je prétends que Tancrède expire,</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="8">Il faut périr ou l'assommer.</l>
+        </sp>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <p>Ah! les jolis garçons!</p>
+        </sp>
+        <spGrp who="#argan">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_ne_veut_pas_qu_on_danse">Il ne veut pas qu'on danse</title>
+            </desc>
+          </head>
+          <sp who="#argan">
+            <speaker>Argan</speaker>
+            <l met="6">Mes chers enfants, courage,</l>
+            <l met="6">Redoublez ce transport;</l>
+            <l met="6">Que pour prix de sa rage,</l>
+            <l met="6">Il reçoive la mort.</l>
+            <l met="8">Jurez-moi donc tous qu'il mourra.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="6">Tout comme il vous plaira.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Magiciens, Magiciennes, Argan, Isménor, Soldats</stage>
+        <sp who="#ismenor">
+          <speaker>Isménor</speaker>
+          <p>Entrez, Messieurs les sorciers.</p>
+        </sp>
+        <spGrp who="#ismenor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#ismenor">
+            <speaker>Isménor</speaker>
+            <l met="8">Votre présence est nécessaire,</l>
+            <l met="8">Sans vous on ne saurait rien faire,</l>
+            <l met="8">Venez seconder mon courroux;</l>
+            <l met="8">Faites triompher l'art Magique,</l>
+            <l met="8">Allons, Messieurs, efforcez-vous</l>
+            <l met="8">À chanter un chœur magnifique.</l>
+          </sp>
+        </spGrp>
+        <pb n="83"/>
+        <spGrp who="#ismenor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#revenant_de_lorette">Revenant de Lorette</title>
+            </desc>
+          </head>
+          <sp who="#ismenor">
+            <speaker>Isménor</speaker>
+            <l met="6">Vous à qui je commande</l>
+            <l met="6">Remplissez mon espoir:</l>
+            <l met="6">Qu'en ces lieux on entende</l>
+            <l met="6">Quel est votre pouvoir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeurmagiciens">
+          <speaker>Choeur de magiciens</speaker>
+          <l met="9">Contre nos perfides ennemis</l>
+          <l met="6">Mettons tout en usage,</l>
+          <l met="9">Contre nos perfides ennemis</l>
+          <l met="6">L'artifice est permis.</l>
+        </sp>
+        <sp who="#magiciennes">
+          <speaker>Les Magiciennes</speaker>
+          <l met="6">Pour en faire carnage,</l>
+          <l met="6">Pour vaincre leur courage,</l>
+          <l met="6">Transformez-vous, démons,</l>
+          <l met="6">En jolis Cupidons.</l>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="3">Achéron,</l>
+          <l met="3">Phlégéton,</l>
+          <l met="7">Pour redoubler le tapage,</l>
+          <l met="6">Jusqu'au fond de nos cœurs,</l>
+          <l met="7">Lancez vos noires fureurs.</l>
+        </sp>
+        <sp who="#ismenor">
+          <speaker>Isménor</speaker>
+        </sp>
+        <spGrp who="#ismenor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#toure_loure_loure">Toure loure loure</title>
+            </desc>
+          </head>
+          <sp who="#ismenor">
+            <speaker>Isménor</speaker>
+            <l met="8">Pour mieux terminer l'histoire,</l>
+            <l met="8">Au tour lyrique ayons recours,</l>
+            <l met="8">Attaquons leurs jours et leur gloire,</l>
+            <l met="10">Attaquons, toure loure loure loure,</l>
+            <l met="8">Attaquons leur gloire et leurs jours.</l>
+          </sp>
+        </spGrp>
+        <pb n="84"/>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="8">Attaquons, ...</l>
+        </sp>
+        <sp who="#ismenor">
+          <speaker>Isménor</speaker>
+        </sp>
+        <spGrp who="#ismenor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#et_frou_frou_frou">Et frou frou frou</title>
+            </desc>
+          </head>
+          <sp who="#ismenor">
+            <speaker>Isménor</speaker>
+            <l met="7">Quoique vous soyez bien morts,<stage type="bis">bis</stage>
+            </l>
+            <l met="7">Repassez les sombres bords...<stage type="bis">bis</stage>
+            </l>
+            <l met="4">Rois qui jadis</l>
+            <l met="4">Des Amadis</l>
+            <l met="6">Étiez la vive image:</l>
+            <l met="7">À des guerriers peu hardis</l>
+            <l met="6">Donnez votre courage.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="4">Rois qui jadis, ...</l>
+        </sp>
+        <stage>Les diables sortent de dessous le théâtre avec des vessies et battent les magiciens qui s'enfuient.</stage>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+        </sp>
+        <spGrp who="#argan">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril [est agréable]</title>
+            </desc>
+          </head>
+          <sp who="#argan">
+            <speaker>Argan</speaker>
+            <l met="8">Vous avez eu la bastonnade</l>
+            <l met="8">Comme les chercheurs de trésor:</l>
+            <l met="8">Vous avez fait, pauvre Isménor,</l>
+            <l met="6">Une belle ambassade!</l>
+          </sp>
+        </spGrp>
+        <sp who="#ismenor">
+          <speaker>Isménor</speaker>
+          <p>Vous verrez que j'aurai oublié quelque chose dans l'évocation; mais laissez-moi faire, je vais refeuilleter mon grimoire.</p>
+        </sp>
+        <pb n="85"/>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <p>Oui, vraiment vous êtes un habile homme.</p>
+        </sp>
+        <spGrp who="#argan">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_quitez_pas_votre_houlette">N'oubliez pas votre houlette</title>
+            </desc>
+          </head>
+          <sp who="#argan">
+            <speaker>Argan</speaker>
+            <l met="8">Il n'était pas fort nécessaire</l>
+            <l met="2">De braire,</l>
+            <l met="6">Pendant une heure ou deux;</l>
+            <l met="8">Et du rivage ténébreux</l>
+            <l met="8">D'évoquer Hécate et Cerbère.</l>
+            <l met="8">Il n'était pas fort nécessaire, ...</l>
+          </sp>
+        </spGrp>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <stage>aux guerriers</stage>
+        </sp>
+        <spGrp who="#argan">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bruit_armes">J'entends déjà le bruit [des armes]</title>
+            </desc>
+          </head>
+          <sp who="#argan">
+            <speaker>Argan</speaker>
+            <l met="8">Il suffit de notre courage,</l>
+            <l met="8">Laissez-là vos enchantement:</l>
+            <l met="8">Courons où l'honneur nous engage,</l>
+            <l met="8">Souvenez-vous de vos serments.</l>
+          </sp>
+        </spGrp>
+        <sp who="#ismenor">
+          <speaker>Isménor</speaker>
+          <l met="8">Quoiqu'ils soient Sarrazins, je gage</l>
+          <l met="8">Qu'ils deviendront tous bas-Normands.</l>
+        </sp>
+        <pb n="86"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Clorinde<stage>seule</stage>
+        </stage>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <stage>i</stage>
+        </sp>
+        <stage>Le théâtre change et représente le camp de Tancrède.</stage>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <p>Suis-je Clorinde? hélas! je ne me reconnais plus.</p>
+        </sp>
+        <spGrp who="#clorinde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_chasse_de_la_reine_des_peris">La chasse de la Reine des Péris</title>
+            </desc>
+          </head>
+          <sp who="#clorinde">
+            <speaker>Clorinde</speaker>
+            <l met="6">Ou la guerre, ou la chasse,</l>
+            <l met="8">Ont fait jusqu'ici mes plaisirs,</l>
+            <l met="3">Mes désirs,</l>
+            <l met="6">Et mon cœur tout de glace,</l>
+            <l met="8">N'a jamais poussé de soupirs.</l>
+            <l met="6">Que Tancrède est charmant!</l>
+            <l met="4">Quel changement!</l>
+            <l met="9">Je suis toute je ne sais comment.</l>
+            <l met="6">Ô trop malheureux jour!</l>
+            <l met="10">Mars m'abandonne, je cède à l'Amour.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#clorinde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_raison">Ma raison [s'en va beau train]</title>
+            </desc>
+          </head>
+          <sp who="#clorinde">
+            <speaker>Clorinde</speaker>
+            <l met="7">Raison, viens à mon secours,</l>
+            <l met="7">À toi seule j'ai recours:</l>
+            <l met="5">Ah! je le sens bien,</l>
+            <l met="5">Par un doux lien</l>
+            <l met="6">L'Amour retient mon âme;</l>
+            <l met="8">Faible raison tu ne peux rien,</l>
+            <l met="9">Sur l'esprit d'une femme, lan la,</l>
+            <l met="6">Sur l'esprit d'une femme.</l>
+            <p>Il vient, faisons du moins la fière.</p>
+          </sp>
+        </spGrp>
+        <pb n="87"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Tancrède, Clorinde</stage>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+        </sp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#amis_ne_parlons_plus_de_guerre">Que l'on ne parle plus de guerre</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="8">Que l'on ne parle plus de guerre,</l>
+            <l met="4">Parlons d'amour,</l>
+            <l met="8">Rengainons notre cimeterre,</l>
+            <l met="4">Dans ce beau jour;</l>
+            <l met="8">Vous n'êtes plus dans l'esclavage,</l>
+            <l met="4">Ni vos soldats,</l>
+            <l met="8">Et nous allons tous rendre hommage</l>
+            <l met="4">À vos appâts.</l>
+          </sp>
+        </spGrp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+        </sp>
+        <spGrp who="#clorinde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vivons_pour_ces_fillettes">Vivons pour ces fillettes</title>
+            </desc>
+          </head>
+          <sp who="#clorinde">
+            <speaker>Clorinde</speaker>
+            <l met="8">Quoique dans la captivité,</l>
+            <l met="8">Je saurai garder ma fierté.</l>
+            <l met="8">Vous ne m'offrez la liberté</l>
+            <l met="6">Que par fanfaronnade,</l>
+            <l met="6">C'est une gasconnade,</l>
+            <l met="2">Seigneur,</l>
+            <l met="6">C'est une gasconnade.</l>
+          </sp>
+        </spGrp>
+        <pb n="88"/>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Non, le diable m'emporte si je vous mens.</p>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <p>À d'autres, c'est pour augmenter votre gloire.</p>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Ma gloire? bon, bon, c'est bien à quoi je pense.</p>
+        </sp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Tout cela m'est indifférent</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="8">Hélas! vous jugerez mon sort,</l>
+            <l met="8">Je ne dois chercher que la mort.</l>
+          </sp>
+        </spGrp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <l met="8">Quoi donc?</l>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <l met="8">Je vous cache un mystère;</l>
+          <l met="8">Mais non, il faut le découvrir,</l>
+          <l met="8">Pourquoi m'obstiner à le taire?</l>
+          <l met="8">Il vaut mieux parler que mourir.</l>
+        </sp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_tampone">Angélique [pour la colique]</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="3">Je vous aime<stage type="bis">bis</stage>
+            </l>
+            <l met="4">Plus que moi-même.</l>
+          </sp>
+        </spGrp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <l met="7">Ah! que me dites-vous là?</l>
+          <l met="4">Ah, ah, ah, ah!</l>
+        </sp>
+        <pb n="89"/>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Je m'en vais vous dire comment cela s'est fait.</p>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <p>Ah! point de récit, cela m'ennuierait.</p>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Pardonnez-moi, cela est nécessaire.</p>
+        </sp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#andouillard">Un Cavalier</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="10">Je vous ai vue au fort de la bataille</l>
+            <l met="5">D'estoc et de taille</l>
+            <l met="5">Enfoncer nos rangs,</l>
+            <l met="6">Déconfire mes gens;</l>
+            <l met="10">Vous les tuiez sans faire la grimace</l>
+            <l met="5">Avec tant de grâce,</l>
+            <l met="5">Que l'Amour vainqueur</l>
+            <l met="6">Vous a soumis mon cœur.</l>
+          </sp>
+        </spGrp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <p>Quel avœu téméraire! puis-je trop m'en plaindre?</p>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Qu'a-t'il donc qui vous offense?</p>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <p>Moi qui n'ai jamais aimé!</p>
+        </sp>
+        <spGrp who="#clorinde">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra</desc>
+          </head>
+          <sp who="#clorinde">
+            <speaker>Clorinde</speaker>
+            <l met="12">Dès l'enfance, élevée au milieu des forêts...</l>
+          </sp>
+        </spGrp>
+        <pb n="90"/>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Je ne vous demande pas l'histoire de votre vie.</p>
+        </sp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_ris_je_chante_et_je_badine">Je ris, je chante et je badine</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="8">Vous traitez l'amour de faiblesse,</l>
+            <l met="9">Mais vos yeux en ont-ils moins de traits?</l>
+            <l met="8">Lorsqu'on inspire la tendresse,</l>
+            <l met="9">On doit se livrer à ses attraits:</l>
+            <l met="8">Rendez-vous à mes vœux, princesse,</l>
+            <l met="9">Et ne parlez plus de vos forêts.</l>
+          </sp>
+        </spGrp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <p>Non, Tancrède, je dois vous haïr.</p>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Parce que nous sommes ennemis? Bon! l'Amour s'embarrasse bien de la cause commune.</p>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <p>Voici vos captifs, soyez sage, au moins cachez bien votre amour.</p>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Au contraire, il faut que tout le monde le sache, vous verrez le joli effet que cela produira.</p>
+        </sp>
+        <pb n="91"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Les Acteurs de la scène précédente.</stage>
+        <stage>Les captifs entrent.</stage>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+        </sp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#joconde">Joconde</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="7">Jouissez d'un destin plus doux,</l>
+            <l met="6">Clorinde est votre reine,</l>
+            <l met="8">Mes enfants, divertissez-vous,</l>
+            <l met="6">Et quittez votre chaîne.</l>
+            <l met="8">Pour prix de votre liberté,</l>
+            <l met="6">Il faut par une danse,</l>
+            <l met="8">Témoigner à cette beauté</l>
+            <l met="6">Votre reconnaissance.</l>
+          </sp>
+        </spGrp>
+        <sp who="#guerriere">
+          <speaker>Une Guerrière</speaker>
+        </sp>
+        <spGrp who="#guerriere">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra</desc>
+          </head>
+          <sp who="#guerriere">
+            <speaker>Une Guerrière</speaker>
+            <l met="7">Si le danger vous étonne</l>
+            <l met="5">Fuyez, faibles cœurs;</l>
+            <l met="7">L'Amour, ainsi que Bellone,</l>
+            <l met="5">Vend cher ses faveurs.</l>
+            <l met="7">Il est des détours à prendre,</l>
+            <l met="7">Une maman à tromper,</l>
+            <l met="7">Une Agnès qu'il faut surprendre,</l>
+            <l met="7">Et des maris à duper.</l>
+            <l met="7">Si le danger, ...</l>
+            <l met="7">Mars veut un cœur intrépide,</l>
+            <l met="7">Et l'Amour veut de l'argent,</l>
+            <l met="8">On méprise un guerrier timide,</l>
+            <l met="8">On rit d'un amant indigent.</l>
+            <l met="7">Si le danger, ...</l>
+          </sp>
+        </spGrp>
+        <pb n="92"/>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Il me semble, Madame, que vous ne prenez pas beaucoup de plaisir à cette fête! si cela vous ennuie, vous n'avez qu'à vous en aller. À propos, m'aimez-vous?</p>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+        </sp>
+        <spGrp who="#clorinde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_serrure">La serrure</title>
+            </desc>
+          </head>
+          <sp who="#clorinde">
+            <speaker>Clorinde</speaker>
+            <l met="8">Perdez une vaine espérance,</l>
+            <l met="8">Votre amour ne peut me toucher:</l>
+            <l met="8">Si je suis en votre puissance,</l>
+            <l met="8">Argan saura m'en arracher.</l>
+          </sp>
+        </spGrp>
+        <pb n="93"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Tancrède<stage>seul</stage>
+        </stage>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <stage>i</stage>
+          <p>Ah! morbleu! que viens-je d'entendre? Argan est mon rival! je ne puis plus en douter, je vais l'accommoder de toutes pièces; si je ne l'ai pas encore tué, en voici la raison.</p>
+        </sp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sois_complaisant">Sois complaisant</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="4">Le simple honneur,</l>
+            <l met="6">Que fit notre querelle,</l>
+            <l met="4">Pour un grand cœur</l>
+            <l met="6">N'est qu'une bagatelle.</l>
+            <l met="1">Mais,</l>
+            <l met="7">Quand il s'agit d'une belle</l>
+            <l met="7">J'y regarde de plus près.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bruit_armes">J'entends déjà le bruit [des armes]</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="8">Suivons le courroux qui m'enflamme</l>
+            <l met="8">Donnons-lui quelque mauvais coup,</l>
+            <l met="8">La vengeance, quoiqu'on la blâme,</l>
+            <l met="8">Peut me consoler tout à coup;</l>
+            <l met="8">Elle n'est pas une belle âme,</l>
+            <l met="8">Mais elle soulage beaucoup.</l>
+          </sp>
+        </spGrp>
+        <pb n="94"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Un Soldat, Tancrède</stage>
+        <sp who="#soldat">
+          <speaker>Le soldat</speaker>
+          <p>Ah! Seigneur Tancrède, tout est perdu.</p>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Qu'y a-t'il de nouveau?</p>
+        </sp>
+        <sp who="#soldat">
+          <speaker>Le soldat</speaker>
+        </sp>
+        <spGrp who="#soldat">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Que je chéris [mon cher voisin]</title>
+            </desc>
+          </head>
+          <sp who="#soldat">
+            <speaker>Le soldat</speaker>
+            <l met="8">Un sorcier, qui ne vous craint pas,</l>
+            <l met="6">Par son art nous lutine;</l>
+            <l met="8">Il fait périr tous vos soldats,</l>
+            <l met="6">Dans la forêt voisine.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Fort bien! il ne me manquait plus que cela; de quoi diable s'avise-t'il? courons à leur secours.</p>
+        </sp>
+        <sp who="#soldat">
+          <speaker>Le soldat</speaker>
+          <p>Ah! Seigneur ne vous y risquez pas.</p>
+        </sp>
+        <spGrp who="#soldat">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_le_bout_du_bras">C'est le bout du bras</title>
+            </desc>
+          </head>
+          <sp who="#soldat">
+            <speaker>Le soldat</speaker>
+            <l met="10">L'Enfer semble vomir dans ces lieux</l>
+            <l met="2">Sa rage.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <pb n="95"/>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <l met="6">Qu'est-il de périlleux</l>
+          <l met="4">Pour mon courage?</l>
+          <l met="6">Va, les enchantements</l>
+          <l met="8">Ne font peur qu'aux petits enfants.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Herminie, Argan</stage>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <p>Me dites-vous bien vrai? Tancrède aime-t'il Clorinde?</p>
+        </sp>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <p>Oui, vous dis-je, mes soldats ne parlent d'autre chose; Tancrède en a fait confidence à toute l'armée.</p>
+        </sp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+        </sp>
+        <spGrp who="#herminie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#menuet_italien">Menuet Italien</title>
+            </desc>
+          </head>
+          <sp who="#herminie">
+            <speaker>Herminie</speaker>
+            <l met="8">Jugez de ma douleur</l>
+          </sp>
+        </spGrp>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <l met="8">Et vous,</l>
+          <l met="6">De mon juste courroux.</l>
+        </sp>
+        <spGrp>
+          <caption>Tous deux</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="5">Quels funestes coups!...<stage type="bis">bis</stage>
+            </l>
+            <l met="5">Pour nos cœurs jaloux.</l>
+          </sp>
+        </spGrp>
+        <pb n="96"/>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <l met="4">Dieux! quelle horreur!</l>
+          <l met="4">J'ai le malheur</l>
+          <l met="7">De trouver une rivale.</l>
+        </sp>
+        <spGrp>
+          <caption>Tous deux</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="9">Ah! quel tourment! quels funestes coups!</l>
+            <l met="8">Quel tourment! quels funestes coups!</l>
+            <l met="5">Pour nos cœurs jaloux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <p>Mais croyez-vous que Clorinde l'aime?</p>
+        </sp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <p>Il n'en faut point douter, j'en juge par moi-même.</p>
+        </sp>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <p>Ce n'est donc pas sans cause que l'ingrate a refusé sa liberté.</p>
+        </sp>
+        <spGrp who="#argan">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_m_entendez_vous_pas">Ne m'entendez-vous pas</title>
+            </desc>
+          </head>
+          <sp who="#argan">
+            <speaker>Argan</speaker>
+            <l met="6">Je vous livre mon cœur,</l>
+            <l met="6">Transports jaloux, vengeance,</l>
+            <l met="6">Venez en diligence</l>
+            <l met="6">Seconder ma fureur,</l>
+            <l met="6">Je vous livre mon cœur.</l>
+          </sp>
+        </spGrp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <p>Allez, tout ira bien; c'est Isménor qui se mêle de cette affaire, il vient d'enchanter cette forêt.</p>
+        </sp>
+        <pb n="97"/>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <p>La peste, nous sommes en bonne main! c'est un habile homme, nous n'avons qu'à nous attendre à lui.</p>
+        </sp>
+        <spGrp who="#argan">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bon_soldat">Je suis un bon soldat</title>
+            </desc>
+          </head>
+          <sp who="#argan">
+            <speaker>Argan</speaker>
+            <l met="6">Pour un dernier combat,</l>
+            <l met="3">Titata,</l>
+            <l met="6">Argan va donner l'ordre,</l>
+            <l met="6">Et voir si nos dragons,</l>
+            <l met="3">Patapon,</l>
+            <l met="6">Voudront encor y mordre.</l>
+          </sp>
+        </spGrp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <stage>seule</stage>
+          <p>J'aurais grande envie de le retenir; mais cela ressemblerait trop à la première scène.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="characters">Tancrède<stage>seul dans la forêt</stage>
+        </stage>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <stage>i</stage>
+          <p>Où suis-je? quelle épaisse forêt! ne serait-ce point le bois de Boulogne?... malepeste! prenons garde à nous.</p>
+        </sp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril [est agréable]</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="8">Ah! quoiqu'une route facile</l>
+            <l met="8">Conduise dans ce bois touffu,</l>
+            <l met="8">Plus d'un chevalier s'est perdu</l>
+            <l met="6">Dans cet obscur asile.</l>
+            <p>Mais, que dis-je! je n'y pense pas, je suis dans la forêt de l'enchanteur...<stage>On jette des flammes.</stage>Miséricorde! des flammes! vous verrez que le feu aura pris à la cuisine. Courage Tancrède, il ne s'agit pas ici d'avoir peur: entrons dans la forêt.<stage>On joue l'air des Pendus.</stage>Qu'entends-je! l'air des pendus! ah! que cela est touchant, je me sens attendrir.</p>
+          </sp>
+        </spGrp>
+        <pb n="98"/>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lampons">Lampons</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="7">En vrai héros de roman...<stage type="bis">bis</stage>
+            </l>
+            <l met="7">Surmontons l'enchantement.<stage type="bis">bis</stage>
+            </l>
+            <l met="7">Une simple ritournelle,</l>
+            <l met="7">Pour m'arrêter suffit-elle?</l>
+            <l met="4">Non, non, non, non,</l>
+            <l met="7">L'air n'en est pas assez bon.</l>
+          </sp>
+        </spGrp>
+        <stage>Le théâtre change, et représente une place publique où on voit plusieurs affiches.</stage>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Que veut dire ceci? me voilà transplanté tout d'un coup. Que d'affiches! voyons ce que l'on joue aux Italiens.</p>
+        </sp>
+        <stage>Il lit.</stage>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_raison">Ma raison s'en va bon train</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="7">C'est la Foire Saint-Germain,</l>
+            <l met="6">Où le sieur Mezzetin</l>
+            <l met="5">Représentera;</l>
+            <l met="5">Et l'on payera</l>
+            <l met="6">Pour cette fois le double:</l>
+            <l met="8">Le beau prétexte que voilà!</l>
+            <l met="9">Ils pêchent en eau trouble, lan la,</l>
+            <l met="6">Ils pêchent en eau trouble.</l>
+          </sp>
+        </spGrp>
+        <pb n="99"/>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nanon_dormait">Nanon dormait</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="4">À l'Opéra,</l>
+            <l met="6">Voyons ce que l'on crie.</l>
+            <l met="4">Tancrède... ah! ah!</l>
+            <l met="6">Quoi? l'on me parodie</l>
+            <l met="6">Sur ce théâtre-là?</l>
+            <l met="10">Morbleu!<stage type="bis">bis</stage>Je lui revaudrai celui-là.</l>
+            <p>Que de romans! que d'histoires!</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_haut_sur_ces_montagnes">Là-haut sur ces montagnes</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="6">Ô! Libraires peu sages,</l>
+            <l met="6">Que je vous plains! hélas!</l>
+            <l met="6">Tout ces nouveaux ouvrages</l>
+            <l met="6">Feront peu de fracas.</l>
+          </sp>
+        </spGrp>
+        <pb n="100"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="characters">[Tancrède, Garçons et Servantes de Cabaret]</stage>
+        <stage>Les danseurs et les danseuses en garçons et servantes de cabaret, entrent sur le théâtre au son de la symphonie, une table est tout d'un coup dressée, les servantes de cabaret y font asseoir Tancrède et le servent.</stage>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Ah! le coquin d'enchanteur! il m'a pris par mon faible.</p>
+        </sp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#de_nos_agreables_retraite">[De nos agréables retraites]</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="8">De nos agréables retraites</l>
+            <l met="8">Bacchus a banni les façons,</l>
+            <l met="6">Et l'Amour les soupçons.</l>
+            <l met="8">Les plaisirs dont nous jouissons,</l>
+            <l met="8">Nous offrent des douceurs parfaites,</l>
+            <l met="10">Si nous vidons à grand bruit nos flacons,</l>
+            <l met="10">Nous caressons en secret nos fillettes.</l>
+          </sp>
+        </spGrp>
+        <stage>On danse.</stage>
+        <sp who="#garcon">
+          <speaker>Un Garçon</speaker>
+        </sp>
+        <spGrp who="#garcon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_amour_dans_la_vie">L'amour dans la vie</title>
+            </desc>
+          </head>
+          <sp who="#garcon">
+            <speaker>Un Garçon</speaker>
+            <l met="5">Bacchus dans la vie</l>
+            <l met="5">Peut seul nous charmer,</l>
+            <l met="5">Sa douce ambroisie</l>
+            <l met="5">Sait nous animer.</l>
+          </sp>
+        </spGrp>
+        <pb n="101"/>
+        <sp who="#servante">
+          <speaker>Une Servante</speaker>
+          <l met="5">La grandeur suprême</l>
+          <l met="6">N'offre qu'un bien trompeur;</l>
+          <l met="5">Boire à ce qu'on aime</l>
+          <l met="5">Fait le vrai bonheur.</l>
+        </sp>
+        <spGrp>
+          <caption>À deux</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="5">Bacchus dans la vie</l>
+            <l met="5">Peut seul nous charmer,</l>
+            <l met="5">Sa douce ambroisie</l>
+            <l met="5">Sait nous animer.</l>
+          </sp>
+        </spGrp>
+        <stage>Tancrède s'endort à table, les danseurs l'emportent sans qu'il se réveille.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 13</head>
+        <stage type="characters">Herminie, Clorinde</stage>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <stage>à part</stage>
+        </sp>
+        <spGrp who="#herminie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#malheureux_oui">Quand on a prononcé ce malheureux oui</title>
+            </desc>
+          </head>
+          <sp who="#herminie">
+            <speaker>Herminie</speaker>
+            <l met="12">Tancrède est, par mes soins, transporté dans la cave,</l>
+            <l met="12">Au défaut de l'Amour, Bacchus m'offre un esclave;</l>
+            <l met="12">Ma rivale paraît, éprouvons-la, je crois</l>
+            <l met="12">Qu'elle aime à babiller, autant et plus que moi.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#herminie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tu_ton_tutaine">Tuton tutaine</title>
+            </desc>
+          </head>
+          <sp who="#herminie">
+            <speaker>Herminie</speaker>
+            <l met="8">Quel bonheur vous offre à mes yeux?</l>
+          </sp>
+        </spGrp>
+        <pb n="102"/>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <l met="8">J'ai suivi Tancrède en ces lieux,</l>
+          <l met="8">J'ai craint un pouvoir odieux;</l>
+          <l met="8">Et de l'enchanteur furieux</l>
+          <l met="6">La trop fatale haine.</l>
+        </sp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <l met="2">Tu, tu</l>
+          <l met="5">T'en alarmes-tu?</l>
+          <l met="2">Bon, bon.</l>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <l met="5">Vraiment, pourquoi non?</l>
+          <l met="5">Quoi! se venge-t'on</l>
+          <l met="5">Par la trahison?</l>
+          <l met="5">Tutaine tu ton</l>
+          <l met="2">Tutaine.</l>
+        </sp>
+        <spGrp who="#clorinde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ce_n_est_point_par_effort">Ce n'est point par effort qu'on aime</title>
+            </desc>
+          </head>
+          <sp who="#clorinde">
+            <speaker>Clorinde</speaker>
+            <l met="8">Il faut triompher avec gloire,</l>
+            <l met="8">Et je prétends le secourir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <l met="8">Il n'est plus temps.</l>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <l met="8">Le puis-je croire?</l>
+        </sp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <l met="8">Dans la cave il vient de périr.</l>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <l met="8">Était-ce en le faisant trop boire</l>
+          <l met="8">Qu'il fallait le faire mourir?</l>
+          <p>Il est mort! juste Ciel! que viens-je d'entendre?</p>
+        </sp>
+        <pb n="103"/>
+        <spGrp who="#clorinde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_dieux_comptent_nos_jours">Les Dieux comptent nos jours</title>
+            </desc>
+          </head>
+          <sp who="#clorinde">
+            <speaker>Clorinde</speaker>
+            <l met="6">Que dans le monument</l>
+            <l met="6">Notre ardeur nous rassemble;</l>
+            <l met="6">Diffère d'un moment</l>
+            <l met="6">Attends-moi, cher amant,</l>
+            <l met="4">Attends-moi donc...<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <l met="8">Est-ce pour aller chez Pluton</l>
+          <l met="6">Qu'il faut partir ensemble?</l>
+          <p>Comment vous soupirez, vous l'aimez donc, ma mie?</p>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <p>Hé bien oui! puisqu'il est mort, il faut l'avouer.</p>
+        </sp>
+        <spGrp who="#clorinde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_veux_boire_a_ma_lisette">Croyez-vous qu'amour m'attrape?</title>
+            </desc>
+          </head>
+          <sp who="#clorinde">
+            <speaker>Clorinde</speaker>
+            <l met="7">Par ce soupir qui m'échappe</l>
+            <l met="7">Connaissez mon tendre amour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <l met="7">Comme elle mord à la grappe!</l>
+          <l met="7">Quoique ce soit un vieux tour:</l>
+          <l met="7">Allez, ce n'est qu'une attrape,</l>
+          <l met="7">Car il voit encore le jour.</l>
+          <p>Et qui plus est, tu vois ta rivale.</p>
+        </sp>
+        <pb n="104"/>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+        </sp>
+        <spGrp who="#clorinde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vraiment_ma_commere_oui">Vraiment ma Commère oui</title>
+            </desc>
+          </head>
+          <sp who="#clorinde">
+            <speaker>Clorinde</speaker>
+            <l met="7">Quoi? vous l'aimez donc aussi?</l>
+          </sp>
+        </spGrp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <l met="7">Vraiment, ma commère, oui.</l>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <l met="8">Cet amour est-il dans l'histoire?</l>
+        </sp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <l met="7">Vraiment, ma commère, voire,</l>
+          <l met="7">Vraiment, ma commère, oui.</l>
+          <p>Et quand il n'y serait pas, l'épisode ne serait-il pas permis? tu vas toujours le voir mourir à bon compte.</p>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <p>Arrête, perfide.</p>
+        </sp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <p>Oui, oui, arrête, je t'en réponds, je ne reconnais point ta puissance, éprouve les effets de la mienne; patience, tu vas voir beau jeu.</p>
+        </sp>
+        <stage>On entend derrière le théâtre un grand bruit de pots et de cruches cassées.</stage>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <stage>seule</stage>
+          <p>Ah! quel carillon! cher Tancrède, c'en est fait! tu vas donc périr?</p>
+        </sp>
+        <pb n="105"/>
+        <spGrp who="#clorinde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pour_mettre_un_homme_au_monument">Pour mettre un homme au monument</title>
+            </desc>
+          </head>
+          <sp who="#clorinde">
+            <speaker>Clorinde</speaker>
+            <l met="8">Sauvons-le... ne le sauvons pas...</l>
+            <l met="10">Clorinde que prétends-tu faire? hélas!</l>
+            <l met="4">Quel embarras!</l>
+            <l met="4">Songe à ta gloire,</l>
+            <l met="7">De l'amour perd la mémoire.</l>
+            <l met="7">C'est mon ennemi... comment</l>
+            <l met="8">L'arracherais-je au monument?</l>
+            <l met="10">Mais d'un autre côté, c'est mon amant,</l>
+            <l met="8">Et je cède à ce mouvement.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 14</head>
+        <stage type="characters">Tancrède<stage>seul</stage>
+        </stage>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <stage>i</stage>
+        </sp>
+        <stage>Le théâtre représente un sombre caveau.</stage>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#inconnu">Un Inconnu</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="10">Caveau profond où l'on m'a fait descendre,</l>
+            <l met="10">Vous que le jour ne pénétra jamais,</l>
+            <l met="4">Je vais répandre</l>
+            <l met="4">Par mes hoquets,</l>
+            <l met="10">Le vin charmant que je bus à longs traits:</l>
+            <l met="10">J'en ai tant pris, qu'il faut enfin le rendre.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_filles_de_nanterre">Les filles de Nanterre</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="6">Sans secours, sans défense,</l>
+            <l met="6">Ivre comme un cochon,</l>
+            <l met="6">Amant sans espérance,</l>
+            <l met="6">Ah! le joli garçon!</l>
+          </sp>
+        </spGrp>
+        <pb n="106"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 15</head>
+        <stage type="characters">Herminie, Tancrède</stage>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Mais, que vois-je! que venez-vous faire dans cette sombre retraite?</p>
+        </sp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#autre_jour_isabelle">[L'autre jour Isabelle]</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="6">L'autre jour Isabelle</l>
+            <l met="8">Vint me trouver dans mon caveau.</l>
+            <p>Tenez, je ne vous demande pour toute grâce, que mes armes, je suis modeste comme vous voyez.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#et_prete_le_moi_donc">Et prête-le moi donc</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="6">Et faites-la moi donc</l>
+            <l met="6">Rendre ma longue épée,</l>
+            <l met="6">Et faites-le moi donc,</l>
+            <l met="6">Rendre mon espadon.</l>
+          </sp>
+        </spGrp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <p>Oui, oui, tu n'as qu'à t'y attendre, après tout ce que tu m'as fait.</p>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Moi! je ne vous ai rien fait.</p>
+        </sp>
+        <pb n="107"/>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+        </sp>
+        <spGrp who="#herminie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+            </desc>
+          </head>
+          <sp who="#herminie">
+            <speaker>Herminie</speaker>
+            <l met="8">Par toi mes parents immolés,</l>
+            <l met="8">Et tous mes états désolés,</l>
+            <l met="6">Mais qui plus est, barbare,...</l>
+          </sp>
+        </spGrp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <l met="2">Hé bien...</l>
+        </sp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <l met="6">Clorinde... je m'égare!</l>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <l met="5">Je n'y comprends rien!</l>
+        </sp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <p>Cela est pourtant assez intelligible.</p>
+        </sp>
+        <spGrp who="#herminie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_reguingue">Ô reguingué</title>
+            </desc>
+          </head>
+          <sp who="#herminie">
+            <speaker>Herminie</speaker>
+            <l met="8">Quoi! cruel, tu ne m'entends pas?<stage type="bis">bis</stage>
+            </l>
+            <l met="8">C'est trop mépriser mes appâts,</l>
+            <l met="8">Tu vas recevoir le trépas.</l>
+          </sp>
+          <sp who="#herminie">
+            <speaker>Herminie</speaker>
+            <l met="8">Assouvissez votre colère,</l>
+            <l met="8">De lui l'on ne saurait rien faire.</l>
+          </sp>
+        </spGrp>
+        <stage>À Isménor qui entre avec des diables.</stage>
+        <pb n="108"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 16</head>
+        <stage type="characters">Isménor, plusieurs diables, Tancrède, Herminie</stage>
+        <sp who="#ismenor">
+          <speaker>Isménor</speaker>
+        </sp>
+        <spGrp who="#ismenor">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra</desc>
+          </head>
+          <sp who="#ismenor">
+            <speaker>Isménor</speaker>
+            <l met="12">Commence à ressentir l'effet de ma puissance.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <stage>bâille</stage>
+          <p>Quel ennui vient m'environner?</p>
+        </sp>
+        <sp who="#ismenor">
+          <speaker>Isménor</speaker>
+          <p>Ce n'est pas tout.</p>
+        </sp>
+        <stage>Il touche Tancrède de sa baguette.</stage>
+        <spGrp who="#ismenor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vaudeville_de_la_foire_des_fees">Vaudeville de la foire des Fées</title>
+            </desc>
+          </head>
+          <sp who="#ismenor">
+            <speaker>Isménor</speaker>
+            <l met="8">Lutins, paraissez en ces lieux,</l>
+            <l met="8">Rendez ma vengeance complète.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <l met="8">Si je pouvais; liron lirette,</l>
+          <l met="8">M'endormir pendant tout ce jeu,</l>
+          <l met="8">Pour moi l'heureux coup de baguette.</l>
+        </sp>
+        <stage>Il s'appuie sur un tonneau.</stage>
+        <sp who="#ismenor">
+          <speaker>Isménor</speaker>
+          <p>Oh! tu ne dormiras pas. Allons, faites-lui bien peur avant de le tuer.</p>
+        </sp>
+        <pb n="109"/>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Cela est fort généreux.</p>
+        </sp>
+        <stage>Les lutins tourmentent Tancrède, on lui appointe un canon, dont l'amorce prend, on lui tire un coup de fusil qui est plein de farine dont il reste tout blanc, et autres lazzis.</stage>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Que diable finissez donc, je n'aime pas les jeux de main, c'est assez badiner.</p>
+        </sp>
+        <sp who="#ismenor">
+          <speaker>Isménor</speaker>
+          <p>Il a raison, c'est trop le faire languir.</p>
+        </sp>
+        <stage>Il lève le bras pour frapper Tancrède.</stage>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+        </sp>
+        <spGrp who="#herminie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dondaine_dondaine">Ah! qu'il est beau l'oiseau.</title>
+            </desc>
+          </head>
+          <sp who="#herminie">
+            <speaker>Herminie</speaker>
+            <l met="8">Arrêtez!</l>
+          </sp>
+        </spGrp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <l met="8">Ciel! m'a-t'il frappé?</l>
+        </sp>
+        <sp who="#ismenor">
+          <speaker>Isménor</speaker>
+          <l met="8">Qu'entends-je? m'auriez-vous trompé?</l>
+        </sp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <l met="5">Je l'aime, je l'aime.</l>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <l met="6">Il est toujours dupé</l>
+          <l met="4">Le Nicodème.</l>
+        </sp>
+        <pb n="110"/>
+        <sp who="#ismenor">
+          <speaker>Isménor</speaker>
+          <p>Son trépas va me faire justice de votre trahison; mais voici Clorinde qui arrive fort à propos: il me vient une plaisante idée.</p>
+        </sp>
+        <spGrp who="#ismenor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ermite">Dedans nos bois il y a un ermite</title>
+            </desc>
+          </head>
+          <sp who="#ismenor">
+            <speaker>Isménor</speaker>
+            <l met="10">Pour me venger d'une ingrate maîtresse,</l>
+            <l met="6">Et d'un heureux rival:</l>
+            <l met="10">Je le remets entre vos mains, Princesse.</l>
+          </sp>
+        </spGrp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <l met="6">Quel trait original!</l>
+          <l met="10">Des vrais jaloux, Isménor est la perle.</l>
+        </sp>
+        <sp who="#ismenor">
+          <speaker>Isménor</speaker>
+          <stage>en s'en allant</stage>
+          <l met="5">Je suis un fin merle</l>
+          <l met="1">Moi,</l>
+          <l met="5">Je suis un fin merle.</l>
+        </sp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <p>Allons, puisque j'ai fait la sottise de le sauver, il faut encore les laisser ensemble.</p>
+        </sp>
+        <pb n="111"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 17</head>
+        <stage type="characters">Tancrède, Clorinde</stage>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+        </sp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#galants_retirez_vous">Galant, retirez-vous</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="6">C'est ma belle Princesse</l>
+            <l met="6">Qui vole à mon secours,</l>
+            <l met="6">Cette délicatesse</l>
+            <l met="6">Redouble ma tendresse;</l>
+            <l met="6">Disposez de mes jours,</l>
+            <l met="6">Comme de mes amours.</l>
+          </sp>
+        </spGrp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <p>Tenez Tancrède, voilà votre épée, mais quittons-nous au plus vite.</p>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Moi, vous quitter? eh! que deviendrais-je?<stage>Il pleure.</stage>Je vais mourir.</p>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <p>Non! vivez!</p>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Oui, que je vive!</p>
+        </sp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_une_chose_qui_ne_se_peut_pas">C'est une chose</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="9">Vous aimer et quitter vos appâts,</l>
+            <l met="10">C'est une chose qui ne se peut guère;</l>
+            <l met="9">Vous aimer et quitter vos appâts,</l>
+            <l met="10">C'est une chose qui ne se peut pas.</l>
+            <p>Je devrais déjà être mort.</p>
+          </sp>
+        </spGrp>
+        <pb n="112"/>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+        </sp>
+        <spGrp who="#clorinde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#coucou">Comme un coucou [que l'amour presse]</title>
+            </desc>
+          </head>
+          <sp who="#clorinde">
+            <speaker>Clorinde</speaker>
+            <l met="8">Vivez, Clorinde vous l'ordonne.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <l met="8">Vous me défendez de vous voir.</l>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <l met="8">Hélas! quand je vous abandonne,</l>
+          <l met="8">Je peste contre un fier devoir.</l>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Qu'entends-je!</p>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+        </sp>
+        <spGrp who="#clorinde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#joconde">Joconde</title>
+            </desc>
+          </head>
+          <sp who="#clorinde">
+            <speaker>Clorinde</speaker>
+            <l met="8">Va, fuis, importune fierté,</l>
+            <l met="6">Cesse de me contraindre,</l>
+            <l met="8">Laisse mes feux en liberté,</l>
+            <l met="6">Tu ne peux les éteindre;</l>
+            <l met="8">L'amour me fait sentir des traits,</l>
+            <l met="6">Qui déchirent mon âme:</l>
+            <l met="8">Jugez, par l'aveu que j'en fait,</l>
+            <l met="6">De l'excès de a flamme.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Véritablement, cela est assez vif pour</p>
+          <p>une première déclaration; mais cela est pardonnable.</p>
+        </sp>
+        <pb n="113"/>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_est_certains_petits_moments">[Il est certains petits moments]</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="8">Il est certains petits moments</l>
+            <l met="3">Où les dames,</l>
+            <l met="5">Les filles, les femmes,...</l>
+          </sp>
+        </spGrp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <p>Je réparerai bien tout cela, laissez-moi faire.</p>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Vous m'aimez! que mon sort est charmant.</p>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <p>Pas tant que vous vous l'imaginez, vous avez la gloire à craindre.</p>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Encore la gloire?</p>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <p>Tancrède devrait-il avoir besoin de semblables remontrances; faut-il qu'une femme les lui fasse?</p>
+        </sp>
+        <spGrp who="#clorinde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#toujours_un_bon_gars">Toujours un bon gars</title>
+            </desc>
+          </head>
+          <sp who="#clorinde">
+            <speaker>Clorinde</speaker>
+            <l met="5">Toujours les guerriers:</l>
+            <l met="5">Doivent être alertes,</l>
+            <l met="5">Loin de leurs foyers,</l>
+            <l met="5">Prompts aux découvertes.</l>
+            <l met="5">Et prêts au combat,</l>
+            <l met="5">Quand le tambour bat.</l>
+          </sp>
+        </spGrp>
+        <pb n="114"/>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Je comptais faire l'amour en quartier d'hiver.</p>
+        </sp>
+        <spGrp>
+          <caption>Tous deux</caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#joli_nom">Non, non, il n'est point de si joli nom</title>
+            </desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Sans toi, gloire trop barbare,</l>
+            <l met="7">Nous n'aurions que de beaux jours;</l>
+            <l met="7">Faut-il que ta loi sépare</l>
+            <l met="7">Deux cœurs faits pour les amours?</l>
+            <l met="4">
+              <stage>Tancrède</stage>Quoi donc?<stage>Clorinde</stage>Non, non,</l>
+            <l met="8">
+              <stage>Tancrède</stage>Faut-il que le bruit du canon</l>
+            <l met="8">
+              <stage>Clorinde</stage>Il faut que le bruit du Canon,</l>
+            <l met="7">Et l'éclat de la fanfare,</l>
+            <l met="4">
+              <stage>Tancrède</stage>Quoi donc?<stage>Clorinde</stage>Non, non,</l>
+            <l met="8">
+              <stage>Tancrède</stage>Faut-il que le bruit du canon</l>
+            <l met="8">
+              <stage>Clorinde</stage>Il faut que le bruit du Canon,</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <caption>Tous deux</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Fasse envoler Cupidon.</l>
+          </sp>
+        </spGrp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <p>Séparons-nous, c'est assez chanter.</p>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Adieu, nous allons donc nous battre! dans un moment vous verrez de la besogne bien faite.</p>
+        </sp>
+        <pb n="115"/>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <stage>seule</stage>
+          <p>Ma résolution est prise, pour me punir de mon amour, je vais combattre mon amant.</p>
+        </sp>
+        <spGrp who="#clorinde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#place_au_regiment_de_la_calotte">Place au Régiment de la Calotte.</title>
+            </desc>
+          </head>
+          <sp who="#clorinde">
+            <speaker>Clorinde</speaker>
+            <l met="8">Avertissons le spectateur,</l>
+            <l met="8">Si je le laissais dans l'erreur</l>
+            <l met="8">Je pêcherai contre Aristote;</l>
+            <l met="8">D'Argan je prends la redingote,</l>
+            <l met="8">Comment pourrais-je l'ajuster?</l>
+            <l met="8">N'importe, on pourra se prêter</l>
+            <l met="6">Clorinde, à ta marotte,</l>
+            <l met="4">Et plan, plan, plan,</l>
+            <l met="5">Place au Régiment</l>
+            <l met="4">De la Calotte.</l>
+          </sp>
+        </spGrp>
+        <pb n="116"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 18</head>
+        <stage type="characters">Herminie</stage>
+        <stage>Le théâtre change et représente les remparts d'une ville. On entend un bruit de trompettes, on joue l'air Aux Armes Camarades.</stage>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+        </sp>
+        <spGrp who="#herminie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aux_armes">Aux Armes Camarades</title>
+            </desc>
+          </head>
+          <sp who="#herminie">
+            <speaker>Herminie</speaker>
+            <l met="6">J'entends le bruit des armes,</l>
+            <l met="6">Le soldat en fureur</l>
+            <l met="5">Répand la terreur;</l>
+            <l met="6">J'entends le bruit des armes,</l>
+            <l met="8">Mon cœur en est saisi d'horreur.</l>
+            <l met="6">Ô mortelles alarmes,</l>
+            <l met="6">Cessez de me troubler.</l>
+            <l met="6">Mes yeux, séchez des larmes</l>
+            <l met="6">Qui ternissent vos charmes,</l>
+            <l met="6">Mes yeux, séchez des larmes</l>
+            <l met="6">Qu'un ingrat fait couler.</l>
+            <p>Le jour paraît.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#herminie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reviendrai_demain">Je reviendrai demain au soir</title>
+            </desc>
+          </head>
+          <sp who="#herminie">
+            <speaker>Herminie</speaker>
+            <l met="8">L'éclat qui se répand aux cieux</l>
+            <l met="7">Perce jusqu'en ces lieux...<stage type="bis">bis</stage>
+            </l>
+            <l met="8">La nuit se passe et le jour vient.</l>
+          </sp>
+        </spGrp>
+        <pb n="117"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 19</head>
+        <stage type="characters">Tancrède,<stage>au son des timbales et des trompettes</stage>, Herminie</stage>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+        </sp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_coqs_noirs_ont_battu_les_gris">Les coqs noirs ont battu les gris</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="9">Jamais je ne vis tant de batailles!</l>
+            <l met="9">Jamais je ne vis tant de combats!</l>
+            <l met="8">En un jour, combien de fracas!</l>
+            <l met="5">Le matin combats,</l>
+            <l met="5">Et le soir combats:</l>
+            <l met="9">Jamais je ne vis tant de batailles!</l>
+            <l met="9">Jamais je ne vis tant de combats!</l>
+            <p>Ah! nous y voici encore.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pour_passer_doucement_la_vie">Pour passer doucement la vie</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="8">Eh, quoi! vous verrai-je sans cesse?</l>
+            <l met="8">Quel sort vous offre à mes regards?</l>
+            <l met="8">Que faites-vous ici, Princesse?</l>
+            <l met="8">Que n'allez-vous sur vos remparts?</l>
+          </sp>
+        </spGrp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+        </sp>
+        <spGrp who="#herminie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#eh_comment_ne_pas_se_rendre">Eh! comment ne pas se rendre</title>
+            </desc>
+          </head>
+          <sp who="#herminie">
+            <speaker>Herminie</speaker>
+            <l met="7">Ce même amour qui vous gêne,</l>
+            <l met="10">Seule en ces lieux a su me retenir.</l>
+            <l met="8">Pour vos jours tremblante, incertaine...</l>
+          </sp>
+        </spGrp>
+        <pb n="118"/>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <l met="7">C'est trop aller et venir.</l>
+          <p>Ayez la bonté de vous tenir un moment à l'écart; j'ai quelque chose à me dire.</p>
+        </sp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#passant_sur_le_pont_neuf">Passant sur le Pont-Neuf</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="12">Dans l'horreur de la nuit un guerrier redoutable</l>
+            <l met="12">À mes coups redoublés toujours inébranlable,</l>
+            <l met="4">Par sa défense</l>
+            <l met="8">Me faisait perdre patience;</l>
+            <l met="12">C'était sans doute Argan, quoiqu'il n'eût pas de lance.</l>
+            <p>Je l'ai occis, et l'on va m'apporter ses armes; mais ce qui m'inquiète,</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dondaine_dondaine">Ah! qu'il est beau l'oiseau</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="8">Lorsque je l'ai vu fléchissant,<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Mon cœur de sa mort gémissant</l>
+            <l met="5">Dondaine, dondaine,</l>
+            <l met="6">Sentait en le perçant</l>
+            <l met="4">Beaucoup de peine.</l>
+            <p>Quoiqu'il en soit, Argan est mort.</p>
+          </sp>
+        </spGrp>
+        <sp who="#herminie">
+          <speaker>Herminie</speaker>
+          <p>Hélas!</p>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Je vous conseille de vous en aller.</p>
+        </sp>
+        <stage>Herminie s'en va.</stage>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#qu_on_apporte_bouteille">Qu'on apporte bouteille</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="6">Qu'on apporte les armes</l>
+            <l met="6">Du chevalier vaincu.</l>
+          </sp>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="8">Pour le coup je n'ai plus d'alarmes,</l>
+            <l met="8">D'Argan je reconnais l'écu.</l>
+            <p>Alons,<emph>vivat</emph>, c'est mon rival que j'ai tué. Mais à propos de mon rival, qu'est devenue ma maîtresse? ah! la voilà! mais que vois-je?</p>
+          </sp>
+        </spGrp>
+        <pb n="119"/>
+        <stage>On apporte le bouclier et le casque d'Argan.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 20</head>
+        <stage type="characters">Clorinde<stage>blessée</stage>, Tancrède, Soldats</stage>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+        </sp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#qui_vous_a_margoton">Qui vous a, Margoton</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="7">Quel objet présente-t'on</l>
+            <l met="7">À ma vue épouvantée?</l>
+            <l met="7">Ma Princesse, quel félon</l>
+            <l met="7">Peut vous avoir maltraitée?</l>
+            <l met="9">Qui vous a, qui vous a, Margoton,</l>
+            <l met="8">Qui vous a si bien ajustée?</l>
+          </sp>
+        </spGrp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#clorinde">
+            <speaker>Clorinde</speaker>
+            <l met="7">Ne demandez pas son nom,</l>
+            <l met="7">C'est un coup de votre épée.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <l met="7">Ah! le brave champion!</l>
+          <l met="8">J'ai fait une belle équipée!</l>
+          <l met="9">C'est donc moi, c'est donc moi, Margoton,</l>
+          <l met="8">Qui vous ai si bien ajustée?</l>
+        </sp>
+        <pb n="120"/>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Que je chéris mon cher voisin</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="8">Morbleu! quel trait extravagant!</l>
+            <l met="6">Jugez de ma surprise,</l>
+            <l met="8">Ma foi, j'ai cru tuer Argan,</l>
+            <l met="6">Excusez la méprise.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#tancrede">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#tancrede">
+            <speaker>Tancrède</speaker>
+            <l met="8">Qu'en ce jour mon courage brille,</l>
+            <l met="8">Et que j'en retire un grand fruit!</l>
+            <l met="8">Toute ma valeur se réduit</l>
+            <l met="6">À tuer une fille.</l>
+          </sp>
+        </spGrp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+          <p>Allez, je vous pardonne: comment auriez-vous pu me reconnaître sous les armes d'Argan?</p>
+        </sp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <p>Quoi! vous portiez les armes de ce géant? qui diable s'en serait douté? il faut avouer que tout va bien aux dames.</p>
+        </sp>
+        <sp who="#clorinde">
+          <speaker>Clorinde</speaker>
+        </sp>
+        <spGrp who="#clorinde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_ceux_qui_l_ont_tue">Les ceux qui l'ont tué</title>
+            </desc>
+          </head>
+          <sp who="#clorinde">
+            <speaker>Clorinde</speaker>
+            <l met="6">Mes yeux à la lumière</l>
+            <l met="6">Vont bientôt se fermer,</l>
+            <l met="6">Je finis ma carrière</l>
+            <l met="6">Sans cesser de t'aimer,</l>
+            <l met="10">Prends bien soin de tes jours dans ta douleur;</l>
+            <l met="10">Et ne va pas mourir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tancrede">
+          <speaker>Tancrède</speaker>
+          <l met="10">N'ayez pas peur.</l>
+        </sp>
+        <stage>On emporte Clorinde.</stage>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

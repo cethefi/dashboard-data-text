@@ -1,0 +1,1559 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="le_jugement_de_paris">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Le Jugement de Pâris</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>D'Orneval</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">FIXME - missing source</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="gargot" sex="UNKNOWN">
+            <persName>Monsieur Gargot</persName>
+          </person>
+          <person xml:id="lamour" sex="UNKNOWN">
+            <persName>L'Amour</persName>
+          </person>
+          <person xml:id="discorde" sex="UNKNOWN">
+            <persName>La Discorde</persName>
+          </person>
+          <person xml:id="hymen" sex="UNKNOWN">
+            <persName>L'Hymen</persName>
+          </person>
+          <person xml:id="undesnormands" sex="UNKNOWN">
+            <persName>Un des Normands</persName>
+          </person>
+          <person xml:id="normand" sex="UNKNOWN">
+            <persName>Normand</persName>
+          </person>
+          <person xml:id="lestroisdeesses" sex="UNKNOWN">
+            <persName>Les trois Déesses</persName>
+          </person>
+          <person xml:id="jupiter" sex="UNKNOWN">
+            <persName>Jupiter</persName>
+          </person>
+          <person xml:id="junon" sex="UNKNOWN">
+            <persName>Junon</persName>
+          </person>
+          <person xml:id="pallas" sex="UNKNOWN">
+            <persName>Pallas</persName>
+          </person>
+          <person xml:id="venus" sex="UNKNOWN">
+            <persName>Vénus</persName>
+          </person>
+          <person xml:id="mercure" sex="UNKNOWN">
+            <persName>Mercure</persName>
+          </person>
+          <person xml:id="thetis" sex="UNKNOWN">
+            <persName>Thétis</persName>
+          </person>
+          <person xml:id="pelee" sex="UNKNOWN">
+            <persName>Pélée</persName>
+          </person>
+          <person xml:id="l_amour" sex="UNKNOWN">
+            <persName>L'Amour</persName>
+          </person>
+          <person xml:id="l_hymen" sex="UNKNOWN">
+            <persName>L'Hymen</persName>
+          </person>
+          <person xml:id="troupe_de_divinites_celestes" sex="UNKNOWN">
+            <persName>Troupe de divinités célestes</persName>
+          </person>
+          <person xml:id="monsieur_gargot" sex="UNKNOWN">
+            <persName>Monsieur Gargot</persName>
+          </person>
+          <person xml:id="garcons_cabaretiers" sex="UNKNOWN">
+            <persName>Garçons cabaretiers</persName>
+          </person>
+          <person xml:id="paris" sex="UNKNOWN">
+            <persName>Pâris</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Pièce d'un acte</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1718">
+        <desc> 1718</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#jupiter">Jupiter</role>
+        </castItem>
+        <castItem>
+          <role ana="#junon">Junon</role>
+        </castItem>
+        <castItem>
+          <role ana="#pallas">Pallas</role>
+        </castItem>
+        <castItem>
+          <role ana="#venus">Vénus</role>
+        </castItem>
+        <castItem>
+          <role ana="#mercure">Mercure</role>
+        </castItem>
+        <castItem>
+          <role ana="#thetis">Thétis</role>
+        </castItem>
+        <castItem>
+          <role ana="#pelee">Pélée</role>
+        </castItem>
+        <castItem>
+          <role ana="#l_amour">L'Amour</role>
+        </castItem>
+        <castItem>
+          <role ana="#l_hymen">L'Hymen</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_divinites_celestes">Troupe de divinités célestes</role>
+        </castItem>
+        <castItem>
+          <role ana="#monsieur_gargot">Monsieur Gargot</role>
+          <roleDesc>cabaretier</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#garcons_cabaretiers">Garçons cabaretiers</role>
+        </castItem>
+        <castItem>
+          <role ana="#paris">Pâris</role>
+          <roleDesc>Arlequin</roleDesc>
+        </castItem>
+      </castList>
+      <prologue>
+        <spGrp rend="trpta">
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+          </sp>
+        </spGrp>
+        <stage type="location">La scène est d'abord à la Chasse Royale, cabaret du Pont aux choux<note>
+            <emph>Le Pont aux choux</emph>: situé « entre l'endroit où était la porte du Temple et la porte Saint-Antoine, et sur les fossés de la ville, on a bâti un pont qu'on nomme le Pont aux choux, à cause qu'il est dans un faubourg où il y a beaucoup de jardins potagers, qui fournissent à Paris quantité de légumes, et particulièrement des choux », par Pierre Thomas Nicolas Hurtaut,<emph>Dictionnaire historique de la ville de Paris et de ses environs</emph>, Paris, Chez Moutard, 1779, t.~IV, p.~98.</note>, et ensuite dans un hameau voisin de la Seine.</stage>
+        <stage type="location">Le théâtre représente la Chasse Royale du Pont aux choux, avec cette inscription: « Ici l'on fait noces et festins ».</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Mercure, Monsieur Gargot</stage>
+        <spGrp who="#mercure">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_nos_forets">On n'aime point dans nos forêts</title>
+            </desc>
+          </head>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <l met="8">Serviteur à Monsieur Gargot!</l>
+          </sp>
+        </spGrp>
+        <sp who="#gargot">
+          <speaker>Monsieur Gargot</speaker>
+          <l met="8">Que vois-je! C'est le dieu Mercure?</l>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <l met="8">Je vous amène un bon écot<note type="definition">Écot: Signifie la compagnie des personnes qui mangent ensemble dans un cabaret (Acad.1762)</note>.</l>
+        </sp>
+        <sp who="#gargot">
+          <speaker>Monsieur Gargot</speaker>
+          <l met="8">C'est quelque galante aventure.</l>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <l met="8">Non, Jupiter vient en ce jour</l>
+          <l met="8">Chez vous avec toute sa cour.</l>
+          <p>Nous y venons célébrer les noces de Thétis et de Pélée<note>C'est à l'occasion du mariage du Roi Pélée et de la Néréide Thétis qu'eut lieu l'épisode de la pomme de la discorde.</note>.</p>
+        </sp>
+        <spGrp who="#mercure">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dondaine_dondaine">Dondaine, dondaine</title>
+            </desc>
+          </head>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <l met="8">Vous y verrez Pallas, Junon,<stage>bis</stage>
+            </l>
+            <l met="8">Et la mère de Cupidon.</l>
+            <l met="5">Dondaine, dondaine,</l>
+            <l met="6">Et mainte autre dondon<note type="definition">Dondon: On appelle ainsi familièrement une femme ou une fille qui a beaucoup d'embonpoint et de fraîcheur (Acad.1762)</note>
+            </l>
+            <l met="3">Olympienne.</l>
+          </sp>
+        </spGrp>
+        <sp who="#gargot">
+          <speaker>Monsieur Gargot</speaker>
+          <p>Le grand Jupiter fait trop d'honneur à ma guinguette. Je vais me mettre en quatre pour contenter une si belle compagnie.</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Ils ont déjà dîné. Ils viennent pour passer ici l'après-dînée, et y souper ensuite.<stage>Il lui donne un papier.</stage>Tenez. Voilà l'ordre du repas. Mettez vite la main à la pâte.</p>
+        </sp>
+        <sp who="#gargot">
+          <speaker>Monsieur Gargot</speaker>
+          <p>Je ne perdrai point de temps. Holà, garçons! Vous placerez ces deux bourgeoises avec ces deux officiers dans la chambre sur le devant.</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>L'ordre est judicieux.</p>
+        </sp>
+        <sp who="#gargot">
+          <speaker>Monsieur Gargot</speaker>
+          <p>Ils avaient retenu celle-ci qui est plus particulière.</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Ils choisissent bien les logements! Ce sont apparemment deux maréchaux des logis<note type="definition">Maréchal des logis: Sous-officier des troupes à cheval, chargé des détails du service, de la discipline intérieure d'une compagnie, et notamment de tout ce qui concerne le logement (Acad.1835)</note>.</p>
+        </sp>
+        <sp who="#gargot">
+          <speaker>Monsieur Gargot</speaker>
+          <p>Garçons, mettez du vin au frais.</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Oui, mais point de chasse-cousin<note type="definition">Chasse-cousin: On appelle ainsi le mauvais vin (Acad.1694)</note>, s'il vous plaît.</p>
+        </sp>
+        <sp who="#gargot">
+          <speaker>Monsieur Gargot</speaker>
+          <p>Oh, nous n'avons que du bon!</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Eh! mon enfant, à qui vendez-vous vos coquilles<note type="definition">Coquille: On dit proverbialement à un homme qui en veut tromper un autre aussi fin que lui, ou lui débiter quelque chose dont il ne fait pas grand cas, ou lui en faire accroire en des choses qu'il sait mieux que ceux qui lui en parlent: "À qui vendez-vous vos coquilles"? (Acad.1694)</note>? Ce n'est pas le vin qu'on vient chercher ici.</p>
+        </sp>
+        <sp who="#gargot">
+          <speaker>Monsieur Gargot</speaker>
+          <p>D'accord; mais j'en ai d'excellent.</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Il faudra qu'il soit exquis pour piquer des gosiers accoutumés au nectar. Un peu trop de douceur ou d'âcreté les dégoûtera.</p>
+        </sp>
+        <sp who="#gargot">
+          <speaker>Monsieur Gargot</speaker>
+          <p>De l'âcreté!</p>
+        </sp>
+        <spGrp who="#gargot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#gargot">
+            <speaker>Monsieur Gargot</speaker>
+            <l met="8">Loin de trouver mes vins trop âcres,</l>
+            <l met="8">Je réponds que messieurs les dieux</l>
+            <l met="8">S'en retourneront tous aux cieux</l>
+            <l met="6">Plus ivres que des fiacres<note type="definition">Fiacre: C'est un nom qu'on donne tant au cocher qu'au carrosse de louage (Acad.1762)</note>.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Si cela arrive, les déesses seront aussi bien conditionnées<note type="definition">Être bien conditionné: On dit d'un homme fort ivre qu'il est bien conditionné (Acad.1798)</note>, sur ma parole.</p>
+        </sp>
+        <spGrp who="#mercure">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lonlanla_derirette">Lonlanla, derirette</title>
+            </desc>
+          </head>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <l met="8">Ma foi, le sexe féminin</l>
+            <l met="8">Aujourd'hui fait honneur au vin,</l>
+            <l met="6">Lonlanla, derirette.</l>
+          </sp>
+        </spGrp>
+        <sp who="#gargot">
+          <speaker>Monsieur Gargot</speaker>
+          <l met="8">Qui le voit mieux que nous ici?</l>
+          <l met="6">Lonlanla, deriri.</l>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Mais voici Jupiter.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Jupiter, Junon, Pallas, Vénus, Mercure, l'Hymen, Thétis, Pélée, Troupe de divinités, Monsieur Gargot</stage>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <stage>tenant Thétis par la main, s'avance en chantant</stage>
+          <l met="12">Allons, allons, allons, à la guinguette, allons.</l>
+          <p>De la joie, mes enfants, de la joie! Je suis en train aujourd'hui. Divertissons-nous. Du vin, du vin comme de l'eau!</p>
+        </sp>
+        <sp who="#gargot">
+          <speaker>Monsieur Gargot</speaker>
+          <p>Vous en aurez bientôt de frais.</p>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Et des violons, n'y en a-t-il pas ici?</p>
+        </sp>
+        <sp who="#gargot">
+          <speaker>Monsieur Gargot</speaker>
+          <p>D'excellents.</p>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Bon. Tant mieux. Je veux danser et me réjouir comme un compère<note type="definition">Compère: On dit figurément d'un homme fort éveillé, fort alerte pour ses intérêts ou pour son plaisir, que c'est un compère (Acad.1694)</note>.</p>
+        </sp>
+        <sp who="#gargot">
+          <speaker>Monsieur Gargot</speaker>
+          <stage>bas, à Mercure</stage>
+          <p>Ce Jupiter me paraît bonhomme<note type="definition">Bonhomme: Homme simple et peu avisé (Littré)</note>. Je le crois même un peu bête<note>Note de l'éditeur : « Dans le ballet du<emph>Jugement de Pâris</emph>qu'on jouait alors à l'Opéra, Jupiter y paraît un peu de ce caractère ».</note>.</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <stage>bas, à Gargot</stage>
+          <p>Vous lui faites grâce du peu.</p>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <stage>sautant lourdement</stage>
+          <p>Dansons. Chantons. Morbleu, qu'il est doux de laisser sa qualité à la porte d'une guinguette et de goûter des plaisirs à la croque-au-sel<note type="definition">Croque-au-sel: On dit manger quelque chose à la croque-au-sel pour dire "la manger sans autre assaisonnement que le sel" (Acad.1762)</note>!</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Aussi, cela se fait assez souvent.</p>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Mais, Dame Vénus, je ne vois point ici votre fils. Où est-il donc, ce petit coquin?</p>
+        </sp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <p>Je ne sais. Il ne suit que sa fantaisie.</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Vous ne l'attendrez pas longtemps. Le voici.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Les acteurs de la scène précédente, l'Amour<note>Note de l'éditeur: « Un enfant de six ans faisait ce personnage ».</note>
+        </stage>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <p>Hé, d'où venez-vous donc, petit fripon?</p>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'Amour</speaker>
+          <stage>d'un air brusque</stage>
+          <p>Oh, dame, chacun a ses affaires!</p>
+        </sp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <p>Comme vous répondez! Qu'avez-vous donc? Quelle mine vous faites!</p>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'Amour</speaker>
+          <p>Je ne saurais la faire meilleure, tant que je verrai devant moi ce benêt<note type="definition">Benêt: Niais, sot (Acad.1762)</note>d'Hymen. C'est ma bête.</p>
+        </sp>
+        <sp who="#hymen">
+          <speaker>L'Hymen</speaker>
+          <stage>à l'Amour</stage>
+        </sp>
+        <spGrp who="#hymen">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jus_octobre">Quand je tiens de ce jus d'octobre</title>
+            </desc>
+          </head>
+          <sp who="#hymen">
+            <speaker>L'Hymen</speaker>
+            <l met="8">En vain, vous faites la grimace;</l>
+            <l met="8">Je triomphe en cet heureux jour.</l>
+            <l met="8">Cédez le pas de bonne grâce.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamour">
+          <speaker>L'Amour</speaker>
+          <stage>à l'Hymen</stage>
+          <l met="8">Cédez-le vous-même à l'Amour.</l>
+        </sp>
+        <stage>Riant.</stage>
+        <sp who="#lamour">
+          <speaker>L'Amour</speaker>
+          <p>Ha, ha, ha! Regardez un peu ce nigaud, avec sa face de papier mâché.</p>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#y_avance_y_avance">Y avance, y avance</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'Amour</speaker>
+            <l met="8">Ah, voyez donc comme il est fait!</l>
+            <l met="8">Avec ton air plat et discret</l>
+            <l met="8">Tu fais trop le dieu d'importance.</l>
+            <l met="8">Y avance, y avance, y avance,</l>
+            <l met="8">Avec ton habit d'ordonnance<note type="definition">Habit d'ordonnance: L'habillement uniforme que les officiers et les soldats doivent avoir dans chaque corps militaire ou dans une certaine compagnie du corps (Acad.1798)</note>.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Mes enfants, point de querelle.</p>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'Amour</speaker>
+          <p>Je suis fâché d'être venu ici, puisque je l'y trouve.</p>
+        </sp>
+        <sp who="#hymen">
+          <speaker>L'Hymen</speaker>
+          <p>Tout beau, Seigneur Cupidon. Ma compagnie vous fait honneur, au moins.</p>
+        </sp>
+        <spGrp who="#hymen">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#petit_boudrillon">Petit Boudrillon<note type="definition">Boudrillon: Homme de petite taille (Littré)</note>
+              </title>
+            </desc>
+          </head>
+          <sp who="#hymen">
+            <speaker>L'Hymen</speaker>
+            <l met="6">Malgré cette humeur vaine,</l>
+            <l met="6">Dans plus d'une maison,</l>
+            <l met="3">Boudrillon,</l>
+            <l met="6">Vous ne pouvez, sans peine,</l>
+            <l met="6">Entrer que sous mon nom,</l>
+            <l met="3">Boudrillon,</l>
+            <l met="5">Petit boudrillon,</l>
+            <l met="5">Boudrillon dondaine,</l>
+            <l met="5">Petit boudrillon,</l>
+            <l met="5">Boudrillon dondon.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamour">
+          <speaker>L'Amour</speaker>
+          <p>Il est vrai que vous êtes un prête-nom. Mais sans moi, mon ami, vous auriez l'air d'attendre longtemps la pratique<note type="definition">Pratique: Se dit des personnes qui donnent de l'emploi à un marchand, à un artisan, à un ouvrier, à un procureur, à un médecin, etc. (Acad.1762)</note>.</p>
+        </sp>
+        <sp who="#hymen">
+          <speaker>L'Hymen</speaker>
+          <p>Pourquoi donc, sans vous?</p>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'Amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_m_entendez_vous_pas">Ne m'entendez-vous pas</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'Amour</speaker>
+            <l met="6">J'aveugle les amants</l>
+            <l met="6">Qui prennent votre chaîne.</l>
+            <l met="6">C'est moi qui vous les mène,</l>
+            <l met="6">Qui, cachant vos tourments,</l>
+            <l met="6">Leur peins vos nœuds charmants.</l>
+            <p>Après tout, vous n'avez que mes restes.</p>
+          </sp>
+        </spGrp>
+        <sp who="#hymen">
+          <speaker>L'Hymen</speaker>
+          <p>Oh, je me passe de vous assez souvent.</p>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'Amour</speaker>
+          <p>Oui, mais cela va d'une belle dégaine, quand je ne suis pas de la partie.</p>
+        </sp>
+        <sp who="#hymen">
+          <speaker>L'Hymen</speaker>
+          <p>Allez. Vous n'êtes qu'un libertin.</p>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'Amour</speaker>
+          <p>Et vous, qu'un vil esclave. Écoutez ce que dit l'Opéra.</p>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_hymen_vient_quand_on_l_appelle">L'Hymen vient [quand on l'appelle]</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'Amour</speaker>
+            <l met="7">L'Hymen vient quand on l'appelle,</l>
+            <l met="7">L'Amour vient quand il lui plaît<note>Citation extraite d'<emph>Atys</emph>de Quinault et Lully (IV, 5).</note>.</l>
+            <p>L'Opéra met entre nous bien de la différence, comme vous voyez.</p>
+          </sp>
+        </spGrp>
+        <sp who="#hymen">
+          <speaker>L'Hymen</speaker>
+          <p>L'Opéra dit bien d'autres sottises. C'est un impertinent et vous aussi.</p>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'Amour</speaker>
+          <stage>le frappant</stage>
+          <p>Et vous, vous êtes un sot.</p>
+        </sp>
+        <sp who="#hymen">
+          <speaker>L'Hymen</speaker>
+          <stage>se défendant</stage>
+          <p>À qui en veut donc ce brutal?</p>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <stage>les séparant</stage>
+          <p>Hé bien, hé bien... Cela finira-t-il bientôt? On vient ici pour se réjouir, et...</p>
+        </sp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <p>Allons, mon fils, soyez sage.</p>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <stage>à l'Amour</stage>
+          <p>Je veux que vous vous raccommodiez avec l'Hymen: tout en ira mieux.</p>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'Amour</speaker>
+          <p>Au contraire. Sans mes petits tours de passe-passe, tout irait sans dessus-dessous. Voulez-vous que je vous le prouve?</p>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Voyons.</p>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'Amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_ces_lieux_tout_rit">Dans ces lieux tout rit sans cesse</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'Amour</speaker>
+            <l met="7">Si d'une pudique flamme</l>
+            <l met="7">Le magistrat, le marquis</l>
+            <l met="7">Brûlait toujours pour sa femme,</l>
+            <l met="10">Que deviendraient cent belles à Paris?</l>
+          </sp>
+        </spGrp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Il a raison.</p>
+        </sp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <p>L'enfant dit vrai.</p>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'Amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'Amour</speaker>
+            <l met="8">Très souvent d'un père à béquille,</l>
+            <l met="8">Qui se voit sans espoir d'enfant,</l>
+            <l met="8">Je sais recruter la famille</l>
+            <l met="8">Et faire honneur à ses vieux ans.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Cela est véritable.</p>
+        </sp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <p>Oh, pour cela, oui!</p>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'Amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'Amour</speaker>
+            <l met="8">Ce procureur à mine austère</l>
+            <l met="8">Pourrait-il, par sa maigre chère,</l>
+            <l met="8">Garder jamais de clercs chez lui</l>
+            <l met="8">Si Madame la procureuse,</l>
+            <l met="8">En secret, plaignant leur ennui,</l>
+            <l met="8">Ne leur devenait gracieuse?</l>
+            <p>C'est pourtant mon ouvrage, cela.</p>
+          </sp>
+        </spGrp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Mais... mais... il a raison.</p>
+        </sp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <p>L'enfant dit vrai.</p>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'Amour</speaker>
+          <p>Sans moi, que deviendraient la Villette, Passy, les bois de Boulogne et de Vincennes, Charenton, la Rapée<note>Lieux de débauche.</note>etc. ? Ces doux asiles des époux mal assortis, ces correctifs de la nonchalance des maris deviendraient d'affreux déserts.</p>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Tout cela est le mieux du monde, mon enfant; mais fais quelque chose pour Thétis et Pélée.</p>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'Amour</speaker>
+          <p>Soit. Mais ce sera sans tirer à conséquence.</p>
+        </sp>
+        <stage>Jupiter, pour mieux accorder l'Hymen et l'Amour, les fait boire ensemble. Ensuite, il dit:</stage>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Voilà qui est bien. Dansons présentement.</p>
+        </sp>
+        <stage>Les divinités subalternes commencent à danser; mais leur danse est tout à coup interrompue par un grand bruit qu'on entend dessous le théâtre. Il s'ouvre un abîme, d'où il s'élève une épaisse vapeur<note>Le théâtre de l'Opéra-Comique devait avoir une trappe, permettant cette mise en scène. Dans<emph>Le Monde renversé</emph>, représenté à la même Foire et par la même troupe, on retrouve un effet similaire: « il sort dans le moment une table à deux couverts de dessous le théâtre » (I, 1)</note>.</stage>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Que signifie donc cette vapeur-là? Qui diable fait un si grand sabbat<note type="definition">Sabbat: Grand bruit qui se fait avec désordre, avec confusion, tel que l'on s'imagine celui du sabbat (Acad.1694)</note>?<stage>Apercevant la Discorde qui sort de l'abîme.</stage>Ah, morbleu! C'est cette vilaine Discorde!<stage>Tapant du pied.</stage>Voilà bien du rabat-joie. Jarni!</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Les acteurs de la scène précédente, la Discorde<stage>appuyée sur deux Bas-Normands dont l'un tient à la main une grosse pomme</stage>
+        </stage>
+        <sp who="#discorde">
+          <speaker>La Discorde</speaker>
+          <stage>parlant avec un accent normand marqué</stage>
+          <p>Ah, ha, je vous y attrape! Dianche! Comme vo z'y âllez! Hé, d'où vient donc que vous ne m'avez pas priée de lâ noche?</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>On a grand tort assurément.</p>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <stage>en colère</stage>
+          <p>Peste de Normande, ta présence m'afflige! Va-t-en au Diable.</p>
+        </sp>
+        <sp who="#discorde">
+          <speaker>La Discorde</speaker>
+          <p>Hé, vas-y tey-même, grand Chenâpan.</p>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="chorus_melody">
+            <desc type="part"> de l'air</desc>
+            <title>
+              <title ref="#morguenne">Morguienne de vous</title>
+            </title>
+          </head>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <l met="5">Morguienne de vous,</l>
+            <l met="5">Quell' femme, quell' femme,</l>
+            <l met="5">Morguienne de vous,</l>
+            <l met="5">Quell' femme êtes-vous!</l>
+          </sp>
+        </spGrp>
+        <sp who="#discorde">
+          <speaker>La Discorde</speaker>
+          <p>J'aurais été de trop ichit, apparemment. No valons pourtant bien toutes ces pimbêches-là.</p>
+        </sp>
+        <spGrp who="#discorde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reviendrai_demain">Je reviendrai demain au soir</title>
+            </desc>
+          </head>
+          <sp who="#discorde">
+            <speaker>La Discorde</speaker>
+            <l met="8">Demandez à ces deux Normands</l>
+            <l met="6">Combien j'ai fait d'amants.<stage>bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#undesnormands">
+          <speaker>Un des Normands</speaker>
+          <l met="8">Donn' z'au guièble<note>« Je te donne au diable ».</note>, tout notre pays</l>
+          <l met="6">En va pour ses attraits.<stage>bis</stage>
+          </l>
+        </sp>
+        <sp who="#discorde">
+          <speaker>La Discorde</speaker>
+        </sp>
+        <spGrp who="#discorde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air : Menuet de</desc>
+            <desc type="title">
+              <title ref="#monsieur_de_grandval">Monsieur de Grandval</title>
+            </desc>
+          </head>
+          <sp who="#discorde">
+            <speaker>La Discorde</speaker>
+            <l met="8">Domfront reconnaît ma puissance,</l>
+            <l met="8">Ainsi que Valogne et Guibray;</l>
+            <l met="8">L'on m'adore à Vire, à Coutance;</l>
+            <l met="8">Tout Caen<note>Domfront, Valogne, Guibray, Vire, Coutance et Caen sont toutes des villes de Normandie.</note>ne jure que par mey.</l>
+          </sp>
+        </spGrp>
+        <sp who="#undesnormands">
+          <speaker>Un des Normands</speaker>
+          <p>Oh, vère, mâ fey<note>« Par ma foi ».</note>!</p>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Plaisante puissance.</p>
+        </sp>
+        <sp who="#normand">
+          <speaker>Normand</speaker>
+          <p>All'est aussi pissante que vo, si pus n'est.</p>
+        </sp>
+        <sp who="#discorde">
+          <speaker>La Discorde</speaker>
+          <stage>entrant en fureur</stage>
+          <p>Vère, guieu me dânne! Par la sang guiêble! Il me prend envie de vo galvauder tretous, et de jeter par les fernêtres les dieux, les diesses et les violons z'aussi.</p>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <p>Ma commère, ne te fâche point. Si nous ne t'avons pas mise de la partie, ce n'a point été par mépris. Tu sais que je t'ai toujours aimée.</p>
+        </sp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <p>On nous a dit que tu avais affaire aujourd'hui.</p>
+        </sp>
+        <sp who="#discorde">
+          <speaker>La Discorde</speaker>
+          <p>Cela est vrai. On a besoin de mey dans l'Université de Pâris, où l'on va procéder à l'élection d'un recteur. Mais,<emph>item</emph>
+            <note type="definition">Item: De plus (Acad.1762)</note>, il fallait tréjours me semoncer de lâ noche.</p>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <p>Tu n'aurais rien perdu pour cela, mon enfant, nous t'aurions gardé une part de gâteau.</p>
+        </sp>
+        <sp who="#discorde">
+          <speaker>La Discorde</speaker>
+          <stage>avec un ris perfide</stage>
+          <p>Ah, que vo z'êtes de brâves femmes! Tenez, par reconnaissance v'là un petit présent que je vo fais.</p>
+        </sp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <p>Voyons, voyons.</p>
+        </sp>
+        <sp who="#discorde">
+          <speaker>La Discorde</speaker>
+          <p>C'est une poume de Vire z'en Normandie.<stage>Elle prend la pomme des mains du Normand.</stage>Que Junon, Pallas et Vénus se la disputent.</p>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <stage>à la Discorde</stage>
+        </sp>
+        <spGrp who="#junon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#coucou">Comme un coucou que l'amour presse</title>
+            </desc>
+          </head>
+          <sp who="#junon">
+            <speaker>Junon</speaker>
+            <l met="8">Ah, donne-la-moi, ma mignonne!</l>
+            <l met="8">Avec quel plaisir je la vois!</l>
+          </sp>
+        </spGrp>
+        <sp who="#discorde">
+          <speaker>La Discorde</speaker>
+          <l met="8">Non, s'il vo pglait, je ne la donne</l>
+          <l met="8">Qu'à la plus belle de vo trois.</l>
+        </sp>
+        <sp who="#lestroisdeesses">
+          <speaker>Les trois Déesses</speaker>
+          <stage>ensemble</stage>
+          <p>C'est donc pour moi, c'est donc pour moi!</p>
+        </sp>
+        <sp who="#discorde">
+          <speaker>La Discorde</speaker>
+          <stage>donnant la pomme à Jupiter</stage>
+          <p>Tenez, vieux grigou<note type="definition">Grigou: Un gredin, un misérable qui n'a pas de quoi vivre; ou celui qui, ayant de quoi vivre, fait le gueux et vit d'une manière sordide (Acad.1762)</note>. C'est en vos mains que je lâ remets, pour en faire l'adjudication comme adviserez bon être.</p>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Hé, que voulez-vous que j'en fasse, moi?</p>
+        </sp>
+        <sp who="#discorde">
+          <speaker>La Discorde</speaker>
+          <p>Ce qu'il vo pglaira. Adieu. Réjouissez-vo bien, mez'efans. Cette poume vo bâillera du tintoin, comptez là-dessus.</p>
+        </sp>
+        <stage>Elle rentre dans l'abîme.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Jupiter, Junon, Pallas, Vénus, Mercure</stage>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Peste de la carogne, avec sa chienne de pomme.</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Hé, pourquoi la preniez-vous? En vous la donnant on vous avertit qu'elle sera fatale et vous êtes assez sot pour la recevoir!</p>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Oui, j'ai tort, il est vrai, j'ai tort. Ah, maudite Discorde!</p>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <p>Çà, çà, qu'on nous donne cette pomme.</p>
+        </sp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <p>Ne différons point.</p>
+        </sp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <p>C'est le plus pressé.</p>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Hé bien, hé bien, ne voilà-t-il pas déjà le commencement du branle<note type="definition">Branle: Espèce de danse de plusieurs personnes qui se tiennent par la main et qui se mènent tour à tour (Acad.1762)</note>? Ah, que je prévois de maux à l'heure qu'il est!</p>
+        </sp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+        </sp>
+        <spGrp who="#pallas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#robin_ture_lure_lure">Robin, turelure lure</title>
+            </desc>
+          </head>
+          <sp who="#pallas">
+            <speaker>Pallas</speaker>
+            <l met="7">Mon papa, dépêchez-vous.</l>
+            <l met="7">Considérez ma figure.</l>
+          </sp>
+        </spGrp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <l met="7">Allons, mon fils, jugez-nous.</l>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <stage>branlant la tête</stage>
+          <l met="3">Turelure.</l>
+        </sp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <l met="7">J'aurai le prix, je vous jure.</l>
+        </sp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <stage>se moquant</stage>
+          <l met="7">Robin, turelure lure.</l>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Oh, que je me garderai bien de prononcer entre vous!</p>
+        </sp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+        </sp>
+        <spGrp who="#pallas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#laire_la">Laire la, laire lan laire</title>
+            </desc>
+          </head>
+          <sp who="#pallas">
+            <speaker>Pallas</speaker>
+            <l met="8">Décidez en maître des dieux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <l met="8">Il ne faut avoir que des yeux</l>
+          <l met="8">Pour bien décider cette affaire.</l>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <l met="7">Laire la, laire lan laire,</l>
+          <l met="3">Laire la,</l>
+          <l met="4">Laire lan la.</l>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <p>Je n'en ferai rien, vous dis-je. Rapportez-vous-en à quelque mortel qui ait du discernement.</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>J'ai votre fait, Mesdames.</p>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <p>Qui?</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Pâris. C'est un berger de Charenton, un virtuose qui fait arrêter les carrosses et nouer l'aiguillette<note type="definition">Nouer l'aiguillette: Empêcher par un prétendu maléfice la consommation du mariage (Acad.1694)</note>.</p>
+        </sp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <p>J'ai entendu parler de ce drôle-là.</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+        </sp>
+        <spGrp who="#mercure">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air : Menuet d'<emph>Hésione</emph>
+            </desc>
+            <desc type="title"/>
+          </head>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <l met="8">C'est lui qui juge les querelles</l>
+            <l met="8">De tous les bergers d'alentour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <l met="8">Qu'il juge donc trois immortelles;</l>
+          <l met="8">Qu'il ait cet honneur en ce jour.</l>
+        </sp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+          <stage>à Mercure</stage>
+          <p>Portez vite cette pomme à Pâris: qu'il la donne à qui elle appartient. Pour nous, que cela ne regarde plus, continuons de nous réjouir.</p>
+        </sp>
+        <stage>Le théâtre change en cet endroit et représente un hameau près de la rivière.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Pâris<stage>seul</stage>
+        </stage>
+        <stage>Il est assis sous un arbre touffu. Après avoir achevé de jouer de la flûte, il chante:</stage>
+        <spGrp>
+          <head type="melody" subtype="chorus_melody">
+            <desc type="part"> de l'air</desc>
+            <title>
+              <title ref="#gardons_moutons">Gardons nos moutons</title>
+            </title>
+          </head>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <l met="5">Gardons nos moutons,</l>
+            <l met="5">Lirette, liron,</l>
+            <l met="6">Liron, liré, lirette.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Pâris, Mercure</stage>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+        </sp>
+        <spGrp who="#mercure">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Voulez-vous savoir qui des deux</title>
+            </desc>
+          </head>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <l met="8">Apprends à quel sort glorieux</l>
+            <l met="8">T'élève le maître des dieux;</l>
+            <l met="8">Il met en tes mains la querelle</l>
+            <l met="8">De Junon, Pallas et Vénus.</l>
+          </sp>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <l met="8">Donne ce prix à la plus belle.</l>
+            <l met="8">Voilà ses ordres absolus.</l>
+          </sp>
+        </spGrp>
+        <stage>Il lui présente la pomme.</stage>
+        <sp who="#paris">
+          <speaker>Pâris</speaker>
+          <stage>après avoir bien considéré la pomme</stage>
+        </sp>
+        <spGrp who="#paris">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_nos_forets">On n'aime point dans nos forêts</title>
+            </desc>
+          </head>
+          <sp who="#paris">
+            <speaker>Pâris</speaker>
+            <l met="8">Jupiter me gonfle d'honneur.</l>
+            <l met="8">Vous pouvez, mon ami Mercure,</l>
+            <l met="8">Aller dire à ce bon Seigneur</l>
+            <l met="8">Qu'il doit compter sur ma droiture.</l>
+          </sp>
+          <sp who="#paris">
+            <speaker>Pâris</speaker>
+            <l met="8">Quel bruit fait retentir ces lieux?</l>
+          </sp>
+        </spGrp>
+        <stage>On entend un bruit de trompettes et de timbales.</stage>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <l met="8">C'est Pallas qui s'offre à tes yeux.</l>
+        </sp>
+        <stage>Mercure disparaît.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Pâris, Pallas</stage>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+        </sp>
+        <spGrp who="#pallas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#patapatapan">Pata, pata, pata, pon</title>
+            </desc>
+          </head>
+          <sp who="#pallas">
+            <speaker>Pallas</speaker>
+            <l met="7">Suis, Pâris, mes étendards,</l>
+            <l met="8">Si tu veux briller dans l'histoire;</l>
+            <l met="7">Viens dans les nobles hasards</l>
+            <l met="8">Chercher une immortelle gloire.</l>
+            <l met="5">La fière Pallas</l>
+            <l met="4">Suivra tes pas</l>
+            <l met="4">Dans les combats;</l>
+            <l met="4">Tu deviendras</l>
+            <l met="4">Un fier à bras<note type="definition">Fier à bras: Fanfaron qui fait le brave et le furieux (Acad.1762)</note>.</l>
+          </sp>
+        </spGrp>
+        <stage>On entend un bruit de tonnerre.</stage>
+        <sp who="#paris">
+          <speaker>Pâris</speaker>
+          <stage>tombant sur le ventre</stage>
+          <p>Hoïmé! Je suis mort.</p>
+        </sp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <stage>le relevant</stage>
+          <p>Ne crains rien. C'est Junon qui s'approche.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Pâris, Pallas, Junon</stage>
+        <sp who="#paris">
+          <speaker>Pâris</speaker>
+          <p>Morbleu, Madame Junon, vous m'avez fait grand peur! Ne sauriez-vous marcher d'une manière moins bruyante?</p>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+        </sp>
+        <spGrp who="#junon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Voulez-vous savoir qui des deux</title>
+            </desc>
+          </head>
+          <sp who="#junon">
+            <speaker>Junon</speaker>
+            <l met="8">Berger, ce qui cause ta peur,</l>
+            <l met="8">N'était que pour te faire honneur:</l>
+            <l met="8">Le dieu des cieux et de la terre<note>Jupiter.</note>
+            </l>
+            <l met="8">A bien voulu te régaler</l>
+            <l met="8">De ce petit coup de tonnerre,</l>
+            <l met="8">Que tu viens d'entendre rouler.</l>
+          </sp>
+        </spGrp>
+        <sp who="#paris">
+          <speaker>Pâris</speaker>
+          <p>Beau régal, ma foi.</p>
+        </sp>
+        <stage>En cet endroit on entend une symphonie douce qui annonce l'arrivée de Vénus. Cette déesse sort de la rivière de Seine.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Pâris, Pallas, Junon, Vénus</stage>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <stage>à Pâris</stage>
+        </sp>
+        <spGrp who="#venus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#venus">
+            <speaker>Vénus</speaker>
+            <l met="8">De toi dépend toute ma gloire.</l>
+            <l met="8">Aurai-je le don précieux?</l>
+            <l met="8">Oui, berger, je lis dans tes yeux</l>
+            <l met="6">Ma prochaine victoire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#paris">
+          <speaker>Pâris</speaker>
+          <stage>regardant Vénus avec admiration</stage>
+        </sp>
+        <spGrp who="#paris">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_raison">Ma raison s'en va beau train</title>
+            </desc>
+          </head>
+          <sp who="#paris">
+            <speaker>Pâris</speaker>
+            <l met="7">Tudieu, quel essaim d'appas!</l>
+            <l met="7">Peut-on voir un plus beau bras?</l>
+            <l met="5">Plus blanc, plus mignon,</l>
+            <l met="5">Plus ferme et plus rond?</l>
+            <l met="6">Ah, quelle main jolie!</l>
+            <l met="8">Ces petits doigts, d'un moribond,</l>
+            <l met="6">Rappelleraient la vie,</l>
+            <l met="2">Lon la,</l>
+            <l met="6">Rappelleraient la vie.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+        </sp>
+        <spGrp who="#pallas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_ceinture">La ceinture</title>
+            </desc>
+          </head>
+          <sp who="#pallas">
+            <speaker>Pallas</speaker>
+            <l met="8">Mon ami, juge en ma faveur.</l>
+          </sp>
+        </spGrp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <l met="8">Je compte sur la préférence.</l>
+        </sp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <l met="8">Je connais bien son tendre cœur;</l>
+          <l met="8">Je ferai pencher la balance.</l>
+        </sp>
+        <sp who="#paris">
+          <speaker>Pâris</speaker>
+        </sp>
+        <spGrp who="#paris">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#paris">
+            <speaker>Pâris</speaker>
+            <l met="8">Mais voulez-vous sur l'apparence</l>
+            <l met="8">Que je prononce ma sentence?</l>
+            <l met="8">Puisqu'il s'agit de vos attraits,</l>
+            <l met="8">Il faut, Mesdames les déesses,</l>
+            <l met="8">Qu'à fond de ce fameux procès</l>
+            <l met="8">J'examine toutes les pièces.</l>
+          </sp>
+        </spGrp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <p>Le petit badin!</p>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <stage>lui montrant une bourse</stage>
+        </sp>
+        <spGrp who="#junon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#j_ai_fait_souvent_resonner_ma_musette">J'ai fait souvent résonner ma musette</title>
+            </desc>
+          </head>
+          <sp who="#junon">
+            <speaker>Junon</speaker>
+            <l met="10">Charmant berger, accepte l'abondance.</l>
+          </sp>
+        </spGrp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <l met="10">Je te promets des plaisirs à ton choix.</l>
+        </sp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <l met="10">C'est moi, mon cher, qui donne la prudence,</l>
+          <l met="10">Et la valeur mère des grands exploits.</l>
+        </sp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+        </sp>
+        <spGrp who="#venus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ce_sont_les_amours">Ce sont les Amours</title>
+            </desc>
+          </head>
+          <sp who="#venus">
+            <speaker>Vénus</speaker>
+            <l met="5">Laisse-là les armes;</l>
+            <l met="5">Les travaux guerriers</l>
+            <l met="5">Pour de vains lauriers</l>
+            <l met="5">Causent mille alarmes:</l>
+            <l met="5">Ce sont les amours</l>
+            <l met="5">Qui font les beaux jours.</l>
+          </sp>
+        </spGrp>
+        <sp who="#paris">
+          <speaker>Pâris</speaker>
+          <stage>à Pallas</stage>
+        </sp>
+        <spGrp who="#paris">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#d_une_main_je_tiens_mon_pot">D'une main je tiens mon pot</title>
+            </desc>
+          </head>
+          <sp who="#paris">
+            <speaker>Pâris</speaker>
+            <l met="7">Ne vantez point les combats,</l>
+            <l met="6">Je n'en tâterai pas.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <l met="8">De la valeur je suis la source.</l>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <l met="8">Il n'est rien de bon que la bourse;</l>
+          <l met="8">Et l'amant comme le héros</l>
+          <l met="6">N'est jamais en repos.</l>
+        </sp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+        </sp>
+        <spGrp who="#venus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ce_sont_les_amours">Ce sont les Amours</title>
+            </desc>
+          </head>
+          <sp who="#venus">
+            <speaker>Vénus</speaker>
+            <l met="5">Pâris, sois plus sage,</l>
+            <l met="5">Méprise son or;</l>
+            <l met="5">Le plus grand trésor</l>
+            <l met="5">Offre un esclavage:</l>
+            <l met="5">Ce sont les Amours</l>
+            <l met="5">Qui font les beaux jours.</l>
+          </sp>
+        </spGrp>
+        <sp who="#paris">
+          <speaker>Pâris</speaker>
+          <stage>rêvant</stage>
+          <p>Cela mérite réflexion.</p>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+        </sp>
+        <spGrp who="#junon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#coucou">Comme un coucou que l'amour presse</title>
+            </desc>
+          </head>
+          <sp who="#junon">
+            <speaker>Junon</speaker>
+            <l met="8">Tu ne choisis point les richesses!</l>
+          </sp>
+        </spGrp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <l met="8">La valeur ne te touche pas!</l>
+        </sp>
+        <sp who="#paris">
+          <speaker>Pâris</speaker>
+          <l met="8">Je penche fort vers les espèces;</l>
+          <l met="8">Mais l'Amour a bien des appas.</l>
+        </sp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+        </sp>
+        <spGrp who="#pallas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#pallas">
+            <speaker>Pallas</speaker>
+            <l met="8">Je te donne le bras d'Ulysse.</l>
+          </sp>
+        </spGrp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <l met="8">Et moi, des biens et des honneurs.</l>
+        </sp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <l met="8">Moi, la main d'une jeune actrice</l>
+          <l met="8">Qui doit ruiner vingt seigneurs.</l>
+        </sp>
+        <sp who="#paris">
+          <speaker>Pâris</speaker>
+          <p>Oh, parbleu, attendez! Je vais vous accorder toutes trois.<stage>Il tire son couteau.</stage>
+          </p>
+        </sp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <p>Que veux-tu faire?</p>
+        </sp>
+        <sp who="#paris">
+          <speaker>Pâris</speaker>
+          <p>Partager la pomme entre vous; et pour mes trois pièces<note>Ou « Morceaux ».</note>, vous me donnerez chacune un peu de votre marchandise.</p>
+        </sp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <p>Je veux tout ou rien.</p>
+        </sp>
+        <sp who="#paris">
+          <speaker>Pâris</speaker>
+          <stage>donnant la pomme à Vénus</stage>
+          <p>Hé bien, elle est à vous, belle Vénus.</p>
+        </sp>
+        <spGrp who="#paris">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#apercus_en_songe">L'autre nuit j'aperçus en songe</title>
+            </desc>
+          </head>
+          <sp who="#paris">
+            <speaker>Pâris</speaker>
+            <l met="8">Au diable l'argent et les armes;</l>
+            <l met="8">À vos promesses je me rends.</l>
+          </sp>
+        </spGrp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <l met="8">Tu décides sur les présents</l>
+          <l met="8">Au lieu de juger sur nos charmes?</l>
+        </sp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <l met="8">Est-ce là juger sainement?</l>
+        </sp>
+        <sp who="#paris">
+          <speaker>Pâris</speaker>
+          <l met="8">L'Opéra fait-il autrement?</l>
+        </sp>
+        <sp who="#pallas">
+          <speaker>Pallas</speaker>
+          <stage>en colère, s'en allant</stage>
+        </sp>
+        <spGrp who="#pallas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#diogene_fameux">Le fameux Diogène</title>
+            </desc>
+          </head>
+          <sp who="#pallas">
+            <speaker>Pallas</speaker>
+            <l met="6">Tu méprises la gloire!</l>
+            <l met="6">Tu mourras dans l'histoire</l>
+            <l met="6">Comme un lâche soldat.</l>
+          </sp>
+        </spGrp>
+        <sp who="#junon">
+          <speaker>Junon</speaker>
+          <l met="6">Va, je me donne au diable!</l>
+          <l met="6">Tu seras, misérable,</l>
+          <l met="6">Toujours gueux comme un rat.</l>
+        </sp>
+        <stage>Junon et Pallas s'en vont.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="location">et dernière.</stage>
+        <stage type="characters">Pâris, Vénus</stage>
+        <sp who="#paris">
+          <speaker>Pâris</speaker>
+          <stage>alarmé des menaces de Junon</stage>
+        </sp>
+        <spGrp who="#paris">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#paris">
+            <speaker>Pâris</speaker>
+            <l met="8">Je pourrais bien être un sot homme,</l>
+            <l met="8">D'avoir ainsi livré la pomme.</l>
+            <l met="8">Junon m'annonce un sort fatal:</l>
+            <l met="8">Vous l'avez entendu, Madame.</l>
+          </sp>
+        </spGrp>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <l met="8">Bon. Peux-tu craindre l'Hôpital<note type="definition">Hôpital: Maison de charité établie pour recevoir et traiter gratuitement les malades indigents (Acad.1762)</note>?</l>
+          <l met="8">Je te donne une belle femme.</l>
+        </sp>
+        <stage>Vénus emmène Pâris et le fait entrer avec elle dans sa conque<note>
+            <emph>Conque</emph>: « Grande coquille concave » (Acad. 1762). Vénus est souvent représentée sortant d'une conque.</note>.</stage>
+        <spGrp>
+          <head type="melody" subtype="chorus_melody">
+            <desc type="part"> de l'air</desc>
+            <title>
+              <title ref="#vogue_galere">Et vogue la galère</title>
+            </title>
+          </head>
+          <sp who="#paris">
+            <speaker>Pâris</speaker>
+            <stage>chante en partant</stage>
+            <l met="6">Et vogue la galère,</l>
+            <l met="5">Tant qu'elle, tant qu'elle,</l>
+            <l met="6">Et vogue la galère</l>
+            <l met="7">Tant qu'elle pourra voguer.</l>
+          </sp>
+        </spGrp>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

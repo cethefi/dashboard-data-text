@@ -1,0 +1,653 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="les_talents_comiques_1741">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Les Talents comiques</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Adrien-Joseph de Valois D'Orville</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Rousseau</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BnF ms. fr. 9318</bibl>
+        <bibl type="intermediarySource">P. Beaucé</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="thamas" sex="UNKNOWN">
+            <persName>Thamas</persName>
+          </person>
+          <person xml:id="arlequin" sex="UNKNOWN">
+            <persName>Arlequin</persName>
+          </person>
+          <person xml:id="colombine" sex="UNKNOWN">
+            <persName>Colombine</persName>
+          </person>
+          <person xml:id="pierrot" sex="UNKNOWN">
+            <persName>Pierrot</persName>
+          </person>
+          <person xml:id="palemon" sex="UNKNOWN">
+            <persName>Palémon</persName>
+          </person>
+          <person xml:id="egle" sex="UNKNOWN">
+            <persName>églé</persName>
+          </person>
+          <person xml:id="mercure" sex="UNKNOWN">
+            <persName>Mercure</persName>
+          </person>
+          <person xml:id="un_savoyard" sex="UNKNOWN">
+            <persName>Un savoyard</persName>
+          </person>
+          <person xml:id="un_porteur_d_eau" sex="UNKNOWN">
+            <persName>Un porteur d'eau</persName>
+          </person>
+          <person xml:id="une_marchande_de_tisanne" sex="UNKNOWN">
+            <persName>Une marchande de tisanne</persName>
+          </person>
+          <person xml:id="troupe_de_savoyards" sex="UNKNOWN">
+            <persName>Troupe de savoyards</persName>
+          </person>
+          <person xml:id="iphise" sex="UNKNOWN">
+            <persName>Iphise</persName>
+          </person>
+          <person xml:id="troupe_de_villageoises_et_des_arquebusiers" sex="UNKNOWN">
+            <persName>Troupe de villageoises et des arquebusiers</persName>
+          </person>
+          <person xml:id="eurilas" sex="UNKNOWN">
+            <persName>Eurilas</persName>
+          </person>
+          <person xml:id="un_sauvage" sex="UNKNOWN">
+            <persName>Un sauvage</persName>
+          </person>
+          <person xml:id="terpsichore" sex="UNKNOWN">
+            <persName>Terpsichore</persName>
+          </person>
+          <person xml:id="troupe_de_bergers_et_de_bergeres" sex="UNKNOWN">
+            <persName>Troupe de bergers et de bergères</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie pantomime des<emph>Talents lyriques</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1749">
+        <desc> Programme 1749</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#arlequin">Arlequin</role>
+          <roleDesc>amant de Colombine</roleDesc>
+          <actor>Monsieur Vrangés</actor>
+        </castItem>
+        <castItem>
+          <role ana="#colombine">Colombine</role>
+          <roleDesc>amante d'Arlequin</roleDesc>
+          <actor>Mademoiselle Cherneseau</actor>
+        </castItem>
+        <castItem>
+          <role ana="#pierrot">Pierrot</role>
+          <roleDesc>rival d'Arlequin</roleDesc>
+          <actor>Monsieur</actor>
+        </castItem>
+        <castItem>
+          <role ana="#pierrot">Pierrot</role>
+          <roleDesc>rival d'Arlequin</roleDesc>
+          <actor>Monsieur .</actor>
+        </castItem>
+        <castItem>
+          <role ana="#thamas">Thamas</role>
+          <roleDesc>riche étranger</roleDesc>
+          <actor>Monsieur Dubu</actor>
+        </castItem>
+        <castItem>
+          <role ana="#un_savoyard">Un savoyard</role>
+          <actor>Monsieur Chaumont</actor>
+        </castItem>
+        <castItem>
+          <role ana="#un_porteur_d_eau">Un porteur d'eau</role>
+          <actor>Monsieur Vilain</actor>
+        </castItem>
+        <castItem>
+          <role ana="#une_marchande_de_tisanne">Une marchande de tisanne</role>
+          <actor>Mademoiselle Canu</actor>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_savoyards">Troupe de savoyards</role>
+        </castItem>
+        <castItem>
+          <role ana="#iphise">Iphise</role>
+          <actor>Mademoiselle Dupré</actor>
+        </castItem>
+        <castItem>
+          <role ana="#arlequin">Arlequin</role>
+          <roleDesc>arquebusier, amant de Iphise</roleDesc>
+          <actor>Monsieur Vieuger</actor>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_villageoises_et_des_arquebusiers">Troupe de villageoises et des arquebusiers</role>
+        </castItem>
+        <castItem>
+          <role ana="#mercure">Mercure</role>
+          <roleDesc>en maître à danser</roleDesc>
+          <actor>Monsieur Canu</actor>
+        </castItem>
+        <castItem>
+          <role ana="#egle">Églé</role>
+          <roleDesc>bergère</roleDesc>
+          <actor>Mademoiselle Chevrier</actor>
+        </castItem>
+        <castItem>
+          <role ana="#palemon">Palémon</role>
+          <roleDesc>berger amoureux d'Églé</roleDesc>
+          <actor>Monsieur Chaumont</actor>
+        </castItem>
+        <castItem>
+          <role ana="#eurilas">Eurilas</role>
+          <roleDesc>berger amoureux d'Églé</roleDesc>
+          <actor>Monsieur Joseph</actor>
+        </castItem>
+        <castItem>
+          <role ana="#un_sauvage">Un sauvage</role>
+          <actor>Monsieur Joseph</actor>
+        </castItem>
+        <castItem>
+          <role ana="#terpsichore">Terpsichore</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_bergers_et_de_bergeres">Troupe de bergers et de bergères</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <note>Le copiste fait ici une erreur, selon les sources de l'époque, cette parodie-pantomime a été crée le 10 août 1741. Voir<emph>DTP</emph>, t.V, p.331 et Campardon, t.II, p.181</note>
+        <div type="avertissement">
+          <head>Première entrée</head>
+        </div>
+        <div type="avertissement">
+          <head>Deuxième entrée</head>
+        </div>
+        <div type="avertissement">
+          <head>Troisième entrée</head>
+        </div>
+        <note>Après l'annonce du personnage d'Églé, les frères Parfaict ajoutent « Pierrot, villageois, amoureux d'Églé ». Le personnage de Pierrot devait interpréter Eurilas.</note>
+        <stage type="entrance">La Poésie</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Le théâtre représente un jardin dans l'enfoncement d'un berceau.Colombine<stage>seule</stage>
+        </stage>
+        <sp who="#colombine">
+          <speaker>Colombine</speaker>
+          <stage>i</stage>
+        </sp>
+        <stage type="musical_indication">Ritournelle</stage>
+        <spGrp who="#colombine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_m_y_voila">Ah! m'y voilà</title>
+            </desc>
+          </head>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+          </sp>
+        </spGrp>
+        <stage>Colombine, assise dans un fauteuil, un livre à la main, appuyée sur une table couverte de papiers, paraît rêveuse. On la voit feuilleter différents volumes, se frotter le front, et faire toutes les actions d'un auteur dans l'enthousiasme.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Colombine, Pierrot</stage>
+        <stage>En arrivant, Pierrot exprime l'ardeur qu'il sent pour Colombine, il lui en fait l'aveu,</stage>
+        <spGrp who="#pierrot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#j_aime_une_jolie_jardiniere">J'aime une jolie jardinière</title>
+            </desc>
+          </head>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+          </sp>
+        </spGrp>
+        <stage>mais elle reçoit avec dédain sa tendre déclaration. Elle lui reproche sa trahison envers Arlequin.</stage>
+        <spGrp who="#colombine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dondaine_dondaine">Ah! qu'il est beau l'oiseau</title>
+            </desc>
+          </head>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+          </sp>
+        </spGrp>
+        <stage>Pierrot cherche à se justifier et à mériter ses bonne grâces.</stage>
+        <spGrp who="#pierrot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_revez">Vous rêvez</title>
+            </desc>
+          </head>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+          </sp>
+        </spGrp>
+        <stage>Elle lui donne lieu d'espérer s'il veut lui procurer la présence de Thamas, dont il est le favori, dans le dessein d'obtenir de lui le pardon d'Arlequin, que l'on soupçonne d'avoir fait des vers satiriques contre Thamas et craignant pour lui que sa récompense ne soit la bastonnade.</stage>
+        <spGrp who="#colombine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#trot">Le trot, le trot, le trot</title>
+            </desc>
+          </head>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+          </sp>
+        </spGrp>
+        <stage>Plein d'un favorable espoir, Pierrot y consent et sort.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Colombine, Arlequin</stage>
+        <stage>Arlequin, les yeux baignés de larmes, un mouchoir à la main, une valise sur ses épaules, vient prendre congé de Colombine.</stage>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#les_pelerins">Pèlerins [de Saint Jacques]</title>
+            </desc>
+          </head>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+          </sp>
+        </spGrp>
+        <stage>Elle se formalise d'un si prompt départ.</stage>
+        <spGrp who="#colombine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#partez_pour_le_potosi">Partez pour le Potosi</title>
+            </desc>
+          </head>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+          </sp>
+        </spGrp>
+        <stage>Arlequin lui représente qu'il est plus prudent de prendre la fuite que de risquer d'expirer sous le bâton. Après des protestations mutuelles d'un amour tendre et sincère, on entend un bruit de chasse.</stage>
+        <spGrp who="#colombine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bruit_armes">J'entends déjà le bruit des armes</title>
+            </desc>
+          </head>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+          </sp>
+        </spGrp>
+        <stage>Colombine fait cacher Arlequin sur le sommet d'un arbre.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Thamas, Colombine, Arlequin<stage>caché</stage>
+        </stage>
+        <spGrp who="#colombine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#chapponnadriere">Serviteur à Monsieur Vivien</title>
+            </desc>
+          </head>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+          </sp>
+        </spGrp>
+        <stage>Colombine ayant pourvu à une récréation qui pût plaire à Thamas pour en obtenir le pardon d'Arlequin, la lui propose, Thamas l'accepte.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Le théâtre, la chambre.Thamas, Colombine, Arlequin<stage>caché</stage>, un porteur d'eau, une marchande de tisane</stage>
+        <stage>Ballet. Catharinette: entrée du porteur d'eau pour la lanterne magique.</stage>
+        <stage>Le porteur d'eau et la marchande de tisane se font l'amour en dansant grotesquement. Les savoyards forment une entrée  et font voir ensuite à Thamas différents phénomènes par les reflets de leur lanterne magique. Thamas est si satisfait de ce spectacle qu'il témoigne à Colombine toute la joie qu'il en ressent.</stage>
+        <spGrp who="#colombine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#j_endors_le_petit_mon_fils">J'endors le petit, mon fils</title>
+            </desc>
+          </head>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+          </sp>
+        </spGrp>
+        <stage>Elle profite de l'occasion et fait paraître Arlequin devant lui</stage>
+        <spGrp who="#colombine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#abbe_dans_coin">Un abbé dans son coin</title>
+            </desc>
+          </head>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+          </sp>
+        </spGrp>
+        <stage>en demandant sa grâce en faveur du plaisir qu'il vient de goûter.</stage>
+        <spGrp who="#colombine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#accordez_nous_votre_suffrage">Accordez-nous votre suffrage</title>
+            </desc>
+          </head>
+          <sp who="#thamas">
+            <speaker>Thamas</speaker>
+          </sp>
+        </spGrp>
+        <stage>Thamas l'accorde avec zèle, il les engage même à s'unir ensemble, ce qu'ils font et la fête continue.</stage>
+        <spGrp who="#thamas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tres_volontiers">Très volontiers</title>
+            </desc>
+          </head>
+          <sp>
+            <stage type="entrance">La Musique</stage>
+          </sp>
+        </spGrp>
+        <stage>Le théâtre représente un camp où tout est disposé à tirer au prix de l'arquebusier.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Iphise, troupe d'arquebusiers<stage>endormis</stage>
+        </stage>
+        <stage type="musical_indication">Ritournelle</stage>
+        <stage>Iphise gémit de voir ces hommes autrefois si courageux s'abandonner au sommeil et languir dans une molle oisiveté.</stage>
+        <sp who="#arlequin">
+          <speaker>Arlequin</speaker>
+        </sp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimons_aimons_tous">Do, do, l'enfant do</title>
+            </desc>
+          </head>
+        </spGrp>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#doux_sommeil">Doux sommeil</title>
+            </desc>
+          </head>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Iphise, Arlequin</stage>
+        <stage>À l'aspect d'Arlequin, l'allégresse s'empare du cœur d'Iphise, elle l'engage à réveiller la valeur de tant de mortels languissants. Arlequin dont le but est de plaire, lui fait entendre qu'il trouvera bientôt le secret de les tirer de leurs assoupissements et de leur rendre tout leur courage pour concourir au prix proposé.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Iphise, Arlequin, un joueur de tambourin</stage>
+        <stage>Arlequin fait venir un tambourin et fait jouer un concerto aux oreilles de ces hommes assoupis. Les arquebusiers sont si étourdis de ce vacarme qu'ils s'éveillent et par leurs pas et leurs attitudes, ils font connaître leur zèle, leurs forces et leur valeur.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Iphise, Arlequin, Troupe de villageoises et d'arquebusiers</stage>
+        <stage type="musical_indication">Sarabande pour les femmes</stage>
+        <stage>Les villageoises viennent en dansant présenter aux arquebusiers des arcs et des flèches. Ils tirent tous au noir, mais Arlequin seul emporte le prix.</stage>
+        <spGrp who="#arlequin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#air_pour_tirer">Air pour tirer</title>
+            </desc>
+          </head>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <stage>i</stage>
+          </sp>
+        </spGrp>
+        <stage>Les villageoises présentent une couronne à Iphise, dont elle ceint la tête d'Arlequin.</stage>
+        <stage type="musical_indication">Deux rigaudons</stage>
+        <stage>Ils se donnent mutuellement la main, s'embrassent et un divertissement général célèbre leur alliance.</stage>
+        <stage type="entrance">La Danse</stage>
+        <stage>Le théâtre représente un hameau. Dans l'enfoncement des rochers, des monts escarpés.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Mercure<stage>seul</stage>
+        </stage>
+        <stage type="musical_indication">Ritournelle</stage>
+        <stage>Mercure apparaît tenant sous son bras une toilette dans laquelle est tout l'attirail d'un maître de danse, il examine ses attributs divins et fait connaître que ce n'est point sous cette forme qu'il peut triompher d'un cœur de la bergère qu'il aime. Il se déguise en maître à danser.</stage>
+        <spGrp who="#mercure">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#toujours_va_qui_danse">Toujours va qui danse</title>
+            </desc>
+          </head>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="characters">Mercure, Pierrot</stage>
+        <stage>Eurilas, sans apercevoir Mercure, entre d'un air satisfait du bonheur qu'il se propose de s'unir à la bergère Églé.</stage>
+        <spGrp who="#pierrot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_sept_sauts">Les sept sauts</title>
+            </desc>
+          </head>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+          </sp>
+        </spGrp>
+        <stage>Mercure approche de lui et fait entendre qu'il veut lui disputer cette conquête.</stage>
+        <spGrp who="#pierrot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_m_entendez_bien">Où allez-vous, Monsieur l'abbé</title>
+            </desc>
+          </head>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+          </sp>
+        </spGrp>
+        <stage>Eurilas, d'abord, tranche du fanfaron</stage>
+        <spGrp who="#pierrot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jean_danse_mieux_que_pierre">Jean danse mieux que Pierre</title>
+            </desc>
+          </head>
+          <sp who="#palemon">
+            <speaker>Palémon</speaker>
+          </sp>
+        </spGrp>
+        <stage>mais peu à peu il s'éloigne et à la fin s'évade.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="characters">Mercure, Églé, Palémon</stage>
+        <stage>Églé vient en dansant sur l'air<emph>Palémon joue avec un mirliton</emph>.</stage>
+        <spGrp who="#palemon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mirliton">Mirliton</title>
+            </desc>
+          </head>
+          <sp who="#egle">
+            <speaker>églé</speaker>
+          </sp>
+        </spGrp>
+        <stage>Mercure se moque de Palémon mais ce dernier croyant avoir mérité quelques faveurs demande à Églé la guirlande de fleurs qu'elle tient en ses mains pour garant de la préférence qu'elle fait de lui. Églé la lui refuse,</stage>
+        <spGrp who="#egle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#j_en_mourrai">J'en mourrai</title>
+            </desc>
+          </head>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+          </sp>
+        </spGrp>
+        <stage>Mercure continue de le railler,</stage>
+        <spGrp who="#mercure">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#viens_dans_ma_cellule">Viens dans ma cellule</title>
+            </desc>
+          </head>
+          <sp who="#palemon">
+            <speaker>Palémon</speaker>
+          </sp>
+        </spGrp>
+        <stage>le dépit s'empare de Palémon.</stage>
+        <spGrp who="#palemon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_y_a_trente_ans">Il y a trente ans</title>
+            </desc>
+          </head>
+        </spGrp>
+        <stage>Il brise son mirliton et sort furieux, rempli de honte et de dépit.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 13</head>
+        <stage type="characters">Églé, Mercure, Troupe de bergers et de bergères</stage>
+        <stage>Les bergers viennent, par leurs pas légers et  galants, tâcher d'obtenir la guirlande promise par Églé à celui qui par les talents de la danse parviendra à lui plaire.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 14</head>
+        <stage type="characters">Églé, Mercure, un sauvage et les précédents</stage>
+        <stage>Ce sauvage, singulier saltimbanque, danse un menuet avec un animal africain et demande à Églé la guirlande qu'il pense lui être due, mais il ne reçoit que les risées de Mercure, et du honteux refus d'Églé, il sort.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 15</head>
+        <stage type="characters">Églé, Mercure, Terpsichore, troupe de berger et de bergères</stage>
+        <stage>Mercure demande à Églé, de la façon la plus tendre, le prix qu'elle réserve à l'heureux mortel qui aura le bonheur de lui plaire. Églé regarde tous les bergers et marque beaucoup d'incertitude. Dans le moment que Mercure perd tout espoir, Églé lui présente la guirlande. Mercure va prendre son caducée, se fait connaître et baisant la main d'Églé lui rend grâce de son bonheur.<lb/>Les bergers et les bergères par des pas brillants couronnent cette fête.</stage>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,1526 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="les_debris_des_saturnales_1723">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Les Débris des Saturnales</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Louis Fuzelier</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>B. Ourcel</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BnF ms. fr. 9332, f.343-357</bibl>
+        <bibl type="intermediarySource">P. Paquereau</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="antoine" sex="UNKNOWN">
+            <persName>Antoine</persName>
+          </person>
+          <person xml:id="alcibiade" sex="UNKNOWN">
+            <persName>Alcibiade</persName>
+          </person>
+          <person xml:id="eros" sex="UNKNOWN">
+            <persName>éros</persName>
+          </person>
+          <person xml:id="amintas" sex="UNKNOWN">
+            <persName>Amintas</persName>
+          </person>
+          <person xml:id="cleopatre" sex="UNKNOWN">
+            <persName>Cléopâtre</persName>
+          </person>
+          <person xml:id="plautine" sex="UNKNOWN">
+            <persName>Plautine</persName>
+          </person>
+          <person xml:id="timee" sex="UNKNOWN">
+            <persName>Timée</persName>
+          </person>
+          <person xml:id="delie" sex="UNKNOWN">
+            <persName>Délie</persName>
+          </person>
+          <person xml:id="apollon" sex="UNKNOWN">
+            <persName>Apollon</persName>
+          </person>
+          <person xml:id="marc_antoine" sex="UNKNOWN">
+            <persName>Marc-Antoine</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comédie en un acte, mêlée de vaudevilles,</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q192881</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1723">
+        <desc>Représentée par les Comédiens Italiens à la Foire de Saint-Laurent 1723</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#marc_antoine">Marc-Antoine</role>
+        </castItem>
+        <castItem>
+          <role ana="#alcibiade">Alcibiade</role>
+        </castItem>
+        <castItem>
+          <role ana="#eros">Éros</role>
+          <roleDesc>esclave de Marc-Antoine</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#amintas">Amintas</role>
+          <roleDesc>esclave d'Alcibiade</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#cleopatre">Cléopâtre</role>
+        </castItem>
+        <castItem>
+          <role ana="#plautine">Plautine</role>
+        </castItem>
+        <castItem>
+          <role ana="#timee">Timée</role>
+        </castItem>
+        <castItem>
+          <role ana="#delie">Délie</role>
+        </castItem>
+      </castList>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Amintas, Éros</stage>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <p>Parbleu! La guinguette d'Apollon est assez jolie, je n'en avais pas encore remarqué tous les agréments.</p>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+        </sp>
+        <spGrp who="#eros">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bon_vin_bon">[Bon, bon, bon]</title>
+            </desc>
+          </head>
+          <sp who="#eros">
+            <speaker>éros</speaker>
+            <l met="9">Et bon, bon, bon, que le vin est bon!</l>
+            <l met="6">Par ma foi, j'en veux boire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <p>Qu'entends-je? C'est la voix d'Éros, l'esclave de Marc Antoine.</p>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="9">Le bon, bon, bon, [que le vin est bon].</l>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_reguingue">Ô reguingué</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="8">Ne les voilà pas mal en train</l>
+            <l met="8">Ils vont trinquer jusqu'à demain</l>
+            <l met="8">Ô reguingué, ô lon lan la.</l>
+            <l met="8">Je crois qu'au lieu de Saturnales</l>
+            <l met="8">On fête ici les Bacchanales.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Amintas, Éros</stage>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+        </sp>
+        <spGrp who="#eros">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ziste_zeste_point_de_chagrin">[Ziste, zeste point de chagrin]</title>
+            </desc>
+          </head>
+          <sp who="#eros">
+            <speaker>éros</speaker>
+            <l met="8">Ziste, zeste point de chagrin</l>
+            <l met="11">Je me ri, je me rigole [avec Catin].</l>
+          </sp>
+        </spGrp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <p>Serviteur, seigneur Éros, à présent digne esclave de Marc Antoine.</p>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Oh! Qu'il y a de vin dans ce corps-là. Ma foi, je suis un vrai muid.</p>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <p>Ou plutôt un sac à vin.</p>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Souvenez-vous, seigneur Amintas, que vous êtes l'esclave du galant Alcibiade et que vous devez être poli.</p>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <p>Soit. Mais comment avez-vous pu vous nourrir si bien depuis un moment? À peine Timée, Délie et Plautine ont-elles eu le temps de manger un macaron.</p>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>N'y a-t-il pas deux heures que je suis arrivé!</p>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <p>Mais vous avez dû voir la Comédie Italienne?</p>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Je ne m'amuse pas à la bagatelle. J'ai d'abord assiégé le buffet.</p>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Le prévôt [des marchands]</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="8">Je vous croyais, seigneur Éros,</l>
+            <l met="8">Moins amoureux du Dieu des pots.</l>
+            <l met="8">Je suis surpris de votre ivresse.</l>
+            <l met="8">Quand vous étiez à l'Opéra</l>
+            <l met="8">Vous ne parliez qu'avec sagesse.</l>
+          </sp>
+        </spGrp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <l met="8">C'est que dans sa place elle est là.</l>
+          <l met="7">Mais vous, que vous dit le cœur?</l>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Le prévôt [des marchands]</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="8">Antoine votre bon seigneur,</l>
+            <l met="8">Mon cher, vous a rendu buveur.</l>
+            <l met="8">Moi, l'esclave d'Alcibiade,</l>
+            <l met="8">J'imite son penchant coquet</l>
+            <l met="8">Près des tendrons, je bats l'estrade</l>
+            <l met="8">Enfin, tel maître, tel valet.</l>
+          </sp>
+        </spGrp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Nous faisons fort bien de ressembler à nos maîtres. Vous savez que Marc Antoine, qui se pique d'imiter Bacchus, fit son entrée à Éphèse, vêtu comme le vainqueur de l'Inde, et moi, pour flatter sa manie, je me suis déguisé en satyre.</p>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <p>Cela vous sied à merveille.</p>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Vous avez voulu aussi copier le tic de votre maître.</p>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <p>Oui, je me suis fait dérater. J'ai brillé aux jeux olympiques parmi les piétons comme Alcibiade parmi les cochers.</p>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Êtes-vous aussi devenu volage? Je vous ai vu trancher du pédagogue et débiter que l'inconstant ne peut être heureux dans ses désirs.</p>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <p>On me voit hautement me déclarer volage.</p>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, [belle endormie]</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="8">Un grand exemple m'autorise</l>
+            <l met="8">Mon cœur le suivra sans effort</l>
+            <l met="8">Diversité c'est ma devise</l>
+            <l met="8">Le mot de constance m'endort.</l>
+          </sp>
+        </spGrp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Peste! Vous êtes aussi sentencieux que votre maître.</p>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#confiteor">Confiteor</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="8">Nous reformerons l'art d'aimer,</l>
+            <l met="8">Celui d'Ovide devient fade.</l>
+            <l met="8">Savez-vous qu'on fait imprimer</l>
+            <l met="8">Les maximes d'Alcibiade?</l>
+            <l met="8">Oh! Dans Paris, ce grand auteur</l>
+            <l met="8">Aura plus d'un commentateur.</l>
+          </sp>
+        </spGrp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Les dames ne mettront pas leur approbation à ce livre-là, nous avons pris le bon parti, nous autres.</p>
+        </sp>
+        <spGrp who="#eros">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Le capucin</title>
+            </desc>
+          </head>
+          <sp who="#eros">
+            <speaker>éros</speaker>
+            <l met="8">La table sera mon partage.</l>
+          </sp>
+        </spGrp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <l met="8">L'inconstance aura mon hommage.</l>
+        </sp>
+        <spGrp>
+          <caption>À deux</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Livrons-nous à nos goûts nouveaux</l>
+            <l met="8">Au plaisir seul soyons fidèles.</l>
+          </sp>
+        </spGrp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <l met="8">On doit vider tous les tonneaux.</l>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <l met="8">On doit aimer toutes les belles.</l>
+          <p>Le seigneur Éros court achever le siège du buffet. Pour moi, je vais chercher loin des buveurs quelque fillette entre deux vins, que Bacchus ait obligée de quitter la table.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Amintas</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Amintas, Plautine</stage>
+        <sp who="#plautine">
+          <speaker>Plautine</speaker>
+          <p>Si je connaissais la mijaurée qui m'extorque ton cœur, je lui en dirais de bonnes sur ton chapitre.</p>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#confiteor">Confiteor</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="8">Calmez ce dépit éclatant,</l>
+            <l met="8">Votre courroux m'est favorable,</l>
+            <l met="8">Plus on se plaint d'un inconstant,</l>
+            <l met="8">Plus on le fait paraître aimable,</l>
+            <l met="8">Et tout le mal que l'on en dit</l>
+            <l met="8">Ne sert qu'à le mettre en crédit.</l>
+          </sp>
+        </spGrp>
+        <sp who="#plautine">
+          <speaker>Plautine</speaker>
+          <l met="12">Tu fuis mes regards, tu ne me réponds pas!</l>
+          <l met="12">Mais que veux-je savoir? J'avais tout entendu.</l>
+          <l met="12">Adieu. J'épouserai...</l>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <l met="12">Qui?</l>
+        </sp>
+        <sp who="#plautine">
+          <speaker>Plautine</speaker>
+          <l met="12">Le premier venu.</l>
+          <p>Mais c'est à condition qu'il te rossera d'importance.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Amintas</stage>
+        <spGrp who="#plautine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Le péril</title>
+            </desc>
+          </head>
+          <sp who="#plautine">
+            <speaker>Plautine</speaker>
+            <l met="8">J'ai bien poussé la gasconnade</l>
+            <l met="8">Dans cette scène, j'ai brillé!</l>
+            <l met="8">Parbleu! Je m'en suis démêlé</l>
+            <l met="6">Comme un Alcibiade.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Amintas, Timée</stage>
+        <sp who="#timee">
+          <speaker>Timée</speaker>
+        </sp>
+        <spGrp who="#timee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ermite">Le fils d'Ulysse</title>
+            </desc>
+          </head>
+          <sp who="#timee">
+            <speaker>Timée</speaker>
+            <l met="10">Amour, dois-tu te servir d'un volage</l>
+            <l met="6">Pour prendre un tendre cœur?</l>
+            <l met="10">Dès que l'ingrat sait que je la partage</l>
+            <l met="6">Il éteint son ardeur.</l>
+            <l met="10">Je ne dois plus compter sur l'infidèle.</l>
+            <l met="7">Je serai cruelle, moi.</l>
+            <l met="5">Je serai cruelle.</l>
+          </sp>
+        </spGrp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <p>C'est Timée, l'amante délaissée de mon maître. Cela m'appartient comme les habits qu'il quitte.</p>
+        </sp>
+        <sp who="#timee">
+          <speaker>Timée</speaker>
+          <p>Ah! C'est toi, mon cher Amintas. Que fait Alcibiade?</p>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <p>Il est aux genoux de la belle Aspasie.</p>
+        </sp>
+        <sp who="#timee">
+          <speaker>Timée</speaker>
+        </sp>
+        <spGrp who="#timee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, [belle endormie]</title>
+            </desc>
+          </head>
+          <sp who="#timee">
+            <speaker>Timée</speaker>
+            <l met="8">Conçois ma juste jalousie.</l>
+            <l met="8">Ah! mes soupirs sont superflus!</l>
+            <l met="8">Alcibiade aime Aspasie</l>
+            <l met="8">L'inconstant ne changera pas.</l>
+          </sp>
+        </spGrp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_la_femme_a_tretous">La tretin, tretous</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="6">Connaissez mieux mon maître</l>
+            <l met="9">Mignonne, c'est l'amant à tretous.</l>
+            <l met="6">Il est tretin treti</l>
+            <l met="6">[Il est tretin tretous].</l>
+            <p>J'aime assez cette pleureuse-là. Séchons ses larmes. En vérité belle Timée, je suis surpris qu'Alcibiade vous préfère Aspasie.</p>
+          </sp>
+        </spGrp>
+        <sp who="#timee">
+          <speaker>Timée</speaker>
+        </sp>
+        <spGrp who="#timee">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#nouveau_monde">Nouveau monde</title>
+            </desc>
+          </head>
+          <sp who="#timee">
+            <speaker>Timée</speaker>
+            <l met="9">C'est que par toute la Grèce, on dit</l>
+            <l met="8">Que c'est une femme d'esprit,</l>
+            <l met="8">Méprisant fort la bagatelle.</l>
+            <l met="8">La science est son vrai bijou,</l>
+            <l met="8">Le grand Périclès en est fou,</l>
+            <l met="8">Socrate va manger chez elle.</l>
+          </sp>
+        </spGrp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <p>Cependant elle n'en fait pas voir beaucoup, lorsque dans les jeux olympiques elle apporte une couronne de lauriers au vainqueur d'Alcibiade.</p>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#branle_de_metz">Branle de Metz</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="7">Son esprit ne parait guère,</l>
+            <l met="7">On peut le lui reprocher,</l>
+            <l met="7">Voudrait-elle le cacher</l>
+            <l met="7">Sous les ombres du mystère.</l>
+            <l met="7">Son discours n'est pas brillant</l>
+            <l met="7">Et Babet la bouquetière,</l>
+            <l met="7">Aurait tourné sûrement</l>
+            <l met="7">Beaucoup mieux le compliment.</l>
+          </sp>
+        </spGrp>
+        <sp who="#timee">
+          <speaker>Timée</speaker>
+          <p>Hélas!</p>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <p>Supprimez vos fréquents hélas!</p>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#joconde">Joconde</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="8">Il m'est permis dans ce beau jour,</l>
+            <l met="6">De chausser le cothurne.</l>
+            <l met="8">Ma reine, écoutez mon amour,</l>
+            <l met="6">Ainsi le veut Saturne.</l>
+            <l met="8">Amintas vous offre sa foi,</l>
+            <l met="6">Qu'un nouveau nœud nous lie,</l>
+            <l met="8">De votre Alcibiade en moi,</l>
+            <l met="6">Vous voyez la copie.</l>
+          </sp>
+        </spGrp>
+        <sp who="#timee">
+          <speaker>Timée</speaker>
+          <stage>soufflet</stage>
+          <p>Tenez! Voilà les faveurs que je vous réserve.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Amintas, Éros</stage>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Il me semble qu'Alcibiade ne recevait pas de soufflets, vous le copiez mal.</p>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#tambour">Tambour</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="3">Un soufflet</l>
+            <l met="7">Ô dieux! Quelle impolitesse!</l>
+            <l met="4">Votre valet</l>
+            <l met="4">Vite au filet!</l>
+            <l met="6">Laissons-là la tendresse,</l>
+            <l met="7">Çà, délogez mon amour,</l>
+            <l met="4">Et sans tambour.</l>
+            <l met="3">Un soufflet,</l>
+            <l met="7">Il a sonné clair et net,</l>
+            <l met="9">Je le sens encore, ah! la tigresse.</l>
+            <l met="7">Dieux! Quel prix d'un tendre aveu!</l>
+            <l met="2">Morbleu!</l>
+            <l met="10">Mon cœur est glacé, j'ai la joue en feu.</l>
+            <l met="6">Morbleu! Cent fois morbleu!</l>
+            <l met="9">Des soufflets donnés avec rudesse</l>
+            <l met="7">Sont-ils les émoluments</l>
+            <l met="4">Des inconstants?</l>
+          </sp>
+        </spGrp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>La coquetterie lui en fera souvent attraper. Voici mon maître qui en tient, pour moi, j'ai fait un petit somme bénin qui m'a désenivré.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Marc Antoine, Éros</stage>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+        </sp>
+        <spGrp who="#eros">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Le prévôt [des marchands]</title>
+            </desc>
+          </head>
+          <sp who="#eros">
+            <speaker>éros</speaker>
+            <l met="8">Eh! Quoi, vous quittez le buffet?</l>
+            <l met="8">Seigneur Antoine, c'est mal fait.</l>
+            <l met="8">Quel soin inquiète votre âme?</l>
+          </sp>
+        </spGrp>
+        <sp who="#antoine">
+          <speaker>Antoine</speaker>
+          <l met="8">C'est Cléopâtre que j'attends,</l>
+          <l met="8">Je prétends lui chanter sa gamme,</l>
+          <l met="8">Les Romains en sont mécontents.</l>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Point de quartier.</p>
+        </sp>
+        <sp who="#antoine">
+          <speaker>Antoine</speaker>
+          <p>Tu en auras tantôt.</p>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Vous avez été l'amant de Cléopâtre aussi promptement que son juge. Je vous ai cité dans une brunette l'exemple de votre ami.</p>
+        </sp>
+        <spGrp who="#eros">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ton_relon_ton_ton">Ton relon ton, ton</title>
+            </desc>
+          </head>
+          <sp who="#eros">
+            <speaker>éros</speaker>
+            <l met="10">En abordant cette charmante reine,</l>
+            <l met="10">L'aigle romaine est devenue oison,</l>
+            <l met="10">Chez vous, l'amour éclot et croit sans peine,</l>
+            <l met="10">Subitement, tout comme un champignon</l>
+            <l met="5">Ton relon, ton, ton.</l>
+            <l met="6">Que votre humeur hautaine</l>
+            <l met="5">Ton [relon, ton, ton].</l>
+            <l met="6">Fait vite le plongeon.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#eros">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Ce cher voisin</title>
+            </desc>
+          </head>
+          <sp who="#eros">
+            <speaker>éros</speaker>
+            <l met="8">Lorsque l'amour vous a dompté.</l>
+          </sp>
+        </spGrp>
+        <sp who="#antoine">
+          <speaker>Antoine</speaker>
+          <l met="6">Je te le dis encore.</l>
+          <l met="8">Bacchus est ma divinité,</l>
+          <l met="6">C'est Bacchus que j'adore.</l>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Oh, parbleu! On ne comprend plus rien à vos discours. On ne vous reconnaît pas d'une phrase à l'autre. Du moins, à l'Opéra, il faut une scène entière pour vous voir changer du blanc au noir.</p>
+        </sp>
+        <sp who="#antoine">
+          <speaker>Antoine</speaker>
+          <p>N'est-il pas vrai que Cléopâtre est adorable? Quand elle arriva sur les bords du fleuve Cidnus... Je l'aperçois qui vient dans sa gondole.</p>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>C'est son même équipage.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Les précédents, Cléopâtre</stage>
+        <sp who="#cleopatre">
+          <speaker>Cléopâtre</speaker>
+        </sp>
+        <spGrp who="#cleopatre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#du_haut_en_bas">Du haut en bas</title>
+            </desc>
+          </head>
+          <sp who="#cleopatre">
+            <speaker>Cléopâtre</speaker>
+            <l met="4">Bonjour, Toinon,</l>
+          </sp>
+        </spGrp>
+        <sp who="#antoine">
+          <speaker>Antoine</speaker>
+          <l met="8">Bonjour belle Cléopâtrine.</l>
+        </sp>
+        <sp who="#cleopatre">
+          <speaker>Cléopâtre</speaker>
+          <l met="4">Bonjour, Toinon.</l>
+        </sp>
+        <sp who="#antoine">
+          <speaker>Antoine</speaker>
+          <l met="8">Ah! Le joli petit trognon!</l>
+          <l met="8">Êtes-vous mortelle ou divine?</l>
+          <l met="8">Il faut que je vous examine.</l>
+        </sp>
+        <sp who="#cleopatre">
+          <speaker>Cléopâtre</speaker>
+          <p>Holà! Toinon.</p>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Mon maître est expéditif; mais ce n'est pas quand il va punir les Parthes inconstants.</p>
+        </sp>
+        <sp who="#cleopatre">
+          <speaker>Cléopâtre</speaker>
+        </sp>
+        <spGrp who="#cleopatre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lurelu">Lurelu</title>
+            </desc>
+          </head>
+          <sp who="#cleopatre">
+            <speaker>Cléopâtre</speaker>
+            <l met="6">À me chanter goguette</l>
+            <l met="6">Il était résolu</l>
+            <l met="3">Lurelu.</l>
+            <l met="6">Il m'a compté fleurette</l>
+            <l met="6">Sans parler de cela</l>
+            <l met="3">Lerela.</l>
+            <l met="8">Lurelu, lerela, lirette.</l>
+            <l met="7">Ah! Quel Romain voilà!</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#cleopatre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#faire_l_amour">La nuit et le jour</title>
+            </desc>
+          </head>
+          <sp who="#cleopatre">
+            <speaker>Cléopâtre</speaker>
+            <l met="6">Vos transports superflus</l>
+            <l met="6">Ne m'en font point accroire</l>
+            <l met="6">Je sais que de Bacchus</l>
+            <l met="6">Vous chérissez la gloire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#antoine">
+          <speaker>Antoine</speaker>
+          <l met="2">L'amour,</l>
+          <l met="5">N'y perd pas son jour.</l>
+        </sp>
+        <sp who="#cleopatre">
+          <speaker>Cléopâtre</speaker>
+          <p>On nous regarde au moins.</p>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Eh! Depuis quand êtes-vous si retenue, vous qui avez écouté la déclaration d'amour qu'il vous a faite à la tête d'une armée de cinquante mille hommes?</p>
+        </sp>
+        <spGrp who="#eros">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_m_entendez_bien">Hé bien</title>
+            </desc>
+          </head>
+          <sp who="#eros">
+            <speaker>éros</speaker>
+            <l met="8">Romains, cela ne va pas mal</l>
+            <l met="8">Nous avons un grand général</l>
+            <l met="6">Nous ne souffrirons guère.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cleopatre">
+          <speaker>Cléopâtre</speaker>
+          <l met="2">Eh bien!</l>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <l met="6">Des exploits qu'il va faire</l>
+          <l met="5">Vous [m'entendez bien].</l>
+        </sp>
+        <sp who="#cleopatre">
+          <speaker>Cléopâtre</speaker>
+        </sp>
+        <spGrp who="#cleopatre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Colette</title>
+            </desc>
+          </head>
+          <sp who="#cleopatre">
+            <speaker>Cléopâtre</speaker>
+            <l met="8">Puis-je compter sur la confiance</l>
+            <l met="8">Du feu qui vous brûle en ce jour?</l>
+            <l met="8">Ma foi, je crains que l'espérance</l>
+            <l met="8">N'ait un démenti de l'amour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#antoine">
+          <speaker>Antoine</speaker>
+          <l met="8">Comptez, comptez sur la constance</l>
+          <l met="8">Du feu qui me brûle en ce jour</l>
+          <l met="8">Ne craignez pas que l'espérance</l>
+          <l met="8">Reçoive un affront de l'amour.</l>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+        </sp>
+        <spGrp who="#eros">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#robin_ture_lure_lure">Robin turelure</title>
+            </desc>
+          </head>
+          <sp who="#eros">
+            <speaker>éros</speaker>
+            <l met="7">Depuis que vous vous aimez</l>
+            <l met="7">Vous faites bien, je vous jure,</l>
+            <l met="7">Tous les deux des bouts rimés</l>
+            <l met="3">Turelure</l>
+            <l met="7">À mettre dans le Mercure</l>
+            <l met="5">Robin [Turelure].</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Les précédents, Amintas</stage>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <p>Parle donc, l'ami! N'est-ce pas là Cléopâtre?</p>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>C'est elle-même.</p>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#oh_que_si_oh_que_nenni">Oh, que si</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="7">Elle passe le joli,</l>
+            <l met="8">D'amour on la croirait la mère,</l>
+            <l met="7">Je ne la crois pas sévère.</l>
+          </sp>
+        </spGrp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <l met="3">Oh, que si!</l>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <l met="7">Quelle perle on lui remarque.</l>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <l met="7">N'as-tu donc pas lu Plutarque?</l>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <l met="4">Oh, que nenni!</l>
+          <p>Permettez-moi, madame, de vous faire mes compliments sur tout le mérite moderne qu'on vous a donné et que sûrement vous n'aviez pas en Cilicie.</p>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Ne sois pas concis avec elle, la reine d'Egypte aime les longues phrases.</p>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <p>Puisque la prolixité est de son goût, ne te mets pas en peine.</p>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>N'amènes-tu pas un divertissement?</p>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <p>Oui.</p>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Allons, qu'il commence.</p>
+        </sp>
+        <spGrp who="#eros">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#bacchantes">Bacchantes</title>
+            </desc>
+          </head>
+          <sp who="#eros">
+            <speaker>éros</speaker>
+            <l met="5">Belle Cléopâtre,</l>
+            <l met="4">Sur le théâtre</l>
+            <l met="8">Vous n'êtes plus panier percé,</l>
+            <l met="5">Le goût de dépense</l>
+            <l met="4">Dont on vous tance</l>
+            <l met="6">Y parait fort baissé.</l>
+            <l met="8">Avez-vous un méchant procès,</l>
+            <l met="5">Montrez vos attraits.</l>
+            <l met="7">Le juge perd, sa balance</l>
+            <l met="5">Lui payera les frais.</l>
+            <l met="8">Ah! dit-il, que votre innocence</l>
+            <l met="4">Pour la défense,</l>
+            <l met="8">Dans vos yeux plaide avec éclat.</l>
+            <l met="5">La première œillade</l>
+            <l met="3">Me persuade,</l>
+            <l met="6">C'est un bon avocat</l>
+            <l met="4">Que dans un camp</l>
+            <l met="3">Sur le champ</l>
+            <l met="4">Votre art éclate.</l>
+            <l met="8">Aux soldats vous chantez du fin,</l>
+            <l met="5">Mais ce qui les flatte,</l>
+            <l met="4">C'est la cantate</l>
+            <l met="6">Que vous brodez en plein,</l>
+            <l met="4">En musicienne,</l>
+            <l met="4">Du ton certaine,</l>
+            <l met="8">Vous la suivez sans tâtonner.</l>
+            <l met="5">Vit-on jamais Reine</l>
+            <l met="4">Prendre la peine</l>
+            <l met="6">De si bien fredonner.</l>
+          </sp>
+        </spGrp>
+        <sp who="#antoine">
+          <speaker>Antoine</speaker>
+          <p>À qui appartient cet esclave? Il me conviendrait fort.</p>
+        </sp>
+        <sp who="#eros">
+          <speaker>éros</speaker>
+          <p>Pour chanter en duo avec Cléopâtre.</p>
+        </sp>
+        <sp who="#antoine">
+          <speaker>Antoine</speaker>
+        </sp>
+        <spGrp who="#antoine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ricandenne">Ricandenne</title>
+            </desc>
+          </head>
+          <sp who="#antoine">
+            <speaker>Antoine</speaker>
+            <l met="8">Vraiment, ton avis est fort bon</l>
+            <l met="8">Ô ricandenne, [ô ricandon]</l>
+          </sp>
+        </spGrp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <l met="8">Oui seigneur, vous ferez fort bien,</l>
+          <l met="8">Pour m'avoir ne négligez rien,</l>
+          <l met="8">À Cléopâtre je conviens</l>
+          <l met="1">Car</l>
+          <l met="6">Je la divertirai</l>
+          <l met="8">Ô ricandenne, [ô ricandon].</l>
+        </sp>
+        <sp who="#cleopatre">
+          <speaker>Cléopâtre</speaker>
+        </sp>
+        <spGrp who="#cleopatre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#folia">Folies d'Espagne</title>
+            </desc>
+          </head>
+          <sp who="#cleopatre">
+            <speaker>Cléopâtre</speaker>
+            <l met="10">Dans ces beaux lieux, les témoins de ma gloire,</l>
+            <l met="10">Où nous parlons tous à bâtons rompus,</l>
+            <l met="10">Mon cher Toinon, viens te remettre à boire,</l>
+            <l met="10">Tous nos discours finissent par Bacchus.</l>
+            <p>J'aperçois l'enjouée Délie, voilà ce qu'il me faut. C'est une bonne pâte de fille qui rit même dans les situations les plus tendres.</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="characters">Amintas</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="characters">Amintas, Délie</stage>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fuz_gavotte">Gavotte</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="7">Salut à votre enjouement,</l>
+            <l met="7">Bonjour aimable Délie,</l>
+            <l met="7">Vous badinez finement</l>
+            <l met="7">Si j'en crois ce qu'on publie.</l>
+            <l met="7">Mais en récompense aussi,</l>
+            <l met="7">Le public malin s'écrie</l>
+            <l met="7">Que votre amoureux transi</l>
+            <l met="7">N'entend pas trop raillerie.</l>
+          </sp>
+        </spGrp>
+        <sp who="#delie">
+          <speaker>Délie</speaker>
+        </sp>
+        <spGrp who="#delie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_soeur_je_vous_felicite">Ma sœur, je vous félicite</title>
+            </desc>
+          </head>
+          <sp who="#delie">
+            <speaker>Délie</speaker>
+            <l met="8">Il est vrai que mon cher Tibulle</l>
+            <l met="8">Sans besoin longtemps dissimule,</l>
+            <l met="8">Il a l'esprit un peu trop lourd</l>
+            <l met="6">Tour [lour, lour, lour, lour, lour]</l>
+            <l met="8">Il a l'esprit un peu trop lourd</l>
+            <l met="6">Au joli jeu d'amour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#musette">Musette</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="4">Le pauvre sire</l>
+            <l met="5">Ne sait que vous dire,</l>
+            <l met="12">Pour un fameux auteur quel rôle est-ce donc là?</l>
+            <l met="4">Le pauvre sire</l>
+            <l met="5">Ne sait que vous dire,</l>
+            <l met="12">Oh! Que les gens d'esprit sont sots à l'Opéra!</l>
+          </sp>
+        </spGrp>
+        <sp who="#delie">
+          <speaker>Délie</speaker>
+          <p>Vous n'avez pas absolument tort. Tibulle devrait mieux profiter de la liberté des Saturnales.</p>
+        </sp>
+        <spGrp who="#delie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#joconde">Joconde</title>
+            </desc>
+          </head>
+          <sp who="#delie">
+            <speaker>Délie</speaker>
+            <l met="8">On n'aurait pas appris le choix</l>
+            <l met="6">De cet amant si tendre</l>
+            <l met="8">S'il avait su qu'en tapinois</l>
+            <l met="6">Délie allait l'attendre.</l>
+            <l met="8">De son déguisement complet</l>
+            <l met="6">Il me cachait l'histoire,</l>
+            <l met="8">Ne s'habillait-il en valet</l>
+            <l met="6">Que pour verser à boire?</l>
+          </sp>
+        </spGrp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lampons">Lampons [camarades, lampons]</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="7">Si l'on ne vous convient pas</l>
+            <l met="7">Lorsqu'on tremble à chaque pas,</l>
+            <l met="7">Écoutez, j'ai votre affaire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#delie">
+          <speaker>Délie</speaker>
+          <l met="7">Quel présent m'allez-vous faire?</l>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <l met="4">C'est moi. C'est moi.</l>
+          <l met="6">Oui, ma chère c'est moi.</l>
+        </sp>
+        <sp who="#delie">
+          <speaker>Délie</speaker>
+        </sp>
+        <spGrp who="#delie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#talaleri">Talalerire</title>
+            </desc>
+          </head>
+          <sp who="#delie">
+            <speaker>Délie</speaker>
+            <l met="8">Amintas ose aimer Délie,</l>
+            <l met="8">Et de plus l'ose révéler.</l>
+            <l met="8">La fête excuse ta folie,</l>
+            <l met="8">Garde-toi de la redoubler,</l>
+            <l met="8">Saturne m'ordonne d'en rire</l>
+            <l met="12">Talalerita [lalerita, lalerire]</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#delie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Le péril</title>
+            </desc>
+          </head>
+          <sp who="#delie">
+            <speaker>Délie</speaker>
+            <l met="8">Ne fatiguez plus mes oreilles,</l>
+            <l met="8">Tibulle fixera mon choix;</l>
+            <l met="8">Quoiqu'il s'amuse dans un bois</l>
+            <l met="6">À bailler aux corneilles.</l>
+            <p>Je me souviens qu'il fait de belles élégies et qu'il est encore plus délicat que son ami Ovide.</p>
+          </sp>
+        </spGrp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#menuet_pnti_4_243">Menuet</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="9">Fi d'un amant qui n'est que poète,</l>
+            <l met="6">La muse gentillette</l>
+            <l met="5">Ne plait pas toujours,</l>
+            <l met="6">Il faut d'autres secours</l>
+            <l met="6">Aux projets des amours.</l>
+            <l met="4">De leur empire</l>
+            <l met="5">Quel est le soutien?</l>
+            <l met="6">Ce que l'on n'ose dire</l>
+            <l met="5">Et qui s'entend bien.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 13</head>
+        <stage type="characters">Les précédents, Apollon</stage>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_lui_qui_aime_les_fleurs">C'est lui qui aime les fleurs</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="8">Qui vient ainsi, cher Apollon.</l>
+          </sp>
+        </spGrp>
+        <sp who="#delie">
+          <speaker>Délie</speaker>
+          <l met="6">C'est Apollon lui-même.</l>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <l met="8">C'est Apollon.</l>
+        </sp>
+        <sp who="#delie">
+          <speaker>Délie</speaker>
+          <l met="8">C'est Apollon</l>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <l met="6">C'est Apollon lui-même</l>
+        </sp>
+        <sp who="#delie">
+          <speaker>Délie</speaker>
+          <l met="2">C'est lui</l>
+          <l met="6">C'est Apollon lui-même.</l>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#confiteor">Confiteor</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="8">Quel équipage, justes dieux!</l>
+            <l met="8">Et quel est donc le vent qui souffle?</l>
+            <l met="8">Apollon quitte dans ces lieux</l>
+            <l met="8">Le cothurne pour la pantoufle</l>
+          </sp>
+        </spGrp>
+        <sp who="#delie">
+          <speaker>Délie</speaker>
+          <l met="8">Plus d'un poète déclaré</l>
+          <l met="8">Ne l'a jamais vu mieux paré.</l>
+        </sp>
+        <sp who="#apollon">
+          <speaker>Apollon</speaker>
+        </sp>
+        <spGrp who="#apollon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ermite">Le fils d'Ulysse</title>
+            </desc>
+          </head>
+          <sp who="#apollon">
+            <speaker>Apollon</speaker>
+            <l met="10">Ah! Si j'allais au temple de Mémoire</l>
+            <l met="6">Pour présider aux jeux.</l>
+            <l met="10">Qu'à défrayer la muse de l'histoire,</l>
+            <l met="6">J'aurais un char pompeux.</l>
+            <l met="10">Mais dame, ici, je suis comme à la foire.</l>
+            <l met="7">Et j'y viens sans gloire, moi.</l>
+            <l met="5">[Et j'y viens sans gloire].</l>
+          </sp>
+        </spGrp>
+        <sp who="#delie">
+          <speaker>Délie</speaker>
+        </sp>
+        <spGrp who="#delie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sur_les_terreaux">Sur les terreaux</title>
+            </desc>
+          </head>
+          <sp who="#delie">
+            <speaker>Délie</speaker>
+            <l met="4">Ouvrons le bal</l>
+            <l met="8">Dans cette agréable retraite,</l>
+            <l met="4">Ouvrons le bal.</l>
+            <l met="8">Et dansons tous tant bien que mal</l>
+            <l met="8">Puisqu'Apollon dans sa guinguette</l>
+            <l met="8">Veut bien qu'on saute et qu'on muguette,</l>
+            <l met="4">Ouvrons le bal.</l>
+          </sp>
+        </spGrp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#musette">Musette</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="8">Qui diantre ose danser encore</l>
+            <l met="8">En présence du blond Phébus,</l>
+            <l met="5">Lui qui ne fait plus</l>
+            <l met="7">Que voir danser Terpsicore.</l>
+            <l met="5">Lui qui ne fait plus</l>
+            <l met="7">Que chanter ses attributs.</l>
+            <l met="8">Qui diantre [ose danser encore.]</l>
+          </sp>
+        </spGrp>
+        <sp who="#apollon">
+          <speaker>Apollon</speaker>
+          <p>Allons, Amintas, convoquez l'assemblée.</p>
+        </sp>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+        </sp>
+        <spGrp who="#amintas">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#menuet_du_prologue">Menuet du prologue</title>
+            </desc>
+          </head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="3">Que l'on danse!</l>
+            <l met="5">Que le bal commence!</l>
+            <l met="7">Hâtez-vous jeunes coquets,</l>
+            <l met="7">Faites briller vos feux follets,</l>
+            <l met="3">Que l'on danse</l>
+            <l met="5">Que le bal commence</l>
+            <l met="7">Macarons, biscuits volés,</l>
+            <l met="7">Bon vin, coulez à longs traits.</l>
+            <l met="3">Tous ensemble</l>
+            <l met="7">Dans cette fête charmante,</l>
+            <l met="7">Ici, les tendres désirs</l>
+            <l met="9">N'attendent pas longtemps les soupirs,</l>
+            <l met="9">Fringuez bien, tant en large qu'en long,</l>
+            <l met="9">Les sept sauts, les rats, le carillon,</l>
+            <l met="7">Et surtout, sans vous lasser,</l>
+            <l met="4">Faites danser</l>
+            <l met="6">Bien haut le cotillon,</l>
+            <l met="3">Que l'on danse,</l>
+            <l met="5">[Que le bal commence].</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 14</head>
+        <stage type="characters">Tous</stage>
+        <sp who="#amintas">
+          <speaker>Amintas</speaker>
+          <l met="8">Que j'aime à trouver Apollon</l>
+          <l met="8">Entre le verre et la bouteille,</l>
+          <l met="12">Il a dans sa guinguette un teint plus rubicond</l>
+          <l met="8">Que dans son antre d'Hélicon,</l>
+          <l met="12">Il est sous les lauriers moins gai que sous la treille.</l>
+        </sp>
+        <spGrp>
+          <head type="vaudeville-chorus">1</head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="12">Quand Saturne régnait, que le temps était bon.</l>
+            <l met="8">Des bigarrures du blason</l>
+            <l met="8">On n'avait point l'âme occupée,</l>
+            <l met="12">Tous les mortels égaux, ignorants le jargon</l>
+            <l met="7">De la robe et de l'Épée</l>
+            <l met="8">Vivaient de pair à compagnon.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">2</head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="12">Du siècle où les humains se voyaient sans façon</l>
+            <l met="8">Et sans s'informer de leur nom,</l>
+            <l met="8">Le jeu nous offre la figure.</l>
+            <l met="12">Aujourd'hui, dans les lieux soumis au Pharaon</l>
+            <l met="8">Et la noblesse et la roture</l>
+            <l met="8">Vivent de pair à compagnon.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">3</head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="12">N'espérez pas briller chez la moindre Suson</l>
+            <l met="8">Si vous ne roulez le teston.</l>
+            <l met="8">L'amour gueux n'a point de ressources.</l>
+            <l met="12">Avez-vous des ducats, d'abord plus d'un gascon</l>
+            <l met="8">Tutoyant vous et votre bourse</l>
+            <l met="8">Vivra de pair à compagnon.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">4</head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="12">On prétend qu'à Paris le temps est encore bon</l>
+            <l met="8">Et que dans plus d'une maison</l>
+            <l met="8">On jouit d'une vie heureuse.</l>
+            <l met="12">Là, parfois, en dépit du procureur barbon</l>
+            <l met="8">Les clercs avec la procureuse</l>
+            <l met="8">Vivent [de pair à compagnon].</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">5</head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="12">Un charcutier Crésus, fameux pour le jambon,</l>
+            <l met="8">Malgré tous les talents, dit-on.</l>
+            <l met="8">N'a pas l'humeur plus arrogante,</l>
+            <l met="12">Tout habile qu'il est à faire un saucisson</l>
+            <l met="8">Avec Marotte sa servante</l>
+            <l met="8">Il vit [de pair à compagnon].</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">6</head>
+          <sp who="#amintas">
+            <speaker>Amintas</speaker>
+            <l met="12">Quand le parterre siffle, il est un vrai dragon.</l>
+            <l met="8">Bat-il des mains, c'est un mouton</l>
+            <l met="8">Qui nous fuit et qui nous caresse,</l>
+            <l met="12">Puisse-t-il doucement et sans être grognon</l>
+            <l met="8">Avec nous pendant cette pièce,</l>
+            <l met="8">Vivre [de pair à compagnon].</l>
+          </sp>
+        </spGrp>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

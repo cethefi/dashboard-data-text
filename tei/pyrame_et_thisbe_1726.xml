@@ -1,0 +1,2216 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="pyrame_et_thisbe_1726">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Pyrame et Thisbé</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Antoine-François Riccoboni, Jean-Antoine Romagnesi</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>B. Ourcel</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">
+          <bibl xml:id="pnti">
+            <title>Les Parodies du nouveau Théâtre-Italien</title>, Briasson, 1738</bibl>, t.III</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="ninus" sex="UNKNOWN">
+            <persName>Ninus</persName>
+          </person>
+          <person xml:id="pyrame" sex="UNKNOWN">
+            <persName>Pyrame</persName>
+          </person>
+          <person xml:id="thisbe" sex="UNKNOWN">
+            <persName>Thisbé</persName>
+          </person>
+          <person xml:id="zoraide" sex="UNKNOWN">
+            <persName>Zoraïde</persName>
+          </person>
+          <person xml:id="zoroastre" sex="UNKNOWN">
+            <persName>Zoroastre</persName>
+          </person>
+          <person xml:id="unforcat" sex="UNKNOWN">
+            <persName>Un Forçat</persName>
+          </person>
+          <person xml:id="troupe_d_esclaves_chantants_et_dansants" sex="UNKNOWN">
+            <persName>Troupe d'esclaves chantants et dansants</persName>
+          </person>
+          <person xml:id="troupe_de_mitrons_de_poetes_et_de_musiciens" sex="UNKNOWN">
+            <persName>Troupe de mitrons, de poètes et de musiciens</persName>
+          </person>
+          <person xml:id="troupe_d_archers" sex="UNKNOWN">
+            <persName>Troupe d'archers</persName>
+          </person>
+          <person xml:id="un_cerf" sex="UNKNOWN">
+            <persName>Un cerf</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1726">
+        <desc> 1726</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#ninus">Ninus</role>
+          <roleDesc>chef des flibustiers</roleDesc>
+          <actor>Paghetti</actor>
+        </castItem>
+        <castItem>
+          <role ana="#pyrame">pyrame</role>
+          <roleDesc>son lieutenant</roleDesc>
+          <actor>Thomassin en Arlequin</actor>
+        </castItem>
+        <castItem>
+          <role ana="#thisbe">Thisbé</role>
+          <actor>Silvia ou le chanteur en femme</actor>
+        </castItem>
+        <castItem>
+          <role ana="#zoraide">Zoraïde</role>
+          <actor>la demoiselle Lalande</actor>
+        </castItem>
+        <castItem>
+          <role ana="#zoroastre">Zoroastre</role>
+          <roleDesc>berger, père de Zoraïde</roleDesc>
+          <actor>Romagnesi ou Riccoboni fils</actor>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_d_esclaves_chantants_et_dansants">Troupe d'esclaves chantants et dansants</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_mitrons_de_poetes_et_de_musiciens">Troupe de mitrons, de poètes et de musiciens</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_d_archers">Troupe d'archers</role>
+        </castItem>
+        <castItem>
+          <role ana="#un_cerf">Un cerf</role>
+        </castItem>
+      </castList>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Zoraïde, Thisbé</stage>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+        </sp>
+        <spGrp who="#zoraide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_nos_forets">On n'aime plus [dans nos forêts]</title>
+            </desc>
+          </head>
+          <sp who="#zoraide">
+            <speaker>Zoraïde</speaker>
+            <l met="8">Le perfide ne m'aime plus,</l>
+            <l met="8">Rien ne saurait calmer ma crainte,</l>
+            <l met="8">Dans ses soins les plus assidus</l>
+            <l met="8">Je m'aperçois de sa contrainte,</l>
+            <l met="8">Il soupire à bâtons rompus;</l>
+            <l met="8">J'ai perdu le cœur de Ninus.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Zoraïde a trop de défiance; une personne aussi aimable que vous doit-elle craindre une infidélité? Ce chef des flibustiers, dont vous êtes éprise, revient vainqueur des pirates d'Alger. N'en doutez point, Ninus vous aime: il rêve, il soupire, il ne sait ce qu'il fait.</p>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+        </sp>
+        <spGrp who="#zoraide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reviendrai_demain">Je reviendrai demain [au soir]</title>
+            </desc>
+          </head>
+          <sp who="#zoraide">
+            <speaker>Zoraïde</speaker>
+            <l met="8">J'aurais déjà reçu sa foi,</l>
+            <l met="6">S'il soupirait pour moi.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <l met="8">À qui fait-il donc les yeux doux?</l>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <l met="6">Je crois que c'est à vous.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Moi?</p>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+        </sp>
+        <spGrp who="#zoraide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ouiche_et_ouiche">Ouiche, ouiche</title>
+            </desc>
+          </head>
+          <sp who="#zoraide">
+            <speaker>Zoraïde</speaker>
+            <l met="7">Vos attraits, votre naissance</l>
+            <l met="7">Vont me ravir ce cœur-là.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <l met="8">Croyez que toute sa puissance</l>
+          <l met="7">Jamais ne m'éblouira.</l>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <l met="3">Ah, ah, ah!</l>
+          <l met="3">Ouiche, ouiche,</l>
+          <l met="7">Quelle fille refusera</l>
+          <l met="4">Un amant riche?</l>
+          <l met="3">Ouiche, ouiche,</l>
+          <l met="3">Eh oui-da!</l>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+        </sp>
+        <spGrp who="#thisbe">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quand_j_ai_ma_cornette_a_deux_rangs_">Quand j'ai ma cornette [à deux rangs]</title>
+            </desc>
+          </head>
+          <sp who="#thisbe">
+            <speaker>Thisbé</speaker>
+            <l met="8">Vous m'offensez, en vérité,</l>
+            <l met="8">Il ne sera point écouté.</l>
+            <l met="8">Et qui peut ébranler mon âme?</l>
+            <l met="8">L'amour y fait régner Pyrame.</l>
+          </sp>
+        </spGrp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <p>Ô Ciel!</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Nous nous aimions depuis longtemps, et je n'attendais que son retour pour conclure notre mariage.</p>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <p>Vos parents y donnent sans doute leur consentement?</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>À vous dire le vrai, nous n'en connaissions autrefois que de très bourgeois; mais depuis peu un nouveau généalogiste nous a fait descendre de têtes couronnées, qui veulent que cet hymen s'achève. Je ne sais comment tout cela tournera. Mais voici venir Ninus, et Pyrame avec lui; voulez-vous les aborder?</p>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <p>Non, je dois leur cacher mon trouble.</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Ce ne sera pas mal fait; car aussi bien ont-ils quelque chose à se dire que nous ne devons pas entendre.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Ninus, Pyrame</stage>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+        </sp>
+        <spGrp who="#ninus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#birene">Trois enfants gueux</title>
+            </desc>
+          </head>
+          <sp who="#ninus">
+            <speaker>Ninus</speaker>
+            <l met="10">Viens recevoir les honneurs éclatants</l>
+            <l met="10">Qu'on te prépare en cet heureux asile,</l>
+            <l met="10">Nos flibustiers de toi sont fort contents;</l>
+            <l met="10">Mais pour moi seul ta gloire est inutile.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>J'en suis bien fâché; vous avez pourtant eu la meilleure part du butin.</p>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>Ah, mon ami! Je suis dans un grand embarras.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Ma foi?</p>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+        </sp>
+        <spGrp who="#ninus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jeune_isabelle">La jeune Isabelle</title>
+            </desc>
+          </head>
+          <sp who="#ninus">
+            <speaker>Ninus</speaker>
+            <l met="5">D'une amour nouvelle</l>
+            <l met="5">Je suis occupé,</l>
+            <l met="5">Je quitte la belle</l>
+            <l met="5">Dont j'étais frappé.</l>
+            <l met="5">Pourquoi Zoraïde</l>
+            <l met="5">M'aime-t-elle encor?</l>
+            <l met="5">Si je suis perfide,</l>
+            <l met="5">Elle seule a tort.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Bon?</p>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>Sans doute, si elle ne m'aimait plus, elle n'aurait plus rien à me reprocher.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Fi donc!</p>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>Cela est comme je te le dis.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Tant pis.</p>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+        </sp>
+        <spGrp who="#ninus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#trembleurs_d_isis">Trembleurs d'Isis</title>
+            </desc>
+          </head>
+          <sp who="#ninus">
+            <speaker>Ninus</speaker>
+            <l met="7">Élevé dans les alarmes,</l>
+            <l met="7">Dans le tumulte des armes,</l>
+            <l met="7">Je ne goûtais point les charmes</l>
+            <l met="7">Qu'un tendre amour nous produit;</l>
+            <l met="7">Mais en mettant pied à terre</l>
+            <l met="7">J'ai vu la fille du frère</l>
+            <l met="7">De la femme de mon père,</l>
+            <l met="7">Ma cousine autrement dit.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Thisbé?</p>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+        </sp>
+        <spGrp who="#ninus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dieu_des_amours">Dieu des amours, Menuet</title>
+            </desc>
+          </head>
+          <sp who="#ninus">
+            <speaker>Ninus</speaker>
+            <l met="8">Eh quel autre pourrait, grands dieux,</l>
+            <l met="5">Me rendre sensible?</l>
+            <l met="5">De ses beaux yeux,</l>
+            <l met="4">Vifs, amoureux,</l>
+            <l met="5">Je sens tous les feux.</l>
+            <l met="4">Du Dieu d'amour,</l>
+            <l met="3">En ce jour,</l>
+            <l met="5">Un trait invincible</l>
+            <l met="7">Arme la cruelle main</l>
+            <l met="9">Pour chasser le repos de mon sein.</l>
+            <l met="3">D'un vainqueur,</l>
+            <l met="4">Plein de douceur,</l>
+            <l met="5">Ô pouvoir terrible!</l>
+            <l met="8">Le trait vole et perce mon cœur.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#ninus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_n_avez_pas_besoin">Vous n'avez pas besoin</title>
+            </desc>
+          </head>
+          <sp who="#ninus">
+            <speaker>Ninus</speaker>
+            <l met="10">Un seul moment de notre sort décide,</l>
+            <l met="10">Au Dieu d'amour je n'ai point échappé,</l>
+            <l met="10">J'ai cru d'abord adorer Zoraïde,</l>
+            <l met="10">Mais je vois bien que je m'étais trompé.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Et son père?</p>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>Que diable, tu ne me parles que par monosyllabes!</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>C'est que tous mes amis me conseillent de ne plus rien dire.</p>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>Puisque tu ne peux me donner aucun avis, je vais chercher Thisbé; je ne puis être un moment sans la voir.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Thisbé, Pyrame</stage>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+        </sp>
+        <spGrp who="#thisbe">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#un_canard">Un canard</title>
+            </desc>
+          </head>
+          <sp who="#thisbe">
+            <speaker>Thisbé</speaker>
+            <l met="8">Je vous revois, mon cher Pyrame,</l>
+            <l met="8">Dans cet agréable séjour,</l>
+            <l met="8">Tout rit à notre heureuse flamme,</l>
+            <l met="9">La fortune, et la gloire, et l'amour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+        </sp>
+        <spGrp who="#pyrame">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quand_moise_fit_defense">Quand Moïse [fit défense]</title>
+            </desc>
+          </head>
+          <sp who="#pyrame">
+            <speaker>Pyrame</speaker>
+            <l met="7">Celui qui pour cette affaire</l>
+            <l met="7">Quitte son natal séjour</l>
+            <l met="7">Risque toujours trop à faire</l>
+            <l met="7">Le voyage le plus court:</l>
+            <l met="7">Si le pauvre diable laisse</l>
+            <l met="7">Ou sa femme, ou sa maîtresse,</l>
+            <l met="7">Qu'il s'attende, en revenant,</l>
+            <l met="7">À trouver du changement.</l>
+            <p>Hélas!</p>
+          </sp>
+        </spGrp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Vous soupirez, qu'avez-vous?</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+        </sp>
+        <spGrp who="#pyrame">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_reguingue">Ô reguingué</title>
+            </desc>
+          </head>
+          <sp who="#pyrame">
+            <speaker>Pyrame</speaker>
+            <l met="8">Lorsque vous partagez mes feux,<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Je n'en suis que plus malheureux,</l>
+            <l met="8">Ô reguingué, ô lon lan la.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <l met="8">Éclaircissez-moi cette emblème.</l>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <l met="8">Ninus...</l>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <l met="8">Parlez.</l>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <l met="8">Ninus vous aime.</l>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Le flibustier?</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+        </sp>
+        <spGrp who="#pyrame">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mais_surtout_prenez_bien_garde">Prenez bien garde à votre [cotillon]</title>
+            </desc>
+          </head>
+          <sp who="#pyrame">
+            <speaker>Pyrame</speaker>
+            <l met="8">Flatté de l'espoir le plus doux,<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Il va venir à vos genoux</l>
+            <l met="8">Vous offrir argent et bijoux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <l met="7">Ah! Vous m'offensez, Pyrame.</l>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <l met="5">Quel tendre courroux!<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Il est plus juste que tendre: pouvez-vous me croire intéressée?</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>J'ai tort: je dois appréhender son pouvoir, et non pas ses richesses. Nous dépendons ici de lui; et si vous le refusez, je crains qu'il ne s'irrite.</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Zoraïde le rappellera par ses larmes, il lui a promis de l'épouser.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Bon! Il s'embarrassera bien de lui tenir parole. Vous ne le connaissez pas.</p>
+        </sp>
+        <spGrp who="#pyrame">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lapalisse">Monsieur La Palisse</title>
+            </desc>
+          </head>
+          <sp who="#pyrame">
+            <speaker>Pyrame</speaker>
+            <l met="7">Par un attentat cruel</l>
+            <l met="7">Il brisera notre chaîne;</l>
+            <l met="7">Si vous n'allez à l'autel,</l>
+            <l met="7">Craignez qu'il ne vous y mène.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Ne vous figurez point cela.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Je dois prévenir ce malheur en vous cédant à mon rival. Je crois que c'est le plus court.</p>
+        </sp>
+        <spGrp who="#pyrame">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#birene">Birène</title>
+            </desc>
+          </head>
+          <sp who="#pyrame">
+            <speaker>Pyrame</speaker>
+            <l met="10">Par charité, ne pensez plus à moi,</l>
+            <l met="10">Quand cet amant aura rempli ma place,</l>
+            <l met="10">Je gémirai de vous voir sous sa loi,</l>
+            <l met="10">Mais il faudra qu'à la fin je m'y fasse.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Que je ne pense plus à vous! Ah, que vous êtes sage pour un amant passionné! Il y en a bien d'autres qui penseraient différemment.</p>
+        </sp>
+        <spGrp who="#thisbe">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_opera_nouveau_menuet">l'opéra nouveau, menuet</title>
+            </desc>
+          </head>
+          <sp who="#thisbe">
+            <speaker>Thisbé</speaker>
+            <l met="4">Souvent l'amant</l>
+            <l met="4">Voit sans tristesse</l>
+            <l met="5">Prendre à sa maîtresse</l>
+            <l met="5">Un engagement;</l>
+            <l met="3">Il espère,</l>
+            <l met="4">S'il sait lui plaire,</l>
+            <l met="5">Goûter les plaisirs</l>
+            <l met="7">Dont on privait ses désirs.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Je profiterai de l'avis; mais voici Ninus, ne faites semblant de rien.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Ninus, Pyrame, Thisbé</stage>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <stage>à Pyrame qui veut s'en aller</stage>
+          <p>Arrêtez, Pyrame.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Je suis discret.</p>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>Non, il est nécessaire que vous entendiez mon compliment.</p>
+        </sp>
+        <stage>À Thisbé.</stage>
+        <spGrp who="#ninus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#petits_grands">Pendus</title>
+            </desc>
+          </head>
+          <sp who="#ninus">
+            <speaker>Ninus</speaker>
+            <l met="8">L'Amour qui me guide en ces lieux</l>
+            <l met="8">Me fait chercher dans vos beaux yeux</l>
+            <l met="8">Le destin que je dois attendre;</l>
+            <l met="8">Plus en amant soumis et tendre</l>
+            <l met="8">Qu'en vainqueur des Algériens</l>
+            <l met="8">Je viens m'offrir à vos liens.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+        </sp>
+        <spGrp who="#thisbe">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#chantez_petit_colin_menuet">Chantez petit Colin, Menuet</title>
+            </desc>
+          </head>
+          <sp who="#thisbe">
+            <speaker>Thisbé</speaker>
+            <l met="6">Résistez mieux, Seigneur,</l>
+            <l met="6">Au transport qui vous guide.</l>
+            <l met="6">Quoi, vous m'offrez un cœur</l>
+            <l met="8">Qui doit brûler d'une autre ardeur?</l>
+            <l met="6">Ah! Si pour Zoraïde</l>
+            <l met="6">Vous devenez perfide,</l>
+            <l met="5">Je dois à mon tour,</l>
+            <l met="5">D'un volage amour</l>
+            <l met="5">Craindre le retour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>Bon, ne voyez-vous pas que mon cœur n'était fait que pour vous?</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Mais vous avez promis à Zoraïde de l'épouser; pouvez-vous lui manquer de parole?</p>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>C'est une bagatelle à laquelle mon esprit a remédié.</p>
+        </sp>
+        <spGrp who="#ninus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cotillon_thalie">Dansons le nouveau cotillon</title>
+            </desc>
+          </head>
+          <sp who="#ninus">
+            <speaker>Ninus</speaker>
+            <l met="8">Sur mon fidèle lieutenant</l>
+            <l met="11">Je puis déposer un fardeau si pesant.</l>
+            <l met="4">Mon cher Pyrame,</l>
+            <l met="3">Prends pour femme</l>
+            <l met="5">Ce jeune tendron.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <l met="8">Le beau présent, ah, voyez donc!</l>
+          <l met="8">Il agit avec ses amis</l>
+          <l met="10">Comme les traitants avec leurs commis.</l>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>Et pour t'obliger à me rendre ce service, je te fais mon égal, sois comme moi chef des flibustiers.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Justement, il me donne une direction.</p>
+        </sp>
+        <spGrp who="#pyrame">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#davantage">Je n'en veux pas davantage</title>
+            </desc>
+          </head>
+          <sp who="#pyrame">
+            <speaker>Pyrame</speaker>
+            <l met="7">Faites votre mariage</l>
+            <l met="7">Sans disposer de mon cœur,</l>
+            <l met="7">J'estime peu l'avantage</l>
+            <l met="7">Et l'éclat de la grandeur.</l>
+            <l met="7">Mon respect pour vous m'engage</l>
+            <l met="8">À n'être que votre second,</l>
+            <l met="4">Eh, non, non, non,</l>
+            <l met="7">Je n'en veux pas davantage.</l>
+          </sp>
+        </spGrp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>Vous êtes trop modeste, Pyrame; je vous fais présent des galères que vous avez prises. Que leurs forçats viennent célébrer à l'impromptu l'hommage qu'ils doivent au charmant objet de mes vœux.</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Mais attendez du moins que j'aie accepté le vôtre. Vous vous dites amant soumis et tendre, et vous me donnez une fête sans savoir si elle me sera agréable.</p>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>Oh! Cela est sous-entendu: les flibustiers n'y cherchent pas tant de façons; et d'ailleurs, quand il s'agit d'un divertissement, il faut bien qu'il arrive, n'importe comme il est amené.</p>
+        </sp>
+        <stage>Marche de forçats algériens.</stage>
+        <sp who="#unforcat">
+          <speaker>Un Forçat</speaker>
+        </sp>
+        <spGrp who="#unforcat">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#laissons_nous_charmer_du_plaisir_d_aimer">Laissons-nous charmer du plaisir d'aimer</title>
+            </desc>
+          </head>
+          <sp who="#unforcat">
+            <speaker>Un Forçat</speaker>
+            <l met="5">Que de nos transports</l>
+            <l met="5">Naissent des accords</l>
+            <l met="6">Qui surpassent Lully</l>
+            <l met="5">En vif, en joli.</l>
+            <l met="5">Si parfois nos vers</l>
+            <l met="6">Vont un peu de travers,</l>
+            <l met="6">Un bon air à danser</l>
+            <l met="4">Les fait passer.</l>
+            <l met="3">La musique,</l>
+            <l met="3">Quoique antique,</l>
+            <l met="7">Par notre art se recrépit;</l>
+            <l met="3">Et la Muse</l>
+            <l met="3">La plus buse</l>
+            <l met="5">Peut plaire en dépit</l>
+            <l met="5">Même de l'esprit.</l>
+            <l met="5">Que de nos transports, ...</l>
+            <l met="6">Un spectacle parfait</l>
+            <l met="6">Ne va pas sans ballet,</l>
+            <l met="10">Mais qu'ici sur tout point l'entrechat brille;</l>
+            <l met="3">Que la fille</l>
+            <l met="3">Y sautille,</l>
+            <l met="5">Et nous fasse voir</l>
+            <l met="4">Tout son savoir.</l>
+            <l met="5">Que de nos [transports] ...</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">1</head>
+          <sp who="#unforcat">
+            <speaker>Un Forçat</speaker>
+            <l met="7">Quand pour un tendre voyage</l>
+            <l met="7">Vous voulez vous embarquer,</l>
+            <l met="7">Belle, craignez l'esclavage,</l>
+            <l met="7">On viendra vous attaquer.</l>
+            <l met="7">Si vous voulez être sage,</l>
+            <l met="7">Ne combattez qu'en fuyant,</l>
+            <l met="7">Dès qu'on vient à l'abordage,</l>
+            <l met="7">Votre galère se rend.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">2</head>
+          <sp who="#unforcat">
+            <speaker>Un Forçat</speaker>
+            <l met="7">Voyageur que l'amour guide,</l>
+            <l met="7">Voguez toujours hardiment;</l>
+            <l met="7">Ne soyez jamais timide,</l>
+            <l met="7">Pour vaincre, risquez souvent.</l>
+            <l met="7">La beauté qui paraît fière,</l>
+            <l met="7">Et n'aime qu'à pirater,</l>
+            <l met="7">Souvent déclare la guerre</l>
+            <l met="7">Pour se laisser emporter.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">3</head>
+          <sp who="#unforcat">
+            <speaker>Un Forçat</speaker>
+            <l met="7">Une victoire parfaite</l>
+            <l met="7">Doit toujours un peu coûter;</l>
+            <l met="7">Gardez-vous de la coquette</l>
+            <l met="7">Qui se rend sans résister:</l>
+            <l met="7">Elle vous paraît fidèle,</l>
+            <l met="7">Pendant quelque temps vous suit;</l>
+            <l met="7">Mais dès qu'elle voit sa belle,</l>
+            <l met="7">Vous coule à fond et s'enfuit.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Zoraïde, les Acteurs précédents<stage>qui se retirent après son couplet</stage>
+        </stage>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <stage>à Ninus</stage>
+        </sp>
+        <spGrp who="#zoraide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierre_bagnolet">Allez-vous-en gens de la noce</title>
+            </desc>
+          </head>
+          <sp who="#zoraide">
+            <speaker>Zoraïde</speaker>
+            <l met="8">À qui dans ces lieux veut-on plaire?</l>
+            <l met="8">Ne puis-je l'apprendre de vous?</l>
+            <l met="7">Pourquoi me faire un mystère</l>
+            <l met="8">D'un spectacle si beau, si doux?</l>
+            <l met="4">Expliquez-vous.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Comment voulez-vous qu'il s'explique si vous l'étranglez! Il ne fait pas bon ici pour nous; allons-nous-en.</p>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <l met="8">À qui dans ces lieux veut-on plaire?</l>
+          <l met="8">Ne puis-je l'apprendre de vous?</l>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+        </sp>
+        <spGrp who="#ninus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#viens_ici_que_je_te_regale">Viens ici que je te régale</title>
+            </desc>
+          </head>
+          <sp who="#ninus">
+            <speaker>Ninus</speaker>
+            <l met="8">Mon embarras doit vous suffire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <l met="8">Expliquez-vous sans nul détour.</l>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <l met="8">Que diable ici vais-je lui dire?</l>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <l met="8">Ah! Trahiriez-vous mon amour?</l>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>Vraiment oui; mais c'est à regret, je vous assure, et ce qui fait que je ne vous aime plus, c'est que j'adore Thisbé.</p>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <p>Ah, scélérat!</p>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>Vous devriez prendre une résolution généreuse, vengez-vous de moi en épousant Pyrame; c'est un joli garçon, qui est de mes parents à ce qu'on dit, et qui...</p>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <p>Halte-là! C'est bien à toi de disposer d'une main que tu méprises! Mais ne te mets pas en peine, je vais le dire à mon père.</p>
+        </sp>
+        <spGrp who="#zoraide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sur_la_terre_et_sur_l_onde">Sur la terre et sur l'onde</title>
+            </desc>
+          </head>
+          <sp who="#zoraide">
+            <speaker>Zoraïde</speaker>
+            <l met="6">Sur la terre et sur l'onde</l>
+            <l met="5">L'enfer le seconde,</l>
+            <l met="4">Il fait, s'il veut,</l>
+            <l met="5">Beau temps quand il pleut,</l>
+            <l met="7">Par son pouvoir tout se meut.</l>
+            <l met="5">Il voit dans la main</l>
+            <l met="5">Si l'homme est enclin</l>
+            <l met="6">Au destin de Vulcain.</l>
+            <l met="4">Ne sait-il pas</l>
+            <l met="4">Tourner le sas,</l>
+            <l met="6">Arrêter un carrosse?</l>
+            <l met="2">Il rosse,</l>
+            <l met="2">Fait bosse,</l>
+            <l met="3">Tord le cou,</l>
+            <l met="5">Change en loup-garou.</l>
+          </sp>
+        </spGrp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>Bon, bon, je ne crois point aux sorciers.</p>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+        </sp>
+        <spGrp who="#zoraide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tarare_ponpon">Tarare ponpon</title>
+            </desc>
+          </head>
+          <sp who="#zoraide">
+            <speaker>Zoraïde</speaker>
+            <l met="6">Par un tendre retour,</l>
+            <l met="6">Reviens à moi, barbare!</l>
+            <l met="6">Tu vois que mon amour</l>
+            <l met="6">Surmonte ma raison,</l>
+            <l met="6">Que rien ne nous sépare:</l>
+            <l met="6">Aime-moi, cher Ninon,</l>
+            <l met="4">Quitte Thisbé.</l>
+          </sp>
+        </spGrp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <l met="2">Tarare</l>
+          <l met="2">Ponpon.</l>
+          <p>Tout ce que je puis faire, c'est de vous plaindre, de me plaindre, et de nous plaindre tous deux. Croyez-moi, oubliez jusqu'au nom de Ninus.</p>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+        </sp>
+        <spGrp who="#zoraide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nanette_dormez_vous">Nanette dormez-vous</title>
+            </desc>
+          </head>
+          <sp who="#zoraide">
+            <speaker>Zoraïde</speaker>
+            <l met="6">Eh! Puis-je t'oublier?<stage type="bis">bis</stage>
+            </l>
+            <l met="12">Tu veux donc que je t'aide à te justifier!</l>
+            <l met="7">Non, non, non, mon seul recours</l>
+            <l met="6">Est de trancher mes jours.</l>
+          </sp>
+        </spGrp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>La pauvre fille!</p>
+        </sp>
+        <spGrp who="#ninus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jus_octobre">Quand je tiens de ce jus [d'octobre]</title>
+            </desc>
+          </head>
+          <sp who="#ninus">
+            <speaker>Ninus</speaker>
+            <l met="8">Que votre sort est déplorable!</l>
+            <l met="8">Je voudrais bien le partager:</l>
+            <l met="8">Je vois le mal qui vous accable,</l>
+            <l met="8">Mais je ne puis vous soulager.</l>
+          </sp>
+        </spGrp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+        </sp>
+        <spGrp who="#zoraide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#voici_dragons">Voici les dragons [qui viennent]</title>
+            </desc>
+          </head>
+          <sp who="#zoraide">
+            <speaker>Zoraïde</speaker>
+            <l met="7">Trouve en ta nouvelle flamme</l>
+            <l met="5">Un supplice égal;</l>
+            <l met="7">Tu peux y livrer ton âme,</l>
+            <l met="7">Puisqu'il est vrai que Pyrame</l>
+            <l met="4">Est ton rival.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Ninus<stage>seul</stage>
+        </stage>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <stage>i</stage>
+          <p>Pyrame est mon rival!</p>
+        </sp>
+        <spGrp who="#ninus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">De tous les capucins [du monde]</title>
+            </desc>
+          </head>
+          <sp who="#ninus">
+            <speaker>Ninus</speaker>
+            <l met="8">Ah! Je vous apprendrai, Pyrame,</l>
+            <l met="8">À vous faire aimer d'une femme</l>
+            <l met="8">Dont je veux faire ma moitié!</l>
+            <l met="8">Mais, hélas! ce n'est pas sa faute;</l>
+            <l met="8">Je dois plutôt avoir pitié</l>
+            <l met="8">Du pauvre diable à qui je l'ôte.</l>
+            <p>Non, je ne puis oublier ce que je lui dois... Bon, c'est bien à un pirate à faire de semblables réflexions! Ne devait-il pas m'avertir de ne point m'attacher à Thisbé?</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#ninus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#voila_les_critiques_de_reste">Voilà les critiques de reste</title>
+            </desc>
+          </head>
+          <sp who="#ninus">
+            <speaker>Ninus</speaker>
+            <l met="8">C'est toi seul qui me rends parjure,</l>
+            <l met="8">Ton sang lavera cette injure.</l>
+            <l met="8">Coulez, perfide sang, coulez.</l>
+            <l met="8">Mais quel remords trouble mon âme?</l>
+            <l met="8">Fierté, raison, funeste flamme,</l>
+            <l met="8">Accordez-vous si vous voulez.</l>
+            <p>Je vais toujours à bon compte faire mettre Pyrame en prison.</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Pyrame, Thisbé</stage>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Ah! Ma chère Thisbé, cette babillarde de Zoraïde vient de me dire qu'elle avait découvert notre amour à Ninus, nous sommes perdus.</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Qu'allons-nous devenir, mon cher Pyrame?</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Je vous l'avais bien dit tantôt, il faudra nous séparer.</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+        </sp>
+        <spGrp who="#thisbe">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_jeune_iris">La jeune Iris</title>
+            </desc>
+          </head>
+          <sp who="#thisbe">
+            <speaker>Thisbé</speaker>
+            <l met="10">Nous séparer, ah! Seriez-vous perfide?</l>
+            <l met="10">Nous séparer, aimez-vous Zoraïde?</l>
+          </sp>
+        </spGrp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <l met="1">Non,</l>
+          <l met="7">Mais je suis un peu timide,</l>
+          <l met="7">Je crains les coups de bâtons.</l>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Quoi, vous qui avez pris tant de galères, vous tremblez? N'est-ce pas à vous à nous délivrer d'un pouvoir tyrannique?</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+        </sp>
+        <spGrp who="#pyrame">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#malheureux_oui">Quand on a prononcé [ce malheureux oui]</title>
+            </desc>
+          </head>
+          <sp who="#pyrame">
+            <speaker>Pyrame</speaker>
+            <l met="12">Hé bien! Vous le voulez, il faut vous satisfaire:</l>
+            <l met="12">Je vais contre un tyran exercer ma colère,</l>
+            <l met="12">Je vais percer le sein d'un rival odieux;</l>
+            <l met="12">Mais je puis m'en punir en mourant à ses yeux,</l>
+            <l met="12">
+              <emph>Et ma main aussitôt contre mon sein tournée<note>Vers déclamé.</note>
+              </emph>
+            </l>
+            <p>Mais je m'embarbouille dans Cinna. Voyez comme on se rencontre.</p>
+          </sp>
+        </spGrp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Arrêtez, Pyrame, puisque vous m'aimez, je suis contente.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Et moi, je ne le suis pas, je crains Ninus.</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Il m'aime trop pour m'épouser malgré moi, et je suis sûre qu'il immolera son amour à mon contentement.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+        </sp>
+        <spGrp who="#pyrame">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#les_triolets">Triolets</title>
+            </desc>
+          </head>
+          <sp who="#pyrame">
+            <speaker>Pyrame</speaker>
+            <l met="8">Ninus n'est pas si sot que moi,</l>
+            <l met="8">Il veut être content lui-même,</l>
+            <l met="8">Son amour veut faire la loi,</l>
+            <l met="8">Ninus n'est pas si sot que moi.</l>
+            <l met="8">Ce n'est pas un gaillard, ma foi,</l>
+            <l met="8">À s'immoler pour ce qu'il aime.</l>
+            <l met="8">Ninus n'est pas si sot que moi,</l>
+            <l met="8">Il veut être content lui-même.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Je vois bien qu'il faudra l'épouser; mais tandis que nous avons le temps,</p>
+        </sp>
+        <spGrp>
+          <caption>Tous deux</caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fraises">Des fraises</title>
+            </desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Amusons-nous à pleurer,</l>
+            <l met="6">Puisque Amour nous rassemble,</l>
+            <l met="7">On ne peut nous envier</l>
+            <l met="7">Le plaisir de soupirer</l>
+            <l met="6">Ensemble, ensemble, ensemble.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Zoraïde, Pyrame, Thisbé</stage>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <p>Ah! Mes chers enfants, la bonne nouvelle! Je crois que Ninus revient à lui, et qu'il me rend son cœur.</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Sur quoi fondez-vous cette conjecture?</p>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <p>Nous venons de nous rencontrer, et sitôt qu'il m'a vue, il s'est mis à fuir.</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Et vous appelez cela vous aimer?</p>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <p>Il n'en faut pas douter, ce sont ses remords qui agissent.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Je dois profiter d'une occasion si favorable.</p>
+        </sp>
+        <spGrp who="#pyrame">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, [belle endormie]</title>
+            </desc>
+          </head>
+          <sp who="#pyrame">
+            <speaker>Pyrame</speaker>
+            <l met="8">Sur de si justes conjectures,</l>
+            <l met="8">Je vais tâcher de l'adoucir:</l>
+            <l met="8">Nous prenons fort bien nos mesures,</l>
+            <l met="8">Je crois qu'elles vont réussir.</l>
+          </sp>
+        </spGrp>
+        <stage>[Il sort.]</stage>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Je vous suis, cher Pyrame.</p>
+        </sp>
+        <spGrp>
+          <caption>Toutes deux</caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril [est agréable]</title>
+            </desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Protège, Amour, deux malheureuses,</l>
+            <l met="7">Qu'elles voient leurs maux finir.</l>
+            <l met="8">Hélas! Voudrais-tu nous punir</l>
+            <l met="6">D'être trop amoureuses?</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Zoroastre<stage>dans une lanterne magique</stage>, Zoraïde</stage>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+        </sp>
+        <spGrp who="#zoroastre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_viens_expres_de_congo">Je viens exprès du Congo</title>
+            </desc>
+          </head>
+          <sp who="#zoroastre">
+            <speaker>Zoroastre</speaker>
+            <l met="10">Je viens exprès du sabbat, a a a,</l>
+            <l met="3">Du sabbat,</l>
+            <l met="7">J'ai pitié de ton état,</l>
+            <l met="6">Rassure-toi, ma fille,</l>
+            <l met="10">Le diable est mon ami, i i i,</l>
+            <l met="3">Mon ami,</l>
+            <l met="7">Le diable est mon ami.</l>
+            <p>Je vais bientôt lui faire emporter Ninus.</p>
+          </sp>
+        </spGrp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <p>Ah! Gardez-vous-en bien, mon père: il m'est plus cher que jamais.</p>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Je veux donc couler ses galères à fond, et noyer tout son équipage.</p>
+        </sp>
+        <spGrp who="#zoroastre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_opera">l'opéra</title>
+            </desc>
+          </head>
+          <sp who="#zoroastre">
+            <speaker>Zoroastre</speaker>
+            <l met="8">C'est par le malheur des sujets</l>
+            <l met="12">Qu'on peut punir des rois les injustes projets.</l>
+          </sp>
+        </spGrp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <p>Ah! Mon cher père, les fautes sont personnelles.</p>
+        </sp>
+        <spGrp who="#zoraide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">De tous les capucins [du monde]</title>
+            </desc>
+          </head>
+          <sp who="#zoraide">
+            <speaker>Zoraïde</speaker>
+            <l met="8">Qu'a fait ce peuple misérable</l>
+            <l met="8">Pour que votre courroux l'accable?</l>
+            <l met="8">Ah! Vous raisonnez à peu près</l>
+            <l met="8">Comme cette belle maxime:</l>
+            <l met="8">
+              <emph>La vertu poussée à l'excès</emph>
+            </l>
+            <l met="8">
+              <emph>Est plus à plaindre que le crime.</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>C'est par là que l'on brille.</p>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <p>Mon père, je vous conjure d'apaiser votre courroux.</p>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Non, je veux du moins faire paraître quelque monstre extraordinaire pour lui faire peur.</p>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <p>Cela ne servira de rien. Vous verrez que votre monstre sera inutile.</p>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Comment, inutile? Je veux qu'il fasse un ravage épouvantable; qu'il tue à tort et à travers.</p>
+        </sp>
+        <spGrp who="#zoroastre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#j_irai_vous_voir">J'irai vous voir</title>
+            </desc>
+          </head>
+          <sp who="#zoroastre">
+            <speaker>Zoroastre</speaker>
+            <l met="10">Non, rien ne peut désarmer ma colère</l>
+            <l met="10">Puisque Ninus ose se dégager,</l>
+            <l met="10">Il périra...</l>
+          </sp>
+        </spGrp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <l met="10">Sa personne m'est chère,</l>
+          <l met="10">C'est me punir en voulant me venger.</l>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Mais je n'y comprends rien; qui aurait jamais cru qu'une femme amoureuse et trahie fût si peu vindicative? Mais je ne dois consulter que mon honneur offensé; en le vengeant, je punis ensemble l'amant perfide et la trop faible amante.</p>
+        </sp>
+        <spGrp who="#zoroastre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_opera">l'opéra</title>
+            </desc>
+          </head>
+          <sp who="#zoroastre">
+            <speaker>Zoroastre</speaker>
+            <l met="12">Qui craint de se venger mérite qu'on l'outrage.</l>
+            <p>À propos, Pyrame est en prison par votre faute; allons le délivrer, tant pour faire enrager Ninus que pour réparer votre indiscrétion. Ne songeons qu'à nous venger!</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#zoroastre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_chasse">La Chasse</title>
+            </desc>
+          </head>
+          <sp who="#zoroastre">
+            <speaker>Zoroastre</speaker>
+            <l met="9">L'honneur doit étouffer la tendresse.</l>
+            <l met="9">Rassure ton cœur triste et plaintif,</l>
+            <l met="9">Plus est cher l'offenseur qui nous blesse,</l>
+            <l met="9">Plus on doit être rébarbatif.</l>
+            <l met="8">Tu me connais vindicatif,</l>
+            <l met="8">Je veux que ce marin chétif,</l>
+            <l met="4">Pâle et craintif,</l>
+            <l met="4">Plus mort que vif,</l>
+            <l met="7">De son peuple fugitif</l>
+            <l met="7">Ne puisse emplir un esquif.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Thisbé</stage>
+        <stage>Le théâtre représente une prison.</stage>
+        <spGrp who="#zoroastre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#amour_est_charmant">Ah que Monseigneur [est charmant]</title>
+            </desc>
+          </head>
+          <sp who="#zoroastre">
+            <speaker>Zoroastre</speaker>
+            <l met="8">Eh quoi! L'objet de mon amour</l>
+            <l met="8">Gémit dans un affreux séjour!</l>
+            <l met="8">Nous verrions du moins en ce jour</l>
+            <l met="6">Notre peine adoucie,</l>
+            <l met="8">Si je pouvais dans cette tour</l>
+            <l met="6">Lui tenir compagnie.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="characters">Zoroastre, Zoraïde, Thisbé, Pyrame</stage>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Cessez de soupirer, Thisbé, je viens au secours de votre amant, et le délivrer de sa captivité.</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Ah! le voilà à la fenêtre de sa prison.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Ma chère Thisbé, vois comme on me traite.</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>On vient à ton secours, mon cher Pyrame. Monsieur est un habile magicien qui s'intéresse pour nous, et qui va te délivrer.</p>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Oui, oui, vous allez voir.</p>
+        </sp>
+        <spGrp who="#zoroastre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#passant_sur_le_pont_neuf">Passant sur le Pont-Neuf</title>
+            </desc>
+          </head>
+          <sp who="#zoroastre">
+            <speaker>Zoroastre</speaker>
+            <l met="12">Esprits, qui dans les airs allumez le tonnerre,</l>
+            <l met="12">Et vous, qui demeurez au centre de la terre,</l>
+            <l met="4">Tirez de peine</l>
+            <l met="8">Un héros qu'on tient à la chaîne,</l>
+            <l met="12">Sans paraître en ces lieux sous une forme humaine.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Vous allez nous priver d'un divertissement de lutins.</p>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Non, je vais y pourvoir.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Ah! Monsieur, gardez-vous bien de les faire danser. Ils ne finiraient jamais, et je suis pressé.</p>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+        </sp>
+        <spGrp who="#zoroastre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#exaltons_et_chantons">Exaltons et chantons</title>
+            </desc>
+          </head>
+          <sp who="#zoroastre">
+            <speaker>Zoroastre</speaker>
+            <l met="3">Détruisons</l>
+            <l met="3">Et brisons</l>
+            <l met="7">Cette vieille architecture;</l>
+            <l met="3">Abattons,</l>
+            <l met="3">Renversons</l>
+            <l met="7">Et ces tours et ces prisons.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Ah! Monsieur, vous allez me faire assommer!</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Les solives lui tomberont sur la tête.</p>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Non, non, vous allez voir de l'ouvrage bien fait.</p>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="3">Détruisons</l>
+            <l met="3">Et brisons</l>
+            <l met="7">Cette vieille architecture;</l>
+            <l met="3">Abattons,</l>
+            <l met="3">Renversons</l>
+            <l met="7">Et ces tours et ces prisons.</l>
+          </sp>
+        </spGrp>
+        <stage>La prison est enlevée.</stage>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <p>Ah! Voyez de combien d'archers il est environné!</p>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Ne vous embarrassez de rien; voici comme je les mène.</p>
+        </sp>
+        <spGrp who="#zoroastre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dia_huriau">Dia huriau</title>
+            </desc>
+          </head>
+          <sp who="#zoroastre">
+            <speaker>Zoroastre</speaker>
+            <l met="8">Archers, qu'on cesse de garder,</l>
+            <l met="4">Sans plus tarder,</l>
+            <l met="4">Le bon Pyrame.</l>
+            <l met="5">Fuyez vite et tôt,</l>
+            <l met="3">Hola ho,</l>
+            <l met="4">Dia huriau,</l>
+            <l met="2">D'un saut.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="characters">Pyrame, Thisbé, Zoroastre, Zoraïde</stage>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+        </sp>
+        <spGrp who="#pyrame">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_m_entendez_vous_pas">Ne m'entendez-vous pas</title>
+            </desc>
+          </head>
+          <sp who="#pyrame">
+            <speaker>Pyrame</speaker>
+            <l met="6">Quoi! Bergère, c'est vous?</l>
+          </sp>
+        </spGrp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <l met="3">Quoi! C'est vous?</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="3">C'est moi-même.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <l met="6">Je revois ce que j'aime.</l>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <l met="6">Ah, que mon sort est doux!</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="6">Quoi! Bergère, c'est vous?</l>
+            <l met="6">Quoi! Pyrame, c'est vous?</l>
+          </sp>
+        </spGrp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>C'est à Zoroastre que nous avons cette obligation.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Je ne puis ni l'exprimer, ni la reconnaître: quel plaisir d'avoir affaire à ces messieurs! Nous aurions eu de la peine à sortir d'embarras, si le diable ne s'en fût mêlé.</p>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Ne vous amusez point à la bagatelle, les moments sont chers, profitez-en et fuyez au plus vite.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Il a, ma foi, raison: que ne prenions-nous ce parti-là tantôt? Mais, Thisbé, nous ne pouvons nous en aller ensemble, prenez d'un côté et moi de l'autre, nous nous retrouverons dans ce cimetière...</p>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Eh, fi! Voilà un beau rendez-vous.</p>
+        </sp>
+        <spGrp who="#zoroastre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#barbari">La faridondaine</title>
+            </desc>
+          </head>
+          <sp who="#zoroastre">
+            <speaker>Zoroastre</speaker>
+            <l met="8">Je vous conseille, mes enfants,</l>
+            <l met="6">De vous rendre au rivage,</l>
+            <l met="8">Là, ne perdez point les instants,</l>
+            <l met="6">Mettez-vous en voyage.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <l met="8">Ma foi, votre conseil est bon,</l>
+          <l met="10">La faridondaine, la faridondon.</l>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <l met="8">Oh! Par mes soins tout réussit.</l>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <l met="3">Biribi,</l>
+          <l met="8">À la façon de Barbari,</l>
+          <l met="3">Mon ami.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 13</head>
+        <stage type="characters">Zoroastre, Zoraïde</stage>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+        </sp>
+        <spGrp who="#zoroastre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#zoroastre">
+            <speaker>Zoroastre</speaker>
+            <l met="8">Connais les traits de ma puissance,</l>
+            <l met="8">Ninus, tu voulais me braver!</l>
+            <l met="8">Leur fuite ébauche ma vengeance,</l>
+            <l met="8">Leur rendez-vous va l'achever.</l>
+          </sp>
+        </spGrp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+        </sp>
+        <spGrp who="#zoraide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_opera_dethisbe">l'opéra de<emph>Thisbé</emph>
+              </title>
+            </desc>
+          </head>
+          <sp who="#zoraide">
+            <speaker>Zoraïde</speaker>
+            <l met="8">Loin de murmurer contre un père...</l>
+          </sp>
+        </spGrp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Pourquoi murmurerais-tu? Je te défais d'une rivale.</p>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <p>C'en est fait, je suis absolument guérie de mon amour, sans savoir comment.</p>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Effet surprenant de la magie!</p>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+        </sp>
+        <spGrp who="#zoraide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Si vous voulez que je vous [baise]</title>
+            </desc>
+          </head>
+          <sp who="#zoraide">
+            <speaker>Zoraïde</speaker>
+            <l met="8">Raison, fierté, dépit, vengeance,</l>
+            <l met="8">Ah! C'est à vous que j'ai recours;</l>
+            <l met="8">Secondez mon impatience,</l>
+            <l met="8">Venez, volez à mon secours.</l>
+          </sp>
+        </spGrp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Voilà des paroles bien aisées à mettre en musique! Puisque tu ne songes plus à lui, je vais le trouver et, avec le secours de mes diables, l'assommer de coups.</p>
+        </sp>
+        <sp who="#zoraide">
+          <speaker>Zoraïde</speaker>
+          <p>Je veux être de la partie.</p>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+        </spGrp>
+        <spGrp>
+          <head type="melody" subtype="melody_part">
+            <desc type="part">Fin de l'air</desc>
+            <title>
+              <title ref="#_lucas_pour_se_gausser_de_vous_">[Lucas pour se gausser de vous]</title>
+            </title>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="10">Pour nous venger de li, tapons, tapons,</l>
+            <l met="10">Tapons, morgué, tapons sur sa bedaine,</l>
+            <l met="10">Tapons, morgué, à grands coups de gourdin.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 14</head>
+        <stage type="characters">Thisbé<stage>seule</stage>
+        </stage>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <stage>i</stage>
+          <p>Ah! Ma lanterne s'est éteinte! Je ne vois plus goutte, comment trouverai-je mon chemin?</p>
+        </sp>
+        <spGrp who="#thisbe">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#rossignolet_du_vert_bocage">Rossignolet du vert bocage</title>
+            </desc>
+          </head>
+          <sp who="#thisbe">
+            <speaker>Thisbé</speaker>
+            <l met="8">Amour, que ton flambeau me guide</l>
+            <l met="4">En ce moment,</l>
+            <l met="8">Conduis une fille timide</l>
+            <l met="4">Vers son amant.</l>
+          </sp>
+        </spGrp>
+        <stage>Ritournelle</stage>
+        <spGrp who="#thisbe">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#y_avance_y_avance">Y avance [y avance]</title>
+            </desc>
+          </head>
+          <sp who="#thisbe">
+            <speaker>Thisbé</speaker>
+            <l met="8">Cher Pyrame, tu ne viens pas.<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Qui peut te retenir, hélas!</l>
+            <l met="8">Que tardes-tu, le jour s'avance,</l>
+            <l met="8">Avance, avance, avance;</l>
+            <l met="8">Car j'ai besoin de ta présence.</l>
+            <p>Faut-il que j'arrive ici la première, ah! Pyrame, quand il s'agit du rendez-vous!</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#thisbe">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#est_ce_ainsi_qu_on_prend_les_belles">Est-ce ainsi qu'on prend les belles</title>
+            </desc>
+          </head>
+          <sp who="#thisbe">
+            <speaker>Thisbé</speaker>
+            <l met="7">Les amants vraiment fidèles</l>
+            <l met="7">Doivent devancer nos pas,</l>
+            <l met="7">L'amour leur prête ses ailes,</l>
+            <l met="7">Cependant tu ne viens pas.</l>
+            <l met="7">Est-ce ainsi qu'on prend les belles,</l>
+            <l met="3">Lon lan la,</l>
+            <l met="4">Ô gué lan la?</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#thisbe">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#rossignolet_du_vert_bocage">[Rossignolet du vert bocage]</title>
+            </desc>
+          </head>
+          <sp who="#thisbe">
+            <speaker>Thisbé</speaker>
+            <l met="8">Amour, que ton flambeau me guide</l>
+            <l met="4">En ce moment,</l>
+            <l met="8">Conduis une fille timide</l>
+            <l met="4">Vers son amant.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="melody" subtype="melody_part">
+            <desc type="part">Fin de l'air</desc>
+            <title>
+              <title ref="#_evitons_le_compere_blaise_">[Évitons le compère Blaise]</title>
+            </title>
+          </head>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="8">Fuyons, fuyons ce gros goulu,</l>
+            <l met="6">Quelle faim diabolique!</l>
+          </sp>
+        </spGrp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <l met="8">Ah! Quels cris entends-je en musique?</l>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="8">Fuyons, ...</l>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="melody_part">
+            <desc type="part">Fin de l'air</desc>
+            <title>
+              <title ref="#confiteor">Confiteor</title>
+            </title>
+          </head>
+          <sp who="#thisbe">
+            <speaker>Thisbé</speaker>
+            <l met="8">Le monstre approche de ces lieux.</l>
+            <l met="8">Sauvez Pyrame, justes Dieux!</l>
+          </sp>
+        </spGrp>
+        <stage>Elle sort.</stage>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="8">Fuyons, ...</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 15</head>
+        <stage type="characters">Pyrame<stage>seul</stage>
+        </stage>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <stage>i</stage>
+          <l met="12">Quel monstre vient ici me couper le chemin?</l>
+          <l met="12">C'est un cerf échappé du faubourg Saint-Germain.</l>
+          <l met="12">Malheureux animal, je te revois encore!</l>
+          <l met="12">Trouverai-je partout la bête que j'abhorre!</l>
+          <l met="12">Percé de tant de coups, comment t'es-tu sauvé?</l>
+          <l met="12">Tiens, tiens, voilà le coup que je t'ai réservé.</l>
+        </sp>
+        <stage>Il combat le cerf comiquement et le tue.</stage>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Meurs, meurs une bonne fois, et ne va plus chercher ta revanche dans d'autres forêts, où tu ne serais pas mieux reçu qu'ici. Mais c'est en cet endroit que Thisbé devait être, pourquoi ne paraît-elle point?</p>
+        </sp>
+        <spGrp who="#pyrame">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nanon_dormait">Le vent soufflait</title>
+            </desc>
+          </head>
+          <sp who="#pyrame">
+            <speaker>Pyrame</speaker>
+            <l met="4">Thisbé, Thisbé,</l>
+            <l met="6">Qu'êtes-vous devenue?</l>
+            <l met="4">Thisbé, Thisbé,</l>
+            <l met="6">Offrez-vous à ma vue,</l>
+            <l met="6">À force de crier,</l>
+            <l met="6">Thisbé, Thisbé, Thisbé,</l>
+            <l met="5">Je vais m'enrouer.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#pyrame">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ramplon">Ramplon</title>
+            </desc>
+          </head>
+          <sp who="#pyrame">
+            <speaker>Pyrame</speaker>
+            <l met="6">Personne ne répond,</l>
+            <l met="2">Ramplon,</l>
+            <l met="6">Personne ne répond,</l>
+            <l met="6">Hélas! Ninus peut-être,</l>
+            <l met="2">Ramplan,</l>
+            <l met="3">Pataplan,</l>
+            <l met="2">Ramplon,</l>
+            <l met="3">Pataplon,</l>
+            <l met="6">Hélas! Ninus peut-être</l>
+            <l met="6">Me croque ce tendron,</l>
+            <l met="2">Ramplon.</l>
+            <p>Cherchons dans cette forêt; peut-être la peur l'a-t-elle fait cacher quelque part.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#pyrame">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#filles_montpellier">Aïe, aïe, aïe</title>
+            </desc>
+          </head>
+          <sp who="#pyrame">
+            <speaker>Pyrame</speaker>
+            <l met="7">Mais que vois-je, malheureux!</l>
+            <l met="7">N'est-ce pas là sa cornette?</l>
+            <l met="7">Oui, je reconnais les nœuds</l>
+            <l met="7">Qu'avait fait sa main blanchette,</l>
+            <l met="3">Aïe, aïe, aïe,</l>
+            <l met="5">Et sa bagnolette,</l>
+            <l met="5">Aïe, aïe, aïe, aïe, aïe.</l>
+            <p>Ah! C'est moi qui suis la cause de sa mort! Je voudrais bien savoir à quoi je me suis amusé.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#pyrame">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#houlette">Margot sur la brune</title>
+            </desc>
+          </head>
+          <sp who="#pyrame">
+            <speaker>Pyrame</speaker>
+            <l met="5">Thisbé sur la brune,</l>
+            <l met="6">Pour attendre fortune,</l>
+            <l met="5">Thisbé sur la brune</l>
+            <l met="6">Jamais ne reviendra;</l>
+            <l met="4">Mais son Pyrame,</l>
+            <l met="4">Par cette lame,</l>
+            <l met="4">Toute sa flamme</l>
+            <l met="4">Lui prouvera,</l>
+            <l met="8">En mourant, comme à l'opéra.</l>
+          </sp>
+        </spGrp>
+        <stage>Il se tue.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 16</head>
+        <stage type="characters">Thisbé, Pyrame</stage>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Tout est calme, il faut que le monstre soit loin d'ici. Mais je le vois expirant: ah! C'est Pyrame qui l'a tué, il n'y a que lui capable d'un si beau coup.</p>
+        </sp>
+        <stage>Apercevant Pyrame.</stage>
+        <spGrp who="#thisbe">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#confiteor">Confiteor</title>
+            </desc>
+          </head>
+          <sp who="#thisbe">
+            <speaker>Thisbé</speaker>
+            <l met="8">Ciel! Quel objet frappe mes yeux!</l>
+            <l met="8">Pyrame?</l>
+          </sp>
+        </spGrp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <l met="8">Quelle voix m'appelle?</l>
+          <l met="8">Thisbé, c'est vous? Sort rigoureux!</l>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <l met="8">Ô Ciel! Quelle main criminelle...</l>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <l met="8">Je suis venu trop tard, tantôt,</l>
+          <l met="8">Et je me suis tué trop tôt.</l>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Cher Pyrame, qui vous a mis dans cet état déplorable?</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Je vais vous le dire. Il s'agit de savoir que, trompé par votre bagnolette, j'ai cru que ce maudit cerf vous avait tuée, je me suis aussi tué de désespoir: mais je n'ai pas voulu mourir sur le champ, parce que je me doutais bien qu'il fallait auparavant raconter mon histoire. À présent que voilà toutes mes affaires faites, je meurs.</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+        </sp>
+        <spGrp who="#thisbe">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ils_sont_morts">Ils sont morts</title>
+            </desc>
+          </head>
+          <sp who="#thisbe">
+            <speaker>Thisbé</speaker>
+            <l met="3">Il est mort,<stage type="bis">bis</stage>
+            </l>
+            <l met="7">Pyrame n'est plus qu'un corps</l>
+            <l met="2">Sans âme.<stage type="bis">bis</stage>
+            </l>
+            <p>Mais voici le flibustier, faisons-lui envier notre sort, tout malheureux qu'il est.</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 17</head>
+        <stage type="characters">Thisbé, Pyrame, Ninus, Suite</stage>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>Eh quoi! Cruelle, vous me fuyez pour suivre un ravisseur qui ne peut échapper à ma vengeance?</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Tiens, vois ce qui reste de ce héros, il est mort.</p>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>C'est dommage, que je le plains!</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+        </sp>
+        <spGrp who="#thisbe">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, [belle endormie]</title>
+            </desc>
+          </head>
+          <sp who="#thisbe">
+            <speaker>Thisbé</speaker>
+            <l met="8">Pitié qui ne peut me séduire,</l>
+            <l met="8">Ne l'espère pas aujourd'hui.</l>
+          </sp>
+        </spGrp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>Hé bien, ce sera pour demain.</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <l met="8">Mon amant n'aura rien à dire,</l>
+          <l met="8">S'il meurt pour moi, je meurs pour lui.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 18</head>
+        <stage type="characters">Zoroastre, Ninus, Thisbé, Pyrame</stage>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Eh bien, mes chers enfants, n'ai-je pas fait merveille?</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>Oui assurément, votre monstre a fort bien opéré; au lieu de punir un tyran,</p>
+          <p>il cause la mort de deux amants que vous vouliez défendre.</p>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Ce n'est pas ma faute, s'il s'est trompé; mon intention était bonne. C'eût été bien pis, si je vous avais envoyé Magotin, je n'aurais jamais pu raccommoder l'affaire. Mais il y a du remède à tout ceci, et je veux que vous épousiez Pyrame tout à l'heure.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Vous n'y pensez pas? Nous sommes morts.</p>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Bon, vous avez cru cela; vous vous porterez aussi bien que moi dans un moment.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Vous m'allez peut-être noyer dans la fontaine de Diane pour me faire revivre?</p>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Non, un seul coup de ma baguette vaut toutes les eaux du monde.</p>
+        </sp>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+          <p>En effet, Pyrame, je me porte bien.</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Et moi aussi, Thisbé.</p>
+        </sp>
+        <sp who="#ninus">
+          <speaker>Ninus</speaker>
+          <p>Puisque Thisbé n'est point morte, je prétends l'épouser.</p>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Ne raisonne pas, je te ferai danser d'importance. Respecte des nœuds que je chéris. Hé bien, m'accuserez-vous encore d'avoir fait des bévues?</p>
+        </sp>
+        <sp who="#pyrame">
+          <speaker>Pyrame</speaker>
+          <p>Cela va un peu mieux qu'à l'opéra.</p>
+        </sp>
+        <sp who="#zoroastre">
+          <speaker>Zoroastre</speaker>
+          <p>Voici une troupe de poètes et de musiciens qui viennent implorer le secours de Cérès. Vous devez présider à cette fête comme fille de boulanger. Vous êtes esclave de votre naissance.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 19</head>
+        <stage type="characters">Thisbé, Zoroastre, Pyrame</stage>
+        <stage>Chœur de poètes et de musiciens qui chantent alternativement avec Thisbé à l'imitation de l'opéra</stage>
+        <sp who="#thisbe">
+          <speaker>Thisbé</speaker>
+        </sp>
+        <spGrp who="#thisbe">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_pierre">Ô Pierre, ô Pierre</title>
+            </desc>
+          </head>
+          <sp who="#thisbe">
+            <speaker>Thisbé</speaker>
+            <l met="6">Déesse de Gonesse,</l>
+            <l met="6">Ah! Que vos pains sont bons,</l>
+            <l met="6">Vite, le temps nous presse,</l>
+            <l met="6">Comblez-nous de vos dons:</l>
+            <l met="5">Déesse, déesse,</l>
+            <l met="6">Nous vous les demandons.</l>
+          </sp>
+        </spGrp>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

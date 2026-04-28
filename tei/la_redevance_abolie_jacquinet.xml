@@ -1,0 +1,1684 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="la_redevance_abolie_jacquinet">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">La Redevance abolie</title>
+        <title type="sub">[L'Oracle inutile ou beaucoup de bruit pour rien]</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>[Auguste Jacquinet]</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Rousseau</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BnF ms. fr. 9274</bibl>
+        <bibl type="intermediarySource">P. Beaucé</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="retors" sex="UNKNOWN">
+            <persName>Retors</persName>
+          </person>
+          <person xml:id="lepeuple" sex="UNKNOWN">
+            <persName>Le peuple</persName>
+          </person>
+          <person xml:id="lardon" sex="UNKNOWN">
+            <persName>Lardon</persName>
+          </person>
+          <person xml:id="colombine" sex="UNKNOWN">
+            <persName>Colombine</persName>
+          </person>
+          <person xml:id="lasorciere" sex="UNKNOWN">
+            <persName>La sorcière</persName>
+          </person>
+          <person xml:id="lebailli" sex="UNKNOWN">
+            <persName>Le bailli</persName>
+          </person>
+          <person xml:id="labohemienne" sex="UNKNOWN">
+            <persName>La bohemienne</persName>
+          </person>
+          <person xml:id="leandre" sex="UNKNOWN">
+            <persName>Léandre</persName>
+          </person>
+          <person xml:id="isabelle" sex="UNKNOWN">
+            <persName>Isabelle</persName>
+          </person>
+          <person xml:id="gilles" sex="UNKNOWN">
+            <persName>Gilles</persName>
+          </person>
+          <person xml:id="lebatelier" sex="UNKNOWN">
+            <persName>Le batelier</persName>
+          </person>
+          <person xml:id="pierrot" sex="UNKNOWN">
+            <persName>Pierrot</persName>
+          </person>
+          <person xml:id="unbatelier" sex="UNKNOWN">
+            <persName>Un batelier</persName>
+          </person>
+          <person xml:id="toutlepeuple" sex="UNKNOWN">
+            <persName>Tout le peuple</persName>
+          </person>
+          <person xml:id="le_bailli_de_la_rapee" sex="UNKNOWN">
+            <persName>Le bailli de la Rapée</persName>
+          </person>
+          <person xml:id="la_sorciere" sex="UNKNOWN">
+            <persName>La sorcière</persName>
+          </person>
+          <person xml:id="bateliers" sex="UNKNOWN">
+            <persName>Bateliers</persName>
+          </person>
+          <person xml:id="blanchisseuse" sex="UNKNOWN">
+            <persName>Blanchisseuse</persName>
+          </person>
+          <person xml:id="recors" sex="UNKNOWN">
+            <persName>Recors</persName>
+          </person>
+          <person xml:id="cuisiniers" sex="UNKNOWN">
+            <persName>Cuisiniers</persName>
+          </person>
+          <person xml:id="le_peuple" sex="UNKNOWN">
+            <persName>Le peuple</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie en deux actes de<emph>Démophon</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#le_bailli_de_la_rapee">Le bailli de la Rapée</role>
+        </castItem>
+        <castItem>
+          <role ana="#leandre">Léandre</role>
+          <roleDesc>son fils aîné</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#pierrot">Pierrot</role>
+          <roleDesc>son fils cadet</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#la_sorciere">La sorcière</role>
+        </castItem>
+        <castItem>
+          <role ana="#retors">Retors</role>
+          <roleDesc>huissier</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#colombine">Colombine</role>
+          <roleDesc>fille de Retors, blanchisseuse</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#isabelle">Isabelle</role>
+          <roleDesc>fille du bailli de Montreau</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#lardon">Lardon</role>
+          <roleDesc>cuisinier du seigneur</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#gilles">Gilles</role>
+          <roleDesc>valet du Bailli</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#bateliers">Bateliers</role>
+        </castItem>
+        <castItem>
+          <role ana="#blanchisseuse">Blanchisseuse</role>
+        </castItem>
+        <castItem>
+          <role ana="#recors">Recors</role>
+        </castItem>
+        <castItem>
+          <role ana="#cuisiniers">Cuisiniers</role>
+        </castItem>
+        <castItem>
+          <role ana="#le_peuple">Le peuple</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène est à la Rapée.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="act">
+        <head>ACTE 1</head>
+        <stage type="location">Le théâtre représente les bords de la rivière à la Rapée, de côté, la maison du Bailli.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="location">Des bateliers et des blanchisseuses sont en groupe. Retors est au milieu avec sa fille Colombine.</stage>
+          <stage type="characters">[bateliers, blanchisseuses, retors, colombine]</stage>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="12">Amis, nous nous flattions en vain de l'avantage</l>
+            <l met="8">De voir Monseigneur oublier</l>
+            <l met="8">Le droit qu'il a sur ce village!</l>
+            <l met="12">Son orgueil y tient trop... j'ai vu son cuisinier</l>
+            <l met="12">Roder aux environs: n'espérons plus de grâce.</l>
+            <l met="10">Sans doute, il vient chercher la dinde grasse</l>
+            <l met="10">Que pour hommage on lui doit tous les ans.</l>
+          </sp>
+          <sp who="#lepeuple">
+            <speaker>Le peuple</speaker>
+            <l met="7">Hélas!</l>
+          </sp>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="7">Dieux! qu'est-ce que j'entends?</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">le peuple, lardon<stage>entre précédé de quatre cuisiniers</stage>
+          </stage>
+          <stage>Ils entrent sur l'air de Malbrough. Le premier porte une broche, le deuxième une lèchefrite, le troisième un grand couteau: le quatrième rien. Lardon entre le dernier quand l'air est fini.</stage>
+          <sp who="#lepeuple">
+            <speaker>Le peuple</speaker>
+            <l met="12">Ciel, c'est Monsieur Lardon!</l>
+          </sp>
+          <sp who="#lardon">
+            <speaker>Lardon</speaker>
+            <l met="12">Enfants, c'est avec peine</l>
+            <l met="12">Qu'au nom de Monseigneur je viens vous déclarer</l>
+            <l met="12">Qu'aujourd'hui ce couteau doit sortir de sa gaine</l>
+            <l met="12">Pour immoler l'oiseau que vous m'allez livrer.</l>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <l met="12">Vous vous chargez toujours, pour nous désespérer,</l>
+            <l met="12">D'une commission et cruelle et sanglante!</l>
+            <l met="12">Pouvez-vous sans douleur songer qu'à pareil jour</l>
+            <l met="12">Tous les ans, par vos mains, une bête innocente</l>
+            <l met="12">S'arrache en gémissant de notre basse cour!</l>
+          </sp>
+          <sp who="#lardon">
+            <speaker>Lardon</speaker>
+            <l met="10">Que voulez-vous, je fais ce qu'on m'ordonne.</l>
+            <l met="12">Je plains votre victime, et tout en l'égorgeant</l>
+            <l met="12">Je sens que mon cœur saigne...</l>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <stage>au peuple</stage>
+            <l met="12">Il est bonne personne,</l>
+            <l met="12">Et ne nous fait du mal qu'à son corps défendant;</l>
+          </sp>
+          <stage>À Lardon.</stage>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <l met="8">Au moins, dites-nous franchement</l>
+            <l met="12">Si Monseigneur prétend qu'un usage barbare,</l>
+            <l met="12">Fondé sur son caprice, existe encor longtemps?</l>
+            <l met="12">Quelle est la source enfin de cette loi bizarre?</l>
+          </sp>
+          <sp who="#lardon">
+            <speaker>Lardon</speaker>
+            <l met="10">Voilà ce que j'en ai su dans le temps:</l>
+            <l met="10">Un rossignol dont les tendres accents</l>
+            <l met="10">Flattaient l'oreille en bémol en bécarre,</l>
+            <l met="8">Qu'il avait lui-même élevé,</l>
+            <l met="10">Par l'un de vous de sa cage enlevé,</l>
+            <l met="12">Mourut en cet endroit mangé par une chatte!</l>
+            <l met="12">Vous punir de sa mort est tout ce qui le flatte.</l>
+            <l met="12">Dans le premier moment de ce fatal trépas,</l>
+            <l met="10">Devant sa cage, à l'entour de sa tombe,</l>
+            <l met="12">À son ombre plaintive, on immola les chats!</l>
+            <l met="8">Mais par ce sanglant hécatombe,</l>
+            <l met="12">Croyant pour satisfaire aux mânes de l'oiseau</l>
+            <l met="8">Et de sa déplorable histoire,</l>
+            <l met="12">Voulant se rappeler sans cesse la mémoire,</l>
+            <l met="8">Il ordonna que tous les ans</l>
+            <l met="8">On servirait dessus sa table</l>
+            <l met="8">Un dindon que ses habitants</l>
+            <l met="10">Pour expier leur attentat coupable</l>
+            <l met="8">Auraient empâté de leurs mains.</l>
+          </sp>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="8">Mais, à ces ordres inhumains,</l>
+            <l met="12">À sa vengeance, enfin, n'est-il donc point de terme?</l>
+            <l met="12">Parlez, mon cher Lardon, que devons-nous penser?</l>
+          </sp>
+          <sp who="#lardon">
+            <speaker>Lardon</speaker>
+            <l met="12">Ce mystère important que vous voulez percer,</l>
+            <l met="12">Dans les cartes sans doute en secret se renferme.</l>
+            <l met="12">La sorcière à vos yeux pourra le découvrir,</l>
+            <l met="12">Et pour vous les tirer, je l'ai fait avertir.</l>
+            <l met="12">Elle vient, la musique annonce sa présence.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">la sorcière<stage>entre de même dans une brouette traînée par deux nègres. On la fait sortir, et on sort sa table et sa gibecière.</stage>
+          </stage>
+          <stage>Musique ridicule de l'entrée de la fille d'Omar dans<emph>Le Cadi dupé</emph>.</stage>
+          <sp who="#lasorciere">
+            <speaker>La sorcière</speaker>
+            <l met="12">Allons, mes chers enfants, reprenez espérance.</l>
+          </sp>
+          <sp who="#lepeuple">
+            <speaker>Le peuple</speaker>
+            <l met="12">Dites-nous, Monseigneur voudra-t-il s'apaiser?</l>
+          </sp>
+          <sp who="#lasorciere">
+            <speaker>La sorcière</speaker>
+            <l met="12">Sans doute son courroux un jour pourra cesser.</l>
+          </sp>
+          <stage>On lui place sa table: elle étale et tire ses cartes.</stage>
+          <stage>On joue l'air de<emph>La bonne aventure</emph>.</stage>
+          <sp who="#labohemienne">
+            <speaker>La bohemienne</speaker>
+            <l met="10">Or, écoutez votre bonne fortune.</l>
+            <l met="8">Quand vous verrez les merles blancs,</l>
+            <l met="10">Quand vos pigeons mangeront les milans,</l>
+            <l met="12">Qu'enfin avec les dents, vous aurez pris la lune,</l>
+            <l met="12">Vous serez délivrés d'une rente importune.</l>
+          </sp>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="8">Ô ciel, c'est se moquer de nous!</l>
+            <l met="10">Faites-nous donc des pronostics plus doux.</l>
+          </sp>
+          <sp who="#lasorciere">
+            <speaker>La sorcière</speaker>
+            <l met="12">Voyons si du café, dans ce cas déplorable,</l>
+            <l met="12">Le marc à vos désirs sera plus favorable.</l>
+          </sp>
+          <stage>On lui verse dans une tasse avec une cafetière.</stage>
+          <stage>La musique joue l'air:<emph>Je prenais du tabac par beaucoup</emph>.</stage>
+          <sp who="#lasorciere">
+            <speaker>La sorcière</speaker>
+            <l met="12">Voyez si ce sens-là sera plus consolant:</l>
+            <l met="10">Le sort pour vous ne sera plus funeste</l>
+            <l met="10">Quand vous verrez: un bon auteur modeste;</l>
+            <l met="10">Sans intérêt un Richard vous prêtant;</l>
+            <l met="10">Sans vanité Legrand vous protégeant;</l>
+            <l met="10">Et sans colère un poltron se battant.</l>
+          </sp>
+          <sp who="#lepeuple">
+            <speaker>Le peuple</speaker>
+            <l met="8">Ô Ciel!</l>
+          </sp>
+          <sp who="#lasorciere">
+            <speaker>La sorcière</speaker>
+            <l met="8">Écoutez votre reste.</l>
+            <l met="8">Enfin, votre mal finira</l>
+            <l met="8">Tout aussitôt que l'on verra</l>
+            <l met="8">Par le secours du Dieu du Pinde</l>
+            <l met="12">Un poète produire un fort bon opéra.</l>
+          </sp>
+          <sp who="#lepeuple">
+            <speaker>Le peuple</speaker>
+            <l met="12">Miséricorde!</l>
+          </sp>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="12">Hélas! Notre seigneur aura</l>
+            <l met="12">Le temps de recevoir encore plus d'une dinde.</l>
+          </sp>
+          <stage>Ils s'en vont avec la sorcière sur l'air<emph>Allons-nous-en gens de la noce</emph>.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">lardon, les cuisiniers, retors et colombine</stage>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="8">Ècoutez-moi, mon cher Lardon:</l>
+            <l met="12">Je veux de mon projet vous faire confidence.</l>
+            <l met="12">Je suis peu riche, autour de ma maison</l>
+            <l met="8">L'on ne voit point en abondance</l>
+            <l met="12">Les dindes s'élever. Une seule, en honneur,</l>
+            <l met="10">Y vit du grain que lui jette ma fille.</l>
+            <l met="12">Elle y prend son plaisir, elle en fait son bonheur.</l>
+            <l met="12">Près d'elle cet oiseau va, vient, glousse, sautille...</l>
+            <l met="12">Je prends de l'intérêt moi-même à le nourrir,</l>
+            <l met="12">Et je le défendrais quand j'y devrais périr.</l>
+          </sp>
+          <sp who="#lardon">
+            <speaker>Lardon</speaker>
+            <l met="8">Mais il faut que chaque famille</l>
+            <l met="12">Courre le même risque, et le sort est égal.</l>
+          </sp>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="12">Non, non, il ne l'est pas. Nous souffrons tout le mal,</l>
+            <l met="10">Et le Bailli sous nos yeux s'en exempte.</l>
+            <l met="8">Loin du danger qui nous tourmente,</l>
+            <l met="12">Il tient sa basse cour près du port à l'anglais,</l>
+            <l met="12">Où sans craindre le sort, elle s'augmente en paix!</l>
+            <l met="12">Pourquoi lorsqu'on frémit ici pour tous les nôtres,</l>
+            <l met="12">Ses dindons seraient-ils plus préférés que d'autres?</l>
+          </sp>
+          <sp who="#lardon">
+            <speaker>Lardon</speaker>
+            <l met="8">Mon cher Retors, il est bailli.</l>
+          </sp>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="10">Et moi, je suis aussi malin que lui...</l>
+            <l met="8">Quoi donc, parce qu'il est plus riche,</l>
+            <l met="12">Il lui sera permis de se montrer plus chiche</l>
+            <l met="12">Et sur le pauvre seul tombera le malheur?</l>
+            <l met="12">Non, non, tous sont égaux aux yeux de Monseigneur.</l>
+            <l met="12">C'est en vain qu'un bailli se goberge et nous raille;</l>
+            <l met="12">Il est temps qu'il partage enfin notre douleur:</l>
+            <l met="12">Jusqu'ici nos oiseaux ont eu toute la peur!</l>
+            <l met="12">Viens, je veux aujourd'hui voir trembler sa volaille.</l>
+          </sp>
+          <stage>Il sort avec Lardon.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">colombine<stage>reste seule</stage>
+          </stage>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="12">Ah, voilà qui commence à se mêler bien fort!</l>
+            <l met="12">J'ai grand peur pour ma dinde! Et mon amant Léandre</l>
+            <l met="8">Qui n'est pas là pour la défendre!</l>
+            <l met="8">Çà, n'est-il pas tout comme un sort?</l>
+            <l met="12">Si je disais un mot pourtant, la pauvre bête</l>
+            <l met="12">D'un si cruel trépas garantirait sa tête.</l>
+            <l met="10">D'original elle était au bailli,</l>
+            <l met="12">Son fils me l'a donnée, il sera son appui</l>
+            <l met="10">Quand il saura que c'est son bien...mais diable,</l>
+            <l met="10">Réfléchissons. Je tiens l'oiseau du fils,</l>
+            <l met="12">Mais il l'a pris au père et ce sans son avis,</l>
+            <l met="12">Et l'ayant recélé, je suis aussi coupable...</l>
+            <l met="8">Cela me clôt la bouche... Hélas!</l>
+            <l met="10">Que je me trouve en un grand embarras!</l>
+            <l met="10">En partant pour Passy, mon cher Léandre</l>
+            <l met="12">Me laissa ce dépôt de l'amour le plus tendre,</l>
+            <l met="12">Et me dit en pleurant: élève cet oiseau,</l>
+            <l met="10">Prends-en bien soin! De l'ardeur la plus pure</l>
+            <l met="8">Qu'il soit entre nous deux le sceau!</l>
+            <l met="8">Je te promets et je te jure</l>
+            <l met="10">Qu'au premier œuf que tu verras de lui</l>
+            <l met="12">Tu seras mon épouse. Hélas, c'est aujourd'hui</l>
+            <l met="12">Que j'ai vu ce garant de mon bonheur suprême!</l>
+            <l met="12">Et le destin cruel de mon amour jaloux</l>
+            <l met="12">Va par un coup fatal, peut être aujourd'hui même,</l>
+            <l met="12">Me ravir à la fois et la dinde et l'époux.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">colombine, léandre<stage>entre en froc, couteau de chasse, petites guêtres, chapeau bordé et des sacs de papiers plein ses poches et sous les bras.</stage>
+          </stage>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="8">Bonjour ma chère Colombine!</l>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <l met="12">Est-ce bien vous Léandre!</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">Eh qui donc? Oui, c'est moi!</l>
+            <l met="12">Je n'ai pas, que je crois, encore changé de mine,</l>
+            <l met="12">Et je viens de nouveau t'assurer de ma foi.</l>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <stage>l'embrassant</stage>
+            <l met="12">Ah, tu viens à propos ranimer mon courage!</l>
+            <l met="8">Te souvient-il du tendre gage</l>
+            <l met="8">Que tu me laissas en partant?</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="10">S'il m'en souvient! hélas!</l>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <l met="10">Un bien cruel orage</l>
+            <l met="12">A grondé sur sa tête... un cuisinier farouche</l>
+            <l met="12">Est venu demander au nom de Monseigneur</l>
+            <l met="8">La victime que pour sa bouche</l>
+            <l met="12">On rôtit tous les ans.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">Dissipe ta frayeur</l>
+            <l met="12">Me voici de retour; je réponds de la bête</l>
+            <l met="12">Et ce fier cuisinier respectera sa crête.</l>
+            <l met="12">Que l'on fasse tirer les dindons du commun,</l>
+            <l met="12">J'y consens, au hasard on en peut choisir un;</l>
+            <l met="12">C'est un honneur pour eux de paraître à la table</l>
+            <l met="10">De Monseigneur! Mais je vais au Bailli</l>
+            <l met="12">Déclarer à l'instant le sort de celui-ci.</l>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <stage>le retenant</stage>
+            <l met="10">Où cours-tu donc? Arrête misérable</l>
+            <l met="10">Tu vas tout perdre. Un père inexorable</l>
+            <l met="12">Lorsque tu te seras accusé d'un larcin,</l>
+            <l met="12">Viendra, pour m'en punir, l'arracher de mon sein.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">Non pas, il me doit trop. Pourtant de la Rapée</l>
+            <l met="12">Je m'en fus à Passy pour poursuivre un procès</l>
+            <l met="12">Pour le moins très douteux: mais ma plume trempée</l>
+            <l met="12">Dans l'encre la plus noire et sans cesse occupée</l>
+            <l met="12">À des exploits sans nombre emporte un plein succès.</l>
+            <l met="12">J'ai moi-même plaidé la cause d'une haleine;</l>
+            <l met="12">J'ai gagné tous les frais. Je reviens triomphant!</l>
+            <l met="12">Et quand un fils enfin lui porte de l'argent</l>
+            <l met="12">Un bailli peut passer une mince fredaine...</l>
+            <l met="12">Pour m'inspirer encor plus de cœur à ses yeux,</l>
+            <l met="12">Mène-moi voir avant ce gage précieux.</l>
+            <l met="12">Comment se porte-t-il?</l>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <stage>le retient</stage>
+            <l met="12">Écoute, cher Léandre!</l>
+            <l met="12">Avant que de le voir, te souvient-il au moins</l>
+            <l met="12">Qu'en le recommandant à mes plus tendres soins,</l>
+            <l met="10">Tu me promis...</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="10">Ô ciel, que vais-je entendre?</l>
+            <l met="12">Je me rappelle tout. J'ai fait ce que j'ai dû</l>
+            <l met="12">J'ai dit qu'au premier œuf...</l>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <l met="12">Et bien, il est pondu!</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="8">Grands dieux!... J'embrasse donc ma femme!</l>
+          </sp>
+          <stage>Il l'embrasse.</stage>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <l met="12">Cher époux, tu remets le calme dans mon âme!</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">À présent ne crains rien, nous voici tous les trois</l>
+            <l met="12">Liés par l'amitié, l'amour et la nature,</l>
+            <l met="12">Et devant le village et le Bailli je jure</l>
+            <l met="12">Que de trois nœuds si saints je défendrai les droits.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">les susdits, gilles</stage>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <l met="8">Seigneur, le Bailli vous demande,</l>
+            <l met="12">Et l'on voit arriver le Coche de Montreau.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="10">C'est bon, allez attendre qu'il descende.</l>
+            <l met="12">Vous, Madame, avant peu vous verrez du nouveau.</l>
+          </sp>
+          <stage>Ils sortent ensemble, Gilles devant lui, donnant la main à Colombine.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">le bailli, retors, le peuple</stage>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <stage>à Retors</stage>
+            <l met="12">Subalterne insolent! huissier audacieux!</l>
+            <l met="6">Je vous fais la défense</l>
+            <l met="8">D'oser poursuivre en ma présence</l>
+            <l met="8">Des propos si licencieux.</l>
+          </sp>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="12">Du papier griffonné d'après votre ordonnance,</l>
+            <l met="12">De l'encre qu'à longs flots j'ai fait couler pour vous,</l>
+            <l met="8">Est-ce donc là la récompense?</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Il te sied bien encor de t'égaler à nous!</l>
+          </sp>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="10">Pour mieux savoir ce que le sort destine,</l>
+            <l met="10">Nous nous verrons tantôt à la cuisine:</l>
+            <l met="12">Là, nous saurons sur qui devront tomber ses coups,</l>
+            <l met="12">Et lequel de nous deux fera tourner la broche!</l>
+            <l met="12">Je ne dis rien de plus.</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Rebut de la Basoche!</l>
+            <l met="12">Griffonneur ambulant, tu menaces ton chef!</l>
+            <l met="12">Je te casse, et de plus t'ordonne derechef</l>
+            <l met="9">De vider à l'instant de ces lieux.</l>
+          </sp>
+          <stage>Retors s'en va.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 9</head>
+          <stage type="characters">le bailli, le peuple</stage>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Vous, enfants, écoutez ce que [je] vais vous dire,</l>
+            <l met="12">Et vous verrez qu'ici je fais tout pour le mieux.</l>
+            <l met="12">Je ne veux plus qu'au sort la victime se tire;</l>
+            <l met="8">Du hasard, ne craignez plus rien.</l>
+            <l met="12">Et comme je ne cherche en tout que votre bien</l>
+            <l met="10">Dorénavant je nommerai moi-même</l>
+            <l met="8">Celui qui devra la fournir.</l>
+          </sp>
+          <sp who="#unbatelier">
+            <speaker>Un batelier</speaker>
+            <l met="8">Eh ben mordienne, un beau système!</l>
+            <l met="10">Il est bon là, grand merci du plaisir!</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="2">Quoi donc?</l>
+          </sp>
+          <sp who="#lebatelier">
+            <speaker>Le batelier</speaker>
+            <l met="12">Nous prenez-vous aussi pour des oiseaux de l'Inde?</l>
+            <l met="12">Que ce soit Monseigneur, ou bien le sort, ou vous,</l>
+            <l met="10">Qui prononciez, c'est toujours parmi nous</l>
+            <l met="10">Sans rien risquer vous choisir une dinde.</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="8">Sans doute... mais... n'ayez pas peur</l>
+            <l met="12">J'en veux à quelqu'un... et j'agirai de manière</l>
+            <l met="12">Que vous serez contents... Mais changeons de matière</l>
+            <l met="12">Je veux à mon cher fils annoncer son bonheur.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 10</head>
+          <stage type="characters">les susdits, léandre<stage>arrive</stage>
+          </stage>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="10">Venez, mon fils, mon digne successeur!</l>
+            <l met="12">Je vois avec plaisir, que marchant sur ma trace,</l>
+            <l met="12">Vous pourrez noblement un jour remplir ma place;</l>
+            <l met="10">En attendant, je veux vous établir,</l>
+            <l met="10">Et de Passy je vous ai fait venir</l>
+            <l met="10">Pour recevoir ici l'auguste fille</l>
+            <l met="12">Du bailli de Montreau.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">Un choix si glorieux</l>
+            <l met="12">Est sans doute un honneur bien grand pour ma famille,</l>
+            <l met="10">Et pour moi plus encor!...</l>
+          </sp>
+          <stage>À part.</stage>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="10">Ô Ciel, je grille!</l>
+            <l met="12">Ma pauvre Colombine!..</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Elle aborde en ces lieux.</l>
+            <l met="12">J'entends déjà les cris qui précèdent le coche.</l>
+            <l met="10">Venez, mon fils, allons à son approche.</l>
+          </sp>
+          <stage>On fait détacher un batelier qui va au coche.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 11</head>
+          <stage type="characters">[coche, léandre]</stage>
+          <stage>On voit passer le coche avec le monde. On entend les cris:</stage>
+          <spGrp>
+            <sp who="#lebailli">
+              <speaker>Le bailli</speaker>
+              <l met="8">Ho! parle donc, hé malotru!</l>
+              <l met="8">Dis donc, de quel pays viens-tu?</l>
+              <l met="6">Du pays où ton père</l>
+              <l met="6">Est mort sans toucher terre.</l>
+            </sp>
+            <sp>
+              <l met="8">Quieu, regarde donc celui-là,</l>
+              <l met="8">Il ne sait pas s'il parlera.</l>
+            </sp>
+            <sp>
+              <l met="8">Toi, tu n'en fais pas de demeure.</l>
+              <p>[...]</p>
+            </sp>
+          </spGrp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <stage>sur le devant</stage>
+            <l met="12">J'aurais payé six francs qu'arrêtant le bateau</l>
+            <l met="12">La glace l'eut cassé dans le port de Montreau.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 12</head>
+          <stage type="characters">les susdits, isabelle et pierrot<stage>sortant d'un petit bateau</stage>
+          </stage>
+          <stage>La musique joue l'air<emph>Nous nous marierons dimanche</emph>.</stage>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <stage>à Isabelle</stage>
+            <l met="12">Noble fille d'un père, honneur de la chicane</l>
+            <l met="12">Et de qui les aïeux sont tous de père en fils</l>
+            <l met="10">Ou procureurs, ou greffiers, ou baillis</l>
+            <l met="12">Souffrez qu'à votre époux, servant ici d'organe</l>
+            <l met="12">Je vante son bonheur de s'unir avec vous.</l>
+            <l met="8">Le voici... Vous, mes camarades,</l>
+          </sp>
+          <stage>Aux bateliers.</stage>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Pour occuper le temps pendant leurs embrassades</l>
+            <l met="12">Malgré votre chagrin, riez et dansez tous!</l>
+          </sp>
+          <stage>Ballet des bateliers.</stage>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <stage>après le ballet</stage>
+            <l met="12">C'est assez mes amis.</l>
+          </sp>
+          <stage>À Isabelle.</stage>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Madame [...]</l>
+            <l met="12">En vous retenant là, j'ai fait une sottise.</l>
+            <l met="12">Quoique la danse amuse, à tous il faut songer;</l>
+            <l met="12">Vous arrivez  de loin: chez moi la table est mise,</l>
+            <l met="12">Et lorsque l'on a faim, le mieux c'est de manger.</l>
+          </sp>
+          <stage>Ils s'en vont tous sur l'air<emph>Allons à la guinguette</emph>.</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">isabelle, pierrot<stage>sortant de chez le Bailli</stage>
+          </stage>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="12">Tandis que là-dedans un chacun boit et mange,</l>
+            <l met="12">Voyant que vous ni moi n'avions plus d'appétit</l>
+            <l met="12">Pierrot dans cet endroit en tremblant vous conduit</l>
+            <l met="12">Pour vous dire un secret qui bien fort lui démange.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="12">Savez-vous bien, Pierrot, qu'à parler franchement</l>
+            <l met="12">Tout ce qu'on voit ici m'étonne étrangement;</l>
+            <l met="12">Qui diable a donc chez vous ridé toutes les faces</l>
+            <l met="12">Le Bailli dans un coin roule les deux gros yeux,</l>
+            <l met="12">Le fils aîné paraît me faire des grimaces;</l>
+            <l met="12">Le cadet me regarde avec un air piteux!...</l>
+            <l met="12">Enfin, parmi vous tous, je n'ai vu je vous jure,</l>
+            <l met="12">Rien que des chevaliers de la triste figure.</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="12">Madame, hélas! Madame...</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="12">Hé bien, madame! après,</l>
+            <l met="10">Parlez-donc</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="10">Non. Laissez-moi mes secrets.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="12">Eh! gardez-les... Hélas! Venant à la Rapée</l>
+            <l met="12">Je ne m'attendais pas à pareille équipée...</l>
+            <l met="8">Mais parlez donc, mon cher Pierrot!</l>
+            <l met="12">Comment! auprès de moi vous restez comme un sot!</l>
+            <l met="12">Vous qui chez nous toujours empressé pour me plaire,</l>
+            <l met="12">Riez, chantiez, dansiez!...enfin que mon cher père</l>
+            <l met="12">Nommait le boute-en-train de toute la maison.</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="12">Ah! C'est justement ça qui m'a porté guignon.</l>
+            <l met="12">Tant va la cruche à l'eau qu'enfin elle se brise.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="12">Un discours si subtil est trop malin pour moi.</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="10">Eh bien, quitte pour faire une sottise:</l>
+            <l met="12">Puisqu'il faut parler net, je suis amoureux.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="12">Toi?</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="12">Moi-même et comme un diable.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="12">Et de qui pourrait-ce être?</l>
+            <l met="12">[...]lare le  bonnement entre nous.</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="12">[Et] si c'était de vous?</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="12">De moi?</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="12">Eh! oui, de vous.</l>
+            <l met="12">Voilà le mot lâché! Je n'en suis plus le maître.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <stage>avec dignité</stage>
+            <l met="10">Pierrot!</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="10">Plait-il?</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="10">Vous êtes un nigaud.</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="10">Bien obligé de votre politesse.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="8">Il fallait donc parler plutôt.</l>
+            <l met="12">Me le disant là-bas, j'aurais été maîtresse</l>
+            <l met="10">De prendre ça comme j'aurais voulu.</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="12">Ma foi, que voulez-vous? J'ai parlé quand j'ai pu.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="12">Ècoutez- moi, d'ailleurs, il n'est qu'un mot qui serve</l>
+            <l met="12">Je ne sais pas pour qui le destin me réserve</l>
+            <l met="10">Mais vous devez savoir qu'il est des cas</l>
+            <l met="12">Où l'orgueil d'un haut rang quelques fois nous a[fflige].</l>
+            <l met="12">Mon père étant de robe, un préjugé m'oblige</l>
+            <l met="12">À dédaigner tous ceux qui ne la portent pas.</l>
+            <l met="12">D'un Bailli seulement je dois être la femme,</l>
+            <l met="12">Avez-vous quelqu'espoir de l'être un jour?</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="12">Eh dame!</l>
+            <l met="12">Ça peut venir bientôt... Seulement que mon père</l>
+            <l met="12">Attrape un accident; après ça que mon frère</l>
+            <l met="8">Vienne à mourir... il faudra bien</l>
+            <l met="12">Que j'hérite à la fois de la place et du bien.</l>
+            <l met="8">C'est clair.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="8">La peste! quelle avance!</l>
+            <l met="12">En ce cas, mon ami, vivez en espérance.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">les susdits, léandre</stage>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="10">Madame, il n'est plus temps de tortiller</l>
+            <l met="12">Je vois que le tapis ne fait que s'embrouiller!</l>
+            <l met="12">Et je viens en deux mots vous dire le mystère.</l>
+            <l met="12">Vous arrivez ici pour chercher un époux!</l>
+            <l met="12">Mais quoique cet emploi m'eût été des plus doux</l>
+            <l met="8">Je ne puis faire votre affaire.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="8">Qu'entends-je! Ô Ciel!</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="8">Ne croyez pas</l>
+            <l met="10">Que cet aveu vienne d'impolitesse!</l>
+            <l met="10">Mon refus, loin de blesser vos appas,</l>
+            <l met="12">Ne peut prouver ici que ma délicatesse.</l>
+            <l met="12">Bien avant que le coche eût dans ces tristes lieux</l>
+            <l met="12">Débarqué les attraits qui brillent à mes yeux,</l>
+            <l met="8">Et même avant que la Rapée</l>
+            <l met="10">Eut retenti de votre renommée;</l>
+            <l met="12">À l'insu de mon père, apprenez que mon cœur</l>
+            <l met="12">Dans une blanchisseuse a trouvé son vainqueur.</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="10">Oh, oh, voilà qui va changer la carte.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="12">Hé bien donc, en ce cas, il faut que je reparte.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">Tout au contraire, il faut me faire un grand plaisir.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="8">Lequel?</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="8">Allez trouver mon père,</l>
+            <l met="12">Dites- lui que jamais je ne saurai vous plaire,</l>
+            <l met="8">Que je ne peux pas... enfin, quoi...</l>
+            <l met="8">Que vous ne voulez pas de moi.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="12">Ah! Monsieur! une fille sage et bien élevée</l>
+            <l met="12">Ne dit pas ça...</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="12">Non, quand elle le penserait.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">Si fait; si vous saviez ce qu'il en adviendrait.</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="12">Quoi donc?</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">Que moi, voyant mon épouse sauvée,</l>
+            <l met="12">Pour que Pierrot puisse être aussi votre mari,</l>
+            <l met="8">Je lui cède ma survivance</l>
+            <l met="8">Que j'ai de l'emploi de bailli.</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <stage>sautant</stage>
+            <l met="12">Oh, le bon frère</l>
+          </sp>
+          <stage>À Isabelle.</stage>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="12">Hé bien! Voyez-vous apparence</l>
+            <l met="8">À ce que je disais tantôt?</l>
+            <l met="12">Dépêchons-nous bien vite, allons trouver mon père</l>
+            <l met="12">Vous lui direz le cas... et bientôt je l'espère</l>
+            <l met="8">Vous serez Madame Pierrot.</l>
+          </sp>
+          <stage>Il s'en va avec Isabelle.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">léandre, retors, colombine<stage>ils passent vite de l'autre côté.</stage>
+          </stage>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">Où courrez-vous tous deux! Quel sujet vous altère?</l>
+          </sp>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="12">Oh le maudit Bailli!... Je m'en étais douté...</l>
+            <l met="12">Pardon! C'est votre père, il faut de la prudence.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">C'est égal; dites tout, sauf la paternité.</l>
+          </sp>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="12">Hé bien donc, ce méchant a poussé la vengeance</l>
+            <l met="12">Sur deux mots que tantôt je lui dis bonnement,</l>
+            <l met="10">Jusqu'à vouloir impérieusement,</l>
+            <l met="10">Sans que du sort on éprouve la chance,</l>
+            <l met="8">Que nous payions la redevance</l>
+            <l met="10">Que du village exige Monseigneur.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="10">Que dites-vous?</l>
+          </sp>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="10">Il veut dans sa fureur,</l>
+            <l met="12">Qu'un oiseau que ma fille élève à la brochette,</l>
+            <l met="8">D'entre nos bras soit arraché,</l>
+            <l met="12">Et pour servir ce soir à l'instant embroché.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">Dieux!... Mais sa rage est loin de se voir satisfaite.</l>
+            <l met="12">Ce sacrifice affreux ne s'achèvera pas,</l>
+            <l met="12">J'en atteste le ciel et plutôt à sa p[...]</l>
+            <l met="12">On me verra cent fois affronter le tr[épas].</l>
+          </sp>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="12">Ahi, je tremble toujours, et malgré votre audace,</l>
+            <l met="12">Quand on a contre soi procureurs ou baillis,</l>
+            <l met="12">Je crois que le plus court est de gagner pays.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">Quel est donc ce projet que votre esprit médite?</l>
+          </sp>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="12">C'est de nous garantir tous les trois par la fuite.</l>
+            <l met="12">Par bonheur, dès ce soir, un train de bois flotté</l>
+            <l met="8">Doit redescendre la rivière;</l>
+            <l met="12">Nous partirons dessus; le patron est frété,</l>
+            <l met="8">Et pour nous mettre en sureté</l>
+            <l met="12">Moi, ma fille et la dinde irons jusqu'à Nanterre.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="10">Votre projet est très bien concerté</l>
+            <l met="12">Et votre dinde encor pourra braver la parque!</l>
+            <l met="12">Sauvez ses jours, et moi, je jure, en vérité,</l>
+            <l met="12">Que dès que j'aurai pu mettre assez de côté</l>
+            <l met="12">Pour faire le voyage, aussitôt, zeste, embarque,</l>
+            <l met="12">Et je vas vous rejoindre.</l>
+          </sp>
+          <stage>Ils s'embrassent et se séparent.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">les susdits, gilles</stage>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <l met="12">Arrête! arrête!</l>
+          </sp>
+          <sp who="#retors">
+            <speaker>Retors</speaker>
+            <l met="12">Hé bien</l>
+            <l met="12">À qui donc en as-tu? que veux tu?</l>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <l met="12">Presque rien</l>
+            <l met="10">C'est une dinde. Il est vrai qu'elle est belle;</l>
+            <l met="10">On la dit grasse, et c'est mademoiselle</l>
+            <l met="8">Qui de la nourrir a le soin</l>
+            <l met="8">Pour un plat de cérémonie.</l>
+            <l met="8">Monseigneur en ayant besoin,</l>
+            <l met="8">Monsieur le bailli vous supplie</l>
+            <l met="12">De vouloir à l'instant me remettre l'oison</l>
+            <l met="12">Ou de ce même pas me suivre à la prison.</l>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <l met="12">Ah Ciel!</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <stage>tirant son couteau de chasse</stage>
+            <l met="12">Ah malheureux! Je te coupe une oreille!</l>
+          </sp>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <l met="12">Ah bien vous allez faire une belle merveille!</l>
+            <l met="12">Un valet de bailli n'est pas à cela près.</l>
+          </sp>
+          <stage>Aux Recors.</stage>
+          <sp who="#gilles">
+            <speaker>Gilles</speaker>
+            <l met="12">Emmenons-la toujours et nous verrons après.</l>
+          </sp>
+          <stage>Les recors emmènent Colombine et Gilles les escorte.</stage>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <stage>s'en allant</stage>
+            <l met="12">Cher Léandre! Au secours!</l>
+            <l met="6">Ah, mort! ah, ventre! ah, tête!</l>
+            <l met="12">Ah, canaille! ah, coquins! ... mais quoi? comme une bête,</l>
+            <l met="10">Tout en criant comme un déterminé,</l>
+            <l met="12">Je me laisse enlever ma maîtresse à mon nez!...</l>
+            <l met="10">C'est égal! Ça n'en restera pas là!</l>
+            <l met="10">Dans ma fureur je vais chercher mon père!</l>
+            <l met="12">J'aurai la dinde! ou bien ... Je ne dis que cela.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">léandre<stage>seul, espadonnant de côté et d'autre</stage>
+          </stage>
+          <stage>Il va pour sortir. Il voit entrer le Bailli.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">léandre, le bailli</stage>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="10">Ah! Le voici... je crois que la prudence</l>
+            <l met="10">Serait d'abord d'essayer poliment...</l>
+            <l met="10">Voyons... Mon père... au nom de la clémence</l>
+            <l met="8">Souffrez que j'ose en ce moment</l>
+            <l met="10">Vous supplier pour une infortunée</l>
+            <l met="12">Qui va par votre arrêt se voir emprisonnée.</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="8">Mon fils, je vous l'ai dit souvent</l>
+            <l met="8">Vous n'êtes rien qu'un innocent.</l>
+            <l met="12">Né pour être bailli, vous devez vous défendre</l>
+            <l met="12">De ces beaux mouvements d'intérêt, de pitié,</l>
+            <l met="6">D'amour et d'amitié</l>
+            <l met="8">Enfin de tout sentiment tendre.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="8">Mon père, au moins qu'à votre fils</l>
+            <l met="8">À vos genoux il soit permis</l>
+            <l met="12">De réclamer les droits de la reconnaissance.</l>
+            <l met="8">Retors éleva mon enfance:</l>
+            <l met="10">De la chicane il m'apprit l'alphabet,</l>
+            <l met="12">Il conduisit ma plume au sortir du cornet,</l>
+            <l met="10">Il m'enseigna comment avec adresse</l>
+            <l met="12">Au lieu de la justice employant la finesse,</l>
+            <l met="12">Détournant des papiers, et soufflant des exploits,</l>
+            <l met="12">L'on peut dans un procès faire taire les lois:</l>
+            <l met="12">Comme à son avantage on doit faire une clause</l>
+            <l met="10">Comme l'on peut gagner un rapporteur;</l>
+            <l met="12">Comme l'on peut s'entendre avec un procureur</l>
+            <l met="12">Et pour tout dire enfin, dans la dernière cause</l>
+            <l met="12">Que je viens de gagner contre les meilleurs droits.</l>
+            <l met="12">Nous perdions les dépens, sans les détours adroits</l>
+            <l met="12">Que j'ai par ses conseils su donner à [...].</l>
+          </sp>
+          <stage>Il tombe à ses genoux.</stage>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="8">Mon fils, ce n'est pas là le mot.</l>
+            <l met="12">Reconnaissance à part, vous n'êtes pas si sot;</l>
+            <l met="12">Je vous connais, c'est plus à la fille qu'au père</l>
+            <l met="8">Que vous prenez de l'intérêt.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <stage>se relevant</stage>
+            <l met="8">Eh! quand même cela serait!</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <stage>s'emportant</stage>
+            <l met="8">Ah! quand ça serait? Téméraire!</l>
+            <l met="12">Tu paieras ce mot là! Je veux dans ma colère</l>
+            <l met="12">Montrer comme un bailli mène les amoureux.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">les susdits, isabelle et pierrot</stage>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Ah! fort bien. Vous venez à propos tous les deux.</l>
+            <l met="10">Écoutez-moi, ma belle demoiselle,</l>
+            <l met="8">Vous voyez bien ce monsieur-là?</l>
+          </sp>
+          <stage>Montrant Léandre.</stage>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="10">J'avais d'abord fourré dans ma cervelle</l>
+            <l met="12">Qu'il vous épouserait; mais ce n'est plus cela.</l>
+            <l met="12">Tel que vous le voyez, ce n'est qu'un imbécile,</l>
+            <l met="8">Un sot qui veut faire l'habile,</l>
+            <l met="10">Un malappris, un rétif, un benêt,</l>
+            <l met="10">Et pour finir, je vous donne à cadet.</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <stage>sautant de joie</stage>
+            <l met="12">C'est ti possible ça mon père?</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Oui, ma parole</l>
+            <l met="10">En est jurée.</l>
+          </sp>
+          <stage>À Léandre.</stage>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="10">Et toi, monsieur le drôle,</l>
+            <l met="10">Es-tu content?</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="10">Oh! J'en suis enchanté.</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <stage>se fâchant de plus en plus</stage>
+            <l met="8">Oui da! ... voyez-vous l'insolence.</l>
+            <l met="12">Oh bien, attends... Madame, il est déshérité;</l>
+            <l met="12">Et je donne à Pierrot ma charge en survivance.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">Hé bien, mon père, encor, j'y souscris à plaisir.</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <stage>s'emportant toujours</stage>
+            <l met="10">Là! voyez-vous que rien ne le corrige.</l>
+            <l met="12">Coquin! Si je m'y mets...</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <stage>le retenant</stage>
+            <l met="12">Mais à votre désir</l>
+            <l met="10">Puisqu'il consent à tout, qui vous oblige</l>
+            <l met="10">À vous fâcher?</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="10">C'est mon tempérament.</l>
+            <l met="12">Je ne veux pas qu'un fils me nargue impunément.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="8">Mais mon cher père...</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="8">Encor! prends garde,</l>
+            <l met="12">Je ne sais qui me tient...</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="12">Papa, pardonnez-lui.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="8">Oui, grâce, monsieur le bailli.</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <stage>de plus en plus fort</stage>
+            <l met="12">Si l'on dit un seul mot, je fais venir la garde</l>
+            <l met="10">Et je l'envoie avec les autres.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <stage>mettant son chapeau de travers</stage>
+            <l met="10">Bon!</l>
+            <l met="12">Voilà pour ma fureur la réplique donnée!</l>
+            <l met="10">Je sens mon âme à tout déterminée</l>
+            <l met="12">Et moi-même je vais les rejoindre en prison.</l>
+          </sp>
+          <stage>Il s'en va en colère.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">les susdits,<emph>hors</emph>léandre</stage>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Tu le prends sur ce ton? oh! bien nous allons rire.</l>
+            <l met="10">Emportons- nous donc bien puisqu'il le faut,</l>
+            <l met="12">Et voyons qui des deux saura crier plus haut.</l>
+          </sp>
+          <stage>Il sort furieux par un autre côté.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 9</head>
+          <stage type="characters">isabelle, pierrot</stage>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="12">Ça s'arrange assez bien!</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="12">Mais oui, de mal en pire.</l>
+            <l met="12">Pour mon frère toujours... Ce qui console un peu</l>
+            <l met="12">C'est que nous tirons bien notre épingle du jeu</l>
+            <l met="12">Nous.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="12">Le hasard souvent passe notre espérance.</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="12">Oui, nous avons bien fait de nous aimer d'avance.</l>
+            <l met="12">Mais qu'entends-je...</l>
+          </sp>
+          <stage>On entend derrière un grand bruit. L'orchestre joue l'air des<emph>Trembleurs</emph>.</stage>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="12">Allons voir.</l>
+          </sp>
+          <stage>Ils sortent ensemble.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 10</head>
+          <stage type="location">Le théâtre change et représente une cuisine, une grande cheminée dans le fond.</stage>
+          <stage type="characters">lardon, entouré de quatre cuisiniers</stage>
+          <sp who="#lardon">
+            <speaker>Lardon</speaker>
+            <l met="12">Aiguisez vos couteaux</l>
+            <l met="8">Amis, l'heure fatale approche</l>
+            <l met="8">Allons, allumez vos fourneaux</l>
+            <l met="8">Et surtout préparez la broche.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 11</head>
+          <stage type="location">Sur un air triste, on voit entrer deux à deux les blanchisseuses, après elles les retors qui amènent Colombine.</stage>
+          <stage type="characters">[blanchisseuses, retors, colombine]</stage>
+          <sp who="#lardon">
+            <speaker>Lardon</speaker>
+            <stage>à Colombine</stage>
+            <l met="10">Séchez les pleurs qui coulent de vos yeux,</l>
+            <l met="8">Consolez-vous, mademoiselle,</l>
+            <l met="10">Et profitez d'un instant précieux</l>
+            <l met="12">Pour faire à votre oiseau vos éternels adieux.</l>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <l met="12">Hélas!</l>
+          </sp>
+          <sp who="#lardon">
+            <speaker>Lardon</speaker>
+            <l met="12">Ah croyez-moi, la dinde la plus belle</l>
+            <l met="12">Ne vaut pas qu'une fille aille en prison pour elle.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 12</head>
+          <stage type="characters">les susdits, retors et léandre<stage>entrent suivis des bateliers armés de leurs crocs</stage>
+          </stage>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <stage>à Lardon</stage>
+            <l met="12">Qu'oses-tu conseiller, cuisinier de malheur!</l>
+            <l met="12">Respecte cet oiseau que ton couteau menace;</l>
+            <l met="8">Rengaine! Ou bien dans ma fureur</l>
+            <l met="8">Je vais t'immoler à sa place.</l>
+          </sp>
+          <sp who="#lardon">
+            <speaker>Lardon</speaker>
+            <stage>aux cuisiniers</stage>
+            <l met="12">Défendez votre chef, avancez marmitons!</l>
+          </sp>
+          <stage>Ils tirent tous leurs couteaux et broches.</stage>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <stage>aux bateliers</stage>
+            <l met="12">Amis, renversons tout à grands coups de bâtons.</l>
+          </sp>
+          <stage>Ils se menacent des deux parts.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 13</head>
+          <stage type="characters">les susdits, le bailli</stage>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <stage>se jetant au milieu</stage>
+            <l met="12">Misérable! tu viens assassiner ton père!</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">Ah ciel! ah dieux! vengeance! amour! que faut-il faire?</l>
+          </sp>
+          <stage>Après un instant de réflexion, il laisse tomber son bâton.</stage>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">C'est fini, devant vous je baisse pavillon</l>
+            <l met="12">Et je renonce à faire ici du carillon.</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Eh bien, va t'en.</l>
+          </sp>
+          <stage>Au cuisinier.</stage>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Vous, qu'on frappe la dinde.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <stage>se jetant sur Lardon</stage>
+            <l met="12">Arrête!</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="8">Frapperas-tu?</l>
+          </sp>
+          <sp who="#lardon">
+            <speaker>Lardon</speaker>
+            <l met="8">Je ne l'ai pas.</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Qu'on l'apporte.</l>
+          </sp>
+          <stage>Les cuisiniers sortent.</stage>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">Sachez que cette p[...]</l>
+            <l met="10">Qu'injustement l'on destine au trép[as].</l>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <l met="12">Ô ciel! Que va-t-il dire?</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Quel intérêt si tendre</l>
+            <l met="12">À cette dinde-là, mon fils, pouvez-vous prendre?</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="8">Hélas! mon père, elle est à vous.</l>
+            <l met="12">Dans votre basse cour elle a pris la naissance.</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Quel mystère étonnant qui confond ma prudence!</l>
+            <l met="10">Comment entre ses mains...</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="10">Pardonnez-nous,</l>
+            <l met="12">C'est un crime de plus que vous allez apprendre.</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Encor!.. Allons, voyons</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">N'ayant pu me défendre</l>
+            <l met="12">D'adorer Colombine... en partant pour Passi</l>
+            <l met="8">Je lui promis le mariage,</l>
+            <l met="10">Et lui donnai cette dinde pour gage.</l>
+            <l met="12">Me voici de retour, et je suis son mari.</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="10">C'est ma basse cour qui fournit  votre otage</l>
+            <l met="12">Mais vraiment j'en apprends de fort belles ici!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 14</head>
+          <stage type="characters">les cuisiniers<stage>rentrent portant la dinde sur l'air<emph>Ah! le bel oiseau</emph>
+            </stage>
+          </stage>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <stage>sautant dessus</stage>
+            <l met="12">Je vois mon cher oiseau! tout mon cœur se ranime.</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Oui, je le reconnais, cela vient de chez nous.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">Mon père, protégez cette pauvre victime.</l>
+          </sp>
+          <stage>Léandre et Colombine lui présentent et tombent à ses genoux.</stage>
+          <spGrp>
+            <caption>Colombine et léandre</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="8">Vous nous voyez à vos genoux,</l>
+              <l met="12">Ah! daignez écouter des sentiments plus doux.</l>
+            </sp>
+          </spGrp>
+          <sp who="#toutlepeuple">
+            <speaker>Tout le peuple</speaker>
+            <l met="12">Cédez, bailli, cédez.</l>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <l met="12">Que le courroux se lasse!</l>
+            <l met="10">Hélas, monsieur, un généreux effort!</l>
+          </sp>
+          <sp who="#lepeuple">
+            <speaker>Le peuple</speaker>
+            <l met="12">Cédez, Bailli, cédez.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="12">Que notre erreur s'efface!</l>
+            <l met="8">À tous les trois faites nous grâce,</l>
+            <l met="12">Ou dites qu'à tous trois on nous donne la [mort]</l>
+          </sp>
+          <sp who="#lepeuple">
+            <speaker>Le peuple</speaker>
+            <l met="12">Cédez, Bailli, cédez.</l>
+          </sp>
+          <stage>Le Bailli s'essuie les yeux avec son mouchoir.</stage>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <l met="12">Il pleure! c'est bon signe.</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Voilà les premiers pleurs qui tombent de mes yeux!</l>
+            <l met="12">Qu'ils vous soient les garants de la faveur insigne</l>
+            <l met="10">Et du pardon que j'accorde en ces lieux</l>
+            <l met="12">Je fais grâce à tous trois.</l>
+          </sp>
+          <spGrp>
+            <caption>Colombine et léandre<stage>se relevant.</stage>
+            </caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="12">Quel moment précieux!</l>
+            </sp>
+          </spGrp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Je me voulais d'abord faire tenir à quatre</l>
+            <l met="12">Mais de ce grand courroux je crois qu'on peut rabattre</l>
+            <l met="8">Et quoiqu'ici ce que j'apprends</l>
+            <l met="10">Devrait encor me fâcher davantage,</l>
+            <l met="8">Par politique je me rends</l>
+            <l met="12">Craignant de ne pouvoir faire assez de tapage.</l>
+          </sp>
+          <stage>Aux cuisiniers.</stage>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="8">Pour vous, qu'on éteigne le feu</l>
+            <l met="12">Qu'on éloigne la dinde et qu'on serre la broche.</l>
+          </sp>
+          <sp who="#lardon">
+            <speaker>Lardon</speaker>
+            <l met="12">[...] l'hommage qu'on doit!</l>
+            <l met="12">Sachez qu'en ce beau jour parmi tous ses vassaux</l>
+            <l met="12">Monseigneur veut ôter tout signe d'esclavage,</l>
+            <l met="10">Et pour jamais il abolit l'usage</l>
+            <l met="10">De redevance et de droit féodaux.</l>
+            <l met="12">Il proscrit de ces lieux le nom de servitude</l>
+            <l met="12">Dont des siècles entiers nous donnaient l'habitude;</l>
+            <l met="12">Il nous rend désormais à la félicité</l>
+            <l met="12">Et ne veut que bonheur, franchise et liberté.</l>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <l met="10">Ah, mes amis, que la reconnaissance</l>
+            <l met="12">Lorsqu'un si grand bienfait comble notre espérance</l>
+            <l met="10">Grave à jamais au fond de notre cœur</l>
+            <l met="12">L'image et les vertus d'un aussi bon seigneur!</l>
+          </sp>
+          <sp who="#lepeuple">
+            <speaker>Le peuple</speaker>
+            <l met="12">Oui, qu'il vive à jamais au fond de notre cœur</l>
+            <l met="12">De notre liberté c'est le restaurateur.</l>
+            <l met="12">Vive, vive à jamais un aussi bon seigneur!</l>
+          </sp>
+          <stage>On joue une fanfare pendant laquelle les cuisiniers éteignent le feu, resserrent la broche et tous s'embrassent excepté Pierrot et Isabelle.</stage>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="6">Oui, vous v'la tous contents...</l>
+            <l met="6">Mais nous donc, mon cher père?</l>
+            <l met="12">Comment arrangez-vous à présent notre affaire?</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="12">Mais oui, parlons-en donc. Croit [...]</l>
+            <l met="12">Je vienne ici pour rien? surtout moi qui crains [...]</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="8">Eh bien! pour vous que puis-je faire?</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="10">L'on m'a promis en partant un mari,</l>
+            <l met="8">On m'a dit qu'il serait bailli:</l>
+            <l met="12">Et comme je tiens fort à ce titre superbe</l>
+            <l met="10">Il m'en faut un soit en blé soit en herbe.</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="12">Oh dame! il ne pleut pas des baillis comme ça!</l>
+            <l met="12">Et ce que vous voulez ici n'est plus faisable.</l>
+            <l met="8">Mais quand le coche passera,</l>
+            <l met="8">À Montreau, l'on vous renverra</l>
+            <l met="12">Jusqu'à ce qu'on vous trouve un mari convenable.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="12">Ce bel arrangement n'a pas le sens commun</l>
+            <l met="12">Et malgré mon orgueil au fond du cœur j'enrage!</l>
+            <l met="12">Promise à deux maris pour n'en avoir aucun</l>
+            <l met="8">J'aurai fait un joli voyage!</l>
+          </sp>
+          <sp who="#lebailli">
+            <speaker>Le bailli</speaker>
+            <l met="10">Pour bien finir un jour si glorieux,</l>
+            <l met="7">[Par]mis nous chacun s'apprête</l>
+            <l met="8">[À céléb]rer par une fête</l>
+            <l met="10">[La re]devance abolie en ces lieux.</l>
+          </sp>
+          <stage>Ballet et fête analogue.</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

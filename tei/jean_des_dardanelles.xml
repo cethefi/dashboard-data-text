@@ -1,0 +1,1731 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="jean_des_dardanelles">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Jean des Dardanelles</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Anonyme</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>B. Ourcel</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BnF ms. fr. 25480, f. 401-424</bibl>
+        <bibl type="intermediarySource">P. Beaucé</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="venus" sex="UNKNOWN">
+            <persName>Vénus</persName>
+          </person>
+          <person xml:id="lamour" sex="UNKNOWN">
+            <persName>L'amour</persName>
+          </person>
+          <person xml:id="pernelle" sex="UNKNOWN">
+            <persName>Pernelle</persName>
+          </person>
+          <person xml:id="jean" sex="UNKNOWN">
+            <persName>Jean</persName>
+          </person>
+          <person xml:id="barberousse" sex="UNKNOWN">
+            <persName>Barberousse</persName>
+          </person>
+          <person xml:id="canut" sex="UNKNOWN">
+            <persName>Canut</persName>
+          </person>
+          <person xml:id="machiavel" sex="UNKNOWN">
+            <persName>Machiavel</persName>
+          </person>
+          <person xml:id="unebergere" sex="UNKNOWN">
+            <persName>Une bergère</persName>
+          </person>
+          <person xml:id="unepoissarde" sex="UNKNOWN">
+            <persName>Une poissarde</persName>
+          </person>
+          <person xml:id="lecolporteur" sex="UNKNOWN">
+            <persName>Le colporteur</persName>
+          </person>
+          <person xml:id="lapoissarde" sex="UNKNOWN">
+            <persName>La poissarde</persName>
+          </person>
+          <person xml:id="troissonges" sex="UNKNOWN">
+            <persName>Trois songes</persName>
+          </person>
+          <person xml:id="lessonges" sex="UNKNOWN">
+            <persName>Les songes</persName>
+          </person>
+          <person xml:id="lessorciers" sex="UNKNOWN">
+            <persName>Les sorciers</persName>
+          </person>
+          <person xml:id="unsorcier" sex="UNKNOWN">
+            <persName>Un sorcier</persName>
+          </person>
+          <person xml:id="unautresorcier" sex="UNKNOWN">
+            <persName>Un autre sorcier</persName>
+          </person>
+          <person xml:id="legrandchoeur" sex="UNKNOWN">
+            <persName>Le grand chœur</persName>
+          </person>
+          <person xml:id="lepetitchoeur" sex="UNKNOWN">
+            <persName>Le petit chœur</persName>
+          </person>
+          <person xml:id="l_amour" sex="UNKNOWN">
+            <persName>L'Amour</persName>
+          </person>
+          <person xml:id="les_plaisirs" sex="UNKNOWN">
+            <persName>Les Plaisirs</persName>
+          </person>
+          <person xml:id="la_jalousie" sex="UNKNOWN">
+            <persName>La Jalousie</persName>
+          </person>
+          <person xml:id="les_soupcons" sex="UNKNOWN">
+            <persName>Les Soupçons</persName>
+          </person>
+          <person xml:id="une_bergere" sex="UNKNOWN">
+            <persName>Une Bergère</persName>
+          </person>
+          <person xml:id="une_poissarde" sex="UNKNOWN">
+            <persName>Une Poissarde</persName>
+          </person>
+          <person xml:id="autre_poissarde" sex="UNKNOWN">
+            <persName>Autre Poissarde</persName>
+          </person>
+          <person xml:id="trois_songes" sex="UNKNOWN">
+            <persName>Trois Songes</persName>
+          </person>
+          <person xml:id="jean_des_dardanelle" sex="UNKNOWN">
+            <persName>Jean des Dardanelle</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie de l'opéra de<emph>Dardanus</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#venus">Vénus</role>
+        </castItem>
+        <castItem>
+          <role ana="#l_amour">L'Amour</role>
+        </castItem>
+        <castItem>
+          <role ana="#les_plaisirs">Les Plaisirs</role>
+        </castItem>
+        <castItem>
+          <role ana="#la_jalousie">La Jalousie</role>
+        </castItem>
+        <castItem>
+          <role ana="#les_soupcons">Les Soupçons</role>
+        </castItem>
+        <castItem>
+          <role ana="#une_bergere">Une Bergère</role>
+        </castItem>
+        <castItem>
+          <role ana="#pernelle">Pernelle</role>
+          <roleDesc>fille de Canut, amante de Jean</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#venus">Vénus</role>
+        </castItem>
+        <castItem>
+          <role ana="#une_poissarde">Une Poissarde</role>
+        </castItem>
+        <castItem>
+          <role ana="#autre_poissarde">Autre Poissarde</role>
+        </castItem>
+        <castItem>
+          <role ana="#trois_songes">Trois Songes</role>
+        </castItem>
+        <castItem>
+          <role ana="#jean_des_dardanelle">Jean des Dardanelle</role>
+          <roleDesc>amant de Pernelle</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#barberousse">Barberousse</role>
+          <roleDesc>rival de Jean</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#canut">Canut</role>
+          <roleDesc>roi de Troie, père de Pernelle</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#machiavel">Machiavel</role>
+          <roleDesc>magicien</roleDesc>
+        </castItem>
+      </castList>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Vénus</stage>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <stage>i</stage>
+          <l met="12">Entrez, Plaisirs poupons, folâtrez dans ces lieux,</l>
+          <l met="10">Caracolez, nichez dans ma volière.</l>
+          <l met="8">Ma foi, l'amour est maupiteux</l>
+          <l met="7">Si vous n'escortez ses jeux.</l>
+          <l met="8">Trottez dedans ma gibecière,</l>
+          <l met="12">N'allez point, à l'instar de ces esprits follets,</l>
+          <l met="6">Déguerpir de vos cages.</l>
+          <l met="10">Écoutez bien la voix de mes sifflets,</l>
+          <l met="12">Je mourrai de dépit, si vous êtes volages.</l>
+          <l met="12">Entrez, Plaisirs ...</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Vénus, L'Amour</stage>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="12">Çà, qu'on crève de rire auprès de mes autels,</l>
+          <l met="8">Corbleu, je suis roi des mortels!</l>
+          <l met="12">Et vous, ragoûts d'amour, délogez sans trompette.</l>
+          <l met="12">Soupçons, Troubles cruels, Dépit, Maris jaloux,</l>
+          <l met="12">Quoi donc, ventre de boue, vous osez faire tête?</l>
+          <l met="12">Je vous... Mais il vaut mieux enchaîner mon courroux.</l>
+        </sp>
+        <spGrp>
+          <caption>L'amour et vénus</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="12">Ajustez à chacun leur paire de manchettes,</l>
+            <l met="8">Plaisirs, et que tous ces cagots</l>
+            <l met="12">Apprennent qu'aujourd'hui la reine des toilettes</l>
+            <l met="10">N'a point affaire à des peuples manchots.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Vénus</stage>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <stage>i</stage>
+          <l met="12">Quel calme! Je frémis, je meurs, je suis perdue,</l>
+          <l met="8">Ici tout est à l'abandon.</l>
+          <l met="12">Pleurez, pleurez mes yeux, ma cour est confondue,</l>
+          <l met="10">J'entends l'Amour ronfler en faux bourdon.</l>
+          <l met="10">Parbleu, mon fils, et vous, sa confrérie,</l>
+          <l met="8">Vous avez tous l'air bien nigaud.</l>
+          <l met="13">Voulez-vous bien, Messieurs, sortir de cette rêverie,</l>
+          <l met="12">Ou, pour vous éveiller, je vous fais faire un saut!</l>
+          <l met="10">Des noirs soupçons j'appelle les brigades,</l>
+          <l met="8">Venez, faites des barricades.</l>
+          <l met="12">J'abandonne ces lieux à vos noires fureurs.</l>
+          <l met="12">Je sais que vos ébats ne valent pas le diable,</l>
+          <l met="10">Mais j'aime mieux votre train détestable,</l>
+          <l met="10">Que du sommeil essuyer les langueurs.</l>
+          <l met="12">Sans nous, l'Amour serait [un] chétif Scaramouche.</l>
+          <l met="12">C'est bien nous qui peuplons son université.</l>
+          <l met="12">Et, soit dit entre nous, si nous prenons la mouche,</l>
+          <l met="8">L'on verra l'Amour éclopé,</l>
+          <l met="8">Les Plaisirs froids et Vénus louche.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">La Jalousie et sa suite</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">[Vénus, L'Amour, le Chœur]</stage>
+        <sp who="#venus">
+          <speaker>Vénus</speaker>
+          <l met="12">C'en est trop, taisez vous, et votre air fanfaron</l>
+          <l met="12">Devrait plutôt ici se mettre à la raison.</l>
+          <l met="12">C'est des Plaisirs qu'Amour tient et la vie et l'être,</l>
+          <l met="12">Votre chef n'est ici qu'un bien petit garçon.</l>
+          <l met="11">Gardez-vous donc bien de prendre en ma maison</l>
+          <l met="6">Ces airs de petit-maître.</l>
+          <l met="10">Troubles cruels, Soupçons injurieux,</l>
+          <l met="10">Vous, dont l'orgueil est la mère nourrice,</l>
+          <l met="12">Qui versez sur l'amour un vernis odieux,</l>
+          <l met="12">Ne sucez plus le fiel du bizarre caprice.</l>
+          <l met="12">Mettez dans l'alambic les cœurs brûlés de feux,</l>
+          <l met="12">Soyez de nos amours et le poivre et l'épice.</l>
+          <l met="8">Logez dans les cœurs amoureux,</l>
+          <l met="12">Mais gardez-vous, cruels, de faire leur supplice.</l>
+          <l met="12">Quand Aquilon fougueux peut faire une incartade</l>
+          <l met="12">C'est lors un vrai lutin qui brise tout vaisseau.</l>
+          <l met="12">Mais quand Éolarduor pour le mettre au niveau,</l>
+          <l met="12">De son trident affreux lui lance une bourrade,</l>
+          <l met="12">Mon gars, pour s'adoucir, n'a besoin de pommade,</l>
+          <l met="6">Il devient un agneau.</l>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="12">Ne perdez pas un mot de ce capitulaire,</l>
+          <l met="12">Et tous les jours, mortels, lisez mon bréviaire.</l>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="8">Soyons chanoines de Cythère,</l>
+          <l met="7">Chantons tous le tendre amour.</l>
+          <l met="12">Les Plaisirs sont les seuls prébendiers de sa cour.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">[Une Bergère, L'Amour]</stage>
+        <sp who="#unebergere">
+          <speaker>Une bergère</speaker>
+          <l met="12">À quoi sert des mortels de se voir adorer,</l>
+          <l met="12">Si d'une once d'amour le cœur n'est saupoudré?</l>
+          <l met="12">La houlette est un sceptre aux mains d'une bergère,</l>
+          <l met="12">Quand son cœur de Vénus a pu goûter la loi,</l>
+          <l met="12">Ou quand de son berger elle sait le mystère.</l>
+          <l met="7">L'amant seul est un vrai roi.</l>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="8">Faisons bien tous notre devoir.</l>
+          <l met="12">À chanter, à sauter mettons notre savoir.</l>
+          <l met="12">Du Nestor des amours, récitons les chroniques.</l>
+          <l met="12">Jean, vous le connaissez, c'est l'Hector de ma cour.</l>
+          <l met="12">C'est un brave à trois poils qui sut bien mes rubriques.</l>
+          <l met="12">Enfant gâté de Mars, enfant gâté d'Amour,</l>
+          <l met="12">Sa légende est ici gravée en nos portiques.</l>
+          <l met="8">C'est le César de ce séjour.</l>
+          <stage type="location">La scène est dans le palais de Momus.</stage>
+        </sp>
+        <stage>Fin du prologue</stage>
+      </div>
+      <div type="act">
+        <head>ACTE 1</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Pernelle</stage>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <stage>i</stage>
+            <l met="12">Apaise la fureur de tes griffes cruelles,</l>
+            <l met="12">Tes coups fatals, Amour, m'ont mis en beaux draps blancs.</l>
+            <l met="8">Les soins font palpiter mes flancs.</l>
+            <l met="12">Quoi, mon cœur, se livrer à Jean des Dardanelles!</l>
+            <l met="8">Pernelle, as-tu perdu le sens?</l>
+            <l met="12">Vous donc, à qui son bras a coupé la parole,</l>
+            <l met="8">Guillaume et Pierre mes aïeux,</l>
+            <l met="12">Mon bon sens disloqué fait une cabriole,</l>
+            <l met="12">D'aimer votre ennemi ne suis-je pas bien folle?</l>
+            <l met="8">Sortez, paraissez, demi-dieux,</l>
+            <l met="12">Venez, Jean est déjà le maître de la place,</l>
+            <l met="12">Si je puis résister à l'éclat de ses yeux,</l>
+            <l met="8">Je veux mourir sur cette place.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Canut, Pernelle</stage>
+          <sp who="#canut">
+            <speaker>Canut</speaker>
+            <l met="12">Riez, chantez, dansez, l'affaire est en bon train,</l>
+            <l met="12">Barberousse est encor armé pour ma défense.</l>
+            <l met="12">Ma foi, messire Jean, je t'attends, à demain!</l>
+            <l met="12">Et ce cafard verra que, non sans doléance,</l>
+            <l met="12">Un mortel de Canut irrite la clémence.</l>
+            <l met="8">Mais ce héros veut votre main.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="8">Je frémis.</l>
+          </sp>
+          <sp who="#canut">
+            <speaker>Canut</speaker>
+            <l met="8">Voilà qu'il s'avance.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Canut, Pernelle, Barberousse</stage>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Pernelle, avec l'ardeur qui loge là-dedans,</l>
+            <l met="12">Pour assurer vos jours, oui, oui, j'irais me pendre,</l>
+            <l met="10">Ou s'il fallait, mon courage irait prendre</l>
+            <l met="6">La lune avec les dents.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">D'un héros tel que vous, nous devons tout attendre.</l>
+            <l met="12">Mais Monsieur, Jean est fils de monseigneur Jupin,</l>
+            <l met="12">Ce roi du<emph>Tonitrus</emph>pour son fils s'intéresse.</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="8">Si Jupiter est son parrain,</l>
+            <l met="8">Tudieu, vous êtes ma maîtresse.</l>
+          </sp>
+          <sp who="#canut">
+            <speaker>Canut</speaker>
+            <l met="7">Laissez-là les compliments.</l>
+            <l met="12">Afin de rendre ici notre union plus forte,</l>
+            <l met="10">Garrottons-la des plus sacrés serments.</l>
+            <l met="8">Laissons-les sur ces monuments,</l>
+            <l met="8">Afin que rien ne les emporte,</l>
+            <l met="8">Sur l'aile du diable ou des vents.</l>
+          </sp>
+          <spGrp>
+            <caption>Canut, barberousse</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="8">Oui, oui, que la peste me crève.</l>
+              <l met="12">Si ce bras aujourd'hui n'écorche Jean tout vif,</l>
+              <l met="12">Nous consentons tous deux d'être roués en Grève.</l>
+              <l met="12">Si nous ne le pendons sur les branches d'un if,</l>
+              <l met="12">Que l'on m'accroche au bout de la fourche du diable.</l>
+              <l met="7">Si je trahis mes serments,</l>
+              <l met="10">Que Belzébuth se loge sur mes dents,</l>
+              <l met="10">Que deux corbeaux empoisonnent ma table,</l>
+              <l met="7">Ce sont là mes sentiments.</l>
+              <l met="12">Après cet alphabet des bateliers de Loire,</l>
+              <l met="8">Quel Dieu pourrait briser ces nœuds?</l>
+              <l met="8">Peuples, chantons le jour heureux,</l>
+              <l met="8">Qui ressuscite notre gloire.</l>
+            </sp>
+          </spGrp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="8">Mars et Bellone eussent-ils peur,</l>
+            <l met="8">Je serais, moi, plein de valeur.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="8">Mars ...</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="8">Puissant Dieu de la ferraille,</l>
+            <l met="12">La victoire toujours seconde vos projets,</l>
+            <l met="12">Et, pour vous obéir, est toujours aux aguets.</l>
+            <l met="10">Venez, frappons et d'estoc et de taille.</l>
+            <l met="12">Je puis faire avec vous pleurer cette canaille,</l>
+            <l met="8">Mais quand même vous auriez peur,</l>
+            <l met="8">Je serais, moi, plein de valeur.</l>
+          </sp>
+          <sp who="#unepoissarde">
+            <speaker>Une poissarde</speaker>
+            <l met="12">De Renaud le boucher vous tenez cette lame,</l>
+            <l met="12">Elle est bonne, ma foi, suffit je vous le dis.</l>
+            <l met="12">Allez, battez-vous bien, je promets à votre âme</l>
+            <l met="8">Quatorze bons<emph>de profundis</emph>.</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Pour tout soldat défunt, chantez le<emph>libera</emph>.</l>
+            <l met="12">Mais, goujats, si quelqu'un doutait de la victoire,</l>
+            <l met="12">Qu'il fasse auparavant un bon<emph>mea culpa</emph>,</l>
+            <l met="12">Qu'il chante un<emph>oremus</emph>, pour moi, je m'en vais boire.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Pernelle</stage>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <stage>i</stage>
+            <l met="12">Je ne serai donc pas la maîtresse chez moi?</l>
+            <l met="12">L'amour à la raison veut-il faire la loi?</l>
+            <l met="12">Consultons Machiavel, s'il peut rompre ce piège.</l>
+            <l met="12">On dit que ce grand homme a d'assez bons onguents,</l>
+            <l met="12">Qu'il devine aussi bien que l'almanach de Liège,</l>
+            <l met="12">Et qu'il est, dans ces lieux, médecin du bon sens.</l>
+          </sp>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Machiavel</stage>
+          <sp who="#machiavel">
+            <speaker>Machiavel</speaker>
+            <stage>i</stage>
+            <l met="10">J'entends d'ici qu'on rit dans Ispaham.</l>
+            <l met="8">Et sans le secours des lunettes,</l>
+            <l met="12">Je vois ce que l'on fait au sein de Rotterdam.</l>
+            <l met="12">Mon seul regard suspend la course des planètes.</l>
+            <l met="8">J'ai la science d'Abraham,</l>
+            <l met="7">J'ai vu notre père Adam.</l>
+            <l met="10">Nul papelard ne sait tant de sornettes.</l>
+            <l met="12">Mais qui va là? c'est Jean.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Machiavel, Jean des Dardanelles</stage>
+          <sp who="#machiavel">
+            <speaker>Machiavel</speaker>
+            <l met="12">Ah, vous n'y pensez pas,</l>
+            <l met="12">Que diable venez-vous faire en cette galère?</l>
+            <l met="12">La raison vers ces lieux n'a point guidé vos pas,</l>
+            <l met="12">Vous savez que Canut est un méchant compère.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="6">Trêve de tout conseil.</l>
+            <l met="12">Mon bonheur est chez vous, voilà ce qui m'altère.</l>
+            <l met="12">Je cours après les yeux d'un visage vermeil.</l>
+          </sp>
+          <sp who="#machiavel">
+            <speaker>Machiavel</speaker>
+            <l met="10">Vous connaissez mon petit savoir faire,</l>
+            <l met="10">L'honneur sera mon unique salaire.</l>
+            <l met="12">Parlez, faut-il aller à Monomotapa?</l>
+            <l met="10">Regardez-[moi] comme votre confrère,</l>
+            <l met="10">Je suis ami de votre cher papa.</l>
+            <l met="10">Voulez-vous voir tout l'ordre diabolique?</l>
+            <l met="12">Voulez-vous voir Gripet ranger ses escadrons?</l>
+            <l met="12">Je poste pour cela ma lanterne magique.</l>
+            <l met="12">À moi, cher Agrippa, viens donc, nous t'attendons.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">J'éprouve en ce moment une guerre cruelle,</l>
+            <l met="12">Je meurs si je ne fais un baiser à Pernelle.</l>
+          </sp>
+          <sp who="#machiavel">
+            <speaker>Machiavel</speaker>
+            <l met="12">Tudieu! Vous nous portez un cœur bien égrillard.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Jadis, la clef des champs fut donnée à ses charmes.</l>
+            <l met="8">Malgré mon amour babillard,</l>
+            <l met="12">Ce lutin pérora, plaida, versa des larmes,</l>
+            <l met="12">Mais moi, je méprisai son caquet nasillard.</l>
+            <l met="12">Au fond devais-je alors dans un dépit extrême</l>
+            <l met="12">Insulter en tyran ses attraits enchaînés?</l>
+            <l met="10">Cela convient à des Turcs forcenés.</l>
+            <l met="7">Ah, je veux que si l'on m'aime</l>
+            <l met="6">Ce soit pour mon beau nez.</l>
+          </sp>
+          <sp who="#machiavel">
+            <speaker>Machiavel</speaker>
+            <l met="12">En fait, d'amour j'approuve assez votre système.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Pernelle doit venir, souffrez qu'en la voyant</l>
+            <l met="12">Je puisse contenter mon appétit gourmand.</l>
+            <l met="6">Je verrai face à face</l>
+            <l met="8">Ses yeux brillants comme l'éclair,</l>
+            <l met="8">Dieu m'en fasse bientôt la grâce.</l>
+          </sp>
+          <sp who="#machiavel">
+            <speaker>Machiavel</speaker>
+            <l met="10">Vous vous trompez, soit dit sans vous fâchez,</l>
+            <l met="12">Votre esprit, monsieur Jean, va trop vite en besogne.</l>
+            <l met="12">Vous connaissez Canut et sa quinteuse trogne,</l>
+            <l met="12">Vous savez qu'il n'est point aisé de l'accrocher.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Si Pernelle avec Jean voulait couche commune,</l>
+            <l met="12">Je trouverais moyen d'être alors son mari,</l>
+            <l met="12">Je dirais, serviteur, à madame Fortune.</l>
+            <l met="12">Si Canut, dans ce cas, me refusait sa brune,</l>
+            <l met="12">Il s'en mordrait les doigts, j'en fais bien le pari.</l>
+          </sp>
+          <sp who="#machiavel">
+            <speaker>Machiavel</speaker>
+            <l met="8">Ouf, je suis étouffé de joie</l>
+            <l met="8">En regardant ce que je vois.</l>
+            <l met="12">Je suis, moi, seul devin, seul oracle de Troie,</l>
+            <l met="8">Gens de Piémont et de Savoie,</l>
+            <l met="12">Chats-huants, noirs hiboux, rangez-vous près de moi.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Machiavel, Jean, Sorciers</stage>
+          <sp who="#machiavel">
+            <speaker>Machiavel</speaker>
+            <l met="12">Hâtez-vous, allumez ma lanterne magique.</l>
+            <l met="8">Crions tous comme des perdus.</l>
+            <l met="10">De ce sabbat vous savez les rubriques,</l>
+            <l met="8">Il faut partout être entendus.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="12">Hâtons-nous ...</l>
+          </sp>
+          <sp who="#machiavel">
+            <speaker>Machiavel</speaker>
+            <l met="8">Soleil, montre-nous ton derrière,</l>
+            <l met="12">Cache-nous au plus tôt ton visage gaillard!</l>
+            <l met="12">Et que tout l'univers joue à colin-maillard,</l>
+            <l met="12">La nuit éclaire assez notre bande sorcière.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="12">Hâtons-nous ...</l>
+          </sp>
+          <sp who="#machiavel">
+            <speaker>Machiavel</speaker>
+            <l met="12">Je suis content de vous, car au sombre séjour,</l>
+            <l met="12">Diablesses et démons vous ont entendu braire.</l>
+            <l met="12">Je le vois, mes enfants, vous cherchez à me plaire,</l>
+            <l met="12">Vous avez étonné le barbare Cerbère,</l>
+            <l met="8">Et ce chien caresse l'amour.</l>
+            <l met="12">Ma foi, tous mes projets trottent le mieux du monde.</l>
+          </sp>
+          <stage>Machiavel donne à Jean la baguette de magicien.</stage>
+          <sp who="#machiavel">
+            <speaker>Machiavel</speaker>
+            <l met="8">Empoignez bien ce gros bâton,</l>
+            <l met="12">Et pour bien réussir retenez ma leçon.</l>
+            <l met="10">Vous prendrez lors ma face rubiconde;</l>
+            <l met="12">Mais ne le lâchez pas, parce que sans cela,</l>
+            <l met="12">J'en jure par les dents de mère Cunégonde,</l>
+            <l met="7">Vous serez bientôt à quia.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="8">Croyez-en à ce vieux barbon,</l>
+            <l met="6">Gardez votre baguette.</l>
+            <l met="10">S'il craint pour vous, n'a-t-il pas bien raison?</l>
+            <l met="7">Ne perdez jamais la tête,</l>
+            <l met="12">Et pour de vains plaisirs n'allez pas, bonne bête,</l>
+            <l met="8">Dans le puits faire le plongeon.</l>
+          </sp>
+          <sp who="#machiavel">
+            <speaker>Machiavel</speaker>
+            <l met="12">Monsieur Jean, je vous laisse en bonne compagnie,</l>
+            <l met="12">Mais souvenez-vous bien de la cérémonie.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Barberousse, Jean<stage>sous les traits de Machiavel</stage>
+          </stage>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Taisez-vous, mon honneur, je n'en veux pas rougir...</l>
+            <l met="12">Je viens vers vous, Monsieur, conter une nouvelle.</l>
+            <l met="12">Je voudrais m'en passer, mais je n'en puis guérir.</l>
+            <l met="12">Je vous le dis tout franc, je brûle pour Pernelle,</l>
+            <l met="7">Et Canut veut nous unir.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Vous unir! vous, Monsieur.</l>
+          </sp>
+          <stage>À part.</stage>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Ah, tigresse! Ah, cruelle!</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Pour obtenir du roi sa fille et ses joyaux,</l>
+            <l met="12">J'ai juré devant lui d'embrocher son corsaire.</l>
+            <l met="12">Il me semble déjà voir, par sa jugulaire,</l>
+            <l met="8">Sortir son âme et ses boyaux.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <stage>à part</stage>
+            <l met="12">Mais songe-t-il qu'il parle à Jean des Dardanelles?</l>
+          </sp>
+          <stage>À Barberousse.</stage>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="8">Je prédis que vos vœux fidèles...</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Ah, puisse ce secret pourrir dans votre sein.</l>
+            <l met="12">Ma curiosité veut bien être trompée,</l>
+            <l met="12">Toute ma fortune est au bout de mon épée,</l>
+            <l met="8">C'est là mon sort, c'est mon destin.</l>
+            <l met="12">Je voudrais seulement savoir si le maroufle</l>
+            <l met="12">A de dame Pernelle embéguiné l'esprit,</l>
+            <l met="12">Si, contre mon espoir, pour lui le bon vent souffle.</l>
+            <l met="12">Parlez, consolez-moi, je suis tout interdit.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Quel faquin oserait, malgré votre moustache,</l>
+            <l met="8">Vous couper l'herbe sous les pieds?</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="8">Monsieur, personne que je sache,</l>
+            <l met="12">Mais pour me rassurer consultez vos trépieds.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Mes sens et mes esprits vont à la découverte,</l>
+            <l met="12">Et croyez qu'aujourd'hui, pour un doigt de ma main,</l>
+            <l met="12">Je voudrais pour mon bien connaître ce faquin.</l>
+            <l met="12">Ah, pour le deviner nous serons bien alerte!</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Pernelle vient, je fuis. Bonsoir, Monsieur, bonsoir,</l>
+            <l met="12">Ne me retenez pas, adieu jusqu'au revoir.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Pernelle, Jean<stage>sous les traits de Machiavel</stage>
+          </stage>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Je la vois. Çà, mon cœur, faisons bien toutes choses,</l>
+            <l met="12">Et vous, gardez-vous bien de vous émanciper,</l>
+            <l met="12">Mes yeux, et n'allez pas, du moins avant souper,</l>
+            <l met="8">Lui découvrir le pot aux roses.</l>
+          </sp>
+          <stage>À Pernelle.</stage>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Salut, cent fois salut, Pernelle, mon bijou.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">Hélas!</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Vous soupirez!</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">Ah, je n'ose le dire.</l>
+            <l met="8">Mon cœur, Monsieur, est un grand fol,</l>
+            <l met="8">Il s'est coiffé d'un vrai filou.</l>
+            <l met="8">Ah, vous en crèverez de rire.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Non, non, ne craignez pas, mais je veux tout savoir.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">L'on m'a volé mon cœur, pourriez-vous le ravoir?</l>
+            <l met="8">J'en mourrais, Monsieur. Pour deux mailles,</l>
+            <l met="12">Vous commandez, dit-on, aux diables, aux lutins,</l>
+            <l met="12">Lisez à votre gré le livre des destins.</l>
+            <l met="12">Hélas, mon bon monsieur, je suis dans les broussailles.</l>
+            <l met="12">Pourriez-vous pas tirer ce feu de mes entrailles?</l>
+            <l met="12">De ce bourreau d'Amour mon cœur est le martyr.</l>
+            <l met="12">Pourriez-vous...</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Vous aimez? Ah, que je viens d'ouïr?</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">Mais, avant d'achever, prenons un peu d'haleine.</l>
+            <l met="10">Et votre cœur ne peut qu'évanouir,</l>
+            <l met="12">Quand il saura de qui le mien a pris la chaîne.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Ah, parlez au plus tôt, nommez-moi l'heureux gars...</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="8">Le croirez-vous, c'est ce rebelle</l>
+            <l met="12">Qui longtemps pour Canut mania la truelle.</l>
+            <l met="8">Il a fasciné mes regards.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="8">Achevez. Quoi, c'est Jean?</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="8">Lui-même.</l>
+            <l met="12">Ma bouche dit souvent, c'est un franc animal,</l>
+            <l met="8">Mais mon cœur, dit toujours je l'aime.</l>
+            <l met="12">Hélas, mon révérend, guérissez-moi ce mal.</l>
+            <l met="12">Supplions votre ardeur de n'en jamais démordre,</l>
+            <l met="12">Sans avoir rétabli les droits de ma raison.</l>
+            <l met="12">Dans mon petit tripot ramenez le bon ordre,</l>
+            <l met="12">Et dénichez l'amour de toute ma maison.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="8">Parbleu, vous voilà bien malade!</l>
+            <l met="12">Ne vous y frottez pas, j'aurais la clef des cœurs</l>
+            <l met="12">Que je m'obstinerais, ma gentille naïade,</l>
+            <l met="12">À vous faire rôtir par ce mal rétrograde,</l>
+            <l met="8">Et soufflerais à vos ardeurs.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="8">Ciel!</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="8">Nous sommes bien loin de compte!</l>
+            <l met="12">Et votre petit cœur avec votre air sucré,</l>
+            <l met="12">S'il perdait son amour serait désespéré.</l>
+            <l met="12">En disant, j'aime un tel, faut-il avoir de honte?</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">Qu'entends-je?</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Vous tenez sieur Jean dans vos filets,</l>
+            <l met="12">Ce sont tisons d'amour que ses yeux freluquets.</l>
+            <l met="12">Aimez, ne craignez pas d'adorer un perfide.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">Jamais je ne vous vis si doux, si relâché.</l>
+            <l met="10">Si je voulais avec vous en découdre,</l>
+            <l met="12">Vous prendriez, je crois, sur vous tout le péché,</l>
+            <l met="8">Fuyons.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="8">Ne peut-on vous résoudre?</l>
+            <l met="12">Un mot Pernelle, un mot, me reconnaissez-vous?</l>
+            <l met="8">Voyez, voyez à vos genoux.</l>
+          </sp>
+          <stage>Il jette la baguette, et reprend sa figure.</stage>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">Que vois-je? C'est vous, Jean?</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Venez ma tendre mie,</l>
+            <l met="12">Laissez-moi reposer un moment dans vos bras.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">Je suis au désespoir, mais je ne le puis pas.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Allons Pernelle, allons, trêve de prud'homie!</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">Vous me parlez en vain.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Me cacher vos appas?</l>
+            <l met="12">Jean, si vous me quittez, va tomber en démence.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">Je ne sais si je vis, je ne sais si je pense.</l>
+            <l met="10">Adieu, bon Jean, je porte ailleurs mes pas.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Un moment!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">Jean</stage>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <stage>i</stage>
+            <l met="12">Elle fuit! Mais, corbleu, je m'en moque,</l>
+            <l met="6">Le tout bien rebattu.</l>
+            <l met="12">Du savoir d'Agrippa, j'éprouve la vertu.</l>
+            <l met="12">Je viens de découvrir une gentille époque,</l>
+            <l met="12">Mais il faut déguerpir de peur qu'on ne me croque,</l>
+            <l met="6">Le tout bien rebattu.</l>
+          </sp>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 3</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Pernelle</stage>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <stage>i</stage>
+            <l met="12">Je bronche à chaque pas, mon nez frappe aux corniches,</l>
+            <l met="12">Et si le pauvre Jean était longtemps captif,</l>
+            <l met="12">L'on peut me préparer un nez, des yeux postiches.</l>
+            <l met="12">Ah, si Jean de Nivelle était écorché vif,</l>
+            <l met="12">Car, de ce noir projet on grave les affiches,</l>
+            <l met="12">Ah, je ne voudrais pas, quoique notre ennemi,</l>
+            <l met="8">Que l'on le fit Barthélemy.</l>
+            <l met="12">Ici toute mon âme est fort mal à son aise,</l>
+            <l met="12">Mon courage est penaud, et mon visage blaise.</l>
+            <l met="12">Ce sont pourtant pour moi des os qu'il faut ronger.</l>
+            <l met="12">Ah, tout ce que j'en dis n'est point par parenthèse,</l>
+            <l met="8">Et ma douleur n'est point fadaise.</l>
+            <l met="12">Sans pleurer chaudement je ne puis y penser.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Barberousse, Pernelle</stage>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Canut, dès aujourd'hui, veut célébrer la noce.</l>
+            <l met="12">Pour moi, je le veux bien, je ne l'en dédis pas.</l>
+            <l met="12">Il a trois cuisiniers pour faire le repas,</l>
+            <l met="12">Et de messire Jean l'on prépare la fosse.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="8">Mais pourquoi donc se presser tant?</l>
+            <l met="8">Je ne sais pas comme on l'entend,</l>
+            <l met="12">Peut-on, à des festins, unir des funérailles?</l>
+            <l met="12">De grâce, taisez-vous, votre conte m'endort.</l>
+            <l met="10">Je vois le deuil dépeint sur ces murailles,</l>
+            <l met="12">Peut-on rire en faisant les obsèques d'un mort?</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Cela se peut fort bien. L'on se pâme de rire,</l>
+            <l met="8">Ce jour est comme un mardi gras,</l>
+            <l met="12">Et quoique monsieur Jean galope à son trépas,</l>
+            <l met="8">Chacun berne le pauvre sire.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="8">Pour moi, cela me fend le cœur,</l>
+            <l met="8">Et je soutiens qu'on est arabe</l>
+            <l met="12">De goguenarder Jean, en proie à son malheur.</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Pour moi, s'il faut pleurer, je suis son serviteur.</l>
+            <l met="12">Je n'ai point le cœur tendre, et vais le dire en souabe</l>
+            <l met="8">Si l'on vous voit pleurer, mes yeux.</l>
+            <l met="8">Qu'on pende Jean, ou qu'on l'écorche,</l>
+            <l met="12">Que de sa dernière heure, on allume la torche,</l>
+            <l met="8">Je ris toujours d'un air joyeux.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">Hélas, tandis que Jean sera dans la torture,</l>
+            <l met="12">Puis-je accepter vos mains teintes du plus beau sang?</l>
+            <l met="12">J'aime mieux préparer l'onguent pour sa brûlure.</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Mais tous ces airs piteux sont-ils pour votre rang?</l>
+            <l met="12">Votre esprit me paraît nourri de soliloque,</l>
+            <l met="12">Vous avez mis le nez dans Marie Alacoque,</l>
+            <l met="12">Mais le cœur n'est-il pas un peu dévot à Jean?</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">Juste Ciel!</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Avouez, ma très chère maman,</l>
+            <l met="12">Qu'en faveur du nigaud vous avez pris la mouche,</l>
+            <l met="12">Que vous avez de lui quelque aune de ruban,</l>
+            <l met="10">Et que vos yeux l'admettraient dans leur couche.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">Eh, de grâce, laissez ces propos médisants.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="8">Que l'on danse, que l'on frétille,</l>
+            <l met="8">Les dieux nous font de beaux présents.</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="8">Voyez comme l'on s'égosille,</l>
+            <l met="6">Et vous serrez les dents.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">Non, je ne veux point rire, et dans mes soins ardents,</l>
+            <l met="8">Je n'ose prendre en ces moments,</l>
+            <l met="8">Les airs bouffons de Mascarille.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Barberousse, Chœur, [un Colporteur, une Poissarde]</stage>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="8">Allez, galope bien la fille,</l>
+            <l met="8">Nous n'en serons pas moins contents.</l>
+            <l met="8">Je vois la Paix, et sa famille,</l>
+            <l met="8">Portant les Jeux sous sa mandille</l>
+            <l met="8">Pour venir se loger céans.</l>
+          </sp>
+          <spGrp>
+            <caption>Un colporteur et une poissarde</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="5">Dame Catherine,</l>
+              <l met="5">Paix à la peau fine,</l>
+              <l met="6">Viens orner ce cadeau.</l>
+              <l met="10">Depuis longtemps l'on ne voit ton museau.</l>
+              <l met="5">Dame ...</l>
+            </sp>
+          </spGrp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="5">Dame ...</l>
+          </sp>
+          <spGrp>
+            <caption>Colporteur et une poissarde</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="4">Dieu du carnage,</l>
+              <l met="4">Anthropophage</l>
+              <l met="5">Quitte ce réduit.</l>
+              <l met="8">Ma foi, nous n'aimons pas le bruit!</l>
+              <l met="4">Amour poupin,</l>
+              <l met="6">Frétille ici sans fin,</l>
+              <l met="6">Les Plaisirs sur tes pas</l>
+              <l met="9">Ne se cassent ni jambes ni bras.</l>
+              <l met="12">La gloire n'est que vent fol qui se prend au piège,</l>
+              <l met="7">Ma valeur peut seulement,</l>
+              <l met="3">Fortement,</l>
+              <l met="7">D'un pâté faire le siège.</l>
+            </sp>
+          </spGrp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="5">Dame ...</l>
+          </sp>
+          <sp who="#lecolporteur">
+            <speaker>Le colporteur</speaker>
+            <l met="4">Là, monsieur Mars</l>
+          </sp>
+          <sp who="#lapoissarde">
+            <speaker>La poissarde</speaker>
+            <l met="4">Passez la porte.</l>
+          </sp>
+          <sp who="#lecolporteur">
+            <speaker>Le colporteur</speaker>
+            <l met="4">Il fuit le gars!</l>
+          </sp>
+          <sp who="#lapoissarde">
+            <speaker>La poissarde</speaker>
+            <l met="4">Gripet l'emporte.</l>
+          </sp>
+          <spGrp>
+            <caption>Tous deux</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="4">Mais en ce jour,</l>
+              <l met="8">Pourrons-nous vivre sans l'amour?</l>
+              <l met="6">Nos cœurs seraient gelés,</l>
+              <l met="8">Ce serait bourgs démantelés.</l>
+              <l met="4">Fanfan joyeux,</l>
+              <l met="8">Amour, mettez-vous en campagne,</l>
+              <l met="5">Faites de ces lieux,</l>
+              <l met="6">Un pays de Cocagne.</l>
+            </sp>
+          </spGrp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="5">Dame ...</l>
+          </sp>
+          <sp who="#unepoissarde">
+            <speaker>Une poissarde</speaker>
+            <l met="6">Nous mourrons tous d'ennui,</l>
+            <l met="8">Reviens, Amour, à tire d'aile.</l>
+            <l met="6">Que ta cour chez Pernelle</l>
+            <l met="5">S'assemble aujourd'hui.</l>
+            <l met="6">Sans toi l'on est perclus,</l>
+            <l met="5">Les chagrins velus</l>
+            <l met="4">D'un cœur reclus</l>
+            <l met="4">Font le blocus,</l>
+            <l met="1">Car</l>
+            <l met="7">Tu peux seul, en Amilcar,</l>
+            <l met="5">Chasser de nos lits</l>
+            <l met="3">Les soucis.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Canut, Barberousse, Chœur</stage>
+          <sp who="#canut">
+            <speaker>Canut</speaker>
+            <l met="12">Cessez, il faut calmer Jupin le bilieux.</l>
+            <l met="8">Je comprends qu'il est furieux.</l>
+            <l met="8">Je vous le dis sans hyperboles,</l>
+            <l met="12">Chacun peut, à son gré, faire son testament.</l>
+            <l met="12">Les poissons sont sortis de l'humide élément,</l>
+            <l met="6">Ce peuple est fort gourmand.</l>
+            <l met="8">Ah, nous serons mangés des soles!</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="13">Ah, quel prodige!</l>
+          </sp>
+          <sp who="#canut">
+            <speaker>Canut</speaker>
+            <l met="13">On a vu sa majesté Triton</l>
+            <l met="12">Aux flots épouvantés dire en levant la crête:</l>
+            <l met="12">Oh, Messieurs les faquins, vous verrez belle fête</l>
+            <l met="8">Si Jean ne sort de la prison.</l>
+            <l met="12">Mais je ne le crains pas, ses soins sont superflus.</l>
+            <l met="12">Il peut me faire entrer au sein d'une baleine,</l>
+            <l met="12">J'irai me promener dans sa large bedaine,</l>
+            <l met="8">Mais du moins Jean ne vivra plus.</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="7">J'aurais coupé les oreilles</l>
+            <l met="10">À monsieur Jean que nous tenons ici.</l>
+            <l met="8">Les harengs et bêtes pareilles,</l>
+            <l met="7">Veulent prendre son parti.</l>
+            <l met="12">Ces poissons vont trembler en voyant ma figure,</l>
+            <l met="12">Car je ne suis pas bon quand je suis en courroux.</l>
+            <l met="12">Et bientôt j'en ferai telle déconfiture,</l>
+            <l met="8">Qu'ils rentreront dedans leurs trous.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="12">Allez, noble César, domptez toutes ces soles,</l>
+            <l met="8">Vous serez seul notre sauveur.</l>
+            <l met="8">Renvoyez-les aux rives gaules,</l>
+            <l met="10">Nous vous devrons la paix et le bonheur.</l>
+          </sp>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 4</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Vénus, Jean<stage>endormi</stage>, Songes, [Sorciers]</stage>
+          <sp who="#venus">
+            <speaker>Vénus</speaker>
+            <l met="12">Allez, Fanchon, m'a dit le maître du tonnerre,</l>
+            <l met="12">Ma majesté, là-bas, ne peut se transporter</l>
+            <l met="6">Sans un peu se crotter.</l>
+            <l met="8">Délivrez Jean, qu'on le déferre,</l>
+            <l met="8">Allez, commencez à trotter!</l>
+            <l met="12">Enfin donc me voici, restons sous cette tente,</l>
+            <l met="12">Et vous sorciers, lutins, prenez votre rabat.</l>
+            <l met="12">Mes conseillers d'honneur, commençons le sabbat,</l>
+            <l met="8">Je serai votre présidente.</l>
+          </sp>
+          <sp who="#troissonges">
+            <speaker>Trois songes</speaker>
+            <l met="6">Par ce miroir magique,</l>
+            <l met="8">Que tous vos sens soient disloqués!</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="2">Ronflez.</l>
+          </sp>
+          <sp who="#lessonges">
+            <speaker>Les songes</speaker>
+            <l met="7">Par ce grimoire mystique,</l>
+            <l met="7">Les chagrins sont suffoqués</l>
+            <l met="7">Et les Plaisirs convoqués.</l>
+            <l met="7">L'Amour vient sur votre bord.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="4">Le coup est fort!</l>
+          </sp>
+          <sp who="#lessorciers">
+            <speaker>Les sorciers</speaker>
+            <l met="6">Rions au nez du sort.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="6">Par ce [miroir magique,</l>
+            <l met="8">Que tous vos sens soient disloqués.]</l>
+          </sp>
+          <sp who="#lessorciers">
+            <speaker>Les sorciers</speaker>
+            <l met="8">Faisons trois nœuds à ces paroles.</l>
+            <l met="8">Que le myrte et le laurier,</l>
+            <l met="4">Heureux guerrier,</l>
+            <l met="5">Couvrent vos épaules,</l>
+            <l met="6">Et qu'ils s'accordent bien.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="4">L'honneur n'est rien, ...</l>
+            <l met="7">Si l'amour n'est son soutien.</l>
+          </sp>
+          <sp who="#unsorcier">
+            <speaker>Un sorcier</speaker>
+            <l met="12">Des harengs affamés ravagent ces contrées!</l>
+            <l met="12">Allez, volez, prenez des herbes ensoufrées.</l>
+            <l met="12">Faites rentrer leur âme en leur petit thorax,</l>
+            <l met="12">Et pour avoir Pernelle, attaquez ces grenouilles,</l>
+            <l met="12">Qui, pour nous étourdir, enflant comme citrouilles,</l>
+            <l met="7">Chantent Brekeke Koax Koax.</l>
+          </sp>
+          <sp who="#unautresorcier">
+            <speaker>Un autre sorcier</speaker>
+            <l met="9">Craignez-vous? Un seul signe de croix</l>
+            <l met="8">Va troubler ce peuple aquatique.</l>
+            <l met="8">Ils seront bientôt aux abois.</l>
+            <l met="12">Invoquez au combat Pernelle plusieurs fois,</l>
+            <l met="8">Vous les vaincrez tous sans réplique.</l>
+          </sp>
+          <sp who="#legrandchoeur">
+            <speaker>Le grand chœur</speaker>
+            <l met="6">Que votre bras renverse</l>
+          </sp>
+          <sp who="#lepetitchoeur">
+            <speaker>Le petit chœur</speaker>
+            <l met="6">Les harengs vos rivaux!</l>
+          </sp>
+          <sp who="#legrandchoeur">
+            <speaker>Le grand chœur</speaker>
+            <l met="8">Que votre valeur les disperse!</l>
+          </sp>
+          <sp who="#lepetitchoeur">
+            <speaker>Le petit chœur</speaker>
+            <l met="12">Et faites-la monter sur ses plus grands chevaux.</l>
+          </sp>
+          <sp who="#legrandchoeur">
+            <speaker>Le grand chœur</speaker>
+            <l met="12">Quand vous aurez vaincu ces animaux obliques,</l>
+            <l met="12">Vous serez, grand héros, l'image de Jupin.</l>
+            <l met="8">Vous régnerez en ces portiques.</l>
+            <l met="12">Nous ferons une niche avec du bon sapin,</l>
+            <l met="12">Et nous encenserons vos os et vos reliques.</l>
+          </sp>
+          <sp who="#lepetitchoeur">
+            <speaker>Le petit chœur</speaker>
+            <l met="12">L'amant est un monarque, il porte la couronne.</l>
+            <l met="8">Ses tendres plaisirs sont parfaits,</l>
+            <l met="8">Et son cœur ne baille jamais</l>
+            <l met="8">Devant les yeux de sa mignonne.</l>
+          </sp>
+          <spGrp>
+            <caption>Les sorciers et les chœurs</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="7">Des morts, évoquons les ombres,</l>
+              <l met="9">Ou plutôt finissons ce sabbat.</l>
+              <l met="7">Conduit par ces clartés sombres,</l>
+              <l met="7">Jean, partez pour le combat.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Jean<stage>s'éveille</stage>
+          </stage>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <stage>i</stage>
+            <l met="12">Où suis-je, quel sorcier m'a métamorphosé?</l>
+            <l met="10">Je suis sans liens et voilà mon épée.</l>
+            <l met="7">M'a-t-on dédarnalisé?</l>
+            <l met="12">Suis-je bien moi? Je crois pourtant que c'est quelqu'autre.</l>
+            <l met="12">N'importe. Je voyais des poissons en rêvant.</l>
+            <l met="12">Avant de s'engager disons un patenôtre,</l>
+            <l met="8">Puis sans tarder, flamberge au vent</l>
+            <l met="10">De la victoire, on m'ouvre la carrière.</l>
+            <l met="12">Çà, ma valeur, n'allez pas ici reculer.</l>
+            <l met="12">Ce serait beau que Jean leur montrât son derrière,</l>
+            <l met="12">Mais plutôt au trépas, fais-les dégringoler.</l>
+            <l met="12">En vainquant, nous gagnons une immortelle gloire,</l>
+            <l met="12">Et Pernelle est à nous par-dessus le marché.</l>
+            <l met="12">Alors, un bel esprit écrira notre histoire,</l>
+            <l met="8">Et je n'en serai point fâché.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Barberousse</stage>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <stage>i</stage>
+            <l met="12">Si je n'étais coiffé de ma sotte Pernelle,</l>
+            <l met="12">J'irais moi, d'un œil sec, m'offrir à ces poissons,</l>
+            <l met="8">Et leur dirais d'un ardent zèle:</l>
+            <l met="12">Voilà mes os, broutez, mangez, chers compagnons!</l>
+            <l met="8">Cela fait frémir la nature,</l>
+            <l met="8">Et ce n'est point égratignure</l>
+            <l met="8">Que d'être rongé tout vivant.</l>
+            <l met="8">Mais j'aime mieux votre morsure,</l>
+            <l met="12">Qu'éprouver de l'amour la venimeuse dent.</l>
+            <l met="12">Pour guérir de vos coups, l'on trouve des remèdes,</l>
+            <l met="6">Emplâtres chauds ou tièdes.</l>
+            <l met="8">Mais pour les blessures d'amour,</l>
+            <l met="12">Nous avons beau courir à quelque apothicaire,</l>
+            <l met="8">Ils n'y font tous que de l'eau claire,</l>
+            <l met="8">Et loin d'être contre, on est pour.</l>
+            <l met="8">Cela fait ...</l>
+            <l met="8">Quel bruit! Quel vacarme effroyable!</l>
+            <l met="8">Ah, grands Dieux, quel charivari.</l>
+            <l met="12">Le tonnerre vengeur a fait un cri de diable.</l>
+            <l met="12">Ah Seigneur,<emph>peccavi</emph>, je meurs, j'en suis marri...</l>
+            <l met="8">Pourquoi chanter palinodie?</l>
+            <l met="12">Pourquoi craindre? Ah, plutôt mettez ma tête au c[roc]</l>
+            <l met="12">De tout cet univers dérangez l'harmonie</l>
+            <l met="12">Brisez, coupez, mon cœur est ferme comme un r[oc].</l>
+            <l met="8">Mais, d'un merlan je vois la face,</l>
+            <l met="12">Ah, Monseigneur poisson, épargnez-moi, de grâce!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Jean, Barberousse</stage>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Il est dans le bourbier, laissons-y ce cafard!</l>
+            <l met="8">Mais non, il faut que je l'en tire.</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <stage>voyant le monstre tué</stage>
+            <l met="12">Le monstre est abattu, je recommence à rire!</l>
+            <l met="12">Ô ciel, on n'y voit goutte en cet épais brouillard.</l>
+            <l met="12">Quel héros ou quel Dieu m'a sauvé du lézard?</l>
+            <l met="12">Vous me quittez?</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Bonsoir à votre seigneurie.</l>
+            <l met="12">Vous savez si je suis de quelque confrérie?</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Prenez du moins ce fer, je vous en fais présent.</l>
+            <l met="12">Vous faites des façons? Ma foi, je vous le donne,</l>
+            <l met="12">Je n'en ai pas besoin, je n'attaque personne.</l>
+            <l met="12">Que pour vous, de mon cœur, ce soit les monuments.</l>
+            <l met="12">J'en atteste le diable et tous ceux de sa secte:</l>
+            <l met="12">Parlez et demandez, sans un plus long enquis,</l>
+            <l met="12">Il sera fait d'abord comme il sera requis.</l>
+            <l met="12">Parlez. Ah, que ma foi ne vous soit point suspecte!</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Ne te moques-tu pas?</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Non, soyez-en certain.</l>
+            <l met="7">Me croyez-vous infidèle?</l>
+            <l met="12">Qu'exigez-vous?</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Il faut accorder à Pernelle</l>
+            <l met="10">La liberté de cracher dans ta main.</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Ah, plutôt que ton bras me casse la mâchoire.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="10">Tu l'as juré, c'était en bon latin,</l>
+            <l met="6">Si j'ai bonne mémoire.</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Ah, corbleu, je suis pris, mais revenez demain!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Barberousse</stage>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <stage>i</stage>
+            <l met="8">Oui, je suis un sot en trois lettres,</l>
+            <l met="10">Et je serai la fable du public.</l>
+            <l met="12">Il faut m'aller cacher! Allons, prenons nos guêtres.</l>
+            <l met="12">Déjà cet inconnu m'a fait pic et repic.</l>
+            <l met="12">Il fallait me couvrir d'une noble poussière,</l>
+            <l met="12">Et je ne craindrais pas de n'être ici capot,</l>
+            <l met="12">Et la Gloire et l'Amour seraient de mon tripot!</l>
+            <l met="10">Ah, plutôt nous jeter dans la rivière!</l>
+          </sp>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 5</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Barberousse, Canut, Pernelle, Poissardes, Chœur</stage>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Barberousse est un héros,</l>
+            <l met="12">Au registre d'honneur votre nom aura place.</l>
+          </sp>
+          <sp who="#canut">
+            <speaker>Canut</speaker>
+            <l met="8">Triomphez, vainqueur des turbots!</l>
+            <l met="10">Pour vous chanter, tout le monde croasse.</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Barberousse ...</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="8">Que la musique me déplait!</l>
+          </sp>
+          <sp who="#canut">
+            <speaker>Canut</speaker>
+            <l met="10">Pourtant, Monsieur, excepté qu'elle est rude,</l>
+            <l met="12">Suivant les connaisseurs, elle est d'assez bon goût.</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Je ne puis la goûter car mon âme est à bout.</l>
+            <l met="12">Par un malheureux cas j'ai sailli mon surtout,</l>
+            <l met="12">Ne soyez pas surpris de me trouver si prude.</l>
+          </sp>
+          <sp who="#canut">
+            <speaker>Canut</speaker>
+            <l met="8">Mais que craignez vous après tout?</l>
+            <l met="12">Jupiter est là-haut, il danse avec Gertrude.</l>
+            <l met="8">Pour calmer le Dieu des harengs,</l>
+            <l met="12">Tandis que votre bras délivrait ces royaumes,</l>
+            <l met="12">Au pied de ses autels je chantais les sept psaumes,</l>
+            <l met="12">Alors, il a donné la paix à mes étangs.</l>
+            <l met="8">Bien plus, ce dieu, foi de monarque,</l>
+            <l met="12">Veut bien être avec moi de pair à compagnon,</l>
+            <l met="12">Si de Pernelle enfin vous êtes le mignon.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <stage>à part</stage>
+            <l met="9">Ah, tant pis!</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="9">Fort vilaine chanson.</l>
+          </sp>
+          <sp who="#canut">
+            <speaker>Canut</speaker>
+            <l met="12">Je la donne, a-t-il dit d'un ton de fier exarque,</l>
+            <l met="8">Au destructeur de ce poisson.</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Hélas, tranchez mes jours, accourez, noire Parque!</l>
+          </sp>
+          <sp who="#canut">
+            <speaker>Canut</speaker>
+            <l met="12">Vous me fendez le cœur, Monsieur, ne pleurez pas,</l>
+            <l met="12">Vous avez aujourd'hui fort bien conduit la barque.</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="10">Ah, vous ignorez mon piteux cas,</l>
+            <l met="12">Je suis un homme mort. J'en jure par Plutarque</l>
+            <l met="12">Et j'en atteste encor l'épître aux<emph>Galatas</emph>.</l>
+          </sp>
+          <sp who="#canut">
+            <speaker>Canut</speaker>
+            <l met="12">Oh, oh, n'est-ce pas Jean? Ou bien est-ce son ombre?</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Voyez, regardez bien.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">Jupin, conservez Jean.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Canut, Pernelle, Barberousse, Jean</stage>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="10">Oui, oui, c'est moi, reconnais cet œil sombre,</l>
+            <l met="12">Viens, frappe, et me jette au fond de l'océan!</l>
+            <l met="12">Ton bras, de mon amour a causé le décombre,</l>
+            <l met="12">Et sans toi, ces beaux yeux seraient mon seul cadran.</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Quel soupçon!</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="12">Qu'attends-tu? sors donc de cette extase!</l>
+            <l met="6">Eh bien, prends ce couteau.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="12">Halte-là!</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">C'est bien lui, je connais sa topaze.</l>
+            <l met="12">Il faut bien de mes jours éteindre le flambeau.</l>
+          </sp>
+          <sp who="#canut">
+            <speaker>Canut</speaker>
+            <l met="8">Votre bon sens perd le niveau.</l>
+          </sp>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="13">Grands Dieux, votre courroux ne m'avait-il donc fait naître</l>
+            <l met="12">Dans mes chaudes amours pour me voir passer maître?</l>
+            <l met="12">Ainsi donc, tout à coup, je suis échec et mat!</l>
+            <l met="8">N'importe, il faut bien s'y résoudre,</l>
+            <l met="12">J'ai juré. Vous pouvez passer votre contrat.</l>
+            <l met="8">Pernelle, hélas, quel coup de foudre!</l>
+            <l met="11">Oui, c'est monsieur Jean qui sauve cet État,</l>
+            <l met="12">Il a pris le poisson qu'il en fasse un bon plat.</l>
+            <l met="12">Mon bizarre destin ne veut pas que j'en goûte,</l>
+            <l met="12">Prenez Pernelle avec, je vous la cède toute.</l>
+          </sp>
+          <stage>À Canut.</stage>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">De cette affaire-ci ne vous chagrinez pas.</l>
+            <l met="8">Non, je ne suis pas imbécile,</l>
+            <l met="12">À grands verres de vin, je tousserai ma bile,</l>
+            <l met="6">Et vous suivrez mes pas.</l>
+          </sp>
+          <stage>À Pernelle.</stage>
+          <sp who="#barberousse">
+            <speaker>Barberousse</speaker>
+            <l met="12">Je vous fuis, ce n'est point pour moi que le four chauffe,</l>
+            <l met="12">Sans doute monsieur Jean est de meilleure étoffe.</l>
+          </sp>
+          <sp who="#canut">
+            <speaker>Canut</speaker>
+            <l met="10">Je suis en ce moment, muet, pétrifié</l>
+            <l met="12">De me voir tout à coup ainsi blaisifié.</l>
+            <l met="12">Mais qu'est-ce que je vois? C'est Vénus ma commère!</l>
+            <l met="12">Des amours babillards j'entends l'aigre fausset.</l>
+            <l met="12">Elle n'est pas bien loin, mettons-nous en prière,</l>
+            <l met="8">Violons jurent sous l'archet.</l>
+            <l met="6">Ouvrons bien la visière.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Vénus<stage>descend du ciel</stage>, Canut, Pernelle, Jean, Amours</stage>
+          <sp who="#venus">
+            <speaker>Vénus</speaker>
+            <l met="8">Bonjour, monsieur Canut! or çà,</l>
+            <l met="6">Trêve de toute haine,</l>
+            <l met="11">Je tiens ma mission de mon très cher papa.</l>
+            <l met="8">Peuples, vous voyez votre reine,</l>
+            <l met="6">Chantez Alléluia.</l>
+          </sp>
+          <sp who="#canut">
+            <speaker>Canut</speaker>
+            <l met="10">Mais si souvent Vénus pourquoi descendre?</l>
+            <l met="12">Un mot de votre part m'eût mis à la raison,</l>
+            <l met="12">Et tous ces compliments ne sont point de saison.</l>
+            <l met="8">Parlons un peu de notre gendre,</l>
+            <l met="12">Vous voulez que Jean ait ce titre en ma maison?</l>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="12">Oui-da! pour vous, Plaisirs, venez tous à la noce.</l>
+            <l met="12">Amours blancs, Amours noirs, vous proprets, vous guenons,</l>
+            <l met="12">Flasques Amours de Brie, et sots Amours de Beauce,</l>
+            <l met="12">Politiques Amours d'Angleterre et d'Écosse,</l>
+            <l met="8">Volez tous comme papillons!</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="8">Ah, lon lan la.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="8">Que je suis aise!</l>
+          </sp>
+          <spGrp>
+            <caption>Tous deux</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="8">Il me semble que je vous baise.</l>
+            </sp>
+          </spGrp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="7">Ces plaisirs pour moi sont neufs.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="8">Bientôt, je ne serai plus fille.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="8">Aura qui voudra la coquille,</l>
+            <l met="8">Pour moi, je mangerai les œufs.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="4">C'est du bonbon!</l>
+            <l met="6">Soleil, charmante aurore,</l>
+            <l met="8">Un peu plus tard, daignez éclore.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="3">Je vous aime.</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="4">J'en dis de même.</l>
+          </sp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="8">
+              <emph>In saecula saeculorum</emph>
+            </l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="8">Conservez-nous Père Éternel!</l>
+            <l met="6">Il me semble être au Ciel.</l>
+            <l met="6">Ah, j'avale du miel.</l>
+          </sp>
+          <spGrp>
+            <caption>Tous deux ensemble</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="8">Nous fêterons tous les lundis,</l>
+              <l met="6">Nous dirons toujours bis,</l>
+              <l met="6">C'est être en paradis.</l>
+            </sp>
+          </spGrp>
+          <sp who="#jean">
+            <speaker>Jean</speaker>
+            <l met="4">Charmants baisers!</l>
+          </sp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="4">Ô nuit aimable!</l>
+          </sp>
+          <spGrp>
+            <caption>Tous deux</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="12">Nous avons bien longtemps gardé le célibat!</l>
+              <l met="8">Allons pourtant nous mettre à table,</l>
+              <l met="8">En chantant le magnificat.</l>
+            </sp>
+          </spGrp>
+          <sp who="#pernelle">
+            <speaker>Pernelle</speaker>
+            <l met="6">J'ai parlé la première,</l>
+            <l met="12">Ah, de parler encor je serai la dernière.</l>
+            <l met="12">Non, Pernelle jamais n'a manqué par le bec,</l>
+            <l met="8">Faut-il jaser une heure entière,</l>
+            <l met="8">Je ne serai jamais à sec.</l>
+          </sp>
+          <stage>Fin</stage>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

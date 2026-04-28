@@ -1,0 +1,854 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="amadis_gaule">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Amadis gaulé</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Anonyme</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Rousseau</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Sans lieu, 1741</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="amadis" sex="UNKNOWN">
+            <persName>Amadis</persName>
+          </person>
+          <person xml:id="oriane" sex="UNKNOWN">
+            <persName>Oriane</persName>
+          </person>
+          <person xml:id="urgande" sex="UNKNOWN">
+            <persName>Urgande</persName>
+          </person>
+          <person xml:id="arcalaus" sex="UNKNOWN">
+            <persName>Arcalaus</persName>
+          </person>
+          <person xml:id="argan" sex="UNKNOWN">
+            <persName>Argan</persName>
+          </person>
+          <person xml:id="goudouli" sex="UNKNOWN">
+            <persName>Goudouli</persName>
+          </person>
+          <person xml:id="lafemme" sex="UNKNOWN">
+            <persName>La femme</persName>
+          </person>
+          <person xml:id="lesdeuxenfants" sex="UNKNOWN">
+            <persName>Les deux enfants</persName>
+          </person>
+          <person xml:id="lafilledejoie" sex="UNKNOWN">
+            <persName>La fille de joie</persName>
+          </person>
+          <person xml:id="premierchanteur" sex="UNKNOWN">
+            <persName>Premier chanteur</persName>
+          </person>
+          <person xml:id="secondchanteur" sex="UNKNOWN">
+            <persName>Second chanteur</persName>
+          </person>
+          <person xml:id="une_femme_gasconne" sex="UNKNOWN">
+            <persName>Une femme gasconne</persName>
+          </person>
+          <person xml:id="une_fille_de_joie" sex="UNKNOWN">
+            <persName>Une fille de joie</persName>
+          </person>
+          <person xml:id="une_troupe_de_chanteurs" sex="UNKNOWN">
+            <persName>Une troupe de chanteurs</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie d'<emph>Amadis des Gaules</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#amadis">Amadis</role>
+        </castItem>
+        <castItem>
+          <role ana="#oriane">Oriane</role>
+        </castItem>
+        <castItem>
+          <role ana="#urgande">Urgande</role>
+          <roleDesc>suivante d'Oriane</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#arcalaus">Arcalaus</role>
+        </castItem>
+        <castItem>
+          <role ana="#argan">Argan</role>
+          <roleDesc>valet de chambre d'Arcalaus</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#goudouli">Goudouli</role>
+        </castItem>
+        <castItem>
+          <role ana="#une_femme_gasconne">Une femme gasconne</role>
+        </castItem>
+        <castItem>
+          <role ana="#une_fille_de_joie">Une fille de joie</role>
+        </castItem>
+        <castItem>
+          <role ana="#une_troupe_de_chanteurs">Une troupe de chanteurs</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène est à Paris, chez M. La D. de V.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Oriane, Urgande</stage>
+        <sp who="#oriane">
+          <speaker>Oriane</speaker>
+          <p>Non, Urgande, je ne serai jamais satisfaite si l'audace d'Amadis n'est punie avec la dernière rigueur.</p>
+        </sp>
+        <sp who="#urgande">
+          <speaker>Urgande</speaker>
+          <p>Reposez-vous en sur moi, Madame, s'il est assez hardi pour mettre</p>
+          <p>le pied dans votre maison, malgré la défense qui lui en est faite, il apprendra que la condition des personnes de votre rang est une barrière que l'on ne peut franchir sans s'exposer à des remords éternels.</p>
+        </sp>
+        <sp who="#oriane">
+          <speaker>Oriane</speaker>
+          <p>Ce qui me peine le plus dans cette affaire, c'est que ce vil comédien, suivant le génie du théâtre, ne manquera point de regarder ma colère comme les premières étincelles d'un amour naissant. Son impertinence lui coûtera cher.</p>
+        </sp>
+        <sp who="#urgande">
+          <speaker>Urgande</speaker>
+          <p>Je vous promets de pousser à bout sa fatuité et de la forcer dans ses derniers retranchements.</p>
+        </sp>
+        <pb n="7"/>
+        <sp who="#oriane">
+          <speaker>Oriane</speaker>
+          <p>Mais, n'est-ce pas lui que je vois? Son audace encore...</p>
+        </sp>
+        <sp who="#urgande">
+          <speaker>Urgande</speaker>
+          <p>Il serait trop flatté de vous rencontrer, laissez nous.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Urgande, Amadis</stage>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>entre en chantant ce chœur de l'opéra d'Amadis</stage>
+          <l met="6">Chantons tous en ce jour,</l>
+          <l met="6">La gloire de l'amour.</l>
+          <l met="9">Gardez-vous bien de briser vos chaînes</l>
+          <l met="9">Vous qui souffrez de cruelles peines,</l>
+          <l met="8">Ne cessez point d'être constants,</l>
+          <l met="6">Et vous serez contents.</l>
+        </sp>
+        <pb n="8"/>
+        <stage>Il aperçoit Urgande.</stage>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Ah! Ma chère Urgande, comment vont nos amours? Oriane est-elle toujours cruelle?</p>
+        </sp>
+        <sp who="#urgande">
+          <speaker>Urgande</speaker>
+          <p>Cruelle? Dites plutôt charmante, adorable, n'aimant que vous, ne brûlant que pour vous.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Ô bonheur d'autant plus agréable qu'il était moins attendu! La manière dont on m'avait interdit l'entrée de cette maison devait-elle être suivie d'une nouvelle si charmante?</p>
+        </sp>
+        <pb n="9"/>
+        <sp who="#urgande">
+          <speaker>Urgande</speaker>
+          <p>Vous avez fort bien fait de mépriser ces défenses, ces menaces étaient les derniers efforts d'une pudeur à demi-vaincue.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Il est donc vrai, ma chère Urgande, que je suis aimé.</p>
+        </sp>
+        <sp who="#urgande">
+          <speaker>Urgande</speaker>
+          <p>Si bien qu'il vous est permis de goûter dès aujourd'hui des plaisirs que l'on a cru jusqu'ici réservés aux demi-dieux.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Ah, ma chère Urgande, que faut-il faire pour y parvenir?</p>
+        </sp>
+        <pb n="10"/>
+        <sp who="#urgande">
+          <speaker>Urgande</speaker>
+          <p>Me cajoler, me prier bien fort; que sais-je? m'offrir quelques portraits de Louis~XV.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Je t'entends, voilà cinquante louis que je te supplie de recevoir, trop heureux si je vois Oriane dans la chambre enchantée des loyaux amants.</p>
+        </sp>
+        <sp who="#urgande">
+          <speaker>Urgande</speaker>
+          <p>Vous serez satisfait, je m'en vais disposer toutes choses et ne sortez point d'ici jusqu'à ce que je revienne.</p>
+        </sp>
+        <pb n="11"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Amadis</stage>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>chante ce couplet de la sixième scène du quatrième acte de l'opéra d'Amadis</stage>
+          <l met="10">Cœurs accablés de rigueurs inhumaines,</l>
+          <l met="10">Ne cessez point d'espèrer en aimant,</l>
+          <l met="9">Il est fâcheux de porter des chaînes,</l>
+          <l met="6">C'est un cruel tourment!</l>
+          <l met="10">Mais quand l'amour en veut payer les peines,</l>
+          <l met="6">C'est un plaisir charmant.</l>
+          <p>[Le texte imprimé passe de la scène III à la scène V]</p>
+        </sp>
+        <pb n="12"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Amadis, Arcalaus</stage>
+        <sp who="#arcalaus">
+          <speaker>Arcalaus</speaker>
+          <p>Amadis en ces lieux? L'on vous en disait banni pour toujours!</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>C'est une erreur, je suis ici des mieux et d'ailleurs, qui serait assez osé pour vouloir m'en interdire l'entrée?</p>
+        </sp>
+        <sp who="#arcalaus">
+          <speaker>Arcalaus</speaker>
+          <p>Je ne sais, mais je connais ici bien des gens qui vous en veulent et je crois fort que vous gagneriez à ne plus y paraître.</p>
+        </sp>
+        <pb n="13"/>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Malgré cela j'y parais avec confiance, je voudrais fort que quelque original y trouvât à dire. Corbleu, tel que vous me voyez, je ne suis point aisé.</p>
+        </sp>
+        <sp who="#arcalaus">
+          <speaker>Arcalaus</speaker>
+          <p>Au reste, ceux dont je vous parle, ce sont des gens de goût et la fatuité leur déplaît infiniment.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+        </sp>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra (Amadis)</desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="6">Je suis inébranlable</l>
+            <l met="8">Contre un ennemi redoutable,</l>
+            <l met="8">Dont il faut vaincre la fureur.</l>
+            <l met="6">Et contre la colère</l>
+            <l met="8">Des sots à qui je n'ai su plaire</l>
+            <l met="8">L'on ne voit point trembler mon cœur.</l>
+          </sp>
+        </spGrp>
+        <pb n="14"/>
+        <sp who="#arcalaus">
+          <speaker>Arcalaus</speaker>
+          <p>Parlez plus doucement, cet air fanfaron commence à me déplaire.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Ma foi, ce n'est point devant vous que je baisserai le ton.</p>
+        </sp>
+        <sp who="#arcalaus">
+          <speaker>Arcalaus</speaker>
+          <stage>lui donne un soufflet</stage>
+          <p>Applique cet emplâtre à ton impertinence.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>se jette à ses genoux</stage>
+          <p>Ah, Monsieur, de grâce calmez votre volère, si quelque chose vous a blessé dans mes discours, je vous en demande pardon.</p>
+        </sp>
+        <pb n="15"/>
+        <sp who="#arcalaus">
+          <speaker>Arcalaus</speaker>
+          <p>Ah! ah, c'est donc ainsi que vous répondez? Je ne vous croyais pas de si bon accord.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>La seule grâce que je vous demande, c'est de ne pas divulguer cette aventure.</p>
+        </sp>
+        <spGrp>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <p>Ne craignez pas, j'y perdrais autant que vous, mais avant de vous quittez permettez-moi de vous chanter un couplet qui vous convient fort.</p>
+          </sp>
+        </spGrp>
+        <pb n="16"/>
+        <spGrp who="#arcalaus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">Menuet,tiré d' <title ref="#isis">Isis</title> ()</desc>
+          </head>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="10">Les rossignols, contents de leur ramage,</l>
+            <l met="10">Ne cherchent point la gloire des combats.</l>
+            <l met="10">Ils sont sans fiel, ennemis du carnage.</l>
+            <l met="10">Votre valeur ne dégénére pas.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Amadis</stage>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>i</stage>
+          <p>À l'insulte il mêle encore la raillerie, quelle malice!... N'importe. Je n'irai pas moins partout tête levée.</p>
+        </sp>
+        <pb n="17"/>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#joconde">Joconde</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="7">Quand on a longtemps vécu</l>
+            <l met="6">Sur les bords de Garonne,</l>
+            <l met="8">L'on y puise cette vertu</l>
+            <l met="6">Qu'aucun malheur n'étonne.</l>
+            <l met="8">Suivant toujours d'un pas égal</l>
+            <l met="5">Des routes inconnues,</l>
+            <l met="8">Un gascon au manteau ducal</l>
+            <l met="6">Porte d'abord ses vues.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Amadis, Argan</stage>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <p>Vous savez assez quel dessein</p>
+          <p>m'amène. Allons, Monsieur, l'épée à la main.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Moi, Monsieur? Cela m'est défendu,</p>
+          <p>ma vie est trop nécessaire au public, je ne l'expose pas pour peu de chose.</p>
+        </sp>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <p>Quoi! Vous refuseriez de me faire</p>
+          <p>raison en homme d'honneur? Il est vrai que l'honneur ne s'enveloppe jamais d'un habit de théâtre. Votre conduite ne m'étonne pas.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Pour quelques paroles que vous me reprochez, voudriez-vous</p>
+          <p>immoler les délices du public et le soutien de l'Opéra?</p>
+        </sp>
+        <sp who="#argan">
+          <speaker>Argan</speaker>
+          <p>Je serais blâmé des honnêtes gens si je profitais de l'avantage que me donne votre faiblesse. Adieu.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Amadis</stage>
+        <spGrp>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <stage>i</stage>
+            <p>Enfin, voilà cette affaire, dont je craignais les suites, heureusement terminée!</p>
+          </sp>
+        </spGrp>
+        <pb n="20"/>
+        <spGrp who="#amadis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sire_votre_bonne_ville">Sire votre bonne ville</title>
+            </desc>
+          </head>
+          <sp who="#amadis">
+            <speaker>Amadis</speaker>
+            <l met="7">Quand du cœur de sa maîtresse</l>
+            <l met="7">On a trouvé le chemin,</l>
+            <l met="7">Quel amant dans l'allégresse</l>
+            <l met="7">De ses jours cherche la fin?</l>
+            <l met="7">Nous autres, gens de théâtre,</l>
+            <l met="7">Nous savons fort bien nous battre,</l>
+            <l met="7">Dans le feu de l'action,</l>
+            <l met="7">Mais ce n'est qu'en fiction.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">[Goudouli, Amadis]</stage>
+        <sp who="#goudouli">
+          <speaker>Goudouli</speaker>
+          <stage>sous l'habit d'un homme ruiné</stage>
+          <p>Bonjour, mon cousin. Et cadédis, comment vous portez-vous?</p>
+        </sp>
+        <pb n="21"/>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Que souhaitez-vous, Monsieur? Je ne vous connais pas.</p>
+        </sp>
+        <sp who="#goudouli">
+          <speaker>Goudouli</speaker>
+          <p>Vous ne me connaissez pas? Je suis de Toulouse et je m'appelle Goudouli, votre cousin germain.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>à part</stage>
+          <p>Je ne le reconnais que trop. C'est lui-même.</p>
+        </sp>
+        <sp who="#goudouli">
+          <speaker>Goudouli</speaker>
+          <p>Vous me faites, ce me semble, un accueil bien peu gracieux. Cependant je vous ai rendu</p>
+          <p>des services assez considérables. Que feriez-vous devenu si je ne vous avais caché trois mois dans ma maison. Vous vous souvenez qu'étant encore abbé, vous séduisîtes la plus jolie dévote du père Sébastien, ce fameux carme déchaussé. Ce moine n'entendit point raillerie là-dessus et vous suscita cette affaire criminelle dont vous auriez été la victime.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Si vous m'en croyez, vous irez débiter ailleurs des fables si mal inventées.</p>
+        </sp>
+        <sp who="#goudouli">
+          <speaker>Goudouli</speaker>
+          <p>Si vous voulez savoir le succès de cette affaire, le voici: un mois après votre évasion de Toulouse, la dévote mis bas deux jumeaux, par bonheur le carme se reconnut dans un de ces poupons et en notre considération il voulut bien assoupir toutes choses.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Vos plaisanteries vous coûteront cher, si vous ne les terminez au plus tôt.</p>
+        </sp>
+        <sp who="#goudouli">
+          <speaker>Goudouli</speaker>
+          <p>Je vois bien que la modestie de mon pourpoint blesse ta vanité, mais je saurai bien te forcer à me reconnaître.</p>
+        </sp>
+        <pb n="24"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Amadis, une femme gasconne, deux enfants</stage>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Quelle est cette femme qui s'avance vers moi? Sa physionomie ne m'est pas inconnue.</p>
+        </sp>
+        <sp who="#lafemme">
+          <speaker>La femme</speaker>
+          <p>Je te salue, mon cher cœur. Voilà le fruit de nos anciens amours: allons, mes enfants, embrassez votre cher père.</p>
+        </sp>
+        <sp who="#lesdeuxenfants">
+          <speaker>Les deux enfants</speaker>
+          <p>Bonjour Papa! Bonjour Papa!</p>
+        </sp>
+        <pb n="25"/>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Vous confondez, Madame, et je vous prie d'aller jouer ailleurs une scène si bizarre.</p>
+        </sp>
+        <sp who="#lafemme">
+          <speaker>La femme</speaker>
+          <p>Quoi perfide! Tu voudrais éluder ainsi l'effet de tes promesses? Fatiguée de tes délais je suis partie de Toulouse pour t'amener ces enfants qui t'appartiennent et pour te forcer à m'épouser, suivant tes engagements. Si tu ne m'avais séduite, je serais encore en possession de ma virginité.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>L'extravagance de vos discours, Madame, excite déjà mon indignation. Vous ferez sagement de vous retirer.</p>
+        </sp>
+        <sp who="#lafemme">
+          <speaker>La femme</speaker>
+          <stage>criant de toutes ses forces</stage>
+          <p>Quoi, me jouer de la sorte!</p>
+          <p>De quel front oses-tu me tenir ce langage?</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Ah! Madame, de grâce ne faites point ici d'éclat. Je suis résolu de vous satisfaire. Rendez-vous chez moi demain matin.</p>
+        </sp>
+        <sp who="#lafemme">
+          <speaker>La femme</speaker>
+          <p>J'accepte la condition: nous viendrons au lieu marqué.</p>
+          <p>Cette journée est marquée pour moi d'aventures funestes. Le bonheur de voir Oriane dans la chambre enchantée va me dédommager de tous ces accidents.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="characters">Amadis</stage>
+        <spGrp who="#lafemme">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#folia">Folies d'Espagne</title>
+            </desc>
+          </head>
+          <sp who="#lafemme">
+            <speaker>La femme</speaker>
+            <l met="10">En vain le sort s'encourage et s'obstine,</l>
+            <l met="10">À chagriner mes sens et mes esprits.</l>
+            <l met="10">J'irai bientôt reposer sur l'hermine,</l>
+            <l met="10">À cet accueil, brisent tous mes soucis.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="characters">Amadis, une fille de joie</stage>
+        <sp who="#lafilledejoie">
+          <speaker>La fille de joie</speaker>
+          <p>Vous ne me remettez peut-être pas, Monsieur, pour moi je ne vous ai point oublié. Vous me laissâtes un gage de votre amitié que je n'ai conservé que trop longtemps.</p>
+        </sp>
+        <pb n="28"/>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Je ne pénètre point l'énigme que vous me proposez et je me flatte que nous n'avons rien à démêler ensemble.</p>
+        </sp>
+        <sp who="#lafilledejoie">
+          <speaker>La fille de joie</speaker>
+          <p>Rappellez-vous cette visite nocturne que vous me rendîtes le mois passé. Depuis, j'eus besoin du chirugien et de l'apothicaire: voilà les comptes. Vous êtes trop galant homme pour ne pas les acquitter.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>L'insulte que vous me faites retombera sur vous, si vous ne disparaissez au plus tôt.</p>
+        </sp>
+        <sp who="#lafilledejoie">
+          <speaker>La fille de joie</speaker>
+          <p>Une fille bien née perd plutôt la pudeur que la modestie. Cependant, si vous refusez de me satisfaire, je ne garderai plus de mesures et j'instruirai tout le monde de vos largesses.</p>
+        </sp>
+        <pb n="29"/>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Madame, voilà vingt pistoles et qu'il n'en soit plus parlé.</p>
+        </sp>
+        <sp who="#lafilledejoie">
+          <speaker>La fille de joie</speaker>
+          <p>À ce prix, ma maison vous est ouverte et nous nous exposerons sans peine au péril de vos visites.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 13</head>
+        <stage type="characters">Amadis, Urgande</stage>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Ah! Ma chère Urgande, que ton absence m'a paru longue.</p>
+        </sp>
+        <sp who="#urgande">
+          <speaker>Urgande</speaker>
+          <p>Tout réussit selon vos désirs. Oriane vous attend dans la chambre voisine. Volez où l'amour vous appelle.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Ô bonheur! ô délices! Il me</p>
+          <p>reste encore dix louis, accepte-les Urgande. Les plaisirs que je vais goûter ne peuvent être assez payés.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 14</head>
+        <stage type="characters">Urgande, Arcalaus</stage>
+        <sp who="#urgande">
+          <speaker>Urgande</speaker>
+          <p>Vous venez fort-à-propos, vous serez témoin d'une scène qui ne vous déplaira pas. Entendez-vous comme l'on bat la mesure dans cette chambre voisine?</p>
+        </sp>
+        <sp who="#arcalaus">
+          <speaker>Arcalaus</speaker>
+          <p>N'entends-je pas la voix de ce faquin d'Amadis?</p>
+        </sp>
+        <sp who="#urgande">
+          <speaker>Urgande</speaker>
+          <p>Dieux, quelle grêle de coups! Entendez-vous comme il demande grâce? ... Comme l'on redouble? Maintenant il veut s'enfuir, mais on s'arrête et l'on recommence</p>
+          <p>de nouveau... Sa voix enrouée marque qu'il succombe. Ma foi, on lui en donne pour son argent.</p>
+        </sp>
+        <sp who="#arcalaus">
+          <speaker>Arcalaus</speaker>
+          <p>Malgré l'ignominie dont on le couvre, je gage que sa vanité lui fournira des motifs de consolation.</p>
+        </sp>
+        <sp who="#urgande">
+          <speaker>Urgande</speaker>
+          <p>On le lâche enfin. Le voici, retirons-nous en l'observant toujours.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 15</head>
+        <stage type="characters">Amadis</stage>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <stage>i</stage>
+          <p>Ô malheur! ô désespoir! Je suis assommé. Quoi? Des coups de bâtons! À un homme de mon rang!</p>
+        </sp>
+        <stage>Il chante cet air d'<emph>Amadis</emph>, scène première du premier acte.</stage>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <l met="8">Ah, que l'amour paraît charmant!</l>
+          <l met="10">Mais il n'est point de plus cruel tourment.</l>
+          <l met="12">Que je trouvais d'appas dans ma naissante flamme,</l>
+          <l met="12">Que j'aimais à former un bel engagement.</l>
+          <l met="8">Ah! J'ai payé bien chèrement</l>
+          <l met="12">Les trompeuses douceurs qui séduisaient mon âme!</l>
+          <p>Mais dans mon désastre je trouve quelque chose de consolant. C'est sans doute la jalousie de quelque rival qui vient de former cet orage. Que sais-je? Si c'était Oriane elle-même qui m'avertit par là d'être plus fidèle. Il faut tâcher de tout découvrir.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 16</head>
+        <stage type="characters">Amadis, Urgande</stage>
+        <sp who="#urgande">
+          <speaker>Urgande</speaker>
+          <p>Fuyez, Amadis, votre vie n'est</p>
+          <p>point en sûreté. C'est la colère d'Oriane qui vous poursuit. La bastonnade dont on vient de vous régaler fait ses délices, elle est résolue, si vous ne disparaissez pour toujours, de vous faire passer par les fenêtres. Ce qui retarde cet événement, c'est qu'elle balance pour savoir si ce doit être du second ou du troisième étage.</p>
+        </sp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Ô comble de malheurs! Ô disgrâce la plus funeste!</p>
+        </sp>
+        <stage>Il chante. Cet air est de l'opéra d'<emph>Amadis</emph>.</stage>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <l met="8">La beauté dont je suis la loi</l>
+          <l met="12">Me bannit pour jamais sans me vouloir entendre.</l>
+          <l met="12">Hélas! Est-ce le prix que je devais attendre</l>
+          <l met="8">De mon amour et de ma foi.</l>
+          <l met="12">Fut-il jamais amant plus fidèle et plus tendre,</l>
+          <l met="12">Fut-il jamais amant si bien battu que moi?</l>
+          <p>Du moins, rends-moi l'argent que je t'ai donné, afin que l'on</p>
+          <p>ne puisse pas dire que je viens d'acheter mon ignominie.</p>
+        </sp>
+        <sp who="#urgande">
+          <speaker>Urgande</speaker>
+          <p>Fuyez, vous dis-je! Nous n'avons pas le temps de compter.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 17</head>
+        <stage type="characters">Amadis, Urgande, Arcalaus, troupe de chanteurs</stage>
+        <stage>Amadis veut se retirer, Arcalaus l'arrête en disant:</stage>
+        <sp who="#arcalaus">
+          <speaker>Arcalaus</speaker>
+          <p>Avant de partir, évoutez nos adieux.</p>
+        </sp>
+        <spGrp who="#arcalaus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#laissez_paitre_vos_betes">Laissez paître vos bêtes</title>
+            </desc>
+          </head>
+          <sp who="#arcalaus">
+            <speaker>Arcalaus</speaker>
+            <l met="6">Par votre doux ramage</l>
+            <l met="6">Les plaisirs rapelés,</l>
+            <l met="6">Dans ce riant bocage</l>
+            <l met="6">Sont enfin rassemblés.</l>
+            <l met="6">Depuis que de l'amour</l>
+            <l met="6">Vous brillez dans la cour,</l>
+            <l met="6">Tout charme en ce séjour.</l>
+            <l met="6">La plus fière déesse</l>
+            <l met="6">Seconde vos ardeurs,</l>
+            <l met="6">Et vous cueillez sans cesse</l>
+            <l met="6">Les plus brillantes fleurs.</l>
+          </sp>
+        </spGrp>
+        <pb n="35"/>
+        <sp who="#premierchanteur">
+          <speaker>Premier chanteur</speaker>
+        </sp>
+        <spGrp who="#premierchanteur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#premierchanteur">
+            <speaker>Premier chanteur</speaker>
+            <l met="8">Les malheurs dont on vous menace</l>
+            <l met="8">Ne doivent point vous étonner,</l>
+            <l met="8">L'amour se plaît à couronner</l>
+            <l met="6">La folie et l'audace.</l>
+          </sp>
+        </spGrp>
+        <sp who="#secondchanteur">
+          <speaker>Second chanteur</speaker>
+        </sp>
+        <spGrp who="#secondchanteur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#menuet_depyrame_et_thisbe">Menuet de<emph>Pyrame et Thisbé</emph>
+              </title>
+            </desc>
+          </head>
+          <sp who="#secondchanteur">
+            <speaker>Second chanteur</speaker>
+            <l met="4">Charmant oiseau</l>
+            <l met="4">Votre plumage,</l>
+            <l met="5">A pendant l'orage</l>
+            <l met="5">Perdu le niveau.</l>
+            <l met="4">À votre mine</l>
+            <l met="3">L'on devine</l>
+            <l met="5">Qu'un sinistre effort</l>
+            <l met="7">Vous écarte loin du port.</l>
+          </sp>
+        </spGrp>
+        <sp who="#urgande">
+          <speaker>Urgande</speaker>
+        </sp>
+        <spGrp who="#urgande">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pres_d_un_coulant_ruisseau">Près d'un coulant ruisseau</title>
+            </desc>
+          </head>
+          <sp who="#urgande">
+            <speaker>Urgande</speaker>
+            <l met="6">Près un ducal manteau,</l>
+            <l met="6">Votre audace abusée</l>
+            <l met="6">Va servir de risée</l>
+            <l met="6">Pour vanter le fardeau</l>
+            <l met="6">Qui gît sur vos épaules.</l>
+            <l met="6">Vous serez appelé</l>
+            <l met="6">Non<emph>Amadis des Gaules,</emph>
+            </l>
+            <l met="6">Mais<emph>Amadis Gaulé</emph>.</l>
+          </sp>
+        </spGrp>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <p>Ô Ciel, fuyons! Allons ensevelir ma honte et mon désespoir.</p>
+        </sp>
+        <pb n="36"/>
+        <stage>Le paon et le rossignol. Fable.</stage>
+        <sp who="#amadis">
+          <speaker>Amadis</speaker>
+          <l met="10">Monseigneur Paon, milord de Bassecour,</l>
+          <l met="10">Pour une canne était brûlé d'amour,</l>
+          <l met="10">L'appellait-on Iris ou Cidalise?</l>
+          <l met="10">Je n'en dis rien, de peur d'une méprise,</l>
+          <l met="10">Pour le certain jamais rien de si beau</l>
+          <l met="10">N'avait paru sous l'habit d'un oiseau.</l>
+          <l met="8">Ceci soit dit, sans hyperbole,</l>
+          <l met="8">Le paon en faisait son idole.</l>
+          <l met="10">Et son altesse au comble de ses vœux</l>
+          <l met="10">Lui consacrait son loisir amoureux.</l>
+          <l met="8">Un rossignol par son ramage</l>
+          <l met="8">Vient troubler un si beau ménage,</l>
+          <l met="12">La canne lui donna quelque tendre regard,</l>
+          <l met="12">Tandis que le milord se panade à l'écart.</l>
+          <l met="10">L'Amour voit tout. Allons, que l'on s'empresse</l>
+          <l met="10">Dit Monseigneur, de venger son altesse.</l>
+          <l met="12">À ce seul mot, tandis que sire Rossignol</l>
+          <l met="8">Chantait en B quarre, ou B mol,</l>
+          <l met="10">Tous les prévôts de la gent volatile</l>
+          <l met="12">Fondirent tout à coup sur le chantre imbécile.</l>
+          <l met="10">À cet assaut il fut si bien plumé</l>
+          <l met="10">Que fort longtemps il en fût enrhumé.</l>
+          <l met="6">Le trait moral qui suit</l>
+          <l met="4">De ce récit</l>
+          <l met="4">Sur les épaules</l>
+          <l met="5">D'<emph>Amadis des Gaules</emph>
+          </l>
+          <l met="6">Sera longtemps écrit.</l>
+        </sp>
+      </div>
+    </body>
+  </text>
+</TEI>

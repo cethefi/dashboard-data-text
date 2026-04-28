@@ -1,0 +1,2645 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="qui_dort_dine">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Qui dort dîne</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Charpentier</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">FIXME - missing source</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="isabelle" sex="UNKNOWN">
+            <persName>Isabelle</persName>
+          </person>
+          <person xml:id="agathe" sex="UNKNOWN">
+            <persName>Agathe</persName>
+          </person>
+          <person xml:id="leandre" sex="UNKNOWN">
+            <persName>Léandre</persName>
+          </person>
+          <person xml:id="mezzetin" sex="UNKNOWN">
+            <persName>Mezzetin</persName>
+          </person>
+          <person xml:id="arlequin" sex="UNKNOWN">
+            <persName>Arlequin</persName>
+          </person>
+          <person xml:id="colombine" sex="UNKNOWN">
+            <persName>Colombine</persName>
+          </person>
+          <person xml:id="pierrot" sex="UNKNOWN">
+            <persName>Pierrot</persName>
+          </person>
+          <person xml:id="colette" sex="UNKNOWN">
+            <persName>Colette</persName>
+          </person>
+          <person xml:id="gringalet" sex="UNKNOWN">
+            <persName>Gringalet</persName>
+          </person>
+          <person xml:id="fermier" sex="UNKNOWN">
+            <persName>Le fermier</persName>
+          </person>
+          <person xml:id="magicien" sex="UNKNOWN">
+            <persName>Le Magicien</persName>
+          </person>
+          <person xml:id="garcon" sex="UNKNOWN">
+            <persName>Le petit garçon</persName>
+          </person>
+          <person xml:id="fille" sex="UNKNOWN">
+            <persName>La petite fille</persName>
+          </person>
+          <person xml:id="mezzetinetscaramouche" sex="UNKNOWN">
+            <persName>Mezzetin et Scaramouche</persName>
+          </person>
+          <person xml:id="paysan" sex="UNKNOWN">
+            <persName>Un paysan</persName>
+          </person>
+          <person xml:id="paysanne" sex="UNKNOWN">
+            <persName>Une paysane</persName>
+          </person>
+          <person xml:id="le_fermier" sex="UNKNOWN">
+            <persName>Le fermier</persName>
+          </person>
+          <person xml:id="un_magicien" sex="UNKNOWN">
+            <persName>Un magicien</persName>
+          </person>
+          <person xml:id="un_petit_garcon" sex="UNKNOWN">
+            <persName>Un petit garçon</persName>
+          </person>
+          <person xml:id="une_petite_fille" sex="UNKNOWN">
+            <persName>Une petite fille</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1718">
+        <desc> 1718</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#scaramouche">Scaramouche</role>
+          <roleDesc>l'endormi<note>Il était probablement joué par Desgranges: il jouait déjà ce personnage dans sa pièce<emph>Le Fourbe sincère</emph>à la même Foire. Dans cette dernière pièce, le personnage de Scaramouche avait un rôle prépondérant, montrant que l'auteur s'était créé un rôle«sur mesure»Voir l'édition de Guillemette Marot dans<emph>Théâtre de la Foire. Anthologie de pièces inédites</emph>, dir. Françoise Rubellin,<emph>op. cit.</emph>, p. 174.</note>
+          </roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#isabelle">Isabelle</role>
+          <roleDesc>nièce de Scaramouche</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#agathe">Agathe</role>
+          <roleDesc>cousine d'Isabelle</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#leandre">Léandre</role>
+          <roleDesc>amant d'Isabelle</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#mezzetin">Mezzetin</role>
+          <roleDesc>valet de Léandre</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#arlequin">Arlequin</role>
+          <roleDesc>valet de Scaramouche</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#colombine">Colombine</role>
+          <roleDesc>servante d'Agathe</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#pierrot">Pierrot</role>
+          <roleDesc>valet d'Agathe</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#colette">Colette</role>
+          <roleDesc>meunière</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#gringalet">Gringalet</role>
+          <roleDesc>son garde-moulin</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#le_fermier">Le fermier</role>
+        </castItem>
+        <castItem>
+          <role ana="#un_magicien">Un magicien</role>
+        </castItem>
+        <castItem>
+          <role ana="#un_petit_garcon">Un petit garçon</role>
+        </castItem>
+        <castItem>
+          <role ana="#une_petite_fille">Une petite fille</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <spGrp rend="trpta">
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Oui, Mademoiselle, quand je vois tant de soupirants autour de vous, et qu'un oncle inflexible et rebelle vous refuse un tendre époux, il me semble voir Tantale au milieu de l'abondance qui crève de faim. Oui, je m'imagine voir tomber le four où l'on croit enfourner. En vérité, cela me touche, mais je veux vous servir en ce jour. Je suis las de voir votre amour si longtemps ne gober que des mouches.</p>
+          </sp>
+        </spGrp>
+        <stage type="location">La scène est dans la maison de Scaramouche.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="act">
+        <head>ACTE 1</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Léandre, Isabelle, Arlequin</stage>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Ah, mon cher Arlequin, si tu peux hâter notre bonheur, sois sûr que mes bienfaits passeront ton espérance!</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Je demande seulement que vous fassiez passer par là du fromage et du vin en abondance.</p>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <p>Ha, mon cher ami, sois persuadé que je t'en donnerai sans y mettre jamais de bornes.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+          </sp>
+          <spGrp who="#arlequin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#fraises">Jardinier, ne vois-tu pas</title>
+              </desc>
+            </head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="8">Tant mieux pour mes pauvres pieds,</l>
+              <l met="6">Je n'aime point les bornes:</l>
+              <l met="8">Je m'y suis cassé le nez.</l>
+              <l met="7">D'autres s'y seraient cassés<note>
+                  <emph>Sic.</emph>
+                </note>
+              </l>
+              <l met="8">Les cornes, les cornes, les cornes<note>Allusion aux cornes de cocu.</note>.</l>
+            </sp>
+          </spGrp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <p>Pour prévoir ta chute et t'éclairer lorsque la nuit vient obscurcir le jour, crois que j'emprunterais plutôt le flambeau de l'amour.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Ah, morbleu, je crains trop les étincelles, il n'en faudrait qu'une pour embraser la ville et les faubourgs de mon cœur! Et si par malheur pour vous je devenais tout à fait amoureux, vous pourriez bien perdre le secours d'Arlequin.</p>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+          </sp>
+          <spGrp who="#isabelle">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+              </desc>
+            </head>
+            <sp who="#isabelle">
+              <speaker>Isabelle</speaker>
+              <l met="8">Cela peut-il nous traverser?</l>
+            </sp>
+          </spGrp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="8">Oui, car loin de faire avancer</l>
+            <l met="6">Son affaire et la vôtre,</l>
+            <l met="2">Hé bien,</l>
+            <l met="6">J'avancerais la nôtre,</l>
+            <l met="5">Vous m'entendez bien.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <p>Oh, je me moque de cela! Je veux être mariée la première.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+          </sp>
+          <spGrp who="#arlequin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#folia">Folies d'Espagne</title>
+              </desc>
+            </head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="10">Oui, vous serez femme et peut-être mère,</l>
+              <l met="10">Dès aujourd'hui, ma foi, pour le plus tard.</l>
+              <l met="10">Et dès demain, si cela peut vous plaire,</l>
+              <l met="10">Vous pourrez bien faire un nouveau cornard<note type="definition">Cornard: Terme d'injure, qui se dit de celui dont la femme s'est abandonnée à un autre. Il est bas. (Acad.1762)</note>.</l>
+              <p>Dis-moi qui tu fréquentes, je te dirai qui tu es<note>Proverbe connu.</note>. Ah, que c'est bien dit! Je crois qu'à force de fréquenter cet amoureux, je le deviendrai moi-même! Mais que vois-je?<stage>Colette entre.</stage>Oui, c'est Mademoiselle Colette, notre meunière. Ah, charmante Colette, qu'il serait doux de vous faire une passe au collet<note>
+                  <emph>Passe au collet</emph>: « Action par laquelle on fait tomber l'ennemi. On fait la passe au collet à un escrimeur qui vous désarme» (<emph>Encyclopédie ou Dictionnaire universel raisonné des connaissances humaines</emph>, Yverdon, 1774, t. XXXII). Il faut comprendre ici qu'Arlequin souhaite la voir tomber sous son charme.</note>!</p>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Arlequin<stage>seul</stage>
+          </stage>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>Une passe au collet? Me prenez-vous pour un billard ou pour un abbé<note>Le jeu de mot est explicité par Colette aux répliques suivantes.</note>?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Non, non, pourquoi dites-vous cela?</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>C'est que la passe ne convient qu'aux billards, ainsi que les collets à messieurs les abbés.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Et comment savez-vous cela, Mademoiselle Colette?</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>Le Seigneur de notre village a chez lui un billard qui porte un certain fer que l'on nomme la passe. C'est une machine... là... à peu près ovale où l'on pousse parfois deux boulettes...</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Oh, s'il est ainsi, vous ressemblez plus à un billard que vous ne pensez!</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>Oh, s'il vous plaît, Monsieur Arlequin, que cela ne me regarde point, je vous prie! Je n'aime point de pareilles comparaisons, à moins que vous ne me fassiez ressembler à quelque chose de bien joli.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Eh bien, voulez-vous ressembler aux facétieux attraits de Monsieur Arlequin?</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>De Monsieur Arlequin? J'aurais vraiment un beau visage de guenon<note>Allusion au masque noir d'Arlequin.</note>, ce serait bien là le moyen de faire venir l'eau au moulin<note type="definition">Faire venir l'eau au moulin: Attirer les chalands, procurer de l'utilité à une maison, à une communauté, par son industrie, par son adresse (Acad.1694)</note>.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Eh bien, voulez-vous ressembler à notre petit chat?</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>Ressembler à un chat?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Ah, rien n'est si joli! Il danse, il saute, il se couche sur le sol, il badine tout seul.</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>Oh, non, je ne pourrais jamais faire de même!</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Eh bien, voulez-vous ressembler à un cœur?</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>À un cœur?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Oui, ne dit-on pas: cela est joli comme un cœur?</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>Je m'en moque, je ne veux point ressembler à cela. Dans le siècle où nous sommes, il n'y a rien de si corrompu que les cœurs.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Eh bien, voulez-vous ressembler à un amour?</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>À un amour?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Oui, ne dit-on pas cela est joli comme un amour?</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>N'importe, je ne veux point lui ressembler. Est-il rien aujourd'hui de plus libertin, de plus ivrogne, de plus inconstant, de plus ingrat, de plus médisant que l'amour? Ha, trop heureux qui ne le connaît point!</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Eh bien, voulez-vous ressembler à la vertu?</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>À la vertu, à la vertu, ah, mon pauvre Arlequin, ce serait bien vouloir mourir de faim!</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>C'est pourtant une belle chose que la vertu.</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>Oui, sans doute autrefois, mais aujourd'hui, on fait si peu de cas du mérite et de la vertu qu'il n'y a qu'à les suivre pour aller droit à l'hôpital<note>Maison de correction où l'on mettait alors les filles de mauvaise vie.</note>.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Quel parti faut-il donc prendre aujourd'hui pour bien passer le temps et faire ses<note>Ms. : « ces ».</note>affaires?</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>Hélas, prendre le temps comme il vient, se contenter de ce qu'on a, n'en faire part qu'à des amis reconnaissants. Encore fait-on souvent mieux de garder sa marchandise que de la prêter à crédit.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Ah, charmante Colette, que vous avez de jugement et d'esprit! Mais qui vous amène ici?</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>Je venais payer cent francs que je dois à Monsieur Scaramouche. Mais puisqu'il est empêché, je les lui enverrai tantôt par mon garde-moulin. Adieu, Monsieur de la Vertu.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Adieu, gentil joli petit moulin.</p>
+            <p>Ma foi, cette appétissante meunière est de la meilleure pâte du monde, et si Colombine n'avait pas égratigné mon cœur, je voudrais m'enfourner dans le soupirail de ses bonnes grâces. Mais que veut Pierrot?</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Arlequin<stage>seul</stage>
+          </stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Arlequin, Pierrot</stage>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Par ma foi, voilà qui est drôle. Je viens de bien rire avec Monsieur Scaramouche. Comme à son ordinaire, je l'ai trouvé dormant. Devine un peu, pour l'éveiller, par où je l'ai tiré?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Par le nez.</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Non, je craignais qu'il ne fût morveux.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Par la barbe<note>Caractéristique de Scaramouche.</note>?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Non, j'appréhendais de me piquer. Par les oreilles. Oh, qu'il les a grandes!</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Ne vois-tu pas qu'elles sont du temps que l'on faisait les enfants par l'oreille<note>Référence à Molière dans<emph>L'École des femmes</emph>: « Votre simplicité, qui semble sans pareille, / Demande si l'on fait les enfants par l'oreille » (V, 4).</note>?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Après cela, je lui ai dit : couvrez-vous, couvrez-vous.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Est-ce que pour toi il avait ôté son chapeau?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Non, mais c'est qu'en dormant il était tombé, mais comme je sais vivre je lui ai dit: « mettez, mettez, Monsieur Scaramouche, mettez votre chapeau. Point de cérémonie, s'il vous plaît. Je suis sans façon. Couvrons-nous, couvrons-nous!». Il s'est couvert et moi aussi.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Tu as bien fait. Une tête comme la tienne ne vaut rien froide.</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Après cela je lui ai raconté que Mademoiselle Agathe avait retenu Mademoiselle sa nièce à dîner et que s'il voulait que j'occupe sa place, nous aurions l'honneur de dîner ensemble.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Ce serait-là une belle représentation du festin de pierre<note>Pièce de Molière, plus connue sous le titre de<emph>Dom Juan ou Le Festin de pierre</emph>. Ce festin fait référence au repas partagé par Dom Juan et la statue du Commandeur, au dernier acte. C'est également le titre d'une pièce de Le Tellier représentée à la Comédie-Italienne en 1717.</note>. Et que t'a-t-il répondu?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Rien. Apparemment qu'il y consent.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Mais qui te versera à boire?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Toi.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Moi ? Il a raison, je ne serais pas le premier valet qui donne à boire à certains maîtres qui jadis en versaient aux autres<note>Allusion probable à<emph>Turcaret</emph>de Le Sage (1709), financier parvenu.</note>.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Arlequin, Pierrot, Colombine</stage>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Qu'est-ce que c'est donc? Monsieur le libertin, est-il possible que, quand on vous enverra quelque part, vous serez toujours deux heures à revenir?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Oh, Madame, quand une fois on est sorti, il faut bien faire ses affaires!</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Allez, allez, mon ami, faire vos affaires ailleurs ou je vous constiperai pour six mois.<stage>À Colombine.</stage>Eh bien, ma chère Colombine, quand ferons-nous les nôtres dans un petit pot à part là<note type="definition">Faire ses affaires dans un petit pot à part: On dit proverbialement et bassement d'un homme qui ne communique ses affaires à personne, qu'il fait son petit pot à part (Acad.1742)</note>... Quand nous marierons-nous?</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <l met="10">Doit-on jamais épouser ce qu'on aime?</l>
+            <l met="10">L'hymen détruit les plus tendres amours.</l>
+            <l met="4">Son froid extrême</l>
+            <l met="4">Glace nos jours.</l>
+            <l met="10">Ah, quand on veut s'attacher pour toujours,</l>
+            <l met="10">Doit-on jamais épouser ce qu'on aime?<note>Nous n'avons pas retrouvé cet air.</note>
+            </l>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Eh bien, il faut nous marioler<note>
+                <emph>Marioler</emph>: « Mot ironique pour dire "marier" » (Gabriel Antoine Hécart,<emph>Dictionnaire Rouchi-Français</emph>, Valencienne, Lemaître, 1834). Nous n'avons pas trouvé de définition plus récente de ce terme issu du patois picard.</note>.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Nous marioler? Que veut dire cela?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Cela veut dire se marier seulement suivant les règles de la nature.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Je n'y comprends rien encore. Suivant les règles de la nature?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>C'est assez que je comprenne, moi! Pour te le faire entendre plus clairement, c'est un mâle et une femelle qui poussent ensemble... des tendres soupirs. Mais comme du côté de la barbe est la toute puissance de l'homme<note>Autre référence à<emph>L'École des femmes</emph>de Molière (III, 2).</note>, il a toujours le dessus pour faire voir que naturellement il doit être le maître.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Le maître, toi? Tu serais un maître? Oh, que nanni, je ne fais point de ces marchés-là avec toi. C'est moi qui prétends toujours être la maîtresse. Aussi maîtresse que sont maîtresses toutes les femmes de Paris. Ne faire que ce que je voudrai, quand je voudrai, et comme il me plaira. Aujourd'hui, te faire bonne mine. Demain, te tourner le dos, parfois te caresser, parfois te bien rosser.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>C'est-à-dire que tu aimes tant la culotte que tu la veux porter?</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Sans doute. N'est-ce pas assez que nous ayons quelque bonté pour vous autres qui le méritez si peu? Qu'est-ce qu'un homme? Un petit rien qui vaille. Il en faudrait coudre plus d'une douzaine ensemble pour en faire un bon. Mais une femme, au contraire, a toujours amplement le mérite qu'il lui faut. Mais pour l'homme on [ne] s'est jamais plaint de cela, et je crois qu'on ne s'en plaindra jamais.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Diable, comme tu débites cela, on voit bien que tu connais l'homme depuis les pieds jusqu'à la tête. Tant mieux. Tu en connaîtras mieux ce que je vaux... Colombine... si tu voulais en prendre la mesure...</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Oh, je crois qu'il ne faut pas une aune<note type="definition">Aune: Bâton dont on se sert à mesurer (Acad.1762)</note>pour cela! Mais je m'amuse trop, il faut que j'aille au plus tôt faire dîner nos demoiselles. Adieu, Monsieur le marioleux.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Adieu, Mademoiselle la mariolée.</p>
+            <p>Ma foi, cette Colombine est tout à fait aimable. Elle a tout ce qu'il faut pour entrer en ménage, et je crois qu'avec elle, je vivrais largement. Mais songeons à quelque heureux stratagème, quelque piège adroit où mon maître puisse si bien s'enfiler lui-même que nos amoureux puissent bientôt en faire autant. Pour moi, je le crois né d'une marmotte: qu'il marche, qu'il mange, qu'il parle, il dort toujours. Il n'est pas de ces gens qui ont besoin d'un conte à faire dormir debout.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">Arlequin<stage>seul</stage>
+          </stage>
+          <spGrp who="#arlequin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_prison_n_est_pas_pour_des_chiens">La prison n'est pas pour des chiens</title>
+              </desc>
+            </head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="8">Je l'aperçois ici venir,<stage>bis</stage>
+              </l>
+              <l met="8">Peut-on plus joliment dormir?</l>
+              <l met="8">Lonlanla derirette,</l>
+              <l met="8">Il fait bien cela sans un lit,</l>
+              <l met="8">Lonlanla deriri.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">Scaramouche, Arlequin</stage>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+          </sp>
+          <spGrp who="#arlequin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mere_mariez_moi">Ma mère, mariez-moi</title>
+              </desc>
+            </head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="7">Ah, cher Arlequin, c'est toi!</l>
+            </sp>
+          </spGrp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Oui, Monsieur, c'est lui, c'est moi.</l>
+            <l met="7">Dans ce paisible séjour</l>
+            <l met="5">Vous n'avez qu'à voir<stage>bis</stage>
+            </l>
+            <l met="7">S'il faut vous dire bonjour,</l>
+            <l met="7">Ou vous donner le bonsoir.</l>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Tu as raison! On ne sait jamais guère si je veille ou si je dors, mais que veux-tu, le sommeil sur mes sens est toujours le plus fort, et malgré moi je sens mille douceurs à lui rendre les armes.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>En vérité, je crois, Monsieur, que l'on vous a fait en dormant.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Que je dorme ou que je veille, que m'importe, je vis sans souci et sans chagrin.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Votre nièce n'est pas de même, elle a souvent la puce à l'oreille<note>
+                <emph>Avoir la puce à l'oreille</emph>: « être bien éveillé, ou inquiet » (Le Roux). L'expression a également un sens grivois. Voir Claude Duneton,<emph>La Puce à l'oreille</emph>, Balland, 1991, p. 60.</note>.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Je crois que la friponne voudrait bien tâter du mariage.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>C'est qu'une fille, voyez-vous bien, ne dort pas tant que vous.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Un mortel sera trop heureux de la prendre pour épouse, car tout ainsi qu'il voudra, il tournera cette jeune âme.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Il en fera comme des choux de son jardin<note type="definition">Faire d'une chose comme des choux de son jardin: Pour dire qu'il en dispose à sa fantaisie (<emph>Le Grand vocabulaire français</emph>, Paris, Panckoucke, 1768)</note>!</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Mais crois-tu là bonnement qu'elle s'entende déjà assez bien au ménage?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Bon, vous moquez-vous? Jamais les pères et les mères n'en ont su si long qu'aujourd'hui! Et quand on est fils de maître, on est bientôt savant.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Fais donc venir ce Léandre, sa physionomie, sa taille, son air doux...</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Eh bien?</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>N'en croquera que d'une dent<note type="definition">N'en croquer que d'une dent: N'avoir pas ce qu'on désire (Acad.1798)</note>.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Aïe ouf<note type="definition">Ouf: interjection dont on se sert pour marquer une douleur subite (Acad.1762)</note>!</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+          </sp>
+          <spGrp who="#scaramouche">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#jardinier_ne_sais_tu_pas">Jardinier, ne sais-tu pas</title>
+              </desc>
+            </head>
+            <sp who="#scaramouche">
+              <speaker>Scaramouche</speaker>
+              <l met="7">Ma nièce est en ce moment</l>
+              <l met="6">Chez sa cousine aimable,</l>
+              <l met="7">Vite, à dîner promptement!</l>
+            </sp>
+          </spGrp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Ah, que cet ordre est charmant!</l>
+            <l met="8">La table, la table, la table!</l>
+          </sp>
+          <stage>Le théâtre s'ouvre et représente un buffet magnifique. Scaramouche mange un peu de soupe et s'endort.</stage>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+          </sp>
+          <spGrp who="#arlequin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_colombe">La colombe</title>
+              </desc>
+            </head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="8">Mon âme, pleine de franchise,</l>
+              <l met="8">N'est plus aucunement surprise.</l>
+              <l met="8">Si ce bonhomme gros et gras</l>
+              <l met="8">N'en a pas mangé davantage,</l>
+              <l met="8">Fi, voilà de la soupe, hélas,</l>
+              <l met="8">Qui ne sent rien que le potage.</l>
+            </sp>
+          </spGrp>
+          <stage>On entend une symphonie.</stage>
+          <spGrp who="#arlequin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air des</desc>
+              <desc type="title">
+                <title ref="#folia">Folies d'Espagne</title>
+              </desc>
+            </head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="10">Fuyez, Sommeil, songez à disparaître.</l>
+              <l met="10">N'endormez point ce mortel fortuné.</l>
+              <l met="10">Attendez donc pour régner sur mon maître</l>
+              <l met="10">Que tout du moins le pauvre homme ait dîné.</l>
+            </sp>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="10">Je vais manger, c'est assez me contraindre.</l>
+              <l met="10">Ah, que j'ai faim, mon ventre est un gourmand!</l>
+              <l met="10">Buvons, mangeons, profitons sans rien craindre</l>
+              <l met="10">D'un bien si doux qui nous vient en dormant.</l>
+            </sp>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="8">C'est assez branler la mâchoire<note type="definition">Branler la mâchoire: On dit branler le menton, branler la mâchoire, pour dire manger. Il est bas. (Acad.1762)</note>,</l>
+              <l met="8">J'en ai le palais tout collé.</l>
+              <l met="8">À ce dormeur donnons à boire,</l>
+              <l met="8">Je sens fort bien qu'il dort salé.</l>
+            </sp>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="8">Je tiens une bouteille pleine.</l>
+              <l met="8">À la faire accoucher sans peine,</l>
+              <l met="8">Je sens mon cœur s'intéresser.</l>
+              <l met="10">Puisque la belle n'est point inhumaine,</l>
+              <l met="8">Je vais, ma foi, la caresser</l>
+              <l met="8">Jusqu'à lui faire pousser</l>
+              <l met="12">Tous ses soupirs, tous ses glouglous, dans ma bouteille<note>« Bouteille » barré sur le manuscrit. Paulmy a modifié et mis « bedaine », probablement pour la rime.</note>!</l>
+              <p>Il y a longtemps qu'il marche à vide, il faut lui donner un coup à boire... Il ne prend pas de la main droite, c'est peut-être qu'il est gaucher... Il ne prend ni de la main droite, ni de la main gauche. Cet homme n'eût rien valu pour le palais et la finance.</p>
+            </sp>
+          </spGrp>
+          <stage>La symphonie continue. Arlequin chante sur l'air des « Folies d'Espagne»:</stage>
+          <stage>La symphonie continue. Arlequin chante sur l'air : « Tu croyais en aimant [Colette]»:</stage>
+          <stage>La symphonie continue. Arlequin chante sur l'air : « Quand Iris [...]»:</stage>
+          <spGrp who="#arlequin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#philis_avare">Réveillez-vous, [belle endormie]</title>
+              </desc>
+            </head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="8">La table fait tout mon délice:</l>
+              <l met="8">J'y mets les buveurs aux abois,</l>
+              <l met="8">Je crois sans me faire injustice</l>
+              <l met="8">Que je mange comme je bois.</l>
+              <p>Mais, parbleu, j'en pourrais bien crever, il est bien temps de l'éveiller. Oh, oh, Monsieur l'insatiable, ne voulez-vous donc pas finir? Avez-vous envie de manger la table et les tonneaux?</p>
+            </sp>
+          </spGrp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <stage>se réveillant</stage>
+            <p>Ah, oui, comment, quoi, ai-je dîné?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Si vous avez dîné, la demande est nouvelle et plaisante. Regardez, s'il vous plaît, votre assiette. Tous les témoins s'y trouvent assez bien rangés.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Allons, que l'on ôte tout cela!</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Vite, desservez promptement. Ah, fi que vous mangez malproprement, torchez donc votre barbe sale!</p>
+          </sp>
+          <spGrp who="#arlequin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#lanturlu">Lanturelu</title>
+              </desc>
+            </head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="5">Peut-on à des noces</l>
+              <l met="5">Manger plus son saoul<note>Ms.: « sou ».</note>?</l>
+              <l met="5">Voyez que de sauces,</l>
+              <l met="5">Il en a partout</l>
+              <l met="5">Jusque dans ses chausses.</l>
+              <l met="7">Il faut être bien goulu,</l>
+              <l met="9">Lanturlu, lanturlu, lanturlu.</l>
+              <p>Avec ce grand verre d'eau claire, rincez-vous la bouche au plus tôt. Vous sentez le vin de manière à nous enivrer de votre seule haleine!</p>
+            </sp>
+          </spGrp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+          </sp>
+          <spGrp who="#scaramouche">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#aimant_colette">Tu croyais [en aimant Colette]</title>
+              </desc>
+            </head>
+            <sp who="#scaramouche">
+              <speaker>Scaramouche</speaker>
+              <l met="8">Le cas me paraît fort étrange,</l>
+              <l met="8">Tout ceci passe mon esprit,</l>
+              <l met="8">Aujourd'hui, plus je bois, je mange,</l>
+              <l met="8">Et plus je me sens d'appétit.</l>
+            </sp>
+          </spGrp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+          </sp>
+          <spGrp who="#arlequin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_m_entendez_bien">Hé bien</title>
+              </desc>
+            </head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="8">Tant mieux quand la digestion</l>
+              <l met="8">Avec précipitation</l>
+              <l met="6">Se fait sans un clystère.</l>
+            </sp>
+            <pb/>
+          </spGrp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="2">Hé bien?</l>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="6">C'est qu'on peut encor<note>Ms.: « encore ». Nous corrigeons pour la métrique.</note>faire...</l>
+            <l met="5">Vous m'entendez bien.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">Scaramouche, Arlequin, un magicien</stage>
+          <sp who="#magicien">
+            <speaker>Le Magicien</speaker>
+            <p>Serviteur à Monsieur Scaramouche, car je sais qui vous êtes, vous ne savez pas qui je suis.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Vous êtes le fils de votre mère, peut-être n'êtes-vous pas celui de votre prétendu père!</p>
+          </sp>
+          <sp who="#magicien">
+            <speaker>Le Magicien</speaker>
+            <p>Je n'ai ni l'un ni l'autre. Je suis un esprit aérien enfanté par la magie.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>J'entends. La lanterne magique<note type="definition">Lanterne magique: On appelle lanterne magique une lanterne qui par des verres disposés de certaine façon fait voir différents objets sur une toile ou sur une muraille blanche (Acad.1762)</note>est votre mère et le grimoire est votre père.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Peut-on savoir, Monsieur, ce qui vous amène ici?</p>
+          </sp>
+          <sp who="#magicien">
+            <speaker>Le Magicien</speaker>
+            <p>La curiosité m'a conduit à la Foire, et comme nous autres diablotins, nous aimons naturellement les gens de théâtre, je viens favoriser votre parti. Oui, je veux, par la force de mon art, embellir votre pièce d'un spectacle nouveau.<emph>Alla bulli mini forem</emph>. Que ce buffet s'anime et forme d'agréables divertissements!</p>
+          </sp>
+          <stage>Arlequin fait beaucoup de lazzis et chante sur l'air: « Vous m'entendez bien »:</stage>
+          <sp who="#magicien">
+            <speaker>Le Magicien</speaker>
+            <l met="8">Pour moi, j'aime le cabaret,</l>
+            <l met="8">J'aime tout ce que l'on y fait,</l>
+            <l met="6">À plein verre on y verse.</l>
+          </sp>
+          <sp who="#magicien">
+            <speaker>Le Magicien</speaker>
+            <l met="2">Hé bien?</l>
+          </sp>
+          <spGrp rend="center">
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="6">Quelquefois on y perce...</l>
+              <l met="5">Vous m'entendez bien.</l>
+              <p>FIN DU PREMIER ACTE</p>
+            </sp>
+          </spGrp>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Colombine, Arlequin</stage>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Oui, nos demoiselles m'envoient te demander si tu as trouvé quelque ruse favorable pour la réussite de leurs affaires.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Diable, voilà des filles et des affaires bien pressées de leur nécessité! Tu diras premièrement à Mademoiselle Agathe de se rendre ici dans un moment, je l'instruirai de  tout. Mais dis-moi un peu, ma mignonne, là, ne seras-tu pas bien aise d'avoir pour ton petit mari un homme d'esprit?</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Sans doute.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Un homme vertueux?</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Assurément.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Un homme prudent?</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Oui, très certainement.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Eh bien, il est de la prudence, de la vertu et de l'esprit à ne pas t'acheter en poche<note type="definition">Acheter en poche ou Acheter chat en poche: Acheter une chose sans l'avoir vue (Acad.1694)</note>. Pendant que nous sommes seuls, fais-moi voir là un peu un petit échantillon de ce que tu sais faire et de ce que tu vaux.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Un échantillon, un échantillon, oh, que nanni! Quiconque voudra m'avoir prendra toute la pièce entière ou point du tout.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Doucement, là, point de colère! Un petit échantillon, attouchement d'amitié seulement.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Va, va, garde tout cela quand nous serons mariés. Tu n'en auras pas trop, mon pauvre Arlequin.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+          </sp>
+          <spGrp who="#arlequin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+              </desc>
+            </head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="8">Ingrate, vous ne m'aimez point,</l>
+              <l met="8">Puisque vous fuyez avec soin</l>
+              <l met="6">Ce que l'on cherche à faire.</l>
+            </sp>
+          </spGrp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <l met="2">Hé bien?</l>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="6">Dans l'amoureux mystère</l>
+            <l met="5">Quand on aime bien.</l>
+            <p>Ah, morbleu, je n'y puis plus tenir, il faut que je t'embrasse!</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Colombine, Pierrot, Arlequin</stage>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Ah, ah, Madame la libertinesse, je vous y prends que l'on vous baise!</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Oh, dame, Pierrot, tu vois bien que c'est par force!</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Et oui, par force, dis plutôt que tu n'as pas la force de te défendre! Oh, tatigué<note>Juron paysan.</note>, je n'aime pas ça moi, je vois bien que tu le mitonnes<note type="definition">Mitonner: Dorloter, prendre un grand soin de tout ce qui regarde la santé et les aises d'une personne (Acad.1694)</note>, que tu me mitonnes, que nous te mitonnons tous deux! Morgoy, cela me tirlupine<note>
+                <emph>Sic</emph>dans le manuscrit, pour « turlupine ».</note>: quand je mitonne, je veux mitonner tout seul.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Qu'appelles-tu mitonner? Est-ce que tu nous prends tous deux pour des marmitons<note>On reconnaît ici le même procédé qu'à la sc. 2, pour l'utilisation du verbe « marioler », d'abord utilisé par un personnage, puis ensuite explicité.</note>?</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Il a raison, Pierrot, et je ne suis pas une fille à me laisser mitonner.</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Et moi, je te dis que si fait. Un auteur fameux n'a-t-il pas dit que la femme était le potage de l'homme<note>Molière,<emph>L'École des femmes</emph>: « Dis-moi, n'est-il pas vrai, quand tu tiens ton potage, / Que si quelque affamé venait pour en manger, / Tu serais en colère et voudrais le charger? /--Oui, je comprends cela.--C'est justement tout comme : / La femme est en effet le potage de l'homme [...] » (II, 4).</note>?</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Hé bien, qu'est-ce que cela fait?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Cela fait que l'on mitonne le potage.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Va, va, Pierrot, ne te fâche pas. Tiens, baise ma main.</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Morguoy, nanny, je ne la baiserais pas. Si je la tenais, j'en ferais plutôt tout autre chose.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Ne sais-tu pas bien, Pierrot, qu'il est bon d'avoir plus d'une corde à son arc: si l'une venait à rompre, l'on a recours à l'autre.</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Oh, morgoy, je le sais bien, mais la mienne ne rompra pas!</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Je le crois, mais l'abondance ne nuit point, quand une souris n'a qu'un trou. Tu sais qu'elle est bientôt prise<note type="definition">Souris qui n'a qu'un trou est bientôt prise: Celui qui n'a qu'une finesse, qu'un expédient, qu'une ruse, a souvent bien de la peine à se tirer d'affaire, à réussir (Acad.1798)</note>...</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Oh, je veux donc être la souris! Je veux qu'on me prenne, moi.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Eh bien, tu seras la souris et moi le chat.</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Et que sera Colombine?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Le fromage.</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Je ne veux donc pas, Colombine, que tu le fréquentes davantage.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Pourquoi?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>C'est que je crains que tu ne laisses aller, comme on dit, le chat au fromage<note type="definition">Laisser aller le chat au fromage: On dit proverbialement d'une fille qu'elle a laissé aller le chat au fromage pour dire qu'elle s'est laissée abuser (Acad.1762)</note>.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Ne crains rien Pierrot, ne crains rien! Allons seulement porter la réponse d'Arlequin à nos demoiselles. Adieu, Monsieur le chat.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Adieu, petit fromage enfouiné<note type="definition">Enfouiné: Se dit du fromage blanc que l'on conserve pour l'hiver; ainsi nommé parce qu'on le trempe dans une lessive tiède de foin; peut-être aussi parce qu'il contracte une odeur forte de fouine (Hippolyte François Jaubert,<emph>Glossaire du centre de la France</emph>, Paris, Imprimerie et librairie centrales de Napoléon Chaix, 1869, Slatkine reprints, Genève, 1970)</note>.</p>
+            <p>Peste soit du malotru de Pierrot qui est venu si mal à propos nous troubler! Je me sentais en train de faire autant de petits Arlequins que j'ai de pièces à mon habit<note>L'habit d'Arlequin est traditionnellement fait de morceaux de tissus de couleur cousus les uns aux autres.</note>.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Arlequin<stage>seul</stage>
+          </stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Gringalet, Arlequin</stage>
+          <sp who="#gringalet">
+            <speaker>Gringalet</speaker>
+            <p>N'est-ce pas ici chez Monsieur Scaramouche.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Oui, que vous plaît-il?</p>
+          </sp>
+          <sp who="#gringalet">
+            <speaker>Gringalet</speaker>
+            <p>Ce n'est pas vous qui êtes Monsieur Scaramouche?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>À quoi connaissez-vous cela?</p>
+          </sp>
+          <sp who="#gringalet">
+            <speaker>Gringalet</speaker>
+            <p>Je lui apporte de l'argent et l'on m'a dit comme cela que je le connaîtrais en ce qu'il dort toujours. Oh, que cela est plaisant! Ils disent qu'en buvant, qu'en marchant, qu'en dormant, il dort toujours. Hem! vous ne dites mot. Ah, par ma foi, le voilà lui-même! C'est lui-même, le voilà qui dort, le drôle de corps... Monsieur, Monsieur!</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Paix, vous êtes une bête, mon ami, de m'éveiller quand je dors, et quand je rêve que l'on m'apporte de l'argent.</p>
+          </sp>
+          <sp who="#gringalet">
+            <speaker>Gringalet</speaker>
+            <p>Et vous rêvez, vrai, c'est la pure vérité, voilà cent francs que Mademoiselle Colette vous envoie.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Oh, je ne dors donc plus! Donnez, donnez, je prends sans compter.</p>
+          </sp>
+          <sp who="#gringalet">
+            <speaker>Gringalet</speaker>
+            <p>Elle m'a dit aussi de vous demander quittance.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Savez-vous lire?</p>
+          </sp>
+          <sp who="#gringalet">
+            <speaker>Gringalet</speaker>
+            <p>Non.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Tenez, la voilà que j'avais toute faite.</p>
+          </sp>
+          <sp who="#gringalet">
+            <speaker>Gringalet</speaker>
+            <p>Bon, ma foi, il dort encore. Quel drôle de dormeur. Il faut que je lui donne une croquignole<note>
+                <emph>Croquignole</emph>: « Espèce de chiquenaude » (Acad. 1762). Ms.: « croquinole ».</note>.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Comment, coquin, maraud!</p>
+          </sp>
+          <sp who="#gringalet">
+            <speaker>Gringalet</speaker>
+            <p>Monsieur, je vous demande pardon, je croyais qu'en dormant vous n'y prendriez pas garde.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Je vous demande aussi pardon, Monsieur. C'est en rêvant que j'ai l'honneur de vous rosser.</p>
+            <p>Par ma foi, voilà une plaisante aventure et ce benêt est un joli garçon de m'avoir apporté ces cent francs. Cela me servira bien à me divertir toute la Foire. Oh, que je m'en vais manger des ratons<note type="definition">Raton: Petite pièce de pâtisserie en forme de petite tarte faite avec du fromage mou (Acad.1762)</note>, et faire des filles bien aises! Mais ne serait-ce point encore là pour moi quelque bonne fortune?</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Arlequin<stage>seul</stage>
+          </stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">Arlequin, le fermier</stage>
+          <sp who="#fermier">
+            <speaker>Le fermier</speaker>
+            <p>Monsieur, je suis votre très humble serviteur. Êtes-vous Monsieur Scaramouche ?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Selon. Que lui voulez-vous?</p>
+          </sp>
+          <sp who="#fermier">
+            <speaker>Le fermier</speaker>
+            <p>On m'a prié, Monsieur, de lui faire un petit remboursement et l'on m'a dit que je ne pouvais m'y méprendre en ce qu'il dort toujours, qu'il est heureux, car enfin, le sommeil a des charmes puisqu'il nous fait goûter les douceurs du repos; mais oui, voilà le mortel fortuné que je cherche. C'est lui-même. J'entends fort bien qu'il ronfle, quelle grâce, quelle harmonie! On dirait que ce sont d'agréables buveurs qui ronflent sous la table. Il faut au plus tôt lui lâcher ce que je lui apporte.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Aïe, aïe, aïe, aïe<note>Le fermier donne des coups de bâton à Arlequin.</note>!</p>
+          </sp>
+          <sp who="#fermier">
+            <speaker>Le fermier</speaker>
+            <p>Ce n'est rien, c'est seulement pour vous apprendre à retenir l'argent qu'on envoie à Monsieur Scaramouche, et si vous ne lui remettez entre ses mains, je continuerai sans discontinuer, jusqu'à la continuation de la continue.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Eh, Monsieur, Monsieur, je lui rendrai!</p>
+          </sp>
+          <sp who="#fermier">
+            <speaker>Le fermier</speaker>
+            <p>N'y manquez pas.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Monsieur, Monsieur!</p>
+          </sp>
+          <sp who="#fermier">
+            <speaker>Le fermier</speaker>
+            <p>Que vous plaît-il?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Faut-il lui rendre aussi les coups de bâton que j'ai reçus?</p>
+          </sp>
+          <sp who="#fermier">
+            <speaker>Le fermier</speaker>
+            <p>Non, c'est la part que je vous laisse. Si vous n'êtes pas content, je recommencerai.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Je vous remercie. Voilà un homme bien libéral. C'est dommage que sa monnaie ne vaille rien car elle est bien de poids.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">Scaramouche, Arlequin</stage>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Hé bien, comment vous trouvez-vous de votre dîner?</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Je ne sais, je ne m'en sens aucunement.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Apparemment que c'est l'effet de la magie de ce Monsieur le magicien. Ah, quel dommage qu'il n'ait pas la liberté de faire danser ce beau buffet! J'aime la danse, moi, qui vient après la panse.</p>
+          </sp>
+          <spGrp who="#arlequin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air du</desc>
+              <desc type="title">
+                <title ref="#confiteor">Confiteor</title>
+              </desc>
+            </head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="8">Quand jadis les bêtes parlaient,</l>
+              <l met="8">Qu'elles étaient toutes gentilles,</l>
+              <l met="8">Elles sautaient, elles dansaient.</l>
+              <l met="8">Aussi, depuis ce temps les filles</l>
+              <l met="8">Ont toujours estimé beaucoup</l>
+              <l met="8">La danse et la fable du loup.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 8</head>
+          <stage type="characters">Scaramouche, Arlequin, Agathe</stage>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Hé bien, qu'est-ce, Monsieur Scaramouche? Comment va le sommeil chez vous?</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Il fait toujours son bonheur le plus doux de rêver à vos charmes.</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Hélas, que mon âme est contente de vous voir quand vous ne dormez pas!</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Il faudrait donc être sans vie pour dormir auprès de vos appas.</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Eh, bonjour cher Arlequin. Isabelle n'est donc pas de retour?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Monsieur son oncle ayant dessein de la marier, elle est allée d'un pas léger savoir d'un homme sage si son petit individu est propre au mariage.</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Vous moquez-vous, Monsieur Scaramouche, d'en douter un moment? Allez, allez, je vous suis caution qu'elle est propre à tout. J'en réponds corps pour corps.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Arlequin est un plaisant. Ne donnez pas dans ses panneaux, mais reposons-nous un moment. Vite, des sièges. Ah, trop aimable Agathe, qui triomphez de mon cœur! Que j'envie le bonheur de ce fauteuil quand il embrasse vos charmes. Hélas, que ses bras ne sont-ils les miens!</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Quelle douceur, quelle galanterie, je ne vous vis jamais si dru<note type="definition">Dru: Il signifie figurément vif, gai (Acad.1694)</note>ni si éveillé!</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Votre aimable présence me procure cet avantage et malgré les pavots<note type="definition">Pavot: Espèce de plante qui porte des fleurs de plusieurs couleurs et dont la graine a une vertu assoupissante. Les poètes disent les pavots du sommeil pour dire l'assoupissement, le sommeil même (Acad.1694)</note>d'un sommeil obstiné, croyez, charmante Agathe, que je n'ai des yeux que pour vous.</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+          </sp>
+          <spGrp who="#agathe">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#et_son_lan_la_landerirette">Et son lan la landerirette</title>
+              </desc>
+            </head>
+            <sp who="#agathe">
+              <speaker>Agathe</speaker>
+              <l met="7">Petit badin que vous êtes,</l>
+              <l met="7">Vous étonnez ma pudeur.</l>
+              <l met="7">Ah, que ces douces fleurettes,</l>
+              <l met="7">Font danser mon petit cœur</l>
+              <l met="4">Et mon lan la,</l>
+              <l met="4">Landerirette,</l>
+              <l met="8">Et mon lan la landerira.</l>
+            </sp>
+          </spGrp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>En vérité, là, sans mentir, me trouvez-vous un peu à votre goût?</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Oh, ciel! je vous trouve une taille mignonne, mais, fripon, un je ne sais quoi de tendre, dont il n'est point de cœurs qui se puissent défendre.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Voyez-moi bien, là, tout de bout en bout.</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Ah, l'on peut dire sans tricherie que vous avez tout ce qu'il faut pour plaire.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Par ma foi, la petite friponne n'est point menteuse. Elle s'y connait fort bien.</p>
+          </sp>
+          <spGrp who="#scaramouche">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#ces_filles_sont_si_sottes">[Ces filles sont si sottes]</title>
+              </desc>
+            </head>
+            <sp who="#scaramouche">
+              <speaker>Scaramouche</speaker>
+              <l met="7">Ne suis-je pas, en effet,</l>
+              <l met="7">Un homme encore bien fait?</l>
+            </sp>
+          </spGrp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <l met="5">Sans trop vous flatter,</l>
+            <l met="5">Vous pouvez tenter</l>
+            <l met="6">La plus jeune merveille.</l>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="8">Je pourrais bien encor porter</l>
+            <l met="6">Le plumet<note type="definition">Plumet: On appelle ainsi une plume d'autruche, préparée et mise autour du chapeau (Acad.1762)</note>sur l'oreille,</l>
+            <l met="2">Lan la,</l>
+            <l met="6">Le plumet sur l'oreille.</l>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="5">Oui, sans vous flatter,</l>
+            <l met="5">Vous pouvez tenter</l>
+            <l met="5">D'entrer en mariage.</l>
+            <l met="8">Vous pouvez bien encore porter</l>
+            <l met="6">Sur la tête un plumage,</l>
+            <l met="2">Lan la,</l>
+            <l met="6">Sur la tête un plumage.</l>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Franchement, n'est-ce pas un crime qu'avec mon air et qu'à mon âge, je néglige la cour de France?</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Sans doute, c'est un malheur pour elle. On vous y prendrait pour le papa de l'Amour.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Et pour le dieu du sommeil.</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Monsieur Scaramouche est endormi.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Il dort sur le rôti.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Non, mon cœur, non, je ne dors point. C'est que je pâme auprès de vos appas.</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Dormez, dormez, ne vous contraignez pas un moment. C'est mon plus grand plaisir que de voir dormir un amant. J'en suis mille fois plus hardie à lui faire quelque amoureuse niche<note type="definition">Niche: Tour de malice que l'on fait à quelqu'un (Acad.1694)</note>.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+          </sp>
+          <spGrp who="#arlequin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#cher_voisin">Que j'estime [mon cher voisin]</title>
+              </desc>
+            </head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="8">Que j'aime durant nos beaux jours</l>
+              <l met="6">Vos malices gentilles,</l>
+              <l met="8">Que j'aime tous les petits tours</l>
+              <l met="6">Et les niches des filles.</l>
+            </sp>
+          </spGrp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Parle bas, Arlequin.</p>
+          </sp>
+          <stage>Elle sort et Arlequin prend sa place.</stage>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+          </sp>
+          <spGrp who="#scaramouche">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mere_mariez_moi">Ma mère, mariez-[moi]<note>« Scaramouche » est annoncé une deuxième fois, par erreur, sur le manuscrit.</note>
+                </title>
+              </desc>
+            </head>
+            <sp who="#scaramouche">
+              <speaker>Scaramouche</speaker>
+              <l met="8">Ma mignonne.</l>
+            </sp>
+          </spGrp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <stage>en voix de femme</stage>
+            <l met="8">Mon ami.</l>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="7">Pardon, je suis endormi.</l>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Tant mieux, car votre vigueur</l>
+            <l met="5">Étonne mon cœur.<stage>bis</stage>
+            </l>
+            <l met="7">Et je crains que votre ardeur</l>
+            <l met="7">Ne gourmande ma pudeur.</l>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Ah, je ne vous ai jamais bien dit à quel point je vous aime et que souvent, quoique endormi, vous me faites bien aise!</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Comment, bien aise? Ah, fi, fi, s'il vous plaît, plus de modestie!</p>
+          </sp>
+          <spGrp who="#arlequin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+              </desc>
+            </head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="8">Je n'aime que le tendre amour.</l>
+              <l met="7">Je le veux plus pur que le jour.</l>
+            </sp>
+          </spGrp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="6">Si vous le voulez tendre...</l>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="2">Hé bien?</l>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="6">Vous devez donc me prendre,</l>
+            <l met="5">Vous m'entendez bien.</l>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Écoutez, j'ai l'esprit un peu jaloux, soupçonneux, bizarre, et pour venir à bout de moi, il faut m'être fort dur.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Va, va, tu te railles, ma mignonne. Donne-moi ta main, que je la dévore par cent baisers goulus.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+          </sp>
+          <spGrp who="#arlequin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#les_fanatiques">Les fanatiques</title>
+              </desc>
+            </head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="8">Ne portez donc pas plus avant</l>
+              <l met="6">La chaleur qui vous grille.</l>
+              <l met="7">Vous êtes vif et galant,</l>
+              <l met="6">Je suis jeune et gentille.</l>
+              <l met="6">Il ne faut qu'un petit vent</l>
+              <l met="6">Pour verser une fille.</l>
+            </sp>
+          </spGrp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Ne crains rien, va, cher bouchon de mon âme, je sais comme il faut mitonner un si friand morceau et ma vertu toute nue... hem... comment, quoi... que fais-tu là?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <stage>en voix naturelle</stage>
+            <p>Je croyais, comme vous, reposer dans ce fauteuil. Mais je défierais un sabot de dormir où vous êtes.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Qu'entends-je et que veut dire cela?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>En vérité, plus j'y songe, plus je crois qu'en dormant vous avez cru tenir quelque jeune fillette. Je veux crever comme un boudin, si vous n'avez pas pensé cent fois m'étouffer de caresses.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Quel galimatias me fais-tu là, dis-moi? Qu'est devenue Agathe?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Agathe? Ma foi, je ne sais pas.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Comment, elle n'était pas dans ce fauteuil, il n'y a qu'un moment?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Dans ce fauteuil? Vous l'avez donc rêvé, je vous assure que non.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Nous ne nous sommes pas conté<note>Ms. : « contés ».</note>ici plusieurs tendres propos?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Pas seulement des fagots<note type="definition">Fagot: Conter des fadaises, des sornettes (Acad.1694)</note>.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+          </sp>
+          <spGrp who="#scaramouche">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#fraises">Jardinier [ne vois-tu pas]</title>
+              </desc>
+            </head>
+            <sp who="#scaramouche">
+              <speaker>Scaramouche</speaker>
+              <l met="7">Oh, j'ai donc si bien rêvé</l>
+              <l met="6">Parler à cette aimable</l>
+              <l met="7">Cette même après-dîné,</l>
+              <l met="7">Que je m'en serais donné</l>
+              <l met="8">Au diable, au diable, au diable!</l>
+            </sp>
+          </spGrp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Bon, un certain jour, rempli d'une liqueur bachique, ne rêvais-je pas comme cela que j'avais dix mille écus: d'abord je vais au marché, marchander une belle cavale<note type="definition">Cavale: Jument (Acad.1762)</note>, zeste, me voilà dessus, à droite, à gauche. Le pas, tata; le trot, tatatata; le galop, patata patata. De là à l'écurie, grand feu, grande chère, fallut-il revenir au fait et payer la dépense? Je ne trouvai dans ma poche, ma foi, qu'un carolus<note type="definition">Carolus: Espèce de monnaie qui valait dix deniers (Acad.1694)</note>.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+          </sp>
+          <spGrp who="#scaramouche">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_m_entendez_bien">Hé bien</title>
+              </desc>
+            </head>
+            <sp who="#scaramouche">
+              <speaker>Scaramouche</speaker>
+              <l met="8">Quand on rêve des biens charmants,</l>
+              <l met="8">Tant les buveurs que les amants,</l>
+              <l met="8">Quel malheur que les songes...</l>
+            </sp>
+          </spGrp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="2">Hé bien?</l>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="6">Ne soient que des mensonges.</l>
+            <l met="5">Cela n'est pas bien.</l>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+          </sp>
+          <spGrp who="#arlequin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#philis_avare">Réveillez-vous, [belle endormie]</title>
+              </desc>
+            </head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="8">Je me repens de ma sottise.</l>
+              <l met="8">Voyez-vous, c'est que je devais</l>
+              <l met="8">Avoir payé la marchandise</l>
+              <l met="8">Tandis, morbleu, que je rêvais.</l>
+              <p>Allons prier le dieu Morphée que tous les rêves que nous ferons désormais ne soient plus des mensonges. J'aime fort la réalité sur la brune et la blonde, et plus encore quand il s'agit de boire.</p>
+            </sp>
+          </spGrp>
+          <stage>Le théâtre s'ouvre et représente Morphée sur son trône, les songes à ses pieds, avec qui Arlequin fait beaucoup de lazzis.</stage>
+          <spGrp rend="center">
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <p>FIN DU SECOND ACTE</p>
+              <p>Ouais, je ne sais ce que cela veut dire, depuis que j'ai vu Arlequin se trémousser avec Colombine, je sens là quelque chose qui me gribouille, qui ne me fait pas le même plaisir qu'auparavant. La voici. Il faut que je la boude.</p>
+            </sp>
+          </spGrp>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 3</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Pierrot<stage>seul</stage>
+          </stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Pierrot, Colombine</stage>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Qu'est-ce que c'est donc, Pierrot, tu ne dis mot?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>J'ai perdu la parole.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Où l'as-tu perdu, mon enfant?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>À la Foire.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>À la Foire?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Oui, à la Foire, va l'y chercher, car pour moi je n'ai rien à te dire aujourd'hui.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Et que te voilà grimaud<note type="definition">Grimaud: On appelle ainsi par mépris dans les collèges les écoliers de basses classes, et par extension les ignorants qui font les entendus (Acad.1718)</note>! Qu'as-tu donc, Pierrot?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>J'ai ce que tu n'as pas et que tu n'auras point, je le garde pour une autre.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Et quoi, Pierrot?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Oh, dame, c'est quelque chose!</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Comment quelque chose?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Et oui, quand on ne sait pas le nom, ne dit-on pas Monsieur chose, Madame chose, eh bien, comme tu vois, c'est quelque chose!</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Et pourquoi ne l'aurai-je pas?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>C'est que, morguié, je suis jaloux.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Tu es jaloux? Et la raison, Pierrot?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>C'est que j'ai de la jalousie.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Va, va, Pierrot, guéris-toi de cette maladie-là, mes faveurs sont innocentes, je les peux prodiguer à tout le monde.</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Et morguié, tatigué, ne voilà-t-il pas comme tu fais? Est-ce que je ne vois pas bien qu'Arlequin badine avec toi tout aussi bien que moi?</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Eh bien, le grand malheur! Tantôt je lui donne comme à toi une chiquenaude, un soufflet, un coup de poing, une nasarde<note type="definition">Nasarde: Chiquenaude sur le nez (Acad.1762)</note>, eh bien, c'est que je suis libérale!</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Tant pis.</p>
+          </sp>
+          <spGrp who="#pierrot">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+              </desc>
+            </head>
+            <sp who="#pierrot">
+              <speaker>Pierrot</speaker>
+              <l met="8">La libérale est celle-ci</l>
+              <l met="8">Qui donne sans aucun souci</l>
+              <l met="6">D'une amitié gourmande...</l>
+            </sp>
+          </spGrp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <l met="2">Hé bien?</l>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <l met="6">Tout ce qu'on lui demande,</l>
+            <l met="5">Vous m'entendez bien.</l>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Écoute, Pierrot, si j'ai quelque défaut, je puis dire aussi que j'ai de bonnes qualités. Par exemple... par exemple... n'ai-je pas dans tout ce que je fais, beaucoup de prudence?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Tant pis.</p>
+          </sp>
+          <spGrp who="#pierrot">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+              </desc>
+            </head>
+            <sp who="#pierrot">
+              <speaker>Pierrot</speaker>
+              <l met="8">La prudente est celle à mon goût</l>
+              <l met="8">Qui, courant et cherchant partout</l>
+              <l met="6">Quelque bonne fortune,</l>
+              <l met="2">Hé bien,</l>
+              <l met="6">N'en échappe pas une.</l>
+              <l met="5">Vous m'entendez bien.</l>
+            </sp>
+          </spGrp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Tu sais bien d'ailleurs que j'ai l'âme grande, entreprenante, hardie.</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Tant pis...</p>
+          </sp>
+          <spGrp who="#pierrot">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+              </desc>
+            </head>
+            <sp who="#pierrot">
+              <speaker>Pierrot</speaker>
+              <l met="8">La hardie est celle en ce jour</l>
+              <l met="8">Qui sait triompher tour à tour</l>
+              <l met="6">De deux, de trois, de quatre<note>Sur le manuscrit, le scripteur raye deux fois « et »: « De deux, et de trois, et de quatre », pour corriger la métrique.</note>,</l>
+              <l met="2">Hé bien,</l>
+              <l met="6">Qui viennent pour combattre,</l>
+              <l met="5">Vous m'entendez bien.</l>
+            </sp>
+          </spGrp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Il est vrai que je suis un peu paresseuse.</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Tant pis.</p>
+          </sp>
+          <spGrp who="#pierrot">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+              </desc>
+            </head>
+            <sp who="#pierrot">
+              <speaker>Pierrot</speaker>
+              <l met="7">La paresseuse, sans mentir,</l>
+              <l met="8">Laisserait bien plutôt pourrir</l>
+              <l met="6">Un pauvre oiseau volage,</l>
+              <l met="2">Hé bien!</l>
+              <l met="6">Que l'ôter de sa cage.</l>
+              <l met="5">Vous m'entendez bien.</l>
+            </sp>
+          </spGrp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Va, mon cher Pierrot, pour finir tes débats, il faut nous conformer sur les personnes de distinction. Arlequin et toi, vous aspirez tous deux au bonheur de m'avoir pour femme.</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Oui, sans doute.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Eh bien, celui que je n'épouserai pas restera mon ami. Voilà comme font les gens de qualité aujourd'hui.</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Oh, si cela est à la mode, il faut bien en passer par là, Colombine!</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Quoi?</p>
+          </sp>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+            <p>Donne-moi donc là quelque petit gage de ce que tu dis, morguié, si tu savais que je t'aime et que je me sens pressé de te donner des marques de mon appétit amoureux.</p>
+          </sp>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <p>Attends, attends encore un peu... Si tu devenais mon époux, tu ne trouverais plus cela si bon.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Colombine, Pierrot, Arlequin, Agathe, Isabelle</stage>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <p>Ah, bon, te voilà Colombine. Va-t'en dire à Mezzetin, le valet de Léandre, de se tenir prêt incessamment pour le rôle qu'il doit jouer avec nous.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Oui, dis-lui qu'il n'est pas le premier laquais qui joue avec sa maîtresse à Paris.</p>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <p>Par notre plaisant stratagème, tâchons de mettre mon oncle à la raison. Fais en sorte, Arlequin, qu'il vienne dans ce salon.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Le voici lui-même.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Isabelle, Agathe, Scaramouche, Arlequin</stage>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <p>Mon oncle, vous ne savez pas, ma cousine et moi, nous avons trouvé la plus jolie bague du monde.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Une bague, bon, c'est signe de mariage.</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>De mariage?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Oui, de mariage. Et de mariage où les enfants foisonneront.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Arlequin fait souvent le railleur.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Je prédis vrai et ne serai point menteur.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Oh bien, puisque c'est signe de mariage, quoique vous soyez en âge de vous marier toutes les deux et que j'ai le même entêtement, je choisis la bague pour moi.</p>
+          </sp>
+          <spGrp who="#scaramouche">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#on_dit_que_vous_aimez_les_fleurs">On dit que vous aimez [les fleurs]</title>
+              </desc>
+            </head>
+            <sp who="#scaramouche">
+              <speaker>Scaramouche</speaker>
+              <l met="8">Ce jour qui flatte mon ennui</l>
+              <l met="6">Devait m'offrir Agathe.</l>
+              <l met="8">Dans tous mes rêves d'aujourd'hui</l>
+              <l met="8">Je vous ai pris la patte, je vous,</l>
+              <l met="6">Je vous ai pris la patte.</l>
+            </sp>
+          </spGrp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Ce n'est pas être malheureuse assurément que d'occuper votre mémoire soit en dormant, soit en veillant.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>En vérité, sans Arlequin, j'aurais gagé mon pourpoint que nous étions ici pêle et mêle.</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Vous n'auriez pas perdu vraiment.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Comment? Expliquez-vous, de grâce!</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Je n'étais pas ici à dire vrai, personnellement, mais jamais un moment mon esprit ne vous abandonne.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>En effet, il me paraissait que ce charmant petit poulet ne m'était point farouche.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Ah, si vous aviez vu les transports, les mouvements, les hauts le corps qu'il a fait tandis qu'il rêvait à vous, vous auriez dit qu'il n'a boyau qui ne crève!</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Comment, Monsieur Scaramouche, un jeune objet charmant et doux ferait encore bien son petit compte auprès de vous?</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+          </sp>
+          <spGrp who="#scaramouche">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#morguenne">Morguienne de vous</title>
+              </desc>
+            </head>
+            <sp who="#scaramouche">
+              <speaker>Scaramouche</speaker>
+              <l met="5">Dieux, qu'elle a d'appas!</l>
+              <l met="5">Approchons-nous d'elle.</l>
+            </sp>
+          </spGrp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <l met="5">Ne dormez donc pas</l>
+            <l met="5">Car une femelle</l>
+            <l met="5">Ne hait rien si fort</l>
+            <l met="8">Qu'un homme,<stage>bis</stage>ne hait rien si fort</l>
+            <l met="5">Qu'un homme qui dort.</l>
+          </sp>
+          <stage>Arlequin apporte une table à jouer. Isabelle et Agathe jouent ensemble et Scaramouche s'endort.</stage>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <p>Serai-je toujours malheureuse? Je porte le plus beau jeu de monde et rien ne m'entre.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Comme je sais un peu de magie blanche, dites-moi quand vous voudrez qu'il vous entre un valet.</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>C'est bien plutôt moi qui joue, malheureusement. Je gagnais du premier coup, si j'eusse porté en rouge<note type="definition">Porter en rouge: On dit qu'on porte une couleur pour dire que c'est celle-là dont on a plus de cartes en mains et que l'on garde principalement. Et cela se dit lorsque le jeu qu'on a dans la main est tout fait (Acad.1694)</note>.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>C'est un malheur, en effet, quand une fille parfois manque à porter en rouge.</p>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <p>Vraiment, j'étais bien bête, j'oubliais à lui montrer le point.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>À vous? Montrer le point? Ah, s'il vous plaît, mesdemoiselles, ne vous insultez pas!</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Vraiment, j'ai pensé sottement vous accuser trois dames<note type="definition">Accuser: C'est déclarer le jeu que l'on a (Acad.1694)</note>.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Pourquoi les accuser, ces pauvres dames vous ont-elles pris quelque amant? C'est assez le défaut des dames... mais je m'aperçois qu'il est temps de commencer notre scène nocturne. Songez à la dispute tandis que je vais emporter les flambeaux.</p>
+          </sp>
+          <stage>Ils restent sans lumière.</stage>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <p>Ma cousine, j'ai gagné.</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Non pas, s'il vous plaît, c'est moi.</p>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <p>Je suis sûre de ce que je dis.</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Je suis assurée de mon fait, et je vais prier mon ami de nous juger.  Monsieur Scaramouche! Juste ciel, qu'il est endormi. Monsieur Scaramouche!</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <stage>bâillant</stage>
+            <p>Aïe, aïe, aïe.</p>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+          </sp>
+          <spGrp who="#isabelle">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#cher_voisin">Que j'estime [mon cher voisin]</title>
+              </desc>
+            </head>
+            <sp who="#isabelle">
+              <speaker>Isabelle</speaker>
+              <l met="8">Jugez-nous, s'il vous plaît, un peu.</l>
+            </sp>
+          </spGrp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <l met="6">Pour savoir qui l'emporte,</l>
+            <l met="8">Regardez, s'il vous plaît, mon jeu.</l>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <l met="6">Voyez ce que je porte.</l>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <stage>en s'éveillant</stage>
+            <p>Oh, ciel, je suis perdu, miséricorde!</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Dieux, quel mal vous possède?</p>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <p>Faut-il courir au médecin?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Voulez-vous aller au bassin?</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Je suis mort, je suis éteint, je suis soufflé, enfin je ne vois goutte!</p>
+          </sp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+            <p>Juste ciel, quel malheur!</p>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <p>Quel coup de foudre épouvantable!</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <stage>à genoux</stage>
+            <p>Je suis inconsolable. Grands dieux que je réclame, rendez la lumière à mes yeux. Je promets d'user mieux à l'avenir de leurs célestes flammes. J'aime mieux, hélas, ne les employer jamais, qu'à regarder de près les nudités femelles!</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Scaramouche, Isabelle, Agathe, Arlequin, Mezzetin</stage>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+          </sp>
+          <spGrp who="#mezzetin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#quel_plaisir_d_aimer_sans_contrainte">Quel plaisir d'aimer [sans contrainte]</title>
+              </desc>
+            </head>
+            <sp who="#mezzetin">
+              <speaker>Mezzetin</speaker>
+              <l met="8">Fouillez, s'il vous plaît, dans la poche.</l>
+              <l met="9">Prêtez-moi vos lunettes d'approche.</l>
+              <l met="9">Je voudrais voir, sans plus d'anicroche,</l>
+              <l met="9">Si l'hymen de mon maître s'approche.</l>
+            </sp>
+          </spGrp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Pour me demander des lunettes, quel temps prend ce mauvais plaisant? Viens-tu par d'inutiles sornettes me faire sentir mon malheur?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Ne vois-tu pas que nous sommes dans la douleur? Que Monsieur a perdu la vue et qu'il n'a plus besoin de bernique<note>Une bernique est un nom du centre de la France pour dire « lunettes ». Voir<emph>Glossaire du centre de la France</emph>,<emph>op.~cit.</emph>
+              </note>?</p>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <p>La vue de quelque belle ici venue, ou de quelque argent prêté apparemment?</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Coquin, fusses-tu<note>Ms.: « fustu ».</note>cent fois pendu!</p>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <p>On te dit que mon oncle ne voit goutte.</p>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <p>Je gage qu'il est du naturel des lièvres<note>Les lièvres dorment en effet les yeux ouverts.</note>, qu'il dort les yeux ouverts.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Ah, bourreau, que n'es-tu dans les enfers!</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Monsieur avec raison se plaint de toi car encore bien qu'il ne verrait rien qui vaille, il est toujours bien douloureux de se trouver aveugle tout d'un coup, tandis que l'on peut voir à la Foire tant de belles choses.</p>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <p>Monsieur est aveugle?</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Eh oui, maudite cervelle, il y a une heure qu'on te le dit!</p>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <p>La plaisante nouvelle!</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>La plaisante nouvelle! Le chien<note>« Le chien » devait être prononcé à part.</note>!</p>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+          </sp>
+          <spGrp who="#mezzetin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#nous_voici_une_troupe">Nous voici une troupe</title>
+              </desc>
+            </head>
+            <sp who="#mezzetin">
+              <speaker>Mezzetin</speaker>
+              <l met="3">Tout lui rit.</l>
+              <l met="6">L'agréable aventure!</l>
+              <l met="3">Que nature,</l>
+              <l met="3">Je vous jure,</l>
+              <l met="3">Le chérit!</l>
+              <l met="3">Tout ceci</l>
+              <l met="6">Sans doute est admirable,</l>
+              <l met="3">Fort aimable.</l>
+            </sp>
+          </spGrp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="3">Détestable!</l>
+            <l met="3">Sors d'ici!</l>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <l met="3">Je promets</l>
+            <l met="6">Lui rendre la lumière,</l>
+            <l met="3">La visière</l>
+            <l met="3">Aussi claire</l>
+            <l met="3">Que jamais.</l>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Vous me rendriez la vue? Juste ciel, qu'entends-je?</p>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <p>Pourvu que vous ne l'ayez perdue que dans la ville ou les faubourgs.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Cher Mezzetin, viens çà que je t'embrasse. Approche-toi, dispose de mes biens, je t'abandonne tout, pourvu que je voie encore briller la couleur de mon vin.</p>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+          </sp>
+          <spGrp who="#isabelle">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#robin_ture_lure_lure">Robin, turelure</title>
+              </desc>
+            </head>
+            <sp who="#isabelle">
+              <speaker>Isabelle</speaker>
+              <l met="7">Si tu peux, cher Mezzetin,</l>
+              <l met="7">Faire cette grande cure,</l>
+              <l met="7">Je promets, soir et matin,</l>
+              <l met="3">Turelure,</l>
+              <l met="7">Te donner grande mesure</l>
+              <l met="6">De vin, turelure.</l>
+            </sp>
+          </spGrp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <p>Mezzetin a l'âme noble et point intéressée. Je travaille pour l'honneur et l'amour de mon maître. Oui, si vous voulez dès aujourd'hui voir aussi clair que les matous, à votre nièce, pour époux, donnez Monsieur Léandre.</p>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+          </sp>
+          <spGrp who="#isabelle">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#laire_la">Laire la</title>
+              </desc>
+            </head>
+            <sp who="#isabelle">
+              <speaker>Isabelle</speaker>
+              <l met="8">Voudriez-vous, mon oncle, hélas,</l>
+              <l met="8">Ne voir goutte jusqu'au trépas?</l>
+            </sp>
+          </spGrp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="8">Non, non, Léandre n'a qu'à faire</l>
+            <l met="4">Laire lan laire, etc.</l>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <p>Pour faire cette grande cérémonie, il faut vous mettre ce bandeau et répéter après moi tout ce que je dirai.</p>
+          </sp>
+          <stage>Il lui met un bandeau et Arlequin rapporte les lumières qu'il avait emportées.</stage>
+          <sp who="#mezzetinetscaramouche">
+            <speaker>Mezzetin et Scaramouche</speaker>
+            <stage>ensemble</stage>
+          </sp>
+          <spGrp who="#mezzetinetscaramouche">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_beaute_la_plus_severe">La beauté la plus sévère<note>Air de l'opéra<emph>Atys</emph>de Lully et Quinault: « La beauté la plus sévère / Prend pitié d'un long tourment, / Et l'amant qui persévère / Devient un heureux amant. / Tout est doux et rien ne coûte / Pour un cœur qu'on veut toucher; / L'onde se fait une route, / En s'efforçant d'en chercher: / L'eau qui tombe goutte à goutte / Perce le plus dur rocher » (IV, 5).</note>
+                </title>
+              </desc>
+            </head>
+            <sp who="#mezzetinetscaramouche">
+              <speaker>Mezzetin et Scaramouche</speaker>
+              <l met="7">Grand Argus<note type="definition">Argus: Selon les poètes, était homme ayant cent yeux, desquels les quatre-vingt dix-huit veillaient toujours (Nicot)</note>que je révère,</l>
+              <l met="7">Secourez-nous dans ces lieux.</l>
+              <l met="7">Grand Argus, descends sur terre,</l>
+              <l met="7">Exauce aujourd'hui nos vœux.</l>
+              <l met="7">Détache de ton derrière</l>
+              <l met="6">Le plus beau de tes yeux,</l>
+              <l met="7">Pour terminer la misère</l>
+              <l met="7">De ce pauvre malheureux.</l>
+              <l met="7">Ton secours est nécessaire</l>
+              <l met="7">Pour rendre son sort heureux.</l>
+            </sp>
+          </spGrp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Cher Mezzetin, dis-moi un peu, pourquoi invoques-tu cet Argus?</p>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <p>C'est qu'il a cent yeux et qu'il est plus clairvoyant qu'un autre.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Ha, bon, bon, mais je me souviens que tu as dit:</p>
+            <l met="7">Détache de ton derrière</l>
+            <l met="7">Le plus beau de tes yeux.</l>
+            <p>Demandons-lui plutôt qu'il les prenne ailleurs. Je crains qu'un certain vent n'en ait terni la glace.</p>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <p>Au contraire, ne savez-vous pas que c'est l'endroit que l'on nettoie le plus souvent?</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Fort bien. Continuez donc.</p>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <p>Présentement, baissez un peu la tête pour marquer votre grand respect. Bon, voilà qui va bien. Barich, barach, barouch!</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Que veut dire cela, barich, barach, barouch?</p>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <p>C'est qu'autrefois Argus fut changé en paon<note>Dans la mythologie grecque, Héra, en récompense de la fidélité d'Argus, transféra ses yeux sur les plumes des paons.</note>et je piaille comme eux afin qu'il m'entende mieux.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Bon, bon, bon, faites donc.</p>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <p>Barich, barach, barouch, patipata, patipata.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Ouf, ouf! pourquoi ces patipata?</p>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <p>C'est pour faire descendre vos humeurs puantes en bas. Ah, je sens que je suis écouté!<stage>Il prend une lumière et lui passe devant le visage.</stage>Sentez-vous, voyez-vous quelque chose?</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Oui, je sens une grande chaleur et je vois comme du rouge.</p>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <p>Bon, c'est sans doute la couleur du nuage sur lequel Argus est descendu.</p>
+          </sp>
+          <spGrp who="#mezzetin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air du</desc>
+              <desc type="title">
+                <title ref="#confiteor">Confiteor</title>
+              </desc>
+            </head>
+            <sp who="#mezzetin">
+              <speaker>Mezzetin</speaker>
+              <l met="8">Chantons, dansons, ne parlons plus</l>
+              <l met="8">Que de mille douceurs nouvelles.</l>
+              <l met="8">De l'œil droit vous verrez Bacchus,</l>
+              <l met="8">Du gauche vous verrez les belles.</l>
+            </sp>
+          </spGrp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="8">Duquel verrai-je les cocus?</l>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <stage>lui ôtant son bandeau</stage>
+            <l met="8">De tous les deux.<emph>Vivat</emph>Argus!</l>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Ah, que ce prodige est divin, que le miracle a d'attraits! Ma foi, je vois cent fois plus clair que je ne vis jamais! Barich, barach, barouch! Viens çà, seul auteur de mon bonheur si doux, viens çà que je t'embrasse! Je puis dire à présent que je t'aime autant que mes yeux.<stage>Il embrasse tous les acteurs. À Arlequin.</stage>D'où vient, faquin, que tu me tournes le derrière?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Je voulais éprouver si la vue était bien revenue, et si vous n'aviez pas besoin d'une paire de lunettes.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 6</head>
+          <stage type="characters">Agathe, Scaramouche, Isabelle, Arlequin, Léandre</stage>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Venez, heureux amants, venez, trop heureux maître d'un excellent valet. Puis-je assez reconnaître un si rare service? Je vous donne une femme. Hélas, c'est une faible récompense, pour qui rend à mes yeux la lumière du jour.</p>
+          </sp>
+          <sp who="#leandre">
+            <speaker>Léandre</speaker>
+            <p>Qu'entends-je? Oh, ciel, quelle douce surprise! Tout me rit, tout m'enchante, vous couronnez mes vœux d'un éternel lien. Peut-on me faire un plus grand bien?</p>
+          </sp>
+          <sp who="#isabelle">
+            <speaker>Isabelle</speaker>
+            <p>Ce doux bonheur me flatte également. Hélas, que ne puis-je le partager avec ma chère Agathe!</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Il n'a parfois qu'à vous troquer.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Je me sens tout autre et je crois que par quelque charme on a chassé de mes esprits cette malheureuse léthargie où tous mes sens étaient soumis. Barich, barach, barouch.</p>
+          </sp>
+          <spGrp who="#scaramouche">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#landeriri">Landerirette</title>
+              </desc>
+            </head>
+            <sp who="#scaramouche">
+              <speaker>Scaramouche</speaker>
+              <l met="7">Si vous voulez, belle Agathe,</l>
+              <l met="7">Que je vous donne ma foi,</l>
+              <l met="7">Le perroquet que l'on gratte</l>
+              <l met="7">Sera moins heureux que moi</l>
+              <l met="8">Et son lan la landerirette,</l>
+              <l met="8">Et son lan la landerira.</l>
+            </sp>
+          </spGrp>
+          <sp who="#agathe">
+            <speaker>Agathe</speaker>
+          </sp>
+          <spGrp who="#agathe">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#flonflon">Flonflon</title>
+              </desc>
+            </head>
+            <sp who="#agathe">
+              <speaker>Agathe</speaker>
+              <l met="6">Je ne suis point ingrate.</l>
+              <l met="6">Pour répondre à cela:</l>
+              <l met="4">L'amour me flatte<note>On attendrait un vers de six syllabes.</note>
+              </l>
+              <l met="6">L'amour me servira,</l>
+              <l met="3">Flon, flon, flon, etc.</l>
+            </sp>
+          </spGrp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+          </sp>
+          <spGrp who="#arlequin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#adieu_paniers">Adieu paniers [vendanges sont faites]</title>
+              </desc>
+            </head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="8">Bon, bon, nous avons double noce,</l>
+              <l met="8">Que de sang, de vin répandu,</l>
+              <l met="8">L'amour est un enfant perdu</l>
+              <l met="9">Qui ne demande que plaie et bosse<note type="definition">Ne demander que plaie et bosse: Souhaiter qu'il y ait des querelles, des procès, qu'il arrive des malheurs dans l'espérance d'en profiter ou par pure malignité (Acad.1762)</note>.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 7</head>
+          <stage type="characters">Scaramouche, Léandre, Isabelle, Agathe, Arlequin, Colette, Gringalet</stage>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>Et qu'est-ce donc, Monsieur le Docteur? Je crois que vous devenez fou.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Apparemment puisqu'il se marie.</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>Comment, au lieu de me donner acquit de l'argent que je vous fais tenir, vous m'envoyez un billet doux, un rendez-vous?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Que n'y veniez-vous? Vous auriez toujours attrapé cela.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Que veut dire cela? Un billet doux?</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>Tenez, lisez plutôt.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <stage>lit</stage>
+            <l met="8">Je vous attends, charmante brune,</l>
+            <l met="8">Sur nos gazons si pleins d'appas.</l>
+            <l met="8">Ils valent bien un matelas,</l>
+            <l met="8">Venez-y ce soir sur la brune<note type="definition">Sur la brune: Vers le commencement de la nuit, n'est pas du beau style (Féraud)</note>.</l>
+            <p>Que veut dire ce galimatias?</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>Cela veut dire que je vous ai envoyé cent francs et qu'au lieu de quittance, j'ai reçu ce beau torche-derrière. Approchez, Gringalet. N'avez-vous pas donné cent francs à Monsieur Scaramouche de ma part?</p>
+          </sp>
+          <sp who="#gringalet">
+            <speaker>Gringalet</speaker>
+            <p>Eh, dame! Je les ai donnés à stila<note>Pour « celui-là ».</note>qui a son habit marbré comme le couvercle d'un livre.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Comment, tu as gardé mon argent?</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>Ah, vraiment, cela est vrai! Je n'y songeais pas, je ne sais depuis un temps, j'ai la mémoire si courte que j'oublie la plupart du temps à payer ce que je dois. Mais voici comme je les ai reçus.</p>
+          </sp>
+          <stage>Il en ôte du sac.</stage>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Je le crois, je sais qu'Arlequin est fidèle. Tenez, Mademoiselle Colette, voilà votre argent que je vous rends en faveur du dieu de l'hyménée et je vous invite ce soir à mes noces.</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>Ah, que j'en suis ravie! Il faut que je vous embrasse.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <stage>qui tâche de lui ôter l'argent</stage>
+            <p>Et moi itou, et moi itou.</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>Que fais-tu là?</p>
+          </sp>
+          <pb/>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <p>C'est pour voir si le compte y est bien.</p>
+          </sp>
+          <sp who="#colette">
+            <speaker>Colette</speaker>
+            <p>En vérité, Monsieur Arlequin, vous êtes trop obligeant.</p>
+          </sp>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Çà, voyons un peu la cuisine et comment on s'y trémousse.</p>
+          </sp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+          </sp>
+          <spGrp>
+            <head type="melody" subtype="empty_melody">Air vide</head>
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="7">La fumée de la cuisine</l>
+              <l met="7">Jamais ne me déplaira.</l>
+              <l met="7">Le fumet de Colombine</l>
+              <l met="7">Nuit et jour me charmera.</l>
+            </sp>
+          </spGrp>
+          <stage>Le théâtre s'ouvre et représente une cheminée, un four, un fourneau, qui forment une marche agréable, ce qui donne lieu à Arlequin de faire beaucoup de lazzis.</stage>
+          <sp who="#pierrot">
+            <speaker>Pierrot</speaker>
+          </sp>
+          <spGrp who="#pierrot">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#oui_je_t_aime">Oui, je t'aime</title>
+              </desc>
+            </head>
+            <sp who="#pierrot">
+              <speaker>Pierrot</speaker>
+              <l met="7">Dieu des amours mutuelles,</l>
+              <l met="7">Prévenez tous les soupirs</l>
+              <l met="7">De ces amants si fidèles.</l>
+              <l met="7">Comblez leurs tendres désirs,</l>
+              <l met="7">Que leurs flammes toujours belles,</l>
+              <l met="7">Toujours douces et nouvelles,</l>
+              <l met="7">Goûtent de nouveaux plaisirs.</l>
+            </sp>
+          </spGrp>
+          <sp who="#arlequin">
+            <speaker>Arlequin</speaker>
+            <l met="7">Dieu du vin, dieu de la treille,</l>
+            <l met="7">Si mon aimable Fanchon</l>
+            <l met="7">Quelque jour devient bouteille,</l>
+            <l met="7">Je veux être son bouchon.</l>
+          </sp>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+          </sp>
+          <spGrp who="#mezzetin">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#beaux_yeux_nicole">Tes beaux yeux, [ma Nicole]</title>
+              </desc>
+            </head>
+            <sp who="#mezzetin">
+              <speaker>Mezzetin</speaker>
+              <l met="6">Allons nous mettre à table.</l>
+              <l met="6">Quand on met dans son lit</l>
+              <l met="6">Une maîtresse aimable</l>
+              <l met="6">Il faut de l'appétit.</l>
+            </sp>
+          </spGrp>
+          <spGrp rend="center">
+            <sp who="#arlequin">
+              <speaker>Arlequin</speaker>
+              <l met="6">Cet ordre est admirable,</l>
+              <l met="6">Messieurs, que c'est bien dit!</l>
+              <l met="6">Allons nous mettre à table</l>
+              <l met="6">Et de la table au lit.</l>
+              <p>FIN DU TROISIÈME ACTE<note>Au verso du dernier feuillet, Paulmy note: « Il y a moyen de réduire ce bel ouvrage en parade en ne prenant que les principales scènes de chacun des trois actes et travestissant Scaramouche en Cassandre et motivant l'assoupissement ».</note>
+              </p>
+            </sp>
+          </spGrp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

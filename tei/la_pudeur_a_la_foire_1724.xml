@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="la_pudeur_a_la_foire_1724">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">La Pudeur à la Foire</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName> Le Sage et d'Orneval</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">FIXME - missing source</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="pudeur" sex="UNKNOWN">
+            <persName>La Pudeur</persName>
+          </person>
+          <person xml:id="dubois" sex="UNKNOWN">
+            <persName>Dubois</persName>
+          </person>
+          <person xml:id="la_pudeur" sex="UNKNOWN">
+            <persName>La Pudeur</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1724">
+        <desc> 1724</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#la_pudeur">La Pudeur</role>
+        </castItem>
+        <castItem>
+          <role ana="#dubois">Dubois</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <spGrp rend="quote">
+          <sp who="#dubois">
+            <speaker>Dubois</speaker>
+          </sp>
+        </spGrp>
+        <stage type="location">Le théâtre représente le préau de la foire Saint-Laurent.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">La Pudeur, Dubois<stage>limonadier</stage>
+        </stage>
+        <spGrp who="#dubois">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#coucou">Comme un coucou [que l'amour presse]</title>
+            </desc>
+          </head>
+          <sp who="#dubois">
+            <speaker>Dubois</speaker>
+            <l met="8">Que vois-je? Ô<note>Ms. 1: « au ».</note>ciel, le puis-je croire?</l>
+            <l met="8">Qui? Vous, déesse, dans ces lieux?</l>
+            <l met="8">Quoi, la Pudeur est à la Foire?</l>
+          </sp>
+        </spGrp>
+        <sp who="#pudeur">
+          <speaker>La Pudeur</speaker>
+          <l met="8">J'y suis venue avec les dieux.</l>
+        </sp>
+        <sp who="#dubois">
+          <speaker>Dubois</speaker>
+        </sp>
+        <spGrp who="#dubois">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#branle_de_metz">Branle de Metz</title>
+            </desc>
+          </head>
+          <sp who="#dubois">
+            <speaker>Dubois</speaker>
+            <l met="7">Peut-on savoir quelle affaire</l>
+            <l met="7">Amène ici tous les dieux?</l>
+          </sp>
+        </spGrp>
+        <sp who="#pudeur">
+          <speaker>La Pudeur</speaker>
+          <l met="6">Vous êtes bien curieux.</l>
+        </sp>
+        <sp who="#dubois">
+          <speaker>Dubois</speaker>
+          <l met="7">Ah, daignez me satisfaire!</l>
+        </sp>
+        <sp who="#pudeur">
+          <speaker>La Pudeur</speaker>
+          <l met="7">Ils auraient fait beaucoup mieux</l>
+          <l met="7">Pour ce qu'ils y viennent faire,</l>
+          <l met="7">Ils auraient fait beaucoup mieux</l>
+          <l met="7">De demeurer dans les cieux.</l>
+        </sp>
+        <spGrp who="#pudeur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_reguingue">Ô reguingué</title>
+            </desc>
+          </head>
+          <sp who="#pudeur">
+            <speaker>La Pudeur</speaker>
+            <l met="8">J'ai laissé Plutus et Pluton</l>
+            <l met="8">Aller aux<emph>Bains de Charenton</emph>.</l>
+            <l met="8">Ô reguingué, ô lon lan la,</l>
+            <l met="8">Pour moi, j'ai pris une autre route.</l>
+          </sp>
+        </spGrp>
+        <sp who="#dubois">
+          <speaker>Dubois</speaker>
+          <l met="8">Celle de l'Opéra, sans doute?</l>
+        </sp>
+        <sp who="#pudeur">
+          <speaker>La Pudeur</speaker>
+        </sp>
+        <spGrp who="#pudeur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#pudeur">
+            <speaker>La Pudeur</speaker>
+            <l met="8">J'allais voir<emph>Thétis et Pélée</emph>
+              <note>Opéra de Fontenelle et Colasse, représenté pour la première fois en 1689 et repris, notamment, en 1723.</note>,</l>
+            <l met="8">(J'en suis encor toute troublée.)</l>
+            <l met="8">Le dieu d'Amour, à l'Opéra,</l>
+            <l met="8">Est encensé comme à Cythère.</l>
+            <l met="8">Voyant ce qui se passe là,</l>
+            <l met="8">J'ai gagné la porte en colère.</l>
+          </sp>
+        </spGrp>
+        <sp who="#dubois">
+          <speaker>Dubois</speaker>
+        </sp>
+        <spGrp who="#dubois">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Prévôt<note>Ms. 2: « Voulez-vous savoir qui des deux ».</note>
+              </title>
+            </desc>
+          </head>
+          <sp who="#dubois">
+            <speaker>Dubois</speaker>
+            <l met="8">De là, par curiosité,</l>
+            <l met="8">Aux Français vous avez été.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pudeur">
+          <speaker>La Pudeur</speaker>
+          <l met="8">Oui, mais ils m'ont donné la chasse.</l>
+          <l met="8">Leurs<emph>Trois Cousines</emph>
+            <note>Pièce de Dancourt reprise en 1724.</note>m'ont fait peur.</l>
+          <l met="8">J'en sors et j'ai cédé ma place</l>
+          <l met="8">À la femme d'un procureur.</l>
+        </sp>
+        <sp who="#dubois">
+          <speaker>Dubois</speaker>
+        </sp>
+        <spGrp who="#dubois">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#talalire">Talalire</title>
+            </desc>
+          </head>
+          <sp who="#dubois">
+            <speaker>Dubois</speaker>
+            <l met="8">Vous faites bien la scrupuleuse.</l>
+            <l met="8">Mercure pourtant nous a dit</l>
+            <l met="8">Que vous n'étiez plus chicaneuse.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pudeur">
+          <speaker>La Pudeur</speaker>
+          <l met="8">Ce Mercure a perdu l'esprit.</l>
+          <l met="9">Ou bien il a dit cela pour rire<note>On attendrait un vers de 8 syllabes. Nous proposons: « Ou il a dit cela pour rire ».</note>.</l>
+        </sp>
+        <sp who="#dubois">
+          <speaker>Dubois</speaker>
+          <l met="12">Talaleri, talaleri, talalerire.</l>
+        </sp>
+        <sp who="#pudeur">
+          <speaker>La Pudeur</speaker>
+        </sp>
+        <spGrp who="#pudeur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mon_mal_ne_vient_que_d_aimer_">Mon mal ne vient [que d'aimer]<note>Ms. 2: « Ah, mon mal ne vient que d'aimer ».</note>
+              </title>
+            </desc>
+          </head>
+          <sp who="#pudeur">
+            <speaker>La Pudeur</speaker>
+            <l met="8">J'ai dessein d'aller de ce pas</l>
+            <l met="8">Chez Dolet<note>Le Sage et d'Orneval travaillaient pour cet entrepreneur forain.</note>.</l>
+          </sp>
+        </spGrp>
+        <sp who="#dubois">
+          <speaker>Dubois</speaker>
+          <l met="8">Vous n'y pensez pas.</l>
+          <l met="8">On n'y voit que des couplets gras,</l>
+          <l met="6">Étouffez cette envie.</l>
+          <l met="8">Ah, pudeur, vous n'y pensez pas!</l>
+          <l met="6">Vous en seriez punie.</l>
+        </sp>
+        <sp who="#pudeur">
+          <speaker>La Pudeur</speaker>
+        </sp>
+        <spGrp who="#pudeur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#je_ne_sais_quoi">Je ne sais quoi<note>Ms. 2: « Un certain je ne sais qu'est-ce ».</note>
+              </title>
+            </desc>
+          </head>
+          <sp who="#pudeur">
+            <speaker>La Pudeur</speaker>
+            <l met="8">Cependant, on peut devant moi,</l>
+            <l met="6">Sans que cela me blesse,</l>
+            <l met="8">Avec de la délicatesse,</l>
+            <l met="8">D'un flonflon même faire emploi</l>
+            <l met="9">En y mettant un je ne sais qu'est-ce,</l>
+            <l met="9">En le couvrant d'un je ne sais quoi.</l>
+          </sp>
+        </spGrp>
+        <sp who="#dubois">
+          <speaker>Dubois</speaker>
+        </sp>
+        <spGrp who="#dubois">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_qui_vous_moquez">Vous qui vous moquez [par vos ris]</title>
+            </desc>
+          </head>
+          <sp who="#dubois">
+            <speaker>Dubois</speaker>
+            <l met="8">Renoncez donc sur ce pied-là,</l>
+            <l met="6">À Dolet et sa clique.</l>
+            <l met="8">Où vous puissiez trouver cela,</l>
+            <l met="6">Il n'est qu'une boutique.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pudeur">
+          <speaker>La Pudeur</speaker>
+          <l met="8">Enseignez-la moi.</l>
+        </sp>
+        <sp who="#dubois">
+          <speaker>Dubois</speaker>
+          <l met="8">La voilà:</l>
+          <l met="6">C'est l'Opéra-Comique<note>C'est alors celui d'Honoré.</note>.</l>
+        </sp>
+        <spGrp who="#dubois">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nous_villageois">Nous autres bons villageois</title>
+            </desc>
+          </head>
+          <sp who="#dubois">
+            <speaker>Dubois</speaker>
+            <l met="7">Vous y verrez des couplets</l>
+            <l met="8">Qui dégradent du rang des sages</l>
+            <l met="7">Messieurs les petits collets<note type="definition">Petit collet: On appelle familièrement les ecclésiastiques petits collets, gens à petit collet, à cause qu'ils portent un collet plus petit que les autres (Acad.1762)</note>
+            </l>
+            <l met="8">Pour les remplacer par des pages<note>En marge: « Il y avait un des couplets de l'Opéra-Comique: "Quand on dit une sottise, c'est monsieur l'abbé qui rit, c'est le page qui rougit" ».</note>.</l>
+            <l met="8">Par un<note>On prononçait [une] ce qui explique le masculin alors qu'on parle d'une fille.</note>enfant<note>Ms. 2: « Un batelier et une petite fille faisaient doctement et en beaux termes la critique d'un opéra » (Note du manuscrit).</note>, vous verrez là,</l>
+            <l met="8">Pincer finement l'Opéra,</l>
+            <l met="8">Et qui plus est un batelier</l>
+            <l met="8">Raisonner comme un bachelier.</l>
+          </sp>
+        </spGrp>
+        <sp who="#pudeur">
+          <speaker>La Pudeur</speaker>
+        </sp>
+        <spGrp who="#pudeur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lere_lan_laire">Lere lan laire</title>
+            </desc>
+          </head>
+          <sp who="#pudeur">
+            <speaker>La Pudeur</speaker>
+            <l met="8">Ce spectacle-là m'est connu.</l>
+            <l met="8">Jadis, sans rougir, je l'ai vu.</l>
+            <l met="8">Que de plaisir il va me faire!</l>
+          </sp>
+        </spGrp>
+        <sp who="#dubois">
+          <speaker>Dubois</speaker>
+          <l met="7">Laire lan laire, lan laire,</l>
+          <l met="3">Laire la,</l>
+          <l met="4">Laire lan la.</l>
+        </sp>
+        <stage>La Pudeur s'en va.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Dubois<stage>seul</stage>
+        </stage>
+        <spGrp who="#dubois">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_raison">Ma raison s'en va [beau train]<note>Ms. 2: « Ma raison s'en va beau train ».</note>
+              </title>
+            </desc>
+          </head>
+          <sp who="#dubois">
+            <speaker>Dubois</speaker>
+            <l met="7">Quelle mine elle fera</l>
+            <l met="7">Dans le temps qu'elle verra</l>
+            <l met="5">Finette en chemin,</l>
+            <l met="5">Dès le grand matin,</l>
+            <l met="6">S'échappant de sa mère</l>
+            <l met="8">Pour aller trouver dans le bain</l>
+            <l met="6">Un jeune mousquetaire<note>Ms. 2, note du manuscrit: « C'était une scène de la pièce<emph>Les Bains de Charenton</emph>».</note>,</l>
+            <l met="2">Lon la,</l>
+            <l met="6">Un jeune mousquetaire.</l>
+          </sp>
+        </spGrp>
+        <stage>Il vient un Gille à qui Dubois apprend par signes qu'il vient d'envoyer la Pudeur à l'Opéra-Comique. Ils en rient ensemble, mais sur la fin de leur scène muette, la Pudeur revient tout en colère avec un bâton à la main dont elle les frappe tous deux et les fait fuir.</stage>
+        <stage>Fin du prologue</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

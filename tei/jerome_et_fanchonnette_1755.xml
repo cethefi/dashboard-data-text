@@ -1,0 +1,2431 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="jerome_et_fanchonnette_1755">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Jérôme et Fanchonette</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Jean-Joseph Vadé</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>T. Boulanger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Relecture</resp>
+          <name>J. Coignard</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">
+          <emph>Oeuvres de M. Vadé</emph>, nouvelle édition, t.2, La Haye, Pierre Gosse, 1785</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="fanchonnette" sex="UNKNOWN">
+            <persName>Fanchonnette</persName>
+          </person>
+          <person xml:id="jerome" sex="UNKNOWN">
+            <persName>Jérôme</persName>
+          </person>
+          <person xml:id="cadet" sex="UNKNOWN">
+            <persName>Cadet</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Pastorale de la Grenouillère en un acte</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1755">
+        <desc>Représentée pour la première fois sur le théâtre de l'Opéra-Comique le 18 février 1755</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#fanchonnette">Fanchonnette</role>
+          <actor>Mademoiselle Rosaline</actor>
+        </castItem>
+        <castItem>
+          <role ana="#jerome">Jérôme</role>
+          <roleDesc>amant de Fanchonnette</roleDesc>
+          <actor>Monsieur Paran</actor>
+        </castItem>
+        <castItem>
+          <role ana="#cadet">Cadet</role>
+          <roleDesc>frère de Fanchonnette</roleDesc>
+          <actor>Monsieur de Lisle</actor>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène est à la Grenouillère, au bord de l'eau.</stage>
+      </prologue>
+      <pb n="87"/>
+      <pb n="88"/>
+      <pb n="89"/>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Jérôme<stage>seul</stage>
+        </stage>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quand_tu_battras_la_retraite">Quand tu battras la retraite</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="7">Tout à la bonne franquette,</l>
+            <l met="7">Je ne sais plas que d'venir,</l>
+            <l met="7">Du d'puis qu'la bell' Fanchonnette</l>
+            <l met="7">M'fait désirer du plaisir.</l>
+            <l met="7">Pour l'oublier, j'ons beau boire</l>
+            <l met="7">Ça n'empêche pas qu'l'amour</l>
+            <l met="7">N'fasse, en son honneur et gloire,</l>
+            <l met="7">De mon pauvre cœur un four.</l>
+          </sp>
+        </spGrp>
+        <pb n="90"/>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#rossignolet_du_bois">Rossignolet du bois</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="7">Y amour, qui fait brûler</l>
+            <l met="6">La fille la plus sage,</l>
+            <l met="7">Y apprends-moi ton langage,</l>
+            <l met="6">Apprends-moi t'à parler,</l>
+            <l met="6">Afin qu'pour l'mariage</l>
+            <l met="6">Je puissions l'enjôler.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#n_avez_vous_pas_vu_l_horloge">N'avez-vous pas vu l'horloge</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="7">Mais pour que c't amour m'achève,</l>
+            <l met="7">Ne v'là t'y pas qu'la voici!</l>
+            <l met="7">M'est avis que l'soleil s'lève</l>
+            <l met="7">Quand j'vois son minois genti.</l>
+            <l met="7">All' pense à ce qu'alle rêve...</l>
+            <l met="7">Cachons-nous derrière c't arbre-ci.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Fanchonnette, Jérôme<stage>à l'écart</stage>
+        </stage>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ce_ruisseau_qui_dans_la_plaine">Ce ruisseau qui dans la plaine</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="7">Drès l'matin sous ce feurliage,</l>
+            <l met="7">Je vians pour prendre le frais.</l>
+            <l met="7">Des oisiaux le garzouillage</l>
+            <l met="7">M'y fait r'venir tout exprès.</l>
+            <l met="7">J'n'avons pas d'goût pour les hommes.</l>
+            <l met="7">Pourquoi ça, dira queuqu's uns?</l>
+            <l met="7">C'est qu'dans le temps où que j'sommes,</l>
+            <l met="7">Les trompeux sont bien communs.</l>
+            <l met="7">On est farm', tant qu'on z'est libre;</l>
+            <l met="7">Ça fait qu'on n'trébuche pas.</l>
+            <l met="7">L'amour fait pardr' l'équilibre:</l>
+            <l met="7">V'là d'où viennent les faux-pas.</l>
+          </sp>
+        </spGrp>
+        <pb n="91"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Jérôme, Fanchonnette</stage>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pas_si_diable">Je ne suis pas si diable [que je suis noir]</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="6">Bonjoux, Monsieur Jérôme.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="6">Bonjoux, belle Fanchon.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="6">Ah! Mon Dieu! Vous vl'à comme</l>
+          <l met="6">Un matineux garçon.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="6">Je ne dors pus, ça m'fêche.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="6">Pauvre petit mignon!</l>
+          <l met="6">Quoi? Qui vous en empêche?</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="4">C'est Curpidon.</l>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_regards_d_helene">Les regards d'Hélène</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="5">Avec une flèche,</l>
+            <l met="8">Qui par l'p'tit bout avait le fil,</l>
+            <l met="6">Il m'a fait une brèche</l>
+            <l met="4">Qu'en vaut ben mill'</l>
+            <l met="6">Depuis c'temps-là j'endure</l>
+            <l met="8">Un chien d'mal qui redoube encor.</l>
+            <l met="5">Faut qu'j'ai la vie dure</l>
+            <l met="5">Pour n'en êtr' pas mort.</l>
+          </sp>
+        </spGrp>
+        <pb n="92"/>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#buvons_a_nous_quatre">Buvons à nous quatre</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="5">Une marinière,</l>
+            <l met="5">D'un p'tit air malin,</l>
+            <l met="7">Pour ahider son dessein,</l>
+            <l met="5">Comm' ça, par darrière,</l>
+            <l met="5">Li poussait la main.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#par_un_beau_jour_de_pentecote">Par un beau jour de Pentecôte</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="8">Avec tout ça, ma parsonnière</l>
+            <l met="8">N'sait pas mon amiquié d'ardeur.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="8">Oubliez-la, c'est la magnère</l>
+          <l met="8">D'avoir pus d'bonheur que d'malheur.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <p>Oh! quand on a vu les attraits d'ses appas, on a beau vouloir l'oublier,</p>
+          <l met="4">Ca n'se peut pas.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <pb n="93"/>
+        <stage type="musical_indication">Refrain</stage>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tarare_ponpon">Tarare pompon.</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="12">Selon l'goût d'vot' façon, alle est donc ben gentille?</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="12">Gentille comme un cœur; alle a les yeux si doux</l>
+          <l met="6">Qu'drès qu'on la voit, z'on grille</l>
+          <l met="6">D'être son cher époux.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="6">Qui c'est donc que c'te fille?</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="2">C'est vous.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#qui_veut_savoir_l_histoire">Qui veut savoir l'histoire</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="8">Ah! Vous gouayez, Monsieur Jérôme,</l>
+            <l met="10">Je n'suis pas bell'.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="10">Si fait, foi d'honnête homme.</l>
+          <l met="8">T'nez, la Beauté et ma Fanchon</l>
+          <l met="8">Sont taillées sur le mêm' patron.</l>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_amour_est_un_chien_de_vaurien">L'amour est un chien de vaurien</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="8">L'Amour, pour me rendre amoureux</l>
+            <l met="8">N'a besoin que de vos deux yeux.</l>
+            <l met="6">Oui, pour ma Fanchonnette,</l>
+            <l met="6">Il met les fers au feu;</l>
+            <l met="6">Rendez-li c'qu'il vous prête</l>
+            <l met="6">En me donnant beau jeu.</l>
+          </sp>
+        </spGrp>
+        <pb n="94"/>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#gardez_vos_moutons">Gardez vos moutons</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="8">Croyez-moi, Monsieur, ôtez-vous</l>
+            <l met="7">Tous mes appâts de la tête.</l>
+            <l met="7">L'amour a toujours d'l'aigre doux;</l>
+            <l met="6">Et pour que ça s'arrête,</l>
+            <l met="5">Pêchez du goujon</l>
+            <l met="5">Lirette, liron,</l>
+            <l met="6">Liron, liron, lirette.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_cure_monte_en_chaire">Le Curé monte en chaire</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="8">Mais y'a deux ans que j'vous aim' ben,</l>
+            <l met="6">Et si j'vous aime encore.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <stage>le raillant</stage>
+          <l met="8">Si ya deux ans que vous m'aimez,</l>
+          <l met="8">Hé ben, t'nez, Monsieur, entre nous,</l>
+          <l met="8">Ça fait vingt-quat' mois ben comptés.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_dans_la_rue_d_la_mortellerie">C'est dans la rue d'la Mortellerie</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="8">Vous s'moquez d'moi, Mamsell' Fanchon.</l>
+            <l met="8">Pargué, j'avons ben du guignon.</l>
+          </sp>
+        </spGrp>
+        <pb n="94"/>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="8">Aimez plutôt queuqu'autr' tendron.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="6">Queu réponse! J'endève:</l>
+          <l met="6">Vous voulez donc que j'crève?</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sti_la_m_a_pince_berg_op_zoom">Sti-là m'a pincé Berg-op-zoom</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="8">Faut-il vous l'dire encore un coup?</l>
+            <l met="8">Monsieu, vous m'obstinez beaucoup.</l>
+            <l met="8">On n'gagne rien par violicence.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="8">J'm'absente donc de vot' présence.</l>
+        </sp>
+        <stage>Il sort.</stage>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#cantique_de_saint_hubert">Cantique de Saint-Hubert</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="6">Vrament, de c't amour-là,</l>
+            <l met="6">J'nous serions ben passée.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Fanchonnette, Cadet</stage>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="6">Eh! ma p'tit' sœur, te v'là!</l>
+          <l met="6">Tu m'sembe embarrassée.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="6">Je suis fort zen colère.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="6">Y à cause de pourquoi?</l>
+        </sp>
+        <pb n="96"/>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="6">C'est qu'Jérôm', mon cher frère</l>
+          <l met="6">Est z'amoureux de moi.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#en_mistico">En mistico</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="8">Tiens, j'te conseille de le prendre,</l>
+            <l met="10">En mistico, en dardillon, en dar,</l>
+            <l met="6">En dar, dar, dar, dar, dar,</l>
+            <l met="8">S'il t'épousait, on verrait pendre</l>
+            <l met="6">Clavier d'argent à ton</l>
+            <l met="4">Mistisicoté,</l>
+            <l met="2">Côté.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#va_va_manon_l_y_a_bien_des_nouvelles">Va, va, Manon, l'y a bien des nouvelles</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="12">Quoi donc! Cadet, est-ce que tu veux qu'il m'enjôle?</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="10">Mais gn'a pas d'mal à recharcher son bien;</l>
+          <l met="10">Tu n'es pas vieille, et Jérôme est un drôle</l>
+          <l met="10">Qu'est jeune assez pour ne t'épargner rien.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="alternative_melody">
+            <desc>Je le veux de toute mon âme</desc>
+            <desc>Les Insulaires</desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="8">Ah! J'aimons mieux, foi d'honnêt' fille,</l>
+            <l met="8">Le ragoût de la libarté</l>
+            <l met="7">Que d'avoir de la famille:</l>
+            <l met="13">Car en verté d'Guieu, ça vous abat votre gaieté.</l>
+            <l met="4">Toujours sautant,</l>
+            <l met="4">Toujours chantant,</l>
+            <l met="7">Fillette trouve en tous temps</l>
+            <l met="3">Le printemps;</l>
+            <l met="8">Mais dans l'mariage, femme qui brille,</l>
+            <l met="8">Brille toujours à ses dépends.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#si_t_en_magnes">Si t'en magnes</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="10">Tiens, ma pauvr' sœur, tu n'as pas de raison</l>
+            <l met="9">De rencarter un si bon luron.</l>
+          </sp>
+        </spGrp>
+        <pb n="98"/>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="10">Crois-tu donc pas que j'vas lâcher mon cœur,</l>
+          <l met="10">Et qu'tout brandi il va t'êtr' mon vainqueur?</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="10">Tiens, moi j'te l'dis, j'vois bien que ça viendra.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="10">Ah! S'il en tâte, s'il en goûte, s'il en a!</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="10">S'il t'aimait ben, faudrait passer par là.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#recevez_donc_ce_beau_bouquet">Recevez donc ce beau bouquet</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="8">Lui, m'aimer! Je n'donn' pas là-d'dans.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="8">Et sarpejeu, fais-en l'épreuve,</l>
+          <l met="8">Ou ben moi, tiens, par queuqu'odans,</l>
+          <l met="8">D'son amiquié j'aurons la preuve.</l>
+          <l met="8">En façon d'rival je l'attends.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="8">Ca n'me f'ra pas mordre à la grappe.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="8">Mais s'il m'jurait...</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="8">Bon! Les serments</l>
+          <l met="3">Des amants,</l>
+          <l met="6">C'est d'la graine d'attrape.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sti_la_qu_a_pince_berg_op_zoom">Sti-là qu'a pincé Berg-op-zoom</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="8">Viens-t'en, Jérôme n'sait pas mon nom,</l>
+            <l met="8">Pour le startagème, ça s'ra bon.</l>
+            <l met="8">À l'hameçon si je l'vois mordre,</l>
+            <l met="8">J'li baill'rons du fil à retordre.</l>
+          </sp>
+        </spGrp>
+        <stage>Ils sortent.</stage>
+        <pb n="99"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Jérôme<stage>seul</stage>
+        </stage>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_jeune_beaute_de_nos_bois">La jeune beauté de nos bois</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="8">Mais d'mandez-moi pourquoi qu'je r'viens?</l>
+            <l met="8">Car je n'peux pus me traîner presque.</l>
+            <l met="8">Hormis d'aimer, j'n'ons l'cœur à rien.</l>
+            <l met="8">Voyez pourtant c'que c'est que l'sesque!</l>
+            <l met="8">Faudra-t'y donc que je succombe,</l>
+            <l met="8">Moi qu'étais fort comme un Samson?</l>
+            <l met="8">Si j'veux pêcher, c'est que l'bras m'tumbe,</l>
+            <l met="8">Je n'vois qu'l'amour au lieu d'poisson.</l>
+          </sp>
+        </spGrp>
+        <pb n="100"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Jérôme, Cadet<stage>déguisé en Grassin</stage>
+        </stage>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#en_passant_sur_le_pont_neuf">En passant sur le Pont-Neuf</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="7">Eh! Vivant, quoi qu'tu fais là?</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="7">Queuqu'ça t'fait?</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="7">Queu drôle ça?</l>
+          <l met="7">Pour répondre de la sorte,</l>
+          <l met="7">Faut z'être ben incivil.</l>
+          <l met="7">M'connais-tu?</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="7">Non, l'Diabl' m'emporte.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="7">J'suis brave.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="7">Eh! ben, qu'en est-il?</l>
+        </sp>
+        <pb n="101"/>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tredame_monsieur_thomas">Tredame, Monsieur Thomas</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="7">J'm'appell' Cadet l'obstiné.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="8">Bon! moi, j'm'appell' Taquin l'aîné.</l>
+          <l met="8">Tiens, n'échauffe point z'un luron</l>
+          <l met="8">À qui l'amour fiche guignon.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="8">Eh ben, voyons, conte-nous ça.</l>
+          <l met="4">Ca t'soulag'ra.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="7">V'là c'qui s'appell' ben penser.</l>
+          <l met="8">Quand on aime, on n'peut se r'fuser,</l>
+          <l met="7">Y a l'avantage d'en jaser.</l>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#babet_gentille">Babet, que t'es gentille</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="6">Premièrement, d'abord,</l>
+            <l met="6">C'tella, pour qui j'soupire,</l>
+            <l met="6">C'est une parle d'or.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="6">Parle d'or! C'est tout dire.</l>
+          <l met="4">C'te parle?</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="4">Morgué,</l>
+          <l met="6">M'fait sécher sur pied.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="6">Qu'eu fin dénicheux d'marles!</l>
+          <l met="8">Tiens, faut la brusquer sans façon.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="8">La douceur amorce un tendron.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="8">Eh! Mais ici tu restes donc</l>
+          <l met="6">Pour enfiler des parles!<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <pb n="102"/>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#va_va_fanchon_ne_pleure_pas">Va, va, Fanchon, ne pleure pas</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="8">C'pendant, pourtant, ça m'fait souffrir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="8">Eh! sarpejeu, pour te guérir,</l>
+          <l met="8">Faut z'aller d'Paris à Pontoise,</l>
+          <l met="8">D'Pontoise r'venir à Paris.</l>
+          <l met="8">L'amour ne nous charche plus noise</l>
+          <l met="8">Quand on li fait voir du pays.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_faites_les_jours_de_fete">Vous faites les jours de fête</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="7">Eh! quand j'courrais comme un basque,</l>
+            <l met="7">L'dieu d'amour court aussi ben.</l>
+            <l met="7">Tout c'qu'on fait contre c'p'tit masque</l>
+            <l met="4">Ne sart de rien.</l>
+            <l met="8">L'autre jour, croyant qui m'quitt'rait,</l>
+            <l met="8">J'enfoncis cheux un cabaret.</l>
+            <l met="7">N'v'là-t'i pas que l'p'tit sorcier</l>
+            <l met="7">Entre jusqu'dans mon d'misquier?</l>
+          </sp>
+        </spGrp>
+        <pb n="103"/>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_ca_v_la_qu_est_donc_bacle">Ah! ça, v'là qu'est donc bâclé</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="7">Eh! ben, au bruit du canon,</l>
+            <l met="7">Y gn'a pas d'amour qui tienne.</l>
+            <l met="7">As-tu jamais vu ça?</l>
+          </sp>
+        </spGrp>
+        <pb n="104"/>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="7">Non.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="8">Hé! ben, faut que l'désir t'en vienne;</l>
+          <l met="7">Mais pour faire un bon seuldar,</l>
+          <l met="8">Faut mett' ta tendress' au rencart.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_la_femme_a_tretous">C'est la femme à tretous</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="6">Oh! dam'! c'est qu'une armée</l>
+            <l met="8">Est une bell' chose entre nous.</l>
+            <l met="6">Quand all' est animée,</l>
+            <l met="6">C'est pire qu'un courroux.</l>
+            <l met="6">On attaque tertin,</l>
+            <l met="6">On les saboul' terti,</l>
+            <l met="6">On les fait fuir tertous.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_touriere">La Tourière</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="7">Le roi vous marche en avant,</l>
+            <l met="7">Comm' s'il allait à queuqu'fête.</l>
+            <l met="8">Toute l'armée en fait autant,</l>
+            <l met="7">Et puis tout d'suite on entend</l>
+            <l met="7">Pan, pan, pan, pan, pan, pan, pan,</l>
+            <l met="7">Sur les bras et sur la tête,</l>
+            <l met="7">Pan, pan, pan, pan, pan, pan, pan.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de la</desc>
+            <desc type="title">
+              <title ref="#contredanse_du_ballet_chinois">Contredanse du ballet chinois</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="5">Tout en culbutant,</l>
+            <l met="5">Tout en culbutant</l>
+            <l met="5">Les ennemis pêle</l>
+            <l met="1">Mêle,</l>
+            <l met="5">Les uns en pestant,</l>
+            <l met="5">Les autres boîtant</l>
+            <l met="7">Ne s'en vont pas trop contents.</l>
+          </sp>
+        </spGrp>
+        <pb n="105"/>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#chantons_a_tour_de_bras">Chantons à tour de bras</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="6">Et tout en ch'min faisant,</l>
+            <l met="6">Pour les rachever d'peindre,</l>
+            <l met="6">Une ville a beau feindre</l>
+            <l met="6">De s'défendre ch'nument,</l>
+            <l met="6">Le seigneur de Versailles</l>
+            <l met="7">Y entre pour s'amuser.</l>
+            <l met="6">Nous y donnant ripailles,</l>
+            <l met="6">Fait servir ses murailles</l>
+            <l met="6">De pierre à raiguiser.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_michel">Monsieur de Catinat</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="12">Si j'n'ons pas servi l'roi, je n'l'en aimons pas moins.</l>
+            <l met="12">Tout Français a pour lui des bras en cas d'besoin.</l>
+            <l met="12">Il a d'quoi vivre, on l'sait; mais s'il n'avait pas d'bien,</l>
+            <l met="12">Morgué, je m'pass'rais d'tout, pour qu'i' n'manquît de rien.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_michel">Adieu donc, cher la Tulipe</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="7">C'est ben dit.</l>
+          </sp>
+        </spGrp>
+        <pb n="106"/>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="7">Sus c'te matière,</l>
+          <l met="9">Y aurait de quoi n'jamais finir.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="7">C'est vrai.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="7">Mais pour revenir</l>
+          <l met="7">À c'qui r'garde not' affaire,</l>
+          <l met="7">À ton tour, quoi qu'tu viens faire?</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="4">Me marier,</l>
+          <l met="5">Afin d'm'égayer.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#on_dit_que_vous_aimez_les_fleurs">On dit que vous aimez les fleurs</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="6">Ta maîtresse...</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="6">M'donn' du r'tour;</l>
+          <l met="6">Et pour plaire à la belle,</l>
+          <l met="4">Je fais la tour,</l>
+          <l met="4">Je fais la tour,</l>
+          <l met="6">Je fais la tourterelle.</l>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sont_les_enfants_du_port_au_bled">Sont les enfants du port au Bled</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="8">Fanchonnette a mon amiquié.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <stage>à part</stage>
+          <l met="4">Oh! Saquerguié!</l>
+        </sp>
+        <stage>Haut.</stage>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="8">Dans c't'allure, est-elle d'moiquié?</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="7">Vante-t'en, luron, lurette,</l>
+          <l met="7">Flatte-t'en, luron, luré.</l>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#va_va_fanchon_j_irons_en_salle">Va, va, Fanchon, j'irons en salle</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="8">On m'a dit qu'certain fareau l'aime;</l>
+            <l met="8">J'voudrais ben l'trouver, par ma foi.</l>
+          </sp>
+        </spGrp>
+        <pb n="107"/>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="8">Oh! tiens, n'charch' pas tant: c'est moi-même.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="8">Toi?</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="8">Moi.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="8">Toi?</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="8">Moi.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="8">Qui toi?</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="8">Oui moi.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <stage>tirant son sabre recourbé</stage>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aisement_cela_se_peut_croire">Aisément cela se peut croire</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="8">Sais-tu que je suis t'un ch'napan</l>
+            <l met="8">Qui va te mettre l'âme au vent?</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="9">Y aisément cela n'peut pas s'croire.</l>
+          <l met="10">Quand ton sabre aurait l'fil comme un canon,</l>
+          <l met="8">Je m'f'rais hacher pour ma Fanchon.</l>
+          <p>Crois-moi, vaillant l'Cadet, rengaine ton arc-en-ciel de fer et ne me fais pas ôter ma veste, car moi j'te l'dis d'un sang chaud...</p>
+          <l met="4">J'veux t'être un chien,</l>
+          <l met="6">À coups d'pied, à coups d'poing,</l>
+          <l met="9">J'te cass'rai la gueule et la mâchoire.</l>
+        </sp>
+        <pb n="108"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Cadet, Jérôme, Fanchonnette</stage>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <stage>arrivant avec effroi</stage>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="alternative_melody">
+            <desc>Mariez-moi, maman, avec ce militaire</desc>
+            <desc>Marche ancienne des Gardes françaises</desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="9">Y au s'cours, y au s'cours, y au s'cours!</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="6">Quoi donc, bell' Fanchonnette?</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="9">Y au s'cours, y au s'cours, y au s'cours!</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="6">Quoi qu'i' gn'a, mes amours?</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="6">Un gros vilain sarpent</l>
+          <l met="6">Me suit; t'nez, v'là qui m'guette.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <stage>prenant le sabre de Cadet</stage>
+          <l met="6">Tiens, prête-moi ça, prête,</l>
+          <l met="5">J'm'en vas dans l'moment</l>
+          <l met="6">Lui parler chenument.</l>
+        </sp>
+        <stage>Cadet, voyant le serpent, fuit et Jérôme court pour le tuer.</stage>
+        <pb n="109"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Fanchonnette</stage>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="alternative_melody">
+            <desc>D'une brune j'ai fait le choix</desc>
+            <desc>Cantique de Saint-Louis</desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="8">S'il est mordu par c't animal,</l>
+            <l met="10">Ca l'f'ra mourir... Ah! Mon Dieu! Je m'trouv' mal.</l>
+            <l met="8">Oui, tout douc'ment, mon cœur décampe</l>
+            <l met="8">Tout comm' la finition d'un' lampe.</l>
+          </sp>
+        </spGrp>
+        <stage>Elle s'évanouit.</stage>
+        <pb n="110"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Jérôme, Fanchonnette<stage>évanouie</stage>
+        </stage>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#de_necessite_necessitante">De nécessité nécessitante</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="9">D'tous côtés me v'là donc misérable!</l>
+            <l met="9">Et je tumbe de scribe en syllabe.</l>
+            <l met="9">Oui, morgué, j'vois ben, sans mistrocope,</l>
+            <l met="9">Que v'là ma maîtresse en saintecope.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#manon_giroux">Manon Giroux</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="7">Mais pourtant comme un Jocrisse,</l>
+            <l met="5">Je n'dois pas m'tenir;</l>
+            <l met="7">Si j'li faisais queuqu'malice</l>
+            <l met="5">Pour la fair' r'venir...</l>
+            <l met="7">Mais non, j'suis trop z'honnête homme</l>
+            <l met="5">Pour agir comm' ça...</l>
+          </sp>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="7">Baillons-li z'un peu d'rogomme,</l>
+            <l met="5">P'têtre qu'all' reviendra.</l>
+          </sp>
+        </spGrp>
+        <stage>Il tire de sa poche une petite bouteille d'osier.</stage>
+        <stage>Il la fait boire.</stage>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#eh_riez_donc_">Eh! Riez donc!</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="7">Y ouvrez l'z'yeux, ma Fanchon,</l>
+            <l met="6">L'sarpent n'est pus de c'monde.</l>
+          </sp>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="6">J'l'avons j'té par tronçon</l>
+            <l met="6">Dans la rivièr' de l'onde:</l>
+            <l met="6">Eh! R'venez, r'venez donc,</l>
+            <l met="6">C'est Jérôm' qui vous s'gonde.</l>
+          </sp>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="6">Eh! R'venez, r'venez donc.</l>
+          </sp>
+        </spGrp>
+        <stage>Il redouble.</stage>
+        <pb n="111"/>
+        <stage>Il la fait boire encore.</stage>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <stage>se léchant les lèvres</stage>
+          <l met="5">Mais ça m'semb' ben bon!</l>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#un_soir_que_je_chantions">Un soir que je chantions</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="6">Monsieur, en vous r'marciant;</l>
+            <l met="6">J'vous dois beaucoup, vrament.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="4">Si vous m'devez,</l>
+          <l met="6">Payez-moi, vous l'pouvez</l>
+          <l met="6">En m'aimant drès ce jour.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="6">J'suis fort erconnaissante:</l>
+          <l met="4">Mais pour d'l'amour,</l>
+          <l met="6">J'suis vot' très humb' servante.</l>
+        </sp>
+        <pb n="112"/>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mon_p_tit_coeur_vous_n_m_aimez_guere">Mon p'tit cœur, vous n'm'aimez guère</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="7">Après ce que j'avons fait,</l>
+            <l met="7">Sans reproche, et pour vous plaire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="7">J'vous plaint.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="7">Encore un paquet!</l>
+          <l met="7">T'nez, je n'vis plus, si j'n'espère,</l>
+          <l met="7">Et je m'en vas de ce pas.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="7">Eh! Quoi donc? Qu'allez-vous faire?</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="7">M'arranger aveuc l'trépas.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="6">Jérôm' n'badinez pas.</l>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#car_c_est_comm_ci">Car c'est comm' ci</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="8">Ce que vous avez fait pour moi,</l>
+            <l met="9">Tout un chacun l'saura, j'vous assure.</l>
+            <l met="8">Ben obligée...</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="8">Oh! gna pas d'quoi.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="9">Mais t'nez, n'pensez plus t'a ma figure:</l>
+          <l met="8">Car c'est comm' ci, car c'est comm' ça,</l>
+          <l met="6">Entendez-vous Jérôme?</l>
+          <l met="8">Qu'on fait lanla, farlarira,</l>
+          <l met="6">Connaître qu'on est z'homme.</l>
+        </sp>
+        <pb n="113"/>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#revenant_ville">Et j'y pris bien du plaisir</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="7">Et moi, j'vous dit qu'on est z'homme</l>
+            <l met="7">Qu'en pensant à vos appâts.</l>
+            <l met="7">Car moi, t'nez, sans ça, j's'rais comme</l>
+            <l met="7">Un homme qui ne l'est pas.</l>
+            <l met="7">Au bout d'tout ça, quoiqu'j'enrage,</l>
+            <l met="7">J'n'ai pas t'à m'plaindre d'l'amour</l>
+            <l met="7">Puisque j'li dois l'avantage</l>
+            <l met="7">De vous avoir sauvé l'jour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mon_mal">Ah! mon mal ne vient que d'aimer</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="9">Y ah! Vot' bravour', brav' marinier</l>
+            <l met="9">Est une chos' qu'on n'peut z'oublier,</l>
+            <l met="9">Y allez dir' ça.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="9">Qui? Moi?</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="9">Je l'veux.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="6">Quoique c't ordr'-là m'rachève,</l>
+          <l met="8">En l'suivant je m'crois plus heureux</l>
+          <l met="6">Qu' si j'étais l'roi d'la fève.</l>
+        </sp>
+        <pb n="114"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Fanchonnette<stage>seule</stage>
+        </stage>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#a_notre_bonheur_l_amour_perfide">À notre bonheur, l'amour perfide</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="10">Y amour, tu voudrais que j't'écoutisse;</l>
+            <l met="9">Oui, j'sens ben déjà qu'tu t'fais sentir.</l>
+            <l met="9">C'que j'en dis, c'n'est pas que j'm'en soucisse,</l>
+            <l met="9">Car cheux toi la pein' passe l'plaisir.</l>
+            <l met="9">Dans l'abord, c'qu'un amant vient vous dire</l>
+            <l met="5">N'sart qu'à vous fair' rire,</l>
+            <l met="5">Et c'est ben l'meyeur.</l>
+            <l met="9">Par après, il a l'himeur si douce,</l>
+            <l met="5">Qu'à la fin ça l'pousse</l>
+            <l met="5">Dans l'fin fond d'not' cœur.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="characters">Fanchonnette, Cadet</stage>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ca_n_se_fait_pas">Ca n'se fait pas</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="8">Eh! ben, sœur, comment ça va-t'il?</l>
+          </sp>
+        </spGrp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="4">Ben, Dieu marci.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="7">Ça, voyons, à quand la noce?</l>
+          <l met="8">C'jour-là, comm' des bourgeois, jarni,</l>
+          <l met="7">Faudra t'aller t'en carrosse.</l>
+        </sp>
+        <pb n="115"/>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="8">T'iras donc à pieds en c'cas-là.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="3">J'danse déjà,</l>
+          <l met="3">J'danse déjà.</l>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de la</desc>
+            <desc type="title">
+              <title ref="#contredanse_du_cure">Contredanse du Curé</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="7">Y après l'pass'pied, l'all'mande,</l>
+            <l met="5">L'cotillon s'demande.</l>
+          </sp>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="8">Banlancez, la, la, la, la, la,</l>
+            <l met="9">L'pas d'gricorton, tla, tre, la, tra, la,</l>
+            <l met="5">Et puis, de bonn' grâce,</l>
+            <l met="12">Le violon dit comm' ça: baisez, baisez. Que gaud!</l>
+            <l met="6">Ensuit' tout l'mond' s'embrasse.</l>
+          </sp>
+        </spGrp>
+        <stage>Il figure ceci grotesquement.</stage>
+        <pb n="116"/>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_n_en_dirai_pas_davantage">Je n'en dirai pas davantage</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="8">Oh! tiens, d'tout ça t'as beau parler.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="8">Mais, mil' z'yeux, tu n'peux pus r'culer.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="9">J'te dis, Cadet, que c'est enutile;</l>
+          <l met="8">J'aim' mieux rester dans mon tranquille.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ca_n_vous_va_brin">Ca n'vous va brin</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="8">Quoi donc qu'i t'faut pour l'mariage?</l>
+            <l met="8">Jérôme n'est-i pas courageux?</l>
+            <l met="8">Ca f'rait un bon assortissage.</l>
+            <l met="8">Sais-tu ben qu'il est maîtr'-pêcheux?</l>
+            <l met="8">Son onque est commis d'la Patache:</l>
+            <l met="8">Dam', ça fait un' famill' sans tache.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="8">Oh! Mais j'crains trop l'amour.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="8">Tu l'crains,</l>
+          <l met="5">Mais ça n'te va brin,</l>
+          <l met="4">Ca n'te va brin.</l>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tourelouribo">Tourelouribo</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="7">Quand l'amour [est] en colère...</l>
+          </sp>
+        </spGrp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <stage>avec dérision</stage>
+          <l met="7">Oh! Oh! Tourelouribo.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="7">Il met tout sans d'vant darrière.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="7">Oh! Oh! Tourelouribo.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="7">Il renverse la plus fière.</l>
+        </sp>
+        <pb n="117"/>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="10">Et oh! Oh! Oh! Oh! Tourelouribo.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de la</desc>
+            <desc type="title">
+              <title ref="#sainte_barnabe">Sainte Barnabé</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="10">Avec ton air, t'as beau fair' la gouailleuse;</l>
+            <l met="10">P'têtr' que bientôt tu seras t'amoureuse.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="10">Va, va, Cadet, tant qu'on z'a d'la raison,</l>
+          <l met="10">Une fille tient tête à Curpidon.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#te_voila_revenu_mon_ami_la_feuillade">Te voilà revenu, mon ami la Feuillade</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="6">Gare le pot au noir.</l>
+            <l met="6">V'là Jérôme qu'arrive.</l>
+            <l met="6">Ah! ça, jusqu'au revoir!</l>
+          </sp>
+        </spGrp>
+        <pb n="118"/>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="6">Reste là.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="6">Non, j'm'esquive.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="6">Si tu me laiss' tout' seule,</l>
+          <l met="6">Je ne réponds pus d'moi.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <stage>sortant</stage>
+          <l met="6">Tu fais trop la bégueule,</l>
+          <l met="6">Parguienn', accomod'-toi.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="characters">Jérôme, Fanchonnette</stage>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#helas_tu_t_en_vas">Hélas! tu t'en vas</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="5">Cadet! tu t'en vas!</l>
+          </sp>
+        </spGrp>
+        <pb n="119"/>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="12">Quoi? Vous ap'lez Cadet?</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="12">I'm'laiss'-là dans d'beaux draps.</l>
+          <l met="5">Cadet! tu t'en vas!</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="6">Eh! Mais n'l'app'lez donc pas.</l>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#etant_a_l_hopital">Étant à l'hôpital</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="6">C'est moi qui suis l'suspect.</l>
+            <l met="6">Aussi, sus vot' respect,</l>
+            <l met="6">J'v'nons prendr' congé d'la vie.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="8">Vot' bon sens est donc rabêti?</l>
+          <l met="8">Quand on s'porte ben, ça convient-i</l>
+          <l met="6">D'avoir c'te fantaisie?</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#helas_mon_pere_confessez_moi">Hélas! mon Père, confessez-moi</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="6">Quand on fait l'grand voyage,</l>
+            <l met="6">Ça n'fait d'mal qu'un p'tit brin,</l>
+            <l met="6">Et dans c'moment-ci j'gage</l>
+            <l met="6">Qu'ça n'me f'rait pas d'chagrin.</l>
+            <l met="8">Je n'peux pus vivre avec d'l'amour</l>
+            <l met="8">Qui m'fait mourir cent fois par jour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <stage>à part</stage>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fanchon_est_bien_malade">Fanchon est bien malade</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="6">V'là-t'i pas qui va plaire?</l>
+            <l met="6">J'voudrais qu'i m'déplaisit.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="6">Mais vous n'm'écoutez guère:</l>
+          <l met="3">Ça suffit.</l>
+          <l met="6">Adieu, bell' marignière,</l>
+          <l met="3">Tout est dit.</l>
+        </sp>
+        <pb n="120"/>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_avez_raison_la_plante">Vous avez raison, la Plante</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="8">N'vous en allez pas! Queu magnière!</l>
+            <l met="7">Vous n'm'aimez donc pas tout d'bon?</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="3">Queu raison!</l>
+        </sp>
+        <stage type="musical_indication">Menuet</stage>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_mademoiselle_manon">C'est Mademoiselle Manon</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="12">La preuv' que j'vous aim' ben, c'est que mon argent'rie,</l>
+            <l met="6">Mes blouques, mes boutons,</l>
+            <l met="6">D'abord, j'vous les donnons.</l>
+            <l met="6">D's éperviers, des filets,</l>
+            <l met="11">Deux p'tits bachots peinturés qui n'sont pas laids,</l>
+            <l met="12">Six vestes de guernat, comm' gn'en a pas, j'parie,</l>
+            <l met="4">Une tass' d'argent,</l>
+            <l met="10">Dans quoi qu'j'ons bu à vot' santé souvent,</l>
+            <l met="6">Tout ça vous s'ra baillé,</l>
+            <l met="6">Mais que j'soyons dég'lé.</l>
+          </sp>
+        </spGrp>
+        <pb n="121"/>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <stage>à part</stage>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#recois_dans_ton_galetas">Reçois dans ton galetas</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="7">Écoutez donc, ça m'fend l'cœur.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="7">Eh! ben, parlez, j'vous écoute.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="7">Soyez putôt d'bonne himeur.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="8">La vie n'a pus rien qui m'ragoûte.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="8">Vivez, marignier libéral...</l>
+          <l met="5">Cadet! eh! Cadet!</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="8">Quoi donc? Vous ap'lez mon rival?</l>
+        </sp>
+        <pb n="122"/>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#oh_mon_dieu_que_de_belles_dames">Ah! mon Dieu! que de jolies dames</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="6">Oh! pour le coup, j'me r'tire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="6">Jérôme!</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="6">Ah! je vois tout.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <stage>à part</stage>
+          <l met="6">Ah! j'n'en peux pus, j'soupire.</l>
+          <p>Cadet!</p>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="5">Vous m'poussez t'à bout.</l>
+          <l met="8">Mon rival vous plaît; ça veut dire</l>
+          <l met="5">Qu'je n'suis pas d'vot' goût.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_est_tout_d_travers">Il est tout d'travers</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="8">Mais vous prenez ça tout d'travers.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="3">Oh! je l'prends,</l>
+          <l met="4">Comme j'l'entends.</l>
+        </sp>
+        <pb n="123"/>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="8">Mais vous entendez tout d'travers.</l>
+          <l met="7">Écoutez.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <stage>s'en allant avec dépit</stage>
+          <l met="7">Oh! j'n'ai pas l'temps.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 13</head>
+        <stage type="characters">Fanchonette<stage>seule</stage>
+        </stage>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#va_va_perfide_volage">Va, va, perfide, volage</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="2">Ah! Ah!</l>
+            <l met="5">V'là qu'i m'abandonne.</l>
+            <l met="5">C'départ-là m'chiffonne:</l>
+            <l met="5">Queu souleur ça m'donne</l>
+            <l met="2">Déjà!</l>
+            <l met="2">Quoi donc?</l>
+            <l met="5">Dans l'temps que j'l'écoute,</l>
+            <l met="5">I'm'fait banquecroute!</l>
+            <l met="7">J'crois que mon cœur a l'frisson.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#saint_alexis">Saint-Alexis</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="6">Mais, mais, où c'qu'est mon frère?</l>
+            <l met="6">Où c'qu'est mon frèr' Cadet?</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 14</head>
+        <stage type="characters">Fanchonnette, Cadet</stage>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_la_belle_amarante">C'est la belle Amarante</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="6">Viens donc! Tu n'te press' guère...</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="5">J'suis tout sturpéfait.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="5">Ratourne en errière.</l>
+          <l met="5">Cours vite!</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="5">Quoi qu'c'est?</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="5">Cours après Jérôme,</l>
+          <l met="5">Va, j'ons ben du r'gret.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="5">Ba! ton r'gret sert comme</l>
+          <l met="5">D'un clou à soufflet.</l>
+        </sp>
+        <pb n="125"/>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_mort_de_mon_cher_pere">La mort de mon cher père</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="6">Voyant qu'i' n'peut pas t'plaire,</l>
+            <l met="6">Y mont' sur son bacheau.</l>
+            <l met="6">La tête la première,</l>
+            <l met="6">Paf, y s'jette dans l'iau.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="6">Quoi? l'soutien de ma vie</l>
+          <l met="6">S'ra mangé des poissons!</l>
+          <l met="6">Ah! tout mon sang charrie</l>
+          <l met="6">Car j'y sens des glaçons.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+        </sp>
+        <spGrp who="#cadet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#zephire_me_connait_je_crois">Zéphire me connaît, je crois</title>
+            </desc>
+          </head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="8">Va! Laiss' ça là.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="8">Est-c'que je l'peux?</l>
+          <l met="8">Si l'on n'rapport' mon amoureux,</l>
+          <l met="5">J'suis prête, j'suis prête,</l>
+          <l met="8">Prête à m'arracher tous les ch'veux</l>
+          <l met="2">D'la tête.</l>
+        </sp>
+        <pb n="126"/>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#savez_vous_bien_jeune_tendron">Savez-vous bien, jeune tendron</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="4">Mais, mais, j'veux l'voir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="4">L'roi dit, j'voulons.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="8">Ah! j' t'en supplie avec prière.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="8">I' n'est pus temps.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="8">Cadet, allons.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="8">V'là c'que c'est que d'fair' trop la fière.</l>
+          <l met="8">Fallait pas li bailler du r'goût.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="8">Mais, moi j'veux l'voir encor un coup,</l>
+          <l met="4">Encor un coup,</l>
+          <l met="4">Encor un coup.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="8">Va donc l'voir aux filets d'Saint-Cloud.</l>
+        </sp>
+        <pb n="127"/>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#en_ete_comme_en_hiver">En été, comme en hiver</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="7">J'ai donc perdu mon amant!</l>
+            <l met="7">Ah! queu peine de tourment!</l>
+            <l met="7">V'là qu'ma dureté d'vient tendre:</l>
+            <l met="7">À quoi sert c'te tenderté?</l>
+            <l met="7">Pour tout d'bon, je n'peux li rendre</l>
+            <l met="7">C'que mon semblant ya z'ôté.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tourelouribo">Tourelouribo</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="7">J'm'en va l'suivre dans c'voyage.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <stage>la raillant</stage>
+          <l met="7">Oh! Oh! Tourelouribo.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="7">Quoi? chien, tu ris quand j'enrage!</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <stage>riant</stage>
+          <l met="7">Oh, oh, tourelouribo.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <stage>furieuse</stage>
+          <l met="7">I' faut que j'te dévisage.</l>
+        </sp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="7">Oh, oh, tourelouribo.</l>
+        </sp>
+        <pb n="128"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 15</head>
+        <stage type="characters">Fanchonnette, Cadet, Jérôme</stage>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bel_oiseau_maman">Ah! le bel oiseau, maman</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="7">Ah! Jérôme n'est pas mort!</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="8">Peut-on mourir, quand on vous aime?</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="7">Ah! Jérôme n'est pas mort.</l>
+          <l met="7">Mais, mais, c'est pire qu'un sort!</l>
+          <l met="7">Qui donc qui vous a r'pêché?</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="7">Bon! c'n'était qu'un startagème.</l>
+          <l met="7">Cadet, d'mon amour touché</l>
+          <l met="7">A, pargué, bien joué son thème.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="7">Cadet, tu m'attrapais donc?</l>
+          <l met="7">Attrap'-moi toujours de d'même.</l>
+          <l met="7">Cadet, tu m'attrapais donc?</l>
+          <l met="8">Ah! j't'accorde ben ton pardon.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sont_les_filles_du_gros_caillou">Sont les filles du Gros Caillou</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="7">C'pardon-là m'annonce, morgué,</l>
+            <l met="5">Que vous v'là d'moiquié</l>
+            <l met="5">Dans mon amiquié.</l>
+          </sp>
+        </spGrp>
+        <pb n="129"/>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="5">Ah! pour ça, vantez.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="5">Vous m'ressurcitez.</l>
+        </sp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="6">C'est à moi qu'c'est ben doux,</l>
+          <l met="6">Car, tenez, entre nous,</l>
+          <l met="7">J'étais pus morte que vous.</l>
+        </sp>
+        <spGrp who="#fanchonnette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fanchon_la_belle">Fanchon la belle</title>
+            </desc>
+          </head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="4">I faut, mon frère,</l>
+            <l met="6">Aller tout de ce pas</l>
+            <l met="4">Dire ma ch'mère.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cadet">
+          <speaker>Cadet</speaker>
+          <l met="4">All' n'l'ignore pas,</l>
+          <l met="6">Alle consent à tout.</l>
+        </sp>
+        <pb n="130"/>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <stage>transportée</stage>
+          <l met="5">Ah! mon cher p'tit frère,</l>
+          <l met="6">Faut que j'te saute au cou.</l>
+        </sp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="6">Parguienne, et moi itou.</l>
+        </sp>
+        <spGrp who="#jerome">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#accompagne_de_plusieurs_autres">Accompagné de plusieurs autres</title>
+            </desc>
+          </head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="8">Messieurs, j'allons nous réjouir</l>
+            <l met="8">Mais c'est à l'ombre d'vot' plaisir:</l>
+            <l met="8">Des vôtres dépendent les nôtres.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="8">Si j'ons pu vous plaire un p'tit brin,</l>
+          <l met="8">Lâchez-nous un pauvr' p'tit coup d'main.</l>
+        </sp>
+        <stage>Frappant dans la main.</stage>
+        <sp who="#fanchonnette">
+          <speaker>Fanchonnette</speaker>
+          <l met="9">Y accompagné de plusieurs autres.</l>
+        </sp>
+        <stage type="musical_indication">Duo</stage>
+        <spGrp>
+          <caption>Jérôme et fanchonnette</caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_pierre_j_etais_morte_sans_vous">Ah! Pierre, j'étais morte sans vous</title>
+            </desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="6">Quand l'amour fait d'l'ouvrage,</l>
+            <l met="6">Dam, c'est d'l'ouvrag' ben fait.</l>
+            <l met="6">S'il commenc' par l'orage,</l>
+            <l met="6">Il finit par l'bienfait.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jerome">
+          <speaker>Jérôme</speaker>
+          <l met="9">Eh! Cadet, il y a pied là au moins.</l>
+          <l met="9">Je nage dans un plasir parfait.</l>
+        </sp>
+        <pb n="132"/>
+        <stage type="musical_indication">Ronde</stage>
+        <spGrp>
+          <head type="vaudeville-chorus">0</head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="7">L'amour a, sur la rivière,</l>
+            <l met="7">Bien des droits comm' de raison.</l>
+            <l met="7">Mais c'est à la Guernouillère</l>
+            <l met="7">Qu'il a plus de r'venant bon.</l>
+            <l met="7">Il y montre la magnière</l>
+            <l met="7">Comm' faut amorcer l'poisson.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">1</head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="7">Avec sa jeun' parsonnière,</l>
+            <l met="7">L'autre jour un vieux barbon</l>
+            <l met="7">Fut une journée entière</l>
+            <l met="7">Sans pouvoir prendre un goujon.</l>
+            <l met="7">Il n'savait pas la magnière</l>
+            <l met="7">Comm' faut amorcer l'poisson.</l>
+          </sp>
+        </spGrp>
+        <pb n="133"/>
+        <spGrp>
+          <head type="vaudeville-chorus">2</head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="7">Un brav' guerrier à la guerre,</l>
+            <l met="7">Est sûr de son mousqueton;</l>
+            <l met="7">Et de r'tour sur la rivière,</l>
+            <l met="7">Il est sûr de son ham'çon.</l>
+            <l met="7">Dam', il entend la magnière</l>
+            <l met="7">Comm' faut amorcer l'poisson.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">3</head>
+          <sp who="#jerome">
+            <speaker>Jérôme</speaker>
+            <l met="7">On ne pêche dans l'eau claire</l>
+            <l met="7">Qu'du fretin, du barbillon,</l>
+            <l met="7">C'est c'qui fait qu'les gens d'affaire</l>
+            <l met="7">Pêchent en eau trouble, et v'là l'bon.</l>
+            <l met="7">Ils attrappont la magnière</l>
+            <l met="7">D'endormir le gros poisson.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">4</head>
+          <sp who="#cadet">
+            <speaker>Cadet</speaker>
+            <l met="7">Une beauté riche et fière,</l>
+            <l met="7">N'trouvant aucun parti bon,</l>
+            <l met="7">Tombit toute la première</l>
+            <l met="7">Dans les filets d'un Gascon.</l>
+            <l met="7">La Garonne est une rivière</l>
+            <l met="7">Où se prend l'meilleur poisson.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">5</head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="7">Lise, autrefois marinière,</l>
+            <l met="7">Est grosse dame, dit-on.</l>
+            <l met="7">C'qui d'vrait la rendre la darnière</l>
+            <l met="7">Lui donn' du bien et du r'nom:</l>
+            <l met="7">Ça s'appell' dans une ornière</l>
+            <l met="7">Savoir attirer l'poisson.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">6</head>
+          <sp who="#fanchonnette">
+            <speaker>Fanchonnette</speaker>
+            <l met="7">Heureux qui peut satisfaire</l>
+            <l met="7">Vot' goût de toute façon!</l>
+            <l met="7">Vot' bonn' grâc' nous est plus chère</l>
+            <l met="7">Qu'un bateau plein d'esturgeon:</l>
+            <l met="7">Le seul désir de vous plaire</l>
+            <l met="7">S'ra toujours notre aviron.</l>
+          </sp>
+        </spGrp>
+        <stage>Au parterre.</stage>
+        <pb n="134"/>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

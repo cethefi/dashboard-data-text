@@ -1,0 +1,756 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="les_cousins_et_cousines">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Les Cousins et cousines</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Anonyme</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Rousseau</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BnF ms. fr. 9260</bibl>
+        <bibl type="intermediarySource">P. Beaucé</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="lulu" sex="UNKNOWN">
+            <persName>Lulu</persName>
+          </person>
+          <person xml:id="legrave" sex="UNKNOWN">
+            <persName>Le grave</persName>
+          </person>
+          <person xml:id="legrand" sex="UNKNOWN">
+            <persName>Le grand</persName>
+          </person>
+          <person xml:id="ungarcon" sex="UNKNOWN">
+            <persName>Un garçon</persName>
+          </person>
+          <person xml:id="unefille" sex="UNKNOWN">
+            <persName>Une fille</persName>
+          </person>
+          <person xml:id="lesfilles" sex="UNKNOWN">
+            <persName>Les filles</persName>
+          </person>
+          <person xml:id="lesgarcons" sex="UNKNOWN">
+            <persName>Les garçons</persName>
+          </person>
+          <person xml:id="legarcon" sex="UNKNOWN">
+            <persName>Le garçon</persName>
+          </person>
+          <person xml:id="cinquantegarcons" sex="UNKNOWN">
+            <persName>Les cinquante garcons</persName>
+          </person>
+          <person xml:id="le_grave" sex="UNKNOWN">
+            <persName>Le Grave</persName>
+          </person>
+          <person xml:id="les_quarante_neufs_autres_filles" sex="UNKNOWN">
+            <persName>Les quarante-neufs autres filles</persName>
+          </person>
+          <person xml:id="le_grand" sex="UNKNOWN">
+            <persName>Le Grand</persName>
+          </person>
+          <person xml:id="les_quarante_neufs_autres_garcons" sex="UNKNOWN">
+            <persName>Les quarante-neufs autres garçons</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Comédie en cinq actes, parodie des<emph>Danaïdes</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q192881</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#le_grave">Le Grave</role>
+          <roleDesc>père de cinquante filles</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#lulu">Lulu</role>
+          <roleDesc>aînée des filles</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#les_quarante_neufs_autres_filles">Les quarante-neufs autres filles</role>
+          <roleDesc>en chœur</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#le_grand">Le Grand</role>
+          <roleDesc>aîné des cinquante neveux de Le Grave</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#les_quarante_neufs_autres_garcons">Les quarante-neufs autres garçons</role>
+          <roleDesc>en chœur</roleDesc>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène se passe à la campagne, dans un château sur les bords de la mer.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="act">
+        <head>ACTE 1</head>
+        <stage type="location">Le théâtre représente une salle.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Le Grave<stage>entrant avec précipitation</stage>
+          </stage>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Mes filles, mes chères filles, venez, accourez! C'est moi, c'est votre père qui vous appelle.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Le Grave, les cinquante filles</stage>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>J'ai une grande nouvelle à vous apprendre. Vos futurs époux, vos cinquante cousins... ils arrivent.</p>
+            <p>Du haut de ma tour, je les ai aperçus dans la plaine. Courons, volons à leur rencontre! Mes filles, suivez-moi, suivez votre père: il vous commande, obéissez. Ah çà! Mais où logerons-nous ces cinquante drôles? Je n'y pensais plus; dans vos lits. Allons, sortons.</p>
+          </sp>
+          <sp who="#cinquantegarcons">
+            <speaker>Les cinquante garcons</speaker>
+            <stage>entrent aussitôt en s'écriant</stage>
+            <p>Bonjour, tonton. Bonjour, cousines.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Le Grave, les cinquante filles, les cinquante garçons</stage>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Eh, vous voilà! Comment vous portez-vous? Et le</p>
+            <p>papa, comment va-t-il?</p>
+          </sp>
+          <sp who="#legrand">
+            <speaker>Le grand</speaker>
+            <stage>lui donnant une lettre</stage>
+            <p>Voici une lettre de sa part.</p>
+          </sp>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Donne. En attendant, embrassez vos cousines.</p>
+          </sp>
+          <sp who="#lesgarcons">
+            <speaker>Les garçons</speaker>
+            <p>Très volontiers.</p>
+          </sp>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <stage>lisant sa lettre tout haut</stage>
+            <p>
+              <emph>Je t'envoie, mon très cher frère, mes cinquante fils uniques. Je te prie d'en avoir soin comme de tes propres enfants. Considère que ce sont mes seuls rejetons, toutes mes espérances. Si tu juges à propos de leur faire épouser tes cinquante filles, tu le feras, comme tu voudras. N'aille pas te gêner. Adieu, mon très cher frère, je t'embrasse, oui, je t'embrasse de tout mon cœur. Post scriptum. Celui qui te remettra cette lettre, est l'aîné de tous. Il se nomme Le Grand et tu verras que ce n'est pas sans raison, car il est de belle taille. Il pourra, si tu veux, te donner la nomenclature de tous ses frères et t'appliquer leur âge et leur rang de naissance. Adieu.</emph>
+            </p>
+            <p>Le bon frère!<stage>À Le Grand.</stage>C'est donc toi qui es l'aîné?</p>
+          </sp>
+          <sp who="#legrand">
+            <speaker>Le grand</speaker>
+            <p>Oui, mon tonton, prêt à vous faire mes obéissances.</p>
+          </sp>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Je m'en étais douté. C'est aussi pour cela que je me suis adressé à toi pour parler, par préférence à tout autre. Je l'ai aussi connu à ton esprit et je suis sûr que tu as, comme dit le proverbe, emporté tout l'esprit de la maison. Mais parlons de choses plus intéressantes. Il faut vous marier mes chers enfants! Oui, mariez-vous. Mes cinquante filles, épousez vos cinquante cousins! Que l'aîné prenne l'aînée, le cadet, la cadette, ainsi de suite jusqu'aux cinquantièmes. Le voulez-vous? Que les garçons répondent les premiers.</p>
+          </sp>
+          <sp who="#lesgarcons">
+            <speaker>Les garçons</speaker>
+            <p>Oui.</p>
+          </sp>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Et vous, mes chères filles, parlez, le voulez-vous?</p>
+          </sp>
+          <sp who="#lesfilles">
+            <speaker>Les filles</speaker>
+            <p>Oui.</p>
+          </sp>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Eh bien, mettez-vous à genoux que je vous bénisse.<stage>Les garçons et filles s'inclinent.</stage>Allez, soyez heureux.<stage>À Le Grand.</stage>Tiens, toi, grand garçon, voilà mon bijou, mon trésor, ma fille aînée, ma Lulu.</p>
+            <p>Je te la recommande. Prends-y bien garde.</p>
+          </sp>
+          <sp who="#legrand">
+            <speaker>Le grand</speaker>
+            <p>Ah! Ne portez pas peine, tonton. Et toi, tu m'aimeras bien, cousine, ma femme?</p>
+          </sp>
+          <sp who="#lulu">
+            <speaker>Lulu</speaker>
+            <p>De tout mon cœur, cousin, mon mari.</p>
+          </sp>
+          <sp who="#legrand">
+            <speaker>Le grand</speaker>
+            <p>Allons, chantons.</p>
+          </sp>
+          <sp who="#lulu">
+            <speaker>Lulu</speaker>
+            <p>Il a raison, c'est bien dit.</p>
+          </sp>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Tous ensemble, ça sera plus gai.</p>
+          </sp>
+          <spGrp>
+            <caption>Tous en chœur</caption>
+          </spGrp>
+          <spGrp who="#ensemble">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#la_meuniere">La meunière</title>
+              </desc>
+            </head>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="8">Oui, nous jurons de nous aimer</l>
+              <l met="5">Et de vivre ensemble</l>
+              <l met="8">Quand l'amour a su nous charmer,</l>
+              <l met="8">Il saura bien nous enflammer!</l>
+              <l met="5">Sa main nous rassemble</l>
+              <l met="5">Pour nous enfermer.</l>
+            </sp>
+          </spGrp>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Quarante-neufs filles et quarante-neufs garçons</stage>
+          <sp who="#unefille">
+            <speaker>Une fille</speaker>
+            <p>Nous n'avons pas encore dansé et cela est nécessaire pour bien consommer le mariage.</p>
+          </sp>
+          <sp who="#ungarcon">
+            <speaker>Un garçon</speaker>
+            <p>Oui, parce que la danse en agitant le corps excite les esprits animaux, les nerfs optiques, les fibres tendantes, et ainsi en chaleur, le marié a plus d'ardeur pour vaquer à ses affaires.</p>
+          </sp>
+          <sp who="#unefille">
+            <speaker>Une fille</speaker>
+            <p>Mais nous avons déjà dansé.</p>
+          </sp>
+          <sp who="#ungarcon">
+            <speaker>Un garçon</speaker>
+            <p>Un peu, très peu; ce n'est pas assez.</p>
+          </sp>
+          <sp who="#unefille">
+            <speaker>Une fille</speaker>
+            <p>Et, d'ailleurs, que ferions-nous?</p>
+          </sp>
+          <sp who="#ungarcon">
+            <speaker>Un garçon</speaker>
+            <p>C'est vrai. Faisons comme à l'opéra. Commence-t-on à s'ennuyer, on danse. N'a-t-on plus rien à dire, on danse; ne sait-on que faire, on danse.</p>
+          </sp>
+          <sp who="#unefille">
+            <speaker>Une fille</speaker>
+            <p>Et pour s'ennuyer, qu'y fait-on?</p>
+          </sp>
+          <sp who="#ungarcon">
+            <speaker>Un garçon</speaker>
+            <p>On danse.</p>
+          </sp>
+          <sp who="#unefille">
+            <speaker>Une fille</speaker>
+            <p>Que fait-on encore?</p>
+          </sp>
+          <sp who="#ungarcon">
+            <speaker>Un garçon</speaker>
+            <p>On danse.</p>
+          </sp>
+          <sp who="#unefille">
+            <speaker>Une fille</speaker>
+            <p>Et bien, dansons. Ce sera beau, puisque nous ferons comme à l'Opéra.</p>
+          </sp>
+          <sp who="#ungarcon">
+            <speaker>Un garçon</speaker>
+            <p>Oui, mais pour danser, il nous faut des instruments et où les prendrons-nous? Ah, voilà papa, notre frère et notre sœur.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Le Grave, Le Grand, Lulu et les précédents</stage>
+          <sp who="#unefille">
+            <speaker>Une fille</speaker>
+            <p>Pourquoi, petit papa, venez-vous si tard?</p>
+          </sp>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Pourquoi? Pour vous donner le temps de finir la première scène et j'arrive pour commencer la seconde.</p>
+          </sp>
+          <sp who="#ungarcon">
+            <speaker>Un garçon</speaker>
+            <p>C'est arrivé fort à propos; un peu plus tard vous l'auriez trouvée faite, car nous allions envoyer quelqu'un nous quérir les ménestriers; et vous savez</p>
+            <p>que dans une pièce, l'entrée, la sortie, tout compte.</p>
+          </sp>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <stage>le regardant</stage>
+            <p>Ah! Il n'est pas si sot que je croyais. Eh bien, mes enfants, dansez, que je ne vous gêne pas.</p>
+          </sp>
+          <sp who="#unefille">
+            <speaker>Une fille</speaker>
+            <stage>à un garçon</stage>
+            <p>Va-t-en donc chercher les violons.</p>
+          </sp>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Aussi bien ça fera une autre scène. Vous une, moi une autre, lui la troisième, les violons la quatrième... En voilà bien assez pour un acte. Cours et reviens vite, car si tu restais longtemps, nous nous trouverions embarrassés.</p>
+          </sp>
+          <sp who="#ungarcon">
+            <speaker>Un garçon</speaker>
+            <p>Je vais mettre mes sabots, mes jambes à mon col.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Les précédents<stage>excepté un garçon</stage>
+          </stage>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Ah çà! Qu'allons nous devenir? Si nous nous rafraîchissions, nous danserions mieux. Allons buvons un coup.</p>
+          </sp>
+          <sp who="#unefille">
+            <speaker>Une fille</speaker>
+            <stage>donnant des verres à pied</stage>
+            <p>Tenez, faites-en des avocats.</p>
+          </sp>
+          <sp who="#ungarcon">
+            <speaker>Un garçon</speaker>
+            <p>Approchez; je donne de la liqueur visqueuse en abondance.</p>
+          </sp>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <stage>à lulu</stage>
+            <p>Et toi, si tu chantais un peu. Voyons comme à l'Opéra.</p>
+          </sp>
+          <sp who="#lulu">
+            <speaker>Lulu</speaker>
+          </sp>
+          <spGrp who="#lulu">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">Gagne petit,tiré du <title ref="#remouleur">Rémouleur</title> ()</desc>
+            </head>
+            <sp who="#lulu">
+              <speaker>Lulu</speaker>
+              <l met="5">Je me félicite</l>
+              <l met="5">D'avoir un époux</l>
+              <l met="5">Et mon cœur palpite,</l>
+              <l met="5">D'un bonheur si doux.</l>
+              <l met="5">Je brûle, je brûle</l>
+              <l met="5">De la tête au pied.</l>
+              <l met="5">Et je suis crédule</l>
+              <l met="5">Du talon au nez.</l>
+            </sp>
+          </spGrp>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Bravo! Applaudissons, puisque personne ne veut applaudir. À vous deux à présent, chantez-nous quelque chose de grand, que vous n'entendiez pas, que personne n'entende.</p>
+          </sp>
+          <stage type="musical_indication">Duo</stage>
+          <spGrp>
+            <caption>Lulu, le grand<stage>au public</stage>
+            </caption>
+          </spGrp>
+          <spGrp who="#ensemble">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#malbrough">Malbrough</title>
+              </desc>
+            </head>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="6">Pour vous qu'ici rassemble,</l>
+              <l met="9">Le désir, le désir qui contemple,</l>
+              <l met="6">Écoutez tous ensemble</l>
+              <l met="6">L'amour et l'amitié</l>
+              <l met="6">Qui tous deux de moitié</l>
+              <l met="6">Vous font dans cette fête,</l>
+              <l met="9">Que pour nous, que pour nous on apprête,</l>
+              <l met="6">Oublier tout le reste</l>
+              <l met="6">Hormis les mariés.</l>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Les précédents, le garçon<stage>accourant avec les ménestriers</stage>
+          </stage>
+          <sp who="#legarcon">
+            <speaker>Le garçon</speaker>
+            <p>Voilà les ménestriers.</p>
+          </sp>
+          <spGrp>
+            <caption>Les filles et les garçons</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <p>Ah bon, dansons, dansons, amusons-nous.</p>
+            </sp>
+          </spGrp>
+          <stage>On danse.</stage>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Je vous laisse dansez et puis retirez-vous.</p>
+          </sp>
+          <stage>On danse.</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 3</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <stage>entrant avec ses filles</stage>
+            <p>Mes filles, vous êtes mariées; et ce n'est pas au badinage! Vous n'êtes plus en ma puissance, vous dépendez de vos époux. Depuis la tête jusqu'aux pieds, tout ce que vous possédez est le bien de ceux à qui vous avez engagé votre foi. Aussi, il vous faudra faire tout ce que vos maris voudront; ou au moins vous laisser faire.</p>
+          </sp>
+          <sp who="#lesfilles">
+            <speaker>Les filles</speaker>
+            <stage>exceptée Lulu</stage>
+            <p>Nous le jurons.</p>
+          </sp>
+          <sp who="#lulu">
+            <speaker>Lulu</speaker>
+            <p>Et non pas moi.</p>
+          </sp>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <stage>à part</stage>
+            <p>Cela ne plait pas à Lulu. Elle est chagrine, il faut la consoler.<stage>Haut.</stage>Allez mes filles,</p>
+            <p>allez-vous-en trouver vos maris. Toi Lulu, arrête; j'ai quelque chose à te dire.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Le Grave, Lulu</stage>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Tu boudes, tu pleures! Qu'as-tu, qu'as-tu, ma chère fille?</p>
+          </sp>
+          <sp who="#lulu">
+            <speaker>Lulu</speaker>
+            <p>Cela n'est-il pas chagrinant. Voilà qu'il me faudra coucher avec un homme! Et qui plus est lui permettre tout ce qu'il voudra. Et non, mon père, je n'aurai jamais le courage de me déshabiller devant Le Grand.</p>
+          </sp>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Ce n'est que ça? Va, la pudeur t'aura bientôt passée! C'est l'affaire d'un quart d'heure pour l'enlever ta fleur virginale et puis plus de rougeur. Au reste, je ne te presse pas. Attends demain, si tu veux, tes sœurs te diront tout ce qui en est et tu verras que la virilité n'est pas un monstre dont il faille s'effrayer. Adieu, ma fille, adieu. Tranquillise-toi et compte toujours sur ton père, comme sur ton ami. J'aimerais mieux coucher moi-même avec toi pour t'accoutumer, plutôt que de forcer tout de suite ton goût. Adieu, baise-moi.</p>
+          </sp>
+          <stage>Il l'embrasse et s'en va.</stage>
+          <sp who="#lulu">
+            <speaker>Lulu</speaker>
+            <stage>seule</stage>
+            <p>Tu as beau dire, beau faire, non, je coucherai jamais avec un homme. Plutôt mourir!</p>
+          </sp>
+          <stage>Elle sort.</stage>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 4</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Le Grand, Lulu</stage>
+          <sp who="#legrand">
+            <speaker>Le grand</speaker>
+          </sp>
+          <spGrp who="#legrand">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#avec_les_yeux">Avec les yeux</title>
+              </desc>
+            </head>
+            <sp who="#legrand">
+              <speaker>Le grand</speaker>
+              <l met="8">Ô tendre objet de ma tendresse,</l>
+              <l met="8">Livrez-vous donc à mes désirs.</l>
+              <l met="8">Une ardeur brûlante me presse,</l>
+              <l met="8">Venez, j'ai pour vous des plaisirs.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lulu">
+            <speaker>Lulu</speaker>
+            <l met="8">Bien obligée de votre flamme;</l>
+            <l met="8">Si j'ai froid j'irai me chauffer.</l>
+            <l met="8">Mais, oui, que le diable me damne,</l>
+            <l met="8">Si tu parviens à me toucher.</l>
+          </sp>
+          <sp who="#legrand">
+            <speaker>Le grand</speaker>
+          </sp>
+          <spGrp who="#legrand">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#mon_honneur">Mon honneur</title>
+              </desc>
+            </head>
+            <sp who="#legrand">
+              <speaker>Le grand</speaker>
+              <l met="10">Pourquoi bouder, mon aimable maîtresse,</l>
+              <l met="10">Pourquoi vouloir ainsi me chagriner?</l>
+              <l met="10">Quand dans vos yeux hélas, tout m'intéresse,</l>
+              <l met="10">Pourquoi, pourquoi... pourquoi vous m'attiner?</l>
+            </sp>
+          </spGrp>
+          <sp who="#lulu">
+            <speaker>Lulu</speaker>
+            <l met="10">Mon cher Monsieur, vous êtes bien aimable</l>
+            <l met="10">Et cependant je ne puis vous aimer.</l>
+            <l met="10">Tel est l'arrêt du destin immuable,</l>
+            <l met="10">Tous vos grands mots ne peuvent me charmer.</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Le Grace, Le Grand, Lulu</stage>
+          <sp who="#legrand">
+            <speaker>Le grand</speaker>
+            <p>Papa, vous arrivez fort à propos, votre fille ne veut pas entendre raison. Elle ne veut pas qu'on lui parle d'amour.</p>
+          </sp>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Et pourquoi cela ma fille?</p>
+          </sp>
+          <sp who="#lulu">
+            <speaker>Lulu</speaker>
+            <p>Vous le savez mon père.</p>
+          </sp>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Le grand, retire-toi pour un instant. Je vais convertir ta femme, et puis je te la renverrai humble et soumise.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Le Grave et Lulu</stage>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Eh! bien ma fille, toujours des farces; aurez-vous bientôt fini de jouer la comédie? Qu'est-ce que cela veut dire? Il faut vous soumettre. Non, partez, allez trouver votre époux. Vite, allez donc.</p>
+          </sp>
+          <sp who="#lulu">
+            <speaker>Lulu</speaker>
+            <p>Mon père!</p>
+          </sp>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Allez donc vous dis-je.</p>
+          </sp>
+          <stage>Lulu sort.</stage>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Le Grave</stage>
+          <sp who="#legrave">
+            <speaker>Le grave</speaker>
+            <p>Enfin tout est fini. Ce n'est pas peu de chose qu'un mariage de cent personnes, aussi voilà qui est fait pour longtemps et je n'y reviendrai pas si tôt. Mais je crois que je me suis assez fatigué! Il faut que je me repose. Oui, je vais me reposer. Cependant j'ai quelque chose qui m'inquiète toujours: savoir comment Lulu s'arrangera avec Le Grand. Comment? L'amour y pourvoira.</p>
+          </sp>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 5</head>
+        <stage type="location">Le théâtre représente un jardin. Le Grand est dans le fond étendu sur l'herbe.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Le Grand, Lulu</stage>
+          <sp who="#legrand">
+            <speaker>Le grand</speaker>
+          </sp>
+          <spGrp who="#legrand">
+            <head type="melody" subtype="melody">
+              <desc type="prefix">Sur l'air de</desc>
+              <desc type="title">
+                <title ref="#a_ma_tendre_musette">À ma tendre musette</title>
+              </desc>
+            </head>
+            <sp who="#legrand">
+              <speaker>Le grand</speaker>
+              <l met="6">En vain je vous adore;</l>
+              <l met="6">Mon ingrate beauté.</l>
+              <l met="6">En vain je vous implore</l>
+              <l met="6">Tu gardes ta fierté.</l>
+            </sp>
+          </spGrp>
+          <sp who="#lulu">
+            <speaker>Lulu</speaker>
+            <l met="6">J'ai dit, je le répète</l>
+            <l met="6">Que je ne puis aimer.</l>
+            <l met="6">Faites autre conquête</l>
+            <l met="6">Cessez de m'affamer!</l>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Le Grand, Lulu, les garçons et les filles</stage>
+          <sp who="#unefille">
+            <speaker>Une fille</speaker>
+            <p>La belle chose que le mariage!</p>
+          </sp>
+          <sp who="#ungarcon">
+            <speaker>Un garçon</speaker>
+            <p>N'est-ce pas?</p>
+          </sp>
+          <sp who="#unefille">
+            <speaker>Une fille</speaker>
+            <p>Oh! Pour ça oui. Rien de plus joli que ces exercices nocturnes! Oh! Je veux me marier dix fois pas jour.</p>
+          </sp>
+          <sp who="#legrand">
+            <speaker>Le grand</speaker>
+            <stage>à Lulu</stage>
+            <p>Entends-tu?</p>
+          </sp>
+          <sp who="#lulu">
+            <speaker>Lulu</speaker>
+            <p>Oui.</p>
+          </sp>
+          <sp who="#legrand">
+            <speaker>Le grand</speaker>
+            <p>Eh bien?</p>
+          </sp>
+          <sp who="#lulu">
+            <speaker>Lulu</speaker>
+            <p>Je me rends. Je me livre à ta foi. Guide mes pas dans le sentier d'amour. Le bouton et la rose, Le Grand, tout est à toi.</p>
+          </sp>
+          <sp who="#legrand">
+            <speaker>Le grand</speaker>
+            <p>Sortons. Dépêchons-nous d'arriver au point où sont tes sœurs. Viens chère amante, la force étincelle dans mes yeux; un feu divin s'empare de mes membres, la chaleur vivifiante, reproductive, ne demande plus qu'à se communiquer, se... sortons, sortons.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Les garçons et les filles</stage>
+          <sp who="#ungarcon">
+            <speaker>Un garçon</speaker>
+            <p>Il fait beau.</p>
+          </sp>
+          <sp who="#unefille">
+            <speaker>Une fille</speaker>
+            <p>Oui, mais le temps a envie de se brouiller.</p>
+          </sp>
+          <sp who="#ungarcon">
+            <speaker>Un garçon</speaker>
+            <p>Eh! vela qu'il pleut.</p>
+          </sp>
+          <sp who="#unefille">
+            <speaker>Une fille</speaker>
+            <p>Sauvons-nous!</p>
+          </sp>
+          <stage>Comme ils vont pour sortir, ils aperçoivent Le Grand couché.</stage>
+          <sp who="#ungarcon">
+            <speaker>Un garçon</speaker>
+            <p>Mais vela, papa qui dort et d'un bon appétit.</p>
+          </sp>
+          <sp who="#unefille">
+            <speaker>Une fille</speaker>
+            <p>Que faire?</p>
+          </sp>
+          <sp who="#ungarcon">
+            <speaker>Un garçon</speaker>
+            <p>Dansons.</p>
+          </sp>
+          <stage>On danse.</stage>
+          <sp who="#ungarcon">
+            <speaker>Un garçon</speaker>
+            <stage>au public</stage>
+            <p>Mesdames et Messieurs, telle est à peu près la marche de l'opéra qui attire tant de monde. Mariage, danse, serments, rébellion, et pluie; voilà ce qui a donné matière à cinq actes terribles, horribles. Nous n'avons pas cru pouvoir faire mieux pour parodier le sujet que de le présenter tel qu'il est, nous ayant paru assez risible par lui-même! Heureux, cent fois heureux, trop heureux, Mesdames et Messieurs, si cherchant à vous amuser nous avons le bonheur de vous plaire et si vous vaquez, comptez pour quelque chose notre zèle et notre respect.</p>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

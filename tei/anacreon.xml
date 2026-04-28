@@ -1,0 +1,2461 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="anacreon">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Anacréon</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Michel-Jean Sedaine</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>J. Coignard</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Sedaine,<emph>Recueil de poésies, seconde édition revue et augmentée des pièces faites depuis la première, et de plusieurs airs notés</emph>, Paris, Duchesne, 1760, seconde partie, p. 161-216.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="anacreon" sex="UNKNOWN">
+            <persName>Anacréon</persName>
+          </person>
+          <person xml:id="philenos" sex="UNKNOWN">
+            <persName>Philenos</persName>
+          </person>
+          <person xml:id="lamour" sex="UNKNOWN">
+            <persName>L'amour</persName>
+          </person>
+          <person xml:id="cephise" sex="UNKNOWN">
+            <persName>Cephise</persName>
+          </person>
+          <person xml:id="amie" sex="UNKNOWN">
+            <persName>Une amie</persName>
+          </person>
+          <person xml:id="ami" sex="UNKNOWN">
+            <persName>Un ami</persName>
+          </person>
+          <person xml:id="l_amour" sex="UNKNOWN">
+            <persName>L'Amour</persName>
+          </person>
+          <person xml:id="amis_d_anacreon" sex="UNKNOWN">
+            <persName>Amis d'Anacréon</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Pastorale héroïque</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#anacreon">Anacréon</role>
+        </castItem>
+        <castItem>
+          <role ana="#philenos">Philenos</role>
+        </castItem>
+        <castItem>
+          <role ana="#l_amour">L'Amour</role>
+        </castItem>
+        <castItem>
+          <role ana="#cephise">Céphise</role>
+        </castItem>
+        <castItem>
+          <role ana="#amis_d_anacreon">Amis d'Anacréon</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <div type="avertissement">
+          <head>Avertissement</head>
+        </div>
+        <div type="avertissement">
+          <head>Cette petite pièce a été faite en 1754, pour la fête de M.L.B et représentée la même année à sa maison de campagne. J'ai été confirmé dans l'idée que j'avais dès lors, que les applaudissements d'une société, même choisie, en sont pas des cautions suffisantes de ceux du public. J'ai donné quelques années après cette pièce sur le Théâtre Italien. Elle n'a eu aucun succès. Je la fais imprimer, en partie pour donner à ce second volume une grosseur suffisante. J'ai fait mettre en lettres italiques les couplets, et même les scènes que les comédiens ont supprimés pour la facilité de la représentation. Je les ai remis pour l'intelligence de la pièce, et pour la terminer comme j'avais cru qu'elle devait l'être.</head>
+          <stage>À Madame L.C.</stage>
+        </div>
+        <stage type="musical_indication">Envoi</stage>
+        <sp who="#None">
+          <speaker/>
+          <l met="8">C'est malgré moi que mon ouvrage</l>
+          <l met="8">À vos yeux s'expose ainsi nu,</l>
+          <l met="8">Pour captiver votre suffrage.</l>
+          <l met="8">Ah! que ne l'avez-vous connu</l>
+          <l met="8">Représenté dans un village,</l>
+          <l met="8">Où celui que j'aime est venu!</l>
+          <l met="8">Chassé, qui força la critique</l>
+          <l met="8">De l'admirer de tous les temps,</l>
+          <l met="8">Par cette prestance héroïque,</l>
+          <l met="8">Ce geste, cette voix unique,</l>
+          <l met="8">D'Anacréon, ce sage antique,</l>
+          <l met="8">A bien voulu rendre les chants.</l>
+          <l met="8">Dieux! que ces sons étaient touchants,</l>
+          <l met="8">Et bien dignes de la bergère</l>
+          <l met="8">Qui répondait à ses accents.</l>
+          <l met="8">Digne, elle-même, de sa mère,</l>
+          <l met="8">Son plus gros défaut est seize ans,</l>
+          <l met="8">Mettons dix-sept car le temps coule.</l>
+          <l met="8">Les Ris et les Grâces en foule</l>
+          <l met="8">Viennent couronner son printemps.</l>
+          <l met="8">Imaginez mille agréments,</l>
+          <l met="8">Dans une figure charmante.</l>
+          <l met="8">Qui fit l'Amour? C'était l'Amour,</l>
+          <l met="8">Ou son portrait que je ne mente,</l>
+          <l met="8">Ses yeux méditaient quelque tour.</l>
+          <l met="8">Je l'ai vu, sa bouche friponne,</l>
+          <l met="8">Baisait sa bergère mignonne,</l>
+          <l met="8">Sur ses petits pieds se haussant,</l>
+          <l met="8">De l'ai ingénu d'un enfant</l>
+          <l met="8">Qui se pend au cou de sa bonne.</l>
+          <l met="8">C..., G..., G...,</l>
+          <l met="8">Auraient mis un jeu plus malin,</l>
+          <l met="8">Une aisance que l'habitude,</l>
+          <l met="8">Fruit tardif d'une longue étude,</l>
+          <l met="8">Place dans un coup d'œil certain.</l>
+          <l met="8">Mais la candeur, mais la décence,</l>
+          <l met="8">Cette tendre naïveté,</l>
+          <l met="8">Cette aimable simplicité,</l>
+          <l met="8">Tous les charmes de l'innocence,</l>
+          <l met="8">Compagne des cœurs généreux,</l>
+          <l met="8">N'auraient point embelli leurs jeux.</l>
+          <l met="8">Chargés et de rouge et de plâtre,</l>
+          <l met="8">Souvent les minois de théâtre,</l>
+          <l met="8">En dépit d'eux, rendent avec art</l>
+          <l met="8">Aussi visible que leur fard.</l>
+          <l met="8">Mais ici c'était la nature</l>
+          <l met="8">Toute neuve, et sans imposture.</l>
+          <l met="8">Vous connaissez ma vanité,</l>
+          <l met="8">L'empire qu'elle a sur mon âme.</l>
+          <l met="8">Jugez un peu des traits de flamme</l>
+          <l met="8">Dont mon cœur était agité.</l>
+          <l met="8">Je suis encor tout enchanté</l>
+          <l met="8">De mes vers, et de ma fortune.</l>
+          <l met="8">Oui, rien ne pourrait l'augmenter,</l>
+          <l met="8">S'il ne m'en restait encor une,</l>
+          <l met="8">Celle de vous les présenter.</l>
+        </sp>
+      </prologue>
+      <pb n="165"/>
+      <pb n="166"/>
+      <pb n="167"/>
+      <pb n="168"/>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Anacréon et Philenos</stage>
+        <sp who="#philenos">
+          <speaker>Philenos</speaker>
+        </sp>
+        <spGrp who="#philenos">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_je_ne_ferai_pas">Non, je ne ferai pas [ce qu'on veut que je fasse]</title>
+            </desc>
+          </head>
+          <sp who="#philenos">
+            <speaker>Philenos</speaker>
+            <l met="12">Quoi! vous, Anacréon, vous l'honneur de la Grèce,</l>
+            <l met="12">Vous qui chantiez si bien le dieu de la tendresse,</l>
+            <l met="12">Vous nous abandonnez pour rester en ces lieux,</l>
+            <l met="12">Éloigné de Samos, des plaisirs, et des jeux.</l>
+          </sp>
+        </spGrp>
+        <pb n="170"/>
+        <spGrp who="#philenos">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#du_haut_en_bas">Du haut en bas</title>
+            </desc>
+          </head>
+          <sp who="#philenos">
+            <speaker>Philenos</speaker>
+            <l met="4">
+              <emph>N'en doutez pas,</emph>
+            </l>
+            <l met="8">
+              <emph>C'est une erreur qui vous abuse,</emph>
+            </l>
+            <l met="4">
+              <emph>N'en doutez pas.</emph>
+            </l>
+            <l met="8">
+              <emph>Oui vous reviendrez sur vos pas.</emph>
+            </l>
+            <l met="8">
+              <emph>Au caprice qui vous amuse</emph>
+            </l>
+            <l met="8">
+              <emph>Vous ne pouvez donner d'excuse,</emph>
+            </l>
+            <l met="4">
+              <emph>N'en doutez pas.</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#qu_ils_sont_doux_bouteille_ma_mie">Qu'ils sont doux, bouteille, ma mie</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="8">En ces lieux je passe la vie</l>
+            <l met="8">Loin du vain tumulte des cours.</l>
+            <l met="10">J'ai trop longtemps encensé les amours</l>
+            <l met="8">Pour suivre encor cette folie.</l>
+            <l met="7">Oui, oui, ma philosophie</l>
+            <l met="6">Saura durer toujours.</l>
+          </sp>
+        </spGrp>
+        <sp who="#philenos">
+          <speaker>Philenos</speaker>
+        </sp>
+        <spGrp who="#philenos">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_faites_vous_marguerite">Que faites-vous, Marguerite</title>
+            </desc>
+          </head>
+          <sp who="#philenos">
+            <speaker>Philenos</speaker>
+            <l met="7">
+              <emph>Toujours seul avec soi-même,</emph>
+            </l>
+            <l met="7">
+              <emph>Et s'occuper à rêver</emph>
+            </l>
+            <l met="7">
+              <emph>Est le plus triste système</emph>
+            </l>
+            <l met="7">
+              <emph>Que vous avez pu trouver.</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <pb n="171"/>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_roule_aujourd_hui_dans_le_monde">Tout roule aujourd'hui dans le monde</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="8">
+              <emph>Tout ce que la nature étale</emph>
+            </l>
+            <l met="8">
+              <emph>Pour notre usage et nos plaisirs,</emph>
+            </l>
+            <l met="8">
+              <emph>Les arts, les talents, la morale</emph>
+            </l>
+            <l met="8">
+              <emph>Occupent mes plus doux loisirs.</emph>
+            </l>
+            <l met="8">
+              <emph>J'extrait ici la quintessence</emph>
+            </l>
+            <l met="8">
+              <emph>Des plantes, des fruits et des fleurs.</emph>
+            </l>
+            <l met="8">
+              <emph>J'acquiers ainsi la connaissance</emph>
+            </l>
+            <l met="8">
+              <emph>De leurs vertus, de leurs valeurs.</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#philenos">
+          <speaker>Philenos</speaker>
+        </sp>
+        <spGrp who="#philenos">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Monsieur le Prévôt des marchands</title>
+            </desc>
+          </head>
+          <sp who="#philenos">
+            <speaker>Philenos</speaker>
+            <l met="8">
+              <emph>Cet amusement est fort bon,</emph>
+            </l>
+            <l met="8">
+              <emph>Et bien digne d'Anacréon.</emph>
+            </l>
+            <l met="8">
+              <emph>Mais la morale et la nature</emph>
+            </l>
+            <l met="8">
+              <emph>Ne pourront toujours vous flatter.</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+          <l met="8">
+            <emph>Moi, j'en suis certain, et j'en jure.</emph>
+          </l>
+          <l met="8">
+            <emph>Mon ami, tu peux y compter.</emph>
+          </l>
+        </sp>
+        <sp who="#philenos">
+          <speaker>Philenos</speaker>
+        </sp>
+        <spGrp who="#philenos">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pour_la_baronne">Pour la Baronne</title>
+            </desc>
+          </head>
+          <sp who="#philenos">
+            <speaker>Philenos</speaker>
+            <l met="4">Pour un cœur tendre</l>
+            <l met="8">Tous les serments sont indiscrets.</l>
+            <l met="8">En vain il voudrait s'en défendre,</l>
+            <l met="8">L'Amour garde toujours des traits</l>
+            <l met="4">Pour un cœur tendre.</l>
+          </sp>
+        </spGrp>
+        <pb n="172"/>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#amants_quelle_est_votre_faiblesse">Amants, quelle est votre faiblesse</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="8">Le dieu d'Amour entre sans peine</l>
+            <l met="9">Dans tous les cœurs qui brulent d'aimer.</l>
+            <l met="8">Mais lorsqu'on méprise sa chaîne,</l>
+            <l met="9">Vainement il veut nous enflammer.</l>
+            <l met="8">Un cœur qui soupire en secret,</l>
+            <l met="5">Qui sans l'oser dire,</l>
+            <l met="2">Désire</l>
+            <l met="2">Son trait.</l>
+            <l met="5">Qui de son empire</l>
+            <l met="5">Fait un beau portrait</l>
+            <l met="5">Au premier objet</l>
+            <l met="6">S'enflamme et se soumet.</l>
+            <l met="8">Le dieu d'Amour entre sans peine</l>
+            <l met="9">Dans tous les cœurs qui brulent d'aimer.</l>
+            <l met="8">Mais lorsqu'on méprise sa chaîne,</l>
+            <l met="9">Vainement il veut nous enflammer.</l>
+          </sp>
+        </spGrp>
+        <sp who="#philenos">
+          <speaker>Philenos</speaker>
+        </sp>
+        <spGrp who="#philenos">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_je_regrette">Que je regrette mon amant</title>
+            </desc>
+          </head>
+          <sp who="#philenos">
+            <speaker>Philenos</speaker>
+            <l met="8">Vous avez tant dit autrefois</l>
+            <l met="8">Qu'il était sûr de sa victoire</l>
+            <l met="8">Qu'il soumettait tout à ses lois,</l>
+            <l met="8">Qu'à présent je ne puis vous croire.</l>
+            <l met="8">Vous le disiez si tendrement...</l>
+            <l met="8">Pouvez-vous penser autrement?</l>
+          </sp>
+        </spGrp>
+        <pb n="173"/>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_voulez_me_faire_chanter">Vous voulez me faire chanter</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="8">Jadis au milieu des repas,</l>
+            <l met="6">Des jeux et de la danse,</l>
+            <l met="8">Mon faible cœur ne faisait pas</l>
+            <l met="6">La moindre résistance.</l>
+            <l met="8">Mais ces calculs et ce compas</l>
+            <l met="6">Servent à ma défense.</l>
+            <l met="8">Et sous l'égide de Pallas,</l>
+            <l met="6">Je brave sa puissance.</l>
+          </sp>
+        </spGrp>
+        <sp who="#philenos">
+          <speaker>Philenos</speaker>
+        </sp>
+        <spGrp who="#philenos">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_non_ma_femme_il_n_en_est_rien">Non, non, ma femme, il n'en est rien</title>
+            </desc>
+          </head>
+          <sp who="#philenos">
+            <speaker>Philenos</speaker>
+            <l met="4">Ô puissant dieu,</l>
+            <l met="4">Viens en ce lieu</l>
+            <l met="8">Lui faire expier cet aveu.</l>
+            <l met="4">Ô puissant dieu,</l>
+            <l met="4">Viens en ce lieu</l>
+            <l met="5">Je m'en vais, adieu.</l>
+          </sp>
+        </spGrp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+          <l met="5">Ami, je crains peu</l>
+          <l met="4">L'ardeur du feu</l>
+          <l met="5">Dont tu me menaces.</l>
+          <l met="5">De telles disgrâces</l>
+          <l met="3">Sont un jeu</l>
+          <l met="5">Pour qui les craint peu.</l>
+        </sp>
+        <pb n="174"/>
+        <sp who="#philenos">
+          <speaker>Philenos</speaker>
+          <l met="4">Ô puissant dieu,</l>
+          <l met="4">Viens en ce lieu</l>
+          <l met="8">Lui faire expier cet aveu.</l>
+          <l met="4">Ô puissant dieu,</l>
+          <l met="4">Viens en ce lieu</l>
+          <l met="5">Je m'en vais, adieu.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Anacréon<stage>seul</stage>
+        </stage>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jamais_la_nuit_ne_fut_si_noire">Jamais la nuit ne fut si noire</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="8">Jamais mon cœur ne fut moins tendre.</l>
+            <l met="12">Mais mon indifférence assure mes plaisirs,</l>
+            <l met="12">À la seule amitié je borne mes désirs,</l>
+            <l met="12">Et de toute autre ardeur je saurai me défendre.</l>
+            <l met="8">Vous, amants, tristes, langoureux,</l>
+            <l met="10">Suivez, suivez les caprices des belles.</l>
+            <l met="10">La perfidie est le prix de vos feux.</l>
+            <l met="12">Que de moments perdus!<stage type="bis">bis</stage>s'ils sont passés près d'elles.</l>
+          </sp>
+        </spGrp>
+        <stage>On entend un bruit de tempête.</stage>
+        <pb n="175"/>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#trembleurs">Les Trembleurs</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="7">Mais ciel! quel épais nuage!</l>
+            <l met="7">Les vents, la pluie et l'orage</l>
+            <l met="7">Font éclater leur ravage.</l>
+            <l met="7">La nuit a chassé le jour.</l>
+            <l met="7">
+              <emph>Hélas! cette nue obscure</emph>
+            </l>
+            <l met="7">
+              <emph>Qui fait gémir la nature</emph>
+            </l>
+            <l met="7">
+              <emph>Est la fidèle peinture</emph>
+            </l>
+            <l met="7">
+              <emph>Des ravages de l'Amour.</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <stage>Il se met à son bureau.</stage>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_rien_n_est_si_fatiguant">Non, rien n'est si fatiguant</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="7">Mais voyons l'évènement</l>
+            <l met="7">Du problème qui m'échappe.</l>
+            <l met="7">Mais voyons l'évènement</l>
+            <l met="7">Voici mon raisonnement.</l>
+          </sp>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="7">Je crois qu'à ma porte on frappe.</l>
+          </sp>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="7">Puis-je être seul un moment!</l>
+          </sp>
+        </spGrp>
+        <stage>On frappe: pan, pan, pan, ...</stage>
+        <stage>Pan, pan, pan, ...</stage>
+        <pb n="176"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Anacréon, l'Amour</stage>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_la_vigne_a_la_grand_simone">Dans la vigne à la grand' Simone</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="8">Dans ma maison, qui vous amène?</l>
+            <l met="8">Qui vous conduit en ce logis?</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="8">Par un orage dans la plaine,</l>
+          <l met="8">Seigneur, je viens d'être surpris.</l>
+          <l met="10">Pour me sauver, d'abord ici je trotte,</l>
+          <l met="8">Réchauffez-moi, car je grelotte.</l>
+        </sp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+          <l met="6">Eh! d'où venez-vous donc,</l>
+          <l met="4">Mon beau garçon?</l>
+          <l met="6">Vous avez l'air fripon,</l>
+          <l met="2">Mignon,</l>
+          <l met="7">Vous avez l'air d'un fripon.</l>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#resonnez_ma_musette">Résonnez, ma musette</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="5">Vous me faites injure,</l>
+            <l met="6">Seigneur, je vous assure</l>
+            <l met="6">Que dans le fond du cœur,</l>
+            <l met="6">Je ne suis que douceur.</l>
+          </sp>
+        </spGrp>
+        <pb n="177"/>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ces_trois_mots_m_ont_dure_vingt_ans">Ces trois mots m'ont duré vingt ans</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="8">
+              <emph>Cet enfant a de certains yeux,</emph>
+              <stage type="bis">bis</stage>
+            </l>
+            <l met="8">
+              <emph>Le regard si malicieux</emph>
+            </l>
+            <l met="5">
+              <emph>Le traitre! le traitre!</emph>
+            </l>
+            <l met="10">
+              <emph>Que ne suis-je Apollon pour le connaître?</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">De tous les capucins du monde</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="8">Mais hélas! vos mains sont de glace.</l>
+            <l met="8">Voulez-vous ici que je fasse,</l>
+            <l met="8">Pour les chauffer un peu de feu?</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="8">Non, Seigneur.</l>
+        </sp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+          <l met="8">Ma crainte est extrême.</l>
+          <l met="8">Que serait-ce donc en ce lieu</l>
+          <l met="8">Si j'avais reçu Polyphème?</l>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_michel">Malgré la bataille [qu'on donne demain]</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="12">Pourquoi, malgré l'orage, et la pluie et les vents,</l>
+            <l met="12">Voyager, beau garçon, par un si mauvais temps?</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="12">Cher patron, mon dessein n'est pas de voyager.</l>
+          <l met="12">C'est la soif de punir, l'ardeur de me venger.</l>
+        </sp>
+        <pb n="178"/>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#benissez_le_seigneur_supreme">Bénissez le Seigneur suprême</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="8">Venger! mais vous raillez, sans doute,</l>
+            <l met="8">Faible, petit et sans secours,</l>
+            <l met="8">Si le chemin est de deux jours,</l>
+            <l met="6">Vous périrez en route.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_ma_cabane_obscure">Dans ma cabane obscure</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="6">Quoique faible et petite,</l>
+            <l met="6">L'abeille en ce vallon,</l>
+            <l met="6">À l'instant qu'on l'irrite,</l>
+            <l met="6">Lance son aiguillon.</l>
+            <l met="6">Et sa vengeance est sure</l>
+            <l met="6">Son dard nous fait souffrir.</l>
+            <l met="6">On sait que sa blessure</l>
+            <l met="6">Nous fait longtemps gémir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="6">L'imprudente colère,</l>
+            <l met="6">Aveugle en ses projets,</l>
+            <l met="6">Ne voit point le salaire</l>
+            <l met="6">Qu'attirent ses forfaits.</l>
+            <l met="6">L'abeille en se vengeance,</l>
+            <l met="6">Qui fait longtemps souffrir,</l>
+            <l met="6">Meurt du coup qu'elle lance,</l>
+            <l met="6">Et ne fait pas mourir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#j_ai_dans_ma_pochette_un_petit_oiseau">J'ai dans ma pochette un petit oiseau</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="5">Je n'en mourrai pas,<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Et je ne crains point le trépas,</l>
+            <l met="6">Ou du moins je le pense.</l>
+            <l met="5">M'effrayer par là!</l>
+            <l met="5">Croyez-vous cela?</l>
+            <l met="6">Perdez cette espérance.</l>
+          </sp>
+        </spGrp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_j_aime_mon_cher_arlequin">Que j'aime mon cher Arlequin</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="8">Mais que vous a donc fait celui</l>
+            <l met="4">Qui vous offense?</l>
+            <l met="8">Vous aurait-il volé la nuit?</l>
+            <l met="8">Aurait-il emporté sans bruit</l>
+            <l met="6">Un joujou d'importance?</l>
+            <l met="8">Mais que vous a donc fait celui...</l>
+            <l met="6">Celui qui vous offense?</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#de_l_amour_je_subis_les_lois">De l'Amour je subis les lois</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="8">C'est mon esclave, et mes faveurs</l>
+            <l met="8">Ont toujours comblé son envie.</l>
+            <l met="8">C'est par moi qu'il charme les cœurs.</l>
+            <l met="8">J'ai fait le bonheur de sa vie.</l>
+            <l met="8">S'il plaît par son goût délicat,</l>
+            <l met="8">S'il est celui que l'on consulte,</l>
+            <l met="8">C'est de moi qu'il tient son éclat.</l>
+            <l met="3">Et l'ingrat</l>
+            <l met="6">Me méprise et m'insulte.</l>
+          </sp>
+        </spGrp>
+        <pb n="180"/>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#par_un_matin_lisette_se_leva">Par un matin, Lisette se leva</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="4">
+              <emph>C'est bien méchant</emph>
+            </l>
+            <l met="6">
+              <emph>Contre un si bel enfant...</emph>
+            </l>
+            <l met="10">
+              <emph>Mais, cher ami, que faites-vous donc là?</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="8">Ta, la, la, la, la, la, la, la.</l>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="8">
+              <emph>Je regarde si de ma flèche</emph>
+            </l>
+            <l met="8">
+              <emph>Le fer ne s'était point rouillé</emph>
+            </l>
+            <l met="8">
+              <emph>Je vois si la corde en est sèche,</emph>
+            </l>
+            <l met="8">
+              <emph>Et si mon arc n'est point mouillé.</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#suivant_l_gout_de_vote_facon_elle_est_donc_bien_gentille">Suivant l'goût de vote façon, elle est donc bien gentille</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="6">Cet esclave est-il loin?</l>
+          </sp>
+        </spGrp>
+        <pb n="181"/>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="6">Non, plus près qu'il ne pense.</l>
+        </sp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+          <l met="6">Mais pour votre vengeance,</l>
+          <l met="6">Il ne la craindra point,</l>
+          <l met="6">Si cet ingrat vous brave.</l>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="6">Lui! me braver! lui! moi!</l>
+        </sp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+          <l met="6">Quel est donc cet esclave?</l>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="2">C'est toi.</l>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_tu_ne_m_aimes_pas">Non, tu ne m'aimes pas</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="6">Connais l'Amour, perfide.</l>
+            <l met="6">Reconnais à mes traits,</l>
+            <l met="6">Au courroux qui me guide,</l>
+            <l met="6">Quels furent tes forfaits.</l>
+            <l met="6">Le supplice est trop rude</l>
+            <l met="6">D'essuyer tes mépris.</l>
+            <l met="6">De ton ingratitude,</l>
+            <l met="6">Traitre, reçois le prix.</l>
+          </sp>
+        </spGrp>
+        <stage>Il lui lance sa flèche.</stage>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+          <l met="8">
+            <emph>Cruel Amour, fatal vainqueur,</emph>
+          </l>
+          <l met="12">Quel temps as-tu choisi pour me percer le cœur!</l>
+        </sp>
+        <pb n="182"/>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_voulez_me_faire_chanter">Vous voulez me faire chanter</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="8">De tes défis et du combat</l>
+            <l met="6">Fais à présent parade.</l>
+            <l met="8">Mon arc est en fort bon état,</l>
+            <l met="6">Ton cœur est bien malade.</l>
+            <l met="8">Mais ces calculs, et ce compas</l>
+            <l met="6">Vont être ta défense.</l>
+            <l met="8">Et sous l'égide de Pallas,</l>
+            <l met="6">Tu braves ma puissance.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Anacréon<stage>seul</stage>
+        </stage>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fais_comme_moi_bois">Fais comme moi, bois</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="4">Ô ciel! quels feux!</l>
+            <l met="1">Dieux!</l>
+            <l met="2">Je ressens</l>
+            <l met="3">Dans mes sens,</l>
+            <l met="3">Dans mon cœur,</l>
+            <l met="3">Une ardeur,</l>
+            <l met="2">Je meurs.</l>
+            <l met="7">Quel est l'état où je suis</l>
+            <l met="1">Mis!</l>
+            <l met="4">Cruel enfant,</l>
+            <l met="4">Dieu triomphant,</l>
+            <l met="4">Dis-moi pourquoi...</l>
+            <l met="1">Quoi!</l>
+            <l met="3">C'est trahir,</l>
+            <l met="3">Que te fuir!</l>
+            <l met="3">Se sauver</l>
+            <l met="3">C'est braver!</l>
+            <l met="3">Fut-il jamais...</l>
+            <l met="1">Mais,</l>
+            <l met="3">non, j'eus tort.</l>
+            <l met="3">Vois mon sort.</l>
+            <l met="4">Veux-tu ma mort?</l>
+            <l met="5">Il est temps de cœurs</l>
+            <l met="3">Pleins d'ardeurs,</l>
+            <l met="3">Qui voudraient...</l>
+            <l met="3">Bruleraient</l>
+            <l met="3">De charmer,</l>
+            <l met="2">D'aimer.</l>
+            <l met="3">En leur âme,</l>
+            <l met="3">De tes feux</l>
+            <l met="3">Dangereux,</l>
+            <l met="7">Porte les traits amoureux.</l>
+            <l met="3">Là, ta flamme</l>
+            <l met="3">Est un bien.</l>
+            <l met="3">Ton lien</l>
+            <l met="5">Est un mal pour moi,</l>
+            <l met="1">Voi.</l>
+          </sp>
+        </spGrp>
+        <pb n="183"/>
+        <pb n="184"/>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_voudrais_bien_vous_satisfaire">Je voudrais bien vous satisfaire</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="8">Mais peut-être que, par l'étude,</l>
+            <l met="5">Mon inquiétude</l>
+            <l met="5">Peut se réprimer.</l>
+            <l met="8">Essayons si, moins inquiète,</l>
+            <l met="5">Mon âme distraite</l>
+            <l met="6">Peut enfin se calmer.</l>
+          </sp>
+        </spGrp>
+        <stage>Anacréon se met à son bureau, rêve, fait ses efforts pour s'appliquer, marque son impatience. Pendant ce temps-là, la symphonie joue tendrement l'air du vaudeville qui suit.</stage>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#a_mon_coeur_dans_ce_sejour">À mon cœur, dans ce séjour</title>
+            </desc>
+          </head>
+          <spGrp rend="braced(right)">
+            <sp who="#anacreon">
+              <speaker>Anacréon</speaker>
+              <l met="7">C'est en vain que je m'applique</l>
+              <l met="4">À la physique</l>
+              <l met="4">Seul en ces lieux.</l>
+              <l met="7">Quel est le spectacle unique</l>
+              <l met="4">Qu'elle m'indique?</l>
+              <l met="4">C'est deux beaux yeux.</l>
+              <l met="7">Un regard doux, gracieux,</l>
+              <l met="8">Est la plus brillante logique.</l>
+              <l met="8">À mon cœur tout, en ce séjour,</l>
+              <l met="4">Parle d'amour,</l>
+              <l met="4">Tout peint l'amour.</l>
+              <l met="7">Pourquoi tirer de la rose</l>
+              <l met="4">Nouvelle éclose</l>
+              <l met="4">Le doux parfum?</l>
+              <l met="7">Vénus en est-il aucun</l>
+              <l met="8">Qui sur tes lèvres ne repose?</l>
+              <l met="7">À mon cœur tout, en ce jour,</l>
+              <l met="4">Parle d'amour</l>
+              <l met="4">Tout peint l'amour.</l>
+            </sp>
+            <stage>
+              <stage type="bis">bis</stage>
+            </stage>
+          </spGrp>
+        </spGrp>
+        <pb n="185"/>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_je_ne_ferai_pas">Non, je ne ferai pas ce qu'on veut que je fasse</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="12">Que ne suis-je à présent au milieu des bergères?</l>
+            <l met="12">Que ne suis-je entraîné par leurs danses légères?</l>
+            <l met="12">Que ne suis-je à Samos, à la cour de nos rois?</l>
+            <l met="12">Que ne suis-je... Ah! Cruel! Sont-ce là tes exploits?</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_le_village_etait_perdu">Tout le village était perdu</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="8">Pour dissiper mon émotion,</l>
+            <l met="5">Courons les campagnes,</l>
+            <l met="5">Passons les montagnes,</l>
+            <l met="8">Pour dissiper mon émotion,</l>
+            <l met="12">Désertons les lieux où j'ai pris ce poison.</l>
+          </sp>
+        </spGrp>
+        <pb n="186"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">L'Amour<stage>seul</stage>
+        </stage>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#helas_maman_pardonnez_je_vous_prie">Hélas, maman, pardonnez je vous prie</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="10">J'ai su voler la brebis de Céphise,</l>
+            <l met="10">Elle la cherche au fond de ce vallon.</l>
+            <l met="10">Elle gémit, elle ignore ma surprise.</l>
+            <l met="10">Je voudrais bien retrouver Anacréon.</l>
+            <l met="10">J'ai su voler la brebis de Céphise,</l>
+            <l met="10">Elle la cherche au fond de ce vallon.</l>
+          </sp>
+        </spGrp>
+        <stage>Céphise, derrière le théâtre, appelle « Robine, Robine!».</stage>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dam_javotte">Dam' Javotte</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="3">Ah Céphise,<stage type="bis">bis</stage>
+            </l>
+            <l met="7">J'aimerais mieux de ton cœur</l>
+            <l met="7">Avoir surpris la franchise.</l>
+            <l met="3">Ah Céphise!<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#derouillons_ma_commere">Dérouillons, dérouillons, ma commère</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="9">
+              <emph>Mais je l'entends, mettons en cachette</emph>
+            </l>
+            <l met="9">
+              <emph>Cette brebis dans ce lieu. Fort bien.</emph>
+            </l>
+            <l met="4">
+              <emph>C'est un moyen...</emph>
+            </l>
+            <l met="4">
+              <emph>Je ne dis rien.</emph>
+            </l>
+            <l met="9">
+              <emph>Elle est si simple, elle est si jeunette!</emph>
+            </l>
+            <l met="9">
+              <emph>Mais je l'entends, la voici qui vient.</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <pb n="187"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Céphise, l'Amour</stage>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+        </sp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_bas_dans_la_plaine">Là-bas, dans la plaine</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="5">De ma bergerie,</l>
+            <l met="5">Vient de se sauver</l>
+            <l met="5">Ma brebis chérie.</l>
+            <l met="5">Pour la conserver,</l>
+            <l met="6">Dites-moi, je vous prie,</l>
+            <l met="6">Où je puis la trouver.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierre_bagnolet">Pierre Bagnolet</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="8">Là-bas, plus d'un berger s'accorde</l>
+            <l met="8">À dire qu'un enfant suivait,</l>
+            <l met="8">Et chassait, sans miséricorde,</l>
+            <l met="8">Ma brebis, et qu'il la battait.</l>
+            <l met="4">Il la battait,</l>
+            <l met="4">Il la battait,</l>
+            <l met="8">Il la battait avec la corde</l>
+            <l met="8">D'un arc qu'à la main il tenait.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_suis_le_precepteur_d_amour">Nous sommes précepteurs d'amour</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="8">Il fallait envoyer après</l>
+            <l met="8">Le berger qui pour vous soupire.</l>
+          </sp>
+        </spGrp>
+        <pb n="188"/>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+          <l met="8">Un berger!</l>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="8">Il doit être prêt.</l>
+        </sp>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+          <l met="8">C'est mon chien que vous voulez dire.</l>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#est_il_de_plus_douces_odeurs">Est-il de plus douces odeurs</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="8">Non, non, je veux dire un berger.</l>
+            <l met="6">Quoi! jeune, belle et tendre,</l>
+            <l met="8">Vous ne savez point engager</l>
+            <l met="6">Quelqu'un à vous défendre!</l>
+            <l met="8">Si près de vous quelque Tircis</l>
+            <l met="6">Eut été dans la plaine,</l>
+            <l met="8">Il eut ramené la brebis</l>
+            <l met="6">Dont vous êtes en peine.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+        </sp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#proverbes">Proverbes</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="10">Vous vous trompez. Pour ramener bien vite</l>
+            <l met="10">Tous mes moutons et braver les dangers,</l>
+            <l met="10">Mettre les loups et les voleurs en fuite,</l>
+            <l met="8">Mon chien tout seul vaut trois bergers.</l>
+          </sp>
+        </spGrp>
+        <pb n="189"/>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="6">Gentille pastourelle,</l>
+            <l met="6">Un chien ne suffit pas.</l>
+            <l met="6">Pour suivre aussi vos pas,</l>
+            <l met="7">Il faut un berger fidèle.</l>
+            <l met="8">Près d'un berger bien fait, et beau,</l>
+            <l met="8">Que de plaisirs<stage type="bis">bis</stage>sur la fougère!</l>
+            <l met="8">Un chien n'a soin que du troupeau,</l>
+            <l met="10">Mais un berger a soin de la bergère.</l>
+            <l met="6">Gentille pastourelle,</l>
+            <l met="6">Un chien ne suffit pas.</l>
+            <l met="6">Pour suivre aussi vos pas,</l>
+            <l met="7">Il faut un berger fidèle.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+        </sp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quoi_partez">Quoi, vous partez</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="10">J'écoute, hélas! je ne sais quoi de tendre.</l>
+            <l met="10">Ah! bel enfant, que vos chants sont touchants</l>
+            <l met="10">Mais je m'en vais, je voudrais vous entendre.</l>
+            <l met="10">Vous devriez nous venir voir aux champs.</l>
+            <l met="10">J'écoute, hélas! je ne sais quoi de tendre</l>
+            <l met="10">Rend, bel enfant, vos discours bien touchants.</l>
+          </sp>
+        </spGrp>
+        <pb n="190"/>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais, en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="8">La petite s'en va rêveuse,</l>
+            <l met="8">Son cœur en secret je troublais.</l>
+            <l met="8">parlez donc, la belle chercheuse,</l>
+            <l met="8">Et la brebis?</l>
+          </sp>
+        </spGrp>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+          <l met="8">Je l'oubliais.</l>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nous_villageois">Nous autres, bons villageois</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="7">Bergère, si je vous dis</l>
+            <l met="8">Où vous la trouverez sans doute,</l>
+            <l met="7">Qu'aurai-je pour mon avis?</l>
+            <l met="8">car il faudra qu'il vous en coûte.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+          <l met="8">Je vous jure que je n'ai rien,</l>
+          <l met="8">Et mon troupeau fait tout mon bien.</l>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="8">Vous ne pouvez me refuser,</l>
+          <l met="8">Pour le moins un petit baiser.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+        </sp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_joli_jeu_d_amour_n_a_pas_besoin_du_jour">Le joli jeu d'amour n'a pas besoin du jour</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="6">Un baiser? que cela?</l>
+            <l met="6">Je le veux, le voilà.</l>
+            <l met="9">C'est vous, méchant, qui me l'avez prise.</l>
+            <l met="5">Mais avant, rendez.</l>
+          </sp>
+        </spGrp>
+        <pb n="191"/>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="5">Tenez, regardez.</l>
+        </sp>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+          <l met="8">Robine! ah! que je suis surprise!</l>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="6">Un baiser.</l>
+        </sp>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+          <l met="6">Le voilà,</l>
+          <l met="6">Si ce n'est que cela.</l>
+          <l met="9">C'est vous, méchant, qui me l'avez prise.</l>
+        </sp>
+        <stage>L'Amour embrasse Céphise, pendant ce temps elle dit</stage>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#a_quoi_s_occupe_madelon">À quoi s'occupe Madelon</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="8">Vous avez l'air bien libertin.</l>
+          </sp>
+        </spGrp>
+        <stage>L'Amour avec sa flèche pique la main de Céphise qu'il tient dans la sienne.</stage>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="8">Bergère...</l>
+        </sp>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+          <l met="8">Ahi! Vous m'avez blessée.</l>
+        </sp>
+        <pb n="195"/>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="8">Moi?</l>
+        </sp>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+          <l met="8">Oui, vous. Et c'est à la main,</l>
+          <l met="7">Avec ce trait assassin.</l>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <l met="8">Ah! vous m'en voyez bien chagrin.</l>
+          <l met="8">La douleur est-elle passée?</l>
+          <l met="8">Ah! vous m'en voyez bien chagrin.</l>
+        </sp>
+        <stage type="musical_indication">Mineur</stage>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+          <l met="8">Je crois que ce ne sera rien.</l>
+        </sp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+          <stage>d'un ton ironique</stage>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_le_village_etait_perdu">Tout le village était perdu</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="4">Je suis cousin</l>
+            <l met="4">D'un médecin.</l>
+            <l met="5">Pour cette blessure,</l>
+            <l met="5">Cette égratignure,</l>
+            <l met="8">J'ai le baume le plus divin.</l>
+            <l met="11">Attendez, bergère, à l'instant je reviens.</l>
+          </sp>
+        </spGrp>
+        <pb n="193"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Céphise<stage>seule</stage>
+        </stage>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fraises">Jardinier, ne vois-tu pas</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="7">Cet enfant, tout beau qu'il est,</l>
+            <l met="6">Paraît d'un caractère</l>
+            <l met="7">Espiègle, étourdi, mauvais.</l>
+            <l met="7">Je ne sais si j'en voudrais</l>
+            <l met="8">Pour frère, pour frère, pour frère.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="ariette">
+            <desc type="prefix">Ariette</desc>
+            <desc type="title">
+              <title>notée à la fin</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="4">Ah! ma piqure</l>
+            <l met="4">Me fait douleur.</l>
+            <l met="8">Se peut-il que si peu profonde,</l>
+            <l met="4">Elle réponde</l>
+            <l met="3">Jusqu'au cœur?</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#du_haut_en_bas">Du haut en bas</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="4">Mais que c'est beau!</l>
+            <l met="8">On ne voit ici que dorure.</l>
+            <l met="4">Mais que c'est beau!</l>
+            <l met="8">C'est encor plus beau qu'au château.</l>
+            <l met="8">C'est bien mieux que de la peinture,</l>
+            <l met="8">Car c'est comme une miniature.</l>
+            <l met="4">Ah! que c'est beau!</l>
+          </sp>
+        </spGrp>
+        <pb n="194"/>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#stila_qu_a_pince_berg_op_zoom">Stila qu'à pincé Berg-op-zoom</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="8">Mais si le maître allait venir...<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Je ne sais pas comme il se nomme,</l>
+            <l met="8">Mais il doit être un bien bel homme.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pour_voir_un_peu">Pour voir un peu</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="8">Dieux! quelle machine voilà!</l>
+            <l met="8">C'est presque aussi rond qu'une boule.</l>
+            <l met="8">C'est sans doute un jeu que cela,</l>
+            <l met="8">Car je m'aperçois qu'elle roule.</l>
+            <l met="8">Faisons mouvoir ce bijou-là,</l>
+            <l met="8">Pour voir un peu comment ça f'ra.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#detour">Sous un ormeau</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="4">Tout doucement,</l>
+            <l met="8">Faisons agir le mouvement,</l>
+            <l met="5">Par ici, par là.</l>
+            <l met="7">Ah! comme tout cela va!</l>
+            <l met="1">Ah!</l>
+          </sp>
+        </spGrp>
+        <stage>Elle jette à terre ce qui est sur la table.</stage>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#voici_dragons">Voici les dragons qui viennent</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="7">De cette maison funeste</l>
+            <l met="5">Vite sauvons-nous.</l>
+            <l met="7">Sans demander notre reste,</l>
+            <l met="7">De ce lieu que je déteste,</l>
+            <l met="3">Sauvons-nous,</l>
+            <l met="3">Sauvons-nous.</l>
+          </sp>
+        </spGrp>
+        <pb n="195"/>
+        <stage>Elle court à la porte, aperçoit Anacréon, rentre et dit</stage>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ciel_l_univers_va_t_il_donc_se_dissoudre">Ciel, l'univers va-t-il donc se dissoudre</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="10">Dieux! je l'ai vu, j'ai vu, j'ai vu le maître.</l>
+            <l met="10">Il va rentre, je tremble, je frémis.</l>
+            <l met="7">Le voici qui va paraître,</l>
+            <l met="7">Où me mettre en ce logis?</l>
+            <l met="4">Ciel! où me mettre?</l>
+            <l met="4">Ah! le voici.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Anacréon, Céphise</stage>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#on_gravera_sur_un_chene">On gravera sur un chêne</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="4">Hélas! mon trouble</l>
+            <l met="2">Redouble.</l>
+            <l met="7">Tout augmente ma langueur.</l>
+            <l met="3">Je soupire,</l>
+            <l met="3">Je désire.</l>
+            <l met="7">Amour, quelle est ta rigueur!</l>
+            <l met="4">Hélas! ...</l>
+          </sp>
+        </spGrp>
+        <pb n="196"/>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_vous_puissant_jupin">Ô, vous, puissant Jupin</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="6">Quel est l'audacieux</l>
+            <l met="12">Qui dans mon absence est entré dans ces lieux?</l>
+            <l met="8">Ah! que n'ai-je trouvé le fat,</l>
+            <l met="5">Ou le scélérat,</l>
+            <l met="6">Qui m'a fait ce dégât?</l>
+            <l met="6">C'est quelque vil pasteur,</l>
+            <l met="4">Quelque voleur...</l>
+            <l met="6">Si jamais je le tiens,</l>
+            <l met="4">Que je le plains!</l>
+            <l met="6">Quoi! tout est fracassé,</l>
+            <l met="4">Tout est cassé.</l>
+            <l met="6">Oui, si je le trouvais,</l>
+            <l met="4">Je le tuerais.</l>
+            <l met="6">
+              <emph>Mais que vois-je? Un mouton</emph>
+            </l>
+            <l met="4">
+              <emph>Dans ma maison!</emph>
+            </l>
+            <l met="6">
+              <emph>C'est sans doute à celui</emph>
+            </l>
+            <l met="4">
+              <emph>Qui s'est enfui.</emph>
+            </l>
+            <l met="6">
+              <emph>Vengeons-nous en ce jour,</emph>
+            </l>
+            <l met="9">
+              <emph>Il faut que je l'immole à l'Amour.</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+        </sp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_tu_n_auras_pas_mon_minet">Ah, tu n'auras pas mon minet</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="8">
+              <emph>Ah! ne tuez pas ma brebis,</emph>
+            </l>
+            <l met="3">
+              <emph>C'est moi-même,</emph>
+            </l>
+            <l met="3">
+              <emph>C'est moi-même.</emph>
+            </l>
+            <l met="8">
+              <emph>Ah! ne tuez pas ma brebis,</emph>
+            </l>
+            <l met="7">
+              <emph>C'est moi, Seigneur, je frémis.</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <pb n="197"/>
+        <stage type="musical_indication">Duo</stage>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#menuet_de_l_empereur">Quel caprice, quelle injustice</title>
+            </desc>
+          </head>
+          <cols n="2"/>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="3">Seigneur, grâce,</l>
+            <l met="4">Faites-moi grâce.</l>
+            <l met="4">De ma disgrâce</l>
+            <l met="5">Suis-je cause, hélas!</l>
+            <l met="3">Seigneur, grâce,</l>
+            <l met="4">Faites-moi grâce.</l>
+            <l met="4">De ma disgrâce</l>
+            <l met="5">Ne vous vengez pas.</l>
+            <l met="8">Seigneur, je n'ai fait qu'y toucher.</l>
+            <l met="8">Je l'ai vu d'abord trébucher.</l>
+            <l met="4">C'est malgré-moi,</l>
+            <l met="8">Je le tournais avec un doigt.</l>
+            <l met="6">Il s'est brisé par terre</l>
+            <l met="4">Net comme un verre.</l>
+            <l met="4">Je suis sincère.</l>
+            <l met="5">Quel est mon effroi!</l>
+            <l met="8">Mais que vois-je? Quoi! moins sévère,</l>
+            <l met="4">Votre colère</l>
+            <l met="5">Semble s'oublier.</l>
+            <l met="8">Je ne suis que simple bergère.</l>
+            <l met="4">Que puis-je faire</l>
+            <l met="4">Pour vous payer?</l>
+          </sp>
+          <cb/>
+        </spGrp>
+        <pb n="198"/>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+          <l met="3">Que d'appas!</l>
+          <l met="3">Que d'appas!</l>
+          <l met="2">Sa grâce,</l>
+          <l met="9">Son âge tendre et son embarras...</l>
+          <l met="3">Que d'appas!</l>
+          <l met="5">Oui, cette disgrâce</l>
+          <l met="4">Ne déplaît pas.</l>
+          <l met="8">Peut-on sans se laisser toucher,</l>
+          <l met="8">À la regarder s'attacher?</l>
+          <l met="8">Je sens, ô ciel, je m'aperçois</l>
+          <l met="9">Que son regard, tout ce que je vois</l>
+          <l met="3">Porte en moi</l>
+          <l met="7">Une ardeur... ah! croyez-moi,</l>
+          <l met="5">N'ayez point d'effroi.</l>
+          <l met="3">Levez-vous,</l>
+          <l met="3">Levez-vous,</l>
+          <l met="2">Bergère.</l>
+          <l met="9">Quoi! mon courroux peut-il effrayer?</l>
+          <l met="3">Levez-vous,</l>
+          <l met="5">Vous pouvez tout faire</l>
+          <l met="4">Pour me payer.</l>
+        </sp>
+        <pb n="198"/>
+        <cols n="1"/>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#babet_gentille">Babet, que t'es gentille</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="6">
+              <emph>Dissipez votre effroi.</emph>
+            </l>
+            <l met="6">
+              <emph>Bien loin d'être sauvage.</emph>
+            </l>
+            <l met="6">
+              <emph>Mon cœur... non, dites-moi</emph>
+            </l>
+            <l met="6">
+              <emph>Vos parents et votre âge.</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+          <l met="5">
+            <emph>J'aurai dix-sept ans,</emph>
+          </l>
+          <l met="5">
+            <emph>Vienne le printemps.</emph>
+          </l>
+          <l met="6">
+            <emph>D'Atys je suis la fille.</emph>
+          </l>
+          <l met="8">
+            <emph>J'habite le prochain hameau.</emph>
+          </l>
+          <l met="8">
+            <emph>Aujourd'hui j'ai sur ce coteau,</emph>
+          </l>
+          <l met="8">
+            <emph>Par hasard mené mon troupeau.</emph>
+          </l>
+        </sp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+          <l met="6">
+            <emph>Ô ciel! qu'elle est gentille!</emph>
+          </l>
+          <l met="6">
+            <emph>Qu'elle est, qu'elle est gentille!</emph>
+          </l>
+        </sp>
+        <pb n="199"/>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+        </sp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ont_enleve_ma_mie">Ont enlevé ma mie</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="4">Pour un agneau,</l>
+            <l met="4">Pour deux agneaux,</l>
+            <l met="6">Pour trois agneaux ensemble,</l>
+            <l met="6">Pourrais-je racheter</l>
+            <l met="8">Ce qu'il pourra vous en coûter?</l>
+            <l met="6">Répondez donc, je tremble.</l>
+          </sp>
+        </spGrp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#votre_coeur_aimable_aurore">Votre cœur, aimable Aurore</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="7">Pourquoi craindre ma colère?</l>
+            <l met="7">Puis-je le dissimuler?</l>
+            <l met="7">Quand je crains de vous déplaire,</l>
+            <l met="7">Quand je crains de vous parler,</l>
+            <l met="7">Ce n'est pas à vous, bergère,</l>
+            <l met="7">C'est à moi seul à trembler.</l>
+          </sp>
+        </spGrp>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+        </sp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quand_m_en_direz_vous_de_meme">Quand m'en direz-vous de même</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="7">Parlez, vous êtes le maître,</l>
+            <l met="7">Et je dois vous écouter.</l>
+            <l met="7">Je désirerais connaître</l>
+            <l met="7">Ce qui peut vous contenter.</l>
+          </sp>
+        </spGrp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+          <l met="4">Hélas! je doute</l>
+          <l met="7">Que je puisse m'en flatter.</l>
+        </sp>
+        <pb n="200"/>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+          <l met="4">Parlez, j'écoute.</l>
+        </sp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_demon_malicieux_et_fin">Le démon malicieux et fin</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="9">Aussitôt que j'ai vu vos beaux yeux,</l>
+            <l met="9">J'ai senti la volupté des dieux.</l>
+            <l met="9">J'ai senti dans le fond de mon âme</l>
+            <l met="10">naitre un penchant si flatteur et si doux!</l>
+            <l met="9">Je vous aime! à mes feux, à ma flamme</l>
+            <l met="10">Belle bergère, hélas! répondrez-vous?</l>
+          </sp>
+        </spGrp>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+        </sp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#surtout_ne_me_trompez_pas">Surtout, ne me trompez pas</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="7">Ce que vous me dites là</l>
+            <l met="7">Doit sans doute me confondre.</l>
+            <l met="7">Vous m'aimez et sur cela</l>
+            <l met="7">Je ne sais que vous répondre.</l>
+            <l met="8">Je sens bien que je vous croirais,</l>
+            <l met="8">Qu'avec plaisir je m'y fierais,</l>
+            <l met="6">Mais je ne suis pas fine</l>
+            <l met="7">J'ignore quand on badine.</l>
+          </sp>
+        </spGrp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_ne_vient_point_quel_soin_bergere">Il ne vient point, quel soin, bergère</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="8">Qui pourrait vous tromper, bergère,</l>
+            <l met="8">Serait sans doute haï des dieux.</l>
+            <l met="8">Qu'à l'instant j'expire à vos yeux,</l>
+            <l met="8">Si ma flamme n'est pas sincère.</l>
+            <l met="8">J'attends à vos pieds, de mes feux</l>
+            <l met="8">Le châtiment ou le salaire.</l>
+            <l met="8">Mais aux larmes que vous versez,</l>
+            <l met="8">Je vois que vous me haïssez.</l>
+          </sp>
+        </spGrp>
+        <pb n="201"/>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+        </sp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_bas_dans_la_plaine">Là-bas, dans la plaine</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="5">N'ayez point d'alarmes,</l>
+            <l met="5">Hélas! je vous croi.</l>
+            <l met="5">Je verse des larmes,</l>
+            <l met="5">J'ignore pourquoi.</l>
+            <l met="5">Votre vue excite</l>
+            <l met="5">Un sentiment doux,</l>
+            <l met="5">Dont mon cœur s'agite.</l>
+            <l met="5">Seigneur, m'aimez-vous?</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#au_bord_d_un_clair_ruisseau">Au bord d'un clair ruisseau</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="6">Quitterez-vous ces lieux</l>
+            <l met="6">Pour me suivre au village,</l>
+            <l met="6">Et pour le pâturage</l>
+            <l met="6">Ces meubles précieux?</l>
+          </sp>
+        </spGrp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+          <l met="6">Je vous les donne tous,</l>
+          <l met="6">Soyez ici la reine.</l>
+        </sp>
+        <pb n="202"/>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+          <l met="6">Ce serait une peine,</l>
+          <l met="6">Si je l'étais sans vous.</l>
+        </sp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ce_soir_au_bois_tu_sauras_ce_mystere">Ce soir au bois, tu sauras ce mystère</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="10">
+              <emph>Sans moi, bergère! ah! vous êtes sensible!</emph>
+            </l>
+            <l met="10">
+              <emph>Ah! vous m'aimez! ciel! quel est mon bonheur!</emph>
+            </l>
+            <l met="10">
+              <emph>Quoi! vous doutiez du penchant invincible</emph>
+            </l>
+            <l met="10">
+              <emph>Que vos attraits font naître dans un cœur!</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+        </sp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sur_le_port_avec_manon_un_jour">Sur le port, avec Manon, un jour</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="8">Qu'une bergère en vous voyant</l>
+            <l met="8">Sente pour vous quelque penchant,</l>
+            <l met="8">Aisément cela se peut croire.</l>
+            <l met="8">Mais que fait comme on peint nos dieux</l>
+            <l met="8">Vous ressentiez pour moi des feux,</l>
+            <l met="3">Ah! Seigneur,</l>
+            <l met="6">Excusez mon erreur,</l>
+            <l met="9">Je pouvais douter de ma victoire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#egle_tient_tous_ses_biens">Eglé tient tous ses biens</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="12">L'Amour reçoit ses traits des mains de la nature.</l>
+            <l met="8">Sa puissance c'est la beauté.</l>
+            <l met="12">Loin de ce vain éclat qu'affecte la parure,</l>
+            <l met="12">Il met son sceptre aux pieds de la simplicité.</l>
+            <l met="12">Oui, mon cœur ennemi du fard de l'imposture,</l>
+            <l met="8">De vous, bergère, est plus charmé...</l>
+            <l met="8">Dans vos yeux la candeur assure</l>
+            <l met="12">La constance des feux dont je suis enflammé.</l>
+          </sp>
+        </spGrp>
+        <pb n="203"/>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+        </sp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_amant_frivole_et_volage">L'amant frivole et volage</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="7">
+              <emph>Que la nature en partage</emph>
+            </l>
+            <l met="7">
+              <emph>Ne donna-t-elle à mes chants</emph>
+            </l>
+            <l met="7">
+              <emph>Le plus séduisant langage</emph>
+            </l>
+            <l met="7">
+              <emph>Des sons tendres et touchants?</emph>
+            </l>
+            <l met="7">
+              <emph>Je vous charmerais de même.</emph>
+            </l>
+            <l met="7">
+              <emph>Mais hélas! pour tout discours,</emph>
+            </l>
+            <l met="7">
+              <emph>Je dirai que je vous aime</emph>
+            </l>
+            <l met="7">
+              <emph>Mais je le dirai toujours.</emph>
+            </l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Anacreon, l'Amour, Céphise</stage>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#eh_zing_zing_madam_la_mariee">Eh zing, zing, Madam' la mariée</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="4">Soyez contents,</l>
+            <l met="5">Prenez, mes enfants,</l>
+            <l met="3">Du bon temps.</l>
+            <l met="5">Les plus beaux instants</l>
+            <l met="3">De vos ans</l>
+            <l met="8">Sont comme la rose au printemps.</l>
+            <l met="8">Ceci, mon cher Anacréon,</l>
+            <l met="8">N'est qu'un petit coup d'aiguillon.</l>
+            <l met="4">Soyez contents,</l>
+            <l met="5">Prenez, mes enfants,</l>
+            <l met="3">Du bon temps.</l>
+            <l met="5">Les plus beaux instants</l>
+            <l met="3">De vos ans</l>
+            <l met="8">Sont comme la rose au printemps.</l>
+          </sp>
+        </spGrp>
+        <pb n="204"/>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_qui_du_vulgaire_stupide">Vous qui, du vulgaire stupide</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="8">Amour, l'excès de mon offense</l>
+            <l met="8">Semblait exclure ta bonté.</l>
+            <l met="8">Tu n'as fait voir que ta puissance,</l>
+            <l met="8">Au lieu de ta sévérité</l>
+            <l met="8">Si tu te venges par des peines,</l>
+            <l met="8">Comment sais-tu récompenser.</l>
+            <l met="8">Pour porter de semblables chaînes</l>
+            <l met="8">Tous les mortels vont t'offenser.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reviendrai_demain">Je reviendrai, demain au soir</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="8">
+              <emph>J'ai voulu te faire sentir</emph>
+            </l>
+            <l met="6">
+              <emph>Que je peux te punir.<stage type="bis">bis</stage>
+              </emph>
+            </l>
+            <l met="8">
+              <emph>Ô bergère, désirez-vous</emph>
+            </l>
+            <l met="6">
+              <emph>Quelque plaisir plus doux?</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <pb n="205"/>
+        <sp who="#cephise">
+          <speaker>Cephise</speaker>
+        </sp>
+        <spGrp who="#cephise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#autre_jour_assis">L'autre jour, étant assis</title>
+            </desc>
+          </head>
+          <sp who="#cephise">
+            <speaker>Cephise</speaker>
+            <l met="7">
+              <emph>Amour, ne fais rien pour moi,</emph>
+            </l>
+            <l met="7">
+              <emph>Fais tout pour celui que j'aime.</emph>
+            </l>
+            <l met="7">
+              <emph>Je suivrai toujours ta loi,</emph>
+            </l>
+            <l met="7">
+              <emph>J'en fais mon bonheur suprême.</emph>
+            </l>
+            <l met="7">
+              <emph>Oui, mon sensible cœur</emph>
+            </l>
+            <l met="7">
+              <emph>Sera toujours fidèle.</emph>
+            </l>
+            <l met="7">
+              <emph>Mais donne à mon vainqueur</emph>
+            </l>
+            <l met="7">
+              <emph>Une flamme éternelle.</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#lamour">
+          <speaker>L'amour</speaker>
+        </sp>
+        <spGrp who="#lamour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#par_ma_foi_l_eau_m_en_vient_a_la_bouche">Par ma foi, l'eau m'en vient à la bouche</title>
+            </desc>
+          </head>
+          <sp who="#lamour">
+            <speaker>L'amour</speaker>
+            <l met="9">Mais j'entends un grand bruit de fanfare,</l>
+            <l met="9">Tes amis accourent dans ces lieux.</l>
+            <l met="9">Ils ont su le sort que te prépare</l>
+            <l met="8">Un instant aussi délicieux.</l>
+            <l met="8">Ils vont chanter le bonheur rare</l>
+            <l met="9">D'un mortel que chérissent les dieux.</l>
+            <l met="9">Mais j'entends un grand bruit de fanfare,</l>
+            <l met="9">Tes amis accourent dans ces lieux.</l>
+          </sp>
+        </spGrp>
+        <pb n="206"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Anacréon, Céphise, Philenos, les amis d'Anacréon</stage>
+        <sp who="#philenos">
+          <speaker>Philenos</speaker>
+        </sp>
+        <spGrp who="#philenos">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#catherine">Ton humeur est, Catherine</title>
+            </desc>
+          </head>
+          <sp who="#philenos">
+            <speaker>Philenos</speaker>
+            <l met="7">Anacréon, que de grâces!</l>
+            <l met="7">L'Amour n'a pu mieux choisir.</l>
+            <l met="7">Nous accourons sur ses traces</l>
+            <l met="7">Ici pour nous réjouir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#amie">
+          <speaker>Une amie</speaker>
+          <l met="7">Tes amis viennent se rendre</l>
+          <l met="7">En ce lieux pour partager</l>
+          <l met="7">Le bonheur d'une âme tendre</l>
+          <l met="7">Que l'Amour vient d'engager.</l>
+        </sp>
+        <stage>Les comédiens ont fait finir la pièce ici par un duo entre Anacréon et la bergère, et ont supprimé ce qui suit.</stage>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+        </sp>
+        <spGrp who="#anacreon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#de_tous_les_bergers_du_village">De tous les bergers du village</title>
+            </desc>
+          </head>
+          <sp who="#anacreon">
+            <speaker>Anacréon</speaker>
+            <l met="8">Quand je jurais d'être insensible,</l>
+            <l met="8">Amis, je croyais impossible</l>
+            <l met="8">Qu'il fut au monde tant d'attrait.</l>
+            <l met="12">Quel cœur en le voyant ne serait pas flexible?</l>
+            <l met="12">Amour, pardonne-moi. Dieux! comme je mentais!</l>
+            <l met="4">Quant je jurais</l>
+            <l met="4">D'être insensible.</l>
+          </sp>
+        </spGrp>
+        <pb n="207"/>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#philenos">
+            <speaker>Philenos</speaker>
+            <l met="8">Le jeu, le vin et la tendresse</l>
+            <l met="8">Ont toujours fait de faux serments.</l>
+            <l met="8">Des dés, un verre, une maîtresse</l>
+            <l met="8">Triomphent de nos sentiments.</l>
+            <l met="8">De soi l'on répond, même on jure,</l>
+            <l met="8">Mais faut-il tenir la gageure</l>
+            <l met="8">Contre un charme trop séduisant?</l>
+            <l met="8">On y revient en rougissant,</l>
+            <l met="8">On en peut changer la nature.</l>
+          </sp>
+        </spGrp>
+        <sp who="#ami">
+          <speaker>Un ami</speaker>
+          <l met="8">Lise répète après sa mère,</l>
+          <l met="8">Que tout homme est un imposteur,</l>
+          <l met="8">Que l'amour est une chimère</l>
+          <l met="8">Dont il faut défendre son cœur.</l>
+          <l met="8">Elle en répond, même elle en jure.</l>
+          <l met="8">Mais Tircis est-il un parjure?</l>
+          <l met="8">Il donne son cœur pour garant.</l>
+          <l met="8">Il soupire, Lise se rend.</l>
+          <l met="8">On ne peut changer la nature.</l>
+        </sp>
+        <sp who="#amie">
+          <speaker>Une amie</speaker>
+          <l met="8">Tircis aux genoux de Lisette,</l>
+          <l met="8">Ne met de terme à ses amours,</l>
+          <l met="8">À sa flamme vive et discrète,</l>
+          <l met="8">Que l'instant qui finit nos jours.</l>
+          <l met="8">Il en répond, même il en jure,</l>
+          <l met="8">On le croit, sa victoire est sûre,</l>
+          <l met="8">Mais elle avance en cet instant</l>
+          <l met="8">Où Tircis devient inconstant.</l>
+          <l met="8">On en peut changer la nature.</l>
+        </sp>
+        <pb n="209"/>
+        <sp who="#anacreon">
+          <speaker>Anacréon</speaker>
+          <stage>regarde l'amie en colère et dit</stage>
+          <l met="6">Célébrons la victoire</l>
+          <l met="3">De ce dieu</l>
+          <l met="7">Qui met l'univers en feu.</l>
+          <l met="7">Le soumettre n'est qu'un jeu</l>
+          <l met="7">Dont n'a pas besoin sa gloire.</l>
+          <l met="6">Amis, l'on peut m'en croire.</l>
+          <l met="3">À nos cœurs,</l>
+          <l met="7">Il n'offre que des douceurs.</l>
+          <l met="7">Résister à ce vainqueur,</l>
+          <l met="5">C'est fuir son bonheur.</l>
+          <l met="8">Le sage que protège Pallas,</l>
+          <l met="7">De résister bientôt las,</l>
+          <l met="7">Laisse tomber son égide.</l>
+          <l met="6">Le héros intrépide,</l>
+          <l met="6">À l'exemple d'Alcide,</l>
+          <l met="9">Soumis et plus amant que guerrier,</l>
+          <l met="9">Préfère alors le myrte au laurier.</l>
+          <l met="8">Mortels, cédez, rendez les armes.</l>
+          <l met="8">Pourquoi redouter ses alarmes?</l>
+          <l met="8">Ses craintes, ses transports, ses larmes</l>
+          <l met="8">Dans l'âme portent mille charmes.</l>
+          <l met="6">Jugez par les désirs</l>
+          <l met="6">Quels en sont les plaisirs.</l>
+          <l met="6">Cé[lébrons la victoire], ...</l>
+        </sp>
+        <pb n="210"/>
+        <pb n="211"/>
+        <stage>Les amis d'Anacréon dansent et forment un pas de ballet et couronnent Anacréon et la bergère.</stage>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,626 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="parodie_du_prince_de_noisy">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Parodie du<emph>Prince de Noisy</emph>
+        </title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Anonyme</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Rousseau</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">
+          <emph>Petit Réservoir</emph>, tome~II, Berlin, Jean Neaulme, 175.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="alie" sex="UNKNOWN">
+            <persName>Alie</persName>
+          </person>
+          <person xml:id="molineau" sex="UNKNOWN">
+            <persName>Molineau</persName>
+          </person>
+          <person xml:id="gdpretre" sex="UNKNOWN">
+            <persName>Le grand-prêtre</persName>
+          </person>
+          <person xml:id="druide" sex="UNKNOWN">
+            <persName>Le druide</persName>
+          </person>
+          <person xml:id="choeurdegnomes" sex="UNKNOWN">
+            <persName>Chœur de gnomes</persName>
+          </person>
+          <person xml:id="ungnome" sex="UNKNOWN">
+            <persName>Un gnome</persName>
+          </person>
+          <person xml:id="legnome" sex="UNKNOWN">
+            <persName>Le gnome</persName>
+          </person>
+          <person xml:id="poincon" sex="UNKNOWN">
+            <persName>Poinçon</persName>
+          </person>
+          <person xml:id="loracle" sex="UNKNOWN">
+            <persName>L'oracle</persName>
+          </person>
+          <person xml:id="ledruide" sex="UNKNOWN">
+            <persName>Le druide</persName>
+          </person>
+          <person xml:id="le_druide" sex="UNKNOWN">
+            <persName>Le druide</persName>
+          </person>
+          <person xml:id="le_grand_pretre" sex="UNKNOWN">
+            <persName>Le grand-prêtre</persName>
+          </person>
+          <person xml:id="suite_du_grand_pretre" sex="UNKNOWN">
+            <persName>Suite du grand-prêtre</persName>
+          </person>
+          <person xml:id="gnomes_et_genies" sex="UNKNOWN">
+            <persName>Gnomes et génies</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#le_druide">Le druide</role>
+        </castItem>
+        <castItem>
+          <role ana="#alie">Alie</role>
+          <roleDesc>fille du druide</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#molineau">Molineau</role>
+          <roleDesc>amant d'Alie</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#le_grand_pretre">Le grand-prêtre</role>
+        </castItem>
+        <castItem>
+          <role ana="#suite_du_grand_pretre">Suite du grand-prêtre</role>
+        </castItem>
+        <castItem>
+          <role ana="#gnomes_et_genies">Gnomes et génies</role>
+        </castItem>
+      </castList>
+      <pb n="328"/>
+    </front>
+    <body>
+      <div type="act">
+        <head>ACTE 1</head>
+        <stage type="location">Le théâtre représente l'endroit le plus épais d'une forêt, orné de monuments antiques, entre lesquels est le buste de Cléopâtre. On voit le chêne sacré où l'on doit couper le gui, au pied est un autel rustique.</stage>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Le druide, chœur de gnomes</stage>
+          <sp who="#druide">
+            <speaker>Le druide</speaker>
+            <l met="8">Esprits qui commandez aux ombres,</l>
+            <p>Et que je force pourtant à paraître avec deux mots de grimoire, sortez du sein de la terre et venez m'aider à faire la conversation, car je n'aime point à parler seul.</p>
+          </sp>
+          <sp who="#choeurdegnomes">
+            <speaker>Chœur de gnomes</speaker>
+            <l met="8">Sortons, accourons à sa voix.</l>
+          </sp>
+          <sp who="#druide">
+            <speaker>Le druide</speaker>
+            <p>Et que diable, Messieurs, je crois que vous avez résolu de me rendre sourd, en chantant tous à la fois! Vous vous imaginez être encore à l'Opéra, où le plus habile est celui qui crie le plus fort? Parlez l'un après l'autre, s'il vous plaît. Je suis dans le plus grand embarras du monde: j'ai rêvé toute la nuit de perles, d'œufs cassés. Ce matin, en me levant, j'ai renversé une salière; en ouvrant ma fenêtre, j'ai vu deux hiboux. Tout cela, comme vous voyez, me présage quelque grand malheur.</p>
+            <l met="8">Le Ciel serait-il le soutien</l>
+            <l met="12">Du perfide ennemi qui me livre la guerre?</l>
+            <l met="12">Ce monstre, le mépris et l'horreur de la terre,</l>
+            <l met="12">Verrait-il son destin l'emporter sur le mien?</l>
+          </sp>
+          <pb n="329"/>
+          <sp who="#ungnome">
+            <speaker>Un gnome</speaker>
+            <l met="7">D'un oracle irrévocable</l>
+            <l met="6">Observe les décrets,</l>
+            <l met="7">Crains un danger redoutable</l>
+            <l met="8">Si tu méprises ses arrêts.</l>
+          </sp>
+          <sp who="#druide">
+            <speaker>Le druide</speaker>
+            <p>Si vous n'aviez que cela à me dire, vous pouviez fort bien vous dispenser de parler, il y a vingt ans que je le sais et depuis ce temps je tiens en cage le pauvre Prince de Noisy. Je le renferme vingt-trois heures chaque jour dans le piédestal du buste de feu Cléopatre d'heureuse mémoire. N'est-ce pas lui faire acheter bien cher l'honneur d'être mon gendre? Encore, s'il m'était permis de lui faire connaître mes desseins, je prendrais patience; mais non, il faut qu'il les ignore et qu'il ne sache pas même son nom, que j'ai changé par vos conseils en celui de Poinçon. Le pauvre enfant! Il me fend le cœur et me demande quelquefois s'il n'est né comme un champignon sans père et sans mère.</p>
+          </sp>
+          <sp who="#ungnome">
+            <speaker>Un gnome</speaker>
+            <p>Seigneur Druide, permettez-moi de vous répéter ce que vous nous disiez il n'y a qu'un instant. Ce n'était pas la peine de nous appeler, si vous n'aviez que cela à</p>
+            <p>nous dire, nous savons cela par cœur depuis vingt ans.</p>
+          </sp>
+          <sp who="#druide">
+            <speaker>Le druide</speaker>
+            <p>Et ne voyez-vous pas, butor, que si vous savez toutes ces choses, le parterre n'en sait pas un mot? Il serait surpris de voir Poinçon sortir de sa niche sans savoir pourquoi on l'y a logé et je l'allais dire justement lorsque vous m'avez interrompu. Supposez donc que vous ne savez rien et  apprenez que toute ma puissance est attachée à la possession d'un glaive que recèle ce piédestal et que le fidèle Poinçon le garde avec exactitude.</p>
+          </sp>
+          <sp who="#legnome">
+            <speaker>Le gnome</speaker>
+            <p>Supposez aussi que vous avez oublié certaines conditions que l'oracle a mis dans son marché. Je vais vous les répéter en vers, car depuis qu'on m'a permis de parler ce sublime langage, je crois me déshonorer quand je parle en prose. C'est bien assez que je vous fasse grâce de la musique. Il s'agit comme vous savez de Poinçon et de votre fille.</p>
+          </sp>
+          <sp who="#druide">
+            <speaker>Le druide</speaker>
+            <p>Quel galimatias! mais les auditeurs en savent actuellement autant que moi; me sera-t-il permis de pester un moment contre l'oracle? S'il m'avait permis d'enfermer ma fille dans le buste de Marc Antoine, je pourrais répondre de son cœur. Mais non, cet impertinent oracle m'ordonne de la laisser chaque jour une heure tête-à-tête avec</p>
+            <p>Poinçon. N'est-ce pas là se moquer d'un pauvre diable d'enchanteur que d'attacher son bonheur à de pareilles conditions?<note>Cet oracle avait attaché le bonheur du prince charmant au secret de plaire à une princesse qui le croirait sourd, muet et insensible.</note>L'oracle de la fée souveraine était cent fois plus raisonnable. Il est plus aisé à une femme d'aimer une belle statue que de se défendre d'aimer un homme qui a l'usage de tous ses membres. N'importe, le dé en est jeté: ces enfants, après tout, sont d'une simplicité qui quelque fois m'étonne. Il faut en profiter pour les défendre de l'amour.<stage>Aux gnomes.</stage>Vous pouvez vous retirer, je n'avais besoin de vous que pour exposer le sujet de la pièce, à présent vous ne m'êtes bons à rien.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Le druide, Alie</stage>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <stage>en courant</stage>
+            <p>Et bonjour mon papa, à coup sûr vous avez oublié de monter votre montre, car l'heure où j'ai coutume de voir Poinçon est passée depuis longtemps.</p>
+          </sp>
+          <sp who="#druide">
+            <speaker>Le druide</speaker>
+            <p>Il est bien temps de penser à Poinçon. Le plus grand danger nous menace et vous</p>
+            <p>vous occupez d'un marmouset qui pourrait bien devenir la cause de nos malheurs. Gardez bien votre cœur, ma fille, c'est la seule chose qui doive vous embarrasser, si malheureusement vous veniez à connaître l'amour, tout serait perdu.</p>
+          </sp>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <p>Ho! que je n'ai garde de chercher à le connaître<stage>À part.</stage>c'est bien assez de le sentir, vous me répétez toujours la même chose, quand ferez-vous venir Poinçon?</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Le druide, Alie, Poinçon</stage>
+          <sp who="#druide">
+            <speaker>Le druide</speaker>
+            <p>Le voici, ah! ça mes enfants, je vous laisse ensemble. Je suis père commode, comme vous voyez, surtout pensez à l'oracle. Je vais guetter mon ennemi Molineau pendant que vous présiderez aux jeux.</p>
+          </sp>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <stage>à part</stage>
+            <p>J'admire la confiance du bonhomme.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Poinçon, Alie</stage>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Je vous revois donc, charmante Alie, je vous jure que je me suis bien ennuyé en vous attendant. Avant qu'on m'eût chargé de</p>
+            <p>l'impertinent personnage que je joue et pendant que j'étais bélier, j'avais au moins le plaisir de la promenade et celui de faire à<note>Dans l'ouvrage du conte d'Hamilton, le Prince de Noisy, métamorphosé en bélier, s'attache à Molineau son rival, pour tâcher de prévenir les maux que ce géant veut faire au druide.</note>Molineau des contes qui n'avaient pas le sens commun, mais aujourd'hui, mon sort est bien plus triste. Il me semble, ma belle Alie, que vous n'en êtes pas fort touchée et qu'au milieu des plaisirs qui vous environnent, vous oubliez facilement que le pauvre Poinçon se morfond dans un cachot pour vos beaux yeux.</p>
+          </sp>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <p>Que vous êtes injuste, mon cher Poinçon. Je voudrais que vous fussiez témoin du dégoût que j'éprouve au milieu des plaisirs que vous ne partagez pas.</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Je vous en crois sur votre parole, mon sort est trop heureux.</p>
+          </sp>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <p>À propos, Poinçon, ne nous parlons pas de l'Amour, vous savez que c'est un vaurien dont nous devons nous méfier. Si nous nous amusions à lui dire des injures?</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>C'est bien penser. Il faut avouer que vous avez cent fois plus d'esprit que moi, aidons-nous donc l'un et l'autre à le haïr.</p>
+          </sp>
+          <pb n="334"/>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <p>Mais peut-être qu'il n'est pas si diable qu'il est noir?</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Rejetez cela comme une mauvaise pensée et croyons en notre papa. Il serait beau vraiment que vous vous apprivoisiez avec ce petit vaurien. Je ne puis être que votre ami et j'entends que vous n'ayez point d'amant puisque je ne veux point de maîtresse.</p>
+          </sp>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <p>Vous pensez précisément comme moi. Il faut avouer que nous avons l'un pour l'autre une drôle d'amitié: croyez-moi, n'en examinons point trop scrupuleusement la nature. Allons, un petit duo.</p>
+          </sp>
+          <spGrp>
+            <caption>Poinçon, alie</caption>
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="8">Porte ailleurs tes enchantements,</l>
+              <l met="8">Fuis, Amour, tyran redoutable.</l>
+            </sp>
+          </spGrp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Et que diable vient faire ici le Grand-Prêtre avec toute sa séquelle? Ne pourrons-nous jamais être seuls une heure en repos?</p>
+          </sp>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <p>Que vous êtes ignorant, mon pauvre Poinçon! Et où avez-vous vu un Opéra où l'on ne place, à propos ou non, un divertissement à la fin de l'acte!</p>
+          </sp>
+          <pb n="335"/>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Je l'avais ma foi oublié, mais l'occasion de celui-ci est assez naturelle: c'est la fête du gui sacré.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 5</head>
+          <stage type="characters">Poinçon, Alie, Le Grand-Prêtre et sa suite</stage>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Un autre que moi prendrait de longs détours pour venir au fait, mais je hais les préludes. Cette fête n'est qu'un prétexte pour déclamer contre l'Amour et vous donner par là envie de le connaître, car cette fatale connaissance est nécessaire pour amener la catastrophe. Nous allons commencer: souvenez-vous de votre rôle.</p>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="7">Bannissons de ce bocage</l>
+            <l met="7">L'Amour, ce tyran des cœurs.</l>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Mais, monsieur le Grand-Prêtre, on ne peut éviter ce que l'on ne connait pas! Apprenez-nous de grâce à connaître ce fripon que nous devons fuir avec tant de soin.</p>
+          </sp>
+          <sp who="#gdpretre">
+            <speaker>Le grand-prêtre</speaker>
+            <p>Je vais vous expliquer tout au plus juste ce que c'est que l'amour. C'est un certain je ne sais quoi, qui vient je ne sais comment,</p>
+            <p>et qui s'en va comme il est venu, sans qu'on en puisse expliquer la raison.</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Il faut avouer que cela est bien clair.</p>
+          </sp>
+          <sp who="#gdpretre">
+            <speaker>Le grand-prêtre</speaker>
+            <p>Est-ce que vous n'êtes pas au fait?</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Tout comme si vous n'aviez rien dit.</p>
+          </sp>
+          <sp who="#gdpretre">
+            <speaker>Le grand-prêtre</speaker>
+            <p>Attendez donc un peu, je vais me servir d'une comparaison. L'amour est... l'amour est... comme la gale. Tout ainsi que le malheureux qui en est atteint est dans une inquiétude perpétuelle jusqu'au moment où il puisse se gratter en liberté, l'amant éloigné de sa maîtresse ne peut se tenir un moment tranquille. Il va, il vient, il court, s'agite. Et comme le galeux paye par les douleurs les plus cuisantes le plaisir qu'il s'est procuré en se grattant, l'amant de même achète par les inquiétudes les plus cruelles le moment qu'il a goûté auprès de sa maîtresse. M'entendez-vous à présent?</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Parfaitement. Si vos comparaisons ne sont pas nobles, au moins sont-elles claires. Mais, comme dit un ancien, toute comparaison cloche et si vous voulez me permettre de vous dire ma pensée...</p>
+          </sp>
+          <pb n="337"/>
+          <sp who="#gdpretre">
+            <speaker>Le grand-prêtre</speaker>
+            <p>Vous pouvez parler librement.</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Apprenez donc, monsieur le Grand-Prêtre, que vous raisonnez tout de travers. Ou je ne suis qu'un bête, ou mon amitié pour Alie est de l'amour et de la meilleure espèce, puisque je sens les agitations que vous m'avez dépeintes lorsque je ne la vois pas. Mais il n'est pas vrai que ce mal (si c'en est un) provienne du plaisir que j'ai eu en la voyant. Au contraire, les douze premières heures que je passe dans mon cachot, après l'avoir quittée, coulent avec rapidité parce que je m'entretiens du plaisir que m'a causé sa présence. Donc l'amour n'est pas un aussi grand mal que vous avez voulu nous le faire croire. Qu'en pensez-vous, Alie?</p>
+          </sp>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <p>Je n'en ai jamais été la dupe. Mais je vois paraître un éclair, gare la bombe.</p>
+          </sp>
+          <stage>Le tonnerre se fait entendre, le buste est brisé, on voit paraître le glaive sacré.</stage>
+          <sp who="#gdpretre">
+            <speaker>Le grand-prêtre</speaker>
+            <p>Je vous l'avais bien dit, Molineau triomphe, adieu le couteau.</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Quelque sot le laisserait prendre, mais j'ai autant d'esprit dans la parodie qu'à l'Opéra et, ici comme Molineau avec toute sa magie n'est qu'une bête de faire tant de bruit pour un couteau qu'il ne s'avise pas même de demander.</p>
+          </sp>
+          <pb n="338"/>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 2</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Molineau<stage>seul</stage>
+          </stage>
+          <spGrp>
+            <sp who="#molineau">
+              <speaker>Molineau</speaker>
+              <stage>i</stage>
+              <p>Il faut avouer que je joue ici le rôle d'une franche buse. Je tiens le druide dans les fers, il est vrai, mais qu'est-ce qui le soumet à ma puissance? la perte d'un couteau qu'il peut recouvrer quand il lui plaît, puisque je ne m'informe pas de ce qu'il est devenu. Au lieu d'ordonner aux génies d'aller chercher Alie, mon premier soin ne devait-il pas être de les lâcher à la poursuite de ce maudit couteau, de qui mes destins dépendent? Tout beau, monsieur Molineau, vous en parlez bien à votre aise. Si vous aviez eu le sens commun dans cette occasion, qu'aurait fait l'auteur de cette pièce pour vous endormir et parvenir à son dénouement? Mais consolez-vous, s'il vous fait agir comme une bête, il vous fait parler comme un virtuose.</p>
+              <l met="8">Que le triomphe de l'amour</l>
+              <l met="8">Serve à celui de la vengeance.</l>
+              <p>Peut-on rien dire de mieux tourné? Mais que me veulent ces gens-là? Ils sont plaisamment fagotés.</p>
+              <p>Messieurs, qu'y a-t-il pour votre service?</p>
+            </sp>
+          </spGrp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="characters">Poinçon et sa suite<stage>déguisés en saltimbanque</stage>
+          </stage>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Nous sommes ici pour le vôtre, Monseigneur. Notre art est de séduire les sots, vous plait-il que nous vous donnions un plat de notre métier?</p>
+          </sp>
+          <sp who="#molineau">
+            <speaker>Molineau</speaker>
+            <stage>en contrefaisant Poinçon</stage>
+            <p>Nous sommes ici pour le vôtre, Monseigneur. Ce drôle-là sait vivre, voyons ce que vous savez faire.</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <stage>à sa suite</stage>
+            <p>Allons, qu'on se dépêche, débitez-nous quelques lieux communs sur l'Amour pour donner occasion au Seigneur Molineau de me faire son confident.</p>
+          </sp>
+          <sp who="#molineau">
+            <speaker>Molineau</speaker>
+            <p>À propos vous avez raison, j'ai besoin de quelqu'un à qui je puisse conter tout ce que je sens pour Alie, cela est plus important que d'entendre vos chansons. Je te choisis donc pour le fidèle dépositaire de mes pensées. Alie est une petite pécore que je me suis avisé d'aimer, ne pourrais-tu point m'apprendre le moyen de la rendre sensible?</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Rien de plus simple, tâchez de lui paraître aimable.</p>
+          </sp>
+          <sp who="#molineau">
+            <speaker>Molineau</speaker>
+            <p>Peste soit du butor, c'est précisément</p>
+            <p>de quoi il est question. Vois-tu, mon ami, je n'ai pas la fatuité de ces petits maîtres, qui ne sont charmants qu'à leurs yeux. Je sais bien que je ne suis pas fort aimable et je te demande ce qu'il faut que je fasse pour le devenir, ou du moins pour le paraître.</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <l met="8">Aimez et vous serez aimé.</l>
+          </sp>
+          <sp who="#molineau">
+            <speaker>Molineau</speaker>
+            <p>Chansons d'Opéra! Si l'amour pouvait embellir, je ressemblerais comme deux gouttes d'eau à défunt Narcisse. Ne pourrais-tu point vanter mon pouvoir à mon ingrate et lui faire sentir qu'elle doit craindre ma colère, si elle me préfère mon rival?</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Vous avez un rival, Seigneur. Pourrait-on sans trop de curiosité vous demander son nom?</p>
+          </sp>
+          <sp who="#molineau">
+            <speaker>Molineau</speaker>
+            <p>C'est un petit freluquet, qu'on appelle le Prince de Noisy.</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>La déloyale.</p>
+          </sp>
+          <sp who="#molineau">
+            <speaker>Molineau</speaker>
+            <p>Le bon cœur d'homme, comme il s'intéresse pour moi qu'il ne connaît que depuis un moment. Console-toi mon ami. Je cours punir le rival qui m'outrage, en attendant, prépare une fête pour mon ingrate.</p>
+          </sp>
+          <pb n="341"/>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Poinçon et sa suite</stage>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <stage>i</stage>
+            <p>La sainte Mitouche, qui l'aurait jamais soupçonnée d'une infidélité? Mais dois-je en croire Molineau sur sa parole? Sans doute, cet homme va droit chemin et n'a point de malice. Que doit faire en pareil cas un amant qui a du cœur? La mort est son unique ressource. Allons, courage Poinçon, n'en fais pas à deux fois, perce ce cœur...<stage>Il tire son épée.</stage>mais à quoi diable vous amusez-vous, mes gens? Ces maroufles-là oublient qu'ils ne sont là que pour m'empêcher de me tuer et si je n'étais pas homme à réflexion, je me serais</p>
+            <p>déjà passé trois à quatre fois mon épée au travers du corps.</p>
+          </sp>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="12">L'amour est outragé, vivez pour la vengeance,</l>
+            <l met="5">Le druide enchaîné.</l>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Par la mort je l'avais oublié. Vous avez raison mes enfants, vivons pour la vengeance. J'aurai tout le temps de donner les étrivières au prince de Noisy; commençons par dépêcher Molineau, allons... mais qu'est-ce que cela signifie, je crois que j'ai peur? Mais quand cela serait, il n'y aurait pas grand mal, il n'est pas aussi facile qu'on se l'imagine de pourfendre un magicien. Attendez... je pourrais le prendre par derrière: mais s'il venait à se retourner, il pourrait bien me gâter la taille. Rêvons un peu... m'y voilà. J'ai deux moyens infaillibles pour l'endormir: vos chants et mon couteau. Le voici, allons mes amis, ne vous épargnez pas, je vous conjure.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 4</head>
+          <stage type="characters">Molineau, Poinçon, suite</stage>
+          <sp who="#choeur">
+            <speaker>Le choeur</speaker>
+            <l met="6">Laissez-vous couronner</l>
+            <l met="8">De ces fleurs qui parent nos têtes.</l>
+          </sp>
+          <sp who="#molineau">
+            <speaker>Molineau</speaker>
+            <stage>baillant</stage>
+            <p>Doucement, Messieurs, en voilà assez pour me faire dormir vingt-quatre heures.</p>
+            <p>Ayez la bonté de vous taire jusqu'à mon réveil.</p>
+          </sp>
+          <stage>Molineau se couche à terre et Poinçon après avoir examiné s'il est bien endormi, lui coupe la tête et dit</stage>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>L'affaire est faite: voilà ce que c'est d'avoir du cœur. Allons, qu'on aille délivrer le druide et qu'il annonce mon triomphe et ma gloire.</p>
+          </sp>
+        </div>
+      </div>
+      <div type="act">
+        <head>ACTE 3</head>
+        <div type="scene">
+          <head>SCENE 1</head>
+          <stage type="characters">Poinçon</stage>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <stage>i</stage>
+            <p>Puisque je me trouve proche du temple de la vérité, je veux un peu m'instruire des faits et gestes d'Alie: mais la voici.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 2</head>
+          <stage type="location">Les génies qui ont enlevé Alie la mettent vis-à-vis de Poinçon.</stage>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <stage>i</stage>
+            <p>Or ça, messieurs les génies, vous avez changé de maître: Molineau a reçu la récompense de ses forfaits. Ayez pour moi la même déférence que vous aviez pour sa défunte altesse.</p>
+            <l met="10">Ou redoutez le sort de votre maître.</l>
+          </sp>
+          <stage>Les génies se prosternent.</stage>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <p>Ha! Mon cher Poinçon! que j'ai de joie</p>
+            <p>de vous revoir!.. Mais quelle mouche le pique? Comme il tourne les yeux.</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Taisez-vous, perfide. Vous croyez parler apparemment à votre prince de Noisy?</p>
+          </sp>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <p>En vérité Poinçon, vous radotez; je n'ai jamais ouï prononcer ce nom et qui vous a mis cette belle fantaisie dans la tête?</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <stage>d'un air grave</stage>
+            <l met="12">L'enchanteur me l'a dit, son art est infaillible.</l>
+          </sp>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <p>O dieux! Pouvez-vous le croire au préjudice d'une amante qui est la simplicité même.</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Vertuchou, quelle innocente! Alie, il ne faut point ici tant de discours, consultons l'oracle de la vérité, il nous mettra d'accord à l'instant.</p>
+          </sp>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <p>Je vous trouve plaisant avec votre oracle, une fille comme moi doit en être crue sur sa parole.</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Nage toujours et ne t'y fie pas.</p>
+          </sp>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <p>Ne vous imaginez pas que je craigne rien, mais votre soupçon m'offense. Vous ne répondez rien? Vous voulez donc interroger</p>
+            <p>l'oracle, parlez, une fois, deux fois, trois fois... j'y vais de ce pas.</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Elle me paraît bien résolue, quel tapage elle va faire si ce maudit enchanteur m'a menti? Attendez, Alie, je crois qu'en effet je ferai mieux de vous en croire sur votre parole.</p>
+          </sp>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <p>Non, non, vous l'avez voulu, nous allons voir beau jeu. Monsieur l'oracle, ayez la bonté de justifier une pauvre fille qu'on calomnie... J'entends la symphonie, écoutons.</p>
+          </sp>
+          <sp who="#loracle">
+            <speaker>L'oracle</speaker>
+            <l met="7">L'amant qu'Alie a choisi</l>
+            <l met="7">Est le prince de Noisy.</l>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <stage>regardant Alie qui baisse les yeux</stage>
+            <p>Il faut avouer que je faisais une grande injustice en vous soupçonnant. Eh bien! Alie, vous ne répondez rien?</p>
+          </sp>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <p>Que voulez-vous que je vous dise? Cet oracle n'a pas le sens commun. Je n'aime que vous, je ne connais d'autre homme que vous et le druide. Croyez-moi si vous voulez, je n'ai jamais entendu nommer ce prince, je vous l'ai déjà dit.</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Que le cœur est faible! Eh bien, Alie, je veux bien croire que l'oracle a fait un<emph>qui pro quo</emph>, je vous crois fidèle, je crois que</p>
+            <p>vous le serez toujours, mais si jamais vous cessiez de l'être</p>
+            <l met="9">Hélas! du moins que cela m'arrive</l>
+            <l met="4">Sans le savoir.</l>
+          </sp>
+          <sp who="#alie">
+            <speaker>Alie</speaker>
+            <p>Vous auriez aussi bien fait de me croire d'abord. Mais voici mon papa: il est bien aussi habile que l'oracle, interrogez-le un peu.</p>
+          </sp>
+        </div>
+        <div type="scene">
+          <head>SCENE 3</head>
+          <stage type="characters">Poinçon, le druide, Alie, suite</stage>
+          <sp who="#ledruide">
+            <speaker>Le druide</speaker>
+            <p>Que pourrais-je dire, Alie? Je suis trop poli pour démentir l'oracle: j'ajouterai pourtant pour la consolation de Poinçon, qu'il est le rival de lui-même, puisque lui et le prince de Noisy sont la même personne.</p>
+          </sp>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Je respire, mais, charmante Alie, me pardonnerez-vous mes injustices?</p>
+          </sp>
+          <sp who="#ledruide">
+            <speaker>Le druide</speaker>
+            <p>Je réponds pour elle, vous pouvez reprendre votre nom et le faire porter à Alie. Qu'un nœurd sacré vous unisse, mais souvenez-vous que pour être heureux en amour comme en hymen, il ne faut jamais pousser la curiosité trop loin. Esprits soumis à mon empire, faites éclater par vos chants la joie que me donne cet hymen!</p>
+          </sp>
+          <pb n="347"/>
+          <sp who="#poincon">
+            <speaker>Poinçon</speaker>
+            <p>Gardez cela pour un autrefois s'il vous plait. J'ai des soins plus importants que ceux de présider à la fête et si vous m'en croyez, nous bannirons cette foule d'importuns, pour commencer à goûter ensemble le doux plaisir d'être réunis pour toujours.</p>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

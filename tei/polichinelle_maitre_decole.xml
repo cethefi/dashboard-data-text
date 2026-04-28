@@ -1,0 +1,1387 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="polichinelle_maitre_decole">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Polichinelle maître d'école</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Louis Fuzelier</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>\LC, S. Rousseau revu par FR avril 2016, bcp de fautes</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">BnF ms. fr. 9337</bibl>
+        <bibl type="intermediarySource">E. Ducharniat</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="mercure" sex="UNKNOWN">
+            <persName>Mercure</persName>
+          </person>
+          <person xml:id="choeurdesamants" sex="UNKNOWN">
+            <persName>Chœur des amants</persName>
+          </person>
+          <person xml:id="unamantsuisse" sex="UNKNOWN">
+            <persName>Un amant suisse</persName>
+          </person>
+          <person xml:id="lamantsuisse" sex="UNKNOWN">
+            <persName>L'amant suisse</persName>
+          </person>
+          <person xml:id="fenise" sex="UNKNOWN">
+            <persName>Fénise</persName>
+          </person>
+          <person xml:id="valere" sex="UNKNOWN">
+            <persName>Valère</persName>
+          </person>
+          <person xml:id="tersandre" sex="UNKNOWN">
+            <persName>Tersandre</persName>
+          </person>
+          <person xml:id="ladanseuse" sex="UNKNOWN">
+            <persName>La danseuse</persName>
+          </person>
+          <person xml:id="lafleur" sex="UNKNOWN">
+            <persName>La fleur</persName>
+          </person>
+          <person xml:id="claudine" sex="UNKNOWN">
+            <persName>Claudine</persName>
+          </person>
+          <person xml:id="amants_de_diverses_nations" sex="UNKNOWN">
+            <persName>Amants de diverses nations</persName>
+          </person>
+          <person xml:id="un_suisse" sex="UNKNOWN">
+            <persName>Un Suisse</persName>
+          </person>
+          <person xml:id="une_danseuse" sex="UNKNOWN">
+            <persName>Une danseuse</persName>
+          </person>
+          <person xml:id="un_laquais" sex="UNKNOWN">
+            <persName>un laquais</persName>
+          </person>
+          <person xml:id="une_servante" sex="UNKNOWN">
+            <persName>une servante</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie en un acte du ballet de<emph>L'École des amants</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere">
+        <desc>Représentée à la foire Saint-Laurent 1744 par les comédiens de bois </desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#polichinelle">Polichinelle</role>
+          <roleDesc>en domino blanc, prétintaille de rouge</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#amants_de_diverses_nations">Amants de diverses nations</role>
+        </castItem>
+        <castItem>
+          <role ana="#un_suisse">Un Suisse</role>
+        </castItem>
+        <castItem>
+          <role ana="#mercure">Mercure</role>
+        </castItem>
+        <castItem>
+          <role ana="#une_danseuse">Une danseuse</role>
+          <roleDesc>grand panier et jupon court</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#fenise">Fénise</role>
+          <roleDesc>à l'italienne</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#valere">Valère</role>
+          <roleDesc>en habit de chasse vert</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#tersandre">Tersandre</role>
+          <roleDesc>grand berger, en habit et manteau couleur de rose galonne d'argent</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#un_laquais">un laquais</role>
+          <roleDesc>La Fleur</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#une_servante">une servante</role>
+          <roleDesc>Claudine</roleDesc>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène est dans les jardins de Vénus.</stage>
+      </prologue>
+      <pb n="330"/>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Polichinelle, les amants de tout pays</stage>
+        <sp who="#choeurdesamants">
+          <speaker>Chœur des amants</speaker>
+        </sp>
+        <spGrp who="#choeurdesamants">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_bequille">La béquille</title>
+            </desc>
+          </head>
+          <sp who="#choeurdesamants">
+            <speaker>Chœur des amants</speaker>
+            <l met="6">Célébrons les exploits</l>
+            <l met="6">Du poupard<note type="definition">Poupard: a signifié damoiseau [...] il n'est en usage que pour signifier un petit enfant en maillot (Furetière)</note>d'Amathonte.</l>
+            <l met="6">L'Opéra suit ses lois,</l>
+            <l met="6">Sans scrupule et sans honte.</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <l met="6">Que chacun s'égosille,</l>
+          <l met="6">Surtout n'oubliez pas</l>
+          <l met="6">De chanter la béquille</l>
+          <l met="6">Du père Barnabas.</l>
+        </sp>
+        <sp who="#choeurdesamants">
+          <speaker>Chœur des amants</speaker>
+          <l met="6">Que chacun s'égosille,</l>
+          <l met="6">Surtout n'oublions pas</l>
+          <l met="6">De chanter la béquille</l>
+          <l met="6">Du père Barnabas.</l>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">Dans ces beaux lieux il faut se rendre,tiré de <title ref="#l_ecole_des_amants">L'École des amants</title> (prologue)</desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Dans mon école il faut se rendre</l>
+            <l met="10">Pour être instruit des bons tours des amants.</l>
+            <l met="8">Venez, galants, venez apprendre,</l>
+            <l met="10">L'art d'escroquer les biens les plus charmants.</l>
+            <l met="8">Enfants, signalez votre zèle,</l>
+            <l met="10">Jusqu'aux abbés coquettent dans ma cour.</l>
+            <l met="4">Polichinelle</l>
+            <l met="4">Dans ce séjour,</l>
+            <l met="4">Quand on querelle</l>
+            <l met="4">Jure à son tour.</l>
+            <l met="4">Polichinelle,</l>
+            <l met="4">Dans ce séjour</l>
+            <l met="8">Est magister du dieu d'amour.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Polichinelle<stage>assis</stage>, les Amants, Mercure</stage>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Or sus<note type="definition">Sus: interjection dont on se sert pour exhorter, pour inciter (Acad.1762)</note>mes chers écoliers</p>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fraises">Des fraises</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="7">Écoutez bien ma leçon</l>
+            <l met="6">Et la loi que j'enseigne.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <l met="7">Holà! Sous ce pavillon,</l>
+          <l met="7">Que fais-tu donc mon garçon?</l>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <l met="8">Je règne, je règne, je règne.</l>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Pourquoi cette poignée de verges?</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>C'est mon sceptre.</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Pourquoi ce domino? Es-tu dans un bal?</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Non, je suis dans mon école. Je suis maître ès arts dans l'université de Vénus:</p>
+          <p>
+            <emph>arte regendus amor</emph>
+          </p>
+          <p>Voilà, mes écoliers, il y en a de Rome, de Constantinople, de Quimper-Corentin, de Vaugirard...</p>
+        </sp>
+        <sp who="#unamantsuisse">
+          <speaker>Un amant suisse</speaker>
+          <p>Montsir, montsir Polichinelle...</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Ah! Montsir Polichinelle, donnez-lui audience, un galant suisse mérite d'être entendu.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Parti par mon foi, partir fous, la fleur des treize cantons.</p>
+        </sp>
+        <sp who="#lamantsuisse">
+          <speaker>L'amant suisse</speaker>
+          <p>Parti, par mon foi, montsir Polichinelle,</p>
+        </sp>
+        <spGrp who="#lamantsuisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reguingue">Reguingué</title>
+            </desc>
+          </head>
+          <sp who="#lamantsuisse">
+            <speaker>L'amant suisse</speaker>
+            <l met="8">Foutriez-fous pien tans stijour</l>
+            <l met="8">Donner ein ptit leçon t'amour,</l>
+            <l met="8">Et sur le jargon de sti cour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <l met="8">Oh, d'un jour, ce n'est pas l'affaire</l>
+          <l met="8">Qu'un Suisse apprenne l'art de plaire!</l>
+        </sp>
+        <sp who="#lamantsuisse">
+          <speaker>L'amant suisse</speaker>
+          <p>Mais Montsir, je foutrais...</p>
+        </sp>
+        <pb n="332"/>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Mais, Montsir, si vous ne vous taisez, vous serez quatre jours sans boire de vin.</p>
+        </sp>
+        <sp who="#lamantsuisse">
+          <speaker>L'amant suisse</speaker>
+          <p>Quatre jours sans poire de vin?</p>
+        </sp>
+        <spGrp who="#lamantsuisse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_ne_saurais">Je ne saurais</title>
+            </desc>
+          </head>
+          <sp who="#lamantsuisse">
+            <speaker>L'amant suisse</speaker>
+            <l met="3">Je n'saurais</l>
+            <l met="7">Enturer sti pénitence,</l>
+            <l met="3">J'en mourrais.</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Retirez-vous, mes enfants, je veux causer un peu avec le dieu Mercure sur les nouvelles de l'école, ensuite je vous donnerai leçon l'un après l'autre, pour me moins fatiguer. Allons, que ce pavillon disparaisse comme s'il était enlevé par des Zéphyrs de carton.</p>
+        </sp>
+        <stage>Les écoliers se retirent. Le pavillon s'enlève pendant que Polichinelle chante<emph>Hanneton vole, vole</emph>.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Polichinelle, Mercure</stage>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Oh çà, Monsieur Polichinelle, recevez mes compliments sur le sceptre que vous portez. Malepeste, on s'aperçoit bien dans le monde que c'est monsieur Polichinelle qui façonne les amants.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#du_haut_en_bas">Du haut en bas</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="4">Du haut en bas</l>
+            <l met="8">Je leur apprends comme on respire</l>
+            <l met="4">De doux appas,</l>
+            <l met="8">Je note leurs tendres hélas!</l>
+            <l met="8">Oui, dans leur amoureux martyre,</l>
+            <l met="8">Je leur apprends comme on soupire,</l>
+            <l met="4">Du haut</l>
+          </sp>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="4">en bas.</l>
+          </sp>
+        </spGrp>
+        <stage>Rot.</stage>
+        <stage>Pet.</stage>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Cela est fort tendre, jamais Céladon n'a soupiré comme cela.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#branle_de_metz">Branle de Metz</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="7">Comme un galant je houspille</l>
+            <l met="7">Lorsqu'il manque à sa leçon.</l>
+            <l met="7">Mais j'y fais plus de façon,</l>
+            <l met="7">Quand c'est quelque belle fille,</l>
+            <l met="7">Oh, je m'y mets jusqu'au cou.</l>
+            <l met="11">Et je l'étrille, l'étrille, l'étrille</l>
+            <l met="7">Oh, je m'y mets jusqu'au cou,</l>
+            <l met="7">Et je l'étrille partout.</l>
+          </sp>
+        </spGrp>
+        <pb n="333"/>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Donnez-vous vos leçons en musique comme à l'Opéra?</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#et_voila_comme">Et voilà comme</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="10">Et voilà comme, et voilà justement,</l>
+            <l met="8">Comme on fait bâiller sûrement.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>L'Opéra joue de malheur depuis qu'il est si bien dirigé.</p>
+        </sp>
+        <spGrp who="#mercure">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Amis sans regretter Paris</title>
+            </desc>
+          </head>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <l met="8">Dardanus était à quia</l>
+            <l met="6">Son successeur est fade.</l>
+            <l met="8">Après le plus vif ratafia</l>
+            <l met="6">C'est boire de l'orgeade.</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Cependant l'Ecole mérite des applaudissements.</p>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+        </sp>
+        <spGrp who="#mercure">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_reguingue">Ô reguingué</title>
+            </desc>
+          </head>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <l met="8">Dans ce ballet, qu'approuvez-vous?</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <l met="8">Un morceau qui fait des jaloux.</l>
+          <l met="8">Et des jalouses...</l>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <l met="8">Dites-nous</l>
+          <l met="8">Ce morceau si digne d'estime.</l>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <l met="8">C'est la charmante pantomime.</l>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#et_et_et_et_et_et_et_et">Et et et et et et et et</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="7">Quand on voit la jardinière</l>
+            <l met="7">On se sent tout guilleret,</l>
+            <l met="8">Et et et et et et et et,</l>
+            <l met="7">La danse est vive est légère,</l>
+            <l met="7">Son jardinier est bien fait,</l>
+            <l met="8">Et et et et et et et et.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <l met="7">La belle vous plaît, compère?</l>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <l met="7">J'aurai de l'ouvrage à faire</l>
+          <l met="7">Dans son joli joliet,</l>
+          <l met="7">J'aurai de l'ouvrage à faire</l>
+          <l met="7">Dans son joli jardinet.</l>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <p>Adieu, seigneur Polichinelle, j'oubliais</p>
+          <p>que Jupiter m'a chargé d'une ambassade.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Ambassade honorable auprès de quelque princesse qui veut aliéner ses appas.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Polichinelle, Mademoiselle Tambourin<stage>danseuse</stage>
+        </stage>
+        <sp who="#ladanseuse">
+          <speaker>La danseuse</speaker>
+          <p>Monsieur Polichinelle, vous voyez une danseuse qui...</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Qui veut faire faire des faux pas à quelque financier...</p>
+        </sp>
+        <sp who="#ladanseuse">
+          <speaker>La danseuse</speaker>
+          <p>Apprenez que je m'appelle Angélique Tambourin, et qu'on ne bronche pas avec moi. J'ai fait mes études dans la rue Saint-Nicaise.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Diantre!</p>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cotillon_thalie">Sans mes pas et sans leurs appas</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Dans l'école du magasin,</l>
+            <l met="10">On n'apprend ni le grec, ni le latin,</l>
+            <l met="4">On récompense,</l>
+            <l met="4">On chante, on danse,</l>
+            <l met="5">On montre au tendron</l>
+            <l met="4">Le tour fripon</l>
+            <l met="4">Du cotillon.</l>
+            <l met="8">À l'école du magasin</l>
+            <l met="10">On sait sa leçon de très grand matin.</l>
+          </sp>
+        </spGrp>
+        <sp who="#ladanseuse">
+          <speaker>La danseuse</speaker>
+        </sp>
+        <spGrp who="#ladanseuse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">Ce n'est plus la mode des amants constants,tiré des <title ref="#fetes_venitiennes">Fêtes vénitiennes</title> (acte de L'Amour saltimbanque)</desc>
+          </head>
+          <sp who="#ladanseuse">
+            <speaker>La danseuse</speaker>
+            <l met="5">Ce n'est plus la mode</l>
+            <l met="5">Des vers délicats,</l>
+            <l met="5">On ne s'accommode<stage type="bis">bis</stage>
+            </l>
+            <l met="5">Que des entrechats.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#ladanseuse">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_tran_tran">Le tran tran</title>
+            </desc>
+          </head>
+          <sp who="#ladanseuse">
+            <speaker>La danseuse</speaker>
+            <l met="8">À présent, de plus d'un théâtre,</l>
+            <l met="8">La danse est l'unique soutien,</l>
+            <l met="8">Le public en est idolâtre,</l>
+            <l met="8">Qu'on gambade, il ne veut plus rien.</l>
+            <l met="8">Il demande la cabriole,</l>
+            <l met="8">De la gigue il est partisan,</l>
+            <l met="4">C'est le tran tran ...</l>
+            <l met="6">Des leçons de l'école.</l>
+            <p>Ho! Je veux absolument entrer à l'Opéra!</p>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Vous avez des résolutions bien judicieuses!</p>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_je_regrette">Que je regrette mon amant</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Car, avec ce minois lutin,</l>
+            <l met="8">Avec ces yeux plein de malice,</l>
+            <l met="8">Avec ce petit nez mutin,</l>
+            <l met="8">Vous  brillerez dans la coulisse</l>
+            <l met="8">Et bientôt vous verrez chez vous</l>
+            <l met="8">Un régiment à vos genoux.</l>
+            <l met="3">Régiment</l>
+            <l met="3">Cajolant,</l>
+            <l met="3">Pétillant,</l>
+            <l met="3">Frétillant,</l>
+            <l met="3">Boursillant.</l>
+            <l met="8">Et ma foi, d'un tel régiment,</l>
+            <l met="8">L'ustensile est bon sûrement.</l>
+          </sp>
+        </spGrp>
+        <pb n="335"/>
+        <sp who="#ladanseuse">
+          <speaker>La danseuse</speaker>
+          <stage>dernier vers</stage>
+          <l met="8">Je connais bien ce régiment,</l>
+          <l met="8">J'en commande un détachement.</l>
+          <p>J'ai enrôlé depuis peu monsieur Tarif, plus Crésus que Cyrus, conseillez-moi comment je dois me gouverner dans une situation si intéressante.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Monsieur Tarif, quelle grosse victime à</p>
+          <p>sacrifier sur l'autel de l'Amour! Ah! ma chère Tambourin, je n'ai pas deux conseils à te donner.</p>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tirlitou">Tirlitou</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="7">Que chaque jour d'un bijou,</l>
+            <l met="7">L'opulent Tarif t'étrenne</l>
+            <l met="7">Et qu'il n'ait jamais un sou,</l>
+            <l met="7">Que ton adresse ne prenne!</l>
+            <l met="7">Pousse-moi sa caisse à bout,</l>
+            <l met="7">Tirli, tirli, tirlitaine,</l>
+            <l met="7">Pousse-moi sa caisse à bout,</l>
+            <l met="7">Tirli, tirli, tirlitout.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Polichinelle, Fénise</stage>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Quelle indolente vient ici?</p>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_faut_l_envoyer_a_l_ecole">Il faut l'envoyer à l'école</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Madame, daignez vous nommer.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fenise">
+          <speaker>Fénise</speaker>
+          <l met="8">Je suis duchesse de Sulmone.</l>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <stage>à part</stage>
+          <l met="3">La friponne!</l>
+          <l met="8">Il faudrait un peu l'animer.</l>
+        </sp>
+        <pb n="336"/>
+        <stage>Haut.</stage>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <l met="8">Venez-vous voir mon protocole?</l>
+          <l met="8">De tant d'honneur je suis confus...</l>
+        </sp>
+        <sp who="#fenise">
+          <speaker>Fénise</speaker>
+          <l met="3">Quel abus!</l>
+          <l met="8">Non, je n'irai plus à l'école.</l>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Vous y voilà pourtant.</p>
+        </sp>
+        <sp who="#fenise">
+          <speaker>Fénise</speaker>
+          <p>Je déteste tous les pédants de Cythère.</p>
+        </sp>
+        <spGrp who="#fenise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#par_bonheur_ou_par_malheur">Par bonheur ou par malheur</title>
+            </desc>
+          </head>
+          <sp who="#fenise">
+            <speaker>Fénise</speaker>
+            <l met="7">Je vivais dans mon château,</l>
+            <l met="7">Que l'on n'a pas fait trop beau.</l>
+            <l met="7">Là, ma tutrice imbécile</l>
+            <l met="7">Examinait mon amant,</l>
+            <l met="7">La pécore malhabile</l>
+            <l met="7">A fait un faux jugement,</l>
+            <l met="8">Elle a cru Valère constant.</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_ceinture">La Ceinture</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Il est de pestes de garçons</l>
+            <l met="8">Qui portent mine doucereuse,</l>
+            <l met="8">Oh! Les amants et les melons,</l>
+            <l met="8">C'est marchandise bien trompeuse.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fenise">
+          <speaker>Fénise</speaker>
+          <p>Cette étourdie de tutrice m'a fait épouser le petit fourbe et...</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Et?</p>
+        </sp>
+        <sp who="#fenise">
+          <speaker>Fénise</speaker>
+          <p>Et il me fuit.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Il fait sa charge, il est Français.</p>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Eh, ne sauriez-vous pas, la belle,</l>
+            <l met="8">Qu'en France on ne court qu'au nouveau?</l>
+            <l met="8">Là, l'Amour se sert de ses ailes</l>
+            <l met="8">Plus souvent que de son flambeau.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fenise">
+          <speaker>Fénise</speaker>
+          <p>Le perfide n'en voulait qu'à mes richesses.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sainte_radegonde">Sainte Radegonde</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="2">Un maître</l>
+            <l met="6">Qui n'est pas un Caton</l>
+            <l met="4">Sait le paraître</l>
+            <l met="6">Quand il en a raison.</l>
+            <l met="12">Mais a-t-il épousé quelque riche tendron?</l>
+            <l met="6">Vous allez le connaître,</l>
+            <l met="6">Il se remet au ton</l>
+            <l met="4">De petit-maître.</l>
+          </sp>
+        </spGrp>
+        <pb n="337"/>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#confiteor">Dirai-je mon [confiteor]</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Oubliez un volage époux,</l>
+            <l met="8">Tâchez de briser votre chaîne.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fenise">
+          <speaker>Fénise</speaker>
+          <l met="8">Non, j'attendrai qu'à mes genoux</l>
+          <l met="8">Son inconstance le ramène.</l>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#attendez_moi_sous_l_orme_2">Attendez-moi sous l'orme</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="6">Attendez-le sous l'orme,</l>
+            <l met="6">Vous l'attendrez longtemps.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Polichinelle, Valère<stage>il entre en dansant et chantant la contredanse de la carmesse de L'École des amants</stage>
+        </stage>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>La bonne tête, je gagerais volontiers que c'est là l'époux de la duchesse de Sulmone qui vient de me quitter.</p>
+        </sp>
+        <sp who="#valere">
+          <speaker>Valère</speaker>
+        </sp>
+        <spGrp who="#valere">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#laire_la">Lère la lère lan lère</title>
+            </desc>
+          </head>
+          <sp who="#valere">
+            <speaker>Valère</speaker>
+            <l met="8">Parbleu, vous l'avez deviné!</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <l met="8">Sans m'être au grand diable donné...</l>
+        </sp>
+        <sp who="#valere">
+          <speaker>Valère</speaker>
+          <l met="8">Oui, je suis le petit Valère.</l>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <l met="7">Lère la lère lan lère,</l>
+          <l met="7">Le bon mari que voilà.</l>
+          <p>À propos, petit Valère, il m'est revenu qu'à l'école de l'Opéra, vous paraissiez sans action.</p>
+        </sp>
+        <sp who="#valere">
+          <speaker>Valère</speaker>
+        </sp>
+        <spGrp who="#valere">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#foret_cythere">Ah que la forêt de Cythère</title>
+            </desc>
+          </head>
+          <sp who="#valere">
+            <speaker>Valère</speaker>
+            <l met="8">Quel conte! À la chasse on me mène</l>
+            <l met="8">Quand d'amour il est question</l>
+            <l met="5">Tontaine tonton,</l>
+            <l met="6">Ton ton ton ton ton ton,</l>
+            <l met="8">Au fond des bois on me promène,</l>
+            <l met="8">N'est-ce pas là de l'action?</l>
+            <l met="3">Ton ton ton,<emph>etc.</emph>
+            </l>
+            <l met="5">Tontaine tonton.</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Venez-vous chercher ici votre femme?</p>
+        </sp>
+        <sp who="#valere">
+          <speaker>Valère</speaker>
+          <p>Me prenez-vous pour un bourgeois?</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Elle vient de partir.</p>
+        </sp>
+        <pb n="338"/>
+        <sp who="#valere">
+          <speaker>Valère</speaker>
+          <p>Je lui souhaite un bon voyage.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Venez-vous vous perfectionner à mon école?</p>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#reviendrai_demain">Je ferai mon devoir</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Vous promettiez et par serment</l>
+            <l met="6">D'aimer fidèlement...<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Et tendrement, et constamment.</l>
+          </sp>
+        </spGrp>
+        <sp who="#valere">
+          <speaker>Valère</speaker>
+          <l met="6">Jusques au changement.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <spGrp who="#valere">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#preparez_vous_pour_la_fete_nouvelle">Préparez-vous pour la fête nouvelle</title>
+            </desc>
+          </head>
+          <sp who="#valere">
+            <speaker>Valère</speaker>
+            <l met="10">J'acquerrai cent conquêtes nouvelles</l>
+            <l met="8">Je veux subjuguer mille belles...</l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#est_ce_que_ca_se_demande">Est-ce que ça se demande</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="10">Quoi? Vous voulez toujours, petit coquet,</l>
+            <l met="6">Chercher toujours fortune?</l>
+            <l met="8">Séduire par votre caquet</l>
+            <l met="6">Et la blonde et la brune?</l>
+          </sp>
+        </spGrp>
+        <sp who="#valere">
+          <speaker>Valère</speaker>
+          <l met="8">Je n'en connais point, entre nous,</l>
+          <l met="6">Qui d'abord ne se rende.</l>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <l met="8">De tant d'appas que faites-vous?</l>
+        </sp>
+        <sp who="#valere">
+          <speaker>Valère</speaker>
+          <l met="7">Est-ce que ça se demande?</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Polichinelle, Tersandre<stage>comte d'Artois</stage>
+        </stage>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_cotillon_couleur_de_rose">Le cotillon couleur de rose</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="9">Il ne fallait point mettre en ménage</l>
+            <l met="9">Le petit garçon, c'est un vaurien,</l>
+            <l met="5">Ah, je le vois bien!</l>
+            <l met="8">Il est écrit sur son visage,</l>
+            <l met="5">Oui, c'est un vaurien,</l>
+            <l met="8">J'en suis sûr à son entretien.</l>
+          </sp>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">C'est Tersandre que je vois là,</l>
+            <l met="8">Encore une métamorphose,</l>
+            <l met="8">Le gentil berger que voilà,</l>
+            <l met="8">En habit neuf, couleur de rose!</l>
+            <l met="8">Mais le public capricieux</l>
+            <l met="8">N'a pas, dit-on, bien pris la chose,</l>
+            <l met="8">En habit jaune, quoique vieux,</l>
+            <l met="8">Le comte d'Artois lui plaît mieux.</l>
+            <p>Vous êtes bien hardi, paraître à mon école avec cet habit reprouvé. Croyez-vous qu'on y tolérera</p>
+          </sp>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Le cotillon couleur de rose!</l>
+            <p>Allons, vous méritez du moins une férule,<emph>porrige manum</emph>.</p>
+          </sp>
+        </spGrp>
+        <stage>Apercevant Tersandre.</stage>
+        <pb n="339"/>
+        <stage>Il chante.</stage>
+        <sp who="#tersandre">
+          <speaker>Tersandre</speaker>
+          <p>Une férule au comte d'Artois?</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Non, c'est à l'homme couleur de rose. Écoutez!</p>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#vinaigre">Vinaigre</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Le parterre fait du fracas</l>
+            <l met="8">Et son humeur est pétulante.</l>
+            <l met="8">Quand à ses yeux on se présente</l>
+            <l met="8">En habit qui ne lui plaît pas,</l>
+            <l met="8">À plaisanter il est allègre,</l>
+            <l met="8">Il va riant, toussant, crachant</l>
+            <l met="3">Du vinaigre.</l>
+            <p>Vous en savez des nouvelles.</p>
+          </sp>
+        </spGrp>
+        <sp who="#tersandre">
+          <speaker>Tersandre</speaker>
+          <p>Mon acte a pourtant réussi.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>
+            <emph>Distingo.</emph>
+          </p>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pour_la_baronne">Pour la baronne</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="4">Sans la carmesse,</l>
+            <l met="8">La flamande et le cotillon,</l>
+            <l met="8">Ma foi, vous et votre princesse</l>
+            <l met="8">Vous jetiez un mauvais coton,</l>
+            <l met="4">Sans la carmesse.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Polichinelle, La Fleur, Claudine</stage>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Quel duo subalterne avance? Ce sont des domestiques! Ils prennent sans doute mon école pour une école de la charité... Qui êtes-vous, mes bonnes gens?</p>
+        </sp>
+        <sp who="#claudine">
+          <speaker>Claudine</speaker>
+          <p>Tredame! Je sommes les singes de Liandre et de Malimène.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Vous voulez dire de Léandre et d'Eltimène? Tâchez de me conter votre aventure plus intelligiblement.</p>
+        </sp>
+        <sp who="#lafleur">
+          <speaker>La fleur</speaker>
+          <p>Laisse-moi parler, Claudaine, je sis pus</p>
+          <p>grec que toi dans le biau français.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Oui, laissez parler monsieur le grammairien.</p>
+        </sp>
+        <sp who="#lafleur">
+          <speaker>La fleur</speaker>
+          <p>En continuant notre histoire, je vous dirai finalement que v'là Claudaine et que moi par révérence je sis La Fleur. Or donc, je servions ensemblement un maître apothicaire de la Courtille nommé monsieur Pilule, et pis Claudaine et moi je ne sommes pas du même pays.</p>
+        </sp>
+        <spGrp who="#lafleur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_parlez_gaulois">Vous parlez gaulois</title>
+            </desc>
+          </head>
+          <sp who="#lafleur">
+            <speaker>La fleur</speaker>
+            <l met="8">Je sis Normand, al est Picarde,</l>
+            <l met="9">De nous entendre je n'avions garde</l>
+            <l met="5">Dans notre patois...<stage type="bis">bis</stage>
+            </l>
+            <l met="8">À présent que du biau langage</l>
+            <l met="8">J'ons appris le fin et l'usage</l>
+            <l met="5">Je parlons françois...<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <stage>dernier vers</stage>
+          <l met="5">Et très bon françois.</l>
+        </sp>
+        <sp who="#lafleur">
+          <speaker>La fleur</speaker>
+          <p>Je devînmes amoureux l'un envers l'autre comme des braques; j'enragîmes comme des</p>
+          <p>dogues de ne pouvoir jaboter un tantinet sur ce que je sentions, j'étions réduit à nous cajoler par signes.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Par signes! Voyez le grand malheur!</p>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#sur_le_ritantaleri">Sur le ritantaleri</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Ma foi, l'amour gesticulant</l>
+            <l met="8">Touche bien mieux que le parlant,</l>
+            <l met="8">C'est alors qu'on a plus d'esprit.</l>
+            <l met="8">Sur le ritanta la lera</l>
+            <l met="7">Sur le ritantaleri.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lafleur">
+          <speaker>La fleur</speaker>
+          <p>Stapendant l'apoticaire nous boutit un biau matin tous les deux sul pavés, à cause de ça d'un quiproquo que je fîmes dont il déboursit l'amande. Claudaine et moi, il fallit charcher condition, al fut à Rouen chez un confiseux, moi à Amiens chez un traiteux.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Un confiseux, un traiteux, que vous êtes bien là tous les deux!</p>
+        </sp>
+        <sp who="#lafleur">
+          <speaker>La fleur</speaker>
+          <p>Un biau jour que Claudaine récurait une casserole et moi un chaudron, l'amour nous fourit dans la çarvelle en même temps,</p>
+          <p>quoique éloignez l'un de l'autre de pus de soixante lieux, le dessein d'apprendre le français de la cour.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <stage>chante</stage>
+          <l met="8">Que vous avez bien réussi</l>
+          <l met="3">Biribi</l>
+          <l met="8">À la façon de Barbari</l>
+          <l met="3">mon ami.</l>
+        </sp>
+        <sp who="#lafleur">
+          <speaker>La fleur</speaker>
+          <p>Drès que je nous trouvîmes fort...</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Dans le biau langage.</p>
+        </sp>
+        <sp who="#lafleur">
+          <speaker>La fleur</speaker>
+          <p>Je partîmes subitement, je nous cherchîmes à Paris et je nous trouvîmes face à face sul le Pont Neuf, le jour des fumigations...</p>
+        </sp>
+        <sp who="#claudine">
+          <speaker>Claudine</speaker>
+          <p>La Fleur, faut dire des fuminations.</p>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Fort bien. Oh çà, mes beaux parleurs, il ne manque à votre scène qu'un duo picard et normand sur le ton de l'Opéra.</p>
+        </sp>
+        <sp who="#lafleur">
+          <speaker>La fleur</speaker>
+          <p>Je le voulons bien, écoutez!</p>
+        </sp>
+        <sp who="#lafleur">
+          <speaker>La fleur</speaker>
+        </sp>
+        <spGrp who="#lafleur">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#carillon_vendome">Air des cloches : Orléans Beaugency</title>
+            </desc>
+          </head>
+          <sp who="#lafleur">
+            <speaker>La fleur</speaker>
+            <l met="6">Ma Claudon, pauvre ainfain,</l>
+            <l met="8">Qu' adorait tout Chin Quintin,</l>
+            <l met="6">Que j't'aime! Que j' t'aime!</l>
+          </sp>
+        </spGrp>
+        <sp who="#claudine">
+          <speaker>Claudine</speaker>
+          <stage>chante en même temps</stage>
+          <l met="6">Cher La Fleur, ver' ma fei,</l>
+          <l met="7">Vous pouez compter sur mei,</l>
+          <l met="6">Guieu m'damne, guieu m'damne.</l>
+        </sp>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Vere ma fei, pauvres ainfains, vous étrennerez mon sceptre.</p>
+        </sp>
+        <stage>Déclamant.</stage>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <l met="12">Je ne l'ai point encore employé d'aujourd'hui.</l>
+        </sp>
+        <spGrp who="#polichinelle">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#et_fera_bien_claquer_son_fouet">Et fera bien claquer son fouet</title>
+            </desc>
+          </head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="7">Mes enfants, pour récompense</l>
+            <l met="7">D'un langage si parfait,</l>
+            <l met="7">Vous apprendrez une danse</l>
+            <l met="8">Vous aurez tous les deux le fouet,</l>
+            <l met="9">Clic et clac et tique tique tac</l>
+            <l met="8">Vous aurez tous les deux le fouet.</l>
+          </sp>
+        </spGrp>
+        <pb n="342"/>
+        <stage>Polichinelle fait le lazzi de leur donner le fouet, ils se jettent à genoux, crient et disent: Grâce, grâce, dans dix ans je parlerons un peu mieux!</stage>
+        <sp who="#polichinelle">
+          <speaker>Polichinelle</speaker>
+          <p>Je vous pardonne en faveur de l'expédition. Holà, mes écoliers, imitez l'opéra, faites succéder la danse au tragique.</p>
+        </sp>
+        <stage>Les écoliers reviennent, dansent. On finit par le vaudeville.</stage>
+        <spGrp>
+          <head type="vaudeville-chorus">1</head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Quand la maman est trop sévère</l>
+            <l met="8">Et chasse l'amour et l'amant</l>
+            <l met="4">Lère lan lère,</l>
+            <l met="8">La fillette fait sourdement</l>
+            <l met="6">L'école buissonnière.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">2</head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Certaine veuve moins sévère</l>
+            <l met="8">Marche dans le sentier battu</l>
+            <l met="4">Lère lan lère,</l>
+            <l met="8">Elle fait faire à sa vertu</l>
+            <l met="6">L'école buissonnière.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">3</head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="7">Quand l'épouse est trop mégère,</l>
+            <l met="8">Criant toujours d'une aigre voix</l>
+            <l met="4">Lère lan lère</l>
+            <l met="8">L'époux grondé fait quelquefois</l>
+            <l met="6">L'école buissonnière.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">4</head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Quand l'époux est sexagénaire</l>
+            <l met="8">Cassé, malingre et discourtois</l>
+            <l met="4">Lère lan lère</l>
+            <l met="8">L'épouse fait en tapinois</l>
+            <l met="6">L'école buissonnière.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">5</head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Un gascon prend son ordinaire</l>
+            <l met="8">Dans une auberge constamment,</l>
+            <l met="4">Lère lan lère,</l>
+            <l met="8">Et puis il fait subtilement</l>
+            <l met="6">L'école buissonnière.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">6</head>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Messieurs, venez assidûment,</l>
+            <l met="8">Polichinelle vous révère</l>
+            <l met="4">Lère lan lère...</l>
+            <l met="8">Chez nos voisins, faites souvent</l>
+            <l met="6">L'école buissonnière.</l>
+          </sp>
+          <sp who="#polichinelle">
+            <speaker>Polichinelle</speaker>
+            <l met="8">Quand les Romains nonchalamment</l>
+            <l met="8">Répètent Corneille et Molière,</l>
+            <l met="4">Lère lan lère,</l>
+            <l met="8">Le public fait très sagement</l>
+            <l met="6">L'école buissonnière.</l>
+          </sp>
+        </spGrp>
+        <stage>Au public.</stage>
+        <pb n="343"/>
+        <stage>Addition.</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

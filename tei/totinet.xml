@@ -1,0 +1,1950 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="totinet">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Totinet</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Antoine-Alexandre-Henri Poinsinet et Michel Portelance</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Rousseau</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Paris, Veuve Delormel et fils, Prault fils, 1753</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="tricolor" sex="UNKNOWN">
+            <persName>Tricolor</persName>
+          </person>
+          <person xml:id="totinet" sex="UNKNOWN">
+            <persName>Totinet</persName>
+          </person>
+          <person xml:id="palote" sex="UNKNOWN">
+            <persName>Palote</persName>
+          </person>
+          <person xml:id="boreole" sex="UNKNOWN">
+            <persName>Boréole</persName>
+          </person>
+          <person xml:id="lanourrice" sex="UNKNOWN">
+            <persName>La nourrice</persName>
+          </person>
+          <person xml:id="la_nourrice_de_totinet" sex="UNKNOWN">
+            <persName>La nourrice de Totinet</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie de<emph>Titon et L'Aurore</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1753">
+        <desc>Représentée pour la première fois sur le Théâtre de l'Opéra-Comique le vendredi 23 février 1753</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#tricolor">Tricolor</role>
+          <roleDesc>bouquetière</roleDesc>
+          <actor>Mademoiselle Rosallie</actor>
+        </castItem>
+        <castItem>
+          <role ana="#totinet">Totinet</role>
+          <roleDesc>garçon de boutique</roleDesc>
+          <actor>Monsieur Deschamps</actor>
+        </castItem>
+        <castItem>
+          <role ana="#palote">Palote</role>
+          <roleDesc>marchande de charbon</roleDesc>
+          <actor>Madame Le Moine</actor>
+        </castItem>
+        <castItem>
+          <role ana="#boreole">Boreole</role>
+          <roleDesc>marchand de soufflets</roleDesc>
+          <actor>Monsieur Dhautemert</actor>
+        </castItem>
+        <castItem>
+          <role ana="#la_nourrice_de_totinet">La nourrice de Totinet</role>
+          <actor>Monsieur Alexandre</actor>
+        </castItem>
+      </castList>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="location">Le théâtre représente la boutique de Tricolor. Il fait nuit.</stage>
+        <stage type="characters">Totinet<stage>seul</stage>
+        </stage>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#totinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_brillez_seule_en_ces_retraites">Vous brillez, seule en ces retraites</title>
+            </desc>
+          </head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="8">Que mon aimable bouquetière</l>
+            <l met="10">Tarde à venir, Totinet, quel tourment!</l>
+            <l met="8">Peut-être infidèle et légère</l>
+            <l met="11">Tricolor, Tricolor aime un autre amant.</l>
+          </sp>
+        </spGrp>
+        <pb n="4"/>
+        <spGrp who="#totinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#branle_de_metz">Je n'en dirai pas le nom</title>
+            </desc>
+          </head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="7">Je soupçonne sa tendresse</l>
+            <l met="7">Ah que n'est-elle Fanchon!</l>
+            <l met="7">Pourquoi suis-je son garçon?</l>
+            <l met="7">Pourquoi l'ai-je pour maîtresse?</l>
+            <l met="7">Près de cet objet charmant,</l>
+            <l met="7">Je crains tout de ma faiblesse,</l>
+            <l met="7">Près de cet objet charmant,</l>
+            <l met="7">Je crains un rival puissant.</l>
+          </sp>
+        </spGrp>
+        <stage>On entend une symphonie. Tricolor paraît descendre d'une soupente, en tenant un bout de chandelle.</stage>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+        </sp>
+        <spGrp who="#totinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ou_courez_vous_monsieur_l_abbe">Où courez-vous, monsieur l'abbé</title>
+            </desc>
+          </head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="8">Un bout de chandelle à la main</l>
+            <l met="8">Je la vois qui descend soudain,</l>
+            <l met="6">Ah, ma belle maîtresse!</l>
+          </sp>
+        </spGrp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <stage>en descendant</stage>
+          <l met="6">Un peu moins de vitesse,</l>
+          <l met="5">Ne vous blessez pas.</l>
+        </sp>
+        <pb n="5"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Tricolor, Totinet</stage>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+        </sp>
+        <spGrp who="#tricolor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#du_cotillon_couleur_de_rose">Du cotillon couleur de rose</title>
+            </desc>
+          </head>
+          <sp who="#tricolor">
+            <speaker>Tricolor</speaker>
+            <l met="8">J'arrive exprès de grand matin</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Éteignez donc cette chandelle.</l>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="8">Voyez-vous le petit mutin</l>
+          <l met="8">Il voudrait:</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Je vous suis fidèle.</l>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="8">Oui, mais vous devenez badin.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Pourquoi devenez-vous cruelle?</l>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="8">Si j'accordais trop de retour</l>
+          <l met="8">J'éteindrais bientôt ton amour.</l>
+        </sp>
+        <stage>Le jour paraît petit à petit.</stage>
+        <pb n="6"/>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+        </sp>
+        <spGrp who="#totinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#boire_a_son_tire_lire">Boire à son tire lire lire</title>
+            </desc>
+          </head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="6">Connaissez votre amant,</l>
+            <l met="6">Rien n'éteindra sa flamme.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="6">Tu diras autrement</l>
+          <l met="6">Quand je serai ta femme.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="4">N'ayez pas peur</l>
+          <l met="4">Que le bonheur</l>
+          <l met="4">Use mon cœur.</l>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+        </sp>
+        <spGrp who="#tricolor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#comment_puis_je_sans_t_avoir">Comment puis-je, sans t'avoir</title>
+            </desc>
+          </head>
+          <sp who="#tricolor">
+            <speaker>Tricolor</speaker>
+            <l met="8">Oui, tu seras l'objet unique</l>
+            <l met="5">De mon tendre amour</l>
+            <l met="5">Sois sûr du retour</l>
+            <l met="8">Puisque tu veux que je m'explique</l>
+            <l met="7">Comment puis-je sans t'avoir</l>
+            <l met="6">Gouverner ma boutique,</l>
+            <l met="7">Comment puis-je sans t'avoir</l>
+            <l met="5">Régler mon comptoir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+        </sp>
+        <spGrp who="#totinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#au_bord_d_un_clair_ruisseau">Au bord d'un clair ruisseau</title>
+            </desc>
+          </head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="6">Un marchand de soufflets</l>
+            <l met="6">Vous offre son hommage,</l>
+            <l met="6">Son fâcheux voisinage</l>
+            <l met="6">Nous éclaire de près,</l>
+            <l met="6">Il vous fait les yeux doux.</l>
+          </sp>
+        </spGrp>
+        <pb n="7"/>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="6">Pour toi seul je soupire.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="6">Son bien peut vous séduire.</l>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="6">Tu me mets en courroux.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+        </sp>
+        <spGrp who="#totinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="8">
+              <emph>Du beau sentiment qui le blesse</emph>
+            </l>
+            <l met="8">
+              <emph>Votre cœur doit être flatté,</emph>
+            </l>
+            <l met="8">
+              <emph>Sans faire tort à la tendresse,</emph>
+            </l>
+            <l met="8">
+              <emph>Il fait honneur à la beauté.</emph>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+        </sp>
+        <spGrp who="#tricolor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_j_aime_mon_cher_arlequin">Que j'aime mon cher Arlequin</title>
+            </desc>
+          </head>
+          <sp who="#tricolor">
+            <speaker>Tricolor</speaker>
+            <l met="6">Quel galimatias fais-tu là,</l>
+            <l met="4">D'un air si tendre,</l>
+            <l met="8">Un chacun de toi se rira,</l>
+            <l met="8">Tu parles comme à l'Opéra,</l>
+            <l met="6">On n'y peut rien comprendre.</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="6">Mais vous devez m'entendre,</l>
+          <l met="8">Ne tient-on pas ce jargon-là</l>
+          <l met="6">Quand on a le cœur tendre.</l>
+        </sp>
+        <pb n="8"/>
+        <spGrp who="#totinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bel_oiseau_maman">Ah! Le bel oiseau maman</title>
+            </desc>
+          </head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="7">J'aimerai jusqu'au tombeau.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="7">Ah! Que je te trouve aimable.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="7">Quand le choix est aussi beau</l>
+          <l met="7">L'amour est toujours durable.</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Nous allons donc nous unir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="7">Mon Totinet tout aimable.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="7">Ma bouquetière adorable.</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Nous allons donc nous unir,</l>
+            <l met="7">Que nous aurons de plaisir.</l>
+          </sp>
+        </spGrp>
+        <stage>On entend un bruit d'instruments.</stage>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+        </sp>
+        <spGrp who="#totinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mariez_mariez_moi">Mariez, mariez moi</title>
+            </desc>
+          </head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="7">Qu'entends-je des violons?</l>
+            <l met="7">À propos de quoi, mignonne?</l>
+          </sp>
+        </spGrp>
+        <pb n="9"/>
+        <spGrp rend="braced">
+          <stage>Ensemble</stage>
+          <spGrp rend="braced">
+            <sp who="#tricolor">
+              <speaker>Tricolor</speaker>
+              <l met="7">Ils sont venus sans raison,</l>
+              <l met="7">Qu'importe, je leur pardonne,</l>
+              <l met="3">Profitons,</l>
+              <l met="3">Profitons,</l>
+              <l met="3">Profitons-en,</l>
+              <l met="7">Ainsi l'Opéra l'ordonne.</l>
+              <l met="3">Profitons,</l>
+              <l met="3">Profitons,</l>
+              <l met="3">Profitons-en,</l>
+              <l met="7">Cela fait passer le temps.</l>
+            </sp>
+            <stage>Ensemble</stage>
+          </spGrp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Tricolor, Totinet, Garçons tailleurs, bouquetières<stage>qui forment une noce.</stage>
+        </stage>
+        <stage>On danse.</stage>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+        </sp>
+        <spGrp who="#totinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_que_loin_de_ce_qu_on_aime">Ah! Que loin de ce qu'on aime</title>
+            </desc>
+          </head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="7">Mon cœur est tendre et fidèle</l>
+            <l met="7">Quand j'aime c'est pour toujours,</l>
+            <l met="7">L'éclat de toute autre belle</l>
+            <l met="7">N'affaiblit point mes amours:</l>
+            <l met="7">Ma flamme n'est point nouvelle,</l>
+            <l met="7">Mais elle croît tous les jours.</l>
+            <l met="7">Mon cœur est ...</l>
+          </sp>
+        </spGrp>
+        <stage>On danse.</stage>
+        <pb n="10"/>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <stage>derrière le théâtre</stage>
+        </sp>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tiens_voila_ma_pipe">Tiens, voilà ma pipe</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="5">Gardez ma boutique,</l>
+            <l met="5">Je veux qu'en ce jour</l>
+            <l met="5">Tricolor s'explique</l>
+            <l met="6">Au gré de mon amour,</l>
+            <l met="5">Si la péronnelle</l>
+            <l met="5">Me bravait jamais,</l>
+            <l met="6">Je vous saurai contre elle.</l>
+            <l met="6">Armez tous mes soufflets.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+        </sp>
+        <spGrp who="#tricolor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierre_bagnolet">Allons-nous-en, gens de la noce</title>
+            </desc>
+          </head>
+          <sp who="#tricolor">
+            <speaker>Tricolor</speaker>
+            <l met="8">Grands dieux, Boréole s'avance</l>
+            <l met="8">Chers enfants craignez son courroux,</l>
+            <l met="8">Allons-nous-en gens de la noce</l>
+            <l met="8">Allons-nous-en chacun chez nous.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="4">Allons-nous-en</l>
+          <l met="4">Chacun chez nous,</l>
+          <l met="4">Allons-nous-en</l>
+          <l met="4">Tous en cadence;</l>
+          <l met="8">Allons-nous-en chacun chez nous.</l>
+        </sp>
+        <stage>Tout le monde sort.</stage>
+        <pb n="11"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Boréole<stage>seul</stage>
+        </stage>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_amour_comme_neptune">L'amour comme Neptune</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="6">Arrête téméraire</l>
+            <l met="6">Tu n'échapperas pas,</l>
+            <l met="6">Ma trop juste colère</l>
+            <l met="6">Va voler sur tes pas.</l>
+            <l met="6">Qu'un rival que j'abhorre</l>
+            <l met="7">Tombe à l'instant sous mes coups!</l>
+            <l met="6">Tyran des cœurs jaloux</l>
+            <l met="6">Allume mon courroux!</l>
+            <l met="7">Haine c'est toi que j'implore!</l>
+            <l met="4">Viens arme-toi,</l>
+            <l met="4">Viens venge-moi.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Palote, Boréole</stage>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+        </sp>
+        <spGrp who="#palote">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#maris_salison_disait_a_sa_mere">Maris Salison disait à sa mère</title>
+            </desc>
+          </head>
+          <sp who="#palote">
+            <speaker>Palote</speaker>
+            <l met="9">Eh pourquoi donc vous mettre en colère?</l>
+            <l met="7">Oh, oh, tourelouribo.</l>
+          </sp>
+        </spGrp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="7">Je suis jaloux ma commère.</l>
+        </sp>
+        <pb n="12"/>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="7">Oh, oh, tourelouribo,</l>
+          <l met="8">Faites moi part de votre affaire.</l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="7">Oh, oh, oh, tourelouribo.</l>
+        </sp>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#recois_dans_ton_galetas">Reçois dans ton galetas</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="7">Jugez si je fais si mal,</l>
+            <l met="7">À Tricolor je veux plaire,</l>
+            <l met="7">Totinet est mon rival,</l>
+            <l met="8">Et Tricolor me le préfère</l>
+            <l met="8">Que l'ingrate éprouve en ce jour</l>
+            <l met="8">
+              <emph>Ou mes tourments, ou mon amour</emph>.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tambour_de_l_amour">Tambour de l'amour</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="5">Suivons ce transport,</l>
+            <l met="5">Redoublons d'effort,</l>
+            <l met="6">Ah que je me sens fort!</l>
+            <l met="6">Quoi l'on me brave et j'aime!</l>
+            <l met="5">Que tous mes valets</l>
+            <l met="5">Armés de soufflets,</l>
+            <l met="6">Fassent voir les effets</l>
+            <l met="5">De ma rage extrême.</l>
+          </sp>
+        </spGrp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="5">Eh sois moins méchant,</l>
+          <l met="7">Ce rival si triomphant</l>
+          <l met="7">Dans le fond n'est qu'un enfant.</l>
+        </sp>
+        <pb n="13"/>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="4">Mais il me gêne.</l>
+        </sp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="5">Il faut l'écarter.</l>
+          <l met="7">Ne va pas le maltraiter,</l>
+          <l met="7">De Tricolor, crains la haine.</l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="6">
+            <emph>Je veux la mériter.</emph>
+          </l>
+        </sp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+        </sp>
+        <spGrp who="#palote">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vantez_vous_en">Vantez-vous-en</title>
+            </desc>
+          </head>
+          <sp who="#palote">
+            <speaker>Palote</speaker>
+            <l met="8">Cachons Totinet de manière</l>
+            <l met="8">Qu'il soit loin de sa bouquetière,</l>
+            <l met="8">Quitte après à la consoler</l>
+            <l met="8">Des maux dont tu veux l'accabler,</l>
+            <l met="8">Je vais l'enlever finement</l>
+            <l met="8">Car quoique simple charbonnière</l>
+            <l met="8">Je sais faire un enlèvement,</l>
+            <l met="4">Vantez-vous-en.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+        </sp>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#manon_dormait">Manon dormait</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="4">Cela suffit,</l>
+            <l met="6">Et bien je m'en rapporte</l>
+            <l met="4">À votre esprit,</l>
+            <l met="6">Car ma tête peu forte</l>
+            <l met="6">Se trouble à tout moment.</l>
+          </sp>
+        </spGrp>
+        <pb n="14"/>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="2">Vraiment,</l>
+          <l met="2">Et quand</l>
+          <l met="8">Vit-on raisonner un amant.</l>
+        </sp>
+        <stage>Les garçons de Boréole entrent armés de soufflets.</stage>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+        </sp>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#toujours_seule_disait_nina">Toujours seule, disait Nina</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="8">Venez mes garçons, armez-vous,</l>
+            <l met="6">Et servez mon courroux</l>
+            <l met="1">Tous,</l>
+            <l met="8">Qu'à l'instant ce petit maraud</l>
+            <l met="6">Soit traité comme il faut</l>
+            <l met="1">Tôt,</l>
+            <l met="8">Chez Madame on le mènera</l>
+            <l met="8">Et c'est là qu'on l'étrillera.</l>
+          </sp>
+        </spGrp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="4">Oui, sur ma foi.</l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="4">Prenez-le moi,</l>
+          <l met="4">Fouettez-le moi,</l>
+          <l met="4">Vengez-moi, moi.</l>
+        </sp>
+        <stage>Il sort avec toute sa suite.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Palote<stage>seule</stage>
+        </stage>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#palote">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_faut_l_envoyer_a_l_ecole">Il faut l'envoyer à l'école</title>
+            </desc>
+          </head>
+          <sp who="#palote">
+            <speaker>Palote</speaker>
+            <l met="8">Le nigaud, il croit bonnement</l>
+            <l met="8">Que je vais servir sa colère,</l>
+            <l met="3">Pour lui plaire</l>
+            <l met="8">J'irais perdre mon jeune amant,</l>
+            <l met="8">Sur une espérance frivole,</l>
+            <l met="8">Il me rend mon cher Totinet,</l>
+            <l met="3">Le benêt:</l>
+            <l met="8">Il faut l'envoyer à l'école.</l>
+          </sp>
+        </spGrp>
+        <pb n="15"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="location">Le théâtre représente le laboratoire de Tricolor: elle paraît au milieu de ses filles, occupées à former des bouquets.</stage>
+        <stage type="characters">Tricolor<stage>seule</stage>
+        </stage>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#tricolor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#tricolor">
+            <speaker>Tricolor</speaker>
+            <l met="8">Viens, Totinet, mon cœur t'appelle,</l>
+            <l met="8">Écoute la voix du désir,</l>
+            <l met="8">Sans toi, sans ton amour fidèle,</l>
+            <l met="8">Je ne puis goûter de plaisir.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#tricolor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#margoton_ma_mie">Margoton, ma Mie</title>
+            </desc>
+          </head>
+          <sp who="#tricolor">
+            <speaker>Tricolor</speaker>
+            <l met="5">Puis-je me promettre</l>
+            <l met="5">Cette volupté.</l>
+            <l met="7">Reviens en bonne santé</l>
+            <l met="7">Pour me remettre en gaieté.</l>
+          </sp>
+        </spGrp>
+        <pb n="16"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Tricolor, Boréole</stage>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+        </sp>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_bequille_du_pere_barnabas">La béquille du père Barnabas</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="6">À ma sincère ardeur,</l>
+            <l met="6">Répondrez-vous la belle?</l>
+          </sp>
+        </spGrp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="6">Totinet a mon cœur,</l>
+          <l met="6">Je lui serai fidèle.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="6">Ce petit, ma princesse,</l>
+          <l met="6">Vous fait par trop languir.</l>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="6">Si petit qu'il paraisse</l>
+          <l met="6">Il me fait grand plaisir.</l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+        </sp>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_mort_de_mon_chere_pere">La mort de mon chère père</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="6">C'est trop vanter ce drôle,</l>
+            <l met="6">Je vais vous le souffler.</l>
+          </sp>
+        </spGrp>
+        <pb n="17"/>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="6">Ah! Laissez-lui son rôle,</l>
+          <l met="6">Qui pourra le doubler?</l>
+          <l met="6">Il a tant de mérite,</l>
+          <l met="6">Sans lui tout ennuiera.</l>
+          <l met="6">Si jamais il nous quitte</l>
+          <l met="6">Adieu tout l'Opéra.</l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+        </sp>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#preparons_nous">Préparons-nous pour la fête nouvelle</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="10">Quoi, vous bravez un marchand qui soupire?</l>
+            <l met="8">Couronnez mon tendre martyre</l>
+            <l met="12">Ou vous ne verrez plus ce beau Totinet.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="12">Mais,</l>
+          <l met="12">
+            <emph>Je l'aimerai toujours autant que je te hais</emph>.</l>
+        </sp>
+        <stage>Elle sort.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Boréole<stage>seul</stage>
+        </stage>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#trembleurs">Les Trembleurs</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="7">Puisque je ne saurais plaire,</l>
+            <l met="7">N'écoutons que ma colère,</l>
+            <l met="7">Poursuivons ce téméraire</l>
+            <l met="7">Qui s'oppose à mon amour.</l>
+            <l met="7">Tricolor me désespère,</l>
+            <l met="7">La sotte me le préfère;</l>
+            <l met="7">C'est lui qui la rend si fière,</l>
+            <l met="7">Qu'il périsse dans ce jour.</l>
+          </sp>
+        </spGrp>
+        <pb n="18"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Palote, Boréole</stage>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+        </sp>
+        <spGrp who="#palote">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#detour">Sous un ormeau</title>
+            </desc>
+          </head>
+          <sp who="#palote">
+            <speaker>Palote</speaker>
+            <l met="4">Qu'avez-vous fait?</l>
+            <l met="8">Votre amour est-il satisfait?</l>
+            <l met="5">Parlez, Totinet</l>
+            <l met="8">Obtiendra-t-il son pardon?</l>
+          </sp>
+        </spGrp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="8">Non.</l>
+        </sp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="6">Avant de le punir,</l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="3">Je le veux.</l>
+        </sp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="6">Craignez le repentir.</l>
+        </sp>
+        <pb n="19"/>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="6">À grands coups de soufflets,</l>
+          <l met="6">Je prétends l'assommer.</l>
+        </sp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="3">Quel projets.</l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="4">De mon courroux,</l>
+          <l met="8">Oui, tu vas ressentir les coups,</l>
+          <l met="5">Petits maraboux,</l>
+          <l met="7">Vil objet de mes fureurs.</l>
+          <l met="1">Meurs.</l>
+        </sp>
+        <stage>Les garçons de Boréole entrent dans la boutique, déchirent les bouquets, font enfuir toutes les filles.</stage>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+        </sp>
+        <spGrp who="#palote">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#j_ai_des_vapeurs">J'ai des vapeurs</title>
+            </desc>
+          </head>
+          <sp who="#palote">
+            <speaker>Palote</speaker>
+            <l met="8">Et pourquoi donc tant de tapage,</l>
+            <l met="2">De rage</l>
+            <l met="4">Pour un enfant,</l>
+            <l met="8">Connaissez mon ardeur extrême,</l>
+            <l met="2">Je l'aime</l>
+            <l met="4">Il est charmant.</l>
+            <l met="8">Grand Dieu, quel bruit, quelle tempête,</l>
+            <l met="6">Je n'en reviens pas!</l>
+            <l met="3">Ce fracas</l>
+            <l met="8">M'a dérangé toute la tête,</l>
+            <l met="4">J'ai des vapeurs</l>
+            <l met="3">Je me meurs.</l>
+          </sp>
+        </spGrp>
+        <pb n="20"/>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+        </sp>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_mariez_moi">Vous me l'avez dit, souvenez-vous-en</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="7">Eh pourquoi vous évanouir?</l>
+          </sp>
+        </spGrp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="7">Ah! Vous me faites frémir.</l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="7">Quelle sera votre peur,</l>
+          <l met="5">Et votre terreur,</l>
+          <l met="5">Lorsqu'avec chaleur</l>
+          <l met="7">Je vais seul beugler un chœur,</l>
+          <l met="7">Fait exprès pour ma fureur.</l>
+        </sp>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aria_del_serva_padrona">Aria del Serva Padrona</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="4">Servez ma rage,</l>
+            <l met="4">Ah ventrebleu!</l>
+            <l met="4">Ah têtebleu!</l>
+            <l met="2">Morbleu,</l>
+            <l met="3">Corbleu, ah!</l>
+            <l met="4">Troublons les feux</l>
+            <l met="4">De ce morveux,</l>
+            <l met="4">De ce crasseux.</l>
+            <l met="4">Prenons courage!</l>
+            <l met="4">Hélas! Grands dieux</l>
+            <l met="4">Comblez mes vœux,</l>
+            <l met="4">Quoi ce crasseux</l>
+            <l met="4">Est amoureux?</l>
+            <l met="4">Petit morveux.</l>
+          </sp>
+        </spGrp>
+        <pb n="21"/>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#plein_plan_rantamplan_tire_lire">Plein, plan, rantamplan, tire lire</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="6">Dans la rue chiffonnière,</l>
+            <l met="13">En plein et plan et rantamplan, tire lire en plan,</l>
+            <l met="6">Allez chercher l'amant.</l>
+          </sp>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="6">De notre bouquetière,</l>
+            <l met="6">Traitons le téméraire,</l>
+            <l met="6">Rantamplan, de manière</l>
+            <l met="6">Que mon amour jaloux</l>
+            <l met="12">En plein, plan [et rantamplan, tire lire en plan.]</l>
+          </sp>
+        </spGrp>
+        <stage>Les garçons de Boréole sortent.</stage>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="6">De quoi vous mêlez-vous,</l>
+          <l met="6">Ce n'est pas votre affaire.</l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="6">Ce n'est pas mon affaire,</l>
+          <l met="6">Rantamplan, ma commère?</l>
+        </sp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="9">Et non pas, c'est la mienne, en plein, plan</l>
+          <l met="8">Rantamplan [tire lire en plan.]</l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="6">Le sot rôle vraiment</l>
+          <l met="6">Que l'on me donne à faire.</l>
+        </sp>
+        <stage>Totinet entre poursuivi de tous les garçons de Boréole: il se jette aux genoux de Palote.</stage>
+        <pb n="22"/>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <stage>à Palote</stage>
+        </sp>
+        <spGrp who="#totinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de la</desc>
+            <desc type="title">
+              <title ref="#confession">Confession</title>
+            </desc>
+          </head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="5">Je viens devant vous</l>
+            <l met="4">À deux genoux.</l>
+            <l met="4">Je viens.</l>
+          </sp>
+        </spGrp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="4">Quoi faire?</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="5">Priez-les pour moi,</l>
+          <l met="8">Ces méchants me gèlent de froid.</l>
+        </sp>
+        <spGrp rend="braced">
+          <caption>Boréole et le chœur</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="9">Armez-vous contre ce téméraire.</l>
+            <l met="9">Armons-nous contre ce téméraire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="5">Point tant de colère,</l>
+          <l met="5">Sortez un moment.</l>
+          <l met="8">Laissez-moi lui parler d'affaire</l>
+          <l met="5">Sortez un moment.</l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="8">J'y souscris, mais répondez-m'en.</l>
+        </sp>
+        <pb n="23"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="characters">Palote, Totinet</stage>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+        </sp>
+        <spGrp who="#palote">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#donne_mon_coeur">Quand je vous ai donné mon cœur</title>
+            </desc>
+          </head>
+          <sp who="#palote">
+            <speaker>Palote</speaker>
+            <l met="8">Il faut que pour vous divertir</l>
+            <l met="6">Je vous donne une fête.</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Vous me feriez peu de plaisir,</l>
+          <l met="6">Cela me rompt la tête.</l>
+          <l met="8">Loin de l'objet de mes souhaits,</l>
+          <l met="8">Je ne puis souffrir les ballets.</l>
+        </sp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+        </sp>
+        <spGrp who="#palote">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#babet_gentille">Babet, que t'es gentille</title>
+            </desc>
+          </head>
+          <sp who="#palote">
+            <speaker>Palote</speaker>
+            <l met="6">Votre constante ardeur</l>
+            <l met="6">Vous trouble la cervelle.</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="6">Tricolor à mon cœur,</l>
+          <l met="6">Tricolor est ma belle.</l>
+          <l met="5">Oui, loin de ces yeux,</l>
+          <l met="4">Tout m'est odieux,</l>
+          <l met="6">Tout n'est beau que par elle.</l>
+          <l met="8">Mon cœur ne peut être léger,</l>
+          <l met="8">Non, je ne puis me dégager.</l>
+          <l met="8">Quand Tricolor voudrait changer,</l>
+          <l met="6">Je lui serai fidèle.</l>
+        </sp>
+        <pb n="24"/>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+        </sp>
+        <spGrp who="#palote">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_n_y_puis_rien_comprendre">Je n'y puis rien comprendre</title>
+            </desc>
+          </head>
+          <sp who="#palote">
+            <speaker>Palote</speaker>
+            <l met="8">Malgré ce beau raisonnement,</l>
+            <l met="8">C'est en vain que votre cœur l'aime.</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Ciel! Si son cœur est inconstant,</l>
+          <l met="8">Tout autre le serait de même,</l>
+          <l met="4">J'en perds l'esprit.</l>
+        </sp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="4">Elle vous fuit,</l>
+          <l met="6">Et même elle en fait gloire.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Serait-il vrai.</l>
+        </sp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="8">L'on me l'a dit.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="6">Non, je ne puis le croire.</l>
+        </sp>
+        <pb n="25"/>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+        </sp>
+        <spGrp who="#palote">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#prenez_en_deux_prenez_en_trois_contentez_votre_envie_voyez_vous">Prenez-en deux, prenez-en trois, contentez votre envie, voyez-vous</title>
+            </desc>
+          </head>
+          <sp who="#palote">
+            <speaker>Palote</speaker>
+            <l met="8">Changez de nœuds.</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Ah! Finissez.</l>
+        </sp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="6">Vous hésitez encore,</l>
+          <l met="8">
+            <emph>Savez-vous qui vous refusez.</emph>
+          </l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">
+            <emph>Non, mais j'aime, c'en est assez.</emph>
+          </l>
+        </sp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <stage>à part</stage>
+          <l met="8">Il ne voit pas que Palote l'adore,</l>
+          <l met="6">La petite Pécore.</l>
+        </sp>
+        <spGrp who="#palote">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#barbari">À la façon de Barbarie</title>
+            </desc>
+          </head>
+          <sp who="#palote">
+            <speaker>Palote</speaker>
+            <l met="8">Cours, vole à l'objet de tes vœux,</l>
+            <l met="6">Avant que le jour cesse,</l>
+            <l met="8">Tu verras combien à tes feux</l>
+            <l met="6">Mon âme s'intéresse.</l>
+          </sp>
+          <sp who="#palote">
+            <speaker>Palote</speaker>
+            <l met="8">Je te tiendrai, petit garçon,</l>
+            <l met="11">La faridondaine, la faridondon,</l>
+            <l met="8">Va, va, tu seras son mari,</l>
+            <l met="3">Biribi,</l>
+            <l met="8">À la façon de Barbarie,</l>
+            <l met="3">Mon ami.</l>
+          </sp>
+        </spGrp>
+        <stage>Il sort.</stage>
+        <pb n="26"/>
+        <spGrp who="#palote">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">Menuet,tiré d' <title ref="#isis">Isis</title> ()</desc>
+          </head>
+          <sp who="#palote">
+            <speaker>Palote</speaker>
+            <l met="9">Je m'en vais punir ces fiers refus,</l>
+            <l met="9">Je m'en vais le rendre tout confus,</l>
+            <l met="9">Je m'en vais... je m'en vais... eh quoi faire,</l>
+            <l met="10">Le dirons-nous, tout comme à l'Opéra?</l>
+            <l met="9">Non vraiment, il vaut bien mieux se taire,</l>
+            <l met="10">Et l'intérêt ainsi s'augmentera.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="characters">Boréole, Palote</stage>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+        </sp>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_rien_n_est_si_fatigant">Non, rien n'est si fatigant</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="7">Oui, poursuivons ce maraud,</l>
+            <l met="7">Étrillons-le d'importance,</l>
+            <l met="7">Oui, poursuivons ce maraud,</l>
+            <l met="7">Ce vilain petit crapaud,</l>
+            <l met="8">Et tôt, tôt, tôt, tôt, tôt, tôt, tôt,</l>
+            <l met="7">Qu'il éprouve ma vengeance,</l>
+            <l met="8">Et tôt, [tôt, tôt, tôt, tôt, tôt, tôt,]</l>
+            <l met="7">Faisons lui faire le saut.</l>
+          </sp>
+        </spGrp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+        </sp>
+        <spGrp who="#palote">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Amis, sans regretter Paris</title>
+            </desc>
+          </head>
+          <sp who="#palote">
+            <speaker>Palote</speaker>
+            <l met="8">Toujours la fureur vous aigrit,</l>
+            <l met="6">Quoi, pour la même cause!</l>
+          </sp>
+        </spGrp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="8">Hélas! J'en perds tout mon esprit.</l>
+        </sp>
+        <pb n="27"/>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="6">Vous perdez peu de chose.</l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+        </sp>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#allons_donc_mademoiselle">Allons donc, Mademoiselle</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="7">Oui, je veux être en colère</l>
+            <l met="7">Vous avez beau plaisanter,</l>
+            <l met="7">Il faut enfin ma commère</l>
+            <l met="7">Nous faire au moins redouter,</l>
+            <l met="7">Oui, je dois être en colère</l>
+            <l met="7">Vous avez beau plaisanter,</l>
+          </sp>
+        </spGrp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+        </sp>
+        <spGrp who="#palote">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#partez_d_abord_avec_audace">Partez d'abord, avec audace</title>
+            </desc>
+          </head>
+          <sp who="#palote">
+            <speaker>Palote</speaker>
+            <l met="5">Je fais mon affaire</l>
+            <l met="5">De vous contenter.</l>
+          </sp>
+        </spGrp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="5">Ce fripon ma chère</l>
+          <l met="5">Pourra vous tenter.</l>
+        </sp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="4">Détrompez-vous</l>
+          <l met="4">Mon cœur jaloux</l>
+          <l met="6">Ne suivra que la rage,</l>
+          <l met="4">Portons nos coups.</l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="4">Unissons-nous.</l>
+        </sp>
+        <pb n="28"/>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="6">L'ingrat dort en ces lieux,</l>
+          <l met="5">Vengeons notre outrage.</l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="5">Faites pour le mieux.</l>
+        </sp>
+        <stage>Totinet paraît endormi sur un lit de gazon, auprès d'un puits.</stage>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+        </sp>
+        <spGrp who="#palote">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#du_haut_en_bas">Du haut en bas</title>
+            </desc>
+          </head>
+          <sp who="#palote">
+            <speaker>Palote</speaker>
+            <l met="4">Du haut en bas,</l>
+            <l met="8">Totinet se croit un narcisse</l>
+            <l met="4">Du haut en bas,</l>
+            <l met="8">Sa blancheur fait tous ses appas,</l>
+            <l met="8">Venez garçons qu'on m'obéisse,</l>
+            <l met="8">Et qu'à l'instant on le noircisse,</l>
+            <l met="4">Du haut en bas.</l>
+          </sp>
+        </spGrp>
+        <stage>Quatre garçons charbonniers entrent et après avoir dansé, jettent leurs sacs sur Totinet qui devient tout noir.</stage>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+        </sp>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_voulez_me_faire_chanter">Vous voulez me faire chanter</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="8">Ah qu'il est laid, que j'en rirai!</l>
+          </sp>
+        </spGrp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="6">Me suis-je bien vengée,</l>
+        </sp>
+        <pb n="29"/>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="8">Quel doux plaisir quand je verrai</l>
+          <l met="6">Sa maîtresse affligée,</l>
+          <l met="8">Elle n'en voudra plus tâter.</l>
+        </sp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="6">J'en serais étonnée,</l>
+          <l met="8">À peine pourra-t-il tenter</l>
+          <l met="6">Des filles de journée.</l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+        </sp>
+        <spGrp who="#boreole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_mie_babichon">Ma mie Babichon</title>
+            </desc>
+          </head>
+          <sp who="#boreole">
+            <speaker>Boréole</speaker>
+            <l met="5">Ton rôle est fini.</l>
+          </sp>
+        </spGrp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="5">Le tien l'est aussi.</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="6">Rien ne nous reste à faire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#palote">
+          <speaker>Palote</speaker>
+          <l met="5">Je vais me cacher,</l>
+          <l met="5">Va-t-en te coucher.</l>
+        </sp>
+        <sp who="#boreole">
+          <speaker>Boréole</speaker>
+          <l met="6">C'est bien dit ma commère.</l>
+        </sp>
+        <stage>Ils sortent.</stage>
+        <pb n="30"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 13</head>
+        <stage type="characters">Totinet<stage>seul</stage>
+        </stage>
+        <stage>Il s'éveille et se regarde dans un baquet qui est à côté du puits.</stage>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#totinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#faites_dodo">Faites dodo</title>
+            </desc>
+          </head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="4">Quel vilain tour</l>
+            <l met="4">Pour ma figure,</l>
+            <l met="4">Quel vilain tour</l>
+            <l met="4">Pour mon amour.</l>
+            <l met="10">Qui m'a donc fait cette cruelle injure,</l>
+            <l met="2">Hélas!</l>
+            <l met="6">Je ne me reconnais pas.</l>
+            <l met="4">Quel vilain tour ...</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 14</head>
+        <stage type="characters">Tricolor, Totinet</stage>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <stage>sans le voir</stage>
+        </sp>
+        <spGrp who="#tricolor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#a_quoi_s_occupe_magdelon">À quoi s'occupe Magdelon</title>
+            </desc>
+          </head>
+          <sp who="#tricolor">
+            <speaker>Tricolor</speaker>
+            <l met="8">J'entends la voix de mon amant,</l>
+            <l met="7">Je le vois, ah! Je respire;</l>
+            <l met="8">Me sera-t-il toujours constant?</l>
+          </sp>
+          <sp who="#tricolor">
+            <speaker>Tricolor</speaker>
+            <l met="8">Mais grand Dieu, quel changement.</l>
+          </sp>
+        </spGrp>
+        <stage>Elle le voit.</stage>
+        <pb n="31"/>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="8">Détournez loin d'ici vos pas</l>
+            <l met="7">Vous augmentez mon martyre,</l>
+            <l met="8">Détournez loin d'ici vos pas</l>
+            <l met="7">Non, ne me regardez pas.</l>
+          </sp>
+        </spGrp>
+        <stage type="musical_indication">Mineur</stage>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+        </sp>
+        <spGrp who="#tricolor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_corbillon">Le corbillon</title>
+            </desc>
+          </head>
+          <sp who="#tricolor">
+            <speaker>Tricolor</speaker>
+            <l met="8">Mon amant à la face noire,</l>
+            <l met="10">Lui qui jadis avait le teint si beau;</l>
+            <l met="8">Eh, qui pourrait jamais le croire,</l>
+            <l met="10">On va le prendre, hélas! pour un corbeau,</l>
+            <l met="8">Dis-moi qui t'a rendu si laid,</l>
+            <l met="5">Mon joli petit,</l>
+            <l met="5">Mon petit joli,</l>
+            <l met="8">Mon joli petit Totinet.</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+        </sp>
+        <spGrp who="#totinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#viens_aurore">Viens, Aurore</title>
+            </desc>
+          </head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="3">Je désire,</l>
+            <l met="3">Je soupire,</l>
+            <l met="7">Je tremble de m'exprimer,</l>
+            <l met="3">Et mon âme</l>
+            <l met="3">Qui s'enflamme</l>
+            <l met="7">Ose à peine vous aimer.</l>
+          </sp>
+        </spGrp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+        </sp>
+        <spGrp who="#tricolor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#printemps_dans_nos_bocages">Printemps dans nos bocages</title>
+            </desc>
+          </head>
+          <sp who="#tricolor">
+            <speaker>Tricolor</speaker>
+            <l met="6">Pourquoi verser des larmes,</l>
+            <l met="6">Le mal n'est pas si grand.</l>
+            <l met="6">Il te reste des charmes</l>
+            <l met="6">Dont mon cœur est content:</l>
+            <l met="3">Tes beaux yeux.</l>
+          </sp>
+        </spGrp>
+        <pb n="32"/>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="2">Ah! Dieux,</l>
+          <l met="8">L'amour n'y brille plus ma chère.</l>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="4">Tes autres appas.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="8">Vous ne les reconnaîtrez pas.</l>
+          <l met="6">Plus mon cœur est sincère</l>
+          <l met="6">Plus mon sort est affreux,</l>
+          <l met="6">J'aimais, je savais plaire,</l>
+          <l met="6">Que j'allais être heureux!</l>
+        </sp>
+        <spGrp who="#totinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#comme_vla_qu_est_fait">Comme v'là qu'est fait</title>
+            </desc>
+          </head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="8">Oh Ciel! J'aperçois ma nourrice</l>
+            <l met="8">Elle m'aime avec tant d'ardeur,</l>
+            <l met="8">Que cette cruelle malice</l>
+            <l met="8">Va la pénétrer jusqu'au cœur.</l>
+          </sp>
+        </spGrp>
+        <pb n="33"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 15</head>
+        <stage type="characters">La nourrice, Tricolor, Totinet</stage>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="continued_melody">suite de l'air précédent</head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="8">Vois la disgrâce qui m'afflige</l>
+            <l met="8">Ma bonne et combien je suis laid.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lanourrice">
+          <speaker>La nourrice</speaker>
+          <l met="8">Miséricorde, ah, quel prodige!</l>
+          <l met="8">Mon pauvre petit Totinet,</l>
+          <l met="5">Comme te v'la fait.<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <spGrp who="#lanourrice">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#petits_grands">Les pendus</title>
+            </desc>
+          </head>
+          <sp who="#lanourrice">
+            <speaker>La nourrice</speaker>
+            <l met="8">Toi qu'à tes parents j'ai remis</l>
+            <l met="8">Propre, net et blanc comme un lis,</l>
+            <l met="8">Mon cher poupard je t'en conjure,</l>
+            <l met="8">Apprends moi par quelle aventure</l>
+            <l met="8">Je te vois toute la noirceur</l>
+            <l met="8">D'un huissier et d'un procureur.</l>
+          </sp>
+        </spGrp>
+        <stage>Elle le touche.</stage>
+        <spGrp who="#lanourrice">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_qui_vous_moquez">Vous, qui vous moquez</title>
+            </desc>
+          </head>
+          <sp who="#lanourrice">
+            <speaker>La nourrice</speaker>
+            <l met="8">Mais quoi, ce n'est que du charbon!</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <caption>Tricolor, totinet</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="6">Nous reprenons courage.</l>
+          </sp>
+        </spGrp>
+        <pb n="34"/>
+        <sp who="#lanourrice">
+          <speaker>La nourrice</speaker>
+          <l met="8">Viens à ce baquet sans façon</l>
+          <l met="6">Pour laver ton visage,</l>
+          <l met="8">Et tu deviendras mon garçon</l>
+          <l met="6">Le plus beau du village.</l>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+        </sp>
+        <spGrp who="#tricolor">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#autre_jour_assis">J'aime une ingrate beauté</title>
+            </desc>
+          </head>
+          <sp who="#tricolor">
+            <speaker>Tricolor</speaker>
+            <l met="7">Vous me rendrez mon amant,</l>
+            <l met="7">Vous allez tarir mes larmes.</l>
+            <l met="7">Dieux, je vais en ce moment</l>
+            <l met="7">Retrouver ses premiers charmes,</l>
+            <l met="6">Que mon sort est heureux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+          <l met="6">Oui je reviens ma chère,</l>
+          <l met="6">Toujours plus amoureux.</l>
+        </sp>
+        <sp who="#tricolor">
+          <speaker>Tricolor</speaker>
+          <l met="6">Et toujours sûr de plaire.</l>
+        </sp>
+        <sp who="#totinet">
+          <speaker>Totinet</speaker>
+        </sp>
+        <spGrp who="#totinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#votre_coeur_aimable_aurore">Votre cœur, aimable Aurore</title>
+            </desc>
+          </head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="7">Enfin ta faveur divine,</l>
+            <l met="7">Tendre amour me rend vainqueur.</l>
+            <l met="7">Le prix qu'elle me destine</l>
+            <l met="7">Met le comble à mon bonheur,</l>
+            <l met="7">Et si j'ai senti l'épine,</l>
+            <l met="7">C'est pour mieux cueillir la fleur.</l>
+          </sp>
+        </spGrp>
+        <pb n="35"/>
+        <sp who="#lanourrice">
+          <speaker>La nourrice</speaker>
+        </sp>
+        <spGrp who="#lanourrice">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_v_la_t_il_pas_que_j_aime">Ne v'là-t-il pas que j'aime</title>
+            </desc>
+          </head>
+          <sp who="#lanourrice">
+            <speaker>La nourrice</speaker>
+            <l met="8">Eh bien vos cœurs sont-ils contents?</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <caption>Tricolor, totinet</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="6">Oui, je vous le proteste.</l>
+          </sp>
+        </spGrp>
+        <sp who="#lanourrice">
+          <speaker>La nourrice</speaker>
+          <l met="8">Faisons la noce mes enfants,</l>
+          <l met="6">L'amour fera le reste.</l>
+        </sp>
+        <spGrp>
+          <head type="vaudeville-chorus">1</head>
+          <sp who="#tricolor">
+            <speaker>Tricolor</speaker>
+            <l met="8">Pour éprouver notre constance</l>
+            <l met="8">L'amour change du blanc au noir;</l>
+            <l met="8">Amants, ne perdez point l'espoir,</l>
+            <l met="8">Aimez avec persévérance.</l>
+            <l met="8">Songez qu'il ne faut qu'un instant</l>
+            <l met="8">Pour le changer du noir au blanc.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">2</head>
+          <sp who="#totinet">
+            <speaker>Totinet</speaker>
+            <l met="8">Les transports d'une charbonnière</l>
+            <l met="8">M'ont fait changer du blanc au noir:</l>
+            <l met="8">Privé du plaisir de vous voir.</l>
+            <l met="8">J'allais terminer ma carrière,</l>
+            <l met="8">Mais un heureux événement</l>
+            <l met="8">M'a fait changer du noir au blanc.</l>
+          </sp>
+        </spGrp>
+        <pb n="36"/>
+        <spGrp>
+          <head type="vaudeville-chorus">3</head>
+          <sp who="#lanourrice">
+            <speaker>La nourrice</speaker>
+            <l met="8">Unis par un doux mariage,</l>
+            <l met="8">Ne changez point du blanc au noir,</l>
+            <l met="8">Que chacun fasse son devoir,</l>
+            <l met="8">Profitez surtout du bel âge,</l>
+            <l met="8">Pour nous l'amour à tout instant</l>
+            <l met="8">Ne change pas du noir au blanc.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">4</head>
+          <sp who="#tricolor">
+            <speaker>Tricolor</speaker>
+            <stage>au parterre</stage>
+            <l met="8">Messieurs, sifflez-vous un ouvrage?</l>
+            <l met="8">L'auteur change du blanc au noir</l>
+            <l met="8">Et va cacher son désespoir.</l>
+            <l met="8">Mais s'il obtient votre suffrage,</l>
+            <l met="8">On voit renaître son talent,</l>
+            <l met="8">Vous le changez du noir au blanc.</l>
+          </sp>
+        </spGrp>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

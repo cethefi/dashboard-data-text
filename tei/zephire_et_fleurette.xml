@@ -1,0 +1,1406 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="zephire_et_fleurette">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Zéphire et Fleurette</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Charles-Simon Favart</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>T. Boulanger</name>
+        </respStmt>
+        <respStmt>
+          <resp>Relecture</resp>
+          <name>B. de Cornulier</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">
+          <emph>Théâtre de M. Favart</emph>, t.2, Paris, Duchesne, 1763</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="zephire" sex="UNKNOWN">
+            <persName>Zéphire</persName>
+          </person>
+          <person xml:id="fleurette" sex="UNKNOWN">
+            <persName>Fleurette</persName>
+          </person>
+          <person xml:id="papillon" sex="UNKNOWN">
+            <persName>Papillon</persName>
+          </person>
+          <person xml:id="songes" sex="UNKNOWN">
+            <persName>Songes</persName>
+          </person>
+          <person xml:id="suite_de_zephire" sex="UNKNOWN">
+            <persName>Suite de Zéphire</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie de<emph>Zélindor</emph>
+          </term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#zephire">Zéphire</role>
+        </castItem>
+        <castItem>
+          <role ana="#fleurette">Fleurette</role>
+        </castItem>
+        <castItem>
+          <role ana="#papillon">Papillon</role>
+        </castItem>
+        <castItem>
+          <role ana="#songes">Songes</role>
+          <roleDesc>sous la forme des Plaisirs</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#suite_de_zephire">Suite de Zéphire</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <div type="avertissement">
+          <head>Avertissement</head>
+        </div>
+        <div type="avertissement">
+          <head>Cette pièce, d'abord en prose et en couplets, fut présentée aux Comédiens Italiens en 1745. Ils se préparaient à la jouer, lorsque des circonstances momentanées les empêchèrent de donner des parodies. Une copie de cet ouvrage tomba dans les mains d'un comédien de province, qui le fit imprimer après avoir ajouté quelques couplets. Les auteurs le revendiquèrent, en retranchèrent les augmentations, la pièce fut refondue, et donnée sous la forme qui suit.</head>
+        </div>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="location">Le théâtre représente un bocage agréable.</stage>
+        <stage type="characters">Zéphire, Papillon</stage>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_hymen_vient_remplir_mes_voeux">L'hymen vient remplir mes vœux</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="7">C'est dans ces jardins charmants</l>
+            <l met="3">Que j'attends</l>
+            <l met="6">Le prix de ma tendresse;</l>
+            <l met="7">C'est dans ces jardins charmants</l>
+            <l met="3">Que j'attends</l>
+            <l met="6">Mon aimable maîtresse.</l>
+            <l met="5">C'est une mortelle;</l>
+            <l met="4">Ses beaux yeux</l>
+            <l met="6">Charmeraient tous les dieux.</l>
+            <l met="5">Je vole près d'elle:</l>
+            <l met="4">Ah! loin des cieux,</l>
+            <l met="6">Si l'on peut être heureux,</l>
+            <l met="7">C'est dans ces jardins charmants</l>
+            <l met="3">Où j'attends</l>
+            <l met="6">Le prix de ma tendresse,</l>
+            <l met="7">C'est dans ces jardins charmants</l>
+            <l met="3">Où j'attends</l>
+            <l met="6">Mon aimable maîtresse.</l>
+          </sp>
+        </spGrp>
+        <pb n="4"/>
+        <sp who="#papillon">
+          <speaker>Papillon</speaker>
+        </sp>
+        <spGrp who="#papillon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">Autant en emporte le venttiré de <title ref="#raton_et_rosette">Raton et Rosette</title> (parodie)</desc>
+          </head>
+          <sp who="#papillon">
+            <speaker>Papillon</speaker>
+            <l met="7">Un dieu qui d'une déesse</l>
+            <l met="7">Devait toujours être épris,</l>
+            <l met="7">Jusqu'à Fleurette s'abaisse;</l>
+            <l met="7">Mais je n'en suis point surpris.</l>
+            <l met="7">En amour, petit perfide,</l>
+            <l met="7">Votre cœur ne prend pour guide</l>
+            <l met="8">Que l'amusement d'un instant:</l>
+            <l met="8">Autant en emporte le vent.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_roule_aujourd_hui_dans_le_monde">Tout roule aujourd'hui dans le monde</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">Toutes les fois qu'on nous engage,</l>
+            <l met="8">Peut-on, mon cher, toujours aimer?</l>
+            <l met="8">Que risque-t'on d'être volage,</l>
+            <l met="8">Quand on est fait pour tout charmer?</l>
+            <l met="8">Nous rougirions d'être fidèles;</l>
+            <l met="8">Quoi! toujours les mêmes soupirs?</l>
+            <l met="8">Zéphire ne porte des ailes</l>
+            <l met="8">Que pour voler à ses plaisirs.</l>
+          </sp>
+        </spGrp>
+        <pb n="5"/>
+        <sp who="#papillon">
+          <speaker>Papillon</speaker>
+        </sp>
+        <spGrp who="#papillon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#j_etais_seule_en_bocage">J'étais seule en bocage</title>
+            </desc>
+          </head>
+          <sp who="#papillon">
+            <speaker>Papillon</speaker>
+            <l met="7">Vous cachez quelque mystère,</l>
+            <l met="7">Sous ce voile de gaîté.</l>
+            <l met="7">Vous rêvez, pourquoi vous taire?</l>
+          </sp>
+        </spGrp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <l met="7">Que mon cœur est agité!</l>
+          <l met="7">Malgré moi, ce cœur volage,</l>
+          <l met="2">S'engage!</l>
+        </sp>
+        <sp who="#papillon">
+          <speaker>Papillon</speaker>
+          <l met="4">Il a grand tort.</l>
+        </sp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <l met="7">Tu riras de mon martyre.</l>
+        </sp>
+        <sp who="#papillon">
+          <speaker>Papillon</speaker>
+          <l met="2">Zéphire,</l>
+          <l met="4">Je vous plains fort.</l>
+        </sp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#de_s_engager_il_n_est_que_trop_facile">De s'engager, il n'est que trop facile</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="10">Cher Papillon, tu me verras fidèle.</l>
+          </sp>
+        </spGrp>
+        <sp who="#papillon">
+          <speaker>Papillon</speaker>
+          <l met="10">Quoi? vous aimez Fleurette pour jamais?</l>
+        </sp>
+        <pb n="6"/>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <l met="10">Oui, pour jamais. Je ne puis aimer qu'elle:</l>
+          <l met="10">Juge par là du prix de ses attraits.</l>
+        </sp>
+        <sp who="#papillon">
+          <speaker>Papillon</speaker>
+        </sp>
+        <spGrp who="#papillon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_cordons_bleus">Le cordon bleu</title>
+            </desc>
+          </head>
+          <sp who="#papillon">
+            <speaker>Papillon</speaker>
+            <l met="8">En doutant de votre constance,</l>
+            <l met="8">Je suis certain de votre amour;</l>
+            <l met="8">À chaque instant votre présence</l>
+            <l met="8">Embellit ce riant séjour:</l>
+            <l met="8">Mille fleurs s'empressent d'éclore,</l>
+            <l met="8">Dès que Zéphyr pousse un soupir:</l>
+            <l met="4">Ah! quel plaisir</l>
+            <l met="4">Va me saisir!</l>
+            <l met="4">J'en vais cueillir,</l>
+            <l met="4">J'en vais choisir.</l>
+            <l met="9">Le papillon, dans les champs de Flore,</l>
+            <l met="8">Sent toujours un nouveau désir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_les_bras_de_ce_que_j_aime">Dans les bras de ce que j'aime</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="7">Ces beaux lieux, par leur parure</l>
+            <l met="7">Lui font naître un doux penchant,</l>
+            <l met="7">Les ruisseaux par leurs murmures,</l>
+            <l met="7">Les oiseaux par leur doux chant:</l>
+            <l met="7">Par des fleurs sur la verdure,</l>
+            <l met="7">Je peins mes feux chaque jour,</l>
+            <l met="7">C'est ainsi que la Nature</l>
+            <l met="7">Doit tout son lustre à l'Amour.</l>
+          </sp>
+        </spGrp>
+        <pb n="7"/>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fille_gentille">Fille gentille</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">Pour la rendre moins inhumaine,</l>
+            <l met="8">Toutes les nuits, les Ris, les Jeux,</l>
+            <l met="8">Forment une amoureuse chaîne</l>
+            <l met="8">Dont ils nous unissent tous deux.</l>
+            <l met="1">Fille</l>
+            <l met="2">Gentille,</l>
+            <l met="5">Un songe flatteur</l>
+            <l met="5">Souvent vous réveille,</l>
+            <l met="5">La puce à l'oreille,</l>
+            <l met="4">L'amour au cœur.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_en_est_trop_si_c_est_badinage">C'en est trop, si c'est badinage</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">Oui, par ce galant stratagème,</l>
+            <l met="8">Son petit cœur est excité.</l>
+            <l met="8">C'est mon projet, et je crois même</l>
+            <l met="8">Qu'il fera ma félicité.</l>
+          </sp>
+        </spGrp>
+        <sp who="#papillon">
+          <speaker>Papillon</speaker>
+          <l met="8">Trop longtemps l'erreur se prolonge,</l>
+          <l met="8">J'en aurais déjà profité;</l>
+          <l met="8">Vous l'amuserez par un songe,</l>
+          <l met="8">Un autre par la vérité.</l>
+        </sp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#coucou">Comme un coucou que l'amour presse</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">Un désir curieux me pique,</l>
+            <l met="8">D'éprouver l'objet de mes feux;</l>
+            <l met="8">De ces fleurs la vertu magique</l>
+            <l met="8">Va nous dérober à ses yeux.</l>
+          </sp>
+        </spGrp>
+        <pb n="8"/>
+        <sp who="#papillon">
+          <speaker>Papillon</speaker>
+        </sp>
+        <spGrp who="#papillon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#beaute_sauvage">La beauté sauvage</title>
+            </desc>
+          </head>
+          <sp who="#papillon">
+            <speaker>Papillon</speaker>
+            <l met="5">C'est jouer un rôle</l>
+            <l met="5">Qui n'est pas prudent;</l>
+            <l met="5">Cette épreuve est folle.</l>
+            <l met="5">Soyez plus ardent:</l>
+            <l met="4">Parlez d'abord<stage type="bis">bis</stage>
+            </l>
+            <l met="4">Avec audace;</l>
+            <l met="4">Vous avez tort,</l>
+            <l met="4">Et je crains fort,</l>
+            <l met="4">Dieu des Zéphyrs,</l>
+            <l met="5">Que l'on ne se lasse</l>
+            <l met="5">D'avoir des désirs.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#papillon">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fileuse">Il faut que je file</title>
+            </desc>
+          </head>
+          <sp who="#papillon">
+            <speaker>Papillon</speaker>
+            <l met="7">Quelqu'un dira, non sans cause,</l>
+            <l met="7">En vous voyant différer;</l>
+            <l met="7">Ce galant nous en impose.</l>
+            <l met="7">Et que peut-on espérer</l>
+            <l met="7">D'un amant qui n'ose, n'ose,</l>
+            <l met="7">Qui n'oserait se montrer.</l>
+          </sp>
+        </spGrp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_ne_vous_ai_vu_qu_un_seul_petit_moment">Je ne vous ai vu qu'un seul petit moment</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="11">Mon cher Papillon,... Taisons-nous, la voici;</l>
+            <l met="10">En bon ami, laisse-nous seuls ici.</l>
+          </sp>
+        </spGrp>
+        <pb n="9"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Fleurette<stage>se croyant seule</stage>, Zéphire<stage>invisible aux yeux de Fleurette</stage>
+        </stage>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+        </sp>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_mariez_moi">J'ai rêvé toute la nuit</title>
+            </desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="7">J'ai rêvé toute la nuit,</l>
+            <l met="7">Qu'ici l'Amour me conduit,</l>
+            <l met="7">Zéphire avec moi causait:</l>
+            <l met="5">Ah! qu'il m'amusait!</l>
+            <l met="5">Ah! qu'il m'en disait!</l>
+            <l met="7">Faut-il que son entretien</l>
+            <l met="5">N'ai duré qu'un rien?</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_un_songe_flatteur">Dans un songe flatteur</title>
+            </desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="6">Dans quelle douce erreur</l>
+            <l met="7">Se plonge mon tendre cœur!</l>
+            <l met="6">Dans un songe enchanteur</l>
+            <l met="7">Si je dois voir mon vainqueur,</l>
+            <l met="3">Dieu d'Amour,</l>
+            <l met="9">Fais que je dorme ainsi chaque jour.</l>
+            <l met="7">Qu'il était vif et léger!</l>
+            <l met="7">Je le voyais voltiger;</l>
+            <l met="7">Mais c'était autour de moi:</l>
+            <l met="7">Puis-je douter de sa foi?</l>
+            <l met="6">Dans ses yeux plein d'ardeur,</l>
+            <l met="7">Les miens lisaient mon bonheur:</l>
+            <l met="6">Si ce songe est trompeur,</l>
+            <l met="7">Il est du moins bien flatteur.</l>
+            <l met="3">Dieu d'Amour,</l>
+            <l met="9">Fais que je dorme ainsi chaque jour.</l>
+            <l met="6">Interdit et confus,</l>
+            <l met="6">Il craignait mes refus;</l>
+            <l met="3">Ses désirs</l>
+            <l met="8">N'éclataient que par des soupirs;</l>
+            <l met="4">Bientôt frappé</l>
+            <l met="6">D'un regard échappé</l>
+            <l met="6">Qui pénétra son âme,</l>
+            <l met="4">Il s'enhardit;</l>
+            <l met="8">Je ne sais tout ce qu'il me dit:</l>
+            <l met="6">Mais mon cœur se troubla;</l>
+            <l met="5">Je sentais déjà</l>
+            <l met="8">Que j'allais approuver sa flamme,</l>
+            <l met="6">Quand le coq m'éveilla.</l>
+          </sp>
+        </spGrp>
+        <stage type="musical_indication">Premier Menuet</stage>
+        <pb n="10"/>
+        <stage type="musical_indication">Deuxième Menuet</stage>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#volez_zephyr_volez">Volez, Zéphyr, volez</title>
+            </desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="6">Volez, Zéphyr, volez,</l>
+            <l met="6">Servez mon impatience;</l>
+            <l met="6">Par votre longue absence,</l>
+            <l met="5">Vous la redoublez.</l>
+            <l met="6">Ah! qu'il est ce galant,</l>
+            <l met="1">Lent!<stage type="bis">bis</stage>
+            </l>
+            <l met="4">Cher enchanteur,</l>
+            <l met="4">Oui, ton ardeur,</l>
+            <l met="4">Flatte mon cœur;</l>
+            <l met="1">Viens<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Faire mon bonheur et le tien.</l>
+          </sp>
+        </spGrp>
+        <pb n="11"/>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_y_a_trente_ans">Il y a trente ans</title>
+            </desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="10">Il n'est qu'une heure au cadran du village,</l>
+            <l met="10">Mon cher Zéphyr ne viendra pas si tôt.</l>
+            <l met="10">Je meurs d'ennui seulette en ce bocage;</l>
+            <l met="11">Il y a bien loin d'ici jusqu'à tantôt.</l>
+            <l met="10">Il n'est qu'une heure, ...</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ce_ruisseau_qui_dans_la_plaine">Ce ruisseau qui dans la plaine</title>
+            </desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="7">Nul objet ne peut me plaire,</l>
+            <l met="7">Où n'est point mon cher amant:</l>
+            <l met="7">Le sommeil m'est nécessaire</l>
+            <l met="7">Pour adoucir mon tourment.</l>
+            <l met="4">Dormons, dormons,</l>
+            <l met="7">N'ayant rien de mieux à faire;</l>
+            <l met="3">Reposons</l>
+            <l met="4">Sur ces gazons.</l>
+          </sp>
+        </spGrp>
+        <pb n="12"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Fleurette<stage>endormie</stage>, Zéphire</stage>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dormez_roulette">Dormez, Roulette</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="4">Dormez, Fleurette,</l>
+            <l met="7">Reposez tranquillement;</l>
+            <l met="7">Tantôt à la réveillette</l>
+            <l met="7">Vous connaîtrez votre amant.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_compagne_la_plus_cherie">Ma compagne la plus chérie</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="7">Autour de l'objet que j'aime,</l>
+            <l met="7">Voltigez, Songes charmants:</l>
+            <l met="7">Peignez-lui l'ardeur extrême</l>
+            <l met="7">Du plus tendre des amants.</l>
+            <l met="4">Par un hommage</l>
+            <l met="4">Doux et flatteur,</l>
+            <l met="7">Tracez-lui du vrai bonheur</l>
+            <l met="3">Une image.</l>
+          </sp>
+        </spGrp>
+        <pb n="13"/>
+        <stage>Entrée des Songes, sous la forme des Plaisirs.</stage>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quand_on_sait_aimer_et_plaire">Quand on sait aimer et plaire</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="7">Doux sommeil, quelle est ta gloire?</l>
+            <l met="7">Tu jouis de sa beauté;</l>
+            <l met="7">Dieu flatteur, que ta victoire</l>
+            <l met="7">Hâte ma félicité.</l>
+            <l met="7">Sur les yeux de ma maîtresse</l>
+            <l met="7">Étends un voile enchanteur,</l>
+            <l met="7">Plonge-la dans ton ivresse;</l>
+            <l met="7">Mais laisse veiller son cœur.</l>
+            <l met="7">Doux sommeil, ...</l>
+          </sp>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="7">Penchez-vous, jeunes feuillages,</l>
+            <l met="7">Pour la défendre du jour;</l>
+            <l met="7">Oiseaux, cessez vos ramages</l>
+            <l met="7">Pour laisser parler l'Amour.<stage type="bis">bis</stage>
+            </l>
+            <l met="7">Doux sommeil, ...</l>
+          </sp>
+        </spGrp>
+        <stage>On danse à chaque fois que Zéphire reprend le rondeau.</stage>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_suis_un_croustilleux_chasseur">Je suis un croustilleux chasseur</title>
+            </desc>
+          </head>
+          <spGrp rend="braced">
+            <sp who="#zephire">
+              <speaker>Zéphire</speaker>
+              <l met="8">Pour former cent chiffres divers,</l>
+              <l met="8">Dérobez les trésors de Flore,</l>
+              <l met="8">Et faites lire dans les airs:</l>
+              <l met="6">Zéphire vous adore.<stage type="bis">bis</stage>
+              </l>
+            </sp>
+            <stage>bis</stage>
+          </spGrp>
+        </spGrp>
+        <stage>On danse.</stage>
+        <pb n="14"/>
+        <stage>Fleurette paraît s'éveiller, les Songes disparaissent. On voit dans les airs ces mots tracés en lettres de fleurs:« Zéphire vous adore. »Un berger et une  bergère, figurés par des Songes, forment une entrée, qui s'exécute en même temps que Zéphire chante l'air qui suit.</stage>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="empty_melody">Air vide</head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="4">Voyez les jeux</l>
+            <l met="4">D'un couple heureux:</l>
+            <l met="4">D'un pas léger,</l>
+            <l met="4">Ce beau Berger,</l>
+            <l met="6">Suit la jeune beauté,</l>
+            <l met="6">Dont il est enchanté.</l>
+            <l met="8">Ainsi mon cœur vole après vous.</l>
+            <l met="5">Leurs yeux se répondent,</l>
+            <l met="5">Leurs vœux se confondent:</l>
+            <l met="4">Un sort si doux</l>
+            <l met="6">Ne dépend que de vous.</l>
+            <l met="6">Ils approchent leurs pas,</l>
+            <l met="6">Leur penchant les entraîne;</l>
+            <l met="6">Ils se tendent les bras</l>
+            <l met="6">Pour former une chaîne.</l>
+            <l met="6">Prenons-les pour modèle,</l>
+            <l met="6">Méritons leurs plaisirs;</l>
+            <l met="6">Une chaîne si belle</l>
+            <l met="6">Doit combler nos désirs.</l>
+          </sp>
+        </spGrp>
+        <pb n="15"/>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <stage>encore endormie, croyant parler aux amants qu'elle vient de voir en songe</stage>
+        </sp>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_j_ai_tout_vu">Ah! j'ai tout vu</title>
+            </desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="4">Qu'ils sont charmants</l>
+            <l met="6">Ces fortunés amants!</l>
+            <l met="6">Jouissez des moments...</l>
+          </sp>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="4">Mais en ces lieux,</l>
+            <l met="6">Rien ne s'offre à mes yeux:</l>
+            <l met="6">Que sont-ils devenus?</l>
+            <l met="6">Ne les verrais-je plus?</l>
+          </sp>
+        </spGrp>
+        <stage>Elle s'éveille.</stage>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pour_voir_un_peu_comment_ca_f_ra">Pour voir un peu comment ça f'ra</title>
+            </desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="8">Que ces objets flattaient mes sens!</l>
+            <l met="8">À regret je vois la lumière;</l>
+            <l met="8">J'implore tes charmes puissants,</l>
+            <l met="8">Sommeil, referme ma paupière:</l>
+            <l met="8">Dormons encor sur ce ton-là,</l>
+            <l met="8">Pour voir un peu comment ça f'ra.</l>
+          </sp>
+        </spGrp>
+        <stage>Elle se rendort.</stage>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <stage>aux genoux de Fleurette</stage>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#a_sa_voisine">À sa voisine</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">Qu'elle partage mes soupirs!</l>
+            <l met="6">Amour, je te réclame!</l>
+            <l met="8">Je ne puis vaincre mes désirs.</l>
+            <l met="6">Qu'un baiser plein de flamme</l>
+            <l met="8">Porte mes feux et mes plaisirs</l>
+            <l met="4">Jusqu'en son âme.</l>
+          </sp>
+        </spGrp>
+        <pb n="16"/>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <stage>se réveille en sursaut et croyant embrasser Zéphire. Elle ne le voit plus</stage>
+        </sp>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#etant_amoureuse">Étant amoureuse</title>
+            </desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="7">Ah! mon cher... douceur trompeuse!</l>
+            <l met="6">Vaine image trop flatteuse!</l>
+            <l met="7">Je croyais voir mon amant,</l>
+            <l met="5">Étant amoureuse,</l>
+            <l met="7">Baiser ma main doucement,</l>
+            <l met="7">Et tant amoureusement!</l>
+          </sp>
+        </spGrp>
+        <stage>Elle aperçoit les lettres de fleurs suspendues dans les airs par des Zéphyrs.</stage>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_ne_sais_pas_ecrire">Je ne sais pas écrire</title>
+            </desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="8">Ciel! croirai-je ce que je vois?</l>
+            <l met="8">Zéphire a-t-il tracé pour moi</l>
+            <l met="6">Ce que je viens de lire?</l>
+            <l met="8">S'il est épris de mes appas,</l>
+            <l met="8">Pourquoi ne me le dit-il pas,</l>
+            <l met="6">Plutôt que de l'écrire?</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#detour">Sous un ormeau</title>
+            </desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="4">En sommeillant,</l>
+            <l met="8">L'Amour m'offrait un sort brillant,</l>
+            <l met="5">Aurai-je, en veillant,</l>
+            <l met="7">Le bonheur dont j'ai joui?</l>
+          </sp>
+        </spGrp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <l met="1">Oui.</l>
+        </sp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <l met="6">Je n'entends qu'une voix,</l>
+          <l met="3">Je ne vois</l>
+          <l met="3">Rien ici.</l>
+        </sp>
+        <pb n="17"/>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <l met="3">Me voici.</l>
+        </sp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <l met="3">C'est assez,</l>
+          <l met="3">Paraissez!</l>
+          <l met="6">À quoi bon ce jeu-là?</l>
+        </sp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <l met="3">Me voilà.</l>
+        </sp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <l met="4">Ah! finissons.</l>
+          <l met="8">N'entendrai-je rien que des sons?</l>
+        </sp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <l met="5">Mais...</l>
+        </sp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <l met="5">Que de façons!</l>
+          <l met="7">Mon cher amant, parais donc!</l>
+        </sp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <l met="1">Non.</l>
+        </sp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+        </sp>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">Lorsque l'on file le plaisir,tiré de <title ref="#fanfale">Fanfale</title> (vaudeville)</desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="8">À ne vouloir jamais paraître,</l>
+            <l met="8">Quel motif peut vous engager?</l>
+            <l met="8">Dites-moi donc quel est votre être.</l>
+            <l met="8">N'êtes-vous qu'un souffle léger?</l>
+          </sp>
+        </spGrp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <l met="8">Ce délai n'est pas inutile,</l>
+          <l met="8">Il faut aller tout doucement,</l>
+          <l met="4">Lorsque l'on file,</l>
+          <l met="8">Lorsque l'on file un dénouement.</l>
+        </sp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+        </sp>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#gai_gai_quel_bon_pere_j_ai">Gai, gai, quel bon père j'ai</title>
+            </desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="7">Voyez l'amoureux que j'ai,</l>
+            <l met="9">Qui ne veux point se montrer aux filles!</l>
+            <l met="7">Voyez quel amoureux j'ai!</l>
+            <l met="10">Ah! mon pauvre cœur, où t'es-tu logé?</l>
+          </sp>
+        </spGrp>
+        <pb n="18"/>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">De tous les capucins du monde</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">Pour bannir votre inquiétude,</l>
+            <l met="8">Ma chère enfant, que votre étude</l>
+            <l met="8">Soit d'imaginer des plaisirs.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <l met="8">Je n'aime point qu'on me badine,</l>
+          <l met="8">Goûte-t-on, selon ses désirs,</l>
+          <l met="8">Tous les plaisirs qu'on imagine?</l>
+        </sp>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#birene">Où êtes-vous, Birène, mon ami</title>
+            </desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="10">Ne pouvez-vous autrement exister</l>
+            <l met="10">Qu'en fatiguant vainement mon oreille?</l>
+            <l met="10">Si vous cherchez à m'impatienter,</l>
+            <l met="10">Vous y savez réussir à merveille.</l>
+          </sp>
+        </spGrp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quoi_que_fasse">On ne peut, quoi que l'on fasse</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="7">Souveraine de mon âme,</l>
+            <l met="8">Je veux toujours porter vos fers;</l>
+            <l met="8">Mais il faut mériter la flamme</l>
+            <l met="8">D'un dieu qui règne dans les airs.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+        </sp>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_moitie_du_chemin">La moitié du chemin</title>
+            </desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="10">D'un lieu trop haut, mon aimable Zéphire,</l>
+            <l met="10">Pour mon malheur, vous êtes souverain.</l>
+            <p>Tenez, vous me croirez si vous voulez, mais ce que je vais vous dire est très certain.</p>
+            <l met="6">Dans l'ardeur qui m'inspire,</l>
+            <l met="10">Si vous étiez de ces lieux plus voisins,</l>
+            <l met="12">Je ferais de bon cœur la moitié du chemin.</l>
+          </sp>
+        </spGrp>
+        <pb n="19"/>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#un_mouvement_de_curiosite">Un mouvement de curiosité</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="10">Si je parais, à l'instant ma présence,</l>
+            <l met="10">Comme une fleur, détruira ta beauté.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <l met="11">Que dites-vous?</l>
+        </sp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <l met="11">Juste Ciel! elle balance!</l>
+          <l met="11">Répondez-moi.</l>
+        </sp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <l met="11">Mais, Zéphire, en vérité,</l>
+          <l met="10">Cela vaut bien la peine qu'on y pense.</l>
+          <l met="10">M'aimerez-vous, si je perds ma beauté?</l>
+        </sp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#eh_qu_est_c_que_ca_m_fait_a_moi">Eh! qu'est-c'que ça m'fait à moi</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="7">À d'autres yeux désormais,</l>
+            <l met="7">Tu cesserais d'être belle.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <l met="7">Perdre ainsi tous mes attraits,</l>
+          <l met="7">C'est une loi bien cruelle.</l>
+          <l met="7">Mais qu'est-c'que ça m'fait à moi,</l>
+          <l met="7">Si votre cœur m'est fidèle?</l>
+          <l met="7">Mais qu'est-c'que ça m'fait à moi,</l>
+          <l met="7">Dès que j'aurai votre foi?</l>
+        </sp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#me_voila_me_voila">Me voilà, me voilà</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">Non, rien ne changera mon goût.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <l met="6">Si vous êtes sincère,</l>
+          <l met="8">Paraissez, je consens à tout.</l>
+        </sp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <l met="6">Il faut vous satisfaire.</l>
+          <l met="8">Je vais, ma petite maman,</l>
+          <l met="8">Terminer enfin le roman,</l>
+          <l met="4">Vous m'en pressez.</l>
+        </sp>
+        <pb n="20"/>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <l met="4">Oui, paraissez.</l>
+          <l met="7">Oui.</l>
+        </sp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <l met="7">Me voilà, me voilà.</l>
+        </sp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <l met="1">Ah!</l>
+        </sp>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_qu_il_est_beau_qu_il_est_charmant">Ah! qu'il est beau! qu'il est charmant</title>
+            </desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="8">Qu'il est gentil! qu'il est charmant!</l>
+            <l met="8">Que je vais chérir cet amant!</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#un_jour_dans_un_vert_bocage">Un jour, dans un vert bocage</title>
+            </desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="7">Mais un doute me tourmente:</l>
+            <l met="7">Cet aspect qui m'est si cher,</l>
+            <l met="7">Cette figure charmante</l>
+            <l met="7">N'est peut-être que de l'air;</l>
+            <l met="6">Si l'image est trompeuse...</l>
+            <l met="4">Sachons enfin...</l>
+            <l met="4">Donnez la main.</l>
+            <l met="6">Ah! que je suis heureuse!</l>
+          </sp>
+        </spGrp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_qu_il_est_drole_ah_qu_il_est_beau">Ah! qu'il est drôle, ah! qu'il est beau</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">La beauté, cette tendre fleur,</l>
+            <l met="8">Ne vous paraît qu'un bien frivole;</l>
+            <l met="8">Vous y renoncez sans douleur.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <l met="8">Qu'avec plaisir je vous l'immole!</l>
+          <l met="4">Qu'elle s'envole,</l>
+          <l met="4">Je m'en console,</l>
+          <l met="4">J'ai votre cœur.</l>
+        </sp>
+        <pb n="21"/>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#devin_de_village">C'est un enfant</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">Il faut que je te désabuse;</l>
+            <l met="3">Tes attraits</l>
+            <l met="5">Sont encor parfaits.</l>
+            <l met="8">Ce que j'ai dit n'est qu'une ruse:</l>
+            <l met="3">Ton erreur</l>
+            <l met="5">A fait mon bonheur.</l>
+          </sp>
+        </spGrp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <l met="5">Quoi?</l>
+        </sp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <l met="5">Tout ce mystère</l>
+          <l met="5">M'était nécessaire</l>
+          <l met="8">Pour t'éprouver, ma chère enfant.</l>
+        </sp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <l met="4">Ah! le méchant!<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <stage type="musical_indication">Duo</stage>
+        <spGrp who="#fleurette">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">La Tempé,tiré de <title ref="#monsieur_d_auvergne">Monsieur d'Auvergne</title> (Contredanse)</desc>
+          </head>
+          <sp who="#fleurette">
+            <speaker>Fleurette</speaker>
+            <l met="5">Viens, dieu de nos cœurs,</l>
+            <l met="3">Que ta chaîne</l>
+            <l met="5">Au plaisir nous mène.</l>
+            <l met="5">Viens, dieu de nos cœurs,</l>
+            <l met="3">Que ta chaîne</l>
+            <l met="3">Soit de fleurs.</l>
+          </sp>
+        </spGrp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <stage>seul</stage>
+          <l met="7">Que votre gloire est parfaite!</l>
+          <l met="7">Vous seule en devez jouir:</l>
+          <l met="7">Il n'appartient qu'à Fleurette</l>
+          <l met="7">De pouvoir fixer Zéphyr.</l>
+        </sp>
+        <pb n="22"/>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="5">Viens, dieu de nos cœurs, ...</l>
+          </sp>
+        </spGrp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+          <l met="5">À tous les instants</l>
+          <l met="8">Renaîtront nos ardeurs fidèles:</l>
+          <l met="5">Ainsi qu'au printemps</l>
+          <l met="8">Renaissent les fleurs dans nos champs.</l>
+        </sp>
+        <sp who="#fleurette">
+          <speaker>Fleurette</speaker>
+          <l met="7">Cher Zéphire, à d'autres belles,</l>
+          <l met="7">Ne portez point vos appas;</l>
+          <l met="7">N'employez jamais vos ailes</l>
+          <l met="7">Que pour voler sur mes pas.</l>
+        </sp>
+        <spGrp>
+          <caption>Ensemble</caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="5">À tous les instants, ...</l>
+            <l met="5">Viens, dieu de nos cœurs, ...</l>
+          </sp>
+        </spGrp>
+        <sp who="#zephire">
+          <speaker>Zéphire</speaker>
+        </sp>
+        <spGrp who="#zephire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#fleurettes">Fleurettes</title>
+            </desc>
+          </head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="6">Ici, que tout exprime</l>
+            <l met="6">Les plus tendres désirs;</l>
+            <l met="6">Ici que tout s'anime</l>
+            <l met="6">Au feu des mes soupirs.</l>
+            <l met="8">Dans cette aimable retraite,</l>
+            <l met="8">Plaisirs, volez sur nos pas;</l>
+            <l met="7">Rendez hommage aux appâts</l>
+            <l met="4">De ma Fleurette.</l>
+          </sp>
+        </spGrp>
+        <pb n="23"/>
+        <spGrp>
+          <head type="vaudeville-chorus">1</head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">C'est dans ce champêtre séjour</l>
+            <l met="6">Que les feux sont durables;</l>
+            <l met="8">Les cœurs y sont du dieu d'Amour</l>
+            <l met="6">Les temples véritables.</l>
+            <l met="8">La ville aujourd'hui ne produit</l>
+            <l met="6">Que quelques amourettes,</l>
+            <l met="8">Qu'un jour fait éclore et détruit</l>
+            <l met="5">Comme les fleurettes.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">2</head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">L'Amour délicat est toujours</l>
+            <l met="6">Fidèle à la nature;</l>
+            <l met="8">Dans le maintien, dans les atous,</l>
+            <l met="6">Trop d'art lui fait injure.</l>
+            <l met="8">Des parterres les plus brillants</l>
+            <l met="6">Souvent il fait retraite,</l>
+            <l met="8">Pour aller cueillir dans les champs,</l>
+            <l met="5">La simple fleurette.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">3</head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">Par un jargon vif et galant,</l>
+            <l met="6">Nos amants nous abusent;</l>
+            <l met="8">D'amuser ils ont le talent,</l>
+            <l met="6">Mais toujours ils s'amusent.</l>
+            <l met="8">Ce sont d'agréables trompeurs</l>
+            <l met="6">Au métier d'amourette,</l>
+            <l met="8">Qui savent, pour cueillir des fleurs,</l>
+            <l met="5">Semer la fleurette.</l>
+          </sp>
+        </spGrp>
+        <pb n="24"/>
+        <spGrp>
+          <head type="vaudeville-chorus">4</head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">Du petit-maître sémillant,</l>
+            <l met="6">Redoutez la tendresse;</l>
+            <l met="8">Plus il paraît vif et brillant,</l>
+            <l met="6">Plus sa flamme est traîtresse.</l>
+            <l met="8">Belles, ne vous y fiez pas,</l>
+            <l met="6">Ce papillon vous guette,</l>
+            <l met="8">Pour flétrir vos jeunes appas,</l>
+            <l met="5">Comme une fleurette.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">5</head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">Dans l'amarante et dans le lys,</l>
+            <l met="6">Je vois trop d'étalage;</l>
+            <l met="8">Des œillets d'Inde et des soucis</l>
+            <l met="6">Je ne puis faire usage.</l>
+            <l met="8">La tubéreuse a trop d'odeur;</l>
+            <l met="6">La pensée est discrète;</l>
+            <l met="8">Et rien ne flatte plus mon cœur</l>
+            <l met="5">Que cette fleurette.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">6</head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">Vous vous perdez, maris coquets,</l>
+            <l met="6">Par vos ardeurs follettes;</l>
+            <l met="8">Ne vous déferez-vous jamais</l>
+            <l met="6">De l'erreur où vous êtes?</l>
+            <l met="8">Vous laissez dans votre jardin</l>
+            <l met="6">Périr des fleurs parfaites,</l>
+            <l met="8">Pour cueillir chez votre voisin</l>
+            <l met="5">De minces fleurettes.</l>
+          </sp>
+        </spGrp>
+        <pb n="25"/>
+        <spGrp>
+          <head type="vaudeville-chorus">7</head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">Si vous nous avez accordé,</l>
+            <l met="6">Messieurs, votre suffrage,</l>
+            <l met="8">Notre orgueil serait-il fondé</l>
+            <l met="6">D'en tirer davantage?</l>
+            <l met="8">Non, non, ce serait nous flatter</l>
+            <l met="6">D'une gloire indiscrète;</l>
+            <l met="8">Ce qu'on vient de vous présenter,</l>
+            <l met="5">N'est qu'une fleurette.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">8</head>
+          <sp who="#zephire">
+            <speaker>Zéphire</speaker>
+            <l met="8">Souvent à des morceaux pompeux</l>
+            <l met="6">La fortune est cruelle;</l>
+            <l met="8">Quelquefois, on est plus heureux</l>
+            <l met="6">Dans une bagatelle.</l>
+            <l met="8">Le vent qui brise les cyprès,</l>
+            <l met="6">Et par terre les jette,</l>
+            <l met="8">Ménage les faibles attraits</l>
+            <l met="5">De l'humble fleurette.</l>
+          </sp>
+        </spGrp>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

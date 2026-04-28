@@ -1,0 +1,2565 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="armide_bailly_1725">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Armide</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>[Bailly]</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>Bertrand Ourcel</name>
+        </respStmt>
+        <respStmt>
+          <resp>Relecture</resp>
+          <name>I. Ligier-Degauque</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Les Parodies du nouveau Théâtre-Italien, Briasson, 1738</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="armide" sex="UNKNOWN">
+            <persName>Armide</persName>
+          </person>
+          <person xml:id="sidonie" sex="UNKNOWN">
+            <persName>Sidonie</persName>
+          </person>
+          <person xml:id="hidraot" sex="UNKNOWN">
+            <persName>Hidraot</persName>
+          </person>
+          <person xml:id="renaud" sex="UNKNOWN">
+            <persName>Renaud</persName>
+          </person>
+          <person xml:id="ubalde" sex="UNKNOWN">
+            <persName>Ubalde</persName>
+          </person>
+          <person xml:id="lechevalierdanois" sex="UNKNOWN">
+            <persName>Le chevalier danois</persName>
+          </person>
+          <person xml:id="bacchus" sex="UNKNOWN">
+            <persName>Bacchus</persName>
+          </person>
+          <person xml:id="aronte" sex="UNKNOWN">
+            <persName>Aronte</persName>
+          </person>
+          <person xml:id="uneharengere" sex="UNKNOWN">
+            <persName>Une harengère</persName>
+          </person>
+          <person xml:id="unebouquetiere" sex="UNKNOWN">
+            <persName>Une bouquetière</persName>
+          </person>
+          <person xml:id="le_chevalier_danois" sex="UNKNOWN">
+            <persName>Le Chevalier Danois</persName>
+          </person>
+          <person xml:id="une_harengere" sex="UNKNOWN">
+            <persName>Une Harengère</persName>
+          </person>
+          <person xml:id="une_bouquetiere" sex="UNKNOWN">
+            <persName>Une Bouquetière</persName>
+          </person>
+          <person xml:id="troupe_d_harengeres" sex="UNKNOWN">
+            <persName>Troupe d'Harengères</persName>
+          </person>
+          <person xml:id="troupe_de_bouquetieres" sex="UNKNOWN">
+            <persName>Troupe de Bouquetières</persName>
+          </person>
+          <person xml:id="troupe_de_satyres_de_la_suite_de_bacchus" sex="UNKNOWN">
+            <persName>Troupe de Satyres de la suite de Bacchus</persName>
+          </person>
+          <person xml:id="troupe_de_demons_transformes_en_huissiers_et_sergents" sex="UNKNOWN">
+            <persName>Troupe de Démons transformés en Huissiers et Sergents</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1725">
+        <desc>Représentée pour la première fois par les Comédiens Italiens ordinaires du Roi le 21 Mars 1725</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#armide">Armide</role>
+        </castItem>
+        <castItem>
+          <role ana="#sidonie">Sidonie</role>
+        </castItem>
+        <castItem>
+          <role ana="#hidraot">Hidraot</role>
+        </castItem>
+        <castItem>
+          <role ana="#renaud">Renaud</role>
+          <actor>Arlequin</actor>
+        </castItem>
+        <castItem>
+          <role ana="#ubalde">Ubalde</role>
+        </castItem>
+        <castItem>
+          <role ana="#le_chevalier_danois">Le Chevalier Danois</role>
+        </castItem>
+        <castItem>
+          <role ana="#bacchus">Bacchus</role>
+        </castItem>
+        <castItem>
+          <role ana="#une_harengere">Une Harengère</role>
+        </castItem>
+        <castItem>
+          <role ana="#aronte">Aronte</role>
+        </castItem>
+        <castItem>
+          <role ana="#une_bouquetiere">Une Bouquetière</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_d_harengeres">Troupe d'Harengères</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_bouquetieres">Troupe de Bouquetières</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_satyres_de_la_suite_de_bacchus">Troupe de Satyres de la suite de Bacchus</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_demons_transformes_en_huissiers_et_sergents">Troupe de Démons transformés en Huissiers et Sergents</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène est dans le palais d'Armide.</stage>
+        <stage>On joue l'ouverturetiré d' <title ref="#armide">Armide</title> ().</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Armide<stage>entrant rêveuse</stage>, Sidonie</stage>
+        <sp who="#sidonie">
+          <speaker>Sidonie</speaker>
+          <stage>prenant Armide par la main</stage>
+        </sp>
+        <spGrp who="#sidonie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cotillon_thalie">Cotillon des Fêtes de Thalie</title>
+            </desc>
+          </head>
+          <sp who="#sidonie">
+            <speaker>Sidonie</speaker>
+            <l met="8">Dansons le nouveau Cotillon,</l>
+            <l met="5">Trémoussez-vous belle,</l>
+            <l met="5">Trémoussez-vous donc.</l>
+            <p>En vérité, belle Armide, je ne vous</p>
+            <p>comprends pas! Dans le temps que tout seconde vos désirs, qu'on ne songe qu'à vous donner des fêtes et des cadeaux, vous paraissez toute je ne sais comment! Eh, que vous manque-t-il donc!</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#sidonie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#robin_ture_lure_lure">Robin turelure</title>
+            </desc>
+          </head>
+          <sp who="#sidonie">
+            <speaker>Sidonie</speaker>
+            <l met="7">Pour vaincre nos ennemis,</l>
+            <l met="7">Il ne vous faut, je le jure,</l>
+            <l met="7">Qu'une œillade, qu'un souris,</l>
+            <l met="3">Turelure,</l>
+            <l met="7">Et votre victoire est sûre,</l>
+            <l met="5">Robin turelure.</l>
+            <p>L'on sait partout ce que peuvent vos yeux, et vous leur faites faire si bien ce que vous voulez, qu'il n'est point de coquette aujourd'hui qui ne voulût prendre de vos leçons.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#sidonie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_ces_lieux_tout_rit">Dans ces lieux tout rit sans cesse</title>
+            </desc>
+          </head>
+          <sp who="#sidonie">
+            <speaker>Sidonie</speaker>
+            <l met="7">L'ennemi de tous vos charmes</l>
+            <l met="7">Eprouve enfin le pouvoir.</l>
+            <l met="7">Oui, pour vous rendre les armes,</l>
+            <l met="10">Et vous aimer, il ne faut que vous voir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <p>Hélas! mon triomphe n'est pas complet. Renaud, que je ne puis souffrir, est justement celui qui méprise mes charmes; de</p>
+          <p>tout le camp qui me trouvait gentille et de son goût, il fut le seul qui me vit indifféremment; et tandis que tous les autres s'empressaient à me faire des civilités... Monsieur... me laissa passer sans faire semblant de me voir. Du plus loin qu'on m'apercevait, je m'entendais dire:</p>
+        </sp>
+        <pb n="5"/>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_philis">Ah! Philis, je vous vois, je vous aime</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="9">La belle, je vous vois, je vous aime,</l>
+            <l met="10">Si je vous ai, je vous aimerai tant,</l>
+            <l met="8">Je suis tendre, je suis constant,</l>
+            <l met="12">Je vous vois, je vous veux, je vous aimerai tant!</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_sais_quoi">Ah! c'est un certain je ne sais qu'est-ce</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Si quelqu'un venait près de moi</l>
+            <l met="6">Me vanter sa tendresse,</l>
+            <l met="8">Un autre avec délicatesse</l>
+            <l met="8">Me disait: Lorsque je vous vois,</l>
+            <l met="9">Je sens un certain je ne sais qu'est-ce,</l>
+            <l met="9">Je sens un certain je ne sais quoi.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_amour_me_fait_lon_lan_la">L'amour me fait, lon lan la</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="6">Un autre plus timide</l>
+            <l met="6">S'en venait poliment</l>
+            <l met="6">Me dire: Belle Armide,</l>
+            <l met="6">Soulagez mon tourment;</l>
+            <l met="4">L'Amour me fait,</l>
+            <l met="3">Lon lan la,</l>
+            <l met="6">L'Amour me fait mourir.</l>
+            <p>Que je suis bien punie! Il faut justement, parce que je haïs Renaud, qu'il ne fasse point cas de moi.</p>
+          </sp>
+        </spGrp>
+        <stage>Gracieusement</stage>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#catherine">Ton himeur est, Cathereine</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="7">Mais tandis qu'à mes doux charmes</l>
+            <l met="7">Tant de guerriers à la fois</l>
+            <l met="7">Cherchent à rendre les armes,</l>
+            <l met="7">Et se soumettre à mes lois;</l>
+            <l met="7">De Renaud, vois, je te prie,</l>
+            <l met="7">Les impertinents rebuts:</l>
+          </sp>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="7">Il prétend, je crois, ma mie,</l>
+            <l met="7">Prendre avec moi le dessus.</l>
+          </sp>
+        </spGrp>
+        <stage>En colère.</stage>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#faire_l_amour">L'amour la nuit et le jour</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="6">Ah! ce qui plus, ma foi,</l>
+            <l met="6">Excite ma colère,</l>
+            <l met="6">C'est qu'il est, je le voi,</l>
+            <l met="6">Dans l'âge où l'on peut faire</l>
+            <l met="2">L'amour,</l>
+            <l met="5">La nuit et le jour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#sidonie">
+          <speaker>Sidonie</speaker>
+        </sp>
+        <spGrp who="#sidonie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#de_son_lan_la">De son lan la, landerirette</title>
+            </desc>
+          </head>
+          <sp who="#sidonie">
+            <speaker>Sidonie</speaker>
+            <l met="7">Bon! quoiqu'à votre victoire</l>
+            <l met="7">Il manque encor celui-là,</l>
+            <l met="7">Plus d'un tente cette gloire,</l>
+            <l met="7">C'est à qui s'empressera</l>
+            <l met="8">De vous aimer, landerirette,</l>
+            <l met="8">De vous aimer, de vous charmer.</l>
+            <p>En effet, celui qui ne sait pas profiter de l'occasion quand elle se présente est un benêt.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#sidonie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#sidonie">
+            <speaker>Sidonie</speaker>
+            <l met="8">Qu'on doit aussitôt méconnaître,</l>
+            <l met="8">Et même oublier promptement.</l>
+            <l met="8">Souvent l'amant le plus charmant,</l>
+            <l met="6">Ne tarde guère à l'être.</l>
+          </sp>
+        </spGrp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <stage>avec agitation</stage>
+          <p>Un songe affreux m'épouvante, et me met tout hors de moi. Ah! j'ai crû voir le perfide l'épée à la main.</p>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#de_quoi_vous_plaignez_vous">De quoi vous plaignez-vous</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="6">Pour éviter ses coups,</l>
+            <l met="7">Je suis, craignant sa colère,</l>
+            <l met="6">Pour éviter ses coups,</l>
+            <l met="6">Tombée à ses genoux;</l>
+            <l met="7">Mais dans ce débat sévère,</l>
+            <l met="7">Voulant fléchir sa rigueur,</l>
+          </sp>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="6">Il m'a semblé, ma chère,</l>
+            <l met="6">Qu'il... me perçait le cœur.</l>
+          </sp>
+        </spGrp>
+        <stage>Tendrement.</stage>
+        <sp who="#sidonie">
+          <speaker>Sidonie</speaker>
+        </sp>
+        <spGrp who="#sidonie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Tout cela m'est indifférent</title>
+            </desc>
+          </head>
+          <sp who="#sidonie">
+            <speaker>Sidonie</speaker>
+            <l met="8">Il ne faut jamais s'arrêter</l>
+            <l met="8">À ce qu'un songe peut chanter.</l>
+            <l met="8">J'en ai fait certains dans ma vie,</l>
+            <l met="8">Que j'ai goûté comme un vrai bien;</l>
+            <l met="8">Mais hélas! je vous certifie</l>
+            <l met="8">Qu'au réveil ce n'était plus rien.</l>
+            <p>Mais... voici Monsieur votre oncle, je vous laisse.</p>
+          </sp>
+        </spGrp>
+        <stage>Elle s'en va.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Hidraot, Armide</stage>
+        <sp who="#hidraot">
+          <speaker>Hidraot</speaker>
+          <p>Bonjour ma nièce, bonjour... je viens me réjouir avec toi, et joindre ma voix aux acclamations de la populace...</p>
+        </sp>
+        <spGrp who="#hidraot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#trembleurs">Les Trembleurs</title>
+            </desc>
+          </head>
+          <sp who="#hidraot">
+            <speaker>Hidraot</speaker>
+            <l met="7">Quand je te vois, je respire,</l>
+            <l met="7">J'ai ce que mon cœur désire;</l>
+            <l met="7">Pour soutenir cet empire,</l>
+            <l met="7">C'est sur toi que nous comptons.</l>
+            <l met="7">Pour honorer ta famille,</l>
+            <l met="7">C'est trop peu d'être gentille,</l>
+            <l met="7">Si l'État de toi, ma fille,</l>
+            <l met="7">Ne voit quelques rejetons.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#hidraot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_raison">Ma raison s'en va bon train</title>
+            </desc>
+          </head>
+          <sp who="#hidraot">
+            <speaker>Hidraot</speaker>
+            <l met="7">Ah! quel sera mon bonheur,</l>
+            <l met="7">Si tu satisfais mon cœur!</l>
+            <l met="5">Oui, ma chère enfant,</l>
+            <l met="5">Je mourrai content,</l>
+            <l met="6">Si je puis d'aventure</l>
+            <l met="8">Voir avant ce funeste instant</l>
+            <l met="6">De ta progéniture,</l>
+            <l met="2">Vraiment,</l>
+            <l met="6">De ta progéniture.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#hidraot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#toure_lourirette">Tourlourirette</title>
+            </desc>
+          </head>
+          <sp who="#hidraot">
+            <speaker>Hidraot</speaker>
+            <l met="5">Flatte ma vieillesse</l>
+            <l met="5">D'un espoir si doux;</l>
+            <l met="5">Hâte-toi, ma nièce,</l>
+            <l met="7">De prendre un, tourlourirette,</l>
+            <l met="8">De prendre un, lon la derirette,</l>
+            <l met="5">De prendre un époux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#gardons_moutons">Gardons nos Moutons, lirette, liron</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Je veux garder ma liberté</l>
+            <l met="6">Et mon humeur follette.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#menuet_de_la_lande">Menuet de M. de Lalande dans un des ballets du Roi</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="3">Un amant</l>
+            <l met="9">Nous conte toujours ce qu'il ressent</l>
+            <l met="4">Si tendrement</l>
+            <l met="3">Qu'à son tour</l>
+            <l met="9">On devient sensible à son amour.<stage type="bis">bis</stage>
+            </l>
+            <l met="3">Il enjôle,</l>
+            <l met="6">Avec son air fripon,</l>
+            <l met="4">Souvent le drôle,</l>
+            <l met="6">Sans sujet ni raison,</l>
+            <l met="8">S'envole ainsi qu'un papillon.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#roi_de_cocagne">Vaudeville du Roi de Cocagne</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="9">Et de plus sa flamme est toujours belle,</l>
+            <l met="7">Son discours toujours pressant;</l>
+            <l met="9">Et promet de nous être fidèle,</l>
+            <l met="7">Tant qu'il se trouve être amant.</l>
+            <l met="10">Est-il époux, sa flamme est bientôt morte;</l>
+            <l met="4">Et lon lan la</l>
+            <l met="4">Ce n'est plus là</l>
+            <l met="5">Qu'on trouve cela,</l>
+            <l met="7">Le mariage l'emporte.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_dans_ces_lieux">C'est dans ces lieux que règne l'innocence</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="10">J'aime à donner de l'amour sans en prendre.</l>
+          </sp>
+        </spGrp>
+        <sp who="#hidraot">
+          <speaker>Hidraot</speaker>
+          <l met="10">Ma nièce, en vain tu prétends te défendre:</l>
+          <l met="10">Songe qu'amour ne perd rien pour attendre.</l>
+        </sp>
+        <spGrp who="#hidraot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#flon_flon">Flon, flon</title>
+            </desc>
+          </head>
+          <sp who="#hidraot">
+            <speaker>Hidraot</speaker>
+            <l met="6">Quand on est jeune et belle,</l>
+            <l met="6">Que l'on a des appas,</l>
+            <l met="6">C'est être bien cruelle,</l>
+            <l met="6">Que de n'en user pas,</l>
+            <l met="3">Flon, flon, flon,</l>
+            <l met="5">Larira dondaine,</l>
+            <l met="3">Flon, flon, flon,</l>
+            <l met="5">Larira dondon.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#hidraot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ma_fille_veux_tu_un_bouquet">Ma Fille veux-tu un bouquet</title>
+            </desc>
+          </head>
+          <sp who="#hidraot">
+            <speaker>Hidraot</speaker>
+            <l met="8">Quand veux-tu prendre ce parti,</l>
+            <l met="8">Quand veux-tu prononcer ce oui?</l>
+          </sp>
+        </spGrp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <l met="7">Non, non, non, mon oncle, non.</l>
+          <l met="8">Ce n'est point là ma maladie,</l>
+          <l met="7">Gai, gai, mais quel oncle j'ai,</l>
+          <l met="10">Qui n'entends pas le dessein de sa nièce,</l>
+          <l met="7">Gai, gai, mais quel oncle j'ai,</l>
+          <l met="9">Qui n'entends pas le dessein que j'ai.</l>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ferai_la_folie">J'en frai la folie</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="7">Je vais, pour vous satisfaire,</l>
+            <l met="5">Vous apprendre comme,</l>
+            <l met="7">Pour m'engager et me plaire,</l>
+            <l met="5">Il me faut un homme.</l>
+            <l met="8">C'est celui qui Renaud vaincra,</l>
+            <l met="8">Qui mon tendre cœur obtiendra:</l>
+            <l met="7">J'en frai la folie, mon oncle,</l>
+            <l met="5">J'en frai la folie.</l>
+          </sp>
+        </spGrp>
+        <stage>Avec chaleur.</stage>
+        <pb n="12"/>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Voici nettement ma pensée.</l>
+          </sp>
+        </spGrp>
+        <sp who="#hidraot">
+          <speaker>Hidraot</speaker>
+          <l met="8">Te connaissant si déguisée,</l>
+          <l met="8">Je ne puis compter qu'en tremblant</l>
+          <l met="8">Sur des paroles si légères.</l>
+        </sp>
+        <stage>Il se fait un bruit de symphonie.</stage>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <l met="8">Mais d'où vient ce bruit?</l>
+        </sp>
+        <sp who="#hidraot">
+          <speaker>Hidraot</speaker>
+          <l met="8">Mon enfant,</l>
+          <l met="8">Ce sont, je crois, les harengères</l>
+          <p>Qui viennent honorer ton triomphe.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Hidraot, Armide, troupe d'Harengères</stage>
+        <stage>La symphonie joue l'air du vaudeville suivant, pendant lequel toutes les harengères arrivent.</stage>
+        <sp who="#uneharengere">
+          <speaker>Une harengère</speaker>
+        </sp>
+        <spGrp who="#uneharengere">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mirlababibobette">Mirlababibobette</title>
+            </desc>
+          </head>
+          <sp who="#uneharengere">
+            <speaker>Une harengère</speaker>
+            <l met="8">Partout où vous portez vos pas,</l>
+            <l met="6">Que vous faites, la belle,</l>
+            <l met="3">De fracas!</l>
+            <l met="8">Nos ennemis en ont dans l'aile,</l>
+            <l met="8">Mirlababi, ser la babo,</l>
+          </sp>
+          <sp who="#uneharengere">
+            <speaker>Une harengère</speaker>
+            <l met="6">Cette gente pucelle,</l>
+            <l met="6">Ser la baborita,</l>
+            <l met="5">Les a mis à bas.</l>
+          </sp>
+        </spGrp>
+        <stage>La montrant du doigt à ses camarades.</stage>
+        <spGrp who="#uneharengere">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#en_revenant_de_saint_denis">En revenant de Saint-Denis</title>
+            </desc>
+          </head>
+          <sp who="#uneharengere">
+            <speaker>Une harengère</speaker>
+            <l met="8">Quand j'ons cette nouvelle appris,</l>
+            <l met="5">J'en avons tant ri,</l>
+            <l met="8">De savoir qu'ils étions tous pris,</l>
+            <l met="6">Le cul dans une hotte,</l>
+            <l met="5">J'en avons tant ri,</l>
+            <l met="6">J'en rirons bien encore.</l>
+          </sp>
+          <sp who="#uneharengere">
+            <speaker>Une harengère</speaker>
+            <l met="5">J'en avons tant ri,</l>
+            <l met="6">J'en rirons bien encore.</l>
+          </sp>
+        </spGrp>
+        <pb n="14"/>
+        <stage>Elles se prennent les mains, et dansent en chantant le refrain du vaudeville précédent.</stage>
+        <sp who="#hidraot">
+          <speaker>Hidraot</speaker>
+        </sp>
+        <spGrp who="#hidraot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_pierre">Ô Pierre, j'étais morte sans vous</title>
+            </desc>
+          </head>
+          <sp who="#hidraot">
+            <speaker>Hidraot</speaker>
+            <l met="4">Armide, Armide,</l>
+            <l met="6">Triomphe des grands cœurs.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="4">Armide, Armide,</l>
+          <l met="6">Triomphe des grands cœurs.</l>
+        </sp>
+        <sp who="#hidraot">
+          <speaker>Hidraot</speaker>
+          <l met="7">Sa beauté partout préside;</l>
+          <l met="7">Les plus terribles vainqueurs,</l>
+          <l met="7">Malgré leur fureur perfide,</l>
+          <l met="6">Éprouvent ses rigueurs.</l>
+          <l met="4">Armide, Armide,</l>
+          <l met="6">Triomphe des grands cœurs.</l>
+        </sp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="4">Armide, Armide,</l>
+          <l met="6">Triomphe des grands cœurs.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Hidraot, Armide, troupe d'Harengères, Aronte</stage>
+        <sp who="#aronte">
+          <speaker>Aronte</speaker>
+          <stage>entrant tout essoufflé</stage>
+          <p>Madame, les chevaliers dont vous m'avez commis le soin se sont sauvés...</p>
+        </sp>
+        <spGrp who="#aronte">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lonlanla_derirette">Lon lan la derirette</title>
+            </desc>
+          </head>
+          <sp who="#aronte">
+            <speaker>Aronte</speaker>
+            <l met="8">Je les ai voulu retenir,<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Loin de m'entendre et m'obéir,</l>
+            <l met="6">Lon lan la derirette,</l>
+            <l met="8">Madame, ils ont gagné pays,</l>
+            <l met="6">Lon lan la deriri.</l>
+          </sp>
+        </spGrp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <stage>avec surprise</stage>
+          <p>Comment cela s'est-il pu faire?</p>
+        </sp>
+        <sp who="#aronte">
+          <speaker>Aronte</speaker>
+        </sp>
+        <spGrp who="#aronte">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#aronte">
+            <speaker>Aronte</speaker>
+            <l met="8">Comme je marchais à la suite,</l>
+            <l met="8">Afin de veiller sur eux tous,</l>
+            <l met="8">Un homme nous... a mis en fuite,</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <caption>Hidraot et armide<stage>ensemble</stage>
+          </caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Un seul homme! que dites-vous?</l>
+          </sp>
+        </spGrp>
+        <sp who="#aronte">
+          <speaker>Aronte</speaker>
+        </sp>
+        <spGrp who="#aronte">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quand_moise_fit_defense">Quand Moïse fit défense</title>
+            </desc>
+          </head>
+          <sp who="#aronte">
+            <speaker>Aronte</speaker>
+            <l met="7">J'ai tout fait pour me défendre;</l>
+            <l met="7">Mais cet homme assurément</l>
+            <l met="7">N'est pas un gaillard bien tendre:</l>
+            <l met="7">J'en puis parler savamment,</l>
+            <l met="7">Plus de trente coups de gaule,</l>
+            <l met="7">Auxquels j'ai prêté l'épaule,</l>
+            <l met="7">Vous disent, et vous font voir</l>
+            <l met="7">Qu'Aronte a fait son devoir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <stage>avec douleur</stage>
+          <p>Je gage que c'est Renaud qui me joue ce tour-là.</p>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vraiment_ma_commere_oui">Vraiment, ma commère, voire</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="7">Aronte, serait-ce lui?</l>
+          </sp>
+        </spGrp>
+        <sp who="#aronte">
+          <speaker>Aronte</speaker>
+          <l met="7">Vraiment ma Commère, oui,</l>
+        </sp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <l met="7">Qui me donne ce déboire.</l>
+        </sp>
+        <sp who="#aronte">
+          <speaker>Aronte</speaker>
+          <l met="7">Vraiment ma Commère, voire,</l>
+          <l met="7">Vraiment ma Commère, oui.</l>
+        </sp>
+        <spGrp>
+          <caption>Hidraot, armide<stage>ensemble</stage>
+          </caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fraises">Des fraises</title>
+            </desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Poursuivons jusqu'au trépas</l>
+            <l met="6">Celui qui nous offense;</l>
+            <l met="7">Qu'il ne nous échappe pas,</l>
+            <l met="7">Courez, volez sur nos pas,</l>
+            <l met="8">Vengeance, vengeance, vengeance!</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="7">Qu'il ne nous échappe pas,</l>
+          <l met="7">Courons, volons sur leurs pas,</l>
+          <l met="8">Vengeance, vengeance, vengeance!</l>
+        </sp>
+        <stage>Les harengères et Aronte se retirent.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Hidraot, Armide</stage>
+        <sp who="#hidraot">
+          <speaker>Hidraot</speaker>
+          <p>Allons, ma nièce, c'est ici qu'il faut jouer de notre reste; profitons d'un temps si cher à notre vengeance, et pour mieux réussir, unissons nos voix.</p>
+        </sp>
+        <spGrp who="#hidraot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_petits_rats">Les petits rats</title>
+            </desc>
+          </head>
+          <sp who="#hidraot">
+            <speaker>Hidraot</speaker>
+            <l met="10">Accourez, esprits de haine et de rage,</l>
+            <l met="10">Et livrez à notre juste courroux</l>
+            <l met="10">L'ennemi qui nous fait un tel outrage,</l>
+            <l met="10">Qu'à son tour il expire sous nos coups;</l>
+            <l met="10">Secondez la fureur qui nous anime,</l>
+            <l met="8">Pour calmer notre désespoir</l>
+            <l met="10">Conduisez en ces lieux notre victime,</l>
+            <l met="9">Qu'il éprouve enfin notre pouvoir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <stage>étendant sa baguette</stage>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#amour_plait">L'Amour plaît, malgré ses peines</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="7">Vous, que mes ordres sévères</l>
+            <l met="7">Rendent soumis à mes lois,</l>
+            <l met="7">De gentilles bouquetières,</l>
+            <l met="7">Démons, prenez le minois,</l>
+          </sp>
+        </spGrp>
+        <stage>Le théâtre représente un fleuve.</stage>
+        <spGrp>
+          <caption>Hidraot, armide<stage>ensemble</stage>
+          </caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_petits_rats">Les petits Rats</title>
+            </desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="10">Accourez, esprits de haine et de rage,</l>
+            <l met="10">Et livrez à notre juste courroux</l>
+            <l met="10">L'ennemi qui nous fait un tel outrage,</l>
+            <l met="10">Qu'à son tour il expire sous nos coups, ...</l>
+          </sp>
+        </spGrp>
+        <sp who="#hidraot">
+          <speaker>Hidraot</speaker>
+        </sp>
+        <spGrp who="#hidraot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_le_long_de_la_riviere">Tout le long de la rivière</title>
+            </desc>
+          </head>
+          <sp who="#hidraot">
+            <speaker>Hidraot</speaker>
+            <l met="5">Ma nièce, courage.</l>
+          </sp>
+        </spGrp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <l met="5">Ma foi tout va bien,</l>
+          <l met="5">L'ennemi s'engage,</l>
+          <l met="5">Je le vois qui vient</l>
+        </sp>
+        <stage>Renaud paraît sur les bords du fleuve.</stage>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <l met="7">Tout le long de la rivière.</l>
+          <l met="5">Laire, lon lan la,</l>
+          <l met="7">Tout le long de la Rivière,</l>
+        </sp>
+        <spGrp>
+          <caption>Hidraot et armide<stage>ensemble</stage>
+          </caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="5">Ah! qu'il est bien là.</l>
+          </sp>
+        </spGrp>
+        <sp who="#hidraot">
+          <speaker>Hidraot</speaker>
+        </sp>
+        <spGrp who="#hidraot">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Que je chéris mon cher voisin</title>
+            </desc>
+          </head>
+          <sp who="#hidraot">
+            <speaker>Hidraot</speaker>
+            <l met="8">Bon!</l>
+          </sp>
+          <sp who="#hidraot">
+            <speaker>Hidraot</speaker>
+            <l met="8">je vais sans perdre de temps</l>
+            <l met="6">L'immoler à ma rage.</l>
+          </sp>
+        </spGrp>
+        <stage>Voulant aller sur Renaud.</stage>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <stage>l'arrêtant</stage>
+          <l met="8">Mon oncle, tout doux, je prétends</l>
+          <l met="6">Avoir cet avantage.</l>
+        </sp>
+        <stage>Ils se retirent.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Renaud<stage>essuyant son épée au retour du combat</stage>
+        </stage>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <p>Ouf! je viens, ma foi, de faire un grand ouvrage.</p>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Sans que personne me seconde,</l>
+            <l met="8">N'ayant que mon bras pour appui,</l>
+            <l met="8">L'Histoire me fait aujourd'hui</l>
+            <l met="6">Bien assommer du monde.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#confiteor">Mon Père, je viens devant vous</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Fleuve, qui coulez doucement,</l>
+            <l met="8">Je boirais de votre eau clairette,</l>
+            <l met="8">Si je n'avais par un serment</l>
+            <l met="8">Promis, en buvant chopinette,</l>
+            <l met="8">Qu'en quelque endroit que je serais,</l>
+            <l met="8">Nullement d'eau je n'userais.</l>
+          </sp>
+        </spGrp>
+        <stage>En s'étendant comme un homme qui a envie de dormir.</stage>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">En forme il faut que je sommeille,</l>
+            <l met="8">Faisons bien cet office-là,</l>
+            <l met="8">Car on m'a dit qu'à l'Opéra,</l>
+            <l met="6">L'on dormait à merveille.</l>
+            <p>Je suis si las du combat de tantôt, que je me sens tout je ne sais comment.</p>
+          </sp>
+        </spGrp>
+        <pb n="21"/>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_nos_forets">On n'aime point dans nos forêts</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Ces bois, ces prés charment mes yeux,</l>
+            <l met="8">Ô dieux, quel gazon admirable!</l>
+            <l met="8">Près de ce qu'il aime en ces lieux,</l>
+            <l met="8">Je gage et je me donne au Diable</l>
+            <l met="8">Qu'un amant s'y plairait, ma foi</l>
+            <l met="8">Pour le moins, tout autant que moi.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#notre_galere_sans_vent_contraire">Notre galère, sans vent contraire</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Fleuve, qui d'une eau toute pure</l>
+            <l met="8">Arrosez ce charmant coteau,</l>
+            <l met="4">Oui, je vous jure</l>
+            <l met="4">Que le murmure</l>
+            <l met="3">De votre eau,</l>
+            <l met="4">Laire, lanlaire,</l>
+            <l met="4">M'engage à faire</l>
+            <l met="4">Ici dodo.</l>
+          </sp>
+        </spGrp>
+        <stage>En se couchant sur le lit.</stage>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#laire_la">Laire la, laire lanlaire</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Puisque tout m'invite au repos,</l>
+            <l met="8">Sommeil, par tes charmants pavots,</l>
+            <l met="8">Viens fermer enfin ma paupière,</l>
+            <l met="7">Laire la, ...</l>
+          </sp>
+        </spGrp>
+        <pb n="22"/>
+        <stage>On joue ici l'air<emph>Dormez, Roulette</emph>, afin de l'endormir. Il s'endort.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Renaud<stage>endormi</stage>, Bouquetières</stage>
+        <stage>Entrée de Bouquetières</stage>
+        <stage>On danse autour de Renaud qui dort.</stage>
+        <sp who="#unebouquetiere">
+          <speaker>Une bouquetière</speaker>
+          <l met="7">Qu'un galant adroit, coquet,</l>
+          <l met="7">Fasse présent d'un bouquet</l>
+          <l met="7">À quelque aimable fillette,</l>
+          <l met="7">On écoute son ardeur,</l>
+          <l met="7">On assure son bonheur,</l>
+          <l met="7">Le tout pour une fleurette.</l>
+        </sp>
+        <stage>On danse.</stage>
+        <sp who="#unebouquetiere">
+          <speaker>Une bouquetière</speaker>
+          <l met="7">Un petit-maître amoureux</l>
+          <l met="7">Fait tout pour se rendre heureux,</l>
+          <l met="7">S'il le faut même, il l'achète;</l>
+          <l met="7">Qu'une coquette, entre nous,</l>
+          <l met="7">En fait mettre à ses genoux,</l>
+          <l met="7">Le tout pour une fleurette.</l>
+        </sp>
+        <pb n="23"/>
+        <stage>On danse.</stage>
+        <sp who="#unebouquetiere">
+          <speaker>Une bouquetière</speaker>
+          <l met="7">Pour plaire, un jeune plumet</l>
+          <l met="7">Se vante d'être discret;</l>
+          <l met="7">Mais en arrière il caquette,</l>
+          <l met="7">Plus inconstant que le vent,</l>
+          <l met="7">On le voit changer souvent,</l>
+          <l met="7">Le tout pour une fleurette.</l>
+        </sp>
+        <stage>On danse sur le vaudeville, ensuite une bouquetière va à l'oreille de Renaud, et lui chante le couplet qui suit.</stage>
+        <spGrp who="#unebouquetiere">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dormez_roulette">[Dormez, Roulette]</title>
+            </desc>
+          </head>
+          <sp who="#unebouquetiere">
+            <speaker>Une bouquetière</speaker>
+            <l met="4">Dormez, Roulette,</l>
+            <l met="7">Prenez bien votre repos,</l>
+            <l met="7">Tantôt à la réveillette</l>
+            <l met="7">On vous en dira deux mots.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#unebouquetiere">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tourelouribo">Ho ho! Tourelouribo</title>
+            </desc>
+          </head>
+          <sp who="#unebouquetiere">
+            <speaker>Une bouquetière</speaker>
+            <l met="9">Hélas! quelle erreur! quelle faiblesse!</l>
+            <l met="2">Ho, ho,</l>
+            <l met="5">Tourelouribo.</l>
+            <l met="7">Dans une aimable jeunesse,</l>
+            <l met="2">Ho, ho,</l>
+            <l met="5">Tourelouribo,</l>
+            <l met="7">De ne pas chanter sans cesse,</l>
+            <l met="3">Ho, ho, ho,</l>
+            <l met="5">Tourelouribo.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="7">De ne pas chanter sans cesse,</l>
+          <l met="3">Ho, ho, ho,</l>
+          <l met="5">Tourelouribo.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Armide<stage>entrant en colère avec un couteau à la main</stage>, et les acteurs de la Scène précédente</stage>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <p>Quel tapage faites-vous donc ici? est-ce là ce que je vous ai commandé? Belle façon d'endormir les gens en faisant un carillon du diable!... Retirez-vous.</p>
+        </sp>
+        <stage>Les bouquetières se retirent.</stage>
+        <pb n="25"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Armide, Renaud<stage>endormi</stage>
+        </stage>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <stage>le couteau à la main</stage>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#o_reguingue">Ô reguingué</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Enfin il est en mon pouvoir,<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Il faut que dans mon désespoir,</l>
+            <l met="8">Ô reguingué, ô lon lan la,</l>
+            <l met="8">Je fasse éclater ma vengeance,</l>
+            <l met="8">Et punisse son insolence.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_sais_quoi">Ah! c'est un certain je ne sais qu'est-ce</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Courage Armide, venge-toi,</l>
+          </sp>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="7">Fais voir plus de hardiesse,</l>
+            <l met="8">Mais, d'où me vient cette faiblesse!</l>
+          </sp>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Qui peut ainsi parler en moi?</l>
+            <l met="9">Ah! c'est un certain je ne sais qu'est-ce,</l>
+            <l met="9">Ah! c'est un certain je ne sais quoi.</l>
+          </sp>
+        </spGrp>
+        <stage>Elle se sent comme retenue.</stage>
+        <stage>Portant sa main sur son front.</stage>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#moment_plus_tard">Un petit moment plus tard</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Frappons! Ciel! je sens que mon bras</l>
+            <l met="5">Refuse à ma haine</l>
+            <l met="8">L'espoir de se venger. Hélas!</l>
+            <l met="5">Ma fureur est vaine.</l>
+          </sp>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="7">À cet aspect noble et grand,</l>
+            <l met="7">Pourquoi donc me sens-je émue?</l>
+            <l met="7">Pourquoi ce trouble charmant?</l>
+            <l met="6">Je suis... je suis perdue.</l>
+            <p>Non... il m'est impossible.</p>
+          </sp>
+        </spGrp>
+        <stage>Elle va pour le frapper.</stage>
+        <stage>En le regardant.</stage>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#turlututu_rengaine">[Turlututu rengaine]</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="12">Turlututu rengaine, rengaine, rengaine,</l>
+            <l met="13">Turlututu rengaine, rengaine ton couteau.</l>
+            <p>Le joli petit garçon! j'en suis enchantée: que me servirait-il de me venger ainsi? J'entrevois un moyen plus sûr pour le punir; qu'il m'aime autant que je lui suis indifférente.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#faire_l_amour">L'amour la nuit et le jour</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="6">Non, je n'oublierai rien</l>
+            <l met="6">Pour tâcher de lui plaire,</l>
+            <l met="6">Et m'y prendrai si bien,</l>
+            <l met="6">Que je lui ferai faire</l>
+            <l met="2">L'amour,</l>
+            <l met="5">La nuit et le jour.</l>
+            <p>Et moi, s'il m'est possible que je le haïsse... mais non, Armide, tu ne le pourras, il est</p>
+            <p>inutile d'y penser... je me sens bien, peut-être.<stage>En l'entourant d'une chaîne de fleurs qu'elle trouve par terre.</stage>
+            </p>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_voisin">Que je chéris mon cher voisin</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">De ce soin je me charge, hélas!</l>
+            <l met="6">Et m'en fais une gloire;</l>
+            <l met="8">Car dans cet endroit l'on n'a pas</l>
+            <l met="6">Des mieux suivi l'histoire.</l>
+            <p>Oui, mon cher Renaud, oui.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#cher_bacchus_si_je_soupire">Cher Bacchus si je soupire</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="7">J'ai toujours crains de me rendre,</l>
+            <l met="10">Et refusé cent fois de m'enflammer,</l>
+            <l met="8">Mais je ne saurais me défendre</l>
+            <l met="7">Du plaisir de vous aimer.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#laire_la">Laire la, laire lan laire</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Démons, pour combler mes désirs,</l>
+            <l met="8">Transformez-vous en doux zéphyrs.</l>
+            <l met="8">Portez-nous au bout de la terre,</l>
+            <l met="3">Laire la,</l>
+            <l met="4">Laire lan laire,</l>
+            <l met="3">Laire la,</l>
+            <l met="4">Laire lan laire.</l>
+          </sp>
+        </spGrp>
+        <stage>Deux Zéphirs viennent prendre Armide et Renaud et les traînent dans la coulisse.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Ubalde, le Chevalier Danois<stage>dont le premier porte un sceptre d'or que lui a donné un magicien, pour vaincre les enchantements d'Armide; et le second porte une épée. Il paraît des monstres au fond du théâtre.</stage>
+        </stage>
+        <sp who="#ubalde">
+          <speaker>Ubalde</speaker>
+        </sp>
+        <spGrp who="#ubalde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierre_bagnolet">Pierre Bagnolet</title>
+            </desc>
+          </head>
+          <sp who="#ubalde">
+            <speaker>Ubalde</speaker>
+            <l met="8">En dépit de cette sorcière,</l>
+            <l met="8">De qui vous servez le courroux,</l>
+            <l met="8">Monstres,</l>
+          </sp>
+          <sp who="#ubalde">
+            <speaker>Ubalde</speaker>
+            <l met="8">À notre ordre sévère</l>
+            <l met="7">Au plutôt retirez-vous,</l>
+            <l met="4">Chacun chez vous,</l>
+            <l met="4">Chacun chez vous,</l>
+            <l met="8">Retournez dans votre tanière,</l>
+            <l met="8">Sans tarder, obéissez-nous.</l>
+          </sp>
+        </spGrp>
+        <stage>En montrant son sceptre.</stage>
+        <stage>Les monstres s'abîment.</stage>
+        <sp who="#lechevalierdanois">
+          <speaker>Le chevalier danois</speaker>
+          <p>Tout nous est favorable, allons chercher Renaud.</p>
+        </sp>
+        <stage>Le théâtre change et représente le palais d'Armide.</stage>
+        <sp who="#ubalde">
+          <speaker>Ubalde</speaker>
+          <p>L'on voit d'ici le séjour enchanté, où par un charme fatal ce héros est retenu.</p>
+        </sp>
+        <spGrp who="#ubalde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vaudeville_du_retour_de_fontainebleau">Vaudeville du Retour de Fontainebleau</title>
+            </desc>
+          </head>
+          <sp who="#ubalde">
+            <speaker>Ubalde</speaker>
+            <l met="8">Là Renaud, petit à petit,</l>
+            <l met="7">S'abandonne à la mollesse;</l>
+            <l met="8">Et lorsque d'Armide il s'agit</l>
+            <l met="7">De répondre à la tendresse;</l>
+            <l met="8">Et gai,<stage type="bis">bis</stage>comme il y va,</l>
+            <l met="3">Larela...</l>
+          </sp>
+        </spGrp>
+        <sp who="#lechevalierdanois">
+          <speaker>Le chevalier danois</speaker>
+          <p>Si Renaud jette les yeux sur cet égide redoutable, nous l'engagerons à quitter ces lieux.</p>
+        </sp>
+        <spGrp who="#lechevalierdanois">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#lechevalierdanois">
+            <speaker>Le chevalier danois</speaker>
+            <l met="8">Empressons-nous, morbleu j'enrage,</l>
+            <l met="8">Je crains...</l>
+          </sp>
+        </spGrp>
+        <sp who="#ubalde">
+          <speaker>Ubalde</speaker>
+          <l met="8">La raison?</l>
+        </sp>
+        <sp who="#lechevalierdanois">
+          <speaker>Le chevalier danois</speaker>
+          <l met="8">La voilà,</l>
+          <l met="8">De trouver comme à l'Opéra</l>
+          <l met="6">Quelque fille au passage.</l>
+        </sp>
+        <stage>Ils s'en vont.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="characters">Armide<stage>seule</stage>
+        </stage>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <stage>i</stage>
+          <p>Renaud t'offense trop par son indifférence, il te faut oublier, Armide. Oui, mais comment? Avoir recours à la haine? Non, cela serait trop barbare; implorons le dieu de la Bouteille, du moins je me vengerai plus doucement.</p>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#faire_naufrage">Notre espoir allait faire naufrage</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="9">Puisqu'Amour ose troubler mon âme,</l>
+            <l met="9">Dieu du Vin, rends-toi mon défenseur.</l>
+            <l met="9">C'est toi seul qu'en ce jour je réclame,</l>
+            <l met="9">Viens éteindre une funeste flamme,</l>
+            <l met="5">Qui brûle mon cœur.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="characters">Bacchus et sa Suite, Armide</stage>
+        <sp who="#bacchus">
+          <speaker>Bacchus</speaker>
+        </sp>
+        <spGrp who="#bacchus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#revenant_de_lorette">Revenant de Lorette</title>
+            </desc>
+          </head>
+          <sp who="#bacchus">
+            <speaker>Bacchus</speaker>
+            <l met="6">Ta voix s'est fait entendre</l>
+            <l met="6">Dans la bachique Cour,</l>
+            <l met="6">Nous venons te défendre,</l>
+            <l met="6">Des charmes de l'Amour.</l>
+            <l met="9">Pour chasser ce terrible vainqueur</l>
+            <l met="6">Je vais tout entreprendre;</l>
+            <l met="9">Pour chasser ce terrible vainqueur,</l>
+            <l met="6">Qui règne dans ton cœur.</l>
+            <l met="6">Pour essuyer tes larmes,</l>
+            <l met="6">Pour calmer tes alarmes,</l>
+            <l met="6">Nous t'allons faire voir</l>
+            <l met="6">Quel est notre pouvoir.</l>
+          </sp>
+          <sp who="#bacchus">
+            <speaker>Bacchus</speaker>
+            <l met="6">Déchirons son bandeau,</l>
+            <l met="7">Rompons et brûlons ses armes,</l>
+            <l met="6">Éteignons son flambeau</l>
+            <l met="7">Dans notre bon vin nouveau.</l>
+          </sp>
+        </spGrp>
+        <stage>En se retournant vers les satyres</stage>
+        <sp who="#choeur">
+          <speaker>Le choeur</speaker>
+          <l met="6">Déchirons son bandeau,</l>
+          <l met="7">Rompons et brûlons ses armes,</l>
+          <l met="6">Éteignons son flambeau</l>
+          <l met="7">Dans notre bon vin nouveau.</l>
+        </sp>
+        <sp who="#bacchus">
+          <speaker>Bacchus</speaker>
+        </sp>
+        <spGrp who="#bacchus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lampons">Lampons</title>
+            </desc>
+          </head>
+          <sp who="#bacchus">
+            <speaker>Bacchus</speaker>
+            <l met="7">Sors, trop funeste vainqueur,</l>
+            <l met="7">Sors pour jamais de ce cœur,</l>
+            <l met="7">Sors, puisqu'enfin il te chasse,</l>
+            <l met="7">Je vais régner à ta place,</l>
+            <l met="4">Buvons,<stage type="bis">bis</stage>
+            </l>
+            <l met="6">Belle Armide, buvons.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#bacchus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#c_est_a_toi_cher_camarade">C'est à toi cher camarade</title>
+            </desc>
+          </head>
+          <sp who="#bacchus">
+            <speaker>Bacchus</speaker>
+            <l met="7">Pour remporter la victoire</l>
+            <l met="7">Sur l'indifférent Renaud,</l>
+          </sp>
+          <sp who="#bacchus">
+            <speaker>Bacchus</speaker>
+            <l met="11">Armide, il faut boire, boire, boire, boire,</l>
+            <l met="11">Armide, il faut boire, boire, comme il faut.</l>
+          </sp>
+        </spGrp>
+        <stage>Il prend une bouteille et un verre entre les mains d'un satyre.</stage>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#non_je_ne_veux_pas_rire">Non, je ne veux pas rire</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Laisse-moi, mon cœur est content<stage type="bis">bis</stage>
+            </l>
+            <l met="8">D'aimer à jamais cet amant</l>
+            <l met="6">Je chéris trop la gloire.</l>
+            <l met="6">Non, je ne veux pas boire,</l>
+            <l met="1">Moi,</l>
+            <l met="7">Non, non, je ne veux pas boire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#bacchus">
+          <speaker>Bacchus</speaker>
+        </sp>
+        <spGrp who="#bacchus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#je_ne_saurais">Je n'saurais</title>
+            </desc>
+          </head>
+          <sp who="#bacchus">
+            <speaker>Bacchus</speaker>
+            <l met="7">Quoi! ton cœur toujours sensible</l>
+            <l met="7">N'implore-t-il donc ma loi</l>
+            <l met="7">Contre ce vainqueur terrible</l>
+            <l met="7">Que pour se moquer de moi?</l>
+          </sp>
+        </spGrp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <l met="3">Je n'saurais,</l>
+          <l met="7">Bacchus, il m'est impossible,</l>
+          <l met="3">J'en mourrais...</l>
+        </sp>
+        <sp who="#bacchus">
+          <speaker>Bacchus</speaker>
+          <stage>en s'en allant</stage>
+        </sp>
+        <spGrp who="#bacchus">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#adieu_paniers">Adieu paniers, vendanges sont faites</title>
+            </desc>
+          </head>
+          <sp who="#bacchus">
+            <speaker>Bacchus</speaker>
+            <l met="8">N'espère pas qu'en ces retraites,</l>
+            <l met="8">Le dieu du Vin revienne un jour;</l>
+            <l met="8">Va, je te quitte sans retour,</l>
+            <l met="9">Adieu paniers, vendanges sont faites.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 13</head>
+        <stage type="characters">Armide<stage>seule</stage>
+        </stage>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <stage>i</stage>
+          <p>Que je suis malheureuse! il faut que j'aime qui ne m'aime pas. Hélas! Comment l'amour a-t-il pu trouver les chemins de mon cœur, moi qui en tenais les avenues</p>
+          <p>si bien gardées? En vérité il faut que ce petit coquin-là se fourre partout.</p>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#boire_a_son_tire_lire">Boire à son tire lire lire</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="6">Dans ces transports charmants,</l>
+            <l met="6">Je sens, sur ma parole,</l>
+            <l met="6">Courir par tous mes sens</l>
+            <l met="6">Quelque chose de drôle;</l>
+            <l met="4">Oui, cette ardeur,</l>
+            <l met="4">Part de mon cœur,</l>
+            <l met="8">Part de mon tire lire lire,</l>
+            <l met="8">Part de mon toure loure loure,</l>
+            <l met="4">Part de mon cœur.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 14</head>
+        <stage type="characters">Sidonie, Armide</stage>
+        <sp who="#sidonie">
+          <speaker>Sidonie</speaker>
+          <p>Madame, votre charme a fait son effet; Renaud vous aime, et je ne puis m'empêcher de rire du stratagème dont vous vous êtes servie pour soumettre ce rodomont.</p>
+        </sp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_voyez_donc">Ah! voyez donc que ces manants sont drôles</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Que fait-il dans l'appartement?</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="melody" subtype="melody_part">
+            <desc type="part">Fin de l'air</desc>
+            <title>
+              <title ref="#joli_nom">Non, non, il n'est pas de si joli nom</title>
+            </title>
+          </head>
+          <sp who="#sidonie">
+            <speaker>Sidonie</speaker>
+            <l met="6">S'il dit une parole,</l>
+            <l met="8">C'est votre nom; voici comment,<stage type="bis">bis</stage>
+            </l>
+            <l met="4">À chaque instant,</l>
+            <l met="6">Il raisonne le drôle:</l>
+            <l met="10">Non, non, il n'est point de si joli nom</l>
+            <l met="7">Que celui de ma Princesse,</l>
+            <l met="10">Non, non, il n'est point de si joli nom</l>
+            <l met="7">Que celui de ce tendron.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#sidonie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#amour_est_charmant">On dit qu'Amour est si charmant</title>
+            </desc>
+          </head>
+          <sp who="#sidonie">
+            <speaker>Sidonie</speaker>
+            <l met="8">Il n'aspire qu'au doux moment</l>
+            <l met="8">De vous conter ce qu'il ressent.</l>
+            <p>Montrez-vous à ses yeux, vous en apprendrez davantage.</p>
+          </sp>
+        </spGrp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <stage>finissant l'air</stage>
+          <l met="8">S'il n'était pas si nonchalant,</l>
+          <l met="6">J'en ferais la folie.</l>
+          <l met="8">Hélas! que Renaud est charmant!</l>
+          <l met="6">Faut-il que je l'en prie?</l>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#feuillantines">Les Feuillantines</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="7">S'il a pour moi de l'ardeur,</l>
+            <l met="3">Pour mon cœur</l>
+            <l met="7">C'est un bien faible bonheur!</l>
+            <l met="7">Que peut un amant, ma mie,</l>
+            <l met="10">Qui n'agit<stage type="bis">bis</stage>que par magie?</l>
+            <p>Oui, pour te parler avec franchise...</p>
+          </sp>
+        </spGrp>
+        <stage>Tendrement.</stage>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#qu_on_apporte_bouteille">Qu'on apporte bouteille</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="6">L'amour qui le transporte</l>
+            <l met="6">N'a pas un vrai dehors,</l>
+            <l met="8">Et c'est une machine morte,</l>
+            <l met="8">Dont je fais mouvoir les ressorts.</l>
+          </sp>
+        </spGrp>
+        <sp who="#sidonie">
+          <speaker>Sidonie</speaker>
+        </sp>
+        <spGrp who="#sidonie">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#sidonie">
+            <speaker>Sidonie</speaker>
+            <l met="8">Je conviens que c'est vous, Madame,</l>
+            <l met="8">Qui de Renaud embrasez l'âme,</l>
+            <l met="8">Mais avec tous ces soins, hélas!</l>
+            <l met="8">À cela près d'un peu de honte,</l>
+            <l met="8">Par ma foi, vous ne laissez pas</l>
+            <l met="8">D'y fort bien trouver votre compte.</l>
+            <p>Mais le voici, je vous laisse avec lui.</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 15</head>
+        <stage type="characters">Armide, Renaud</stage>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <stage>courant au-devant de Renaud</stage>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mais_surtout_prenez_bien_garde">Mais surtout prenez bien garde à votre cotillon</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Quoi, c'est vous, mon petit mignon,</l>
+            <l met="8">M'aimez vous bien?</l>
+          </sp>
+        </spGrp>
+        <sp who="#renaud">
+          <speaker>Renaud</speaker>
+          <l met="8">Oui, mon trognon,</l>
+          <l met="8">Et mon tendre cœur vous répond</l>
+          <l met="8">Que c'est d'amour, d'affection.</l>
+          <l met="7">C'est pourquoi prenez bien garde</l>
+          <l met="10">À tant de passion, à tant de passion.</l>
+        </sp>
+        <spGrp who="#renaud">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#de_son_lan_la">De son lan la, landerirette.</title>
+            </desc>
+          </head>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <l met="7">Armide, si je soupire,</l>
+            <l met="7">Si j'ai des empressements,</l>
+            <l met="7">C'est que je meurs de te dire</l>
+            <l met="7">Ce qu'à mon tour je ressens,</l>
+            <l met="4">Pour tes appas,</l>
+            <l met="4">Landerirette,</l>
+            <l met="8">Pour tes appas, landerira.</l>
+          </sp>
+        </spGrp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <p>Que je suis malheureuse! il faut que je te quitte.</p>
+        </sp>
+        <sp who="#renaud">
+          <speaker>Renaud</speaker>
+          <stage>en frappant du pied</stage>
+          <p>J'ai du guignon.</p>
+        </sp>
+        <spGrp who="#renaud">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#morguenne">Morguienne de vous</title>
+            </desc>
+          </head>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <l met="5">Lorsque de rester</l>
+            <l met="5">Mon amour vous presse,</l>
+            <l met="5">Vous m'allez quitter,</l>
+            <l met="6">Trop cruelle Princesse!</l>
+            <l met="5">Morguenne de vous,</l>
+            <l met="5">Quel' femme, quel' femme!</l>
+            <l met="5">Morguenne de vous,</l>
+            <l met="5">Quel' femme êtes vous!</l>
+          </sp>
+        </spGrp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_m_entendez_bien_2">Vous m'entendez bien</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Mon fils, l'amour que j'ai pour toi</l>
+            <l met="8">Jette mon âme dans l'effroi,</l>
+            <l met="6">Hélas, par injustice</l>
+          </sp>
+        </spGrp>
+        <sp who="#renaud">
+          <speaker>Renaud</speaker>
+          <l met="2">Hé bien?</l>
+        </sp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <l met="6">Je crains qu'on me ravisse,</l>
+          <l met="5">Eh! tu m'entends bien.</l>
+        </sp>
+        <sp who="#renaud">
+          <speaker>Renaud</speaker>
+          <p>Mon petit cœur, pourquoi t'alarmer? est-ce que je ne t'aime pas comme il faut? je fais pourtant mon possible pour...</p>
+        </sp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <p>Je crains que cela ne dure pas; si la gloire où tu te donnais si follement s'offrait encore à tes yeux, tu me quitterais peut-être pour suivre cette étourdie.</p>
+        </sp>
+        <sp who="#renaud">
+          <speaker>Renaud</speaker>
+        </sp>
+        <spGrp who="#renaud">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#si_la_jeune_annette">Si la jeune Annette</title>
+            </desc>
+          </head>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <l met="5">Je ressens sans cesse</l>
+            <l met="5">La plus vive ardeur,</l>
+            <l met="5">C'est pour toi, Princesse,</l>
+            <l met="12">Que je garde mon taleritata, la rire,</l>
+            <l met="6">Que je garde mon cœur.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#renaud">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mirliton">Le mirliton</title>
+            </desc>
+          </head>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <l met="7">Les honneurs d'une victoire</l>
+            <l met="7">Pour toi ne me tentent pas;</l>
+            <l met="7">L'éclat dont brille la gloire<note>Vers de l'Opéra.</note>
+            </l>
+            <l met="7">Vaut-il un seul des appas</l>
+            <l met="8">De tes yeux fripons et mignons,</l>
+            <l met="3">Ma dondaine,</l>
+            <l met="7">De tes yeux fripons, don don?</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <caption>Renaud et armide<stage>ensemble</stage>
+          </caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#a_l_ombre_d_un_ormeau">À l'ombre d'un Ormeau, Lisette</title>
+            </desc>
+          </head>
+          <spGrp rend="braced">
+            <sp who="#ensemble">
+              <speaker>ensemble</speaker>
+              <l met="8">Aimons-nous, tout nous y convie,</l>
+              <l met="8">Hélas! si tu m'ôtais ton cœur,</l>
+              <l met="8">Tu m'ôterais bientôt la vie,</l>
+              <l met="8">Je n'y puis penser sans frayeur,</l>
+              <l met="6">Armide, mes amours,</l>
+              <l met="6">Cher Renaud, mes amours,</l>
+              <l met="6">Je t'aimerais toujours.</l>
+            </sp>
+          </spGrp>
+        </spGrp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <p>Adieu.</p>
+        </sp>
+        <stage>Elle s'en va.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 16</head>
+        <stage type="characters">Ubalde, Le Chevalier Danois, Renaud</stage>
+        <spGrp>
+          <head type="melody" subtype="melody_part">
+            <desc type="part">Refrain de l'air</desc>
+            <title>
+              <title ref="#bonne_aventure">[La bonne aventure]</title>
+            </title>
+          </head>
+          <sp who="#ubalde">
+            <speaker>Ubalde</speaker>
+            <l met="7">La bonne aventure, ô gai,</l>
+            <l met="5">La bonne aventure!</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#ubalde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Tout cela m'est indifférent</title>
+            </desc>
+          </head>
+          <sp who="#ubalde">
+            <speaker>Ubalde</speaker>
+            <l met="8">Tandis qu'il est seul, mon enfant,</l>
+          </sp>
+          <sp who="#ubalde">
+            <speaker>Ubalde</speaker>
+            <l met="8">Il faut profiter du moment.</l>
+          </sp>
+        </spGrp>
+        <stage>En frappant sur l'épaule du Chevalier Danois.</stage>
+        <sp who="#ubalde">
+          <speaker>Ubalde</speaker>
+          <stage>présentant le bouclier aux yeux de Renaud, chante l'air<emph>Ah! Thomas, réveille-toi</emph>
+          </stage>
+          <l met="8">Ah! Renaud, réveille, réveille,</l>
+          <l met="7">Ah! Renaud, réveille-toi.</l>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="melody_part">
+            <desc type="part">Fin de l'air</desc>
+            <title>
+              <title ref="#tout_cela_est_indifferent">Tout cela m'est indifférent</title>
+            </title>
+          </head>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <p>Ouf.</p>
+            <l met="8">Ciel! qui peut peindre ma figure,</l>
+            <l met="8">Aussi sensiblement, hélas!</l>
+            <l met="8">Il faut rire de l'aventure,</l>
+            <l met="8">Me voici comme le bœuf gras.</l>
+          </sp>
+        </spGrp>
+        <sp who="#ubalde">
+          <speaker>Ubalde</speaker>
+          <p>Tout le camp vous demande, notre général vous rappelle... Mais quoi! tandis que des deux bouts de la terre chacun court à la gloire, le brave fils de Bertholde reste ici comme un imbécile? vite... allez-vous-en...</p>
+        </sp>
+        <sp who="#renaud">
+          <speaker>Renaud</speaker>
+          <p>Comme me voilà plaisamment fagoté! parbleu, je suis un drôle de héros; ah, ah.<stage>Il se met à rire.</stage>
+          </p>
+        </sp>
+        <sp who="#ubalde">
+          <speaker>Ubalde</speaker>
+        </sp>
+        <spGrp who="#ubalde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aux_armes">Aux armes, camarades</title>
+            </desc>
+          </head>
+          <sp who="#ubalde">
+            <speaker>Ubalde</speaker>
+            <l met="6">Aux armes, camarades,</l>
+            <l met="6">Profitez du moment,</l>
+            <l met="6">Partez promptement,</l>
+            <l met="6">Aux armes, camarades,</l>
+            <l met="8">Pourquoi tant de retardement?</l>
+          </sp>
+        </spGrp>
+        <sp who="#renaud">
+          <speaker>Renaud</speaker>
+          <p>Patience, patience, je vais vous l'apprendre.</p>
+        </sp>
+        <spGrp who="#renaud">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_appetit_vient_en_mangeant">L'appétit vient en mangeant</title>
+            </desc>
+          </head>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <l met="7">Des yeux de cette brunette,</l>
+            <l met="7">Je me gardais bien vraiment;</l>
+            <l met="7">Mais cette fine coquette</l>
+            <l met="7">Me prit par enchantement.</l>
+            <l met="7">Mon âme devient distraite,</l>
+            <l met="7">Et pour parler franchement...</l>
+            <l met="7">L'appétit vient en mangeant.</l>
+          </sp>
+        </spGrp>
+        <sp who="#ubalde">
+          <speaker>Ubalde</speaker>
+          <stage>en tirant Renaud par le bras</stage>
+          <p>Eh! allons, Seigneur Renaud, dégourdissez-vous.</p>
+        </sp>
+        <sp who="#lechevalierdanois">
+          <speaker>Le chevalier danois</speaker>
+        </sp>
+        <spGrp who="#lechevalierdanois">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vaudeville_de_panurge">Vaudeville de Panurge</title>
+            </desc>
+          </head>
+          <sp who="#lechevalierdanois">
+            <speaker>Le chevalier danois</speaker>
+            <l met="7">Tout vous engage en ce jour</l>
+            <l met="7">D'oublier un fol amour:</l>
+            <l met="7">J'entends l'écho qui répète,</l>
+            <l met="4">À la trompe....ette,</l>
+            <l met="7">Renaud, quittez ce séjour,</l>
+            <l met="4">Sonnez, trompette,</l>
+            <l met="4">Battez, tambour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#renaud">
+          <speaker>Renaud</speaker>
+          <stage>en sautant</stage>
+          <p>Bon, je sens revenir mon courage; mon petit cœur au seul nom de la gloire fait tic, toc: allons, il... il lui faut obéir; et vous,<stage>En arrachant ses guirlandes de fleurs.</stage>restes honteux de ma faiblesse, quittez-moi pour jamais.</p>
+        </sp>
+        <stage>Renaud reçoit un bouclier de la main d'Ubalde, et une épée de celle du Chevalier Danois.</stage>
+        <sp who="#ubalde">
+          <speaker>Ubalde</speaker>
+        </sp>
+        <spGrp who="#ubalde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_le_fleuve_d_oubli">Dans le Fleuve d'oubli, biribi</title>
+            </desc>
+          </head>
+          <sp who="#ubalde">
+            <speaker>Ubalde</speaker>
+            <l met="6">Fuyez de la Princesse,</l>
+            <l met="6">Les dangereux appas,</l>
+            <l met="3">Ha, ha, ha,</l>
+          </sp>
+        </spGrp>
+        <sp who="#renaud">
+          <speaker>Renaud</speaker>
+          <l met="6">Comme le temps nous presse,</l>
+          <l met="6">Ami, doublons le pas,</l>
+          <l met="3">Ha, ha, ha,</l>
+          <l met="7">Pour en perdre la mémoire,</l>
+          <l met="6">Partons, vite, courons,</l>
+          <l met="3">Et volons</l>
+          <l met="6">À la gloire, à la gloire.</l>
+        </sp>
+        <stage>Ils s'en vont.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 17</head>
+        <stage type="characters">Renaud, Ubalde, le Chevalier Danois, Armide</stage>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <stage>suivant Renaud le mouchoir à la main</stage>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="opera_melody">
+            <desc type="prefix">Sur l'air </desc>
+            <desc type="title">de l'opéra</desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Renaud! Ciel! Ô mortelle peine!</l>
+            <l met="8">Vous partez, Renaud, vous partez,</l>
+          </sp>
+        </spGrp>
+        <stage>Armide tire Renaud par le bras, Ubalde en fait autant de son côté; mais Renaud en leur résistant, les fait tomber par terre, ce qui fait un jeu de théâtre.</stage>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#berger_tircis">Le beau berger Tircis</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="6">Que ne peux-tu sentir</l>
+            <l met="6">La douleur qui me presse!</l>
+            <l met="7">Cruel, avant de partir,</l>
+            <l met="7">Vois l'excès de ma tristesse.</l>
+            <l met="6">Oui, je te le confesse,</l>
+            <l met="7">Ton départ me fait mourir.</l>
+          </sp>
+        </spGrp>
+        <stage>Renaud s'arrêtant pour l'écouter.</stage>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#flon_flon">Flon, flon</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="6">Quand tu venais, perfide,</l>
+            <l met="6">Me conter ton amour</l>
+            <l met="6">Réponds, est-ce qu'Armide</l>
+            <l met="6">N'avait pas du retour?</l>
+          </sp>
+        </spGrp>
+        <sp who="#renaud">
+          <speaker>Renaud</speaker>
+          <l met="2">Flon, flon,</l>
+          <l met="5">Larira dondaine,</l>
+          <l met="2">Flon, flon,</l>
+          <l met="5">Larira dondon.</l>
+        </sp>
+        <spGrp who="#renaud">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#beau_berger_je_te_connais_bien">Beau Berger, je te connais bien</title>
+            </desc>
+          </head>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <l met="8">Armide, je vous connais bien,<stage type="bis">bis</stage>
+            </l>
+            <l met="8">Ces discours ne servent à rien;</l>
+            <l met="4">Vous m'en contez,</l>
+            <l met="4">Vous m'amusez</l>
+            <l met="2">Toujours.</l>
+            <l met="8">À d'autres, je connais les tours</l>
+            <l met="6">Que m'ont fait vos amours.</l>
+          </sp>
+        </spGrp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#menuet_du_second_acte_des_fetes_grecques">Menuet du second acte des Fêtes Grecques</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="6">Sans cesse sur tes pas</l>
+            <l met="6">Tu me verras, perfide,</l>
+            <l met="6">Sans cesse sur tes pas</l>
+            <l met="8">Te suivre dans tous les combats;</l>
+            <l met="6">Oui, tu verras Armide</l>
+            <l met="6">S'offrir comme une égide,</l>
+            <l met="5">Et les coups, ma foi,</l>
+            <l met="5">Lancés contre toi,</l>
+            <l met="5">Seront tous pour moi.</l>
+          </sp>
+        </spGrp>
+        <sp who="#renaud">
+          <speaker>Renaud</speaker>
+          <p>La gloire veut que je vous quitte, ce n'est pas ma faute à moi, belle Armide... ne vous fâchez pas.</p>
+        </sp>
+        <spGrp who="#renaud">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <l met="8">Je m'empresserai de vous plaire,</l>
+            <l met="8">Et de bon cœur vous aimerai;</l>
+            <l met="8">Mais ce sera... quand je n'aurai</l>
+            <l met="6">Rien de meilleur à faire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#filles_montpellier">Les filles de Montpellier</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="7">Puisque tu te ris du sort</l>
+            <l met="7">De l'infortunée Armide,</l>
+            <l met="7">Ingrat, je vais par ma mort</l>
+            <l met="7">Contenter ton cœur perfide:</l>
+            <l met="3">Ahi, ahi, ahi! ...</l>
+          </sp>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="5">Ahi, ahi, ahi! Armide,</l>
+          </sp>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="6">Armide, ahi, ahi!  ion, iou.</l>
+          </sp>
+        </spGrp>
+        <stage>Elle tombe, et s'évanouit. Renaud court pour la soutenir, et la couche sur un lit de gazon, en finissant l'air.</stage>
+        <stage>Il pleure.</stage>
+        <sp who="#ubalde">
+          <speaker>Ubalde</speaker>
+          <stage>le retirant par le bras</stage>
+        </sp>
+        <spGrp who="#ubalde">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_robin_tais_toi">Ah! Robin, tais-toi</title>
+            </desc>
+          </head>
+          <sp who="#ubalde">
+            <speaker>Ubalde</speaker>
+            <l met="7">Quand la gloire vous appelle,</l>
+            <l met="7">Y pensez-vous bien, Renaud?</l>
+            <l met="7">Vous faites ici le nigaud</l>
+            <l met="7">Auprès d'une péronnelle.</l>
+          </sp>
+        </spGrp>
+        <sp who="#renaud">
+          <speaker>Renaud</speaker>
+          <stage>en pleurant</stage>
+          <l met="5">Ubalde, tais-toi,</l>
+          <l met="6">J'en connais, j'en connais,</l>
+          <l met="5">J'en connais bien d'autres,</l>
+          <l met="5">Qui font comme moi.</l>
+        </sp>
+        <sp who="#lechevalierdanois">
+          <speaker>Le chevalier danois</speaker>
+          <p>Eh, allons, hâtez-vous de partir; pour un héros, vous faites-là un sot personnage.</p>
+        </sp>
+        <sp who="#renaud">
+          <speaker>Renaud</speaker>
+          <stage>au parterre, en pleurant</stage>
+          <p>Allons, armons, armons... armons-nous de courage.</p>
+        </sp>
+        <spGrp who="#renaud">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Tout cela m'est indifférent</title>
+            </desc>
+          </head>
+          <sp who="#renaud">
+            <speaker>Renaud</speaker>
+            <l met="8">Partons, mais généreusement,</l>
+            <l met="8">Et paraissons être content,</l>
+            <l met="8">Afin qu'à jamais l'on s'écrie:</l>
+            <l met="8">Que Renaud mille fois montra</l>
+            <l met="8">Plus de cœur dans sa parodie,</l>
+            <l met="8">Qu'il n'en fit voir à l'Opéra.</l>
+          </sp>
+        </spGrp>
+        <stage>Ils s'en vont.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 18</head>
+        <stage type="characters">Armide<stage>seule, et revenue de son évanouissement</stage>
+        </stage>
+        <sp who="#armide">
+          <speaker>Armide</speaker>
+          <stage>i</stage>
+        </sp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#petits_grands">Or écoutez petits et grands</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Le perfide Renaud me fuit,</l>
+            <l met="8">Et quoiqu'ingrat, mon cœur le suit;</l>
+            <l met="8">Hélas! il veut que je périsse!</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierre_bagnolet">Pierre Bagnolet</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Ah! tu me trahis, misérable,</l>
+            <l met="8">Ah! tu vas trahir tes serments.</l>
+          </sp>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Le perfide Renaud me fuit,</l>
+            <l met="8">Et quoiqu'ingrat, mon cœur le suit.</l>
+          </sp>
+        </spGrp>
+        <stage>L'air précédant achevant.</stage>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#malheureux_oui">Quand on a prononcé ce malheureux oui</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="12">Hélas! que n'ai-je crû le dieu de la Bouteille!</l>
+            <l met="12">Ivre de son doux jus, à l'ombre d'une treille,</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#j_en_suis_bien_contente">J'en suis bien contente</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="10">Larmirtan plan, lan tire larigo</l>
+            <l met="5">J'en serais contente.<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#il_s_en_va_le_berger">Il s'en va, le berger que j'adore</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="9">Il s'en va, le héros que j'adore,</l>
+            <l met="9">Il m'a fait pour jamais ses adieux.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vaudeville_du_retour_de_fontainebleau">Vaudeville du retour de Fontainebleau</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">De bon cœur il quitte ces lieux,</l>
+            <l met="7">Il ose braver ma rage,</l>
+            <l met="8">Je le vois, si j'en crois mes yeux,</l>
+            <l met="7">Qui court gagner le rivage.</l>
+            <l met="6">Et gai, gai comme il va,</l>
+            <l met="3">Larela.....</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#suivons_suivons_l_amour">Suivons, suivons l'amour</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="12">Suivons, suivons Renaud, courons le rechercher.</l>
+            <l met="8">Ah, ah, ah, je ne puis marcher.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quel_plaisir_d_aller_a_la_guinguette">Quel plaisir d'aller à la guinguette</title>
+            </desc>
+          </head>
+        </spGrp>
+        <spGrp>
+          <head type="melody" subtype="melody_part">
+            <desc type="part">Fin de l'air</desc>
+            <title>
+              <title ref="#mariez_mariez_moi">Mariez, mariez-moi</title>
+            </title>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="9">Traître, attends... je tiens ton cœur perfide,</l>
+            <l met="11">Je l'immole, je l'immole à ma fureur,</l>
+            <l met="10">Je le tiens, je le tiens, je le tiens bien.</l>
+            <l met="7">Bon! tu deviens folle Armide,</l>
+            <l met="10">Je le tiens, je le tiens, je le tiens bien.</l>
+            <l met="7">Ma foi, tu ne tiens plus rien.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#voici_dragons">Voici les dragons qui viennent</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="7">Partons, mais de la vengeance,</l>
+            <l met="5">Suivons les transports.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Tout cela m'est indifférent</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="8">Ombres d'huissiers et de sergents,</l>
+            <l met="8">Voici pour vous de doux instants.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#armide">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#trembleurs">Les Trembleurs</title>
+            </desc>
+          </head>
+          <sp who="#armide">
+            <speaker>Armide</speaker>
+            <l met="7">Quittez le sombre rivage,</l>
+            <l met="7">Accourez servir ma rage,</l>
+            <l met="7">Faites ici le tapage;</l>
+            <l met="7">Répandez partout l'horreur.</l>
+            <l met="7">Pour venger un cœur sensible,</l>
+            <l met="7">Que votre pouvoir terrible</l>
+            <l met="7">Y laisse, s'il est possible,</l>
+            <l met="7">Des marques de sa fureur.</l>
+          </sp>
+        </spGrp>
+        <stage>Les démons transformés en huissiers et sergents détruisent le palais d'Armide, qui au lieu de s'en aller sur un char volant, comme à l'Opéra, passe en l'air dans une brouette, et la pièce finit.</stage>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

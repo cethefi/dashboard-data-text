@@ -1,0 +1,1026 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="arlequin_thetis_1713">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Arlequin Thétis</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Alain-René Le Sage</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>B. Ourcel</name>
+        </respStmt>
+        <respStmt>
+          <resp>Relecture</resp>
+          <name>J. Coignard</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">Le Sage et d'Orneval,<emph>Le Théâtre de la Foire, ou l'Opéra Comique</emph>, Paris, E. Ganeau, 1721, t. 1, p.45.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="thetis" sex="UNKNOWN">
+            <persName>Thétis</persName>
+          </person>
+          <person xml:id="doris" sex="UNKNOWN">
+            <persName>Doris</persName>
+          </person>
+          <person xml:id="jupiter" sex="UNKNOWN">
+            <persName>Jupiter</persName>
+          </person>
+          <person xml:id="neptune" sex="UNKNOWN">
+            <persName>Neptune</persName>
+          </person>
+          <person xml:id="mercure" sex="UNKNOWN">
+            <persName>Mercure</persName>
+          </person>
+          <person xml:id="pelee" sex="UNKNOWN">
+            <persName>Pélée</persName>
+          </person>
+          <person xml:id="ungille" sex="UNKNOWN">
+            <persName>Un gille</persName>
+          </person>
+          <person xml:id="unberger" sex="UNKNOWN">
+            <persName>Un berger</persName>
+          </person>
+          <person xml:id="unebergere" sex="UNKNOWN">
+            <persName>Une bergère</persName>
+          </person>
+          <person xml:id="choeurdepeuples" sex="UNKNOWN">
+            <persName>Choeur de peuples</persName>
+          </person>
+          <person xml:id="trois_sirenes" sex="UNKNOWN">
+            <persName>Trois Sirènes</persName>
+          </person>
+          <person xml:id="troupe_de_peuples" sex="UNKNOWN">
+            <persName>Troupe de Peuples</persName>
+          </person>
+          <person xml:id="un_berger" sex="UNKNOWN">
+            <persName>Un Berger</persName>
+          </person>
+          <person xml:id="une_bergere" sex="UNKNOWN">
+            <persName>Une Bergère</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Pièce d'un acte</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1713">
+        <desc>Représentée à la Foire de Saint-Laurent 1713</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#thetis">Thétis</role>
+          <roleDesc>Arlequin</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#doris">Doris</role>
+          <roleDesc>Colombine</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#jupiter">Jupiter</role>
+          <roleDesc>Mezzetin</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#neptune">Neptune</role>
+          <roleDesc>le Docteur</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#mercure">Mercure</role>
+          <roleDesc>Pierrot</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#pelee">Pélée</role>
+          <roleDesc>Léandre</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#trois_sirenes">Trois Sirènes</role>
+          <roleDesc>Scaramouche et deux Gilles</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_de_peuples">Troupe de Peuples</role>
+          <roleDesc>dansants et chantants</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#un_berger">Un Berger</role>
+        </castItem>
+        <castItem>
+          <role ana="#une_bergere">Une Bergère</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <stage type="location">La scène est dans le palais de Thétis.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Thétis, Doris</stage>
+        <sp who="#doris">
+          <speaker>Doris</speaker>
+        </sp>
+        <spGrp who="#doris">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#doris">
+            <speaker>Doris</speaker>
+            <l met="8">Le dieu des mers, belle immortelle,</l>
+            <l met="8">Pour vous soupire nuit et jour:</l>
+            <l met="8">Quoi donc, Thétis ne sera-t-elle</l>
+            <l met="8">Jamais sensible à son amour?</l>
+          </sp>
+        </spGrp>
+        <sp who="#thetis">
+          <speaker>Thétis</speaker>
+        </sp>
+        <spGrp who="#thetis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ne_m_entendez_vous_pas">Ne m'entendez-vous pas</title>
+            </desc>
+          </head>
+          <sp who="#thetis">
+            <speaker>Thétis</speaker>
+            <l met="6">Neptune m'aime, hélas!</l>
+            <l met="6">Que mon âme est troublée!</l>
+            <l met="6">Son grand valet Pélée</l>
+            <l met="6">A pour moi plus d'appas.</l>
+            <l met="6">Ne m'entendez-vous pas?</l>
+          </sp>
+        </spGrp>
+        <sp who="#doris">
+          <speaker>Doris</speaker>
+        </sp>
+        <spGrp who="#doris">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#cap_de_bonne_esperance">Cap de Bonne-Espérance</title>
+            </desc>
+          </head>
+          <sp who="#doris">
+            <speaker>Doris</speaker>
+            <l met="7">Voilà le sort ordinaire</l>
+            <l met="7">De maint seigneur amoureux;</l>
+            <l met="7">De l'objet qui sait lui plaire</l>
+            <l met="7">Il croit avoir tous les vœux:</l>
+            <l met="7">Tandis qu'avec confiance,</l>
+            <l met="7">Il fait toute la dépense,</l>
+            <l met="7">L'ambassadeur de ses feux</l>
+            <l met="7">Devient son rival heureux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thetis">
+          <speaker>Thétis</speaker>
+        </sp>
+        <spGrp who="#thetis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#du_haut_en_bas">Du haut en bas,<emph>rondeau</emph>
+              </title>
+            </desc>
+          </head>
+          <sp who="#thetis">
+            <speaker>Thétis</speaker>
+            <l met="4">Des vastes mers</l>
+            <l met="8">Je vois les Sirènes paraître;</l>
+            <l met="4">Des vastes mers</l>
+            <l met="8">Se font entendre leurs concerts.</l>
+            <l met="8">Nous allons dans ce lieu champêtre</l>
+            <l met="6">Voir bientôt arriver le maître</l>
+            <l met="4">Des vastes mers.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">Thétis, Doris, trois Sirènes</stage>
+        <stage>Scaramouche et deux Gilles habillés en sirènes, viennent en chantant.</stage>
+        <spGrp>
+          <caption>Ensemble</caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#que_faites_vous_marguerite">Que faites-vous, Marguerite</title>
+            </desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="7">Nous forçons tout à se rendre</l>
+            <l met="7">Par nos chants harmonieux:</l>
+            <l met="7">Quand nos voix se font entendre,</l>
+            <l met="7">Nous charmons jeunes et vieux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_mariez_moi">Ma mère, mariez-moi</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="7">Nous attirons par nos voix</l>
+            <l met="7">Le courtisan, le bourgeois;</l>
+            <l met="7">Par nos voix facilement</l>
+            <l met="10">Nous savons nous faire un destin charmant,</l>
+            <l met="7">Par nos voix facilement</l>
+            <l met="7">Nous nous meublons proprement.</l>
+          </sp>
+        </spGrp>
+        <sp who="#ungille">
+          <speaker>Un gille</speaker>
+        </sp>
+        <spGrp who="#ungille">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#allons_gai_d_un_air_gai">Allons gai</title>
+            </desc>
+          </head>
+          <sp who="#ungille">
+            <speaker>Un gille</speaker>
+            <l met="6">Prenez les douces chaînes</l>
+            <l met="6">Comme nous des Amours;</l>
+            <l met="6">Car, ma foi, les Sirènes</l>
+            <l met="6">Ne chantent pas toujours:</l>
+            <l met="3">Allons, gai,</l>
+            <l met="3">D'un air gai, ...</l>
+          </sp>
+        </spGrp>
+        <sp who="#thetis">
+          <speaker>Thétis</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#thetis">
+            <speaker>Thétis</speaker>
+            <l met="6">Avec impatience</l>
+            <l met="6">J'attends Neptune ici.</l>
+          </sp>
+        </spGrp>
+        <sp who="#doris">
+          <speaker>Doris</speaker>
+          <l met="6">Le voilà qui s'avance,</l>
+          <l met="6">Et son valet aussi:</l>
+          <l met="3">Allons, gai,</l>
+          <l met="3">D'un air gai, ...</l>
+        </sp>
+        <stage>On voit paraître Neptune dans le fond du théâtre et les Sirènes se retirent.</stage>
+        <sp who="#thetis">
+          <speaker>Thétis</speaker>
+        </sp>
+        <spGrp who="#thetis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#coucou">Comme un coucou que l'amour presse</title>
+            </desc>
+          </head>
+          <sp who="#thetis">
+            <speaker>Thétis</speaker>
+            <l met="8">Doris, admire l'encolure</l>
+            <l met="8">De l'aimable dieu des merlans.</l>
+          </sp>
+        </spGrp>
+        <sp who="#doris">
+          <speaker>Doris</speaker>
+          <stage>souriant</stage>
+          <l met="8">Ah! l'appétissante figure!</l>
+          <l met="8">Voilà la fleur des vieux galants.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">Thétis, Doris, Neptune, Pélée</stage>
+        <sp who="#neptune">
+          <speaker>Neptune</speaker>
+          <stage>il s'approche de Thétis. Il la salue, et chante</stage>
+        </sp>
+        <spGrp who="#neptune">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Voulez-vous savoir qui des deux</title>
+            </desc>
+          </head>
+          <sp who="#neptune">
+            <speaker>Neptune</speaker>
+            <l met="8">Belle Thétis, je vous promets</l>
+            <l met="8">Mes maquereaux, mes harengs frais.</l>
+            <l met="8">Il est vrai que Jupin mon frère</l>
+            <l met="8">A pris le gros lot, sans façon;</l>
+            <l met="8">Mais, je fais bien meilleure chère</l>
+            <l met="8">Que lui, ma Déesse, en poisson.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thetis">
+          <speaker>Thétis</speaker>
+        </sp>
+        <spGrp who="#thetis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#peril_agreable">Quand le péril est agréable</title>
+            </desc>
+          </head>
+          <sp who="#thetis">
+            <speaker>Thétis</speaker>
+            <l met="8">Neptune, avec reconnaissance</l>
+            <l met="8">Je reçois vos soins empressés.</l>
+          </sp>
+        </spGrp>
+        <sp who="#neptune">
+          <speaker>Neptune</speaker>
+          <l met="8">Oh, parbleu! ce n'est point assez</l>
+          <l met="6">Pour payer ma constance.</l>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#neptune">
+            <speaker>Neptune</speaker>
+            <l met="8">Aimez-moi pour me satisfaire;</l>
+            <l met="8">L'amour seul peut payer l'amour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thetis">
+          <speaker>Thétis</speaker>
+          <l met="8">Je vous aimerai dès ce jour,</l>
+          <l met="6">Si vous pouvez me plaire.</l>
+        </sp>
+        <sp who="#doris">
+          <speaker>Doris</speaker>
+          <stage>sur le ton du dernier vers</stage>
+          <l met="6">Elle est franche et sincère.</l>
+        </sp>
+        <sp who="#neptune">
+          <speaker>Neptune</speaker>
+        </sp>
+        <spGrp who="#neptune">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#neptune">
+            <speaker>Neptune</speaker>
+            <l met="8">Je vous quitte aimable Déesse,</l>
+            <l met="8">Charmant objet de mes amours.</l>
+            <l met="8">Vous faites en vain la tigresse;</l>
+            <l met="8">Franchement, j'espère toujours.</l>
+          </sp>
+        </spGrp>
+        <sp who="#doris">
+          <speaker>Doris</speaker>
+        </sp>
+        <spGrp who="#doris">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_ces_lieux_tout_rit">Dans ces lieux, tout rit sans cesse</title>
+            </desc>
+          </head>
+          <sp who="#doris">
+            <speaker>Doris</speaker>
+            <l met="7">Ne perdez point l'espérance,</l>
+            <l met="7">Soyez toujours amoureux,</l>
+            <l met="7">Amants, votre impatience</l>
+            <l met="10">Vous a souvent empêché d'être heureux.</l>
+          </sp>
+        </spGrp>
+        <stage>Neptune se retire. Thétis et Pélée se font des mines, sans que Neptune s'en aperçoive.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">Thétis, Doris</stage>
+        <sp who="#thetis">
+          <speaker>Thétis</speaker>
+        </sp>
+        <spGrp who="#thetis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_nos_forets">On n'aime point dans nos forêts</title>
+            </desc>
+          </head>
+          <sp who="#thetis">
+            <speaker>Thétis</speaker>
+            <l met="8">Ah! Doris, le charmant garçon!</l>
+            <l met="8">As-tu bien observé Pélée?</l>
+          </sp>
+        </spGrp>
+        <sp who="#doris">
+          <speaker>Doris</speaker>
+          <l met="8">Peste! qu'il a bonne façon!</l>
+          <l met="8">Que sa taille est bien découplée!</l>
+        </sp>
+        <sp who="#thetis">
+          <speaker>Thétis</speaker>
+          <l met="8">Voilà ce qu'il faut à Thétis.</l>
+        </sp>
+        <sp who="#doris">
+          <speaker>Doris</speaker>
+          <l met="8">Et ce qu'il faudrait à Doris.</l>
+        </sp>
+        <stage>Pierrot, déguisé en Mercure, paraît.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">Thétis, Doris, Mercure</stage>
+        <sp who="#doris">
+          <speaker>Doris</speaker>
+        </sp>
+        <spGrp who="#doris">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pour_passer_doucement_la_vie">Pour passer doucement la vie</title>
+            </desc>
+          </head>
+          <sp who="#doris">
+            <speaker>Doris</speaker>
+            <l met="8">Eh! voici le seigneur Mercure,</l>
+            <l met="8">Fidèle messager des dieux.</l>
+            <l met="8">Pour quelle galante aventure</l>
+            <l met="8">Venez-vous de quitter les cieux?</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#doris">
+            <speaker>Doris</speaker>
+            <l met="8">Vous cherchez de bonnes fortunes,</l>
+            <l met="8">C'est ce qui vous amène ici?</l>
+          </sp>
+        </spGrp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <l met="8">Oh! Je n'y viens pas pour des prunes;</l>
+          <l met="8">Vous le devez juger ainsi.</l>
+        </sp>
+        <stage>À Thétis.</stage>
+        <spGrp who="#mercure">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nicolas_va_voir_jeanne">Vous perdez vos pas, Nicolas</title>
+            </desc>
+          </head>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <l met="6">Le maître du tonnerre</l>
+            <l met="6">Grille pour vos yeux doux.</l>
+            <l met="6">Il vient dans son grand verre</l>
+            <l met="7">De boire à Thétis vingt coups.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thetis">
+          <speaker>Thétis</speaker>
+          <stage>à Mercure</stage>
+          <l met="6">Vous y perdez vos pas,</l>
+          <l met="3">Nicolas,</l>
+          <l met="7">Sont tous pas perdus pour vous.</l>
+        </sp>
+        <spGrp who="#thetis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Voulez-vous savoir qui des deux</title>
+            </desc>
+          </head>
+          <sp who="#thetis">
+            <speaker>Thétis</speaker>
+            <l met="8">Neptune et Jupin amoureux!</l>
+          </sp>
+        </spGrp>
+        <sp who="#doris">
+          <speaker>Doris</speaker>
+          <l met="8">Je les écouterais tous deux;</l>
+          <l met="8">J'aurais des manières moins aigres...</l>
+        </sp>
+        <sp who="#thetis">
+          <speaker>Thétis</speaker>
+          <l met="8">Je partagerais mes appas!</l>
+        </sp>
+        <sp who="#doris">
+          <speaker>Doris</speaker>
+          <l met="8">Chez l'un je ferais les jours maigres,</l>
+          <l met="8">J'irais chez l'autre les jours gras.</l>
+        </sp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+        </sp>
+        <spGrp who="#mercure">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#un_grand_drole_est_amoureux">Un grand drôle est amoureux</title>
+            </desc>
+          </head>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <l met="7">Oui, Jupin est amoureux;</l>
+            <l met="7">Vous lui brouillez la cervelle.</l>
+            <l met="7">Ne faites point la cruelle:</l>
+            <l met="7">Il veut, dans ses nouveaux feux,</l>
+            <l met="7">Grossir la troupe immortelle</l>
+            <l met="7">Du moins de deux petits dieux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#thetis">
+          <speaker>Thétis</speaker>
+        </sp>
+        <spGrp who="#thetis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#lampons">Lampons, lampons</title>
+            </desc>
+          </head>
+          <sp who="#thetis">
+            <speaker>Thétis</speaker>
+            <l met="7">Vous êtes fort engageant;<stage type="bis">bis</stage>
+            </l>
+            <l met="7">Mais sachez, monsieur l'agent,<stage type="bis">bis</stage>
+            </l>
+            <l met="7">Que Jupin dans cette affaire</l>
+            <l met="7">Ne fera que de l'eau claire.</l>
+            <l met="4">Lampons, lampons,</l>
+            <l met="6">Camarades, lampons.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <stage>à Doris</stage>
+        </sp>
+        <spGrp who="#mercure">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jus_octobre">Quand je tiens de ce jus d'octobre</title>
+            </desc>
+          </head>
+          <sp who="#mercure">
+            <speaker>Mercure</speaker>
+            <l met="8">Je vous offre, à vous, ma pratique.</l>
+            <l met="8">Voulez-vous recevoir mes soins?</l>
+            <l met="8">Vous serez ma maîtresse unique</l>
+            <l met="8">Pendant huit ou dix jours au moins.</l>
+          </sp>
+        </spGrp>
+        <sp who="#doris">
+          <speaker>Doris</speaker>
+        </sp>
+        <spGrp who="#doris">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aimant_colette">Tu croyais, en aimant Colette</title>
+            </desc>
+          </head>
+          <sp who="#doris">
+            <speaker>Doris</speaker>
+            <l met="8">Pour un dieu, c'est beaucoup promettre;</l>
+            <l met="8">Ce sont de constantes amours.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mercure">
+          <speaker>Mercure</speaker>
+          <l met="8">Oui, mais dans le bail je veux mettre</l>
+          <l met="8">Une clause de quatre jours.</l>
+        </sp>
+        <stage>Il sort.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Thétis, Doris</stage>
+        <sp who="#thetis">
+          <speaker>Thétis</speaker>
+        </sp>
+        <spGrp who="#thetis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_jeune_abbesse_de_ce_lieu">La jeune abbesse de ce lieu</title>
+            </desc>
+          </head>
+          <sp who="#thetis">
+            <speaker>Thétis</speaker>
+            <l met="8">Tous les dieux sont de francs coquets;</l>
+            <l met="8">Ils volent de belles en belles;</l>
+            <l met="8">Leurs flammes sont des feux follets:</l>
+            <l met="8">Les hommes sont moins infidèles</l>
+            <l met="9">Sur ma foi, j'aimerais beaucoup mieux</l>
+            <l met="8">Un bon grivois que tous les dieux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#doris">
+          <speaker>Doris</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#doris">
+            <speaker>Doris</speaker>
+            <l met="8">Il est vrai qu'il leur faut à tous</l>
+            <l met="8">Chaque jour des beautés nouvelles;</l>
+            <l met="8">Et Jupiter n'est, entre nous,</l>
+            <l met="8">Que le reste de cent mortelles.</l>
+            <l met="9">Si jamais je fais un choix ici,</l>
+            <l met="8">Je veux avoir un homme aussi.</l>
+          </sp>
+        </spGrp>
+        <stage>L'on entend gronder le tonnerre et l'on voit briller les éclairs.</stage>
+        <sp who="#doris">
+          <speaker>Doris</speaker>
+        </sp>
+        <spGrp who="#doris">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mais_surtout_prenez_bien_garde">Prenez bien garde à votre cotillon</title>
+            </desc>
+          </head>
+          <sp who="#doris">
+            <speaker>Doris</speaker>
+            <l met="8">Voici Jupiter, il descend.</l>
+            <l met="8">Vous savez qu'il est fort pressant.</l>
+            <l met="8">Songez que c'est un papillon.</l>
+            <l met="13">Je m'en vais. Prenez bien garde à votre cotillon.</l>
+          </sp>
+        </spGrp>
+        <stage>Elle sort.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Thétis<stage>seule</stage>
+        </stage>
+        <stage>On joue la ritournelle tendre de l'opéra, pendant que Thétis le mouchoir à la main fait le tour du théâtre, à l'imitation, de l'actrice de l'opéra. Ensuite, elle dit le couplet suivant</stage>
+        <pb n="58"/>
+        <sp who="#thetis">
+          <speaker>Thétis</speaker>
+        </sp>
+        <spGrp who="#thetis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierre_bagnolet">Pierr' Bagnolet</title>
+            </desc>
+          </head>
+          <sp who="#thetis">
+            <speaker>Thétis</speaker>
+            <l met="8">Tristes honneurs, gloire cruelle,</l>
+            <l met="8">Je ne vous reçois qu'à regret.</l>
+            <l met="7">Heureuse est une mortelle</l>
+            <l met="8">Qui peut, sans craindre le couplet,</l>
+            <l met="4">Prendre un valet,</l>
+            <l met="4">Prendre un valet.</l>
+            <l met="8">Tristes honneurs, gloire cruelle,</l>
+            <l met="8">Je ne vous reçois qu'à regret.</l>
+          </sp>
+        </spGrp>
+        <stage>Jupiter descend.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Thétis, Jupiter</stage>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+        </sp>
+        <spGrp who="#jupiter">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#bannissons_d_ici_l_humeur_noire">Bannissons d'ici l'humeur noire</title>
+            </desc>
+          </head>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <l met="8">Savez-vous charmante Immortelle,</l>
+            <l met="8">Ce qui m'amène en ce séjour?</l>
+            <l met="8">Vous voyez Jupiter, ma belle.</l>
+            <l met="8">Rempli de champagne et d'amour.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#jupiter">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pere_andre_disait_a_gregoire">Père André disait à Grégoire</title>
+            </desc>
+          </head>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <l met="8">Je ne viens point ici, Déesse,</l>
+            <l met="8">Sous une forme d'animal;</l>
+            <l met="8">Jupin en propre original</l>
+            <l met="8">Veut vous déclarer sa tendresse.</l>
+            <l met="11">Belle, belle, belle Thétis, voulez-vous</l>
+            <l met="8">Que nous fassions parler de nous?</l>
+          </sp>
+        </spGrp>
+        <sp who="#thetis">
+          <speaker>Thétis</speaker>
+        </sp>
+        <spGrp who="#thetis">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_tampone">La Tampone</title>
+            </desc>
+          </head>
+          <sp who="#thetis">
+            <speaker>Thétis</speaker>
+            <l met="3">Vos tendresses,<stage type="bis">bis</stage>
+            </l>
+            <l met="3">Sont traîtresses,</l>
+            <l met="7">Ce sont des feux d'Opéra,</l>
+            <l met="7">Ce sont des feux d'Opéra, a a a ...</l>
+            <l met="7">Ce sont des feux d'Opéra,</l>
+            <l met="5">Des feux d'Opéra.</l>
+            <l met="4">Dès que Nicole</l>
+            <l met="4">A fait la folle,</l>
+            <l met="7">D'abord vous la plantez là, a a a ...</l>
+            <l met="5">Vous la plantez là.</l>
+            <l met="4">Dès que Nicole</l>
+            <l met="4">A fait la folle,</l>
+            <l met="7">D'abord vous la plantez là,<stage type="bis">bis</stage>
+            </l>
+            <l met="5">Vous la plantez là.</l>
+            <l met="5">Vous la plantez là, a a a ...</l>
+            <l met="5">Vous la plantez là.</l>
+            <l met="3">Vos tendresses,<stage type="bis">bis</stage>
+            </l>
+            <l met="3">Sont traîtresses,</l>
+            <l met="7">Ce sont des feux d'Opéra,</l>
+            <l met="7">Ce sont des feux d'Opéra, a a a ...</l>
+            <l met="7">Ce sont des feux d'Opéra,</l>
+            <l met="5">Des feux d'Opéra.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+        </sp>
+        <spGrp who="#jupiter">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Voulez-vous savoir qui des deux</title>
+            </desc>
+          </head>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <l met="8">Non, non, Thétis n'en doutez pas,</l>
+            <l met="8">J'aimerai toujours vos appas.</l>
+            <l met="8">J'en vais donner une assurance;</l>
+            <l met="8">Je veux que les peuples divers,</l>
+            <l met="8">(Ce qui prouve bien ma constance)</l>
+            <l met="8">Viennent ici chanter des airs.</l>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">Thétis, Jupiter, Peuples divers</stage>
+        <stage>En même temps, on voit venir les Peuples divers qui forment une danse entremêlée des couplets suivants.</stage>
+        <sp who="#unberger">
+          <speaker>Un berger</speaker>
+        </sp>
+        <spGrp who="#unberger">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jeune_isabelle">La jeune Isabelle</title>
+            </desc>
+          </head>
+          <sp who="#unberger">
+            <speaker>Un berger</speaker>
+            <l met="5">Avec ma musette,</l>
+            <l met="5">Et mon flageolet,</l>
+            <l met="5">Je donne à Lisette</l>
+            <l met="5">Un plaisir complet.</l>
+            <l met="5">Sort digne d'envie!</l>
+            <l met="5">Tout le long du jour,</l>
+            <l met="5">Sur l'herbe fleurie</l>
+            <l met="5">Nous faisons l'amour.</l>
+          </sp>
+        </spGrp>
+        <sp who="#unebergere">
+          <speaker>Une bergère</speaker>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#unebergere">
+            <speaker>Une bergère</speaker>
+            <l met="5">Quand mon berger pleure,</l>
+            <l met="5">Et me dit: mon cœur,</l>
+            <l met="5">Faut-il que je meure</l>
+            <l met="5">D'un excès d'ardeur?</l>
+            <l met="5">D'un air favorable</l>
+            <l met="5">Je réponds tout bas:</l>
+            <l met="5">Non, berger aimable,</l>
+            <l met="5">Non, ne mourez pas.</l>
+          </sp>
+        </spGrp>
+        <stage>Les Peuples divers recommencent à danser, et le Chœur chante ces couplets.</stage>
+        <sp who="#choeurdepeuples">
+          <speaker>Choeur de peuples</speaker>
+        </sp>
+        <spGrp who="#choeurdepeuples">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#nos_pelerins_ont_bonne_mine">Nos pèlerins ont bonne mine</title>
+            </desc>
+          </head>
+          <sp who="#choeurdepeuples">
+            <speaker>Choeur de peuples</speaker>
+            <l met="8">Que Junon fasse la diablesse;</l>
+            <l met="8">Thétis de Jupin est maîtresse,</l>
+            <l met="8">Thétis a ce poste éclatant:</l>
+            <l met="8">Mainte fille en voudrait autant.</l>
+            <l met="8">Qu'il est doux d'être la déesse</l>
+            <l met="8">D'un grand seigneur, ou d'un traitant!</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#choeurdepeuples">
+            <speaker>Choeur de peuples</speaker>
+            <l met="8">Filles, qui sous votre puissance,</l>
+            <l met="8">Tenez des amants d'importance,</l>
+            <l met="8">Laissez babiller le voisin,</l>
+            <l met="8">Travaillez pour le magasin;</l>
+            <l met="8">Vous lasserez la médisance,</l>
+            <l met="8">En allant toujours votre train.</l>
+          </sp>
+        </spGrp>
+        <stage>On entend une tempête qui interrompt le divertissement, et l'on voit sortir Neptune de la mer. Thétis se retire.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Jupiter, Neptune</stage>
+        <sp who="#neptune">
+          <speaker>Neptune</speaker>
+          <stage>en colère</stage>
+        </sp>
+        <spGrp who="#neptune">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#trembleurs">Les Trembleurs</title>
+            </desc>
+          </head>
+          <sp who="#neptune">
+            <speaker>Neptune</speaker>
+            <l met="7">Me crois-tu donc sans puissance,</l>
+            <l met="7">Ou sous ton obéissance?</l>
+            <l met="7">Ah! quelle mortelle offense!</l>
+            <l met="7">Tu veux m'enlever Thétis!</l>
+            <l met="7">Mais crains ma jalouse rage;</l>
+            <l met="7">Je vais faire du ravage;</l>
+            <l met="7">Tu verras un beau tapage;</l>
+            <l met="7">C'est moi qui t'en avertis.</l>
+          </sp>
+        </spGrp>
+        <sp who="#jupiter">
+          <speaker>Jupiter</speaker>
+        </sp>
+        <spGrp who="#jupiter">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_vous_avez_bon_air">Ah! vous avez bon air</title>
+            </desc>
+          </head>
+          <sp who="#jupiter">
+            <speaker>Jupiter</speaker>
+            <l met="6">Oh! trêve de colère,</l>
+            <l met="6">Infant, mon petit frère,</l>
+            <l met="6">Oh! trêve de colère,</l>
+            <l met="5">Quoi, vous me bravez!</l>
+            <l met="6">Ah! Vous avez bon aire</l>
+            <l met="6">Ah! Vous avez bon aire!</l>
+            <l met="6">Ah! Vous avez bon aire!</l>
+            <l met="5">Bon air vous avez!</l>
+          </sp>
+        </spGrp>
+        <stage>Jupiter s'approche de Neptune et le touche de son foudre. Neptune rentre dans la mer et la pièce finit.</stage>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,919 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="les_danaides">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Les Danaïdes</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Louis-Abel Beffroy de Reigny</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+        <respStmt>
+          <resp>Transcription</resp>
+          <name>S. Rousseau</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">dans<emph>Les lunes du cousin Jacques</emph>, second numéro, Paris, Lesclapart, 1785</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="dandin" sex="UNKNOWN">
+            <persName>Dandin</persName>
+          </person>
+          <person xml:id="hyperbole" sex="UNKNOWN">
+            <persName>Hyperbole</persName>
+          </person>
+          <person xml:id="linceuil" sex="UNKNOWN">
+            <persName>Linceuil</persName>
+          </person>
+          <person xml:id="poignardinet" sex="UNKNOWN">
+            <persName>Poignardinet</persName>
+          </person>
+          <person xml:id="touteslescousines" sex="UNKNOWN">
+            <persName>Toutes les cousines</persName>
+          </person>
+          <person xml:id="lescinquantefilles" sex="UNKNOWN">
+            <persName>Les cinquantes filles</persName>
+          </person>
+          <person xml:id="lavingtcinquiemefille" sex="UNKNOWN">
+            <persName>La vingt-cinquième fille</persName>
+          </person>
+          <person xml:id="lesvingtcinqfillesainees" sex="UNKNOWN">
+            <persName>Les vingt-cinq filles aînées</persName>
+          </person>
+          <person xml:id="lesvingtcinqfillescadettes" sex="UNKNOWN">
+            <persName>Les vingt cinq filles cadettes</persName>
+          </person>
+          <person xml:id="touteslesfilles" sex="UNKNOWN">
+            <persName>Toutes les filles</persName>
+          </person>
+          <person xml:id="hypermnestre" sex="UNKNOWN">
+            <persName>Hypermnestre</persName>
+          </person>
+          <person xml:id="toutes" sex="UNKNOWN">
+            <persName>Toutes</persName>
+          </person>
+          <person xml:id="_hypermnestre_" sex="UNKNOWN">
+            <persName>[Hypermnestre]</persName>
+          </person>
+          <person xml:id="quarante_neuf_soeurs_d_hyperbole" sex="UNKNOWN">
+            <persName>Quarante-neuf sœurs d'Hyperbole</persName>
+          </person>
+          <person xml:id="quarante_neuf_freres_de_linceuil" sex="UNKNOWN">
+            <persName>Quarante-neuf frères de Linceuil</persName>
+          </person>
+          <person xml:id="lucifer_ou_satan" sex="UNKNOWN">
+            <persName>Lucifer ou Satan</persName>
+          </person>
+          <person xml:id="personnages_dansants" sex="UNKNOWN">
+            <persName>Personnages dansants</persName>
+          </person>
+          <person xml:id="les_diables" sex="UNKNOWN">
+            <persName>Les diables</persName>
+          </person>
+          <person xml:id="les_furies" sex="UNKNOWN">
+            <persName>Les furies</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <textClass>
+        <keywords>
+          <term type="genreTitle">Parodie</term>
+        </keywords>
+        <classCode scheme="http://www.wikidata.org/entity/">Q170539</classCode>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#dandin">Dandin</role>
+          <roleDesc>roi d'Argos, père des cinquante cousines</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#hyperbole">Hyperbole</role>
+          <roleDesc>fille aînée de Dandin</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#_hypermnestre_">[Hypermnestre]</role>
+        </castItem>
+        <castItem>
+          <role ana="#linceuil">Linceuil</role>
+          <roleDesc>neveu de Dandin</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#quarante_neuf_soeurs_d_hyperbole">Quarante-neuf sœurs d'Hyperbole</role>
+        </castItem>
+        <castItem>
+          <role ana="#quarante_neuf_freres_de_linceuil">Quarante-neuf frères de Linceuil</role>
+        </castItem>
+        <castItem>
+          <role ana="#poignardinet">Poignardinet</role>
+          <roleDesc>capitaine des gardes et confident de Dandin</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#lucifer_ou_satan">Lucifer ou Satan</role>
+          <roleDesc>chef des diables</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#personnages_dansants">Personnages dansants</role>
+        </castItem>
+        <castItem>
+          <role ana="#les_diables">Les diables</role>
+        </castItem>
+        <castItem>
+          <role ana="#les_furies">Les furies</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <div type="avertissement">
+          <head>Choriphée</head>
+        </div>
+        <stage type="location">La scène se passe où l'on veut.</stage>
+      </prologue>
+      <pb n="91"/>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">Dandin, Poignardinet</stage>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+        </sp>
+        <spGrp who="#dandin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#si_j_en_croyais_mon_ardeur_menuet">Si j'en croyais mon ardeur,<emph>menuet</emph>
+              </title>
+            </desc>
+          </head>
+          <sp who="#dandin">
+            <speaker>Dandin</speaker>
+            <l met="7">Quand tout est prêt pour l'hymen</l>
+            <l met="7">Qu'on doit célébrer demain,</l>
+            <l met="7">Quand on ne songe à ma cour</l>
+            <l met="5">Qu'à cet heureux jour,</l>
+            <l met="7">J'ai bien un autre embarras</l>
+            <l met="7">Que tu ne devines pas,</l>
+            <l met="8">Certain projet...oh!...très plaisant,</l>
+            <l met="7">Me galope en ce moment.</l>
+          </sp>
+        </spGrp>
+        <sp who="#poignardinet">
+          <speaker>Poignardinet</speaker>
+          <p>Pourrait-on savoir?...</p>
+        </sp>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+        </sp>
+        <spGrp who="#dandin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#mere_mariez_moi">J'ai rêvé toute la nuit</title>
+            </desc>
+          </head>
+          <sp who="#dandin">
+            <speaker>Dandin</speaker>
+            <l met="7">J'ai rêvé toute la nuit</l>
+            <l met="7">Que j'avais près de mon lit</l>
+            <l met="7">Des monceaux de pistolets,</l>
+            <l met="5">Avec des boulets.<stage type="bis">bis</stage>
+            </l>
+            <l met="7">Et qu'ils me disaient: seigneur!</l>
+            <l met="7">Nous agirons de bon cœur.</l>
+          </sp>
+        </spGrp>
+        <pb n="92"/>
+        <sp who="#poignardinet">
+          <speaker>Poignardinet</speaker>
+          <p>Vraiment, Sire! Voilà un songe des plus gracieux!... Je souhaite...</p>
+        </sp>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+        </sp>
+        <spGrp who="#dandin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#tout_consiste_dans_la_maniere">Tout consiste, dans la manière</title>
+            </desc>
+          </head>
+          <sp who="#dandin">
+            <speaker>Dandin</speaker>
+            <l met="8">Tandis qu'ici chacun s'apprête,</l>
+            <l met="8">S'attend à se bien divertir,</l>
+            <l met="8">Je veux introduire à la fête</l>
+            <l met="8">Un autre genre de plaisir...</l>
+          </sp>
+        </spGrp>
+        <sp who="#poignardinet">
+          <speaker>Poignardinet</speaker>
+          <p>Bon! Je vous devine. Vous méditez quelque sanglante exécution! Eh bien, Sire, Votre Majesté n'a pas grand'peine à imaginer des moyens de s'amuser.</p>
+          <l met="8">Une entreprise meurtrière</l>
+          <l met="4">En vient à bout.</l>
+        </sp>
+        <spGrp>
+          <caption>Tous deux<stage>gaiement</stage>
+          </caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Tout consiste dans la manière</l>
+            <l met="4">Et dans le goût.</l>
+          </sp>
+        </spGrp>
+        <pb n="93"/>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+          <p>Tu sais avec quelle ardeur je désirais autrefois d'avoir des enfants. Eh bien, mon ami,</p>
+        </sp>
+        <spGrp who="#dandin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">tiré des <title ref="#billets_doux">Billets doux</title> ()</desc>
+          </head>
+          <sp who="#dandin">
+            <speaker>Dandin</speaker>
+            <l met="8">Le sort favorable à mes vœux,</l>
+            <l met="8">Peut-être un peu trop généreux,</l>
+            <l met="6">M'en a donné cinquante...</l>
+          </sp>
+          <sp who="#dandin">
+            <speaker>Dandin</speaker>
+            <l met="8">Cependant je rends grâce au sort</l>
+            <l met="8">Car, si j'en avais dix encore,</l>
+            <l met="6">Cela ferait soixante.</l>
+          </sp>
+        </spGrp>
+        <stage>Avec mystère.</stage>
+        <sp who="#poignardinet">
+          <speaker>Poignardinet</speaker>
+          <p>Eh! Mais! Seigneur! Il est pourtant fâcheux que, parmi tous ces enfants-là, il ne se trouve pas un seul garçon...</p>
+        </sp>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+        </sp>
+        <spGrp who="#dandin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">On ne peut empêcher de prendre,tiré de <title ref="#l_oiseau_perdu">L'Oiseau perdu</title> ()</desc>
+          </head>
+          <sp who="#dandin">
+            <speaker>Dandin</speaker>
+            <l met="8">Je sais qu'on n'aime pas les filles,</l>
+            <l met="8">Et qu'on trouve ailleurs comme ici,</l>
+            <l met="8">Surtout quand elles sont gentilles,</l>
+            <l met="8">Trente amants et pas un mari.</l>
+            <l met="8">Mais conviens que nos demoiselles</l>
+            <l met="8">N'ont pas le minois séducteur...</l>
+          </sp>
+        </spGrp>
+        <pb n="94"/>
+        <sp who="#poignardinet">
+          <speaker>Poignardinet</speaker>
+          <l met="8">On en peut trouver de plus belles...</l>
+          <l met="8">Mais cela n'ôte pas la peur!</l>
+          <p>Au reste... Vous voilà rassuré, la fête de demain...</p>
+        </sp>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+          <p>Il est sûr que mon frère l'Égyptien a eu bon nez de faire des garçons.</p>
+        </sp>
+        <spGrp who="#dandin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#accompagne_de_plusieurs_autres">Accompagné de plusieurs autres</title>
+            </desc>
+          </head>
+          <sp who="#dandin">
+            <speaker>Dandin</speaker>
+            <l met="8">Notre malheur même est heureux,</l>
+            <l met="8">Ami, pour mieux combler nos vœux,</l>
+            <l met="8">Voyez quels destins sont les nôtres!...</l>
+            <p>Quand mon frère vit que j'allais lui donner beaucoup de nièces, il se maria sur-le-champ,</p>
+            <l met="8">Et pour lui ce ne fut qu'un jeu...</l>
+            <l met="8">De me fabriquer un neveu...</l>
+            <l met="8">Accompagné de plusieurs autres.</l>
+          </sp>
+        </spGrp>
+        <pb n="95"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="location">Linceuil entre, suivi de ses quarante-neuf frères.</stage>
+        <stage type="characters">Dandin<stage>continue</stage>
+        </stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="location">Ici entre Hyperbole, suivie des ses quarante-neuf sœurs.</stage>
+        <spGrp>
+          <caption>Linceuil et hyperbole</caption>
+        </spGrp>
+        <spGrp who="#ensemble">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">Chantons l'hymen, chantons l'amour,tiré de <title ref="#blaise_et_babet">Blaise et Babet</title> ()</desc>
+          </head>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Chantons la paix, chantons l'hymen,</l>
+            <l met="8">Qui doit nous réunir demain.</l>
+            <l met="8">Chantons la paix, chantons l'hymen,</l>
+            <l met="8">Chantons prenons-nous... la main.</l>
+          </sp>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Chantons la paix! ...</l>
+          </sp>
+        </spGrp>
+        <stage>Tous les cousins et toutes les cousines répètent en chœur en se prenant la main.</stage>
+        <pb n="96"/>
+        <sp who="#hyperbole">
+          <speaker>Hyperbole</speaker>
+          <stage>à Linceuil</stage>
+        </sp>
+        <spGrp who="#hyperbole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#allure">Voilà mon cousin Lanlure, mon cousin</title>
+            </desc>
+          </head>
+          <sp who="#hyperbole">
+            <speaker>Hyperbole</speaker>
+            <l met="6">Que dis-tu de ma main,</l>
+            <l met="3"/>
+            <p>Et nous frappe au sein des plaisirs.» Vers dont tous les papiers publics ont relevé l'indécence et le ridicule et que nous avons parodié ainsi: «Saisit, emporte dans ses bras.</p>
+            <p>L'amant et la bergère...». Ce couplet, fort mauvais, est une critique très exacte du dialogue et de la marche des scènes dans le dernier opéra des<emph>Danaïdes</emph>, car on ne s'est contenté de mettre sur la scène un pareil sujet pour une seule fois; il était bien digne d'y reparaître avec toute la variété des coloris, dont chaque poète l'a nuancé, plusieurs verves s'y sont exercées. On ne sait en conscience, si les héros de cette histoire horrible et dégoûtante sont plus blâmables aux yeux d'un français policé, que l'écrivain qui lui prête le charme de son art.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#hyperbole">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">tiré de <title ref="#l_amant_jaloux">L'Amant jaloux</title> ()</desc>
+          </head>
+          <sp who="#hyperbole">
+            <speaker>Hyperbole</speaker>
+            <l met="6">Tandis que tout sommeille,</l>
+            <l met="6">La bergère et l'amant,</l>
+            <l met="6">La mort vient doucement.</l>
+            <l met="6">La mort, qui toujours veille,</l>
+            <l met="4">À petit bruit</l>
+            <l met="4">Marche la nuit</l>
+            <l met="6">Le long de la ruelle,</l>
+            <l met="8">Et puis, quand vous n'y pensez pas,</l>
+            <l met="8">Elle se glisse entre vos draps!</l>
+          </sp>
+        </spGrp>
+        <pb n="97"/>
+        <stage>Elle lui présente la main droite, qu'il examine curieusement, les autres en font autant.</stage>
+        <sp who="#linceuil">
+          <speaker>Linceuil</speaker>
+          <l met="6">Je la trouve bien faite,</l>
+        </sp>
+        <sp who="#hyperbole">
+          <speaker>Hyperbole</speaker>
+          <l met="6">Vous avez le goût fin,</l>
+          <l met="3">Mon cousin!</l>
+        </sp>
+        <sp who="#linceuil">
+          <speaker>Linceuil</speaker>
+          <stage>tout occupé de la main</stage>
+          <l met="6">Comme elle est rondelette!</l>
+        </sp>
+        <pb n="98"/>
+        <sp who="#hyperbole">
+          <speaker>Hyperbole</speaker>
+          <stage>enchantée</stage>
+          <l met="4">Ah! Mon cousin!...</l>
+        </sp>
+        <stage>Elle lui présente la main gauche, qu'il saisit de même, tout le monde l'imite.</stage>
+        <sp who="#hyperbole">
+          <speaker>Hyperbole</speaker>
+          <l met="7">L'autre n'est pas moins douillette,</l>
+          <l met="3">Mon cousin.</l>
+        </sp>
+        <sp who="#touteslescousines">
+          <speaker>Toutes les cousines</speaker>
+          <l met="7">L'autre n'est pas moins douillette.</l>
+        </sp>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+          <p>Allons, mes neveux, de la gaieté! Le sort qui vous a privé de votre père, vous empêche de retourner en Égypte, mais vous trouverez une existence plus douce entre les bras de vos cousines.</p>
+        </sp>
+        <spGrp who="#dandin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#du_serein_qui_te_fait_envie">Du serein qui te fait envie</title>
+            </desc>
+          </head>
+          <sp who="#dandin">
+            <speaker>Dandin</speaker>
+            <l met="8">Mais, avant d'épouser mes filles,</l>
+            <l met="8">Jurez tous par le sombre bord,</l>
+            <l met="8">Qu'on n'aura vu dans les familles</l>
+            <l met="8">Jamais de si parfait accord.</l>
+            <p>Servons d'exemple à tout le royaume, et que mes sujets se regardent tous comme des frères.</p>
+            <l met="8">Que jamais la haine homicide</l>
+            <l met="8">N'ose paraître en ce séjour,</l>
+          </sp>
+        </spGrp>
+        <pb n="99"/>
+        <stage>Bien tendrement.</stage>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+          <l met="8">Car vous avez lu dans Ovide</l>
+          <l met="8">Qu'on se modèle sur la cour.</l>
+          <p>Allons, mes neveux! Mes chers amis! Embrassez vos cousines, vos futures épouses et que ces embrassements là préludent... là...</p>
+        </sp>
+        <sp who="#hyperbole">
+          <speaker>Hyperbole</speaker>
+          <l met="6">Expliquez-vous mon père!</l>
+          <l met="2">Eh bien?</l>
+        </sp>
+        <stage type="musical_indication">Refrain connu</stage>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+          <l met="6">Ma fille! Il faut vous taire,</l>
+          <l met="5">Vous m'entendez bien.</l>
+        </sp>
+        <spGrp>
+          <caption>Les cousins et les cousines<stage>en s'embrassant</stage>
+          </caption>
+          <sp who="#ensemble">
+            <speaker>ensemble</speaker>
+            <l met="8">Chantons la paix, chantons l'hymen</l>
+            <l met="8">Qui doit nous réunir demain</l>
+            <l met="8">Chantons la paix, chantons l'hymen,</l>
+            <l met="8">Embrassez-moi mon cher cousin!</l>
+          </sp>
+        </spGrp>
+        <pb n="100"/>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+          <stage>à l'oreille de Poignardinet</stage>
+          <p>Mes neveux me gênent pour m'expliquer devant mes filles, congédie-les pour moi.</p>
+        </sp>
+        <sp who="#poignardinet">
+          <speaker>Poignardinet</speaker>
+        </sp>
+        <spGrp who="#poignardinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_l_ordonnez">Vous l'ordonnez</title>
+            </desc>
+          </head>
+          <sp who="#poignardinet">
+            <speaker>Poignardinet</speaker>
+            <l met="10">Le Roi, messieurs, d'un secret qui m'importe,</l>
+            <l met="10">Voudrait m'instruire, et m'instruire tout bas.</l>
+            <l met="10">Assurément, vous ne le gênez pas,</l>
+            <p>Mais</p>
+            <l met="10">C'est l'obliger que de prendre la porte.</l>
+          </sp>
+        </spGrp>
+        <stage>Les cousins s'en vont. Linceuil sourit à Hyperbole, ils font tous une exclamation, un grand geste et poussent un soupir; ce qui fait cinquante exclamations, cinquante gestes, cinquante soupirs.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+          <p>Approchez, mes filles. Vous n'êtes</p>
+          <p>pas de trop, j'ai un secret important à vous dire.</p>
+        </sp>
+        <spGrp who="#dandin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#laisse_tes_agneaux_errer_dans_la_prairie">Laisse tes agneaux errer dans la prairie</title>
+            </desc>
+          </head>
+          <sp who="#dandin">
+            <speaker>Dandin</speaker>
+            <l met="5">Malgrè les serments</l>
+            <l met="6">Que je vous ai fait faire,</l>
+            <l met="8">De vivre en paix, ô mes enfants!</l>
+            <l met="7">Apprenez de votre père</l>
+            <l met="7">Un secret des plus charmants,</l>
+            <l met="5">Quand vous le saurez,</l>
+            <l met="3">Vous rirez!</l>
+          </sp>
+          <sp who="#dandin">
+            <speaker>Dandin</speaker>
+            <l met="4">Oh! Vous rirez!</l>
+            <l met="4">Oh! Vous rirez!</l>
+            <l met="8">Et vous m'en féliciterez!<stage type="bis">bis</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <stage>Il rit.</stage>
+        <sp who="#lescinquantefilles">
+          <speaker>Les cinquantes filles</speaker>
+          <stage>en dansant<note>Pourquoi danser, va-t-on dire? Pourquoi?... Eh! Morbleu! Pourquoi danse-t-on à l'Opéra? Il s'agit d'une exécution sanglante, c'était là le cas.</note>
+          </stage>
+          <l met="5">Parlez, cher papa!</l>
+          <l met="7">Quel est ce beau secret là!</l>
+        </sp>
+        <pb n="102"/>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+          <l met="5">Observer pourtant</l>
+          <l met="7">Qu'il faut d'abord vous en taire,</l>
+          <l met="5">Et que pour l'instant</l>
+          <l met="7">Le silence est important.</l>
+        </sp>
+        <stage>D'un air plus gai et plus mystérieux, en montrant son ami.</stage>
+        <spGrp who="#dandin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#qu_en_voulez_vous_dire">Qu'en voulez-vous dire</title>
+            </desc>
+          </head>
+          <sp who="#dandin">
+            <speaker>Dandin</speaker>
+            <l met="8">Poignardinet mon confident,</l>
+            <l met="8">Dont la férocité m'est chère,</l>
+            <l met="8">De mon cruel ressentiment</l>
+            <l met="8">Ministre estimable et sévère,</l>
+            <l met="8">Va vous remettre de ma part</l>
+            <l met="8">À chacune un petit poignard</l>
+            <l met="8">Dont vous vous servirez plus tard...</l>
+          </sp>
+        </spGrp>
+        <sp who="#lescinquantefilles">
+          <speaker>Les cinquantes filles</speaker>
+          <stage>étonnées</stage>
+          <l met="5">Qu'en voulez-vous faire?<stage type="bis">bis</stage>
+          </l>
+        </sp>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+          <stage>tendrement</stage>
+          <l met="8">Cachez-le sous votre mouchoir,<note>C'est la même expression que dans la pièce, où il est question de cacher les armes sous son mouchoir. L'auteur avait mis d'abord fichu, mais, la rime n'allant pas bien, il y substitua pour l'oreille le mot mouchoir.</note>
+          </l>
+          <l met="8">Favorisez mon doux espoir!</l>
+        </sp>
+        <pb n="103"/>
+        <stage>Poignardinet distribue des poignards.</stage>
+        <sp who="#lescinquantefilles">
+          <speaker>Les cinquantes filles</speaker>
+        </sp>
+        <spGrp who="#lescinquantefilles">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#l_avez_vous_vu_mon_bien_aime">L'avez-vous vu, mon bien aimé</title>
+            </desc>
+          </head>
+          <sp who="#lescinquantefilles">
+            <speaker>Les cinquantes filles</speaker>
+            <l met="8">Sur qui doivent tomber nos coups?</l>
+            <l met="6">Daignez donc nous l'apprendre!</l>
+          </sp>
+        </spGrp>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+          <l met="8">Ce soir, à vos futurs époux</l>
+          <l met="6">Faite un accueil bien tendre!</l>
+          <l met="8">Caressez-les avec douceur!</l>
+          <l met="8">Appelez-les: mon choux! Mon cœur!...</l>
+          <l met="8">Et puis tout à coup sans pitié</l>
+          <l met="6">Que votre main les frappe!</l>
+          <l met="8">Oh! Vraiment! Pour leur amitié</l>
+          <l met="6">C'est une bonne attrape.</l>
+        </sp>
+        <stage>Un moment de silence.</stage>
+        <pb n="104"/>
+        <sp who="#lescinquantefilles">
+          <speaker>Les cinquantes filles</speaker>
+          <stage>levant au ciel la main armée du poignard</stage>
+          <l met="8">Peut-on poignarder ce qu'on aime?</l>
+          <l met="4">Cette noirceur</l>
+          <l met="4">Nous fait horreur!</l>
+          <l met="8">Peut-on poignarder ce qu'on aime?</l>
+          <l met="8">Autant se poignarder soi-même!</l>
+        </sp>
+        <stage type="musical_indication">Doloroso</stage>
+        <stage>Ou, ce qui est équivalent:</stage>
+        <sp who="#lescinquantefilles">
+          <speaker>Les cinquantes filles</speaker>
+          <l met="8">Oter la vie à ce qu'on aime!...</l>
+          <l met="8">Autant se l'ôter... à soi-même!...</l>
+        </sp>
+        <sp who="#lavingtcinquiemefille">
+          <speaker>La vingt-cinquième fille</speaker>
+        </sp>
+        <spGrp who="#lavingtcinquiemefille">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#aller_au_bois">V'là c'que c'est qu'd'aller aux bois</title>
+            </desc>
+          </head>
+          <sp who="#lavingtcinquiemefille">
+            <speaker>La vingt-cinquième fille</speaker>
+            <l met="8">Seigneur! Qu'ont donc fait nos époux</l>
+            <l met="8">Pour mériter votre courroux?</l>
+          </sp>
+        </spGrp>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+          <stage>d'un air terrible</stage>
+          <l met="8">Mesdemoiselles, taisez-vous,</l>
+          <l met="5">Agissez en filles</l>
+          <l met="5">Discrètes, gentilles,</l>
+          <l met="8">Et croyez que votre papa...</l>
+          <l met="7">A ses raisons pour cela.</l>
+        </sp>
+        <pb n="105"/>
+        <sp who="#hypermnestre">
+          <speaker>Hypermnestre</speaker>
+        </sp>
+        <spGrp who="#hypermnestre">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#tout_cela_est_indifferent">Prévôt des marchands</title>
+            </desc>
+          </head>
+          <sp who="#hypermnestre">
+            <speaker>Hypermnestre</speaker>
+            <l met="8">Papa, vos projets sont charmants,</l>
+            <l met="8">Mais vous prenez mal votre temps.</l>
+            <l met="8">Rien de plus beau que la pensée</l>
+            <l met="8">D'assassiner nos chers maris!</l>
+          </sp>
+        </spGrp>
+        <sp who="#touteslesfilles">
+          <speaker>Toutes les filles</speaker>
+          <stage>parlant à la fois</stage>
+          <p>Mais ne peut-on pas en différer l'exécution pour vingt-quatre heures seulement?</p>
+          <l met="8">Une nuit est bientôt passée...</l>
+          <l met="8">Et cette nuit-là vaut son prix.</l>
+        </sp>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+          <p>Non, point de délais, si l'on diffère, tout est manqué!...</p>
+        </sp>
+        <sp who="#lescinquantefilles">
+          <speaker>Les cinquantes filles</speaker>
+          <stage>prenant leur parti gaiement</stage>
+        </sp>
+        <spGrp who="#lescinquantefilles">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#allons_gai_d_un_air_gai">Allons gai</title>
+            </desc>
+          </head>
+          <sp who="#lescinquantefilles">
+            <speaker>Les cinquantes filles</speaker>
+            <l met="8">Allons gai! Réjouissons-nous!</l>
+            <l met="6">Armons notre colère;</l>
+            <l met="8">Allons gai! Réjouissons-nous!</l>
+            <l met="6">Nous tuerons nos époux.</l>
+          </sp>
+        </spGrp>
+        <pb n="106"/>
+        <sp who="#lesvingtcinqfillesainees">
+          <speaker>Les vingt-cinq filles aînées</speaker>
+          <stage>en dansant</stage>
+          <l met="8">Éxécutons d'un si bon père</l>
+          <l met="5">Les ordres pressants.</l>
+        </sp>
+        <sp who="#lesvingtcinqfillescadettes">
+          <speaker>Les vingt cinq filles cadettes</speaker>
+          <stage>en dansant</stage>
+          <l met="8">Il faut égorger de son frère</l>
+          <l met="5">Les cinquante enfants!</l>
+        </sp>
+        <sp who="#toutes">
+          <speaker>Toutes</speaker>
+          <stage>en dansant et gambadant et se ruant sur la scène<note>Le célèbre La Fontaine, le philosophe à la portée de tout le monde, dont la charmante morale peut s'appliquer à toutes les circonstances de la vie et dont on est tenté à chaque pas de citer un vers ou deux, très analogue à ce qui se passe sous nos yeux, a dit à peu près la même chose dans la fable du<emph>vieillard et de l'âne</emph>.</note>
+          </stage>
+          <l met="8">Allons gai! Réjouissons-nous!</l>
+          <l met="6">Armons ...</l>
+        </sp>
+        <pb n="107"/>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <sp who="#poignardinet">
+          <speaker>Poignardinet</speaker>
+          <stage>avec respect</stage>
+        </sp>
+        <spGrp who="#poignardinet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#le_port_mahon_est_pris">Le port Mahon est pris</title>
+            </desc>
+          </head>
+          <sp who="#poignardinet">
+            <speaker>Poignardinet</speaker>
+            <l met="6">Comptez sur mon courage!</l>
+            <l met="9">Autant que vous j'aime le carnage...</l>
+            <l met="6">Mais c'est pourtant dommage</l>
+            <l met="6">D'immoler ces gens-là.</l>
+            <l met="6">Néanmoins ce sera</l>
+            <l met="6">Tout comme il vous plaira.</l>
+            <l met="6">De votre serviteur</l>
+            <l met="6">Dans tous les temps, Seigneur,</l>
+            <l met="6">Vous pourrez faire usage...</l>
+            <l met="9">Mais au moins dites-moi quel outrage</l>
+            <l met="6">Éxcite votre rage</l>
+            <l met="6">Contre vos chers neveux?</l>
+          </sp>
+        </spGrp>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+          <l met="6">Oh! Ce n'est pas contr'eux,</l>
+          <l met="6">Mais contre leurs aïeux.</l>
+        </sp>
+        <sp who="#poignardinet">
+          <speaker>Poignardinet</speaker>
+          <p>Quoi donc? Leurs aïeux n'étaient-ils pas les vôtres?</p>
+        </sp>
+        <pb n="108"/>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+          <stage>en confidence</stage>
+        </sp>
+        <spGrp who="#dandin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pour_la_baronne">Pour la Baronne</title>
+            </desc>
+          </head>
+          <sp who="#dandin">
+            <speaker>Dandin</speaker>
+            <l met="4">De leur grand-père</l>
+            <l met="8">Mon grand-oncle était l'ennemi,</l>
+            <l met="8">Moi, l'héritier de sa colère</l>
+            <l met="8">Comment pourrais-je être l'ami</l>
+            <l met="4">De leur grand-père?</l>
+          </sp>
+        </spGrp>
+        <sp who="#poignardinet">
+          <speaker>Poignardinet</speaker>
+          <stage>fort surpris</stage>
+          <p>Comment? Que voulez-vous dire? Leur grand-père...</p>
+        </sp>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+          <p>Je parle du côté maternel...</p>
+        </sp>
+        <sp who="#poignardinet">
+          <speaker>Poignardinet</speaker>
+          <p>Mais ces cinquante infortunés?</p>
+        </sp>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+        </sp>
+        <spGrp who="#dandin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#fraises">Des fraises</title>
+            </desc>
+          </head>
+          <sp who="#dandin">
+            <speaker>Dandin</speaker>
+            <l met="7">Vraiment! S'il vivait encor,</l>
+            <l met="6">Il n'aurait point de grâce</l>
+            <l met="7">
+              <emph>Mais</emph>
+              <note>Ces mots soulignés, excédant la mesure du vers, doivent se parler et non se chanter.</note>il faut bien, puisqu'il est mort,</l>
+            <l met="7">Accablez du même sort</l>
+            <l met="8">Sa race<stage type="musical_resumption">Trois fois</stage>
+            </l>
+          </sp>
+        </spGrp>
+        <sp who="#poignardinet">
+          <speaker>Poignardinet</speaker>
+          <p>Votre projet, Sire, me paraît bien extraordinaire!...</p>
+        </sp>
+        <sp who="#dandin">
+          <speaker>Dandin</speaker>
+          <stage>dans un accès d'enthousiasme</stage>
+        </sp>
+        <spGrp who="#dandin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air du</desc>
+            <desc type="title">
+              <title ref="#grand_saint_nicolas">Grand Saint Nicolas</title>
+            </desc>
+          </head>
+          <sp who="#dandin">
+            <speaker>Dandin</speaker>
+            <l met="6">Garde-toi d'en rougir.</l>
+            <l met="6">C'est une prévoyance,</l>
+            <l met="6">Aux siècles à venir</l>
+            <l met="6">Je ménage un plaisir,</l>
+            <l met="6">Ce trait de ma vengeance</l>
+            <l met="6">Doit faire un opéra</l>
+            <l met="6">Auquel toute la France...</l>
+            <l met="2">Rira.<note>Cet homme-là était possédé d'un esprit prophétique... Il y a encore dans cette parodie des choses assez drôles, l'instant auquel les époux, assassinés et baignés dans leur sang, implorent d'une voix mourante la justice du ciel, fait un coup de théâtre charmant et en vérité rien au monde n'est si plaisant.</note>
+            </l>
+          </sp>
+        </spGrp>
+      </div>
+    </body>
+  </text>
+</TEI>

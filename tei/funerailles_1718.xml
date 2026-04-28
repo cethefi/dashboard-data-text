@@ -1,0 +1,1616 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="https://dracor.org/schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fre" xml:id="funerailles_1718">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Les Funérailles de la Foire</title>
+        <principal ref="https://viaf.org/fr/viaf/34487662">
+          <persName>Françoise Rubellin</persName>
+        </principal>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Olivier Aubert</name>
+        </respStmt>
+        <respStmt>
+          <resp>Transcription et édition XML/TEI</resp>
+          <name>Camille Masselot</name>
+        </respStmt>
+        <author>
+          <persName>Par Le Sage et d'Orneval</persName>
+          <idno type="wikidata">UNKNOWN</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Cethefi</publisher>
+        <pubPlace>Nantes, France</pubPlace>
+        <idno type="URL">http://cethefi.org/</idno>
+        <date when="2025">2025</date>
+        <availability status="restricted">
+          <licence>
+            <ab>CC-BY-NC-SA 4.0</ab>
+            <ref target="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Distribué
+            sous la licence Creative Commons License -
+            Attribution-NonCommercial-ShareAlike 4.0 International. Attribution - Pas
+            d’Utilisation Commerciale - Partage dans les Mêmes Conditions (CC BY-NC-SA).
+            Cette licence permet de remixer, arranger, et adapter cette édition à des
+            fins non commerciales tant que les auteurs du texte et de la présente
+            édition numérique sont crédités, et que les nouvelles œuvres sont diffusées
+            selon les mêmes conditions.
+            </ref>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="originalSource">FIXME - missing source</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>La transcription et l'édition numérique des pièces ont été réalisées dans le cadre d'un
+        stage de Master 2 en Édition et Humanités Numériques. La présente édition TEI est réalisée
+        dans le cadre du projet SIRTHEF, mené par le Cethefi, Université de Nantes. Il vise à
+        rassembler les données présentes sur des supports informatiques disparates, tant au niveau
+        des serveurs que des formats de données, afin de permettre l'exploitation des liens entre
+        ces différentes ressources via une plateforme et un format unique.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="high" method="silent">
+          <p>L'établissement de la présente édition provient d'un travail de recherche
+          universitaire, relu et corrigé par l'enseignant en charge du suivi de ce travail de
+          recherche.</p>
+        </correction>
+        <normalization method="silent">
+          <p>L’orthographe a été modernisée.</p>
+          <p>Des éléments manquants ont été rajoutés entre crochets.</p>
+          <p>Les abréviations ont été développées et unifiées.</p>
+          <p>Dans les vaudevilles se terminant par "etc." nous avons complété les paroles entre
+          crochets lorsque la suite nous était connue.</p>
+        </normalization>
+        <punctuation marks="some">
+          <p>La ponctuation a été modernisée ou ajoutée lorsque cela était nécessaire à la
+          compréhension du texte.</p>
+        </punctuation>
+      </editorialDecl>
+      <metDecl>
+        <p>Chaque air dispose d'un identifant correspondant à son équivalent dans la base de données
+        exploitée par le site Theaville. Lorsqu'un air ne se trouve pas dans la base de données de
+        Theaville, son identifiant est "unknow".</p>
+        <p>Le nombre de syllabes métriques des vers chantés ou déclamés est spécifié.</p>
+      </metDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="choeur" sex="UNKNOWN">
+            <persName>Le choeur</persName>
+          </person>
+          <person xml:id="foire" sex="UNKNOWN">
+            <persName>La foire</persName>
+          </person>
+          <person xml:id="polichinelle" sex="UNKNOWN">
+            <persName>Polichinelle</persName>
+          </person>
+          <person xml:id="scaramouche" sex="UNKNOWN">
+            <persName>Scaramouche</persName>
+          </person>
+          <person xml:id="ensemblea" sex="UNKNOWN">
+            <persName>Ensemble</persName>
+          </person>
+          <person xml:id="deuxcomedies" sex="UNKNOWN">
+            <persName>Les deux Comédies</persName>
+          </person>
+          <person xml:id="francaise" sex="UNKNOWN">
+            <persName>La Comédie-Française</persName>
+          </person>
+          <person xml:id="italienne" sex="UNKNOWN">
+            <persName>La Comédie-Italienne</persName>
+          </person>
+          <person xml:id="docteur" sex="UNKNOWN">
+            <persName>Le Docteur</persName>
+          </person>
+          <person xml:id="colombine" sex="UNKNOWN">
+            <persName>Colombine</persName>
+          </person>
+          <person xml:id="mvaudeville" sex="UNKNOWN">
+            <persName>Monsieur Vaudeville</persName>
+          </person>
+          <person xml:id="craquet" sex="UNKNOWN">
+            <persName>Monsieur Craquet</persName>
+          </person>
+          <person xml:id="bontour" sex="UNKNOWN">
+            <persName>Monsieur Bontour</persName>
+          </person>
+          <person xml:id="choeurc" sex="UNKNOWN">
+            <persName>Chœur</persName>
+          </person>
+          <person xml:id="choeurd" sex="UNKNOWN">
+            <persName>Chœur des suivants des deux Comédies</persName>
+          </person>
+          <person xml:id="opera" sex="UNKNOWN">
+            <persName>L'Opéra</persName>
+          </person>
+          <person xml:id="la_foire" sex="UNKNOWN">
+            <persName>La Foire</persName>
+          </person>
+          <person xml:id="l_opera" sex="UNKNOWN">
+            <persName>L'Opéra</persName>
+          </person>
+          <person xml:id="la_comedie_francaise" sex="UNKNOWN">
+            <persName>La Comédie-Française</persName>
+          </person>
+          <person xml:id="la_comedie_italienne" sex="UNKNOWN">
+            <persName>La Comédie-Italienne</persName>
+          </person>
+          <person xml:id="le_docteur" sex="UNKNOWN">
+            <persName>Le Docteur</persName>
+          </person>
+          <person xml:id="mezzetin" sex="UNKNOWN">
+            <persName>Mezzetin</persName>
+          </person>
+          <person xml:id="monsieur_vaudeville" sex="UNKNOWN">
+            <persName>Monsieur Vaudeville</persName>
+          </person>
+          <person xml:id="monsieur_craquet" sex="UNKNOWN">
+            <persName>Monsieur Craquet</persName>
+          </person>
+          <person xml:id="monsieur_bontour" sex="UNKNOWN">
+            <persName>Monsieur Bontour</persName>
+          </person>
+          <person xml:id="suivants_des_deux_comedies" sex="UNKNOWN">
+            <persName>Suivants des deux comédies</persName>
+          </person>
+          <person xml:id="troupe_d_acteurs_forains" sex="UNKNOWN">
+            <persName>Troupe d'acteurs forains</persName>
+          </person>
+        </listPerson>
+      </particDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <listChange>
+        <change when="2026-04-03">Conversion through latex2tei</change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="premiere" when="1718">
+        <desc> 1718</desc>
+      </event>
+    </listEvent>
+  </standOff>
+  <text>
+    <front>
+      <castList>
+        <castItem>
+          <role ana="#la_foire">La Foire</role>
+          <roleDesc>Pierrot</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#l_opera">L'Opéra</role>
+          <roleDesc>Arlequin</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#la_comedie_francaise">La Comédie-Française</role>
+        </castItem>
+        <castItem>
+          <role ana="#la_comedie_italienne">La Comédie-Italienne</role>
+        </castItem>
+        <castItem>
+          <role ana="#le_docteur">Le Docteur</role>
+        </castItem>
+        <castItem>
+          <role ana="#scaramouche">Scaramouche</role>
+        </castItem>
+        <castItem>
+          <role ana="#mezzetin">Mezzetin</role>
+        </castItem>
+        <castItem>
+          <role ana="#colombine">Colombine</role>
+        </castItem>
+        <castItem>
+          <role ana="#monsieur_vaudeville">Monsieur Vaudeville</role>
+          <roleDesc>poète de l'Opéra-Comique</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#monsieur_craquet">Monsieur Craquet</role>
+          <roleDesc>médecin</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#monsieur_bontour">Monsieur Bontour</role>
+          <roleDesc>notaire</roleDesc>
+        </castItem>
+        <castItem>
+          <role ana="#suivants_des_deux_comedies">Suivants des deux comédies</role>
+        </castItem>
+        <castItem>
+          <role ana="#troupe_d_acteurs_forains">Troupe d'acteurs forains</role>
+        </castItem>
+      </castList>
+      <prologue>
+        <spGrp rend="trpta">
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <p>Pourquoi depuis huit jours êtes-vous plongée dans la mélancolie?</p>
+          </sp>
+        </spGrp>
+        <stage type="location">La scène est dans la salle de l'Opéra-Comique.</stage>
+        <stage type="location">Le théâtre représente la salle de l'Opéra-Comique.</stage>
+      </prologue>
+    </front>
+    <body>
+      <div type="scene">
+        <head>SCENE 1</head>
+        <stage type="characters">La Foire, Scaramouche, Mezzetin</stage>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <stage>soupirant</stage>
+          <p>Ouf!</p>
+        </sp>
+        <sp who="#mezzetin">
+          <speaker>Mezzetin</speaker>
+          <p>Vous soupirez.</p>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <p>À peine daignez-vous regarder vos plus chers enfants.</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <stage>soupirant encore</stage>
+          <p>Aïe!</p>
+        </sp>
+        <sp who="#mezzetin">
+          <speaker>Mezzetin</speaker>
+        </sp>
+        <spGrp who="#mezzetin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jus_octobre">Quand je tiens de ce jus d'octobre</title>
+            </desc>
+          </head>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <l met="8">Hé, d'où vous vient cette humeur noire</l>
+            <l met="8">Quand tout succède à vos désirs?</l>
+            <l met="8">Dites-nous, Madame la Foire,</l>
+            <l met="8">Quels sont vos secrets déplaisirs.</l>
+          </sp>
+        </spGrp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+        </sp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pourquoi_n_avoir_pas_le_coeur_tendre">Pourquoi n'avoir pas le cœur tendre</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="8">Hélas!</l>
+          </sp>
+        </spGrp>
+        <sp who="#mezzetin">
+          <speaker>Mezzetin</speaker>
+          <l met="8">Parlez sans vous contraindre,</l>
+          <l met="7">N'augmentez point nos terreurs.</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="8">Ah, vous avez sujet de craindre!</l>
+          <l met="9">C'est pour vous que je verse des pleurs.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+        </sp>
+        <spGrp who="#scaramouche">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air des</desc>
+            <desc type="title">
+              <title ref="#folies_espagne">Folies Espagne</title>
+            </desc>
+          </head>
+          <sp who="#scaramouche">
+            <speaker>Scaramouche</speaker>
+            <l met="10">Quoi, c'est pour nous que votre cœur soupire?</l>
+          </sp>
+        </spGrp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="10">Oui, mes amis, vous faites mon tourment.</l>
+          <l met="10">Je suis bien mal et, s'il faut vous le dire,</l>
+          <l met="10">Enfin je touche à mon dernier moment.</l>
+        </sp>
+        <sp who="#mezzetin">
+          <speaker>Mezzetin</speaker>
+          <p>Ciel, qu'entends-je!</p>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <p>Que dites-vous?</p>
+        </sp>
+        <sp who="#mezzetin">
+          <speaker>Mezzetin</speaker>
+        </sp>
+        <spGrp who="#mezzetin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jeune_isabelle">La jeune Isabelle</title>
+            </desc>
+          </head>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <l met="5">Comment, votre vie</l>
+            <l met="5">Va finir son cours!</l>
+          </sp>
+        </spGrp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="5">Quelle maladie</l>
+          <l met="5">Menace vos jours?</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="5">Le mal qui me ronge</l>
+          <l met="5">Et qui me détruit</l>
+          <l met="5">Est l'effet d'un songe</l>
+          <l met="5">Que j'eus l'autre nuit.</l>
+        </sp>
+        <sp who="#mezzetin">
+          <speaker>Mezzetin</speaker>
+          <p>Sachons ce que c'est.</p>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <p>Contez-le nous.</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+        </sp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#apercus_en_songe">L'autre nuit j'aperçus en songe</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="8">J'aperçus les deux Comédies</l>
+            <l met="8">Qui vinrent me charger de coups.</l>
+            <l met="8">Puis, sous la forme de deux loups,</l>
+            <l met="8">Je vis tout à coup ces furies</l>
+            <l met="8">Qui s'apprêtaient à me manger.</l>
+            <l met="8">Je me réveille en ce danger.</l>
+            <p>Mais à mon réveil, je me suis sentie saisie d'un mal réel, qui n'a fait qu'augmenter depuis ce temps-là.</p>
+          </sp>
+        </spGrp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <p>Vous devriez appeler des médecins.</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <p>J'en ai déjà consulté deux, qui m'ont abandonnée. J'en attends un troisième dont on m'a vanté la capacité. C'est ce fameux Monsieur Craquet qui demeure dans la rue des Fossoyeurs<note>Toponyme comique servant la satire des médecins.</note>.</p>
+        </sp>
+        <sp who="#mezzetin">
+          <speaker>Mezzetin</speaker>
+          <p>Le voilà, sans doute.</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <p>Apparemment.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 2</head>
+        <stage type="characters">La Foire, Mezzetin, Scaramouche, Monsieur Craquet<stage>médecin</stage>
+        </stage>
+        <sp who="#craquet">
+          <speaker>Monsieur Craquet</speaker>
+          <stage>à la Foire</stage>
+          <p>Madame, on m'est venu chercher de votre part et à vous voir seulement, je juge que ce n'est pas sans raison.</p>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <p>Vous êtes bien pénétrant!</p>
+        </sp>
+        <sp who="#craquet">
+          <speaker>Monsieur Craquet</speaker>
+          <p>Apprenez, mon ami, que la pénétration est héréditaire dans notre famille. J'ai, par exemple, un frère procureur en Normandie, qui sur l'étiquette d'un sac vous ferait le rapport d'un procès.</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <p>Quoi, vous connaîtriez déjà mon mal?</p>
+        </sp>
+        <sp who="#craquet">
+          <speaker>Monsieur Craquet</speaker>
+        </sp>
+        <spGrp who="#craquet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#craquet">
+            <speaker>Monsieur Craquet</speaker>
+            <l met="8">Je découvre dans la machine</l>
+            <l met="8">Les maux avant leur origine.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mezzetin">
+          <speaker>Mezzetin</speaker>
+          <l met="8">Parbleu, Docteur, j'en suis surpris!</l>
+          <l met="8">Hippocrate eut moins de doctrine.</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="8">Vous n'avez donc point, à Paris,</l>
+          <l met="8">Fait votre cours de médecine?</l>
+        </sp>
+        <sp who="#craquet">
+          <speaker>Monsieur Craquet</speaker>
+          <p>Oh, pour cela, non! Je suis de la faculté de Montpellier<note>Faculté de médecine très ancienne, fondée auxviiiesiècle.</note>. Çà, donnez-moi un peu votre bras.<stage>Après lui avoir tâté le pouls.</stage>Hom! voilà un pouls qui menace ruine!</p>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <p>Tubleu! Quel Docteur!</p>
+        </sp>
+        <sp who="#mezzetin">
+          <speaker>Mezzetin</speaker>
+          <p>Malepeste! Que dit-il?</p>
+        </sp>
+        <sp who="#craquet">
+          <speaker>Monsieur Craquet</speaker>
+          <p>Je devine la cause de votre maladie.</p>
+        </sp>
+        <spGrp who="#craquet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#confiteor">Mon père, je viens devant vous</title>
+            </desc>
+          </head>
+          <sp who="#craquet">
+            <speaker>Monsieur Craquet</speaker>
+            <l met="8">Dans votre enfance, je vois bien</l>
+            <l met="8">Que vous viviez de grosse viande.</l>
+          </sp>
+        </spGrp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="8">Monsieur, pour ne vous cacher rien,</l>
+          <l met="8">D'abord je n'étais pas friande;</l>
+          <l met="8">Mais à présent à mes repas,</l>
+          <l met="8">Il me faut des mets délicats.</l>
+        </sp>
+        <sp who="#craquet">
+          <speaker>Monsieur Craquet</speaker>
+          <p>Justement. À mesure que votre nourriture a été moins grossière, vous n'avez pas joui d'une parfaite santé, n'est-ce pas<note>On peut lire ces dernières répliques comme une allusion à l'évolution du répertoire forain, qui tendait, surtout à l'Opéra-Comique, à être plus moral.</note>?</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <p>Oh, vraiment, non! J'ai été attaquée plusieurs fois de maladies assez violentes.</p>
+        </sp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#la_ceinture">La ceinture</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="8">J'ai souffert cent mille tourments:</l>
+            <l met="8">J'ai cru que j'en deviendrais folle;</l>
+            <l met="8">Et, malgré les médicaments,</l>
+            <l met="8">J'ai souvent perdu la parole<note>Allusions aux interdictions de parler, qui forcèrent les forains à inventer les pièces par écriteaux ou à la muette.</note>.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mezzetin">
+          <speaker>Mezzetin</speaker>
+          <p>Nous l'avons bien des fois tenue pour morte.</p>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <p>Les fréquentes saignées l'ont sauvée.</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <p>Oui, mais elles m'ont diablement affaiblie.</p>
+        </sp>
+        <sp who="#craquet">
+          <speaker>Monsieur Craquet</speaker>
+          <p>M'y voilà. Ce sont les viandes délicates qui vous ont perdue. Elles ont causé de mauvaises humeurs, qui ont peu à peu ruiné votre tempérament. En un mot, il ne fallait point changer vos premiers aliments, vous ne seriez pas, comme vous l'êtes, un corps confisqué<note type="definition">Confisqué: On dit qu'un homme dont la fortune ou la santé est désespérée que c'est un homme confisqué (Acad.1694)</note>.</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+        </sp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#naiades">Bouchez, naïades, vos fontaines</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="8">Avec toute votre science</l>
+            <l met="8">Vous me laissez sans espérance.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mezzetin">
+          <speaker>Mezzetin</speaker>
+          <stage>à Monsieur Craquet</stage>
+          <l met="8">Du trépas si vous la sauvez,</l>
+          <l met="8">Vous allez vous couvrir de gloire.</l>
+        </sp>
+        <sp who="#craquet">
+          <speaker>Monsieur Craquet</speaker>
+          <l met="8">Je ne le puis.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="8">Quoi, vous n'avez</l>
+          <l met="8">Point de remèdes pour la Foire!</l>
+        </sp>
+        <sp who="#craquet">
+          <speaker>Monsieur Craquet</speaker>
+        </sp>
+        <spGrp who="#craquet">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#adieu_paniers">Adieu paniers, vendanges [sont faites]</title>
+            </desc>
+          </head>
+          <sp who="#craquet">
+            <speaker>Monsieur Craquet</speaker>
+            <l met="8">J'offrirais en vain mes recettes,</l>
+            <l met="8">Tous mes soins seraient superflus.</l>
+            <l met="8">Dans vos jeux on ne rira plus:</l>
+            <l met="9">Adieu, paniers, vendanges sont faites.</l>
+            <p>Ne songez qu'à mettre ordre à vos affaires.</p>
+          </sp>
+        </spGrp>
+        <stage>Il sort.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 3</head>
+        <stage type="characters">La Foire, Scaramouche, Mezzetin</stage>
+        <stage>Scaramouche et Mezzetin pleurent.</stage>
+        <sp who="#mezzetin">
+          <speaker>Mezzetin</speaker>
+        </sp>
+        <spGrp who="#mezzetin">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#les_triolets">Les triolets</title>
+            </desc>
+          </head>
+          <sp who="#mezzetin">
+            <speaker>Mezzetin</speaker>
+            <l met="8">Notre malheur est donc certain?</l>
+            <l met="8">Nous allons perdre notre mère<note>Représentation typique de la Foire personnifiée, qui devient mère des acteurs et des spectacles.</note>?</l>
+          </sp>
+        </spGrp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="8">Que ferons-nous, cher Mezzetin?</l>
+        </sp>
+        <sp who="#mezzetin">
+          <speaker>Mezzetin</speaker>
+          <l met="8">Notre malheur est donc certain?</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="8">Je veux vous ménager du pain<note>Comprendre que la Foire souhaite subvenir à leurs besoins après sa mort.</note>
+          </l>
+          <l met="8">Par un testament salutaire.</l>
+        </sp>
+        <sp who="#scaramouche">
+          <speaker>Scaramouche</speaker>
+          <l met="8">Notre malheur est donc certain?</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <stage>à Mezzetin</stage>
+          <l met="8">Allez me chercher un notaire.</l>
+          <p>Vous, Scaramouche, en allant chez mon cousin l'Opéra<note>Lien allégorique important pour la compréhension du testament.</note>passez chez les Comédies Française et Italienne. Dites-leur que je les prie de se rendre ici tout à l'heure. Je veux avant que de mourir, me réconcilier avec ces deux ennemies.</p>
+        </sp>
+        <stage>Scaramouche et Mezzetin sortent.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 4</head>
+        <stage type="characters">La Foire, le Vaudeville<stage>poète</stage>
+        </stage>
+        <sp who="#mvaudeville">
+          <speaker>Monsieur Vaudeville</speaker>
+        </sp>
+        <spGrp who="#mvaudeville">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#allons_gai_d_un_air_gai">Allons gai</title>
+            </desc>
+          </head>
+          <sp who="#mvaudeville">
+            <speaker>Monsieur Vaudeville</speaker>
+            <l met="6">Ayez l'âme contente,</l>
+            <l met="6">J'apporte ici, maman<note>Ce vers inscrit le vaudeville comme héritier de la Foire. Le répertoire forain serait ainsi caractérisé par l'usage du vaudeville.</note>,</l>
+            <l met="6">Une pièce brillante.</l>
+            <l met="6">Ma foi, c'est du nanan<note type="definition">Nanan: Tout ce qui est fort agréable, qui a un grand mérite, dont on veut faire valoir le prix. (Acad.1872)</note>.</l>
+            <l met="3">Allons gai,</l>
+            <l met="3">D'un air gai, etc.</l>
+          </sp>
+        </spGrp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <stage>soupirant</stage>
+          <p>Ah!</p>
+        </sp>
+        <sp who="#mvaudeville">
+          <speaker>Monsieur Vaudeville</speaker>
+          <stage>lui montrant un cahier</stage>
+        </sp>
+        <spGrp who="#mvaudeville">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#de_paris_jusqu_au_mississippi">De Paris jusqu'au Mississipi</title>
+            </desc>
+          </head>
+          <sp who="#mvaudeville">
+            <speaker>Monsieur Vaudeville</speaker>
+            <l met="9">Ma pièce enlèvera tous les cœurs,</l>
+            <l met="10">Charmera Paris, malgré les censeurs.</l>
+            <l met="9">Ce n'est point un morceau de farceurs.</l>
+            <l met="10">J'y fais triompher surtout vos danseurs.</l>
+            <l met="4">Bonne musique,</l>
+            <l met="4">Fine critique,</l>
+            <l met="4">Le tout y pique,</l>
+            <l met="10">Et flatte le goût des vrais connaisseurs.</l>
+          </sp>
+        </spGrp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <p>C'est de la moutarde après dîner<note type="definition">C'est de la moutarde après dîner: On dit proverbialement et figurément d'une chose qui vient lorsque l'on n'en a plus besoin, que c'est de la moutarde après dîner (Acad.1762)</note>.</p>
+        </sp>
+        <sp who="#mvaudeville">
+          <speaker>Monsieur Vaudeville</speaker>
+          <p>Que m'apprenez-vous?</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+        </sp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#quand_moise_fit_defense">Du cap de Bonne-Espérance</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="7">Mon cher Monsieur Vaudeville,</l>
+            <l met="7">Portez votre pièce ailleurs.</l>
+            <l met="7">Elle m'est fort inutile,</l>
+            <l met="7">À présent que je me meurs.</l>
+          </sp>
+        </spGrp>
+        <sp who="#mvaudeville">
+          <speaker>Monsieur Vaudeville</speaker>
+          <p>Ô Ciel!</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="7">Voyez encor votre ouvrage;</l>
+          <l met="7">Mettez-y du verbiage.</l>
+          <l met="7">Peut-être qu'il conviendra</l>
+          <l met="7">À mon cousin l'Opéra.</l>
+        </sp>
+        <sp who="#mvaudeville">
+          <speaker>Monsieur Vaudeville</speaker>
+          <stage>tristement</stage>
+        </sp>
+        <spGrp who="#mvaudeville">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#troubler_ignorance">Je ne veux point troubler votre ignorance</title>
+            </desc>
+          </head>
+          <sp who="#mvaudeville">
+            <speaker>Monsieur Vaudeville</speaker>
+            <l met="10">Quoi, faut-il donc que la Foire périsse!</l>
+          </sp>
+        </spGrp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="10">Oui, c'en est fait, je me sens aux abois.</l>
+          <l met="10">C'est le destin qui veut que je finisse.</l>
+          <l met="10">Embrassons-nous pour la dernière fois.</l>
+        </sp>
+        <stage>La Foire embrasse Monsieur Vaudeville, qui se retire avec toutes les marques d'une profonde douleur.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 5</head>
+        <stage type="characters">La Foire, Monsieur Bontour<stage>notaire</stage>
+        </stage>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <p>Approchez, Monsieur Bontour. Je vous attendais.</p>
+        </sp>
+        <sp who="#bontour">
+          <speaker>Monsieur Bontour</speaker>
+          <p>Madame, je suis bien fâché de vous voir dans l'état...</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <p>Eh, Monsieur, laissons cela! Hâtez-vous, je vous prie, d'écrire mes dernières volontés.</p>
+        </sp>
+        <sp who="#bontour">
+          <speaker>Monsieur Bontour</speaker>
+          <stage>se disposant à instrumenter<note type="definition">Instrumenter: Passer des contracts (Acad.1694)</note>sur une table</stage>
+          <p>J'ai déjà commencé l'acte.<stage>Il lit.</stage>Par-devant nous, Mathieu Bontour,<emph>et cætera<note>Formule devenue proverbiale : « Dieu nous garde d'un quiproquo d'apothicaire et d'un<emph>et cætera</emph>de notaire » (Acad. 1694).</note>.</emph>Fut présente honorable et discrète personne Damoiselle Perrette la Foire,<emph>et cætera.</emph>Vous n'avez présentement qu'à me dicter.</p>
+        </sp>
+        <spGrp who="#bontour">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#confiteor">Mon père, je viens devant vous</title>
+            </desc>
+          </head>
+          <sp who="#bontour">
+            <speaker>Monsieur Bontour</speaker>
+            <l met="8">Pour légataire universel</l>
+            <l met="8">Qui nommez-vous, Mademoiselle?</l>
+          </sp>
+        </spGrp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="8">Je prends, du côté maternel,</l>
+          <l met="8">Mon oncle Jean Polichinelle</l>
+          <l met="8">Et mon cher cousin l'Opéra</l>
+          <l met="8">D'exécuteur me servira.</l>
+        </sp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="8">
+              <emph>Primo</emph>, je donne à mes auteurs,</l>
+            <l met="8">Dont j'ai mal payé l'honoraire<note>Il s'agit probablement d'une pique des auteurs contre les entrepreneurs. Il n'est pas rare de retrouver des plaintes des auteurs qui n'étaient pas payés ou pas assez payés.</note>,</l>
+            <l met="8">Mille écus que mes airs flatteurs</l>
+            <l met="8">À nos traités ont su soustraire.</l>
+            <l met="8">Argent qu'ils n'auraient, sur ma foi,</l>
+            <l met="8">De mon vivant reçu de moi.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#dans_nos_forets">On n'aime point dans nos forêts</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="8">
+              <emph>Item</emph>
+              <note type="definition">Item: De plus. On s'en sert dans les comptes, dans les états que l'on fait (Acad.1762)</note>. Je lègue à mes acteurs</l>
+            <l met="8">Qui vont jouer dans les provinces,</l>
+            <l met="8">Pour mieux plaire à leurs spectateurs</l>
+            <l met="8">Et bien représenter des princes,</l>
+            <l met="8">Vieux taffetas, toile, bazin<note type="definition">Bazin: Étoffe de fil de coton quelquefois mêlé avec du fil de chanvre, semblable à de la futaine, mais plus fine et plus forte. (Acad.1762)</note>,</l>
+            <l met="8">Tous les chiffons du magasin.</l>
+          </sp>
+        </spGrp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#capucin">Je ne suis né ni roi, ni prince</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="8">Pour ceux qu'on rebute en campagne,</l>
+            <l met="8">Aux acteurs du Roi de Cocagne<note>Allusion à une pièce de Le Grand, représentée en 1718 à la Comédie-Française. Désigne ici les Comédiens-Français.</note>,</l>
+            <l met="8">Je les donne, et par là, je veux</l>
+            <l met="8">Montrer que je meurs leur amie.</l>
+            <l met="8">Ces gens peuvent être avec eux,</l>
+            <l met="8">Sans déparer la compagnie.</l>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="melody" subtype="same_melody">Même air</head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="8">
+              <emph>Item</emph>. La troupe italienne,</l>
+            <l met="8">Pour que de moi l'on se souvienne,</l>
+            <l met="8">Aura soin de donner du bas<note>Comprendre : « Donner dans le grossier ».</note>.</l>
+            <l met="8">Je lui laisse mes bagatelles,</l>
+            <l met="8">Pour en faire après mon trépas</l>
+            <l met="8">Des pièces françaises nouvelles.</l>
+            <p>
+              <emph>Item</emph>. Et voici le grand<emph>item</emph>.</p>
+          </sp>
+        </spGrp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#joconde">Joconde</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="8">Comme après moi, sur le pavé,</l>
+            <l met="6">Je laisse quelques filles</l>
+            <l met="8">Dont l'honneur s'est bien conservé,</l>
+            <l met="6">Quoiqu'elles soient gentilles,</l>
+            <l met="8">Je crois que mon cousin voudra</l>
+            <l met="6">Les prendre à mon instance.</l>
+            <l met="8">Leurs bonnes mœurs à l'Opéra</l>
+            <l met="6">Seront en assurance<note>Ces vers sont ironiques, et font allusion à la réputation des filles d'opéra.</note>.</l>
+            <p>Voilà tout, Monsieur Bontour.</p>
+          </sp>
+        </spGrp>
+        <sp who="#bontour">
+          <speaker>Monsieur Bontour</speaker>
+          <p>Fait et passé,<emph>et cætera</emph>... Madame, vous n'avez qu'à signer.</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <stage>signant et prononçant<emph>et cætera</emph>comme si il y avait « et se taira »</stage>
+          <p>La Foire,<emph>et cætera.</emph>
+            <stage>Se levant de son fauteuil.</stage>Menez-moi dans mon cabinet, je vais vous payer vos vacations.</p>
+        </sp>
+        <stage>Elle s'appuie sur Monsieur Bontour et s'en va.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 6</head>
+        <stage type="characters">Scaramouche, la Comédie-Française, la Comédie-Italienne</stage>
+        <sp who="#francaise">
+          <speaker>La Comédie-Française</speaker>
+          <stage>à Scaramouche</stage>
+          <p>Allez, mon ami. Avertissez votre maîtresse que les deux Comédies sont ici.</p>
+        </sp>
+        <stage>Scaramouche les salue avec respect et va avertir la Foire.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 7</head>
+        <stage type="characters">Les deux Comédies</stage>
+        <sp who="#francaise">
+          <speaker>La Comédie-Française</speaker>
+          <stage>déclamant</stage>
+          <l met="12">Affectons à ses yeux une grande tristesse,</l>
+          <l met="12">Faisons même paraître une fausse tendresse.</l>
+        </sp>
+        <sp who="#italienne">
+          <speaker>La Comédie-Italienne</speaker>
+          <p>Oh, cela ne me coûtera rien!</p>
+        </sp>
+        <sp who="#francaise">
+          <speaker>La Comédie-Française</speaker>
+          <p>Ni à moi, je vous assure.</p>
+        </sp>
+        <spGrp who="#francaise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#ah_robin_tais_toi">Ah, Robin, tais-toi</title>
+            </desc>
+          </head>
+          <sp who="#francaise">
+            <speaker>La Comédie-Française</speaker>
+            <l met="7">Plus mon cœur ressent de haine,</l>
+            <l met="7">Plus il marque d'amitié.</l>
+          </sp>
+        </spGrp>
+        <sp who="#italienne">
+          <speaker>La Comédie-Italienne</speaker>
+          <l met="7">Je suis sur le même pied,</l>
+          <l met="7">C'est la mode italienne.</l>
+        </sp>
+        <sp who="#francaise">
+          <speaker>La Comédie-Française</speaker>
+          <l met="5">L'usage en est doux.</l>
+        </sp>
+        <sp who="#italienne">
+          <speaker>La Comédie-Italienne</speaker>
+          <l met="11">J'en connais<stage>3 fois</stage>bien d'autres qui font comme nous.</l>
+        </sp>
+        <sp who="#francaise">
+          <speaker>La Comédie-Française</speaker>
+          <stage>riant</stage>
+          <p>Ha, ha, ha, ha, ha!</p>
+        </sp>
+        <sp who="#italienne">
+          <speaker>La Comédie-Italienne</speaker>
+          <p>De quoi riez-vous donc?</p>
+        </sp>
+        <sp who="#francaise">
+          <speaker>La Comédie-Française</speaker>
+        </sp>
+        <spGrp who="#francaise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#toucher_son_isabelle">Pour toucher son Isabelle</title>
+            </desc>
+          </head>
+          <sp who="#francaise">
+            <speaker>La Comédie-Française</speaker>
+            <l met="7">C'est de la douleur mortelle</l>
+            <l met="7">Que le trépas de la belle</l>
+            <l met="7">Va causer à l'Opéra, a, a, a, etc.<note>
+                <emph>Sic.</emph>Effet parodique des vocalises.</note>
+            </l>
+            <l met="7">La perte qu'il fait en elle</l>
+            <l met="7">À coup sûr l'abîmera, a, a, a, etc.</l>
+            <l met="7">La perte qu'il fait en elle</l>
+            <l met="7">À coup sûr l'abîmera, a, a, a, etc.</l>
+          </sp>
+        </spGrp>
+        <sp who="#italienne">
+          <speaker>La Comédie-Italienne</speaker>
+          <p>Votre cœur s'épanouit, ma mignonne.</p>
+        </sp>
+        <sp who="#francaise">
+          <speaker>La Comédie-Française</speaker>
+          <p>Je nage dans la joie.</p>
+        </sp>
+        <sp who="#italienne">
+          <speaker>La Comédie-Italienne</speaker>
+          <p>Vous haïssez donc bien l'Opéra?</p>
+        </sp>
+        <sp who="#francaise">
+          <speaker>La Comédie-Française</speaker>
+        </sp>
+        <spGrp who="#francaise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#savoir_faire">J'offre ici mon savoir faire</title>
+            </desc>
+          </head>
+          <sp who="#francaise">
+            <speaker>La Comédie-Française</speaker>
+            <l met="7">Plus que vous ne pouvez croire</l>
+            <l met="8">Je déteste ce fripon-là.</l>
+            <l met="8">Je dis plus c'était l'Opéra</l>
+            <l met="8">Que je poursuivais dans la Foire.</l>
+            <l met="8">Oui, vraiment, c'était l'Opéra</l>
+            <l met="8">Que je poursuivais dans la Foire.</l>
+          </sp>
+        </spGrp>
+        <sp who="#italienne">
+          <speaker>La Comédie-Italienne</speaker>
+          <p>Je ne m'étonne plus à présent que vous vous soyez donné tant de mouvement. Mais la Foire paraît. Jouons bien notre personnage.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 8</head>
+        <stage type="characters">Les deux Comédies, la Foire</stage>
+        <sp who="#francaise">
+          <speaker>La Comédie-Française</speaker>
+          <stage>à la Foire</stage>
+        </sp>
+        <spGrp who="#francaise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#naiades">Bouchez, naïades, vos fontaines</title>
+            </desc>
+          </head>
+          <sp who="#francaise">
+            <speaker>La Comédie-Française</speaker>
+            <l met="8">L'état où je vous vois, Madame,</l>
+            <l met="8">En vérité, me perce l'âme.</l>
+          </sp>
+        </spGrp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="8">Oublions ici nos débats.</l>
+          <l met="8">Embrassons-nous, je vous supplie.</l>
+        </sp>
+        <sp who="#italienne">
+          <speaker>La Comédie-Italienne</speaker>
+          <stage>embrassant la Foire</stage>
+          <l met="8">Je mets tout ressentiment bas.</l>
+        </sp>
+        <sp who="#francaise">
+          <speaker>La Comédie-Française</speaker>
+          <stage>l'embrassant aussi</stage>
+          <l met="8">Votre mort nous réconcilie.</l>
+        </sp>
+        <sp who="#italienne">
+          <speaker>La Comédie-Italienne</speaker>
+          <p>
+            <emph>Mi dispiace molto di veder vo' signoria in cosi gran pericolo<note>Nous traduisons: « cela me déplaît beaucoup de voir votre Seigneurie en si grand danger ».</note>
+            </emph>.</p>
+        </sp>
+        <sp who="#francaise">
+          <speaker>La Comédie-Française</speaker>
+          <p>Je suis ravie que cette occasion se présente de nous raccommoder.</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <stage>à la Comédie-Française</stage>
+          <p>Vous êtes trop généreuse! Me pardonnez-vous, Madame,</p>
+        </sp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#coucou">Comme un coucou que l'amour presse</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="8">D'avoir par mes traits de satire</l>
+            <l met="8">Détaché de vous tant de gens,</l>
+            <l met="8">Et d'avoir quelquefois fait rire</l>
+            <l met="8">Toute la ville à vos dépens?</l>
+          </sp>
+        </spGrp>
+        <sp who="#francaise">
+          <speaker>La Comédie-Française</speaker>
+          <p>Ne parlons point de cela.</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <stage>à la Comédie-Italienne</stage>
+          <p>Madame l'Italienne,</p>
+        </sp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#jus_octobre">Quand je tiens de ce jus d'octobre</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="8">La mort termine nos querelles:</l>
+            <l met="8">Ne soyez donc plus en courroux,</l>
+            <l met="8">Si j'ai de mes pièces nouvelles</l>
+            <l met="8">Plus retiré d'argent que vous.</l>
+          </sp>
+        </spGrp>
+        <sp who="#italienne">
+          <speaker>La Comédie-Italienne</speaker>
+          <p>J'oublie le passé en faveur de l'avenir.</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <stage>à la Comédie-Française</stage>
+          <p>Je forme des vœux pour vous.</p>
+        </sp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air : Menuet de</desc>
+            <desc type="title">
+              <title ref="#monsieur_de_grandval">Monsieur de Grandval</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="8">Que le public, rendant justice</l>
+            <l met="8">À tous vos antiques morceaux,</l>
+            <l met="8">Coure chez vous, les applaudisse,</l>
+            <l met="8">Sans en demander de nouveaux.</l>
+          </sp>
+        </spGrp>
+        <sp who="#francaise">
+          <speaker>La Comédie-Française</speaker>
+          <p>Il aura beau en demander, il n'en aura, ma foi, guère.</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <stage>à la Comédie-Italienne</stage>
+          <p>Et vous, Madame,</p>
+        </sp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pour_faire_honneur_a_la_noce">Pour faire honneur à la noce</title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="7">N'ayez plus de jalousie,</l>
+            <l met="8">Mon trépas va vous soutenir.</l>
+            <l met="8">Par lui, vous pourrez obtenir</l>
+            <l met="8">À Paris droit de bourgeoisie.</l>
+            <l met="7">N'ayez plus de jalousie,</l>
+            <l met="8">Mon trépas va vous soutenir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#italienne">
+          <speaker>La Comédie-Italienne</speaker>
+          <p>Je le souhaite.</p>
+        </sp>
+        <sp who="#francaise">
+          <speaker>La Comédie-Française</speaker>
+          <stage>à la Comédie-Italienne</stage>
+        </sp>
+        <spGrp who="#francaise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#philis_avare">Réveillez-vous, belle endormie</title>
+            </desc>
+          </head>
+          <sp who="#francaise">
+            <speaker>La Comédie-Française</speaker>
+            <l met="8">Retirons-nous. Je vois paraître</l>
+            <l met="8">Monsieur l'Opéra, dans ces lieux.</l>
+          </sp>
+          <sp who="#francaise">
+            <speaker>La Comédie-Française</speaker>
+            <l met="8">Vous serez bien aise, peut-être,</l>
+            <l met="8">Qu'on ne trouble point vos adieux.</l>
+          </sp>
+        </spGrp>
+        <stage>À la Foire.</stage>
+        <sp who="#italienne">
+          <speaker>La Comédie-Italienne</speaker>
+          <p>Adieu, Madame. Bon voyage.</p>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 9</head>
+        <stage type="characters">La Foire, l'Opéra</stage>
+        <sp who="#opera">
+          <speaker>L'Opéra</speaker>
+        </sp>
+        <spGrp who="#opera">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#pierre_bagnolet">Pierr' Bagnolet</title>
+            </desc>
+          </head>
+          <sp who="#opera">
+            <speaker>L'Opéra</speaker>
+            <l met="8">On m'a dit, Madame la Foire,</l>
+            <l met="8">Que vous allez mourir.</l>
+          </sp>
+        </spGrp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="8">Hélas!</l>
+        </sp>
+        <sp who="#opera">
+          <speaker>L'Opéra</speaker>
+          <l met="7">Ma foi, je ne le puis croire.</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="8">Mon cher ami, n'en doutez pas.</l>
+          <l met="4">Je suis bien bas,</l>
+          <l met="4">Je suis bien bas.</l>
+        </sp>
+        <sp who="#opera">
+          <speaker>L'Opéra</speaker>
+          <p>Allez, allez.</p>
+          <l met="8">Vous aurez encor la victoire</l>
+          <l met="8">Cette fois-ci sur le trépas.</l>
+          <p>Prenez courage. Jeunesse revient de loin. Je vous ai vue aussi malade.</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <p>Il est vrai. J'ai eu beaucoup d'assauts en ma vie, mais j'avais le coeur bon. Aujourd'hui je sens bien qu'il faut sauter le fossé.</p>
+        </sp>
+        <spGrp who="#foire">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air parodié d'</desc>
+            <desc type="title">
+              <title ref="#armide">Armide<note>« Je vois de près la mort qui me menace,~/~Et bientôt l'âge qui me glace~/~Va m'accabler sous son pesant fardeau:~/~C'est le dernier bien où j'aspire~/~Que de voir votre hymen promettre à cet Empire~/~Des rois formés d'un sang si beau;~/~Sans me plaindre du sort je cesserai de vivre,~/~Si ce doux espoir peut me suivre~/~Dans l'affreuse nuit du tombeau »,<emph>Armide</emph>(I, 2).</note>
+              </title>
+            </desc>
+          </head>
+          <sp who="#foire">
+            <speaker>La foire</speaker>
+            <l met="10">Je vois de près la mort qui me menace;</l>
+            <l met="8">Et quelque chose que l'on fasse,</l>
+            <l met="10">Je vais passer par le triste bateau.</l>
+            <l met="8">En mourant, je serais ravie</l>
+            <l met="12">Si je voyais, cousin, votre scène servie</l>
+            <l met="8">Par quelque bon auteur nouveau.</l>
+            <l met="12">Sans me plaindre du sort, je cesserais de vivre;</l>
+            <l met="8">Mais ce plaisir ne peut me suivre</l>
+            <l met="8">Dans l'affreuse nuit du tombeau.</l>
+          </sp>
+        </spGrp>
+        <sp who="#opera">
+          <speaker>L'Opéra</speaker>
+          <p>Vous avez l'imagination frappée; c'est votre plus grand mal.</p>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <stage>déclamant sur le ton de l'actrice qui joue le rôle de Phèdre<note>Une représentation de<emph>Phèdre</emph>de Racine eut lieu le 14 juin 1718, à la Comédie-Française. L'actrice principale était alors Jeanne-Françoise Quinault, dite Mademoiselle Quinault la cadette. Lors de la première représentation en 1677, La Champmeslé en avait tenu le rôle principal. Ce passage parodie des vers de l'acte V, sc. 7: « Les moments me sont chers, écoutez-moi, Thésée. [...</note>
+          </stage>
+          <l met="12">Non, non, écoutez-moi. Les moments me sont chers.</l>
+          <l met="12">Il n'est que trop certain, cousin, que je vous perds.</l>
+          <l met="12">Déjà je ne vois plus qu'à travers un nuage,</l>
+          <l met="12">Et mes sens affaiblis...</l>
+        </sp>
+        <stage>Elle s'évanouit.</stage>
+        <sp who="#opera">
+          <speaker>L'Opéra</speaker>
+          <stage>déclamant</stage>
+          <l met="12">Vous changez de visage!</l>
+          <l met="12">Peste, c'est tout de bon! Ah, craignons pour ses jours!</l>
+          <l met="12">Et par rapport à moi donnons-lui du secours.</l>
+        </sp>
+        <stage>L'Opéra lui frotte les narines d'eau de la Reine de Hongrie<note>
+            <emph>Eau de la reine de Hongrie</emph>: « Nom donné à l'alcoolat de romarin»(Littré). Alcool servant à ranimer les gens pris de malaise.</note>.</stage>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <stage>rappelant ses esprits</stage>
+          <p>Ah!</p>
+        </sp>
+        <sp who="#opera">
+          <speaker>L'Opéra</speaker>
+        </sp>
+        <spGrp who="#opera">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#vous_brillez_seule_en_ces_retraites">Vous brillez seule en ces retraites</title>
+            </desc>
+          </head>
+          <sp who="#opera">
+            <speaker>L'Opéra</speaker>
+            <l met="8">Qu'à votre mal je m'intéresse!</l>
+            <l met="10">Mon triste cœur en soupire, en gémit.</l>
+          </sp>
+        </spGrp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="8">Je vois bien où le bât vous blesse.</l>
+        </sp>
+        <sp who="#opera">
+          <speaker>L'Opéra</speaker>
+          <l met="8">Quel malheur!<stage>bis</stage>Ma caisse<note>Comprendre les finances de l'Opéra.</note>en frémit.</l>
+        </sp>
+        <spGrp who="#opera">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#parodie_d_alceste">Parodié d'Alceste<note>Tragédie en musique de Quinault composée en 1674. Alceste, fille de Pélias, est convoitée par Alcide, Admète et Lycomède. Elle choisira Admète.</note>
+              </title>
+            </desc>
+          </head>
+          <sp who="#opera">
+            <speaker>L'Opéra</speaker>
+            <l met="8">Sans la Foire, sans les ducats,</l>
+            <l met="8">Croyez-vous que je puisse vivre?</l>
+          </sp>
+        </spGrp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="8">Mon cher, il faut sauter le pas.</l>
+        </sp>
+        <sp who="#opera">
+          <speaker>L'Opéra</speaker>
+          <l met="8">Hélas, je vais bientôt vous suivre!</l>
+          <l met="8">Sans la Foire, sans ses ducats,</l>
+          <l met="8">Croyez-vous que je puisse vivre<note>« Sans Alceste, sans ses appas, / Croyez-vous que je puisse vivre? / Laissez-moi courir au trépas / Où ma chère Alceste se livre. / Sans Alceste, sans ses appas, / Croyez-vous que je puisse vivre? » (<emph>Alceste</emph>, III, 6).</note>?</l>
+        </sp>
+        <stage>L'Opéra se met à pleurer.</stage>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="8">Mon cher ami, ne pleurez pas.</l>
+          <l met="8">Mon argent ne vaut point vos larmes.</l>
+        </sp>
+        <sp who="#opera">
+          <speaker>L'Opéra</speaker>
+          <l met="12">Est-ce là ce traité si doux, si plein d'appas,</l>
+          <l met="8">Qui nous promettait tant de charmes?</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="6">Mon cousin, vous pleurez.</l>
+        </sp>
+        <sp who="#opera">
+          <speaker>L'Opéra</speaker>
+          <l met="6">Cousine, vous mourez.</l>
+        </sp>
+        <spGrp rend="braced(right)">
+          <sp who="#ensemblea">
+            <speaker>Ensemble</speaker>
+          </sp>
+          <stage>ensemble</stage>
+        </spGrp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="9">Vous pleurez, vous pleurez, vous pleurez,</l>
+        </sp>
+        <sp who="#opera">
+          <speaker>L'Opéra</speaker>
+          <l met="9">Vous mourez, vous mourez, vous mourez.</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="8">Se peut-il que le ciel permette</l>
+          <l met="8">Que la Foire et son cher Admète,</l>
+          <l met="6">Soient ainsi séparés!</l>
+        </sp>
+        <sp who="#opera">
+          <speaker>L'Opéra</speaker>
+          <l met="3">Ma poulette!</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="3">Mon poulet!</l>
+        </sp>
+        <spGrp rend="braced(right)">
+          <sp who="#opera">
+            <speaker>L'Opéra</speaker>
+            <l met="3">Ma poulette!</l>
+          </sp>
+          <stage>ensemble</stage>
+        </spGrp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="3">Vous pleurez!</l>
+        </sp>
+        <sp who="#opera">
+          <speaker>L'Opéra</speaker>
+          <l met="3">Vous mourez!</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <stage>déclamant</stage>
+          <l met="12">Ah, j'expire! Je sens que le mortel frisson</l>
+          <l met="12">Me saisit.</l>
+        </sp>
+        <sp who="#opera">
+          <speaker>L'Opéra</speaker>
+          <l met="12">Justes dieux!</l>
+        </sp>
+        <sp who="#foire">
+          <speaker>La foire</speaker>
+          <l met="12">Approche, mon garçon,</l>
+          <l met="12">Dans ce dernier moment, où tu lis ta ruine,</l>
+          <l met="12">Viens, avance. Reçois l'âme de ta cousine.</l>
+        </sp>
+        <stage>Elle tombe mourant dans les bras de l'Opéra.</stage>
+        <sp who="#opera">
+          <speaker>L'Opéra</speaker>
+          <stage>aux spectateurs</stage>
+          <l met="12">Équitables témoins de mes vives douleurs,</l>
+          <l met="12">Plaignez mon infortune et soyez mes vengeurs.</l>
+        </sp>
+        <stage>Il emporte la Foire derrière le théâtre, d'où l'on voit sortir le Docteur.</stage>
+      </div>
+      <div type="scene">
+        <head>SCENE 10</head>
+        <stage type="characters">Le Docteur<stage>seul</stage>
+        </stage>
+        <spGrp who="#opera">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#parodie_d_alceste">Parodié d'Alceste<note>« Hélas, hélas! / Le Roi touche à sa dernière heure; / Il s'affaiblit, il faut qu'il meure, / Et je viens pleurer son trépas. / Hélas, hélas! / Hélas, hélas, hélas! » (<emph>Alceste</emph>, III, 2).</note>.</title>
+            </desc>
+          </head>
+          <sp who="#opera">
+            <speaker>L'Opéra</speaker>
+            <l met="4">Hélas, hélas!</l>
+            <l met="8">La Foire est à sa dernière heure!</l>
+            <l met="8">C'en est fait, il faut qu'elle meure.</l>
+            <l met="8">Qu'elle sente ici son trépas.</l>
+            <l met="4">Hélas, hélas!</l>
+          </sp>
+        </spGrp>
+        <spGrp rend="center">
+          <sp who="#choeurc">
+            <speaker>Chœur</speaker>
+            <stage>qu'on ne voit point</stage>
+            <l met="6">Hélas, hélas, hélas!</l>
+            <p>LA POMPE FUNÈBRE</p>
+          </sp>
+        </spGrp>
+      </div>
+      <div type="scene">
+        <head>SCENE 11</head>
+        <stage type="characters">Tous les acteurs forains avec des crêpes<note type="definition">Crêpe: Il se dit absolument du crêpe qu'on met au chapeau quand on porte le deuil. (Acad.1762)</note>, et l'Opéra<stage>aussi en crêpe avec des pleureuses</stage>
+        </stage>
+        <stage>L'Opéra mène le deuil. Ils s'avancent tous d'un pas lent et conforme à leur tristesse, pendant que l'orchestre joue la marche d'Alceste.</stage>
+        <sp who="#colombine">
+          <speaker>Colombine</speaker>
+        </sp>
+        <spGrp who="#colombine">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#parodie_d_alceste">Parodié d'Alceste</title>
+            </desc>
+          </head>
+          <sp who="#colombine">
+            <speaker>Colombine</speaker>
+            <l met="4">La Foire est morte.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeurc">
+          <speaker>Chœur</speaker>
+          <l met="4">La Foire est morte.</l>
+        </sp>
+        <sp who="#colombine">
+          <speaker>Colombine</speaker>
+          <l met="12">La Foire a satisfait au cothurne<note>Attribut typique des tragédiens.</note>en courroux,</l>
+          <l met="12">Superbes ennemis, quel triomphe pour vous!</l>
+          <l met="12">Si la Foire eût vécu, vous fermiez votre porte.</l>
+          <l met="4">La Foire est morte.</l>
+        </sp>
+        <sp who="#choeurc">
+          <speaker>Chœur</speaker>
+          <l met="4">La Foire est morte<note>«Céphise. Alceste est morte.Admète. Alceste est morte!Le chœur. Alceste est morte.Céphise. Alceste a satisfait les Parques en courroux; / Votre tombeau s'ouvrait, elle y descend pour vous, / Elle-même a voulu vous en fermer la porte; Alceste est morte.Admète. Alceste est morte!Le chœur. Alceste est morte » (<emph>Alceste</emph>, III, 4).</note>.</l>
+        </sp>
+        <spGrp rend="braced(right)">
+          <stage>
+            <emph>bis</emph>
+          </stage>
+          <spGrp rend="braced(right)">
+            <sp who="#colombine">
+              <speaker>Colombine</speaker>
+              <l met="4">La mort barbare</l>
+              <l met="8">Détruit aujourd'hui tous les ris.</l>
+              <l met="6">Déjà de tout Paris</l>
+              <l met="8">J'aperçois l'ennui qui s'empare.</l>
+              <l met="4">La mort barbare</l>
+              <l met="8">Détruit aujourd'hui tous les ris<note>« La mort, la mort barbare, / Détruit aujourd'hui mille appas. / Quelle victime, hélas! / Fut jamais si belle et si rare? / La mort, la mort barbare / Détruit aujourd'hui mille appas » (<emph>Alceste</emph>, III, 5).</note>.</l>
+              <l met="4">La Foire est morte.</l>
+            </sp>
+            <stage>
+              <emph>bis</emph>
+            </stage>
+          </spGrp>
+        </spGrp>
+        <sp who="#choeurc">
+          <speaker>Chœur</speaker>
+          <l met="4">La Foire est morte.</l>
+        </sp>
+        <sp who="#opera">
+          <speaker>L'Opéra</speaker>
+          <stage>aux spectateurs</stage>
+          <l met="12">Public, dans ce malheur qui nous regarde tous,</l>
+          <l met="12">Maudissez les Romains, et dites avec nous:</l>
+          <l met="8">Que les grands diables les emporte.</l>
+        </sp>
+        <sp who="#colombine">
+          <speaker>Colombine</speaker>
+          <l met="4">La Foire est morte.</l>
+        </sp>
+        <sp who="#choeurc">
+          <speaker>Chœur</speaker>
+          <stage>en se retirant</stage>
+          <l met="4">La Foire est morte.</l>
+        </sp>
+      </div>
+      <div type="scene">
+        <head>SCENE 12</head>
+        <stage type="location">et dernière.</stage>
+        <stage type="characters">La Comédie-Française, la Comédie-Italienne, suivants des deux Comédies</stage>
+        <stage>L'orchestre joue l'air « Elle est morte la vache à Panier».</stage>
+        <sp who="#deuxcomedies">
+          <speaker>Les deux Comédies</speaker>
+          <stage>entrent en chantant après la symphonie l'air qu'elle a joué</stage>
+          <l met="9">Elle est morte, la vache à Panier,</l>
+          <l met="9">Elle est morte, il n'en faut plus parler.</l>
+        </sp>
+        <sp who="#francaise">
+          <speaker>La Comédie-Française</speaker>
+          <p>Nous en voilà donc enfin débarrassées.</p>
+        </sp>
+        <sp who="#italienne">
+          <speaker>La Comédie-Italienne</speaker>
+          <p>Oui, grâces au ciel.</p>
+        </sp>
+        <sp who="#francaise">
+          <speaker>La Comédie-Française</speaker>
+        </sp>
+        <spGrp who="#francaise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#si_l_on_menait_a_a_guerre">Si l'on menait à la guerre</title>
+            </desc>
+          </head>
+          <sp who="#francaise">
+            <speaker>La Comédie-Française</speaker>
+            <l met="7">Dansons, tout nous y convie.</l>
+            <l met="7">Ce jour change notre sort:</l>
+            <l met="7">La Foire, notre ennemie,</l>
+            <l met="7">Le rend heureux par sa mort.</l>
+          </sp>
+        </spGrp>
+        <stage>Les suivants des deux Comédies forment une danse qui est coupée par ce branle<note type="definition">Branle: Espèce de danse de plusieurs personnes qui se tiennent par la main et qui se mènent tour à tour. Se dit aussi de l'air sur lequel on danse un branle. (Acad.1762)</note>.</stage>
+        <spGrp rend="center">
+          <sp who="#francaise">
+            <speaker>La Comédie-Française</speaker>
+            <p>BRANLE</p>
+          </sp>
+        </spGrp>
+        <spGrp>
+          <head type="vaudeville-chorus">0</head>
+          <sp who="#francaise">
+            <speaker>La Comédie-Française</speaker>
+          </sp>
+        </spGrp>
+        <spGrp who="#francaise">
+          <head type="melody" subtype="melody">
+            <desc type="prefix">Sur l'air de</desc>
+            <desc type="title">
+              <title ref="#monsieur_gilliers">Monsieur Gilliers</title>
+            </desc>
+          </head>
+          <sp who="#francaise">
+            <speaker>La Comédie-Française</speaker>
+            <l met="7">Cette Foire extravagante</l>
+            <l met="7">Sans cesse excitait des ris</l>
+            <l met="7">Et dégoûtait tout Paris</l>
+            <l met="7">De notre scène savante.</l>
+            <l met="8">Il aura beau mourir d'ennui,</l>
+            <l met="8">Il viendra chez nous malgré lui.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeurd">
+          <speaker>Chœur des suivants des deux Comédies</speaker>
+          <l met="8">Il 	aura beau mourir d'ennui,</l>
+          <l met="8">Il viendra chez nous malgré lui.</l>
+        </sp>
+        <spGrp>
+          <head type="vaudeville-chorus">1</head>
+          <sp who="#italienne">
+            <speaker>La Comédie-Italienne</speaker>
+            <l met="7">On n'aimait plus nos parades;</l>
+            <l met="7">Ces forains, esprits follets,</l>
+            <l met="7">Par le sel de leurs couplets,</l>
+            <l met="7">Au public nous rendaient fades.</l>
+            <l met="8">Il aura beau mourir d'ennui,</l>
+            <l met="8">Il viendra chez nous malgré lui.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeurd">
+          <speaker>Chœur des suivants des deux Comédies</speaker>
+          <l met="4">Il aura beau, etc.</l>
+        </sp>
+        <spGrp>
+          <head type="vaudeville-chorus">2</head>
+          <sp who="#francaise">
+            <speaker>La Comédie-Française</speaker>
+            <l met="7">Ces animaux sur la scène</l>
+            <l met="7">Nous appelaient paresseux:</l>
+            <l met="7">Le public parlait comme eux;</l>
+            <l met="7">Mais par ma foi, pour sa peine,</l>
+            <l met="8">Nous le ferons mourir d'ennui,</l>
+            <l met="8">À moins qu'il ne reste chez lui.</l>
+          </sp>
+        </spGrp>
+        <sp who="#choeurd">
+          <speaker>Chœur des suivants des deux Comédies</speaker>
+          <l met="4">Nous le ferons, etc.</l>
+        </sp>
+        <stage>On reprend la danse, qui finit la pièce.</stage>
+        <stage>Fin</stage>
+      </div>
+    </body>
+  </text>
+</TEI>
