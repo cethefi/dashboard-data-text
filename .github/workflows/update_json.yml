@@ -1,0 +1,45 @@
+name: Auto Update JSON
+
+on:
+  push:
+    branches:
+      - main
+      - test-dashboard-setup
+    paths:
+      - 'tei/**'
+      - 'sync_xml.py'
+
+permissions:
+  contents: write
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Run update script
+        run: python sync_xml.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "action@github.com"
+
+          if [[ -n $(git status --porcelain index.json) ]]; then
+            echo "Changes detected in index.json. Committing..."
+            git add index.json
+            git commit -m "Auto-update index.json [skip ci]"
+            git push
+          else
+            echo "No changes detected."
+          fi
